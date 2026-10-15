@@ -183,10 +183,12 @@ shine.test/
 │   │   │   ├── storage.ts    ← SecureStore (móvil) / localStorage (web)
 │   │   │   ├── stripHtml.ts
 │   │   │   ├── authForm.ts   ← validación y mensajes de entrar/crear cuenta (lógica pura, testeada)
-│   │   │   └── api/          ← client.ts, auth.ts (login/registro), activities.ts, sessions.ts, tracking.ts, statistics.ts, messages.ts
+│   │   │   ├── activityKinds/ ← definición pura por tipo de actividad + buildTracking (payloads log/summary)
+│   │   │   ├── sessionCards.ts ← tarjetas del dashboard, sesión pendiente, nombres de sesiones de ajuste
+│   │   │   └── api/          ← client.ts, auth.ts (login/registro), activities.ts, sessions.ts (getSessions, generate, complete), tracking.ts (postLog/postSummary), statistics.ts, messages.ts
 │   │   ├── store/            ← auth.ts, session.ts (Zustand)
 │   │   └── components/
-│   │       ├── activities/   ← ActivityBase, ActivityRouter, VerticalTextPlayer, AudioReadingPlayer
+│   │       ├── activities/   ← ActivityRouter → ActivityBase (todo lo común) → VerticalTextPlayer, AudioReadingPlayer, ImageGroupPlayer (solo el juego)
 │   │       └── statistics/   ← ActivityEvolutionChart, StandardComparison, SessionProgressBar, SessionComparisonTable, StatsDataTable
 │   ├── package.json
 │   ├── app.json
@@ -307,6 +309,20 @@ GET  /oauth/userinfo      ← info del usuario autenticado (JWT); sub = UUID, na
 GET  /oauth/jwks          ← claves públicas JWT
 GET  /oauth/authorize     ← Authorization Code (sigue activo, la app NO lo usa)
 ```
+
+### Endpoints custom (no JSON:API)
+
+```
+POST /shine/session/generate          ← sesión pendiente del usuario o generar la siguiente (FASE 15, shine_level)
+POST /shine/session/{uuid}/complete   ← cierre de sesión + reglas de nivel (FASE 15, módulo shine_level)
+```
+Bearer OAuth en ambos. `generate`: 200 con la pendiente (`created: false`) o 201 con la nueva
+(`created: true`); 409 `in_progress` (lock por usuario); 422 `no_content` si el catálogo no
+tiene actividades para la sesión decidida. `complete`: solo el dueño; 409 `incomplete` si falta
+algún `activitysummary`; idempotente (`field_completed_at`). La app debe llamar a `complete`
+**después** de enviar `sessionfeedback` / `activityfeedback`. Detalle en `docs/api-design.md`
+("Sesiones generadas, cierre y niveles"). Para depurar el árbol de decisión:
+`ddev drush shine-level:generate {uid} --dry-run`.
 
 ### Consumer configurado
 
@@ -469,7 +485,12 @@ Authorization: Bearer {access_token}
 - `GET /jsonapi/activitysummary/summary_vertical_text?filter[uid.id]={uuid}` — mis resúmenes
 - `POST /jsonapi/sessionfeedback/sessionfeedback` — auto-evaluación de fin de sesión
 - `GET /jsonapi/sessionfeedback/sessionfeedback?filter[uid.id]={uuid}&include=easiest_activity.field_main_area,...` — mis auto-evaluaciones con las áreas de cada actividad
+- `POST /jsonapi/activityfeedback/activityfeedback` — valoración "¿Cómo ha ido?" (`rating`: `easy`|`ok`|`hard`) tras cada actividad de una sesión de ajuste; relaciones `session` y `activity` (FASE 15). Solo se puede referenciar una sesión propia (node grants, gotcha 17)
+- `GET /jsonapi/activityfeedback/activityfeedback?filter[session.id]={uuid}` — valoraciones de una sesión (también `filter[uid.id]`)
+- `GET /jsonapi/userarealevel/userarealevel?filter[uid.id]={uuid}&include=area,level` — mi nivel por área (FASE 15; solo lectura, lo escribe el servidor). `GET /jsonapi/userarealevel_log/userarealevel_log?filter[uid.id]={uuid}` — mi histórico de cambios
 - `GET /jsonapi/taxonomy_term/areas` — las áreas de trabajo (vértices del gráfico radial); lectura con `access content`
+- `GET /jsonapi/taxonomy_term/activity_cycle` — ciclos obligatorios (FASE 15, hoy solo "Sílabas", término de contenido que se crea por entorno); lectura con `access content`. Las actividades lo referencian con `field_cycle` + `field_cycle_weight`
+- `node/session` (FASE 15) añade `field_session_kind` (`regular`|`evaluation`), `field_evaluation_scope`, `field_evaluation_reason`, `field_evaluation_seq`; `sessionfeedback` añade `overall` (`easy`|`ok`|`hard`); `user` añade `field_onboarding_state` (`evaluating`|`regular`)
 
 ### Filtros útiles para estadísticas
 
@@ -489,12 +510,16 @@ Authorization: Bearer {access_token}
 - `view own activitysummary entities`
 - `create sessionfeedback entities`
 - `view own sessionfeedback entities`
+- `create activityfeedback entities`
+- `view own activityfeedback entities`
+- `view own userarealevel entities`
+- `view own userarealevel_log entities`
 - `view activity_message`
 - `access content`
 
 ### Acceso implementado mediante hooks
 
-Los módulos `activitylog`, `activitysummary` y `sessionfeedback` tienen implementados en sus `.module`:
+Los módulos `activitylog`, `activitysummary`, `sessionfeedback` y `activityfeedback` tienen implementados en sus `.module`:
 - `hook_activitylog_access()` / `hook_activitysummary_access()` — permite `view own`
 - `hook_activitylog_create_access()` / `hook_activitysummary_create_access()` — permite `create`
 
@@ -509,6 +534,9 @@ Los módulos `activitylog`, `activitysummary` y `sessionfeedback` tienen impleme
 | `activitysummary` | Entidad `activitysummary` (bundles: `summary_vertical_text`, `summary3_vertical_text_blink`, `summary_image_position`). Implementa `hook_jsonapi_ENTITY_TYPE_filter_access()` (gotcha 16) |
 | `shine_oauth` | Reescribe el claim `sub` de OIDC al UUID del usuario (gotcha 15). Imprescindible: sin él la app no encuentra sus propios datos. Desde FASE 14 también `hook_user_format_name_alter()`: el display name del usuario es `field_display_name` (el username es el email) |
 | `sessionfeedback` | Entidad `sessionfeedback` (sin bundles, campos de código): auto-evaluación de fin de sesión. Alimenta el mapa de áreas (gráfico radial) de "Mi progreso". Implementa `hook_jsonapi_ENTITY_TYPE_filter_access()` (gotcha 16) |
+| `activityfeedback` | Entidad `activityfeedback` (sin bundles, campos de código, calcada de `sessionfeedback`): valoración `easy`/`ok`/`hard` por actividad en sesiones de ajuste (FASE 15). Dato crudo para las reglas de nivel; `preSave` rechaza un `rating` fuera de la lista. Implementa `hook_jsonapi_ENTITY_TYPE_filter_access()` (gotcha 16) |
+| `shine_session_access` | Node grants para `node.session` (FASE 15): realm `shine_session_owner`, gid = uid. Cada usuario ve solo sus sesiones, también en colecciones JSON:API y Views; `bypass node access` lo ve todo. Reconstruye `node_access` al instalarse (gotcha 17) |
+| `shine_level` | Sistema de niveles (FASE 15): entidades `userarealevel` (nivel vigente por usuario y área, índice único uid+area) y `userarealevel_log` (histórico inmutable), servicios `shine_level.level_repository` (`getForUser`, `logChange`) y `shine_level.level_ladder` (orden de `activity_level` por peso y nombre natural; `hasContent` = techo por contenido), config `shine_level.settings` (§8) con formulario en `/admin/config/shine/level`, y `hook_entity_field_access` que impide al usuario editar `field_onboarding_state`. `shine_level.level_reset` (`LevelReset`, "Reiniciar niveles", subplan 08), vistas de administración en `/admin/shine/*` y pestaña `/user/{uid}/levels`, `shine_level.evaluator` (`SessionEvaluator`, reglas §5 y `POST /shine/session/{uuid}/complete`) y `shine_level.session_generator` (`SessionGenerator`, árbol §6 y ciclos §7, `POST /shine/session/generate`, drush `shine-level:generate`). Tests: `cd shine && ddev exec vendor/bin/phpunit -c phpunit.xml public_html/modules/custom/shine_level` |
 | `preprocess` | Hooks `preprocess_node` (inyecta mensaje motivación en plantillas Drupal acopladas) |
 
 > `activitylog_register` (endpoint legacy `POST /activitylog-register/add`) fue
@@ -547,7 +575,25 @@ ddev mysql
 
 # Ver logs de error recientes
 ddev drush watchdog:show --count=20 --severity=Error
+
+# Sistema de niveles: qué sesión le tocaría a un usuario y por qué (sin crearla)
+ddev drush shine-level:generate {uid} --dry-run
+# Avisos del generador (techo por contenido, huecos vacíos)
+ddev drush watchdog:show --type=shine_level --count=20 --extended
 ```
+
+### Administración del sistema de niveles (FASE 15, subplan 08)
+
+Todo con el permiso `administer shine level` (las vistas están en `config/sync`):
+
+| Ruta | Qué |
+|---|---|
+| `/admin/shine` | Menú "Shine" de la barra de administración |
+| `/admin/shine/levels` | Vista `shine_levels`: nivel vigente por usuario y área (filtros usuario y área), enlace "ver histórico" por fila |
+| `/admin/shine/levels/log[/{uid}[/{tid}]]` | Vista `shine_level_log`: cambios de nivel con razón y sesión (filtros usuario, área y razón) |
+| `/admin/shine/sessions` | Vista `shine_sessions`: sesiones con dueño, tipo, razón, secuencia, creada, completada y publicada |
+| `/user/{uid}/levels` | Pestaña "Niveles" del perfil: estado de onboarding y las dos vistas filtradas por el usuario. También con `view any userarealevel entities` + `view any userarealevel_log entities` (perfil terapeuta) |
+| `/user/{uid}/levels/reset` | "Reiniciar niveles" (confirmación): vuelve al bloque inicial; log `reset` por área y pendientes despublicadas. Para probar el bloque inicial varias veces con el mismo usuario |
 
 ---
 
@@ -561,7 +607,7 @@ ddev drush watchdog:show --count=20 --severity=Error
 
 4. **expo-secure-store en web** → lanza error. Usar `src/lib/storage.ts` como wrapper
 
-5. **Claude Code usa Node 16 del sistema** → los comandos `npx expo install` fallan desde Claude. Ejecutar siempre en terminal del usuario con `nvm use 21`
+5. **Claude Code usa Node 16 del sistema** → los comandos `npx expo install` fallan desde Claude. Ejecutar siempre en terminal del usuario con `nvm use 21`. Para `tsc`, lint y tests sí basta con cargar nvm en el mismo comando: `source ~/.nvm/nvm.sh && nvm use 21 && npx tsc --noEmit && npm run lint && npm test` (comprobado en FASE 15)
 
 6. **Expo SDK 55 incompatible con Expo Go** → usar SDK 54 para desarrollo con Expo Go. SDK 55 requiere development build
 
@@ -607,3 +653,9 @@ ddev drush watchdog:show --count=20 --severity=Error
       ];
     }
     ```
+
+17. **Acceso por dueño a `node.session` = node grants, no `hook_node_access`** → para nodos, lo único que filtra a la vez el detalle y las colecciones (JSON:API, Views, entity queries) es `hook_node_grants` + `hook_node_access_records` (módulo `shine_session_access`, realm `shine_session_owner`, gid = uid, solo bundle `session` publicado). El gotcha 16 no aplica a nodos. Avisos:
+    - Un usuario normal **solo ve las sesiones cuyo `uid` es el suyo**; las hechas a mano (uid 1) no salen en su dashboard. Reasignar: `$node->setOwnerId($uid)->save()` (los registros se recalculan al guardar).
+    - Si `node_access` queda incompleta (p. ej. se importó el módulo sin que corriera `hook_modules_installed`), **todas las sesiones se ven con `access content`**. Reconstruir con `ddev drush php-eval '\Drupal::service(\Drupal\node\NodeAccessRebuild::class)->rebuild();'` o desde `/admin/reports/status`. `node_access_rebuild()` está deprecado desde 11.4.
+    - El rebuild del módulo va en `hook_modules_installed`, no en `hook_install`: `node` marca "needs rebuild" después de `hook_install` y dejaría un aviso falso en el informe de estado.
+    - Probar siempre con dos usuarios normales (A ve lo suyo, B recibe `data: []` y 403 en detalle); el user 1 tiene `bypass node access` y no detecta nada (gotcha 14).

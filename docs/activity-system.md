@@ -63,7 +63,7 @@ Los elementos 1, 2, 3, 5 y 6 son siempre los mismos. Solo el elemento 4 varía.
 - `field_time`: tiempo en ms desde el inicio o desde el elemento anterior
 - `field_iteration`: número de intento
 
-**Implementación JS actual**: clase `ActivityTextList` en `activitylog_register/js/logregister.js`
+**Implementación en la app**: definición `verticalTextKind` (`src/lib/activityKinds/verticalText.ts`) y `VerticalTextPlayer` / `AudioReadingPlayer` según el formato. (Histórico: la clase JS `ActivityTextList` de `activitylog_register`, retirado en la FASE 9.)
 
 ---
 
@@ -108,7 +108,7 @@ Los elementos 1, 2, 3, 5 y 6 son siempre los mismos. Solo el elemento 4 varía.
     - `field_text` (text_long): etiqueta de la imagen
   - `field_position_to_ask` (integer): posición correcta esperada
 
-**Estado**: Implementación JS incompleta (`prepareActivity()` y `playActivityItem()` son placeholders en `ActivityImagePosition`).
+**Implementación en la app**: definición `imagePositionKind` (`src/lib/activityKinds/imagePosition.ts`) y `ImageGroupPlayer` (fases memorizar y preguntar por grupo). Escribe `logimageposition` / `summary_image_position` con los contadores de acierto.
 
 ---
 
@@ -122,7 +122,7 @@ group_session
         └── field_activities (M) → activity / activity_blink / activity_image_position
 ```
 
-El JavaScript de `activitylog_register` detecta si hay `session_id` para saber si mostrar la siguiente actividad o recargar la página al finalizar.
+En la app, la pantalla `app/(auth)/session/[id].tsx` encadena las actividades de la sesión; cada log y summary lleva `field_sessionid`. Desde la FASE 15 cada usuario solo ve sus propias sesiones (generadas por el servidor) y `group_session` no se usa.
 
 ---
 
@@ -136,19 +136,21 @@ El JavaScript de `activitylog_register` detecta si hay `session_id` para saber s
 - [ ] Añadir campos específicos del tipo (con prefijo `field_`, siguiendo convenciones)
 - [ ] Crear bundle nuevo en `activitylog` si las métricas a capturar son diferentes a `logverticaltext` (ver `docs/metrics-tracking.md`)
 - [ ] Si hay bundle nuevo en activitylog, crear bundle equivalente en `activitysummary`
-- [ ] Añadir `activity_{tipo}` en la lógica de `activitylog_register.module` (hook_preprocess_node)
 - [ ] Exportar config: `drush cex`
 
-**En el frontend Expo**:
-- [ ] Crear `src/components/activities/{Tipo}Player.tsx` extendiendo `ActivityBase`
-- [ ] Implementar los métodos del ciclo de vida: `prepare()`, `play()`, `end()`
-- [ ] Añadir el nuevo tipo al switch/map de `ActivityRouter` (componente que elige el player correcto según `field_activity_format`)
-- [ ] Añadir tipo TypeScript en `src/types/activity.ts`
-- [ ] Añadir tests básicos
+**En el frontend Expo** (desde FASE 15, plan 07b):
+- [ ] Definición pura del tipo en `src/lib/activityKinds/{tipo}.ts` (`ActivityKind<A, E>`): bundles de log y summary, `summaryBundle`, `activityType`, `motivationFormat`, icono de la intro, atributos propios de log y summary y métricas extra de la pantalla final. Si el player registra algo más que `item`/`time`/`errors`, una interfaz `{Tipo}Entry extends TrackedEntry` en `types.ts`
+- [ ] Player en `src/components/activities/{Tipo}Player.tsx`: recibe `activity`, `included`, `onEnd(entries)` y `errors`, y **solo pinta el juego** (sin `PlayerShell`, intro, pantalla final ni guardado). `ErrorButton` va dentro del player
+- [ ] Una línea en el registro (`KINDS` en `src/lib/activityKinds/index.ts`) y otra en `renderPlayerFor` de `ActivityRouter`
+- [ ] Tipos TypeScript: el nodo en `src/types/activity.ts` y los payloads de creación en `src/types/activitylog.ts` / `activitysummary.ts` (y añadirlos a las uniones `CreateLogPayload` / `CreateSummaryPayload`)
+- [ ] Tests de payload en `src/lib/activityKinds/__tests__/` (como `goldenPayloads.test.ts`): logs y summary exactos con y sin sesión, con y sin contar errores
+- [ ] `ActivityBase` **no se toca**
 
 ---
 
-## Jerarquía de clases JS (código acoplado actual)
+## Jerarquía de clases JS (histórico)
+
+> **Histórico.** Describe el JavaScript del Drupal acoplado (`activitylog_register`), retirado en la FASE 9. Se conserva como referencia de cómo funcionaba; la app no lo usa.
 
 ```
 Activity (clase base — activitylog_register/js/logregister.js)
@@ -183,39 +185,52 @@ SubActivity (helper interno para image position)
 
 ---
 
-## Jerarquía de componentes React Native (Expo, objetivo)
+## Jerarquía de componentes React Native
+
+Desde la FASE 15 (plan 07b) hay un solo camino para jugar cualquier actividad:
+`ActivityRouter` → `ActivityBase` (todo lo común) → player del tipo (solo el juego).
 
 ```
-ActivityBase (src/components/activities/ActivityBase.tsx)
+ActivityRouter (src/components/activities/ActivityRouter.tsx)
+│  kindFor(activity) → definición del tipo (src/lib/activityKinds/)
+│  tipo o formato desconocido → UnsupportedActivity
 │
-│  Props: activity (ActivityResource | BlinkActivityResource), sessionId, onComplete, renderPlayer
-│  Estado: phase (intro | playing | completed)
-│  Ciclo:
-│  - render intro (title + field_custom_explanation)
-│  - usuario pulsa "Comenzar" → renderPlayer()
-│  - player llama onEnd(finalLogs) → handleEnd() → API
-│  - completed: animación fade + mensaje motivación + botón Continuar
-│
-│  handleEnd() ramifica por activity.type:
-│  - 'node--activity_blink'  → createBlinkLog + createBlinkSummary
-│  - cualquier otro          → createActivityLog + createActivitySummary
-│
-├── VerticalTextPlayer.tsx    (activity | activity_blink — tap para avanzar)
-├── AudioReadingPlayer.tsx    (activity con format audio_reading)
-└── ImageGroupPlayer.tsx      (activity_image_position)
+└── ActivityBase<A, E> (src/components/activities/ActivityBase.tsx)
+    │  Props: kind, activity, sessionId, renderPlayer(onEnd, errors), onComplete, onNext,
+    │         onExit, onRestart, progressCurrent/Total, askRating, onRating
+    │  Fases: intro | playing | completed
+    │  - intro: icono del tipo (kind.icon), título, field_custom_explanation, ajustes de fuente
+    │  - playing: PlayerShell (salir, reiniciar, progreso, contador de errores) + player
+    │  - el player llama onEnd(entries) → guardado:
+    │      getNextIteration(kind.summaryBundle) → buildTracking(kind, …)
+    │      → postLog por entrada → postSummary con los ids de los logs
+    │  - completed: métricas ("Tu tiempo", kind.metrics(), "Errores" si cuenta errores;
+    │    con 3 o más se apilan), "¿Cómo ha ido?" si askRating, motivación, botones
+    │  - si falla algún POST: InlineAlert + "Reintentar" (repite todo el guardado);
+    │    "Siguiente actividad" bloqueado y "Volver a la sesión" sale sin marcarla hecha
+    │
+    ├── VerticalTextPlayer.tsx   (node--activity vertical_list/blink y node--activity_blink)
+    ├── AudioReadingPlayer.tsx   (node--activity con formato audio_reading)
+    └── ImageGroupPlayer.tsx     (node--activity_image_position)
 ```
 
-`ActivityRouter` selecciona player según `activity.type` primero, luego `field_activity_format`:
+Reparto:
 
-```typescript
-// src/components/activities/ActivityRouter.tsx
-if (activity.type === 'node--activity_image_position') → ImageGroupPlayer
-if (activity.type === 'node--activity_blink')          → ActivityBase + VerticalTextPlayer
-// else: node--activity
-switch (field_activity_format):
-  'blink' | 'vertical_list' → VerticalTextPlayer
-  'audio_reading'            → AudioReadingPlayer
-```
+| Dónde | Qué |
+|---|---|
+| `src/lib/activityKinds/types.ts` | `TrackedEntry` (`item`, `time`, `errors`), `TextEntry` (+`weight`), `ImageEntry` (+`correctPosition`, `answer`), `Metric`, `ActivityKind<A, E>` |
+| `src/lib/activityKinds/{verticalText,blink,imagePosition}.ts` | Definición pura de cada tipo |
+| `src/lib/activityKinds/tracking.ts` | `buildTracking(kind, activity, entries, ctx)`: campos comunes (`label`, `field_item`, `field_time`, `field_iteration`, `field_activity_type`, `field_errors` si se cuentan) y relaciones (`field_activityid`, `field_sessionid`, `field_activitylogs`, área y nivel) |
+| `src/lib/activityKinds/index.ts` | Registro `kindFor(activity)` por `activity.type` |
+| `src/lib/api/tracking.ts` | `postLog(logType, payload)` / `postSummary(summaryType, payload)`; la ruta sale del tipo (`activitylog--X` → `/activitylog/X`) |
+
+Lo que cada tipo escribe (fijado por los tests de oro, `src/lib/activityKinds/__tests__/goldenPayloads.test.ts`):
+
+| Tipo | `field_activity_type` | Motivación | Log propio | Summary propio | Métricas extra |
+|---|---|---|---|---|---|
+| `vertical_text` (`node--activity`) | `field_activity_format` | `field_activity_format` | `field_weight` | ninguno | ninguna |
+| `blink` (`node--activity_blink`) | `activity_blink` | `blink` | `field_weight` | ninguno | ninguna |
+| `image_position` | `image_position` | `image_position` | `field_weight` = posición correcta, `field_answer`, `field_correct` | `field_correct_count`, `field_items_count` | Aciertos `correctas / total` |
 
 La sesión (`app/(auth)/session/[id].tsx`) carga cada actividad con la función correcta según `ref.type`:
 ```typescript

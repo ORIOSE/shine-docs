@@ -195,6 +195,12 @@ activitysummary
   └── summary_audio_reading    (futuro)
 ```
 
+En la app no hay que escribir el guardado: `ActivityBase` lo hace para cualquier tipo con
+`buildTracking` (`src/lib/activityKinds/tracking.ts`), que pone los campos comunes y las
+relaciones (incluidas área y nivel del summary, que leen las reglas de nivel). El tipo nuevo
+solo declara en su definición los atributos propios del log (`logAttributes`) y del summary
+(`summaryAttributes`). Ver `docs/activity-system.md` → "Cómo añadir un nuevo tipo de actividad".
+
 ---
 
 ## Consideraciones de rendimiento

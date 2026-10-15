@@ -67,9 +67,9 @@ Cuando se crea un nuevo tipo de actividad, todos los elementos deben seguir el m
 
 ---
 
-## 2. Convenciones JavaScript (código acoplado Drupal)
+## 2. Convenciones JavaScript (código acoplado Drupal, histórico)
 
-> Aplica al código en `activitylog_register/js/` mientras se mantiene la versión acoplada.
+> **Histórico.** Aplicaba a `activitylog_register/js/`, retirado en la FASE 9. Para la app, ver la sección 3 y `docs/activity-system.md` ("Cómo añadir un nuevo tipo de actividad").
 
 - **Patrón de actividades**: clase base `Activity` con subclases por tipo
 - Métodos obligatorios en cada subclase: `prepareActivity()`, `playActivityItem()`, `addRegisterLog()`
@@ -96,9 +96,10 @@ shine-app/
 ├── src/
 │   ├── components/
 │   │   ├── activities/         # Un archivo por tipo de actividad
-│   │   │   ├── ActivityBase.tsx
+│   │   │   ├── ActivityRouter.tsx   # tipo → player, monta ActivityBase
+│   │   │   ├── ActivityBase.tsx     # intro, marco, guardado, pantalla final (común)
 │   │   │   ├── VerticalTextPlayer.tsx
-│   │   │   ├── ImagePositionPlayer.tsx
+│   │   │   ├── ImageGroupPlayer.tsx
 │   │   │   └── AudioReadingPlayer.tsx
 │   │   ├── statistics/         # Componentes de gráficas
 │   │   │   ├── ActivityEvolutionChart.tsx
@@ -109,11 +110,12 @@ shine-app/
 │   │   ├── useActivityLog.ts
 │   │   └── useSession.ts
 │   ├── lib/
+│   │   ├── activityKinds/      # Definición pura por tipo + buildTracking (payloads)
 │   │   └── api/
 │   │       ├── client.ts       # Fetch + JWT interceptor
 │   │       ├── activities.ts   # Queries de actividades
 │   │       ├── sessions.ts     # Queries de sesiones
-│   │       └── tracking.ts     # Crear activitylog/summary
+│   │       └── tracking.ts     # postLog / postSummary genéricos
 │   ├── store/                  # Zustand stores
 │   │   ├── auth.ts
 │   │   └── session.ts

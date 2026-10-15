@@ -421,6 +421,115 @@ GET /jsonapi/activitysummary/summary_vertical_text?filter[field_activityid.id]={
 
 ---
 
+## Sesiones generadas, cierre y niveles (FASE 15)
+
+### Generar (u obtener) la siguiente sesión
+
+```
+POST /shine/session/generate
+Authorization: Bearer {access_token}
+```
+
+Sin cuerpo. Siempre actúa sobre el usuario autenticado. La app lo llama cuando el dashboard no
+tiene ninguna sesión pendiente (o al pulsar "Nueva sesión"); se puede llamar sin mirar antes,
+porque si ya hay una pendiente la devuelve en vez de crear otra.
+
+Reglas:
+- **Pendiente** = sesión propia, publicada y sin `field_completed_at`. Si existe, `200` con esa
+  sesión y `created: false`. Si no, el servidor recorre el árbol de decisión de
+  `docs/level-system.md` §6 (bloque inicial → evaluación a medias → evidencia → rachas →
+  periódica → regular), crea el nodo con `uid` del usuario y responde `201` con `created: true`.
+- Lock por usuario: dos llamadas simultáneas → `409 {"error":"in_progress"}` en la segunda.
+- Sin actividades con que llenar la sesión (catálogo vacío para esas áreas y niveles):
+  `422 {"error":"no_content","branch":...,"kind":...,"reason":...}` y no se crea nada. El
+  detalle (qué área, qué nivel) queda en watchdog, canal `shine_level`.
+- Sin token: `403`.
+
+Respuesta `201` / `200`:
+```json
+{
+  "session": "8fd6f3b3-...",
+  "nid": 13,
+  "title": "Sesión para conocerte 1",
+  "kind": "evaluation",
+  "reason": "initial",
+  "scope": null,
+  "seq": null,
+  "activities": ["uuid-actividad", "uuid-actividad"],
+  "created": true,
+  "branch": "initial"
+}
+```
+
+- `kind`, `reason`, `scope` (UUID del área o `null`) y `seq` son los campos del nodo
+  (`field_session_kind`, `field_evaluation_reason`, `field_evaluation_scope`,
+  `field_evaluation_seq`).
+- `activities` son los UUID en el orden de `field_activities`; la app puede navegar con
+  `session` directamente y cargar el detalle por JSON:API como hasta ahora.
+- `branch` dice qué rama del árbol la ha creado (`initial`, `continue_evaluation`, `evidence`,
+  `trigger_easy`, `trigger_hard`, `periodic`, `regular`). Es informativo; en una sesión ya
+  pendiente va `null`.
+- Títulos generados, pensados para la tarjeta: "Sesión N" (regulares), "Sesión para conocerte N"
+  (bloque inicial), "Sesión de ajuste" y "Sesión de ajuste 2" (evaluaciones).
+
+Comando de apoyo (solo servidor): `ddev drush shine-level:generate {uid} [--dry-run]` imprime la
+rama tomada, por qué, las actividades elegidas y los avisos (techo por contenido, huecos
+vacíos); sin `--dry-run` crea la sesión igual que el endpoint.
+
+### Cerrar una sesión
+
+```
+POST /shine/session/{uuid}/complete
+Authorization: Bearer {access_token}
+```
+
+Sin cuerpo. La app lo llama cuando ya no queda ninguna actividad por hacer en la sesión
+(`shouldAskSessionFeedback` → true) y **después** de haber enviado el `sessionfeedback`
+(sesión regular) o el último `activityfeedback` (sesión de ajuste). Si se llama antes, la
+valoración enviada después no cuenta.
+
+Reglas:
+- Solo el dueño de la sesión (`uid` del nodo). Otro usuario: `403 {"error":"not_owner"}`.
+- Verifica que cada actividad de `field_activities` tiene al menos un `activitysummary` del
+  usuario en esa sesión. Si falta alguna: `409 {"error":"incomplete","missing":[{"id":uuid,"title":...}]}`.
+- Idempotente: la primera llamada aplica las reglas de nivel (`docs/level-system.md` §5) y
+  marca `field_completed_at`; las siguientes devuelven lo mismo con `already_completed: true`
+  sin tocar nada. Si dos llamadas coinciden: `409 {"error":"in_progress"}` en la segunda.
+- UUID desconocido o que no es una sesión: `404 {"error":"not_found"}`.
+
+Respuesta `200`:
+```json
+{
+  "session": "36a3c27c-...",
+  "kind": "evaluation",
+  "reason": "initial",
+  "completed_at": 1792060000,
+  "already_completed": false,
+  "onboarding_state": "evaluating",
+  "level_changes": [
+    { "area": "uuid-area", "area_name": "Memoria de Trabajo", "from": "Level0", "to": "Level1", "reason": "initial" }
+  ],
+  "areas": [
+    { "area": "uuid-area", "area_name": "...", "level": "Level0", "probe_level": "Level1", "closed": false, "evidence": 0, "last_evaluated": null }
+  ]
+}
+```
+
+`level_changes` son los `userarealevel_log` escritos para esta sesión; `areas` es el estado de
+todas las áreas del usuario tras el cierre. Todo se deriva del estado guardado, por eso la
+respuesta repetida es idéntica.
+
+### Mi nivel por área
+
+```
+GET /jsonapi/userarealevel/userarealevel?filter[uid.id]={uuid}&include=area,level,probe_level
+GET /jsonapi/userarealevel_log/userarealevel_log?filter[uid.id]={uuid}&sort=-created
+```
+
+Solo lectura: las filas las crea y mueve el servidor.
+
+---
+
 ## Endpoint legacy (actual, acoplado)
 
 Existe mientras se completa la migración a JSON:API:
