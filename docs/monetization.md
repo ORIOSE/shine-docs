@@ -155,15 +155,21 @@ monetización; se especifica aquí para que el modelo lo admita sin cambios.
 | Campo | Tipo | Valores / notas |
 |---|---|---|
 | `field_holder` | entity_reference (user) | Titular cubierto. Para origen `organization`, el titular miembro. |
-| `field_organization` | entity_reference (organization) | Solo en origen `organization`. |
-| `field_plan` | list_string | `family`, `professional`, `school`, `courtesy` |
+| `field_organization` | entity_reference (organization) | Solo en origen `organization`. **Se añade en 17e** (subplan 10, campo base con `hook_update_N`). |
+| `field_catalog_plan` | entity_reference (`shine_entitlement_plan`) | **Añadido en 03 (2026-10-23)**: la entrada del catálogo de la que sale el cupo. Hace falta para calcular `max_learners` y para `recalc`: `field_plan` no basta (`courtesy` no tiene entrada propia y un centro puede tener varias). Nunca `free`. |
+| `field_plan` | list_string | `family`, `professional`, `school`, `courtesy`. Vacío = el `plan` de la entrada del catálogo. |
 | `field_source` | list_string | `app_store`, `play_store`, `stripe`, `organization`, `manual` |
 | `field_status` | list_string | `active`, `trial`, `grace`, `billing_retry`, `paused`, `expired`, `revoked` |
 | `field_starts_at` / `field_expires_at` | timestamp | `expires_at` nulo = sin caducidad (manual). |
 | `field_max_learners` | integer | Copiado del catálogo de planes (§4.3) en el momento de crear o actualizar el entitlement: `learners_per_seat × quantity`. Denormalizado a propósito (ver §4.3). |
 | `field_quantity` | integer | Asientos comprados (Stripe `quantity`; 1 en stores). |
 | `field_external_id` | string | ID de suscripción en RevenueCat / Stripe. Único por source. |
-| `field_raw_event` | json / text long | Último evento recibido, para auditoría. |
+| `field_raw_event` | json / text long | Último evento recibido, para auditoría. Solo lo ven los administradores. |
+| `field_event_timestamp` / `field_last_event_id` | integer (ms) / string | Idempotencia de webhooks: se descarta todo evento anterior al último aplicado (07, 11). |
+| `field_cancelled_at` | timestamp | Cancelación de la renovación (`CANCELLATION`): el acceso sigue hasta `expires_at`. |
+
+Implementado en `shine_entitlement` (subplan 03, 2026-10-23); modelo completo, catálogo y
+administración en `api-design.md`, "Entitlements".
 
 Reglas:
 - **Cubierto** = existe un entitlement del titular con status en {`active`, `trial`, `grace`,

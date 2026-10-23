@@ -40,7 +40,7 @@ El propio plan de planes se ha escrito con Fable.
 | 2 | `01b-backend-alumnos-y-cuenta.md` | 17a | Fable | 01a | [x] 2026-10-23 |
 | 3 | `02-backend-token-de-alumno.md` | 17a | Fable | 01b | [x] 2026-10-23 |
 | 4 | `01c-backend-vinculo-por-codigo.md` | 17a y §5.6 | Fable | 01b (en paralelo con 02) | [x] 2026-10-23 |
-| 5 | `03-backend-entitlement-y-catalogo.md` | 17c | Opus | 01a (en paralelo con 01b, 01c y 02) | [ ] |
+| 5 | `03-backend-entitlement-y-catalogo.md` | 17c | Opus | 01a (en paralelo con 01b, 01c y 02) | [x] 2026-10-23 |
 | 6 | `04-backend-acceso-y-muro.md` | 17c | Fable | 01c, 03 | [ ] |
 | 7 | `05-app-doble-token-y-alumnos.md` | 17b | Fable | 02, 04 | [ ] |
 | 8 | `06-app-alumnos-y-vinculo.md` | 17b y §5.6 | Opus | 05 | [ ] |

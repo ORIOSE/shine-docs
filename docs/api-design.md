@@ -771,6 +771,76 @@ accounts`.
 
 ---
 
+## Entitlements (FASE 17)
+
+Módulo `shine_entitlement` (`docs/monetization.md` §4; subplan `plans/entitlement/03`). Aquí solo
+el modelo y la administración: la decisión de acceso (quién está cubierto, cupo efectivo, muro
+402) es del subplan 04, y los webhooks que crean entitlements de pago, de 07 (RevenueCat) y 11
+(Stripe). **La app no consulta esta entidad**: le llega lo que necesita por `GET /shine/me`.
+
+### Entidad `entitlement`
+
+Un derecho de acceso de pago de un **titular**, independiente de quién cobra.
+
+| Campo | Tipo | Notas |
+|---|---|---|
+| `field_holder` | ref a `user` | El titular cubierto (cuenta `holder`, nunca un alumno). Es la clave `owner` de la entidad |
+| `field_catalog_plan` | ref a `shine_entitlement_plan` | De qué entrada del catálogo sale el cupo. No puede ser `free` |
+| `field_plan` | `family` \| `professional` \| `school` \| `courtesy` | Vacío = el `plan` de la entrada del catálogo |
+| `field_source` | `app_store` \| `play_store` \| `stripe` \| `organization` \| `manual` | Quién cobra o quién lo concedió |
+| `field_status` | `active` \| `trial` \| `grace` \| `billing_retry` \| `paused` \| `expired` \| `revoked` | Por defecto `active` |
+| `field_starts_at` / `field_expires_at` | timestamp | Inicio vacío = ahora. Caducidad vacía = no caduca, **solo** con origen `manual` u `organization` |
+| `field_quantity` | integer | Asientos comprados (Stripe `quantity`; 1 en stores) |
+| `field_max_learners` | integer | Cupo de alumnos. **Vacío al guardar = `learners_per_seat` del catálogo × asientos**; si viene informado se respeta. Copiado a propósito: un cambio del catálogo no afecta a lo ya vendido |
+| `field_external_id` | string (128) | Id de la suscripción en RevenueCat o Stripe. Único por origen (índice único + restricción `ShineEntitlementExternalIdUnique`); vacío en cortesías |
+| `field_cancelled_at` | timestamp | El titular canceló la renovación; el acceso sigue hasta la caducidad |
+| `field_raw_event`, `field_event_timestamp` (ms), `field_last_event_id` | | Rastro de los webhooks para auditoría e idempotencia (07, 11). **Solo los ven los administradores** |
+| `label` | | Generada: "Familia · app_store · marta@…" (se regenera si cambia el email del titular, también al borrar la cuenta) |
+
+`field_organization` (ref a `organization`) llega con el subplan 10. Valores fuera de lista, plan
+`free`, titular que es alumno, asientos < 1 o caducidad vacía en un origen de pago: el guardado
+falla (`preSave`), también desde código.
+
+**JSON:API** (`/jsonapi/entitlement/entitlement`): el titular ve **solo los suyos** con el permiso
+`view own entitlement entities` (lo tiene `authenticated`): `filter[field_holder.id]={su uuid}`
+devuelve los suyos y cualquier filtro sobre otro titular, `data: []`; el detalle de uno ajeno, 403.
+Nadie salvo `administer shine entitlements` crea, edita ni borra por JSON:API.
+
+### Catálogo de planes
+
+Config entity `shine_entitlement_plan` (`shine_entitlement.plan.{id}.yml`, en `config/sync`):
+`id`, `label`, `plan`, `learners_per_seat`, `groups_per_seat` y `external_ids` (lista de
+`origen:identificador`, orígenes `app_store`, `play_store`, `stripe`). Un mismo identificador no
+puede estar en dos planes (lo valida el formulario).
+
+| id | plan | Alumnos por asiento | Grupos | Productos y precios |
+|---|---|---|---|---|
+| `free` | family | 1 | 0 | — (el de quien no tiene entitlement; no se borra ni se concede) |
+| `family` | family | 3 | 0 | `app_store:` y `play_store:` `shine_family_monthly` / `shine_family_annual` |
+| `professional` | professional | 15 | 0 | `stripe:price_REEMPLAZAR_pro_monthly` / `_annual` (marcadores: los ids reales llegan con 09 y 11) |
+| `school_classroom` | school | 0 | 1 | `stripe:price_REEMPLAZAR_classroom_annual` |
+
+Servicio `shine_entitlement.plan_catalog` (`PlanCatalog`): `get(id)`, `all()`, `free()`,
+`resolveExternal(source, external_id)` (lanza `UnknownExternalPlanException` si no está: los
+webhooks lo traducen a 422 + watchdog para que la store o Stripe reintenten),
+`maxLearners(plan_id, quantity)` y `planForExternalId('origen:id')`.
+
+### Administración
+
+| Ruta | Qué |
+|---|---|
+| `/admin/shine/entitlements` | Vista `shine_entitlements`: titular, plan del catálogo, tipo, origen, estado, asientos, cupo, fechas, id externo y operaciones; filtros por titular (email o nombre), tipo, origen y estado. Acción "Conceder una cortesía" |
+| `/admin/shine/entitlements/add` | Cortesías y licencias manuales: origen siempre `manual`, tipo `courtesy` y estado `active` por defecto, plan del catálogo (sin `free`), asientos, fechas (vacías = ahora / no caduca) y cupo opcional. `?holder={uid}` rellena el titular |
+| `/admin/shine/entitlements/{id}/edit` | Editar (p. ej. revocar a mano). El origen no se cambia |
+| `/user/{uid}/entitlements` | Pestaña "Acceso" del perfil: los entitlements del titular y el botón de cortesía |
+| `/admin/config/shine/plans` | Catálogo de planes (alta, edición; `free` no se borra) |
+
+Todo con el permiso `administer shine entitlements`. Para aplicar a lo ya vendido un cambio del
+catálogo: `ddev drush shine-entitlement:recalc [--plan=ID] [--dry-run]` (solo entitlements vivos:
+ni `expired` ni `revoked` ni caducados).
+
+---
+
 ## Endpoint legacy (actual, acoplado)
 
 Existe mientras se completa la migración a JSON:API:

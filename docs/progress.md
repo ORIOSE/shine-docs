@@ -2,7 +2,7 @@
 
 > Actualizado en tiempo real. Si el desarrollo se interrumpe, retomar desde el primer ítem sin marcar de la fase en curso.
 
-**Última actualización**: 2026-10-23 (FASE 17, 02: token de alumno, grant `shine_learner` y claim `operated_by` en `shine_account`)
+**Última actualización**: 2026-10-23 (FASE 17, 03: módulo `shine_entitlement` con la entidad `entitlement`, el catálogo de planes, cortesías desde el admin y `drush shine-entitlement:recalc`)
 
 ---
 
@@ -1943,3 +1943,109 @@ errores nuevos.
   `owner` por `/shine/learners/{uuid}` (código, no pasa por el hook). `field_dyslexic_font` sigue
   siendo suya (200). Un titular sí se renombra a sí mismo. Cubierto en `LearnerGrantTest` con
   `PATCH /jsonapi/user/user/{uuid}` reales.
+
+### 03. Backend: entidad `entitlement`, catálogo de planes y admin de cortesías (2026-10-23)
+
+Módulo nuevo **`shine_entitlement`** (`package: shine`; depende de `shine_account` y de
+`shine_level`, que es dueño de `/admin/shine` y `/admin/config/shine`, donde cuelgan sus enlaces, y
+al que 04 enganchará la puerta de sesiones). En `config/sync`: los cuatro planes
+`shine_entitlement.plan.*`, la vista `views.view.shine_entitlements`, `core.extension` y
+`user.role.authenticated` (gana `view own entitlement entities`). Detalle en `docs/api-design.md`
+("Entitlements").
+
+- **Entidad `entitlement`** (campos de código, calcada de `activityfeedback`): los campos de §4.1
+  salvo `field_organization` (llega con 10), más `field_catalog_plan`, `field_cancelled_at`,
+  `field_event_timestamp` (integer big, ms), `field_last_event_id`, `created`, `changed` y `label`
+  generada ("Cortesía · manual · jose@…"). `field_holder` es la clave `owner`. Listas como
+  constantes públicas (`PLANS`, `SOURCES`, `STATUSES`, más `ENDED_STATUSES` y
+  `NON_EXPIRING_SOURCES`) y `isLive()`. `preSave`: valores fuera de lista, titular que no es
+  `holder`, plan de catálogo inexistente o `free`, caducidad vacía en un origen de pago y asientos
+  < 1 lanzan `InvalidArgumentException`; vacíos se rellenan: asientos 1, `field_plan` del catálogo,
+  `field_max_learners` = `learners_per_seat × asientos` (si viene informado, se respeta), inicio =
+  ahora.
+- **Unicidad (`field_source`, `field_external_id`)**: restricción de entidad
+  `ShineEntitlementExternalIdUnique` (mensaje en `validate()`, ignora vacíos) + índice único en la
+  tabla (`EntitlementStorageSchema`; MySQL admite varios NULL, así que las cortesías sin id no
+  chocan). Mismo patrón de doble barrera que `learner_access`.
+- **Acceso**: `view` para `administer shine entitlements` y para el titular con `view own
+  entitlement entities`; `create`/`update`/`delete` solo admin; `hook_jsonapi_entitlement_filter_access`
+  (gotcha 16). `field_raw_event`, `field_event_timestamp` y `field_last_event_id` solo los ven los
+  administradores (`hook_entity_field_access`): pueden llevar datos de la store que el titular no
+  necesita. `hook_user_update` vuelve a guardar los entitlements de un titular si cambia su email
+  (también al anonimizar la cuenta), para que la etiqueta no conserve el email antiguo: la misma
+  fuga que se corrigió en 01b con `learner_access`.
+- **Catálogo**: config entity `shine_entitlement_plan` (`id`, `label`, `plan`,
+  `learners_per_seat`, `groups_per_seat`, `external_ids`), esquema con `Choice` y `Range`, cuatro
+  entradas en `config/install` (`free` 1, `family` 3 con los productos reales de las stores,
+  `professional` 15 y `school_classroom` 0 + 1 grupo con marcadores `stripe:price_REEMPLAZAR_...`).
+  Formulario y list builder en `/admin/config/shine/plans`; el formulario valida la forma
+  `origen:identificador` y que un id no esté en otro plan, y junta todos los problemas en un solo
+  mensaje (Drupal guarda un error por elemento). `free` no se puede borrar (handler de acceso).
+- **`shine_entitlement.plan_catalog`** (`PlanCatalog`): `get`, `all`, `free`, `resolveExternal`
+  (lanza `UnknownExternalPlanException` con `source` y `externalId`; devuelve plan, nunca NULL),
+  `maxLearners`, `planForExternalId`.
+- **Admin de cortesías**: `EntitlementForm` en `/admin/shine/entitlements/add` (origen forzado
+  `manual` y oculto; al editar, origen bloqueado; tipo `courtesy` y estado `active` por defecto;
+  `free` fuera del selector; `?holder={uid}` rellena el titular; error de formulario si el titular
+  es un alumno o si un origen de pago se queda sin caducidad). Vista `shine_entitlements` en
+  `/admin/shine/entitlements` (filtros por titular, tipo, origen y estado como desplegables gracias
+  a `EntitlementViewsData`, acción "Conceder una cortesía", enlace en `/admin/shine`) y pestaña
+  "Acceso" en `/user/{uid}/entitlements` (display `embed_user`, permiso `administer shine
+  entitlements`).
+- **Drush `shine-entitlement:recalc [--plan=ID] [--dry-run]`** sobre
+  `shine_entitlement.max_learners_recalculator`: recalcula el cupo de los vivos (ni `expired` ni
+  `revoked` ni caducados), imprime tabla antes/después y "N de M cambian"; un plan desconocido falla;
+  un entitlement cuyo plan ya no existe se avisa y no se toca.
+
+**Decisión**: `field_catalog_plan` (referencia a la entrada del catálogo) no estaba en el subplan.
+Sin él no hay forma de calcular el cupo ni de recalcularlo: `field_plan` no identifica la entrada
+(`courtesy` no tiene una propia y un centro puede tener varias), y `field_external_id` es el id de la
+suscripción, no del producto. Anotado en `docs/monetization.md` §4.1.
+
+**Fallos encontrados en la verificación (no los cubrían los kernel tests) y corregidos**:
+- La lista daba 500 en cuanto había filas: la columna `operations` de Views solo existe si la entidad
+  declara `list_builder`; sin él el handler es `Broken`. Añadido `EntitlementListBuilder`.
+- El widget `datetime_timestamp` de core convierte una fecha vacía en "ahora": una cortesía "sin
+  caducidad" se guardaba caducando en el momento de crearla (y dejaba de estar viva). `EntitlementForm`
+  trata la fecha vacía como campo vacío.
+- `PlanForm` copiaba el textarea de productos tal cual a la propiedad `external_ids` (tipada como
+  array): `TypeError`. Ahora `copyFormValuesToEntity()` lo convierte en lista y los números en
+  enteros, y las propiedades del config entity van sin tipo, como en core.
+- Al escribir la vista a mano, `drush cex` la borró dos veces antes de importarla. Gotcha 23 en
+  `CLAUDE.md` (orden correcto, y lo de `list_builder`).
+
+**Tests kernel** (9 tests, 212 aserciones): `EntitlementTest` (preSave deriva etiqueta, tipo, cupo y
+fechas del catálogo y respeta un cupo escrito; `isLive`; nueve valores inválidos rechazados y
+`organization` sin caducidad aceptado; unicidad por origen con `validate()` y con el índice, mismo id
+en otro origen y varias cortesías sin id; catálogo, `resolveExternal` con desconocidos,
+`maxLearners`, `planForExternalId`; `free` no se borra; `recalc` solo toca los vivos que difieren,
+`--dry-run` no escribe, filtro por plan, segunda pasada vacía y bajar el cupo del catálogo no afecta a
+lo existente hasta el recálculo; la etiqueta sigue al email) y `EntitlementAccessTest` (acceso de
+entidad y de campo; JSON:API con `view own` solo lo propio, filtro sobre otro titular vacío, detalle
+ajeno 403, `field_raw_event` fuera de los atributos; sin `view own`, colecciones vacías sin error).
+La base de tests ocupa el uid 1 con una cuenta de relleno: el primer usuario de un kernel test es
+superusuario y se salta los permisos (gotcha 14).
+
+**Verificación en el sitio**: cortesía para jose desde `/admin/shine/entitlements/add` (Familia,
+sin caducidad → cupo 3, `caduca NULL`) y licencia manual de 2 asientos Profesional para oriol (cupo
+30, caduca 2027-10-23); los dos en la lista, el filtro activo + manual + cortesía deja solo el de
+jose, la pestaña `/user/2/entitlements` solo el de jose con el botón de cortesía. Un alumno como
+titular → error "es un alumno: el acceso se concede a su titular". JSON:API con el token real de
+jose: `filter[field_holder.id]` propio 1 (sin los campos de auditoría), el de oriol 0, sin filtro 1,
+detalle del de oriol 403, `PATCH` del suyo 403. Catálogo: duplicado + línea mal formada → dos
+errores y no se crea; un plan válido se crea y `resolveExternal` lo encuentra; borrar `free` → 403.
+`recalc --dry-run` lista el cupo cambiado a mano (9 → 3) sin escribir; sin `--dry-run` lo corrige;
+`--plan=gold` falla. Datos de prueba borrados; `cim -y` sin cambios; sin updates pendientes;
+watchdog sin errores nuevos tras las correcciones (los de las 16:39 son de los tres fallos de arriba).
+
+**Para subplanes siguientes**:
+- **04**: `PlanCatalog::free()` para el titular sin entitlement; `Entitlement::isLive()` y la lista
+  de estados que cubren (§4.1: active, trial, grace, billing_retry) para "cubierto"; cupo en
+  `field_max_learners`. Recordar invalidar caché al guardar un entitlement (tags de la entidad).
+- **07 / 11**: buscar por (`field_source`, `field_external_id`) y hacer upsert (el índice único
+  impide duplicar); `resolveExternal` + `UnknownExternalPlanException` → 422 + watchdog;
+  `field_event_timestamp` en ms para descartar eventos viejos; al crear, dejar `field_max_learners`
+  vacío para que lo calcule el catálogo, o escribirlo si el plan cambia (`PRODUCT_CHANGE`).
+- **09 / 11**: sustituir los `stripe:price_REEMPLAZAR_*` del catálogo por los ids reales (formulario
+  o `config/sync`).
+- **10**: `field_organization` como campo base nuevo con `hook_update_N` (la entidad ya existe).
