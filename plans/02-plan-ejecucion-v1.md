@@ -128,15 +128,15 @@ Criterio de selección: máximo valor terapéutico con mínima dependencia de as
 
 | Prioridad | Ejercicio (docx) | Por qué | Modelo de datos |
 |---|---|---|---|
-| 1 | 7.6 Matriz de discriminación visual | Sin audio, mecánica simple, área discriminación visual hoy sin cubrir | `activity_letter_matrix` + `logletermatrix`/`summary_letter_matrix` con field_correct_count, field_time |
+| 1 | 7.6 Matriz de discriminación visual | Sin audio, mecánica simple, área discriminación visual hoy sin cubrir | `activity_letter_matrix` + `loglettermatrix`/`summary_letter_matrix` con field_correct_count, field_time |
 | 2 | 7.8 Reordenamiento de sílabas | Sin audio obligatorio, trabaja decodificación y memoria | `activity_syllable_order` + bundles paralelos |
 | 3 | 7.5 Segmentación léxica | Sin audio, contenido facilísimo de crear (frases sin espacios) | `activity_word_split` + bundles paralelos |
 
 Cada uno sigue el checklist de `docs/activity-system.md` y las convenciones de nombres de `docs/conventions.md`. Los 7 restantes (los que exigen audio: omisión silábica, pseudopalabras, dictado inverso, intruso rímico, instrucciones encadenadas, más segmentación silábica y ortografía con colores) pasan a v1.1 junto con la producción de locuciones (valorar TTS de calidad como atajo).
 
-- [ ] Por ejercicio: node type + bundles log/summary + config export + tipos TS + Player + rama en ActivityRouter + tracking.
-- [ ] Diseño previo: spec en `plans/design/07-ejercicios-nuevos.md` y **diseño visual definitivo** (los 3 estados de cada ejercicio) en `plans/design/07-fase-ejecucion/` (mirror importado de claude.ai/design; abrir `preview.html`). Los prompts 13a/13b/13c ya apuntan a la sección concreta de cada uno.
-- [ ] Añadir términos de taxonomía `areas` que falten (discriminación visual, conciencia léxica...).
+- [x] Por ejercicio: node type + bundles log/summary + config export + tipos TS + Player + rama en ActivityRouter + tracking. — Hecho (2026-10-21, prompts 13a/13b/13c): `activity_letter_matrix` + `loglettermatrix`/`summary_letter_matrix` (`LetterMatrixPlayer`), `activity_syllable_order` (paragraphs `syllable_word`) + `logsyllableorder`/`summary_syllable_order` (`SyllableOrderPlayer`, tocar en orden), `activity_word_split` + `logwordsplit`/`summary_word_split` (`WordSplitPlayer`). Handlers de `shine_content` para los tres y lote de ejemplo `shine/content/fase13-ejemplos-v1.json`. Detalle en `docs/progress.md` y `docs/activity-system.md`.
+- [x] Diseño previo: spec en `plans/design/07-ejercicios-nuevos.md` y **diseño visual definitivo** (los 3 estados de cada ejercicio) en `plans/design/07-fase-ejecucion/` (mirror importado de claude.ai/design; abrir `preview.html`). Los prompts 13a/13b/13c ya apuntan a la sección concreta de cada uno.
+- [x] Añadir términos de taxonomía `areas` que falten (discriminación visual, conciencia léxica...). — No hizo falta: las 5 áreas de `docs/exercise-catalog.md` ya existen; discriminación visual = "Procesos Perceptivos (Discriminación Visual y Auditiva)" y conciencia léxica = "Competencia Lingüística y Fonológica".
 
 Verificación: los 3 ejercicios jugables dentro de una sesión mixta, con sus métricas en la pantalla de progreso (incluida precisión).
 
@@ -148,6 +148,18 @@ Verificación: los 3 ejercicios jugables dentro de una sesión mixta, con sus m�
 - [ ] TestFlight + Google Play internal testing con 3 a 5 familias piloto.
 - [ ] Web: `expo export` y despliegue estático.
 - [ ] Recogida de feedback del piloto antes del lanzamiento abierto.
+
+### FASE 16: Nuevos ejercicios (segundo lote)
+
+Repetición rápida de palabra (prompt `plans/prompts/16a-ejercicio-repeticion-rapida.md`, especificación en `docs/ejercicios/Repetición Rápida.md`): varias palabras por actividad, cada una una ronda de tiempo fijo en la que el tutor cuenta las repeticiones. Introduce la tercera familia de métrica en estadísticas (ritmo: repeticiones por segundo, "más es mejor") junto a tiempo y aciertos.
+
+- [x] Backend: node type `activity_rapid_repetition` (`field_words`, `field_time_limit`, comunes), bundles `lograpidrepetition` / `summary_rapid_repetition` con `field_repetitions` y **sin** contadores de acierto, `ACTIVITY_BUNDLES` + `hook_update_N` en feedback, handler `RapidRepetitionActivityHandler` (prefijo REP, exige etiquetas fonológicas), lote `shine/content/fase16-ejemplos-v1.json`, sesión "FASE 16 de jose". — Hecho (2026-10-21).
+- [x] App: tipos TS, `rapidRepetitionKind`, `src/lib/rapidRepetition.ts`, `RapidRepetitionPlayer` (ready / counting / done con huecos fijos, sonido `assets/sounds/round-end.wav`), `TimeBar` compartido, registro en `KINDS` / `ActivityRouter` / sesión. — Hecho (2026-10-21).
+- [x] Estadísticas: `RATE_SUMMARY_TYPES`, `computeRate`, `StatsSummary.repetitions`, `rate()`, `personalBest` `'rate'`, `baselineVsRecent` por ritmo, `RateEvolutionChart` y sección "Ejercicios de ritmo" en el detalle. — Hecho (2026-10-21).
+- [x] Evaluador de niveles: un "Demasiado fácil" sobre este tipo se conserva (bundle sin `field_items_count`; `hasField()` en `effectiveRating`). — Hecho y verificado con sesión inicial real (2026-10-21).
+- [ ] Revisión terapéutica del lote de ejemplo y lotes reales por nivel.
+
+Verificación: detalle en `docs/progress.md` (FASE 16).
 
 ---
 

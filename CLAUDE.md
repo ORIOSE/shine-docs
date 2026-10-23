@@ -57,11 +57,19 @@ ddev drush site:install --existing-config -y
 # Reconstruir cache
 ddev drush cr
 
+# Términos que no viajan en config/sync: sonoridad y esfuerzo de decodificación
+ddev drush php:script scripts/create-phonology-terms.php
+
 # Verificar que todo va bien
 ddev drush status
 ```
 
 > La URL local será `https://shine.ddev.site` (DDEV gestiona el SSL automáticamente).
+>
+> `settings.php` no está en git. Debe fijar `$settings['config_sync_directory'] = '../config/sync';`
+> **antes** del include de `settings.ddev.php`; si no, DDEV la pone en `sites/default/files/sync`
+> (vacío) y `drush cex` / `cim` / `config:status` trabajan contra otro directorio. Comprobar con
+> `ddev drush php-eval 'echo \Drupal\Core\Site\Settings::get("config_sync_directory");'`.
 
 ### 4. Generar las claves RSA para OAuth2
 
@@ -166,7 +174,9 @@ shine.test/
 │   │   ├── themes/
 │   │   │   └── custom/shine/ ← tema activo
 │   │   └── sites/default/
-│   └── config/sync/          ← config exportada (drush cex)
+│   ├── config/sync/          ← config exportada (drush cex)
+│   ├── content/              ← lotes JSON de actividades (drush shine-content:import)
+│   └── scripts/              ← scripts drush php:script (términos por entorno, backfills)
 ├── shine-app/                ← proyecto Expo (React Native + web)
 │   ├── app/                  ← rutas Expo Router
 │   │   ├── _layout.tsx       ← root layout con auth guard
@@ -184,12 +194,14 @@ shine.test/
 │   │   │   ├── stripHtml.ts
 │   │   │   ├── authForm.ts   ← validación y mensajes de entrar/crear cuenta (lógica pura, testeada)
 │   │   │   ├── activityKinds/ ← definición pura por tipo de actividad + buildTracking (payloads log/summary)
+│   │   │   ├── letterMatrix.ts, syllableOrder.ts, wordSplit.ts ← lógica pura del contenido de los tipos de la FASE 13
+│   │   │   ├── rapidRepetition.ts ← lógica pura de la repetición rápida (FASE 16): palabras, suma, ritmo, formato con coma
 │   │   │   ├── sessionCards.ts ← tarjetas del dashboard, sesión pendiente, nombres de sesiones de ajuste
 │   │   │   └── api/          ← client.ts, auth.ts (login/registro), activities.ts, sessions.ts (getSessions, generate, complete), tracking.ts (postLog/postSummary), statistics.ts, messages.ts
 │   │   ├── store/            ← auth.ts, session.ts (Zustand)
 │   │   └── components/
-│   │       ├── activities/   ← ActivityRouter → ActivityBase (todo lo común) → VerticalTextPlayer, AudioReadingPlayer, ImageGroupPlayer (solo el juego)
-│   │       └── statistics/   ← ActivityEvolutionChart, StandardComparison, SessionProgressBar, SessionComparisonTable, StatsDataTable
+│   │       ├── activities/   ← ActivityRouter → ActivityBase (todo lo común) → VerticalTextPlayer, AudioReadingPlayer, ImageGroupPlayer, LetterMatrixPlayer, SyllableOrderPlayer, WordSplitPlayer (solo el juego)
+│   │       └── statistics/   ← ActivityEvolutionChart, AccuracyEvolutionChart (ejercicios con aciertos), AreaRadarChart, SessionComparisonTable, StatsDataTable
 │   ├── package.json
 │   ├── app.json
 │   └── README.md
@@ -201,6 +213,7 @@ shine.test/
 │   ├── progress.md           ← ESTADO ACTUAL — leer primero al reanudar
 │   ├── conventions.md
 │   ├── activity-system.md
+│   ├── exercise-catalog.md   ← tipos de ejercicio, escala de niveles 0-10 y generación automática de contenido
 │   ├── api-design.md
 │   ├── metrics-tracking.md
 │   └── statistics-design.md
@@ -248,10 +261,11 @@ npm start           # QR para Expo Go (SDK 54)
 
 | Componente | Versión | Notas |
 |---|---|---|
-| Drupal | 11.4.4 | Upgrade desde D10; core update a 11.4 reconciliado en config el 2026-07-22 (split search_help/search_node, gzip→compress) |
+| Drupal | 11.4.10 | Upgrade desde D10; core update a 11.4 reconciliado en config el 2026-07-22 (split search_help/search_node, gzip→compress). 11.4.10 el 2026-10-16 (SA-CORE-2026-013 a 016) |
 | PHP | 8.3 | |
 | MariaDB | 10.11 | |
-| Drush | 13.7.2 | |
+| Drush | 13.8.0 | |
+| composer-patches | 2.0.0 | Sin parches. Los parches van en `extra.patches` y se fijan en `patches.lock.json` (versionado). Tras añadir uno: `ddev composer patches-relock && ddev composer patches-repatch` |
 | simple_oauth | 6.1.1 | OAuth2. La app usa el grant `password` (login in-app) |
 | simple_oauth_password_grant | 2.1.0 | Contrib: re-añade el grant `password` a simple_oauth 6 (con flood control y login por email) |
 | rest (core) | core | Solo el recurso `user_registration` (`POST /user/register?_format=json`) |
@@ -281,8 +295,14 @@ no lo usa (se eliminaron `expo-auth-session` y `expo-web-browser`).
 POST /oauth/token                          grant_type=password&client_id=shine_expo_app
                                            &username={email}&password={pass}&scope=authenticated_user_access
 POST /user/register?_format=json           {"name":{"value":email},"mail":{"value":email},
-  (anónimo, REST core user_registration)    "pass":{"value":pass},"field_display_name":{"value":"Marta"}}
+  (anónimo, REST core user_registration)    "pass":{"value":pass},"field_display_name":{"value":"Marta"},
+                                            "field_adult_consent":{"value":true}}
 ```
+
+- **Consentimiento de adulto (FASE 17)**: sin `field_adult_consent: true` el registro anónimo da
+  `422` con `field_adult_consent: ...` en el mensaje (restricción `ShineAdultConsent` de
+  `shine_account`). `drush user:create` y el admin crean usuarios sin él. Hasta el subplan 05 la
+  app no lo envía: registrarse desde la app da 422; probar con las cuentas existentes.
 
 - **Identidad**: el `name` (username) de Drupal **es el email**; el nombre humano va en el campo
   `field_display_name` (string, 60) del usuario. `shine_oauth` implementa `hook_user_format_name_alter()`
@@ -304,11 +324,19 @@ POST /user/register?_format=json           {"name":{"value":email},"mail":{"valu
 ### Endpoints OAuth2
 
 ```
-POST /oauth/token         ← password grant (login in-app) / refresh
+POST /oauth/token         ← password grant (login in-app) / refresh / shine_learner (token de alumno, FASE 17)
 GET  /oauth/userinfo      ← info del usuario autenticado (JWT); sub = UUID, name = field_display_name
 GET  /oauth/jwks          ← claves públicas JWT
 GET  /oauth/authorize     ← Authorization Code (sigue activo, la app NO lo usa)
 ```
+
+- **Token de alumno (FASE 17, `shine_account`)**: `POST /oauth/token` con `Authorization: Bearer
+  {token del titular}` y `grant_type=shine_learner&client_id=shine_expo_app&learner={uuid}&scope=authenticated_user_access`
+  → access token **del alumno**, 12 h, **sin refresh** (se vuelve a pedir con el del titular), con
+  el claim `operated_by` = UUID del titular, que `hook_node_presave` copia a `field_operated_by` de
+  las sesiones nuevas. Con ese token toda la API es la del alumno; las rutas de cuenta dan 403.
+  Alumno ajeno, archivado o inexistente → `400 invalid_grant` (un solo error). Detalle en
+  `docs/api-design.md` ("Token de alumno").
 
 ### Endpoints custom (no JSON:API)
 
@@ -324,24 +352,42 @@ algún `activitysummary`; idempotente (`field_completed_at`). La app debe llamar
 ("Sesiones generadas, cierre y niveles"). Para depurar el árbol de decisión:
 `ddev drush shine-level:generate {uid} --dry-run`.
 
+```
+POST   /shine/learners                  ← crear alumno {display_name, avatar?} → 201 (FASE 17, shine_account)
+GET    /shine/learners                  ← mis alumnos (activos y archivados)
+GET    /shine/learners/{uuid}           ← un alumno
+PATCH  /shine/learners/{uuid}           ← nombre y avatar (solo owner)
+POST   /shine/learners/{uuid}/archive   ← archivar (solo owner; revoca sus tokens)
+DELETE /shine/learners/{uuid}/access    ← retirar mi acceso (409 last_owner si soy el único owner)
+POST   /shine/learners/{uuid}/invite    ← código de vínculo para otro adulto (solo owner) → 201 {code, expires_at}; el código no se guarda
+POST   /shine/learners/join             ← canjear {code} → guardian; 422 invite_invalid / own_invite; 429 por intentos (flood)
+GET    /shine/me                        ← titular + alumnos (otros módulos amplían con hook_shine_me_alter)
+POST   /shine/account/delete            ← borrar (anonimizar) mi cuenta {password}
+```
+Solo **titulares** (`_shine_holder`, por `field_account_kind`): un token de alumno recibe 403. Un
+alumno que no sea mío es **404, nunca 403**. Cupo del plan gratuito: 1 alumno
+(`shine_account.learner_quota`, lo sustituye 04). Forma de `learner`, errores y reglas por rol en
+`docs/api-design.md` ("Cuentas y alumnos").
+
 ### Consumer configurado
 
 - **client_id**: `shine_expo_app`
 - **client_secret**: (vacío) — desde 2026-07-21 el consumer es **cliente público** (B4). Con PKCE el secreto es innecesario y en un bundle JS sería público de facto. NO reintroducir secret.
 - **UUID**: `5393c7d5-0f7b-4482-a770-0e5ce00639c2`
-- **grant_types**: `authorization_code`, `refresh_token`, `password` (este último es el que usa la app)
+- **grant_types**: `authorization_code`, `refresh_token`, `password` (login de la app) y `shine_learner` (token de alumno, FASE 17)
 - **scope**: `authenticated_user_access`
 - **redirect_uris configuradas**:
   - `exp://localhost:19000/--/oauth2redirect` — Expo Go (móvil)
   - `http://localhost:8081` — web dev
 - **confidential**: false (cliente público)
 
-> El consumer es una **entidad de contenido** (vive en BD, no en `config/sync`): `drush cex` no lo captura y hay que recrearlo/ajustarlo en cada entorno (ver "Configuración en un PC nuevo"). Al crearlo, poner `confidential: false`, no asignar secret y **marcar el grant `password`** (sin él, `/oauth/token` devuelve `unsupported_grant_type`):
+> El consumer es una **entidad de contenido** (vive en BD, no en `config/sync`): `drush cex` no lo captura y hay que recrearlo/ajustarlo en cada entorno (ver "Configuración en un PC nuevo"). Al crearlo, poner `confidential: false`, no asignar secret y **marcar los grants `password` y `shine_learner`** (sin ellos, `/oauth/token` devuelve `unsupported_grant_type`):
 > ```bash
 > ddev drush php-eval "
 > \$c = \Drupal::entityTypeManager()->getStorage('consumer')->loadByProperties(['client_id' => 'shine_expo_app']);
 > \$c = reset(\$c); \$g = array_column(\$c->get('grant_types')->getValue(), 'value');
-> if (!in_array('password', \$g)) { \$g[] = 'password'; \$c->set('grant_types', \$g)->save(); } echo implode(',', \$g);
+> foreach (['password', 'shine_learner'] as \$grant) { if (!in_array(\$grant, \$g)) { \$g[] = \$grant; } }
+> \$c->set('grant_types', \$g)->save(); echo implode(',', \$g);
 > "
 > ```
 >
@@ -378,7 +424,7 @@ ddev drush php-eval "
 - **ID**: `authenticated_user_access`
 - **name**: `authenticated_user_access` (igual que el ID — ver bug arriba)
 - **Granularidad**: Rol `authenticated`
-- **grant_types habilitados**: `authorization_code`, `refresh_token`, `password` (exportado en `simple_oauth.oauth2_scope.authenticated_user_access.yml`; si falta `password`, el token da `invalid_scope`)
+- **grant_types habilitados**: `authorization_code`, `refresh_token`, `password`, `shine_learner` (exportado en `simple_oauth.oauth2_scope.authenticated_user_access.yml`; si falta uno, ese grant da `invalid_scope`). Cada grant necesita un tipo de esquema `grant_type.{id}` (el de `shine_learner` está en `shine_account.schema.yml`)
 
 ### Claves RSA
 
@@ -456,6 +502,12 @@ npx expo install expo-av
 | `vertical_list` | Tap para avanzar, animación slide | `VerticalTextPlayer` |
 | `audio_reading` | Lectura en voz alta con cronómetro | `AudioReadingPlayer` |
 
+Tipos con node type propio (sin `field_activity_format`): `activity_blink` → `VerticalTextPlayer`;
+`activity_image_position` → `ImageGroupPlayer`; FASE 13: `activity_letter_matrix` → `LetterMatrixPlayer`,
+`activity_syllable_order` → `SyllableOrderPlayer`, `activity_word_split` → `WordSplitPlayer`; FASE 16:
+`activity_rapid_repetition` → `RapidRepetitionPlayer` (sin aciertos ni errores: la métrica es el ritmo). Registro en
+`src/lib/activityKinds/index.ts`; detalle en `docs/activity-system.md`.
+
 ### field_text — formato HTML
 
 `field_text` devuelve array de `{ value: "<p>CA SA</p>", processed: "<p>CA SA</p>" }`.
@@ -482,6 +534,8 @@ Authorization: Bearer {access_token}
 - `GET /jsonapi/activity_message/motivation_message` — requiere auth
 - `POST /jsonapi/activitylog/logverticaltext` — crear log
 - `POST /jsonapi/activitysummary/summary_vertical_text` — crear resumen
+- FASE 13: `GET /jsonapi/node/activity_letter_matrix/{uuid}`, `GET /jsonapi/node/activity_syllable_order/{uuid}?include=field_items,field_items.field_image,field_items.field_image.field_media_image`, `GET /jsonapi/node/activity_word_split/{uuid}`; tracking en `/jsonapi/activitylog/{loglettermatrix|logsyllableorder|logwordsplit}` y `/jsonapi/activitysummary/{summary_letter_matrix|summary_syllable_order|summary_word_split}`
+- FASE 16: `GET /jsonapi/node/activity_rapid_repetition/{uuid}` (`field_words[]`, `field_time_limit`); tracking en `/jsonapi/activitylog/lograpidrepetition` y `/jsonapi/activitysummary/summary_rapid_repetition` (`field_repetitions`; **sin** `field_correct_count` ni `field_items_count`, para no activar el freno por aciertos del evaluador)
 - `GET /jsonapi/activitysummary/summary_vertical_text?filter[uid.id]={uuid}` — mis resúmenes
 - `POST /jsonapi/sessionfeedback/sessionfeedback` — auto-evaluación de fin de sesión
 - `GET /jsonapi/sessionfeedback/sessionfeedback?filter[uid.id]={uuid}&include=easiest_activity.field_main_area,...` — mis auto-evaluaciones con las áreas de cada actividad
@@ -490,7 +544,10 @@ Authorization: Bearer {access_token}
 - `GET /jsonapi/userarealevel/userarealevel?filter[uid.id]={uuid}&include=area,level` — mi nivel por área (FASE 15; solo lectura, lo escribe el servidor). `GET /jsonapi/userarealevel_log/userarealevel_log?filter[uid.id]={uuid}` — mi histórico de cambios
 - `GET /jsonapi/taxonomy_term/areas` — las áreas de trabajo (vértices del gráfico radial); lectura con `access content`
 - `GET /jsonapi/taxonomy_term/activity_cycle` — ciclos obligatorios (FASE 15, hoy solo "Sílabas", término de contenido que se crea por entorno); lectura con `access content`. Las actividades lo referencian con `field_cycle` + `field_cycle_weight`
+- `GET /jsonapi/taxonomy_term/sonority` y `GET /jsonapi/taxonomy_term/decoding_effort`: categorización fonológica (dos niveles: grupo y término concreto). Términos de contenido, se crean con `scripts/create-phonology-terms.php`. `activity` y `activity_blink` los referencian con `field_sonority` y `field_decoding_effort` (múltiples, solo términos de segundo nivel); por grupo: `filter[field_sonority.parent.name]=Oposición sorda/sonora`. Detalle en `docs/exercise-catalog.md` §3.5
 - `node/session` (FASE 15) añade `field_session_kind` (`regular`|`evaluation`), `field_evaluation_scope`, `field_evaluation_reason`, `field_evaluation_seq`; `sessionfeedback` añade `overall` (`easy`|`ok`|`hard`); `user` añade `field_onboarding_state` (`evaluating`|`regular`)
+- FASE 17 (`shine_account`): `user` añade `field_account_kind` (`holder`|`learner`), `field_adult_consent`, `field_adult_consent_at`, `field_archived_at`, `field_avatar`; `node/session` añade `field_operated_by` (ref a user, el titular que generó la sesión). Solo los escribe el servidor (PATCH → 403), salvo `field_avatar` y `field_adult_consent` al registrarse. Detalle en `docs/api-design.md` ("Campos de cuenta")
+- `GET /jsonapi/learner_access/learner_access` (FASE 17): accesos adulto→alumno del titular autenticado (`field_holder` es la clave `owner`; solo lectura, 403 al escribir). `filter[field_learner.id]` devuelve vacío para un titular normal (el alumno es otro usuario y `authenticated` no tiene `access user profiles`); la app usa `/shine/learners`
 
 ### Filtros útiles para estadísticas
 
@@ -530,13 +587,15 @@ Los módulos `activitylog`, `activitysummary`, `sessionfeedback` y `activityfeed
 | Módulo | Función |
 |---|---|
 | `activity_message` | Entidad `activity_message` (bundles: `explanation_message`, `motivation_message`) |
-| `activitylog` | Entidad `activitylog` (bundles: `logverticaltext`, `log3_textlistblink`, `logimageposition`) |
-| `activitysummary` | Entidad `activitysummary` (bundles: `summary_vertical_text`, `summary3_vertical_text_blink`, `summary_image_position`). Implementa `hook_jsonapi_ENTITY_TYPE_filter_access()` (gotcha 16) |
+| `activitylog` | Entidad `activitylog` (bundles: `logverticaltext`, `log3_textlistblink`, `logimageposition`; FASE 13: `loglettermatrix`, `logsyllableorder`, `logwordsplit`; FASE 16: `lograpidrepetition`) |
+| `activitysummary` | Entidad `activitysummary` (bundles: `summary_vertical_text`, `summary3_vertical_text_blink`, `summary_image_position`; FASE 13: `summary_letter_matrix`, `summary_syllable_order`, `summary_word_split`; FASE 16: `summary_rapid_repetition`). Implementa `hook_jsonapi_ENTITY_TYPE_filter_access()` (gotcha 16) |
 | `shine_oauth` | Reescribe el claim `sub` de OIDC al UUID del usuario (gotcha 15). Imprescindible: sin él la app no encuentra sus propios datos. Desde FASE 14 también `hook_user_format_name_alter()`: el display name del usuario es `field_display_name` (el username es el email) |
 | `sessionfeedback` | Entidad `sessionfeedback` (sin bundles, campos de código): auto-evaluación de fin de sesión. Alimenta el mapa de áreas (gráfico radial) de "Mi progreso". Implementa `hook_jsonapi_ENTITY_TYPE_filter_access()` (gotcha 16) |
 | `activityfeedback` | Entidad `activityfeedback` (sin bundles, campos de código, calcada de `sessionfeedback`): valoración `easy`/`ok`/`hard` por actividad en sesiones de ajuste (FASE 15). Dato crudo para las reglas de nivel; `preSave` rechaza un `rating` fuera de la lista. Implementa `hook_jsonapi_ENTITY_TYPE_filter_access()` (gotcha 16) |
 | `shine_session_access` | Node grants para `node.session` (FASE 15): realm `shine_session_owner`, gid = uid. Cada usuario ve solo sus sesiones, también en colecciones JSON:API y Views; `bypass node access` lo ve todo. Reconstruye `node_access` al instalarse (gotcha 17) |
 | `shine_level` | Sistema de niveles (FASE 15): entidades `userarealevel` (nivel vigente por usuario y área, índice único uid+area) y `userarealevel_log` (histórico inmutable), servicios `shine_level.level_repository` (`getForUser`, `logChange`) y `shine_level.level_ladder` (orden de `activity_level` por peso y nombre natural; `hasContent` = techo por contenido), config `shine_level.settings` (§8) con formulario en `/admin/config/shine/level`, y `hook_entity_field_access` que impide al usuario editar `field_onboarding_state`. `shine_level.level_reset` (`LevelReset`, "Reiniciar niveles", subplan 08), vistas de administración en `/admin/shine/*` y pestaña `/user/{uid}/levels`, `shine_level.evaluator` (`SessionEvaluator`, reglas §5 y `POST /shine/session/{uuid}/complete`) y `shine_level.session_generator` (`SessionGenerator`, árbol §6 y ciclos §7, `POST /shine/session/generate`, drush `shine-level:generate`). Tests: `cd shine && ddev exec vendor/bin/phpunit -c phpunit.xml public_html/modules/custom/shine_level` |
+| `shine_content` | Importación de lotes de actividades generadas (`docs/exercise-catalog.md` §4): `drush shine-content:import {lote.json} [--dry-run] [--publish]`. Valida el lote entero (con un error no escribe nada), resuelve áreas, niveles, ciclos, explicación, sonoridad y esfuerzo por nombre, crea o actualiza por `field_activity_code` (contenido congelado si ya hay summaries), crea sin publicar y al final imprime la cobertura área × nivel. Un handler por tipo (`ActivityHandlerInterface`, tag `shine_content_handler`): `activity_blink`, los tres de la FASE 13 y `activity_rapid_repetition` (FASE 16; `requiresPhonologyTags()` = TRUE: exige `sonoridad` o `esfuerzo`). Desde el 2026-10-21, **huella de contenido**: `field_content_hash` (sha256 de tipo + forma canónica del material, en los 7 bundles de actividad, escrito en `hook_node_presave`, servicio `shine_content.fingerprint`), detección de duplicados al importar (misma huella con otro código u 80 % de solapamiento de unidades = error; 50 % o unidad en 3+ actividades del mismo tipo y nivel = aviso), `drush shine-content:inventory` (lista de exclusión del generador: actividades en formato de lote con hash y unidades, siguiente código libre por prefijo, uso de unidades) y `drush shine-content:rehash`. Un handler nuevo debe implementar también `extractContent`, `canonicalContent` y `units`. Lotes en `shine/content/`. Tests: `cd shine && ddev exec vendor/bin/phpunit -c phpunit.xml public_html/modules/custom/shine_content` |
+| `shine_account` | Modelo de cuentas de la FASE 17 (`docs/monetization.md` §3, `plans/entitlement/`). **01a**: campos de cuenta en `user` (`field_account_kind`, `field_adult_consent` + `field_adult_consent_at` que fija `hook_user_presave`, `field_archived_at`, `field_avatar`) y `field_operated_by` en `node.session` (config en `config/sync`); restricción `ShineAdultConsent` (consentimiento obligatorio solo en el registro anónimo); `hook_entity_field_access` que deja esos campos solo al servidor/admin (`administer users`) y `field_adult_consent` solo editable en cuentas nuevas; rol `learner` sin permisos; `hook_mail_alter` que anula el correo a `@shine.invalid` (emails sintéticos de alumnos y cuentas borradas); `shine_account_update_11001` reclasifica a los usuarios existentes como `holder`. **01b**: entidad `learner_access` (alumno, titular, `field_role` owner/guardian/staff, `field_origin`, `status`; índice único por pareja, `field_holder` es la clave `owner`, `hook_jsonapi_learner_access_filter_access`), `LearnerAccessPolicy` (`shine_account.learner_access_policy`: única fuente de "quién puede qué"), `LearnerManager` (`shine_account.learner_manager`: alta con transacción y lock, `grantAccess` crea o reactiva, listado, edición, archivo con revocación de tokens, retirada de acceso, cupo y forma JSON), `LearnerQuotaInterface` (`shine_account.learner_quota`, 1 por defecto; 04 lo sustituye), `TokenRevoker`, `AccountDeleter` (`shine_account.account_deleter`: anonimización en transacción, regla de alumnos compartidos, etiquetas de acceso regeneradas), access check `_shine_holder` (`HolderAccessCheck`), controladores de `/shine/learners*`, `/shine/me` (con `hook_shine_me_alter`, ver `shine_account.api.php`) y `/shine/account/delete` (contraseña + `flood`), permiso `administer shine accounts`, vista `shine_learners` (`/admin/shine/learners`), `shine_account_update_11002` instala la entidad. **01c**: entidad `learner_invite` (alumno, creador = clave `owner`, `field_code_hash` HMAC con `hash_salt` y oculto por `hook_entity_field_access`, caducidad, usada por/cuándo, `status`; índice único por hash), `LearnerInviteRepository` (`shine_account.learner_invite_repository`: alfabeto, normalizar, hash, viva por alumno, anular) y `LearnerInviteManager` (`shine_account.learner_invite_manager`: `create` anula la anterior, `redeem` concede `guardian`/`invite` y gasta el código), config `shine_account.settings` (`invite_ttl_days`, límites de `flood`), rutas `invite`/`join`, `shine_account_update_11003`. **02**: grant OAuth `shine_learner` (plugin `Oauth2Grant` + `OAuth\LearnerGrant`: token de alumno de 12 h sin refresh para un titular con acceso activo, validando su Bearer con el resource server), `LearnerTokenContext` + `hook_simple_oauth_private_claims_alter` (claim `operated_by`), `CurrentOperator` (`shine_account.current_operator`) + `hook_node_presave` (`field_operated_by` en sesiones nuevas de alumnos), esquema `grant_type.shine_learner`, y `hook_entity_field_access` que impide al alumno editar su `field_display_name` y `field_avatar` con su token. Tests: `cd shine && ddev exec vendor/bin/phpunit -c phpunit.xml public_html/modules/custom/shine_account` |
 | `preprocess` | Hooks `preprocess_node` (inyecta mensaje motivación en plantillas Drupal acopladas) |
 
 > `activitylog_register` (endpoint legacy `POST /activitylog-register/add`) fue
@@ -580,6 +639,15 @@ ddev drush watchdog:show --count=20 --severity=Error
 ddev drush shine-level:generate {uid} --dry-run
 # Avisos del generador (techo por contenido, huecos vacíos)
 ddev drush watchdog:show --type=shine_level --count=20 --extended
+
+# Importar un lote de actividades (ruta relativa al directorio actual; lotes en shine/content/)
+ddev drush shine-content:import content/blink-level0-2-v1.json --dry-run   # solo valida (también duplicados)
+ddev drush shine-content:import content/blink-level0-2-v1.json --publish   # importa y publica
+
+# Qué hay ya en el catálogo (lista de exclusión del generador): tabla, o JSON con --json / --out
+ddev drush shine-content:inventory --type=activity_blink --level=Level0 --out=private/inventario-blink-l0.json
+# Recalcular la huella de contenido (tras cim en un entorno que ya tenía actividades, o si cambia la forma canónica)
+ddev drush shine-content:rehash
 ```
 
 ### Administración del sistema de niveles (FASE 15, subplan 08)
@@ -613,7 +681,7 @@ Todo con el permiso `administer shine level` (las vistas están en `config/sync`
 
 7. **Renombrar bundles de entidades custom** → NO se puede con `drush cim`. Requiere actualizar BD + recrear bundle programáticamente
 
-8. **Parches D8/D9/D10 en composer.json** → NO funcionan en D11. Eliminar todos antes del upgrade
+8. **Parches D8/D9/D10 en composer.json** → NO funcionan en D11. Eliminados el 2026-10-16 (no se aplicaba ninguno), junto con los paquetes privados de digitalbakers (`db/domain`, `db/lang_dropdown`, `db/rename_admin_paths`) y librerías huérfanas. Solo se usa el repo `packages.drupal.org`
 
 9. **Módulo `devel` en system.schema sin estar instalado** → puede bloquear `pm:enable`. Limpiar con:
    ```php
@@ -623,7 +691,7 @@ Todo con el permiso `administer shine level` (las vistas están en `config/sync`
 
 10. **Temas con `core_version_requirement: ^10`** → no cargan en D11. Actualizar a `^10 || ^11`.
 
-11. **`drush core:requirements --severity=2`** → no funciona en Drush 13. Usar `ddev drush status`.
+11. **`drush core:requirements --severity=2`** → no funciona en Drush 13. Para ver solo errores: `ddev drush core:requirements --format=csv | grep ",Error,"`.
 
 12. **`npm install` en shine-app** → siempre con `--legacy-peer-deps` por conflictos de peer deps de Expo.
 
@@ -659,3 +727,13 @@ Todo con el permiso `administer shine level` (las vistas están en `config/sync`
     - Si `node_access` queda incompleta (p. ej. se importó el módulo sin que corriera `hook_modules_installed`), **todas las sesiones se ven con `access content`**. Reconstruir con `ddev drush php-eval '\Drupal::service(\Drupal\node\NodeAccessRebuild::class)->rebuild();'` o desde `/admin/reports/status`. `node_access_rebuild()` está deprecado desde 11.4.
     - El rebuild del módulo va en `hook_modules_installed`, no en `hook_install`: `node` marca "needs rebuild" después de `hook_install` y dejaría un aviso falso en el informe de estado.
     - Probar siempre con dos usuarios normales (A ve lo suyo, B recibe `data: []` y 403 en detalle); el user 1 tiene `bypass node access` y no detecta nada (gotcha 14).
+
+18. **`updb`: "The installed version of the Block Content / Taxonomy module is too old to update"** → la BD saltó al upgrade a D11 sin ejecutar `block_content_update_10300` (índice en `block_content_field_data.reusable`) ni `taxonomy_update_10100` (rutas de revisión en la definición instalada de `taxonomy_term`). Corregido en la BD local el 2026-10-16 replicando ambas con las clases de D11 y fijando la versión con `\Drupal::service('update.update_hook_registry')->setInstalledVersion('block_content', 10300)` (`taxonomy` → 10100). Cualquier otra copia de la BD (producción, otro PC) arrastra lo mismo: comprobar con `getInstalledVersion()`. En la misma BD faltaba el registro `entity.storage_schema.sql` de `activity_message.field_activity_types` (error "Entity/field definitions"); con la tabla vacía se arregla con `\Drupal::entityDefinitionUpdateManager()->updateFieldStorageDefinition($def)`. El 2026-10-23 `drush updb` listaba como error "too old to update" a block_content, contact, editor, filter, media, node, system, taxonomy y views: no eran versiones de esquema, sino 15 **`post_update` eliminados en 11.0.0** que la BD nunca registró como ejecutados (`key_value` `post_update.existing_updates`; los detecta `SystemRequirementsHooks::checkRequirements('update')`). Como su efecto es config (manda `config/sync`) o datos de módulos vacíos, se registraron como hechos con `\Drupal::service('update.post_update_registry')->registerInvokedUpdates([...])` y el aviso desapareció. Receta para diagnosticar: comparar `getRemovedPostUpdates($module)` con `existing_updates`.
+
+19. **Tipo de actividad nuevo → 422 en `sessionfeedback` / `activityfeedback`** → sus campos `easiest_activity`, `hardest_activity` y `activity` son campos base con `target_bundles` fijados en `ACTIVITY_BUNDLES` (`Sessionfeedback.php`, `Activityfeedback.php`). Añadir el bundle ahí y sincronizar la definición instalada con un `hook_update_N` (`updateFieldStorageDefinition`, ver `sessionfeedback_update_11002`) + `drush updb`. Los síntomas en la app: "No hemos podido guardarlo" en "¿Cuál te ha costado un poco más?" y en "¿Cómo ha ido?". Checklist completo en `docs/activity-system.md`. Los bundles de summary **sin** contadores de acierto (ritmo, FASE 16) son válidos: `SessionEvaluator::effectiveRating()` comprueba `hasField()` antes de aplicar el freno por aciertos.
+
+20. **Guardar un usuario borra todos sus access tokens** → simple_oauth 6.1.1 implementa `hook_user_update` (`TokenExpiryTriggerHandler::handleUserUpdate`) y borra los `oauth2_token` del usuario en **cualquier** guardado, no solo al cambiar contraseña o roles; los refresh tokens se conservan. La app lo absorbe porque en un 401 hace refresh (`client.ts`), pero tras el `PATCH` de `field_dyslexic_font` o cuando `shine_level` mueve `field_onboarding_state` el token anterior ya no vale. Afecta a los tokens sin refresh (el token de alumno de la FASE 17): cualquier guardado del usuario alumno lo invalida. Al probar con curl, pedir token nuevo después de cada escritura sobre el usuario.
+
+22. **Ids de plugin con `:`** → el gestor de plugins de Drupal trata `:` como separador de derivativas (`PluginBase::DERIVATIVE_SEPARATOR`): `createInstance('urn:shine:learner')` buscaría el plugin base `urn` con derivativa `shine:learner`. Como simple_oauth usa el id del plugin `Oauth2Grant` como valor de `grant_type`, el grant de alumno se llama `shine_learner`. Cosas que hay que tocar al añadir un grant: el plugin, `grant_types` del consumer (contenido, por entorno), `grant_types` del scope (config) y un tipo de esquema `grant_type.{id}` en `config/schema` (sin él los kernel tests fallan con "missing schema"). Además, el proveedor de autenticación de simple_oauth es **global** y se aplica a `/oauth/token` si la petición lleva un Bearer: un Bearer inválido da 401 antes de llegar al grant, y uno válido deja al usuario actual autenticado dentro del grant.
+
+21. **`hook_update_N` en un módulo nuevo no corre nunca** → al instalar un módulo Drupal fija su versión de esquema a la última update disponible **antes** de `hook_install` (`ModuleInstaller.php`), así que `drush updb` no la ve. Si la update depende de config que llega con `drush cim` (que instala el módulo antes de crear los campos), dejarla pendiente desde `hook_install` con `\Drupal::service('update.update_hook_registry')->setInstalledVersion('modulo', 11000)` y lanzar `drush updb` después de `cim`, como en `shine_account.install`. La update debe lanzar `UpdateException` si falta la config, para seguir pendiente.

@@ -35,5 +35,6 @@ Cada fichero es un prompt autocontenido para una sesión de Claude Code. Derivan
 | 16 | `13c-ejercicio-segmentacion.md` | Opus | 13a |
 | 17 | `14a-backend-produccion.md` | Fable | 13 completa |
 | 18 | `14b-publicacion-stores.md` | Opus | 14a |
+| 19 | `16a-ejercicio-repeticion-rapida.md` | Fable | 13 y 15 completas (puede ir antes o después de 14) — ejecutado el 2026-10-21 (`docs/progress.md`, FASE 16); pendiente la revisión terapéutica del lote |
 
 Hito de control tras el paso 13 (FASE 12 completa): demo con datos reales a 2 o 3 familias/terapeutas antes de invertir en los ejercicios nuevos.

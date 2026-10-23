@@ -2,7 +2,7 @@
 
 > Actualizado en tiempo real. Si el desarrollo se interrumpe, retomar desde el primer ítem sin marcar de la fase en curso.
 
-**Última actualización**: 2026-09-29 (sesión 12 — FASE 14: login y registro in-app, sin navegador; decisión de publicar en stores vía Capacitor)
+**Última actualización**: 2026-10-23 (FASE 17, 02: token de alumno, grant `shine_learner` y claim `operated_by` en `shine_account`)
 
 ---
 
@@ -393,6 +393,227 @@ silencio.
 
 Verificado con el usuario 2: 2 + 2 + 2 = **6 resúmenes** y títulos reales
 resueltos (A1, A2, A3, S1). `tsc`, `lint` y 45/45 tests limpios.
+
+---
+
+## FASE 13 — Nuevos ejercicios (primer lote)
+**Estado**: ✅ Completada (2026-10-21) — backend + app de los tres tipos (prompts 13a, 13b y 13c en una sola pasada). Pendiente: revisión terapéutica del contenido de ejemplo y lotes reales por nivel.
+
+### Qué hay
+
+| Ejercicio | Node type | Bundles | Player | Lógica pura |
+|---|---|---|---|---|
+| 7.6 Matriz de discriminación visual (13a) | `activity_letter_matrix` (`field_target`, `field_columns`, `field_rows`, `field_cells` múltiple = una ronda por valor, `field_time_limit`) | `loglettermatrix` / `summary_letter_matrix` | `LetterMatrixPlayer` | `src/lib/letterMatrix.ts` |
+| 7.8 Reordenamiento de sílabas (13b) | `activity_syllable_order` (`field_items` → paragraph `syllable_word`: `field_syllables` "pan-ta-lón", `field_extra_syllables`, `field_image`) | `logsyllableorder` / `summary_syllable_order` | `SyllableOrderPlayer` | `src/lib/syllableOrder.ts` |
+| 7.5 Segmentación léxica (13c) | `activity_word_split` (`field_sentences` múltiple, con espacios) | `logwordsplit` / `summary_word_split` | `WordSplitPlayer` | `src/lib/wordSplit.ts` |
+
+Los tres reutilizan los campos comunes de `activity_blink` (área principal con el área por defecto
+del tipo, área secundaria, nivel, código, instrucción, explicación, ciclo, sonoridad y esfuerzo),
+no cuentan errores (`activity_options`) y siguen el camino único `ActivityRouter` → `ActivityBase`
+→ player. Modelado final en `docs/exercise-catalog.md` §6 y `docs/activity-system.md`.
+
+### Decisiones
+
+- **Un log por ronda en la matriz**, no por objetivo (la propuesta del catálogo): así la suma de
+  `field_time` de los logs sigue siendo el tiempo del intento, que es lo que `buildTracking` y
+  "Tu tiempo" asumen para todos los tipos. El log lleva `field_correct_count` / `field_items_count`
+  de la ronda (storages nuevos en `activitylog`) y el summary suma las rondas más `field_false_marks`
+  (celdas marcadas que no eran objetivo), aparte de `field_errors`.
+- **Bundles con doble t**: `loglettermatrix` (plan, prompt y catálogo escribían "logletermatrix";
+  renombrar un bundle después es el gotcha 7, así que se corrigió antes de crearlo).
+- **Sílabas explícitas** (`pan-ta-lón`) y **tocar en orden** en vez de arrastrar (accesible, sin
+  gestos; tocar un hueco devuelve la ficha). La app baraja sin dejar nunca el orden correcto y
+  evitando parejas consecutivas. Un fallo deja en ámbar las posiciones incorrectas, sin mensaje ni
+  reinicio, hasta que el usuario las corrige (decisión del usuario al probar; antes se devolvían
+  las fichas con un "Casi"); `field_attempts` cuenta los llenados completos hasta acertar y
+  `field_correct` = a la primera. Para que nada salte, la bandeja conserva la altura que tiene con
+  todas las fichas y el pie reserva siempre el hueco del botón "Siguiente".
+- **Segmentación**: tocar una letra pone el espacio justo delante de ella, marcando el inicio de
+  palabra (zonas de 48 px por letra, en vez de zonas minúsculas "entre" letras; decisión del
+  usuario al probar, antes iba detrás). Bajo la frase se ven las barras pendientes de colocar
+  (tantas como espacios tiene la frase) y desaparecen al ponerlas; no se pueden poner más de las
+  necesarias y "Comprobar" se activa cuando no queda ninguna. Acierto parcial: los espacios
+  correctos se fijan en verde y se quitan los demás (sus barras vuelven abajo).
+- **Áreas**: no hizo falta ningún término nuevo (discriminación visual = Procesos Perceptivos,
+  conciencia léxica = Competencia Lingüística).
+- **Sin textos de instrucción durante el juego, en ningún tipo** (decisión del usuario al probar):
+  la explicación va en la intro. Cada tipo declara `instructions(activity)` en su definición
+  (`src/lib/activityKinds/`) y `ActivityBase` la muestra cuando el nodo no trae
+  `field_custom_explanation` (la `instruccion` del lote, que manda si existe). Retirados de los
+  players: "Toca para continuar" (lista vertical), "Lee el texto en voz alta" (lectura), "Memoriza
+  la posición de cada imagen" (imágenes), "La que faltaba lleva un aro" (matriz), "¿dónde empieza
+  cada palabra?" y las pistas de sílabas y segmentación. Se quedan el enunciado explícito
+  ("Encuentra todas las p", "¿En qué posición estaba?"), el progreso discreto y los avisos de
+  resultado ("Casi. Prueba otra vez.", acierto parcial) en un hueco de alto fijo para que nada se
+  mueva; la bandeja de fichas y el bloque de acierto de las sílabas comparten altura por lo mismo.
+- **Estadísticas**: `ACCURACY_SUMMARY_TYPES` / `isAccuracySummary` sustituyen a
+  `IMAGE_SUMMARY_TYPE`; `computeAccuracy` lee primero `field_correct_count` / `field_items_count` y
+  solo deriva de los logs si faltan. "Detalle de estadísticas" tiene una sección "Ejercicios con
+  aciertos" (una tarjeta por actividad, `AccuracyEvolutionChart`, antes
+  `ImagePositionEvolutionChart`) y el historial por sesión cuenta todos los tipos.
+- **Importador**: handlers `LetterMatrixActivityHandler`, `SyllableOrderActivityHandler` y
+  `WordSplitActivityHandler` en `shine_content` (contratos de `contenido` en el catálogo §6) y lote
+  `shine/content/fase13-ejemplos-v1.json` (7 actividades Level0 a Level2, importado y publicado;
+  cuadrículas generadas con semilla 20261021). Hallazgo: `hasAffectingChanges()` de
+  entity_reference_revisions solo mira el primer delta, así que cambiar un paragraph que no es el
+  primero no se detectaba como cambio; `ContentImporter` marca UPDATED también cuando el handler
+  dice que el contenido difiere.
+- **Backend creado por script** `drush php:script` idempotente (tipos, campos clonados de
+  `activity_blink`, bundles clonados de `logimageposition` / `summary_image_position`, displays,
+  `node.session.field_activities`, `field_activity_types` del mensaje de motivación) y después
+  `drush cex`; el script no se versiona, la config exportada es la verdad. Contenido por entorno:
+  tres `explanation_message` ("Letter matrix", "Syllable order", "Word split").
+
+### Bugs encontrados por el camino
+
+- `ActivityBase` renderizaba `field_custom_explanation` tal cual; con el importador el campo llega
+  como objeto `{value, format, processed}` (text_long) y React rompía al abrir cualquier actividad
+  importada con instrucción (también las de parpadeo de octubre). Arreglado con
+  `formattedTextToPlain()` (`src/lib/stripHtml.ts`), tipo `CustomExplanation`.
+- `expo start` con `CI=1` desactiva la vigilancia de ficheros: Metro sirve el bundle viejo tras
+  editar. Arrancar sin `CI` (con `< /dev/null` si no hay terminal interactiva).
+- La auto-evaluación de fin de sesión ("¿Cuál te ha costado un poco más?") y el "¿Cómo ha ido?"
+  devolvían 422 al señalar una actividad nueva: `easiest_activity`, `hardest_activity`
+  (`sessionfeedback`) y `activity` (`activityfeedback`) son campos base con `target_bundles`
+  limitados a los tres tipos antiguos. Corregido añadiendo los tres a `ACTIVITY_BUNDLES` de las dos
+  entidades y sincronizando la definición instalada con `sessionfeedback_update_11002()` y
+  `activityfeedback_update_11001()` (`drush updb`). Verificado con POST 201 como usuario 2.
+
+### Verificación (2026-10-21)
+
+- Drupal: `drush cex` / `config:status` sin diferencias; segunda pasada del script y del lote sin
+  cambios; kernel tests de `shine_content` 14 tests / 501 aserciones en verde; JSON:API como
+  usuario normal (gotcha 14): sesión con los cuatro tipos incluidos, detalle de cada tipo con sus
+  campos, POST 201 en los seis bundles nuevos y `filter[uid.id]` funcionando (gotcha 16).
+- App: `tsc --noEmit` limpio, `lint` 0 errores, `jest` 22 suites / 166 tests (nuevos:
+  `fase13Logic.test.ts`, `fase13Payloads.test.ts`, `formattedTextToPlain`).
+- Recorrido en navegador (Expo web, usuario local de prueba `fase13@shine.test`, uid 6) con la
+  sesión mixta "FASE 13 de prueba" (parpadeo + matriz + sílabas + segmentación): intro, juego y
+  pantalla final de los tres; marca falsa que vuelve a neutro y aro ámbar en la que faltó; ronda que
+  se cierra sola; "Casi" con fichas de vuelta; acierto parcial con espacio fijado. Summaries en BD
+  con área, nivel, sesión y contadores (5/6 con 1 marca falsa; 4/5; 3/4) y logs por ronda / palabra /
+  frase con `field_attempts`. "Mi progreso" 3 intentos y "Detalle de estadísticas" con los tres en
+  "Ejercicios con aciertos" (83 %, 80 %, 75 %) e historial de la sesión. Sin errores en consola ni
+  en watchdog.
+- La sesión "FASE 13 de jose" (nid 36, uid 2) queda disponible para probar con jose@test.com.
+
+### Pendiente / siguiente
+
+- Revisión terapéutica del lote de ejemplo y lotes reales por nivel (y Level3 a Level10 cuando
+  exista la escala completa).
+- Variante de matriz "con regla" para Funciones Ejecutivas y Atención (sigue sin tipo principal).
+- Imágenes de pista para las sílabas: el campo y el `include` existen, pero no hay banco de
+  imágenes; el lote no usa `imagen`.
+- Ejes de Victory con un solo intento muestran ticks "#0.9999…" (ya pasaba con imágenes; cosmético).
+
+---
+
+## FASE 16 — Nuevos ejercicios (segundo lote)
+**Estado**: ✅ Completada (2026-10-21) — repetición rápida de palabra (prompt 16a): backend, app y la tercera familia de métrica (ritmo) en estadísticas. Pendiente: revisión terapéutica del lote de ejemplo y lotes reales por nivel.
+
+### Qué hay
+
+| Ejercicio | Node type | Bundles | Player | Lógica pura |
+|---|---|---|---|---|
+| Repetición rápida de palabra (16a) | `activity_rapid_repetition` (`field_words` múltiple = una ronda por palabra, `field_time_limit` obligatorio = segundos por palabra, igual para todas) | `lograpidrepetition` / `summary_rapid_repetition` (storage nuevo `field_repetitions` en los dos) | `RapidRepetitionPlayer` | `src/lib/rapidRepetition.ts` |
+
+Por cada palabra: se enseña en grande, el tutor pulsa "Comenzar", la palabra desaparece y arranca
+una cuenta atrás (barra ámbar, sin números) de `field_time_limit` segundos; el alumno la repite en
+voz alta y el tutor toca un botón gigante por cada repetición completa ("Quitar una" para los
+toques por error). Al llegar a 0 suena un aviso corto, el botón se bloquea con el número congelado
+y aparece "palabra: N repeticiones". Un log por palabra; el summary suma. Métrica: ritmo =
+repeticiones por segundo (derivado con `field_repetitions` y `field_time`, nunca guardado). Área
+Velocidad; secundaria Lingüística. No cuenta errores ni aciertos. Modelado en
+`docs/exercise-catalog.md` §6.4 y `docs/activity-system.md`.
+
+### Decisiones
+
+- **Sin contadores de acierto, ni en log ni en summary** (decisión 6 del prompt):
+  `SessionEvaluator::effectiveRating()` degrada un "Demasiado fácil" a "Bien así" cuando el summary
+  tiene `field_items_count > 0` y pocos aciertos. El bundle no tiene esos campos y el tipo no entra
+  en `ACCURACY_SUMMARY_TYPES`. Hallazgo: con un bundle **sin** esos campos el evaluador reventaba
+  (`get('field_items_count')` sobre un campo inexistente); ahora comprueba `hasField()` antes
+  (`testNoAccuracyFloorWithoutCounters`).
+- **Tercera familia de métrica, "ritmo"**: `RATE_SUMMARY_TYPES` / `isRateSummary` / `computeRate`
+  en `src/lib/api/statistics.ts`; en `src/lib/stats/`, `StatsSummary.repetitions`, `rate(summary)`,
+  `personalBest` con métrica `'rate'` ("mayor es mejor", misma prioridad que `accuracy`: un
+  ejercicio tiene aciertos, ritmo o tiempo, nunca dos) y `baselineVsRecent` por ritmo si todos los
+  intentos lo tienen. "Detalle de estadísticas" reparte los summaries en tres grupos (lectura,
+  aciertos, ritmo); los de ritmo no caen en la gráfica de tiempo (el tiempo es fijo, saldría una
+  línea plana) y tienen su sección "Ejercicios de ritmo" con `RateEvolutionChart` (barras de
+  repeticiones por segundo por intento y tabla "17 repeticiones · 0,4 por segundo"). "Mi progreso"
+  cuenta los tres grupos en los totales. La pantalla "Actividad completada" no muestra hoy la mejor
+  marca (12d no la implementó), así que `'rate'` solo vive en la stats lib.
+- **Tiempo límite por actividad** (`field_time_limit`, storage de la matriz, obligatorio aquí), no
+  por palabra. `field_time` del log son los ms reales medidos con `Date.now()` desde "Comenzar"; la
+  ronda la cierra un `setTimeout` y la barra `Animated` solo la dibuja.
+- **Señal de fin de ronda**: `assets/sounds/round-end.wav` (160 ms, Mi5 con fundido, generado con
+  un script propio; sin assets de terceros), cargado una vez con `expo-av`
+  (`playsInSilentModeIOS`), descargado al desmontar; cualquier fallo se traga porque la señal
+  visual (botón bloqueado, número congelado) está siempre. Háptica fuera de alcance: `expo-haptics`
+  no está instalado (comentario en el player).
+- **Sin textos de instrucción en el juego**: la consigna al tutor va en `instructions` del kind y
+  en `field_custom_explanation` del lote. Huecos de alto fijo: escenario (la palabra antes de
+  empezar, el botón gigante después), barra, "Quitar una", resultado y pie ("Comenzar" /
+  "Siguiente" / "Terminar"). El ritmo en la pantalla final se escribe "0,4/s" (en el detalle de
+  estadísticas, "0,4 por segundo").
+- **Etiquetado fonológico obligatorio en este tipo** (§3.5): `ActivityHandlerInterface::
+  requiresPhonologyTags()` (FALSE en los tipos anteriores, TRUE aquí) y `ContentImporter` exige al
+  menos una de `sonoridad` o `esfuerzo` con lista no vacía. `desglose_tipos` y
+  `grupo_fonetico_objetivo` se aceptan y no se guardan, como en el parpadeo.
+- **`TimeBar` compartido** (`src/components/activities/TimeBar.tsx`): extraído de
+  `LetterMatrixPlayer` sin cambiar su comportamiento.
+- **Backend por script** `drush php:script` idempotente (en `shine/private/scripts/`, fuera de
+  git): node type con `activity_options` sin contar errores, campos comunes clonados de
+  `activity_word_split` (área por defecto Velocidad, secundaria Lingüística), `field_time_limit`
+  de la matriz, storage nuevo `node.field_words`, bundles clonados de `logwordsplit` /
+  `summary_word_split` sin `field_correct`, `field_attempts` ni contadores,
+  `node.session.field_activities`, el mensaje de motivación y el `explanation_message` "Rapid
+  repetition" (contenido por entorno). Después `drush cex` y `drush updb`
+  (`sessionfeedback_update_11003`, `activityfeedback_update_11002`).
+
+### Bugs encontrados por el camino
+
+- El evaluador de niveles no toleraba summaries de un bundle sin `field_items_count` (ver
+  decisiones): habría roto `POST /shine/session/{uuid}/complete` en cualquier sesión de ajuste con
+  una repetición rápida valorada "Demasiado fácil".
+- `Fase13HandlersTest` y `ContentImporterTest` fijaban la lista exacta de tipos importables;
+  actualizados con el quinto.
+
+### Verificación (2026-10-21)
+
+- Drupal: `drush cex` / `config:status` sin diferencias; segunda pasada del script y del lote
+  (`content/fase16-ejemplos-v1.json`: 3 actividades Level0 a Level2, publicadas, nids 39, 40 y
+  41) sin cambios; kernel tests de `shine_content` 18 tests / 630 aserciones y
+  `SessionEvaluatorTest` 21 tests en verde; como usuario 2 (gotcha 14): GET del nodo con
+  `field_words` y `field_time_limit`, POST 201 en `lograpidrepetition` y
+  `summary_rapid_repetition`, `filter[uid.id]` con datos en los dos (gotcha 16), POST 201 de
+  `activityfeedback` y `sessionfeedback` sobre la actividad nueva. `shine-level:generate
+  --dry-run` con un usuario nuevo: Velocidad Level0 pasa de 8 a 9 candidatas. Sin errores nuevos
+  en watchdog.
+- App: `tsc --noEmit` limpio, `lint` 0 errores, `jest` 25 suites / 187 tests (nuevos:
+  `rapidRepetition.test.ts`, `rate.test.ts`, `fase16Payloads.test.ts` y casos de ritmo en
+  `personalBest`, `baselineVsRecent` y `adapter`).
+- Recorrido en navegador (Expo web, `jose@test.com`, sesión "FASE 16 de jose", nid 42, parpadeo +
+  repetición rápida): intro con la consigna del tutor e icono `repeat`; por cada palabra, palabra
+  en grande → "Comenzar" → palabra oculta, barra y botón gigante contando ("Quitar una" resta) →
+  bloqueo a los 10 s con "mano: 6 repeticiones" → "Siguiente"; pantalla final con "Tu tiempo 40 s",
+  "Repeticiones 17", "Ritmo 0,4/s" y sin "Errores". En BD, summary 117 con `field_repetitions` 17,
+  área, nivel y sesión, sin contadores de acierto, y 4 logs (6, 2, 4 y 5). Con un segundo intento
+  (23 repeticiones, creado por JSON:API como usuario 2), "Mi progreso" cuenta 2 intentos y
+  "Detalle de estadísticas" muestra "Ejercicios de ritmo" con dos barras y la tabla.
+- Nivel: sesión inicial real generada para un usuario desechable con la repetición rápida en el
+  hueco de Velocidad, summary `summary_rapid_repetition` y "Demasiado fácil": la fila de Velocidad
+  queda en Level0 con `probe_level` Level1 y abierta (el easy se conserva), mientras las áreas con
+  "Bien así" cierran en Level0.
+
+### Pendiente / siguiente
+
+- Revisión terapéutica del lote de ejemplo (`content/fase16-ejemplos-v1.json`) y lotes reales por
+  nivel (Level3 a Level10 cuando exista la escala completa).
+- Háptica al cerrar la ronda cuando se instale `expo-haptics`.
+- Mejor marca por ritmo en "Actividad completada" si 12d llega a mostrarla.
+- Cosmético: el tile "Tiempo total" de "Mi progreso" recorta "1m 20s" en web (ya pasaba).
 
 ---
 
@@ -1172,3 +1393,553 @@ exportó las tres vistas y `cim` posterior: sin cambios.
 Pendiente: el número del título de las sesiones iniciales ("Sesión para conocerte N") sigue
 contando también las del bloque anterior a un reinicio. Es solo cosmético (la app no lo
 enseña) y no se ha tocado.
+
+---
+
+## Generador de contenido (docs/generador/)
+
+Preparación del contenido generado automáticamente. Referencias: `docs/exercise-catalog.md` y los
+tres documentos de `docs/generador/`.
+
+### 01. Vocabularios de sonoridad y esfuerzo de decodificación (2026-10-16)
+
+Solo Drupal. Implementa `docs/generador/Taxonomía fonológica.md` para categorizar las actividades
+de lectura y texto por el material que trabajan. Detalle de uso en `docs/exercise-catalog.md` §3.5.
+
+- **Vocabularios** (config): `sonority` y `decoding_effort`, de dos niveles (grupo y término
+  concreto). 28 términos en sonoridad (continuas, oclusivas, pares sorda/sonora, inconsistencias
+  grafema-fonema) y 18 en esfuerzo (bajo, medio, alto estructural, alto perceptivo). Cada término
+  lleva en la descripción letras, ejemplos y motivo clínico. El tramo perceptivo se desglosa por
+  pares (b-d, p-q, b-p, d-q, n-u, m-w): el resumen JSON del documento de origen omitía b-p y d-q.
+- **Términos** (contenido, no viajan en `config/sync`): `shine/scripts/create-phonology-terms.php`,
+  idempotente (crea, corrige padre, peso y descripción, nunca borra; falla si hay nombres
+  duplicados). Añadido como paso de instalación en `CLAUDE.md`. Ejecutado dos veces: 46 creados y
+  luego 46 sin cambios.
+- **Campos**: `field_sonority` y `field_decoding_effort` (entity_reference a término, múltiples,
+  opcionales), un storage cada uno compartido por `activity` y `activity_blink`. Formulario con
+  checkboxes jerárquicos tras las áreas; vista con etiqueta inline. No se añaden a
+  `activity_image_position` (trabaja con imágenes). Los tipos de texto de la FASE 13 deben
+  reutilizar los storages.
+- **Regla de etiquetado**: solo términos de segundo nivel; consultar por grupo con
+  `filter[field_sonority.parent.name]=...`. El esfuerzo no sustituye a `field_activity_level` y el
+  generador de sesiones no lee estos campos.
+- **Entorno**: `settings.php` (no versionado) se había regenerado sin `config_sync_directory` y
+  DDEV la fijaba en `sites/default/files/sync`, vacío: `config:status` daba los 523 objetos como
+  "Only in DB". Corregido en local con `../config/sync` antes del include de DDEV (nota en
+  `CLAUDE.md`). Antes de tocar nada se comprobó con `cim --source=config/sync` que la BD y el sync
+  coincidían exactamente.
+
+**Verificación** (usuario 2, gotcha 14, `account_switcher` + sub-request): `GET
+/jsonapi/taxonomy_term/sonority` 200 con 28 términos y `decoding_effort` 200 con 18, con el padre
+correcto ("Inversas (VC)" cuelga de "Esfuerzo medio"). Con A1 etiquetada de forma temporal:
+`include=field_sonority,field_decoding_effort` trae los cuatro términos; `filter[field_sonority.name]=p/b`
+da 1 resultado y `ll/y` 0; `filter[field_decoding_effort.parent.name]=Esfuerzo alto estructural` da
+1 en `activity_blink` y 0 en `activity`. Formulario `/node/8/edit` como admin: 28 y 18 checkboxes
+con sangría jerárquica. A1 se dejó sin etiquetas. `drush cex` solo exportó los 8 ficheros nuevos y
+los 5 displays de los dos tipos; `config:status` sin diferencias. Sin errores nuevos en watchdog.
+
+**Pendiente**: etiquetar contenido. Las actividades actuales (A1, A2) son de prueba; lo natural es
+que el generador de contenido rellene `sonoridad` y `esfuerzo` desde la especificación (§4.3) y el
+cargador los valide (§4.4).
+
+### 02. Importador de lotes y primer lote de parpadeo (2026-10-16)
+
+Módulo nuevo **`shine_content`** (`shine/public_html/modules/custom/shine_content/`) con el comando
+**`drush shine-content:import {lote.json} [--dry-run] [--publish]`** que pedía
+`docs/exercise-catalog.md` §4.4, y primer lote **`shine/content/blink-level0-2-v1.json`**: 20
+actividades `activity_blink` de Level0 a Level2 (7, 7 y 6), ya etiquetadas por sonoridad y esfuerzo.
+Los dos quedan en el repo (decisión del usuario): el lote es la fuente del contenido y se puede
+reimportar.
+
+**Importador.** `ContentImporter` (lo común a todo tipo) + un handler por node type
+(`ActivityHandlerInterface`, tag `shine_content_handler`; hoy solo `BlinkActivityHandler`) +
+`TermResolver` (todo por nombre, nunca por id) + `Coverage` (tabla área × nivel con la misma
+definición de contenido que `LevelLadder::contentQuery`). Decisiones:
+- **El lote es una unidad**: se validan todos los registros y con un solo error no se escribe
+  nada (un lote regenerado a medias dejaría huecos y duplicados). Los errores se listan por
+  registro y clave (`contenido.elementos[3]: ... supera los 20 caracteres del nivel`).
+- **Contrato estricto**: claves desconocidas son error; `codigo` con prefijo del tipo y `Lnn` igual
+  al nivel más bajo; `sonoridad` y `esfuerzo` solo de segundo nivel; `area_secundaria` distinta de
+  la principal; `desglose_tipos` con una entrada por elemento y valores de una lista cerrada. El
+  fichero puede ser una lista o un objeto con `actividades` (lo demás se ignora).
+- **Crear o actualizar por código** y distinguir creada / actualizada / sin cambios
+  (`hasTranslationChanges()`): reimportar el mismo lote no toca nada. El registro es la verdad
+  completa (lo que no aparece se vacía). Con `activitysummary` el contenido queda congelado
+  (§3.4) pero los metadatos se pueden cambiar.
+- Sin publicar y con dueño el usuario 1 salvo `--publish`; nunca despublica. Escritura en una
+  transacción.
+- La ruta del lote es relativa al directorio desde el que se lanza el comando: Drush cambia al web
+  root al arrancar, así que se resuelve con `$this->getConfig()->cwd()`.
+
+**Lote.** Composición por nivel según la matriz 2.1 de `docs/generador/Especificación
+Dislexia.md` (Level0: 4 CV + 2 alivio; Level1 y Level2: 4 objetivo + 2 pseudopalabras + 2 alivio)
+y los ejemplos de la Guía de Parametrización §3, en minúsculas, con 3,0 / 2,5 / 2,0 segundos por
+elemento. Familias: m, p, l, s, t, n, d (L0); f, ch, j, c/qu, z/ce/ci, ll/y e inversas (L1);
+pl/pr, bl/br, tr/dr, fl/fr, cl/cr/gl/gr y pares pra/par (L2). Las etiquetas describen solo el
+material objetivo, no los elementos de alivio (regla añadida a §3.5). Las pseudopalabras se
+eligieron para no ser palabras en castellano ni en catalán. Es contenido de prueba: falta la
+revisión del equipo terapéutico (§4.5).
+
+**Tests kernel** (`ContentImporterTest`, 7 tests, 227 aserciones; reutiliza
+`ShineLevelKernelTestBase`): creación con todos los campos, dry-run sin escribir, un error
+rechaza el lote entero, 21 mensajes de validación, actualización por código con contenido
+congelado por summary y metadatos editables, publicación y cobertura, actividad de ciclo fuera de
+la cobertura. Hubo que recrear `public_html/sites/simpletest/browser_output` (ignorado en git).
+
+**Verificación en el sitio**: `--dry-run` (20 por crear, 0 errores) → `--publish` (20 creadas,
+nids 9 a 28) → segunda pasada 20 "sin cambios". Como usuario 2: 21 publicadas en Velocidad,
+`filter[field_activity_level.name]=Level1` 7, `filter[field_sonority.name]=p` 3,
+`filter[field_decoding_effort.parent.name]=Esfuerzo alto estructural` las 6 de L2, detalle con
+texto, segundos, instrucción y términos incluidos. Cobertura de Velocidad: **8 / 7 / 6** (antes
+1 / 0 / 0). `shine-level:generate 5 --dry-run`: Velocidad en Level0 tiene 8 candidatas y la sesión
+inicial elige BLK-L00-VEL-002. Config exportada (`core.extension`). La BD local ya no tiene los
+usuarios ni sesiones de prueba de la FASE 15 (se reinstaló limpia el 2026-10-16).
+
+**Pendiente**: handler de `activity` (lista y lectura en voz alta) y de los tipos de la FASE 13;
+lotes para las otras cuatro áreas (el bloque inicial sigue omitiendo Lingüística, Ejecutivas y
+Perceptivos por falta de Level0); revisión terapéutica del lote. `docs/generador/Especificación
+Dislexia.md` §5 muestra el comando con `--file=`; el real toma la ruta como argumento.
+
+### 03. Huella de contenido, detección de duplicados e inventario (2026-10-21)
+
+Pregunta de origen: cómo evitar, al generar cientos de actividades en lotes sucesivos, repetir
+material que ya existe. Hasta ahora el importador solo detectaba duplicados **por código**: el
+mismo material con otro código entraba sin aviso. Todo en `shine_content`, sin tocar la app.
+
+**Huella de contenido.** `ActivityHandlerInterface` gana tres métodos que todo tipo tiene que
+implementar: `extractContent` (el nodo en formato de lote, inverso de `applyContent`),
+`canonicalContent` (lo que hace que dos actividades sean "la misma") y `units` (unidades léxicas
+normalizadas con `Units::normalize`). Formas canónicas: conjunto de elementos sin orden ni segundos
+(parpadeo, repetición rápida); palabras enteras sin sobrantes, imagen ni corte silábico (sílabas);
+frases (segmentación); objetivos + dimensiones + cuadrículas sin orden de rondas ni tiempo
+(matriz). `ContentFingerprint` (servicio `shine_content.fingerprint`, recoge los handlers con el
+mismo tag que el importador) calcula `sha256(tipo, forma canónica)` y `hook_node_presave` lo guarda
+en el campo nuevo **`field_content_hash`** (string 64, en los 7 bundles de actividad, oculto en los
+formularios; config exportada con `drush cex`). `drush shine-content:rehash` lo recalcula en bloque.
+
+**Detección en el importador.** Tras validar cada registro, `ContentFingerprint::check` lo compara
+con todas las actividades existentes de su tipo (publicadas o no, con la huella calculada al
+momento y no la guardada: un nodo sin huella no la esquiva) y con los registros anteriores del
+lote. Error, y no se escribe nada: misma huella con otro código, o solapamiento de unidades
+(Jaccard) del 80 % o más. Aviso, y se importa: solapamiento entre el 50 y el 80 %, y unidades que
+ya están en 3 o más actividades del mismo tipo y nivel; los elementos marcados `alivio` en
+`desglose_tipos` no cuentan para el sobreuso. La actividad del mismo código nunca es duplicado de
+sí misma; los existentes que el propio lote sustituye tampoco. `ImportResult` gana `warnings`, el
+informe una sección "Avisos (no bloquean)" y al final avisa si hay actividades sin huella guardada.
+
+**Inventario.** `drush shine-content:inventory [--type --level --area] [--json | --out=f.json]`
+(`Inventory`, servicio `shine_content.inventory`): cada actividad en formato de lote, tal como la
+aceptaría el importador (probado: reimportar lo exportado da "sin cambios"), más `nid`,
+`publicada`, `hash` y `unidades`; aparte `siguiente_codigo` por prefijo (contando despublicadas) y
+`uso_unidades` (tipo, nivel, unidad, actividades). Es la lista de exclusión que se le da al
+generador antes de escribir un lote. En tabla muestra además las unidades sobreusadas.
+
+**Decisiones.** La comparación es por tipo: la misma palabra en un parpadeo y en un reordenamiento
+no es duplicado (la mecánica es otra), y la huella incluye el tipo. La misma huella en dos niveles
+sí lo es (error de etiquetado). Las actividades retiradas se despublican, nunca se borran:
+conservan código, summaries y huella. El campo se creó con un script de un solo uso en
+`private/scripts/` y se exportó con `drush cex`: no hay `hook_update_N` que lo cree, para no chocar
+de UUID con `cim` según el orden de despliegue; en un entorno con contenido, tras `cim` hay que
+lanzar `shine-content:rehash` una vez (el importador lo recuerda). La huella guardada es la
+identidad de la actividad (JSON:API, vistas); la detección usa siempre la viva.
+
+**Tests kernel**: 28 tests, 919 aserciones en el módulo (antes 18 / 630). Nuevo
+`ContentFingerprintTest` (8 tests): huella estable ante orden, mayúsculas y segundos; duplicado
+contra existente y dentro del lote; solapamiento 71 % aviso / 86 % error; sobreuso solo en el mismo
+nivel y sin contar alivio; presave en nodos hechos a mano (también cuentan como existentes);
+rehash de nodos sin huella con la detección intacta; inventario con reimportación sin cambios,
+siguiente código y filtros. Round trip de huella e inventario en `Fase13HandlersTest` (matriz,
+sílabas y segmentación, con duplicados reordenados, cortados de otra forma o en otro orden) y en
+`Fase16HandlerTest`. Dos tests antiguos importaban el mismo material con dos códigos y ahora llevan
+material distinto.
+
+**Verificación en el sitio**: `shine-content:rehash` 31 actividades, 31 huellas (segunda pasada
+0); inventario de Level0: 11 actividades, siguiente código por prefijo (BLK-L00-VEL-008,
+MAT-L00-PER-002...), ninguna unidad sobreusada; `--out` escribe el JSON (8 parpadeos de Level0);
+los tres lotes reimportados con `--dry-run` salen "sin cambios", 0 errores y 0 avisos; un lote
+sintético con el material de BLK-L00-VEL-001 invertido bajo otro código da "contenido: idéntico al
+de BLK-L00-VEL-001 (nodo 9)" y bloquea el lote, y uno con 5 de 6 elementos en común sale como aviso
+"solapa el 71 %". Documentado en `docs/exercise-catalog.md` (3.4, 4.1, 4.4 y 8) y `CLAUDE.md`.
+
+**Pendiente**: handler de `activity` (lista y lectura en voz alta) con su forma canónica y sus
+unidades; aviso en los handlers de parpadeo y repetición rápida cuando todos los `alivio` de
+`desglose_tipos` estén al final (hallazgo del primer lote, catálogo 5.3 y 8).
+
+---
+
+## FASE 17 — Monetización y modelo de cuentas
+
+Implementa `docs/monetization.md` siguiendo los subplanes de `plans/entitlement/` (orden y
+modelo en su README).
+
+### 01a. Backend: campos de cuenta, rol de alumno y consentimiento (2026-10-23)
+
+Módulo nuevo **`shine_account`** (`package: shine`). Los campos son config exportada en
+`shine/config/sync` (creados con un script de un solo uso en `private/scripts/` y `drush cex`);
+en el módulo solo hay código.
+
+- **`user`**: `field_account_kind` (list_string requerido, `holder` | `learner`, por defecto
+  `holder`), `field_adult_consent` (boolean, por defecto falso), `field_adult_consent_at`
+  (timestamp), `field_archived_at` (timestamp) y `field_avatar` (string 32). Ninguno traducible.
+  En el formulario del usuario: tipo de cuenta (solo lo ve quien tiene `administer users`, para
+  reclasificar a mano) y la casilla de consentimiento (solo en el alta: admin y registro web); el
+  resto oculto. Ocultos en las vistas.
+- **`node.session`**: `field_operated_by` (referencia a usuario, opcional). Vacío hasta el
+  subplan 02. En el formulario y la vista por defecto junto a los demás campos de sistema.
+- **Consentimiento**: `hook_user_presave` fija `field_adult_consent_at` cuando el booleano pasa
+  a verdadero (cuenta nueva, o antes era falso) y está vacío; no lo vuelve a tocar. Restricción
+  `ShineAdultConsent` (plugin `Constraint` + `hook_entity_bundle_field_info_alter`): falla si la
+  cuenta es nueva, el usuario actual es anónimo y el valor no es verdadero. Cubre el registro REST
+  y el formulario web de registro; drush (no valida la entidad) y el admin (tiene sesión) quedan
+  fuera.
+- **Campos del servidor**: `hook_entity_field_access` deniega `edit` de `field_account_kind`,
+  `field_adult_consent_at`, `field_archived_at` y `field_operated_by` sin `administer users`, y
+  de `field_adult_consent` en cualquier cuenta ya guardada.
+- **Rol `learner`** ("Alumno"), sin permisos (`user.role.learner.yml`).
+- **Correo**: `hook_mail_alter` quita de `to` las direcciones `@shine.invalid` y anula el
+  correo si no queda ninguna (`send = FALSE`, sin error en el log). El validador de Drupal acepta
+  `learner+{uuid}@shine.invalid` (58 caracteres, cabe en el username de 60): se queda el dominio
+  del diseño.
+- **Reclasificación**: `shine_account_update_11001` pone `holder` y consentimiento sin hora a
+  los usuarios que no los tienen. Aplicada en local a los 4 existentes (1, 2, 5 y 6): ninguno es
+  un alumno.
+
+**Desviación del subplan (técnica, no de diseño)**: Drupal registra un módulo nuevo con la
+versión de su última update **antes** de `hook_install`, así que una `hook_update_N` en un módulo
+recién creado no corre nunca. `shine_account_install()` deja la versión en 11000 para que la
+11001 quede pendiente: en cada entorno, `drush cim` (instala el módulo y crea los campos) y luego
+`drush updb`. Si los campos aún no existen la update lanza `UpdateException` y sigue pendiente.
+Para que la update no invente una hora de consentimiento, marca la entidad con
+`shineLegacyConsent` y el presave la respeta. Anotado como gotcha 21 en `CLAUDE.md`.
+
+**Verificación** (usuario 2 con token real de password grant, gotcha 14):
+- `POST /user/register?_format=json` sin `field_adult_consent` o con `false` → 422
+  `field_adult_consent: You must confirm...`; con `field_account_kind: learner` → 403 (`Access
+  denied on creating field`); con `{"value": true}` → 200, `holder` y `field_adult_consent_at`
+  relleno.
+- `drush user:create prueba ...` crea sin consentimiento (`holder`, consentimiento falso); el alta
+  desde `/admin/people/create` sin marcar la casilla, también.
+- `PATCH /jsonapi/user/user/{uuid}`: `field_account_kind`, `field_adult_consent`,
+  `field_adult_consent_at` y `field_archived_at` → 403; mismo valor de `field_account_kind` → 200;
+  `field_dyslexic_font` → 200 en ambos sentidos. `GET /jsonapi/node/session` trae
+  `field_operated_by` con `data: null`.
+- Alumno de prueba creado por un titular autenticado (sin violaciones de validación) y correo al
+  alumno anulado; en una lista mixta solo sale la dirección real. Usuarios de prueba borrados.
+- `drush updb` aplicó la 11001 (4 usuarios) y después "No database updates required";
+  `drush cim -y` sin cambios y `config:status` limpio; tests de `shine_level` 53/53 (1249
+  aserciones); watchdog sin errores nuevos (solo los warnings de los 4xx provocados).
+- `docs/api-design.md`: corregido Capacitor (Expo + EAS Build), registro con consentimiento y su
+  422, tabla "Campos de cuenta" y `field_operated_by` en Sesiones. `docs/monetization.md` §1,
+  §3.1 (tabla con los campos reales; `field_organization` se crea en 10) y §3.2 (`field_avatar`
+  en lugar de `user_picture`, email sintético comprobado).
+
+**Para subplanes siguientes**:
+- **Gotcha 20 (02, 05)**: simple_oauth borra los access tokens de un usuario en **cada**
+  guardado del usuario. El token de alumno no tiene refresh: cualquier `save()` del usuario alumno
+  lo invalida, también el de `SessionEvaluator` al pasar `field_onboarding_state` a `regular` al
+  cerrar el bloque inicial. La app (05) debe volver a pedir el token de alumno ante un 401, o 02
+  debe evitar el borrado para el grant de alumno.
+- **02 o 01b**: con su propio token, el alumno puede hacer `PATCH` de su `field_display_name`,
+  `field_avatar` y `field_dyslexic_font` (es el dueño de su usuario). El diseño dice que nombre y
+  avatar solo los edita el `owner` vía `/shine/learners/{uuid}`: si se quiere cerrar, ampliar el
+  `hook_entity_field_access` de `shine_account` para cuentas `learner`.
+- **05**: la app no envía `field_adult_consent` y hoy convierte ese 422 en
+  `AuthError('validation')`; reconocerlo por `field_adult_consent:` en el mensaje.
+- `field_account_kind` vacío no debería darse ya (requerido, por defecto `holder`, update
+  aplicada); aun así, el `access_check` de titulares (01b) debe tratar vacío como `holder`, igual
+  que `shine_level` trata `field_onboarding_state` vacío como `evaluating`.
+
+### 01b. Backend: alumnos, `learner_access`, `/shine/me` y borrado de cuenta (2026-10-23)
+
+Todo en `shine_account`. Código y tests en el módulo; en `config/sync` solo la vista
+`views.view.shine_learners`. Detalle de la API en `docs/api-design.md` ("Cuentas y alumnos").
+
+- **Entidad `learner_access`** (sin bundles, campos de código, calcada de `activityfeedback`):
+  `field_learner`, `field_holder`, `field_role` (`owner` | `guardian` | `staff`), `field_origin`
+  (`created` | `invite` | `organization`), `status`, `created`, `changed`, `label` generado.
+  Índice único (alumno, titular) en `LearnerAccessStorageSchema` más comprobación en `preSave`
+  (que también exige alumno `learner` y titular `holder` y valida las listas). **`field_holder` es
+  la clave `owner`** de la entidad: así el filtro "own" de JSON:API es el titular sin código extra.
+  Acceso: `view` al titular y a `administer shine accounts`; `create`/`update`/`delete` solo con ese
+  permiso (JSON:API no escribe). `hook_jsonapi_learner_access_filter_access` (gotcha 16).
+  Instalada en entornos existentes con `shine_account_update_11002` (idempotente).
+- **`LearnerAccessPolicy`** (`shine_account.learner_access_policy`): `accessFor`, `anyAccessFor`
+  (para reactivar), `adultsOf`, `accessesOf`, `roleOf`, `canOperate` (acceso activo), `canEdit` /
+  `canArchive` / `canInvite` (`owner`; 10 añade `coordinator` aquí), `canWithdraw` (`guardian` y
+  `staff` siempre; `owner` solo si queda otro `owner`), `hasOtherOwner`. No mira
+  `field_archived_at`: el progreso de un archivado se sigue leyendo.
+- **`_shine_holder`** (`HolderAccessCheck`, `shine_account.access_check.holder`): autenticado,
+  `field_account_kind == holder` (vacío cuenta como titular), activo y sin `field_archived_at`.
+  Cacheado por usuario y dependiente de la entidad.
+- **`LearnerManager`** (`shine_account.learner_manager`): `create` (valida nombre 1..60 y avatar
+  `[A-Za-z0-9_-]{1,32}`, cupo, lock por titular, transacción; usuario `learner-{uuid}` /
+  `learner+{uuid}@shine.invalid` / contraseña aleatoria de 32 / rol `learner` /
+  `field_onboarding_state = evaluating` + acceso `owner`/`created`), `grantAccess` (crea o
+  **reactiva** la fila de la pareja; sobre una activa no cambia el rol), `listFor` (activos y después
+  archivados, por antigüedad del acceso), `learnerFor(holder, uuid)` (NULL si no existe, no es alumno
+  o no hay acceso activo: el controlador responde 404 en los tres casos), `update`, `archive`
+  (`field_archived_at` + `TokenRevoker`; idempotente; no bloquea), `withdraw`, `quotaUsage`
+  (alumnos activos de los que es `owner` y no están en plaza de organización) y `toArray` (forma
+  JSON con `role` del que pregunta y `adults`).
+- **Cupo**: `LearnerQuotaInterface` / `DefaultLearnerQuota` = 1 (`shine_account.learner_quota`).
+  04 sustituye la clase del servicio.
+- **`TokenRevoker`**: revoca todos los `oauth2_token` (access y refresh) de un usuario. simple_oauth
+  ya borra los access tokens en cada guardado del usuario (gotcha 20) pero deja los refresh; con uno
+  la app podría volver a entrar como un archivado o una cuenta borrada.
+- **Endpoints** (`LearnersController`, `MeController`, `AccountDeleteController`; todos con
+  `_shine_holder` y `_csrf_request_header_token` en los no-GET): `POST/GET /shine/learners`,
+  `GET/PATCH /shine/learners/{uuid}` (el `GET` individual no estaba en el subplan; se añade porque la
+  verificación lo pide y a la app le sirve para refrescar uno), `POST .../archive`,
+  `DELETE .../access`, `GET /shine/me` (con `alter('shine_me')`, documentado en
+  `shine_account.api.php`) y `POST /shine/account/delete`.
+- **`AccountDeleter`** (`shine_account.account_deleter`): en una transacción, por cada acceso activo
+  del titular lo desactiva y, si al alumno no le queda otro adulto activo ni plaza de organización,
+  lo anonimiza; si era el único `owner` y queda un `guardian`, promueve al más antiguo (solo
+  `staff`: no se promueve nadie). Después anonimiza al titular: `deleted-{uuid}`,
+  `deleted+{uuid}@shine.invalid` también en `init` (el email inicial que guarda Drupal), nombre para
+  mostrar, avatar e imagen vacíos, contraseña aleatoria, bloqueo y revocación de tokens. **Hallazgo
+  de la verificación**: la etiqueta de `learner_access` conservaba los nombres reales tras
+  anonimizar (se regenera al guardar y el acceso se guardaba antes que los usuarios); ahora
+  `anonymize()` vuelve a guardar los accesos que nombran a la cuenta y la etiqueta queda
+  `deleted-… → deleted-… (owner)`. El controlador exige la contraseña (`user.auth`) y limita los
+  fallos con `flood` (5 por hora por usuario; con el flood activo tampoco vale la correcta).
+- **Administración**: permiso `administer shine accounts`; vista `shine_learners` en
+  `/admin/shine/learners` (base `learner_access` con relaciones a alumno y adulto; alumno, alta,
+  archivado, adulto, rol, origen, activo, acceso desde, operaciones; filtros alumno, adulto, rol y
+  estado; enlace en `/admin/shine`), colección de la entidad en `/admin/content/learner-access`.
+  Para el filtro de rol se usa el plugin `string`: en una base field `list_string` Views no ofrece
+  `list_field`.
+
+**Decisiones**:
+- `GET /shine/learners` devuelve una sola lista con `archived_at` como marca (igual que
+  `/shine/me`), activos primero; "archivados aparte" del subplan se interpreta como orden, no como
+  segunda clave.
+- Un `grantAccess` sobre un acceso **activo** no cambia el rol: subir o bajar a alguien es una
+  decisión explícita (10), no un efecto lateral de volver a invitar.
+- El alumno nace con `field_adult_consent` falso y sin hora; la restricción `ShineAdultConsent` solo
+  mira creaciones anónimas y el alumno lo crea un titular autenticado.
+- Los 403 de `_shine_holder` son la página 403 de Drupal (sin `_format`), como en `shine_level`; a la
+  app le basta el código.
+
+**Tests kernel** (`tests/src/Kernel/`, 16 tests): `LearnerManagerTest` (alta con todos los campos
+y contraseña inutilizable, cupo 1, archivar libera cupo y revoca tokens sin tocar los del titular,
+B no ve ni edita al alumno de A, guardian opera pero no gestiona, retirar y reactivar, validación,
+guardas de la entidad), `AccountDeleterTest` (único adulto anonimiza al alumno y conserva un
+`activitysummary` suyo, guardian solo pierde su acceso, owner con guardian lo promueve, owner con
+solo staff no promueve) y `LearnerEndpointsTest` por HTTP con `http_kernel` (ciclo completo con
+códigos, 404 para B en las cuatro rutas por UUID, 403 para alumno y anónimo en todas, `/shine/me`,
+borrado con contraseña y flood). La base de tests instala `simple_oauth` para los tokens y crea los
+campos de usuario de 01a (viven en `config/sync`, no en el módulo).
+
+**Verificación en el sitio** (dos titulares nuevos registrados por REST, gotcha 14): A `POST
+/shine/learners` 201 (forma completa con `adults`), segundo 422 `learner_limit` `max 1`, sin nombre
+422 `validation`; `GET /shine/learners`, `GET /shine/learners/{uuid}` y `GET /shine/me` 200. B:
+`learners: []` y 404 `not_found` en `GET`, `PATCH`, `archive` y `access` del alumno de A.
+JSON:API `learner_access`: A ve 1 (también con `filter[field_holder.id]`), B 0 con y sin filtros.
+Alumno simulado (`account_switcher`): 403 "Only holder accounts can use this route" en
+`/shine/learners`, `/shine/learners/{uuid}`, `/shine/me` y `/shine/account/delete`.
+`/admin/shine/learners` 200 con la fila del alumno, enlazada desde `/admin/shine`;
+`/admin/content/learner-access` 200. A `PATCH` 200; borrado: sin contraseña 422, mal 403
+`invalid_password`, bien 200 `{deleted: true}`; el mismo token da 401 y el login `invalid_grant`;
+en BD titular y alumno con `deleted-{uuid}`, `init` sustituido, `status 0`, nombre para mostrar
+`NULL`, `field_archived_at` puesto, 0 tokens activos y el acceso con `status 0`. Usuarios de prueba
+borrados después. `cim -y` sin cambios; `updatedb:status` sin pendientes; watchdog sin errores
+nuevos; `shine_level` 53/53.
+
+**Para subplanes siguientes**:
+- **02**: `LearnerAccessPolicy::canOperate()` es la comprobación del token de alumno; añadir
+  "no archivado" (`LearnerManager::isArchived()`) antes de emitirlo. `TokenRevoker` ya existe para
+  revocar al archivar. El claim `operated_by` y el `hook_node_presave` de `field_operated_by` van en
+  este módulo. Recordar el gotcha 20: cualquier `save()` del usuario alumno borra sus access tokens.
+- **01c**: `LearnerManager::grantAccess($learner, $holder, 'guardian', 'invite')` es la alta del
+  vínculo por código (crea o reactiva la fila); `canInvite` ya responde `owner`. `withdraw` y
+  `DELETE /shine/learners/{uuid}/access` ya están.
+- **04**: sustituir la clase de `shine_account.learner_quota`; `LearnerManager::quotaUsage()` ya
+  excluye alumnos con `field_organization` (cuando el campo exista) y archivados. `hook_shine_me_alter`
+  para `holder_status` y la cobertura por alumno.
+- **10**: `coordinator` se añade en `LearnerAccessPolicy` (`canEdit`/`canArchive`/`canInvite`), no en
+  los controladores. `AccountDeleter` ya trata "en plaza de organización" como motivo para no
+  anonimizar al alumno (`LearnerManager::isInOrganization()`).
+- **05 (app)**: los 403 de las rutas de cuenta llegan como HTML; mirar el código, no el cuerpo. La
+  forma de `learner` y los códigos de error están en `docs/api-design.md`.
+- Sigue abierto de 01a: con su propio token, el alumno puede hacer `PATCH` de su
+  `field_display_name` y `field_avatar` por JSON:API. Cerrarlo en 02 ampliando
+  `shine_account_entity_field_access` para cuentas `learner`.
+
+### 01c. Backend: vínculo de un segundo adulto por código (2026-10-23)
+
+Todo en `shine_account`. En `config/sync`: `shine_account.settings` (nuevo). Detalle de la API en
+`docs/api-design.md` ("Cuentas y alumnos").
+
+- **Entidad `learner_invite`** (campos de código, calcada de `learner_access`): `field_learner`,
+  `field_created_by` (clave `owner`), `field_code_hash`, `field_expires`, `field_used_at`,
+  `field_used_by`, `status`, `label` generado sin el código. Índice único por hash
+  (`LearnerInviteStorageSchema`). `preSave` exige alumno `learner`, creador `holder`, hash y
+  caducidad. Acceso: `view` al creador y a `administer shine accounts`; nada de escritura por
+  JSON:API; `hook_jsonapi_learner_invite_filter_access`. **`field_code_hash` no sale por JSON:API
+  ni vistas** (`hook_entity_field_access`, salvo administradores). Instalada con
+  `shine_account_update_11003`, que también crea la config por defecto.
+- **Código**: 6 caracteres de `ABCDEFGHJKLMNPQRSTUVWXYZ23456789` (32 símbolos, sin 0/O ni 1/I; 2^30
+  combinaciones) con `random_int`. En BD solo su **HMAC-SHA256 con clave derivada de `hash_salt`**
+  (`settings.php`): "como una contraseña" en el sentido de que no está en claro, pero con clave,
+  porque un hash sin clave de un espacio de 2^30 se invertiría en segundos a partir de un volcado y
+  un hash con sal aleatoria no permitiría buscar por él. Normalización al teclear: mayúsculas, sin
+  espacios ni guiones.
+- **`LearnerInviteRepository`** (`shine_account.learner_invite_repository`): formato, hash,
+  `findByHash`, `liveInviteFor` (activa, sin usar, sin caducar; una por alumno) e `invalidateFor`.
+  Sin política, para que `LearnerManager` pueda usarlo (`invite` en `toArray()` solo para el
+  `owner`; archivar anula las invitaciones) sin dependencia circular.
+- **`LearnerInviteManager`** (`shine_account.learner_invite_manager`): `create` (`canInvite`, no
+  archivado, anula la viva anterior, repite el sorteo si el hash existe, caducidad
+  `invite_ttl_days`), `redeem` (normaliza, exige forma válida, viva, alumno `learner` no archivado;
+  el creador recibe `OwnInviteException`; quien ya tiene acceso activo recibe el alumno sin gastar el
+  código; si no, `grantAccess` `guardian`/`invite` y marca usada, en transacción). Cualquier otro
+  fallo es `InviteInvalidException`, sin distinguir el motivo.
+- **Endpoints** (`LearnerInvitesController`): `POST /shine/learners/{uuid}/invite` → 201
+  `{code, expires_at, learner}` (404 ajeno, 403 `role_not_allowed`, 409 `archived`);
+  `POST /shine/learners/join {code}` → 200 `{learner}` (422 `validation`, `invite_invalid`,
+  `own_invite`; 429 `too_many_attempts`). Flood por titular (5 fallos/hora) y por IP (30/hora),
+  umbrales en `shine_account.settings`; el intento con el código propio no cuenta como fallo; con el
+  flood activo tampoco entra el código correcto. `join` no choca con `/shine/learners/{uuid}`
+  porque el requisito de UUID no admite la palabra.
+- **`LearnerAccessPolicy`**: sin cambios de reglas (`guardian` ya operaba sin editar, archivar ni
+  invitar); documentado en la clase lo que añade 10 (`coordinator`, `staff` por organización,
+  promoción de `guardian` a `owner` en el `release`).
+- **Forma de `learner`**: gana `invite` (`{created, expires_at}` o `null`), solo con valor para el
+  `owner` y nunca con el código.
+
+**Decisiones**:
+- Quien ya tiene acceso activo y canjea otro código recibe 200 y **no gasta** la invitación: puede
+  ser para otro adulto. Un acceso revocado (se fue y vuelve) sí la gasta al reactivarse.
+- `own_invite` es un error distinto de `invite_invalid` y no registra flood: solo lo ve el creador
+  sobre su propio código, no revela nada, y a la app le sirve para explicar "este código es tuyo".
+- Archivar un alumno anula sus invitaciones y el canje comprueba además que el alumno no esté
+  archivado: un archivado no gana adultos.
+- Un HMAC con clave, no un hash con sal aleatoria: el canje necesita buscar por hash.
+
+**Tests kernel** (`LearnerInviteTest`, 7 tests; la suite de `shine_account` queda en 23 tests y
+645 aserciones): invitar y canjear crea `guardian` y gasta el código (con el código tecleado en
+minúsculas y con separadores), el `owner` no canjea el suyo y el código sigue vivo, caducada, mal
+formada e inexistente fallan igual, la nueva anula la anterior, un archivado no tiene invitaciones
+ni admite otras, `guardian` opera pero no invita ni archiva, se va y vuelve con el mismo código (que
+se gasta entonces), el borrado del `owner` promueve al `guardian`, y por HTTP: 201 con `code`,
+`invite` en `/shine/me`, 404 para un titular ajeno, `own_invite`, 200 al canjear con rol `guardian`
+y dos adultos, 403 `role_not_allowed` al archivar e invitar, cinco fallos → sexto 429 también con
+el código bueno, tras limpiar el flood entra, y retirar el acceso devuelve 404.
+
+**Verificación en el sitio** (tres titulares nuevos, gotcha 14): A invita (201, código `65MEWP`,
+`invite` en `/shine/me` sin código), C ajeno 404, A canjea el suyo 422 `own_invite`, B canjea
+`" 65m-EWP "` → 200 `guardian` con `adults` Ana/owner y Bea/guardian, segundo canje 422
+`invite_invalid`; B archivar, invitar y editar → 403 `role_not_allowed`. Como alumno
+(`account_switcher`): `drush shine-level:generate` crea "Sesión para conocerte 1" (rama `initial`)
+y `GET /jsonapi/node/session` la devuelve, `userarealevel` 5 filas; con el token de B, 0 sesiones
+(gotcha 17, es lo esperado hasta el token de alumno de 02). B retira su acceso → 200, después 404 y
+`canOperate` falso. C se equivoca cinco veces (422) y a la sexta 429; con el código correcto sigue
+429; tras limpiar el flood, 200 `guardian`. JSON:API `learner_invite`: A 2 (sin
+`field_code_hash` en atributos), B y C 0. `/admin/content/learner-invite` 200. Usuarios de prueba,
+accesos, invitaciones, sesión y niveles del alumno borrados después. `cim -y` sin cambios;
+watchdog sin errores nuevos.
+
+**Saneado de la BD local (mismo día)**: `drush updb` listaba como error "too old to update" a nueve
+módulos de core. No eran versiones de esquema sino 15 `post_update` eliminados en 11.0.0 que esta
+BD nunca registró como ejecutados (`post_update.existing_updates`). Se registraron con
+`registerInvokedUpdates()` y el aviso desapareció (gotcha 18 actualizado).
+
+**Para subplanes siguientes**:
+- **02**: `LearnerAccessPolicy::canOperate()` + `LearnerManager::isArchived()` es la comprobación
+  del token de alumno, también para un `guardian` recién vinculado. Añadir el
+  `hook_entity_field_access` que impide al alumno editar `field_display_name` y `field_avatar` con
+  su propio token (acordado el 2026-10-23).
+- **05/06 (app)**: pantalla "Tengo un código" → `POST /shine/learners/join`; mostrar `invite` del
+  alumno como "código activo hasta {expires_at}" y botón "Generar código" → el `code` del 201 como
+  texto y QR; tratar 429 con el texto de espera.
+- **10**: `release` reutiliza `LearnerAccessPolicy::hasOtherOwner()` y la promoción de
+  `AccountDeleter::delete()`; `coordinator` en `isManager()`.
+
+### 02. Backend: token de alumno (grant `shine_learner`) y `operated_by` (2026-10-23)
+
+Todo en `shine_account`, que ahora depende de `simple_oauth`. En `config/sync`:
+`simple_oauth.oauth2_scope.authenticated_user_access` gana `shine_learner`. Detalle de la API en
+`docs/api-design.md` ("Token de alumno").
+
+- **Grant `shine_learner`**: plugin `Oauth2Grant` (`src/Plugin/Oauth2Grant/ShineLearner.php`) que
+  devuelve `LearnerGrant extends AbstractGrant` (League 9.4.1). Petición: `POST /oauth/token` con
+  `Authorization: Bearer {token del titular}` y
+  `grant_type=shine_learner&client_id=shine_expo_app&learner={uuid}&scope=authenticated_user_access`.
+  Emite **solo access token** para el usuario alumno, TTL fijo de **12 h**
+  (`LearnerGrant::ACCESS_TOKEN_TTL = 'PT12H'`; se ignora el del consumer, que es para titulares),
+  sin refresh; se persiste como `oauth2_token` del alumno, así que la revocación de 01b lo alcanza.
+- **Identidad del titular**: el proveedor de autenticación de simple_oauth es global y se aplica a
+  `/oauth/token` en cuanto hay un Bearer (lo comprobé: la petición llega al grant ya autenticada
+  como el titular, y un Bearer inválido da 401 antes de llegar). Aun así el grant valida el Bearer
+  con el resource server de simple_oauth (firma, caducidad, revocación), exige que sea del mismo
+  cliente, que su usuario sea un titular activo y sin archivar, y que coincida con el usuario
+  actual si la petición venía autenticada. Así no depende de cómo esté configurada la ruta.
+- **Comprobaciones del alumno**: existe, `field_account_kind = learner`, activo, sin
+  `field_archived_at` y `LearnerAccessPolicy::canOperate(titular, alumno)` (cualquier rol). Todo
+  fallo es `400 invalid_grant` sin distinguir "no existe" de "no es tuyo". Falta `learner` o falta
+  la cabecera → `400 invalid_request`.
+- **Claim `operated_by`**: `hook_simple_oauth_private_claims_alter` lee
+  `shine_account.learner_token_context` (`LearnerTokenContext`, servicio con estado de petición que
+  el grant rellena justo antes de `issueAccessToken`) y añade el UUID del titular solo si el token
+  que se firma es del alumno anotado. Los tokens del grant `password` no lo llevan. Elegí el
+  servicio y no un atributo de la petición porque `convertToJWT()` no recibe la petición.
+- **`shine_account.current_operator`** (`CurrentOperator`): decodifica el payload del Bearer de la
+  petición actual (ya verificado por simple_oauth), exige `sub` = usuario actual y devuelve el
+  titular de `operated_by` (o NULL: token de titular, drush, `sub` distinto). `hook_node_presave`:
+  sesión nueva cuyo dueño es `learner` y hay operador → `field_operated_by`. `shine_level` no se
+  entera.
+- **Configuración**: `shine_learner` en `grant_types` del scope (config) y del consumer (contenido,
+  por `php-eval`; snippet de CLAUDE.md actualizado). Hace falta además un tipo de esquema
+  `grant_type.shine_learner` (`config/schema/shine_account.schema.yml`, como hace el contrib del
+  password grant): sin él los kernel tests fallan con "missing schema".
+- **Nombre del grant**: `shine_learner`, no `urn:shine:learner`. Confirmado: el gestor de plugins
+  trata `:` como separador de derivativas (`PluginBase::DERIVATIVE_SEPARATOR`). Gotcha 22 en
+  `CLAUDE.md`.
+
+**Tests kernel** (`LearnerGrantTest`, 3 tests; la suite de `shine_account` queda en 26): monta el
+servidor OAuth real (claves de `SimpleOauthTestTrait`, scope y consumer como en el sitio) y saca el
+token del titular con el grant `password`, como la app. Cubre: solo access token, `expires_in`
+43200 aunque el consumer diga 3600, `sub` = uid del alumno, `operated_by` = UUID del titular, `aud` y
+`scope`, persistencia como `oauth2_token` sin refresh, el token `password` sin claim; `guardian` →
+200 con su propio `operated_by`; B, UUID de un titular, UUID desconocido → `invalid_grant`; sin
+`learner` o sin Bearer → `invalid_request`; Bearer inválido → 401; token de alumno como Bearer →
+`invalid_grant`; acceso revocado → `invalid_grant`; archivado: el token emitido pasa a 401 en
+`/oauth/userinfo` y no se emite otro, el del titular sigue valiendo; con el token de alumno:
+`/oauth/userinfo` da `sub` = UUID del alumno y `name` = Marta (shine_oauth), `/shine/me` y
+`POST /shine/learners` 403, `POST /jsonapi/activitysummary/summary_test` crea la entidad con `uid`
+del alumno, `CurrentOperator` + presave fijan `field_operated_by` = titular, el mismo Bearer con otro
+usuario actual no cuenta, un token de titular y una creación sin petición dejan el campo vacío.
+Detalle del harness: las rutas OAuth se piden con `?_format=json` porque un 401 renderizado como
+página HTML hace una subpetición que, dentro de un kernel test, deja el contexto del router con otro
+método y la siguiente petición recibe 405 (no ocurre en el sitio: cada petición es un proceso).
+
+**Verificación en el sitio** (dos titulares nuevos, gotcha 14): A obtiene token de alumno
+(`expires_in` 43200, sin `refresh_token`; claims `sub` = uid del alumno, `operated_by` = UUID de A;
+el token de A no lleva el claim). B con el alumno de A, A con el UUID de B y el propio token de
+alumno pidiendo otro → `400 invalid_grant` (pistas distintas, mismo error); sin Bearer → `400
+invalid_request`; Bearer inválido → 401; el token de alumno como `refresh_token` → `invalid_grant`.
+Con el token de alumno: `/oauth/userinfo` `sub` = UUID del alumno y `name` Marta; `GET
+/jsonapi/node/session` 0; `/shine/me` y `POST /shine/learners` 403; `POST /shine/session/generate`
+201 "Sesión para conocerte 1" con `uid` del alumno y `field_operated_by` = A; después 1 sesión con
+el token de alumno y 0 con el de A (gotcha 17, esperado). Tras el vínculo de 01c, B obtiene token
+con `operated_by` = B y, despublicada la pendiente de A (regla de los 7 días, a mano), genera
+"Sesión para conocerte 2" con `field_operated_by` = B. Archivar: los 2 tokens de alumno pasan a
+revocados, A y B reciben `invalid_grant` al pedir otro y el token de A sigue valiendo. Usuarios,
+sesiones, tokens y accesos de prueba borrados (también 6 `oauth2_token` huérfanos de verificaciones
+anteriores: simple_oauth no los borra al borrar el usuario). `cim -y` sin cambios; watchdog sin
+errores nuevos.
+
+**Para subplanes siguientes**:
+- **05 (app)**: guardar el token de alumno aparte del de titular; usarlo en todo lo que sea
+  actividad, sesiones, feedback y estadísticas; ante un 401 con él, volver a pedirlo con el del
+  titular (no hay refresh). Gotcha 20: cualquier guardado del usuario alumno borra sus access tokens
+  (p. ej. al cerrar el bloque inicial), así que el "volver a pedir" tiene que ser automático.
+- **04**: el muro se evalúa en `session/generate` con el `uid` del alumno; el titular que opera
+  está en `shine_account.current_operator` si hiciera falta para el texto del 402.
+- **Cerrado lo acordado en 01a/01b**: `shine_account_entity_field_access` deniega `edit` de
+  `field_display_name` y `field_avatar` cuando la cuenta es `learner` (salvo `administer users`):
+  el alumno ya no se renombra ni cambia de avatar con su token por JSON:API (403); lo hace su
+  `owner` por `/shine/learners/{uuid}` (código, no pasa por el hook). `field_dyslexic_font` sigue
+  siendo suya (200). Un titular sí se renombra a sí mismo. Cubierto en `LearnerGrantTest` con
+  `PATCH /jsonapi/user/user/{uuid}` reales.

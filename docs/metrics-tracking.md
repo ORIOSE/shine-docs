@@ -105,7 +105,7 @@ POST /jsonapi/activitysummary/summary_vertical_text
 
 ## Campos denormalizados de estadísticas (FASE 10, 2026-07-22)
 
-Para que TODA la pantalla de estadísticas se resuelva con una única query de summaries (ver `plans/02-plan-ejecucion-v1.md` § 2.2), los **3 bundles** de `activitysummary` (`summary_vertical_text`, `summary3_vertical_text_blink`, `summary_image_position`) comparten estos campos adicionales (storage compartido):
+Para que TODA la pantalla de estadísticas se resuelva con una única query de summaries (ver `plans/02-plan-ejecucion-v1.md` § 2.2), todos los bundles de `activitysummary` (`summary_vertical_text`, `summary3_vertical_text_blink`, `summary_image_position`, desde la FASE 13 `summary_letter_matrix`, `summary_syllable_order`, `summary_word_split` y desde la FASE 16 `summary_rapid_repetition`) comparten el área y el nivel (storage compartido); los contadores de acierto solo los llevan los bundles con noción de acierto:
 
 | Campo | Tipo Drupal | Descripción |
 |---|---|---|
@@ -114,7 +114,7 @@ Para que TODA la pantalla de estadísticas se resuelva con una única query de s
 | `field_correct_count` | integer | Aciertos del intento (solo ejercicios con respuesta correcta) |
 | `field_items_count` | integer | Total de ítems del intento |
 
-- **Quién los rellena**: la app, al crear el summary (ya tiene el nodo actividad cargado; coste cero). Los counts solo aplican a ejercicios con noción de acierto (hoy: imágenes, via `field_correct` de sus logs).
+- **Quién los rellena**: la app, al crear el summary (ya tiene el nodo actividad cargado; coste cero). Los counts solo aplican a ejercicios con noción de acierto: imágenes y los tres de la FASE 13 (matriz, sílabas, segmentación). **`summary_rapid_repetition` (FASE 16) no los tiene a propósito**: el evaluador de niveles aplica el freno por aciertos cuando `field_items_count > 0`; ese bundle lleva `field_repetitions` (entero, suma de las palabras) y la app deriva el ritmo con `field_time`. En la app, `computeAccuracy` usa primero estos contadores y solo deriva de los logs (`field_correct`) si faltan (summaries de imágenes anteriores al backfill).
 - **Backfill histórico**: `shine/scripts/backfill-summary-area-level.php` (drush php:script, idempotente) copia área/nivel desde el nodo actividad y deriva los counts de imágenes contando `field_activitylogs`.
 - **Requisito de contenido**: los nodos actividad deben tener `field_main_area` asignado para que el área llegue a los summaries (el "required" del campo solo aplica en formulario, no a nodos creados antes o programáticamente). Las actividades existentes (A1, A2, A3) tienen área asignada desde el 2026-07-22; al crear actividades nuevas, asignarla siempre.
 
@@ -175,9 +175,13 @@ Si el nuevo tipo tiene datos diferentes a capturar (no solo items/weights/times)
 
 ```
 activitylog
-  ├── logverticaltext   (actual — texto vertical)
-  ├── logimageposition  (futuro — posicionamiento de imágenes)
-  └── logaudioreading   (futuro — lectura en voz alta)
+  ├── logverticaltext     (texto vertical y lectura en voz alta)
+  ├── log3_textlistblink  (parpadeo)
+  ├── logimageposition    (posición de imágenes)
+  ├── loglettermatrix     (matriz, FASE 13a: un log por ronda; + field_correct_count, field_items_count)
+  ├── logsyllableorder    (sílabas, FASE 13b: + field_attempts)
+  ├── logwordsplit        (segmentación, FASE 13c: + field_attempts)
+  └── lograpidrepetition  (repetición rápida, FASE 16a: un log por palabra; + field_repetitions, sin field_correct)
 ```
 
 Cada bundle tiene sus propios campos específicos, pero **todos comparten**:
@@ -190,9 +194,13 @@ Cada bundle tiene sus propios campos específicos, pero **todos comparten**:
 Igualmente, crear el bundle equivalente en `activitysummary`:
 ```
 activitysummary
-  ├── summary_vertical_text    (actual)
-  ├── summary_image_position   (futuro)
-  └── summary_audio_reading    (futuro)
+  ├── summary_vertical_text
+  ├── summary3_vertical_text_blink
+  ├── summary_image_position
+  ├── summary_letter_matrix    (+ field_false_marks: marcas sobre celdas que no eran objetivo)
+  ├── summary_syllable_order
+  ├── summary_word_split
+  └── summary_rapid_repetition (+ field_repetitions; sin field_correct_count ni field_items_count)
 ```
 
 En la app no hay que escribir el guardado: `ActivityBase` lo hace para cualquier tipo con
