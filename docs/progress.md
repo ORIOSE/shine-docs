@@ -2,7 +2,7 @@
 
 > Actualizado en tiempo real. Si el desarrollo se interrumpe, retomar desde el primer ítem sin marcar de la fase en curso.
 
-**Última actualización**: 2026-10-23 (FASE 17, 03: módulo `shine_entitlement` con la entidad `entitlement`, el catálogo de planes, cortesías desde el admin y `drush shine-entitlement:recalc`)
+**Última actualización**: 2026-10-26 (FASE 18, 02: importador bilingüe, banco de imágenes como media y handler de posición de imágenes; antes el mismo día FASE 18 01, FASE 17 07 y Generador de contenido 04)
 
 ---
 
@@ -1565,6 +1565,38 @@ de BLK-L00-VEL-001 (nodo 9)" y bloquea el lote, y uno con 5 de 6 elementos en co
 unidades; aviso en los handlers de parpadeo y repetición rápida cuando todos los `alivio` de
 `desglose_tipos` estén al final (hallazgo del primer lote, catálogo 5.3 y 8).
 
+### 04. Banco de imágenes para posición de imágenes y sílabas (2026-10-21 a 2026-10-26)
+
+Contenido, no código. Generado con ChatGPT Cowork (herramienta de imágenes integrada) a partir de
+`docs/generador/Banco de imágenes.md`, que fija el estilo (vector plano, contorno carbón, colores
+planos, sin fondo ni texto), el formato (512 x 512 PNG con alfa, margen del 14 %, alfa
+normalizado), los nombres (fichero = slug ASCII; nombre del media = la palabra con tilde, única) y
+la lista de 437 palabras en 19 categorías con silabeo, nivel lector, pista visual y etiquetas de
+grupos de parecido (`vis:`) y fonológicos (`fon:`).
+
+- **Resultado**: 432 imágenes aceptadas en `shine/content/images/` con `manifest.json` (el
+  contrato para el importador y para los generadores de ejercicios); 5 descartadas en la revisión
+  (mota, suma, tela, dama, codo). Hojas de contacto, resúmenes por prioridad y prompt de cada
+  imagen en `shine/content/images/_revision/` (material de proceso, unos 33 MB).
+- **Cómo se hizo**: 3 anclas aprobadas a mano (gato, manzana, coche) y después tres prioridades
+  por lotes, con las anclas más hasta dos aceptadas de la misma categoría como referencia de
+  estilo; revisión visual por hojas de contacto tras cada prioridad; regeneraciones puntuales
+  (perro de pie, búho de frente, cara sin pelo, hormiga cenital, pizarra con dibujo de tiza) y
+  poses uniformes dentro de cada grupo de parecido (felinos sentados de frente, aves y cánidos de
+  perfil, vehículos mirando a la derecha, instrumentos de viento verticales).
+- **Hallazgos**: el modelo entrega el interior del objeto con alfa entre 240 y 254 (se normaliza
+  en posproceso); el recorte de transparencia se come las superficies planas grandes (pizarra) y se
+  evita poniendo un detalle encima; el recuento anatómico no es criterio de rechazo (un cangrejo de
+  seis patas se reconoce igual); las palabras de apoyo con doble sentido (mota, suma, tela) no
+  salen inequívocas y se descartan sin insistir.
+- **Hecho en la FASE 18, 02 (2026-10-26)**: `drush shine-content:import-images` crea los media
+  (name y alt = slug, no la palabra: la clave es neutra entre idiomas) y
+  `ImagePositionActivityHandler` crea los paragraphs `i1` / `i1_item` desde el lote (catálogo 4.4
+  y 5.4); A3 y sus 3 fotos de prueba se borraron con el resto del contenido de demostración.
+- **Pendiente**: decidir si `_revision/` sale del repo (hoy está versionado). Las parejas casi
+  iguales (naranja y mandarina, carta y sobre...) solo deben coincidir en grupos de Level8 o
+  superior (documento, sección 5.7).
+
 ---
 
 ## FASE 17 — Monetización y modelo de cuentas
@@ -2049,3 +2081,554 @@ watchdog sin errores nuevos tras las correcciones (los de las 16:39 son de los t
 - **09 / 11**: sustituir los `stripe:price_REEMPLAZAR_*` del catálogo por los ids reales (formulario
   o `config/sync`).
 - **10**: `field_organization` como campo base nuevo con `hook_update_N` (la entidad ya existe).
+
+### 04. Backend: servicio de acceso, prueba por sesiones y muro en `session/generate` (2026-10-23)
+
+Tres módulos. En `config/sync`: `shine_level.settings` gana `free_regular_sessions` (8) y
+`pending_max_days` (7). Detalle de la API en `docs/api-design.md` ("Generar (u obtener) la
+siguiente sesión" → 402; "Cuentas y alumnos" → forma de `learner` y `holder_status`;
+"Entitlements → Acceso").
+
+**`shine_level`** (sin depender de nadie):
+- **Parámetros**: esquema (`free_regular_sessions` mínimo 0, `pending_max_days` mínimo 1),
+  `config/install`, grupo "Prueba gratuita y sesión pendiente (FASE 17)" en
+  `/admin/config/shine/level` y `shine_level_update_11001` (añade las claves que falten; el módulo
+  estaba en la versión 8000 porque no tenía `.install`). El formulario avisa, al guardar, si N es
+  **menor** que `periodic_sessions + evaluation_sessions`: el subplan decía "si no supera", pero con
+  los valores por defecto 8 = 6 + 2 eso avisaría siempre, y con N = X + Y la periódica llega antes
+  del muro (la prueba se evalúa al pedir la regular siguiente). Documentado en `level-system.md` §8.
+- **Puertas**: `SessionGateInterface::check(AccountInterface, SessionPlan): ?GateDenial`
+  (`reason` + `payload`), colector `shine_level.session_gates` (`service_collector` sobre la
+  etiqueta `shine_level.session_gate`, por prioridad) y `SessionGenerator::gate()`. `generate()` las
+  consulta entre `plan()` y `create()`, dentro del lock y antes de escribir nada, y lanza
+  `SessionGatedException` (con cuenta, plan y denegación). El controlador responde `402
+  {error: payment_required, reason, branch} + payload`. `shine-level:generate` imprime "Puerta: pasa"
+  o "Puerta: denegado, {reason}" con el cuerpo del 402, y sin `--dry-run` no crea la sesión si la
+  puerta la deniega. Sin puertas registradas nada cambia: los 53 tests anteriores pasan intactos.
+- **Pendiente caducada**: `pendingSession()` recorre las pendientes publicadas, despublica (no
+  borra) las creadas hace más de `pending_max_days` días con un `notice` en watchdog y devuelve la
+  primera que sigue viva. `sessionQuery()` y `SessionEvaluator::countCompletedSessions()` ahora
+  solo miran sesiones **publicadas**: una despublicada (caducada o por "Reiniciar niveles") no
+  numera, no rota, no excluye actividades y no cuenta como completada ni para la prueba.
+- Tests (`SessionGeneratorTest`, 55 en total): puerta de prueba registrada en el contenedor
+  (`TestGate`, decide por closure) que deniega `regular` → excepción, nada creado, dos intentos
+  seguidos sin lock colgado, el bloque inicial sale y sin closure la regular vuelve; pendiente de 6
+  días se conserva, de 8 se despublica y la nueva repite el número ("Sesión 1"), una fecha de
+  cierre puesta a mano en la despublicada no cuenta, y con `pending_max_days = 30` no caduca.
+
+**`shine_account`**: `LearnerManager::toArray()` invoca `hook_shine_learner_alter(array &$data,
+UserInterface $learner, UserInterface $holder)` (documentado en `shine_account.api.php`). Es la
+forma `learner` de **todas** las rutas de alumnos (`/shine/learners*`, `/shine/me`, `join`), así
+que lo que añade `shine_entitlement` sale igual en todas sin tocar controladores; `hook_shine_me_alter`
+queda para lo que es del titular (`holder_status`).
+
+**`shine_entitlement`** (`src/Access/`):
+- **`EntitlementAccessInterface`** / `EntitlementAccess` (`shine_entitlement.access`):
+  `holderStatus`, `learnerCovered`, `coveredBy`, `canGenerateRegular`, `maxLearners`,
+  `canCreateLearner`, `completedRegular`, `freeRegularSessions`. Objetos de valor `HolderStatus`
+  (plan, estado, origen, caducidad, cupo, entitlement, `toArray()`), `Coverage`
+  (`organization` | `holder` | `trial`, con entitlement, adulto y nombre de centro) y
+  `AccessDecision` (permitido con cobertura, o motivo; siempre con `completed_regular` y
+  `free_regular_sessions`; `isPaused()`, `remainingFree()`).
+- **Reglas**: titular cubierto = entitlement con estado `active`/`trial`/`grace`/`billing_retry`,
+  `field_starts_at` pasado y caducidad vacía o futura; varios → mayor cupo, a igualdad el que caduca
+  más tarde (nulo = infinito), a igualdad el más antiguo; sin ninguno, `free` del catálogo.
+  Alumno: (1) `OrganizationCoverageInterface` (servicio `shine_entitlement.organization_coverage`,
+  hoy `NullOrganizationCoverage`; 10 lo sustituye y aporta también `releasedBy()`), (2) adultos con
+  acceso activo del más antiguo al más nuevo: si está cubierto y es `owner`, el alumno tiene que caer
+  entre los primeros `max_learners` de `ownedActiveLearnerIds()` (activos, no archivados, no en
+  organización, por `created` del usuario y uid), (3) prueba. Motivos de denegación, en este orden:
+  `learner_not_covered` (archivado, bloqueado o sin adulto activo), `learner_paused`,
+  `released_by_organization` (si 10 informa de una liberación), `trial_exhausted`.
+- **`EntitlementGate`** (etiqueta `shine_level.session_gate`): solo `$plan->branch === 'regular'`.
+  El `holder_status` del 402 es el del titular del claim `operated_by`
+  (`shine_account.current_operator`); sin claim, el `owner` más antiguo del alumno; una cuenta
+  `holder` que juega consigo misma, la suya; sin nadie, el plan gratuito.
+- **`EntitlementLearnerQuota`** decora `shine_account.learner_quota` (`decorates` en
+  services.yml): `POST /shine/learners` admite `max_learners` del plan vigente.
+- **Hooks**: `hook_shine_me_alter` → `holder_status`; `hook_shine_learner_alter` → `covered_by`,
+  `covered_by_organization`, `paused`, `blocked_reason`, `completed_regular`,
+  `free_regular_sessions`.
+- **Caché** (`cache.default`): estado del titular con `user:{uid}` + `entitlement_list` y
+  `expire` en la caducidad o inicio futuro más cercano de sus entitlements vivos; cobertura "por
+  plan" del alumno con `user:{alumno}`, `learner_access_list`, `entitlement_list`, `user:{adulto}` y
+  `user:{hermano}` de cada lista de cupo consultada, con `expire` heredado de los adultos. Drupal
+  invalida `{tipo}_list` y `{tipo}:{id}` en cada guardado, así que guardar un entitlement (admin,
+  webhooks de 07 y 11), crear, vincular, retirar o archivar un alumno invalidan sin código extra. El
+  contador de la prueba no se cachea (una consulta de recuento que cambia al cerrar sesiones). Al
+  leer, además, se comprueba que lo cacheado siga cubriendo (reloj) antes de usarlo.
+
+**Decisiones**:
+- **Un `guardian` o `staff` con plan cubre al alumno sin gastar su propio cupo** (lectura de §4.1
+  punto 2 que exige el subplan: "cortesía solo para B y A genera igual"; la condición del cupo solo
+  tiene sentido para el `owner`). Anotado en `monetization.md` §4.1.
+- **"En pausa" solo cuando ni el cupo ni la prueba cubren**: un alumno fuera del cupo con prueba
+  por gastar sigue jugando con `covered_by: trial`; `paused` es `reason === learner_paused`.
+- **Cuenta titular que juega consigo misma** (anteriores a la FASE 17, p. ej. jose@test.com): se
+  cubre con su propio plan, sin cupo, y si no con la prueba. Así la app actual sigue funcionando
+  hasta 05.
+- **`field_starts_at` futuro no cubre** hasta su fecha (una cortesía programada); la caché caduca
+  justo entonces.
+- **`released_by_organization`** se devuelve cuando `releasedBy()` informa de un centro, nadie cubre
+  y la prueba se agotó; más específico que el `trial_exhausted` que §5.6 cita para ese caso, para
+  que la app pueda mostrar "el centro ha dejado de cubrir" desde el propio 402. Lo activa 10.
+- **Forma de `holder_status`**: `plan`, `catalog_plan`, `status` (`none` en el gratuito), `source`,
+  `expires_at` (ISO o null), `max_learners`, `covered`, `entitlement` (UUID). Sin
+  `learners_covered[]` (§4.2): la cobertura va en cada alumno. Por alumno, además de lo que pedía
+  el subplan, `blocked_reason` (el `reason` que daría el 402, o null) y `covered_by_organization`.
+- **Las ramas de evaluación se consultan a las puertas pero ninguna puerta las deniega**: es la
+  puerta, no el generador, quien decide qué ramas mira (`§5.4`: solo `regular`).
+- Las sesiones de cuentas `holder` en `/jsonapi` no cambian; `shine_level` sigue sin saber qué es
+  un titular o un alumno (principio de §3.2).
+
+**Tests kernel** (`shine_entitlement`, 23 en total, 861 aserciones): base
+`EntitlementAccessKernelTestBase` que **extiende `ShineLevelKernelTestBase` de otro módulo** (el
+bootstrap de PHPUnit registra `Drupal\Tests\{módulo}\` de todos los módulos) y añade campos de
+cuenta, rol `learner`, entidades de `shine_account`, catálogo, `field_operated_by` y reloj
+controlable. `CoverageTest` (8): plan gratuito y cupo 1 con `LearnerLimitException`, prueba de 8 y
+agotada; qué estados cubren, caducado por fecha, cortesía sin caducidad, inicio futuro; mayor cupo
+y caducidad más lejana; cobertura por el `owner`, archivado y sin adultos; cupo por orden de
+creación (cuarto de un plan que baja a 3 en pausa, con prueba sigue, archivar el primero lo libera);
+alumna compartida cubierta por la `guardian` sin gastar su cupo y vuelta a la `owner` al retirarse;
+invalidación de caché al crear, revocar, caducar (reloj), vincular y retirar; titular que juega
+consigo mismo. `SessionGateTest` (6): bloque inicial y periódica con prueba agotada; regular → 402
+por HTTP con el cuerpo completo, dos veces sin 409, nada creado, cortesía → 201 "Sesión 3"; regular
+generada sin completar no consume; alumna compartida con cortesía solo de la `guardian` y
+`field_operated_by` del operador; `holder_status` del 402 según el claim `operated_by` (y un `sub`
+ajeno no cuenta); `/shine/me`, `/shine/learners` y `/shine/learners/{uuid}` con la cobertura y 403
+con token de alumno. Detalle del harness: un `Bearer` sin firmar da 401 en `http_kernel` (proveedor
+de simple_oauth), así que lo que depende de `CurrentOperator` se prueba empujando la petición con el
+JWT en `request_stack` (`operatingAs()`) y llamando al generador; la firma la cubre
+`LearnerGrantTest` (02).
+
+**Verificación en el sitio** (dos titulares registrados por REST, tokens `password` y
+`shine_learner` reales, gotcha 14; `free_regular_sessions` a 1 por `config:set`): A crea a Marta
+(`covered_by: trial` ya en el 201); con su token, "Sesión para conocerte 1" (201, evaluación);
+cierre a mano del bloque; "Sesión 1" regular 201; cerrada, la siguiente → **402** `trial_exhausted`,
+`free_regular_sessions 1`, `completed_regular 1`, `holder_status` plan `free`; `drush
+shine-level:generate {uid} --dry-run` imprime "Puerta: denegado, trial_exhausted" con el cuerpo;
+con evidencia 3 en un área, la evaluación dirigida sale (201) con la prueba agotada. Cortesía para
+A creada por código (como el admin) → la siguiente llamada 201 "Sesión 2" sin reiniciar nada;
+`/shine/me` de A: `holder_status` `courtesy`/`manual`/cupo 3, alumna `covered_by: holder`. A invita,
+B canjea (`guardian`); revocada la cortesía de A → 402 (`completed_regular 2`) y `/shine/me` de A con
+`covered_by: none`, `blocked_reason: trial_exhausted`; cortesía para B → A genera "Sesión 3" (201)
+con `field_operated_by` = A, `/shine/me` de A: `holder_status.plan free` y `covered_by: holder`;
+`/shine/me` de B: `courtesy`; `GET /shine/learners` de B con las mismas claves. Pendiente envejecida
+8 días → despublicada (`status 0`, sin fecha de cierre) y nueva "Sesión 3" (201). Formulario:
+guardar con N = 5 muestra el aviso (6 + 2 = 8) y con 8 no. Usuarios, sesiones, niveles, tokens,
+accesos, invitaciones y entitlements de prueba borrados; N de vuelta a 8; `config:status` limpio,
+`cim -y` sin cambios, `updb` sin pendientes; watchdog sin errores nuevos (solo los avisos de
+`shine_level` por huecos del catálogo local). `shine_level` 55/55, `shine_account` 26/26,
+`shine_entitlement` 23/23.
+
+**Para subplanes siguientes**:
+- **05 (app)**: tratar `402` de `POST /shine/session/generate` → paywall con `reason`,
+  `completed_regular`, `free_regular_sessions` y `holder_status`; aviso suave con
+  `free_regular_sessions - completed_regular` ≤ 3 de `/shine/me`; `blocked_reason` por alumno
+  permite pintar el estado antes de pedir sesión. Gotcha 20 sigue: cada guardado del usuario alumno
+  (cerrar el bloque inicial) invalida el token de alumno.
+- **06b**: `holder_status` lleva `expires_at` ISO, `source` y `catalog_plan` para la pantalla de
+  plan; `covered: false` con `plan: free` es "sin plan".
+- **07 / 11**: basta con guardar el entitlement (estado, caducidad, cupo): la caché se invalida por
+  `entitlement_list`. `field_starts_at` futuro no cubre hasta esa fecha. `paused` de la store no
+  cubre; `grace` y `billing_retry` sí.
+- **10**: implementar `OrganizationCoverageInterface` (`coverageFor` con `Coverage::ORGANIZATION`,
+  nombre y `cacheTags` de la organización y su entitlement; `releasedBy`) y sustituir el servicio
+  `shine_entitlement.organization_coverage`; `ownedActiveLearnerIds()` ya excluye `field_organization`
+  cuando exista. Añadir `released_by` a la forma de `learner` por `hook_shine_learner_alter`.
+- **Pendiente conocida**: `POST /shine/session/{uuid}/complete` sigue aceptando una sesión
+  despublicada (caducada) si el dispositivo la tenía abierta; se cierra pero no cuenta para nada.
+  Si molesta, rechazarla con 409 en `SessionEvaluator::complete()`.
+
+### 05. App: doble token, onboarding con primer alumno y selector de alumno (2026-10-23)
+
+Solo `shine-app/`. Detalle de lo nuevo en `CLAUDE.md` ("Expo App → Doble token").
+
+- **Tipos y API**: `src/types/me.ts` (`Me`, `Learner` con `role`, `adults`, `invite`,
+  `covered_by`, `covered_by_organization`, `paused`, `blocked_reason`, `completed_regular`,
+  `free_regular_sessions`; `HolderStatus`), `src/lib/api/me.ts` (`getMe`), `src/lib/api/learners.ts`
+  (`createLearner`, `listLearners`, `getLearner`, `updateLearner`, `archiveLearner`,
+  `withdrawAccess`, `inviteAdult`, `joinLearner`, `requestLearnerToken`; errores como `LearnerError`
+  con los códigos de `docs/api-design.md`), `registerAccount` envía `field_adult_consent`
+  (`consent_required` si el servidor lo rechaza), `SessionResource.relationships.field_operated_by`.
+- **Dos tokens** (`src/lib/api/client.ts` + `tokenFlow.ts` + `errors.ts`): claves separadas para
+  titular y alumno; `apiFetch(path, init, { actor })` con `learner` por defecto y `holder` explícito
+  en las rutas de cuenta; `shineFetch` para `/shine/*`. Sin alumno activo una llamada `learner`
+  lanza `NoActiveLearnerError` (nunca cae al titular). 401 de alumno → token nuevo con el del titular
+  (renovado si hace falta) y un reintento, con una sola renovación en vuelo; 401 de titular →
+  refresh como antes. 402 → `PaymentRequiredError`. `fetchAsActor()` es puro y se prueba con un
+  transporte falso.
+- **Store** (`src/store/auth.ts`): `holder`, `me`, `activeLearner` y `user` = alumno activo (su
+  `sub` es el UUID de todos los filtros `uid.id`, así que dashboard, sesión, estadísticas,
+  `ActivityBase` y ajustes no cambian). `selectLearner`, `refreshMe`, `clearLearner`; `logout` borra
+  los dos tokens; `initialize` restaura el alumno guardado (reutiliza su token si no ha caducado
+  por `exp`, si no pide otro; alumno archivado o ajeno → se olvida; `invalid_grant` → se olvida);
+  un 401 de `/shine/me` tras el refresh cierra la sesión.
+- **Arranque** (`app/_layout.tsx` + `src/lib/startRoute.ts`, puro): sin sesión → login; sin
+  alumnos activos → `learners/new`; un alumno no en pausa → se elige solo (ref para no repetirlo);
+  varios, o uno en pausa → `learners/select`; con alumno activo → dashboard. Sin `/shine/me` (sin
+  red): con alumno guardado al dashboard, sin él al selector (que ofrece reintentar).
+- **Pantallas**: `register.tsx` con la casilla "Soy mayor de edad y responsable de la persona con la
+  que voy a trabajar" (botón inactivo sin ella; `validateRegister` también la exige);
+  `(auth)/learners/new.tsx` ("¿Con quién vas a trabajar?": nombre o apodo, 12 avatares emoji de
+  `src/lib/avatars.ts`, `learner_limit` en neutro, enlace "Tengo un código del centro" que deja una
+  nota hasta 06; flecha atrás solo si ya hay alumnos); `(auth)/learners/select.tsx` ("¿Con quién
+  trabajamos hoy?": tarjetas con `Avatar`, nombre y `coverageLine`, los `paused` sin pulsar y con
+  explicación, "Añadir a otra persona", engranaje a Ajustes, estado sin red con reintento). En el
+  dashboard la cabecera saluda al alumno; su avatar abre el selector y un engranaje nuevo, Ajustes.
+- **Sesión de otro adulto** (§5.6): `SessionCard.operatedBy`; la tarjeta "Continuar" añade
+  "Sesión empezada con {nombre}" (`startedWithLabel`, con `adults`) y se continúa igual; no hay
+  descarte.
+- **402 y aviso suave**: `generateErrorCopy(e, { learnerName })` → `paymentRequiredCopy`
+  ("Habéis completado las N sesiones de prueba de Marta", singular con N = 1; textos propios para
+  `learner_paused`, `learner_not_covered` y `released_by_organization`; sin acción de compra); tras
+  un 402 se refresca `/shine/me`. Tarjeta discreta `trialNotice` cuando `covered_by === 'trial'` y
+  quedan 3 o menos ("A Marta le queda 1 sesión de prueba"). El dashboard refresca `/shine/me` en
+  cada carga.
+- **Tests** (`src/lib/__tests__/`, 225 en total, 29 suites): `tokenFlow` (elección por actor,
+  refresh del titular, renovación y reintento del alumno, sin alumno → error sin tocar el titular,
+  `exp` del JWT), `startRoute` (todos los casos del guard), `learnerForm` (validación y mensajes
+  neutros), `learnerCopy` (aviso, línea de cobertura, "empezada con", 402 por motivo, campos del
+  error), `sessionCards` (402 y `operatedBy`) y `authForm` (consentimiento).
+
+**Decisiones**:
+- Las cuentas anteriores a la FASE 17 que jugaban como titular tienen que crear un alumno al
+  entrar (el diseño no contempla inicio sin alumno); sus sesiones antiguas quedan en el titular.
+- Un alumno en pausa no se elige en el selector ni se auto-selecciona si es el único: el selector
+  explica la pausa (la compra o ampliación llega con 06b/08).
+- `user.name` del alumno es su `display_name` sin pasar por `/oauth/userinfo`: una petición menos
+  por cambio de alumno y la misma información.
+- La preferencia de fuente es del alumno activo (se lee al seleccionarlo y se guarda con su token
+  en su propio usuario), no del titular.
+- Un `Bearer` de alumno revocado en el servidor (gotcha 20) se detecta por el 401 de la primera
+  llamada y se renueva sin pasar por login; además, al restaurar se comprueba `exp` para no gastar
+  una petición con un token caducado.
+
+**Verificación**: `npx tsc --noEmit`, `npm run lint` (0 errores; 4 avisos previos) y `npm test`
+limpios. Recorrido en web (Expo + Chrome) con dos titulares nuevos: registro de Ana con la casilla
+(sin marcarla, botón inactivo) → "¿Con quién vas a trabajar?" → Marta con zorro → dashboard "Buenas
+tardes, Marta" → "Sesión para conocerte 1" creada para el uid del alumno con `field_operated_by` =
+Ana. Cierre del bloque inicial por drush (invalida el token de alumno, gotcha 20) y N = 1: recargar
+restaura a Marta y renueva el token en silencio, el aviso "A Marta le queda 1 sesión de prueba"
+aparece, "Nueva sesión" crea "Sesión 1". Cerrada por drush, "Nueva sesión" muestra "Habéis
+completado la sesión de prueba de Marta" sin romper nada y el aviso desaparece. Cortesía para Ana
+y tokens de Marta revocados: "Nueva sesión" renueva y crea "Sesión 2" (cubierta). Selector: "Hola,
+Ana", Marta "Acceso activado"; "Añadir a otra persona" → Lucas con búho → dashboard de Lucas vacío;
+el selector muestra los dos; elegir a Marta vuelve a sus sesiones (Sesión 2 pendiente, Sesión 1,
+Sesión para conocerte). Cerrar sesión desde Ajustes → login. Bea se registra, drush la vincula
+como `guardian` de Marta, al recargar Marta se elige sola y la tarjeta dice "Sesión empezada con
+Ana"; Bea la abre y continúa; su selector: "Hola, Bea", Marta "Acceso activado". Datos de prueba
+borrados; N de vuelta a 8.
+
+**Para subplanes siguientes**:
+- **06**: `inviteAdult` y `joinLearner` ya están en `src/lib/api/learners.ts` (errores
+  `invite_invalid`, `own_invite`, `too_many_attempts`); el enlace "Tengo un código del centro" de
+  `learners/new.tsx` solo deja una nota; `updateLearner`, `archiveLearner` y `withdrawAccess` también
+  están listos para la ficha del alumno. `Learner.invite` llega en la forma.
+- **06b**: `me.holder_status` (plan, origen, caducidad ISO, cupo, `covered`) y `describeLearnerError`
+  para `learner_limit` (hoy texto neutro con `max`).
+- **08**: `PaymentRequiredError` en `handleNewSession` del dashboard es el punto donde entra el
+  paywall; `trialNotice` es la tarjeta previa.
+- **Pendiente conocida**: el `InlineAlert` del 402 usa el icono genérico (`cloud-off`); cuando 08
+  ponga el paywall, darle icono y acción propios.
+
+### 06. App: gestión de alumnos en Ajustes, invitar a otro adulto y vincularse por código (2026-10-23)
+
+Solo `shine-app/` (más `react-native-qrcode-svg` 6.3.27 en `package.json`, instalado con
+`npx expo install` y nvm 21). Textos de cada pantalla en objetos `*_COPY` de
+`src/lib/learnerScreens.ts`; los de cobertura de 05 pasan a `COVERAGE_COPY` (`learnerCopy.ts`).
+
+- **Ajustes → "Alumnos"**: tarjetas de los alumnos activos (avatar, nombre, chip "En pausa" o
+  "Ahora" si es el activo, línea de `covered_by`) que abren la ficha; "Añadir a otra persona"
+  (pantalla de 05, que ya explica `learner_limit` en neutro) y "Tengo un código"; archivados
+  plegados al final ("Archivado (1)", con fecha y sin acciones). `/shine/me` se refresca al volver
+  a la pantalla.
+- **Ficha** `(auth)/learners/[uuid]/index.tsx`: identidad, "Quién practica con {nombre}" (los
+  adultos, "Tú" para el titular) y acciones según `learnerActions(role)`: `owner` → "Cambiar
+  nombre o avatar", "Invitar a otro adulto" (con "Hay un código activo hasta el {fecha}" si lo hay)
+  y "Archivar"; `guardian`/`staff` → "Dejar de trabajar con {nombre}". Archivar y dejar de trabajar
+  piden un segundo paso en línea (`ConfirmPanel`, no un `Alert` del sistema: se lee igual en web)
+  que explica que el progreso se conserva y que se libera una plaza, o que el alumno sigue con los
+  demás adultos (nombrados con `otherAdultsNames`). Si era el alumno activo, se vuelve al selector
+  (o a crear uno si no queda ninguno: el guard decide).
+- **Edición** `[uuid]/edit.tsx`: mismo formulario que el alta (componente nuevo
+  `src/components/learners/LearnerFormFields.tsx`, que también usa `learners/new.tsx`).
+- **Invitación** `[uuid]/invite.tsx`: sin código vivo lo genera al entrar; lo enseña en grande
+  agrupado ("AG9 ST3"), "Sirve una sola vez, hasta el {fecha}", instrucciones, QR del enlace
+  `Linking.createURL('/learners/join', {code})` (abre "Tengo un código" con el código escrito) y
+  "Compartir" (hoja nativa con `Share`; en web, copiar al portapapeles con "Copiado"). Como el
+  servidor solo devuelve el código una vez, se recuerda en memoria por alumno mientras siga vivo;
+  si hay uno vivo que esta ejecución no conoce, lo dice y ofrece "Generar otro" (anula el anterior).
+- **"Tengo un código"** `(auth)/learners/join.tsx`: campo con mayúsculas al escribir, normalización
+  como el servidor (`normalizeInviteCode`: fuera todo lo que no sea letra o número) y validación
+  local de forma (6 caracteres del alfabeto sin O/0/I/1) para no gastar intentos;
+  `invite_invalid` → "Este código no sirve o ha caducado. Pide otro a quien te lo dio",
+  `too_many_attempts` → "Demasiados intentos, espera un momento…", `own_invite` propio. Con éxito,
+  `selectLearner` y al inicio. Se llega desde "¿Con quién vas a trabajar?" ("¿Vienes de un centro o
+  te han invitado? Tengo un código"), desde Ajustes y por el QR (`?code=`).
+- **Quién operó cada sesión** (§5.6): `operatorLabel` → "Contigo", "Con {nombre}" (de `adults`),
+  "Con otra persona" si ese adulto ya no está, nada si la sesión no lo sabe. En el detalle de sesión
+  bajo el título, y en "Detalle de estadísticas" (al que se llega desde "Mi progreso") como columna
+  "Con quién" del historial, a partir de los nodos `session` incluidos con los summaries
+  (`operatorsBySession`). Sin estadísticas por adulto.
+- **Guard** (`app/_layout.tsx`): sin alumnos se puede ir a "Tengo un código" y a Ajustes (antes,
+  sin alumno activo, Ajustes redirigía al selector y no había forma de cerrar sesión); en
+  "¿Con quién vas a trabajar?" sin alumnos hay un engranaje a Ajustes. `selectLearner` refresca
+  `/shine/me` si el alumno aún no está (recién creado o vinculado) y marca `selectingLearner` para
+  que el guard no repita la selección en paralelo.
+- **Iconos nuevos**: `share`, `archive`, `user-plus`, `pencil`, `copy`, `users`.
+- **Tests** (`learnerScreens.test.ts`, 17; total 243 en 30 suites): acciones por rol y archivados,
+  normalización, validación y formato del código, fechas y caducidad, mensajes de canje y de
+  gestión (sin "error", "pago" ni "bloqueado"), textos sin género, otros adultos, etiqueta de
+  operador y su extracción de `included`, texto de `covered_by`.
+
+**Decisiones**:
+- La ficha es una pantalla propia (`learners/[uuid]`) y no acciones sueltas en la lista de
+  Ajustes: caben la lista de adultos y la confirmación en dos pasos sin saturar Ajustes.
+- La invitación se genera sola al entrar si no hay ninguna viva (es lo que se pide al pulsar
+  "Invitar a otro adulto"); con una viva que la app no conoce se pregunta antes de anularla.
+- Los textos no asumen el género del alumno ("dejará de aparecer en tu lista", "las personas que
+  practican con este perfil"); un test lo vigila.
+- La marca de operador va en el detalle de estadísticas: "Mi progreso" no tiene lista de sesiones.
+
+**Verificación**: `npx tsc --noEmit`, `npm run lint` (0 errores, los 4 avisos de siempre) y
+`npm test` limpios. Recorrido en web (Expo + Chrome) con dos titulares nuevos: Ana registra a
+Marta (zorro), su "Sesión para conocerte" y su "Sesión 1" muestran "Contigo" (cerradas por drush con
+summaries de prueba); Ajustes → Alumnos → Marta ("Ahora", "7 sesiones de prueba") → ficha con las
+tres acciones → "Invitar a otro adulto" muestra "AG9 ST3", caducidad del 6 de noviembre y QR;
+"Copiar código" → "Copiado"; la ficha muestra "Hay un código activo hasta el 6 de noviembre" y al
+volver a entrar se ve el mismo código. Bea se registra → "Tengo un código": "ab1" → "El código tiene
+6 letras y números"; "ag9-st3" → inicio de Marta con su actividad y sin bloque inicial. En el
+detalle de estadísticas de Bea, las dos sesiones "Con Ana"; su ficha de Marta solo tiene "Dejar de
+trabajar con Marta" (con su confirmación). Código caducado (expirado por drush) → "Este código no
+sirve o ha caducado…"; cuatro códigos falsos más → el sexto intento, "Demasiados intentos, espera un
+momento…". Bea genera la "Sesión 2" ("Contigo"); Ana la ve "Con Bea". Ana renombra a Martina con
+búho y la archiva en dos pasos: sin alumnos vuelve a "¿Con quién vas a trabajar?", Ajustes la lista
+en "Archivado (1)"; Bea al entrar ya no la tiene en el selector. Datos de prueba borrados, flood
+vaciado, `recent_window` de vuelta a 5 (se bajó a 0 durante la prueba porque el catálogo local no
+daba para otra regular); `config:status` limpio; el único error de watchdog es ese 422
+`no_content` provocado a propósito.
+
+**Hallazgos de la verificación (corregidos)**: "Tú dejarás de verla" y "practican con ella"
+asumían el género del alumno; el título de la edición decía "Cambiar a Marta" (ahora "Nombre y
+avatar de Marta"); el ejemplo del campo era "ABC 123", con un 1 que los códigos nunca llevan (ahora
+"ABC 234").
+
+**Para subplanes siguientes**:
+- **06b**: Ajustes ya tiene la sección "Alumnos"; la de plan y borrado de cuenta va debajo.
+  `describeLearnerError('learner_limit')` sigue en neutro con el máximo.
+- **08**: el cupo agotado al añadir alumno llega por el 422 de `learners/new`; el paywall puede
+  colgarse ahí y en el 402 del dashboard.
+- **10/12**: `covered_by_organization` ya se pinta ("Acceso activado por {centro}") en el selector,
+  Ajustes y la ficha; `staff` ya ve solo "Dejar de trabajar".
+- En Expo Go el QR codifica `exp://…/--/learners/join?code=…`; en un development build,
+  `shine://learners/join?code=…`. Abrirlo sin sesión lleva al login y se pierde el código.
+
+### 07. Backend: webhook de RevenueCat (2026-10-26)
+
+Todo en `shine_entitlement`. En `config/sync`: `shine_entitlement.settings` (nuevo, solo el flag
+`revenuecat_refresh = false`). El secreto va en `settings.php`, no en git. Detalle de la API en
+`docs/api-design.md` ("Webhooks").
+
+- **`POST /shine/webhooks/revenuecat`** (`RevenueCatWebhookController`): ruta anónima
+  (`_access: TRUE`, sin CSRF porque no hay cookie). La cabecera `Authorization` se compara en
+  tiempo constante (`hash_equals`) con `$settings['shine_entitlement.revenuecat_webhook_secret']`;
+  sin secreto configurado, todo es 401 (`webhook_not_configured`) con error en watchdog; cabecera
+  ausente o distinta, 401 (`unauthorized`) con aviso (sin registrar el valor recibido). Cuerpo sin
+  objeto `event`, 400. Un producto fuera del catálogo, 422 con `source` y `product_id` para que
+  RevenueCat reintente cuando se añada (§4.3). Lo demás responde 200 siempre: aplicado, repetido
+  (`skipped`) o ignorado.
+- **`shine_entitlement.revenuecat_processor`** (`RevenueCat\RevenueCatProcessor`): titular por
+  `app_user_id` (y `aliases` / `original_app_user_id` como respaldo; un id anónimo o un usuario
+  borrado se ignora con 200); entitlement por (`store` → `source`, `field_external_id` =
+  **`original_transaction_id`**); solo `APP_STORE`, `MAC_APP_STORE` y `PLAY_STORE` (Stripe va por
+  11; `PROMOTIONAL`, `AMAZON`, `TEST_STORE`... se ignoran con aviso). El producto se resuelve en el
+  catálogo al crear y en cada evento que activa, así el cupo sigue al producto vigente. Todo en
+  una transacción, con `field_raw_event`, `field_last_event_id` y `field_event_timestamp` (ms), e
+  invalidación de `entitlement_list` y `user:{uid}` de los titulares tocados al terminar (la caché
+  del acceso de 04). `TRANSFER` no trae transacción: mueve los entitlements de store de los
+  `transferred_from` al primer titular de `transferred_to`.
+- **Máquina de estados** (tabla en `api-design.md`): activadores (`INITIAL_PURCHASE`, `RENEWAL`,
+  `UNCANCELLATION`, `PRODUCT_CHANGE`, `SUBSCRIPTION_EXTENDED`, `REFUND_REVERSED`) → `active` o
+  `trial`, caducidad del evento, `cancelled_at` vacío; `CANCELLATION` → `cancelled_at`, y si
+  `cancel_reason = CUSTOMER_SUPPORT` es un reembolso → `revoked` al momento; `BILLING_ISSUE` →
+  `billing_retry` hasta el fin del periodo de gracia; `EXPIRATION` → `expired` (`revoked` por
+  `CUSTOMER_SUPPORT`, `paused` por `SUBSCRIPTION_PAUSED`); `SUBSCRIPTION_PAUSED` solo anota;
+  `TEST` y el resto de tipos, ignorados.
+- **Idempotencia**: mismo `id` que el último aplicado → `duplicate`; `event_timestamp_ms` anterior
+  → `stale`; 200 con `applied: false` y nada escrito.
+- **Refresco bajo demanda**: sin clave de API todavía. Queda `SubscriberRefreshInterface` +
+  `NullSubscriberRefresh` (`shine_entitlement.revenuecat_refresh`), el flag en
+  `shine_entitlement.settings` (con `shine_entitlement_update_11001`, el módulo no tenía
+  `.install`) y anotado dónde iría la clave (`$settings['shine_entitlement.revenuecat_api_key']`).
+
+**Decisiones y desviaciones del diseño** (anotadas en `monetization.md` §6.1):
+- `original_transaction_id` como id externo, no `original_app_user_id`: dos suscripciones del mismo
+  usuario chocarían y un `TRANSFER` lo mueve.
+- RevenueCat **no tiene eventos `REFUND` ni `REVOKED`** (comprobado en su documentación): el
+  reembolso es `CANCELLATION` con `cancel_reason = CUSTOMER_SUPPORT`.
+- `SUBSCRIPTION_PAUSED` llega antes de que acabe el periodo pagado; ponerlo en `paused` cortaría el
+  acceso antes de tiempo. Se anota, y la `EXPIRATION` posterior (`expiration_reason =
+  SUBSCRIPTION_PAUSED`) deja `paused`.
+- `BILLING_ISSUE`: caducidad = fin del periodo de gracia si lo hay, si no la del evento. Una primera
+  versión tomaba el máximo de tres fechas y ocultaba fixtures incoherentes.
+- **El secreto no puede empezar por `Bearer `**: el proveedor de autenticación de simple_oauth es
+  global y daría 401 antes del controlador; `_oauth_skip_auth` **no lo evita en una ruta solo POST**
+  (simple_oauth la busca con un GET de prueba y no la encuentra). Lo pensaba usar y lo descubrió el
+  test. Documentado en CLAUDE.md (gotcha 22 y tabla de ficheros fuera de git) y el controlador avisa
+  en watchdog si el secreto configurado lleva el prefijo.
+- Un evento de una suscripción sin compra registrada (webhook perdido) crea el entitlement con el
+  estado que toque: rastro sin dar acceso.
+
+**Tests kernel** (`RevenueCatWebhookTest`, 8 tests, sobre `EntitlementAccessKernelTestBase` para
+que la cobertura la diga el servicio de 04; la suite de `shine_entitlement` queda en 31 tests y
+1266 aserciones). Fixtures reales en `tests/fixtures/revenuecat/` (uno por tipo, 15 ficheros, con
+la forma del webhook y `{{APP_USER_ID}}` como marcador; el reloj de pruebas se pone en el instante
+de la compra). Cubre: 401 sin cabecera, con otra y sin secreto, y 401 de simple_oauth con prefijo
+`Bearer `; compra → `billing_retry` con gracia (cubre) → renovación → evento antiguo y repetido sin
+efecto → cancelación (cubre hasta caducar; `/shine/me` cubierto) → `EXPIRATION` (no cubre;
+`/shine/me` plan `free` sin limpiar cachés); prueba de store, reembolso y reembolso revertido; pausa
+de Play y su `EXPIRATION`; cambio de producto y vuelta con la renovación; `TRANSFER` entre titulares
+(repetido, desconocido); producto desconocido 422, UUID desconocido y alumno ignorados, alias
+anónimo que resuelve, `TEST`, tipo y store no soportados, sin transacción, cuerpos inválidos;
+`EXPIRATION` sin compra previa.
+
+**Verificación en el sitio** (jose, uid 2, con los fixtures y `local-dev-secret` en
+`settings.php`): sin cabecera y con otra → 401; `/shine/me` pasa de `free`/no cubierto a
+`family`/`active`/cubierto con `INITIAL_PURCHASE`, sigue cubierto en `billing_retry` (caducidad al
+fin de la gracia), `active` tras `RENEWAL`, evento antiguo `stale` y repetido `duplicate` sin
+cambios, sigue cubierto tras `CANCELLATION` y vuelve a `free`/no cubierto tras `EXPIRATION`, todo
+sin `drush cr`; producto desconocido 422, UUID desconocido, `TEST` y store `STRIPE` ignorados con
+200. Watchdog con los avisos esperados y 0 errores. Entitlement de prueba borrado; `cim -y` sin
+cambios.
+
+**Para subplanes siguientes**:
+- **08 (app)**: `Purchases.logIn(uuid del titular)` es lo que hace que `app_user_id` resuelva; tras
+  una compra, `refreshMe()` y, si el webhook aún no ha llegado, reintentar unos segundos (RevenueCat
+  entrega en segundos pero no antes de responder a la app).
+- **09**: configurar en RevenueCat la URL `https://{dominio}/shine/webhooks/revenuecat` y un
+  "Authorization header value" sin `Bearer `; el mismo valor en `settings.php` de producción. Los
+  `product_id` reales de las stores van al catálogo (`family`); con Play de 2023 en adelante el
+  formato es `subscripcion:plan_base`.
+- **11 (Stripe)**: mismo patrón (`RevenueCatProcessor` como modelo: resolver, upsert por
+  (`stripe`, id de suscripción), idempotencia por `created` del evento, transacción, invalidación).
+  Los eventos `STRIPE` que RevenueCat pudiera mandar se ignoran a propósito.
+- Refresco bajo demanda: implementar `SubscriberRefreshInterface` cuando haya clave de API y
+  engancharlo en `GET /shine/me` (04) detrás de `revenuecat_refresh`.
+
+---
+
+## FASE 18 — Multiidioma (castellano y catalán)
+**Estado**: 🔄 En curso. Plan de planes en `plans/multiidioma/README.md`; análisis en `plans/multiidioma/analisis.md`.
+
+Decisiones de producto (cerradas el 2026-10-26): cada alumno elige idioma al darse de alta; cambiar
+de idioma reinicia su progreso; dos idiomas = dos perfiles del mismo niño; de momento la interfaz
+comparte el idioma del alumno activo; el contenido y las estadísticas anteriores eran de ejemplo.
+
+### 00. Estructura catalana del experto (2026-10-26)
+
+- [x] `plans/multiidioma/estructura.md` (documento para el experto) y respuesta en
+  `plans/multiidioma/Shine en Catalán.md`: áreas, perfil lector y referencias por nivel, tipos,
+  ciclo de 8 bloques, sonoridad (4 grupos, 33 términos) y esfuerzo (4 grupos, 19 términos).
+- [x] Versión normalizada en `plans/multiidioma/estructura-ca.md` (nombres definitivos y únicos,
+  ciclo con pesos, nivel mínimo, 8 preguntas abiertas al experto: desglose de dígrafos, orden del
+  ciclo, que/qui y gue/gui, codas CVCC e hiatos en L3, silabeo de tx según el IEC).
+- [x] Datos listos para importar: `shine/scripts/phonology-terms.es.json` (copia de los 38
+  términos actuales) y `phonology-terms.ca.json` (52 términos). El script que los lee llega en 02.
+- [x] CSV del banco de imágenes relleno por Fable (432 fichas: 423 usables, 9 no usables; nivel
+  lector por la tabla 2.3 catalana; grupos fon:, espejo:, graf: y sib: generados del nombre).
+  Pendiente de revisión del experto (criterios en `estructura.md` 9.1).
+
+### 01. Backend: modelo de idioma (2026-10-26)
+
+- [x] Idiomas `es` (por defecto, sin prefijo) y `ca` (`/ca`). `en` se mantiene instalado sin
+  negociar (prefijo `/en`) porque las 756 entidades de configuración llevan `langcode: en`;
+  borrarlo las dejaría huérfanas.
+- [x] `scripts/migrate-langcode-en-to-es.php`: migración por SQL de toda tabla con columna
+  `langcode` (11.632 filas: nodos, paragraphs, términos, media, usuarios, `preferred_langcode`,
+  `node_access`, `path_alias`, índice de búsqueda) sin disparar presaves. Idempotente; ninguna fila
+  queda en `en`.
+- [x] `language.content_settings` para los 10 bundles de nodo, 5 vocabularios, 2 paragraphs, media y
+  los 2 mensajes: idioma por defecto `es`, alterable; traducción (`content_translation`) solo en
+  `areas`, `activity_cycle` y `activity_message`.
+- [x] `scripts/translate-interface-terms.php`: traducción `ca` de las 5 áreas (nombres del
+  experto) y de los 7 mensajes (texto provisional, a revisar en 05); el ciclo "Sílabas" no existe
+  en local y el script lo dice. `GET /ca/jsonapi/taxonomy_term/areas` devuelve los nombres catalanes
+  con el mismo uuid que `GET /jsonapi/taxonomy_term/areas`.
+- [x] `shine_account`: `POST /shine/learners` acepta `langcode` (es | ca; ausente = es; otro,
+  422 `langcode`), `LearnerManager::create()` fija `preferred_langcode` (y el `langcode` de la
+  entidad si el idioma está instalado), la forma `learner` lleva `langcode`, `PATCH` con `langcode`
+  llama a `LearnerManager::setLanguage()` (solo owner, transacción, hook nuevo
+  `hook_shine_learner_language_change()`) y responde `reset: true|false`.
+- [x] `shine_level`: `ChangeReason::LanguageChange`, `LevelReset::reset($user, $reason)` y
+  `resetForLanguageChange()` (borra activitylog, activitysummary, sessionfeedback y
+  activityfeedback del alumno y despublica todas sus sesiones), hook implementado en
+  `shine_level.module`; `LevelLadder::contentQuery(area, nivel, langcode)`, `hasContent()` y
+  `languageOf()`; generador, evaluador, ciclo y `SessionPlan` con idioma; la sesión nace con el
+  `langcode` del alumno; `--dry-run` imprime `langcode` e "Idioma: xx.".
+- [x] Vistas: columna y filtro de idioma en `shine_sessions`; idioma del alumno en `shine_levels`.
+- [x] Tests: `shine_level` 58 tests (nuevo `LanguageTest`: techo por idioma, generador y ciclo solo
+  del idioma del alumno, reinicio por cambio de idioma) y `shine_account` 27 tests (nuevo
+  `testLearnerLanguage` con el módulo de prueba `shine_account_test`: alta, validación, mismo idioma
+  sin reinicio, fallo del hook deshace el cambio, reset con token revocado, guardian 403, `/shine/me`).
+- [x] Verificado en el sitio como jose (gotcha 14): sesiones y estadísticas de ejemplo borradas;
+  cortesía familiar y dos alumnos, Marta (`es`, uid 42) y Pau (`ca`, uid 43); `generate` de Pau
+  422 `no_content` y de Marta 201 con sesión `es`; `PATCH langcode` inválido 422; es → ca `reset:
+  true`, token de alumno anterior 401, sesión despublicada, 5 entradas `language_change`; vuelta a
+  es y mismo idioma `reset: false`. `config:status` sin diferencias; watchdog sin errores nuevos.
+- Hallazgos: el storage SQL no carga los valores de campo guardados en un idioma no instalado
+  (por eso el `langcode` de la entidad solo toma el idioma si existe; en kernel tests sin
+  `language` solo hay `en`); un nodo creado con un `langcode` no instalado guarda el valor pero
+  `language()` devuelve el del sitio (los kernel tests de idioma instalan `language` y crean es y ca).
+- Pendiente para los siguientes subplanes: 02 (importador: clave `idioma`, códigos con idioma,
+  huella y cobertura por idioma, términos desde los JSON, handler de imágenes), 03 y 04 (app), 05
+  (contenido catalán y revisión de mensajes y CSV), 06 (verificación). Hasta 02 no hay contenido
+  catalán: un alumno `ca` recibe 422 `no_content`.
+
+### 02. Backend: importador bilingüe, banco de imágenes y posición de imágenes (2026-10-26)
+
+- [x] Respuesta del experto a las 8 preguntas (`plans/multiidioma/resposta-estructura-ca.md`): todo
+  confirmado; la única novedad es Level2 para monosílabos muy frecuentes con coda final simple
+  (dent, pont, font, porc, serp, forn, guant, talp, llamp, cranc, tronc, test), aplicada al CSV del
+  banco (validado por el experto: 22 L0, 248 L1, 89 L2, 64 L3, 4 L5) y a `estructura-ca.md`.
+- [x] Contrato del lote: `idioma` (es | ca) o `idiomas` (lista) obligatorio; con `idiomas` un nodo
+  por idioma con el mismo material, y cualquier valor puede ser un objeto por idioma (`Localizer`:
+  título, instrucción, sonoridad, esfuerzo, `nombre` de cada imagen). Código `TIPO-XX-Lnn-AREA-nnn`
+  (con `idiomas` el lote lo escribe sin XX y el importador lo inserta); un código no cambia de
+  idioma. Informe con una fila por idioma.
+- [x] Huella sha256(tipo, idioma, material); duplicados y solapamiento solo dentro del idioma;
+  sobreuso por tipo, idioma y nivel; `TermResolver` busca sonoridad y esfuerzo dentro del idioma
+  del nodo y áreas, niveles, ciclos y explicación por su nombre canónico castellano.
+- [x] `scripts/create-phonology-terms.php -- es|ca` lee `scripts/phonology-terms.{es,ca}.json`
+  (idempotente por vocabulario, idioma y nombre): es sin cambios (46 términos con grupos), ca
+  creados 60 (8 grupos, 33 + 19 términos).
+- [x] Cobertura por idioma al final de cada importación; `shine-content:inventory --lang`, código
+  siguiente por prefijo con idioma, `uso_unidades` por tipo, idioma y nivel, clave `idioma` en
+  cada registro exportado (el inventario sigue siendo reimportable sin cambios).
+- [x] `drush shine-content:import-images content/images/manifest.json` (`ImageBankImporter`): 432
+  media de imagen con name y alt = slug, ficheros en public://banco-imagenes/, idempotente (segunda
+  pasada 432 sin cambios), descartados omitidos (5). Los 4 media de prueba antiguos se borraron.
+- [x] `ImagePositionActivityHandler` (prefijo IMG, paragraphs i1 e i1_item, media por slug, nombres
+  por idioma; forma canónica sin nombres ni orden de grupos; unidades = slugs). Primer handler con
+  media y paragraphs nacido bilingüe.
+- [x] Contenido: borradas las 33 actividades de demostración (A1, A2, A3 incluidas) y la sesión
+  que quedaba; los tres lotes de `shine/content/` reescritos con `idioma: es` y códigos ES y
+  reimportados (30 actividades); lote de ejemplo `content/fase18-ejemplos-v1.json` (matriz p/b/d/q
+  y posición de imágenes con `idiomas` [es, ca], parpadeo solo ca, sílabas es con imagen por slug):
+  dry-run, importación, publicación y segunda pasada sin cambios.
+- [x] Hito de control del README: `shine-level:generate --dry-run` del alumno ca recibe la matriz,
+  la posición de imágenes y el parpadeo catalanes (nada en castellano); el es recibe solo
+  castellano. JSON:API devuelve la actividad de sílabas con el media `gato` y el fichero de
+  `banco-imagenes/` (200 por HTTP). `config:status` sin diferencias; watchdog sin errores nuevos.
+- [x] Tests: `shine_content` 34 tests (nuevos `Fase18LanguageTest`: Localizer, idioma obligatorio
+  y código con idioma, un nodo por idioma con términos de cada idioma, duplicados por idioma,
+  inventario y cobertura por idioma; `ImageBankTest`: banco por slug idempotente con sustitución
+  de fichero, handler de imágenes con paragraphs, reutilización, validación, huella y bilingüe) y
+  `shine_level` 58; los tests existentes se pasaron al formato de código con idioma y al helper
+  `installLanguages()` de `ShineLevelKernelTestBase` (es por defecto y ca, como en el sitio).
+- Hallazgo: en kernel tests sin el módulo `language` el idioma por defecto es `en` y los términos
+  nacen en `en`; con vocabularios por idioma eso rompe la resolución, por eso el helper.
+- Pendiente: 03 y 04 (app), 05 (contenido catalán: lotes por tipo con los nombres del CSV; los
+  tres lotes castellanos y el de ejemplo son material de prueba), 06 (verificación). El bloque
+  ca del manifiesto (05) sale del CSV validado.
+

@@ -498,6 +498,33 @@ Reglas:
 - Sin actividades con que llenar la sesión (catálogo vacío para esas áreas y niveles):
   `422 {"error":"no_content","branch":...,"kind":...,"reason":...}` y no se crea nada. El
   detalle (qué área, qué nivel) queda en watchdog, canal `shine_level`.
+- **Muro de pago (FASE 17, subplan 04)**: si el árbol decide una sesión **regular** y el alumno
+  no puede recibirla, `402` y no se crea nada:
+  ```json
+  {
+    "error": "payment_required",
+    "reason": "trial_exhausted",
+    "branch": "regular",
+    "free_regular_sessions": 8,
+    "completed_regular": 8,
+    "paused": false,
+    "released_by": null,
+    "holder_status": { "plan": "free", "catalog_plan": "free", "status": "none", "source": null, "expires_at": null, "max_learners": 1, "covered": false, "entitlement": null }
+  }
+  ```
+  `reason`: `trial_exhausted` (nadie cubre al alumno y ya completó `free_regular_sessions`
+  regulares, las haya operado quien sea), `learner_paused` (algún adulto `owner` tiene plan pero
+  el alumno queda fuera de su cupo), `learner_not_covered` (archivado o sin ningún adulto con
+  acceso activo) o `released_by_organization` (subplan 10). `holder_status` es el del titular que
+  opera (claim `operated_by` del token de alumno; con un token de titular, el suyo; sin claim, el
+  `owner` más antiguo del alumno), con la misma forma que en `GET /shine/me`. **Toda sesión de
+  evaluación** (bloque inicial, periódica, por racha, dirigida, continuación) se genera siempre,
+  con la prueba agotada o sin plan. La regla completa está en `docs/monetization.md` §4.1 y §5.4;
+  la decisión la toma el servicio `shine_entitlement.access` (ver "Entitlements → Acceso").
+- **Pendiente caducada** (`pending_max_days`, 7): una sesión pendiente creada hace más de N días se
+  despublica (no se borra) en la siguiente llamada y se genera otra. La app deja de verla por
+  JSON:API (node grants solo sobre publicadas) y no cuenta para nada: ni numeración, ni prueba
+  gratuita, ni contadores de evaluación.
 - Sin token: `403`.
 
 Respuesta `201` / `200`:
@@ -528,8 +555,10 @@ Respuesta `201` / `200`:
   (bloque inicial), "Sesión de ajuste" y "Sesión de ajuste 2" (evaluaciones).
 
 Comando de apoyo (solo servidor): `ddev drush shine-level:generate {uid} [--dry-run]` imprime la
-rama tomada, por qué, las actividades elegidas y los avisos (techo por contenido, huecos
-vacíos); sin `--dry-run` crea la sesión igual que el endpoint.
+rama tomada, por qué, las actividades elegidas, los avisos (techo por contenido, huecos
+vacíos) y lo que dicen las puertas ("Puerta: pasa" o "Puerta: denegado, trial_exhausted" con el
+cuerpo del 402); sin `--dry-run` crea la sesión igual que el endpoint, y con la puerta cerrada
+no la crea.
 
 ### Cerrar una sesión
 
@@ -610,21 +639,32 @@ reciben `403` (la página 403 de Drupal; el código es lo que cuenta). Cuerpos y
   "created": "2026-10-23T11:19:41+00:00",
   "archived_at": null,                   ← fecha ISO si está archivado
   "onboarding_state": "evaluating",      ← field_onboarding_state del alumno (shine_level)
+  "langcode": "ca",                      ← FASE 18: idioma de trabajo del alumno, "es" | "ca" (preferred_langcode)
   "role": "owner",                       ← rol del titular que pregunta sobre este alumno
   "adults": [                            ← adultos con acceso activo, del más antiguo al más nuevo
     { "uuid": "c468dfeb-...", "display_name": "Ana", "role": "owner" }
   ],
-  "invite": null                         ← solo para el owner: {created, expires_at} si hay un código vivo (nunca el código)
+  "invite": null,                        ← solo para el owner: {created, expires_at} si hay un código vivo (nunca el código)
+  "covered_by": "trial",                 ← FASE 17 (04): "organization" | "holder" | "trial" | "none"
+  "covered_by_organization": null,       ← nombre del centro, solo si covered_by = organization (subplan 10)
+  "paused": false,                       ← fuera del cupo de un adulto con plan (visible, no operable)
+  "blocked_reason": null,                ← por qué no recibiría una regular (el `reason` del 402), o null
+  "completed_regular": 3,                ← regulares completadas, las haya operado quien sea
+  "free_regular_sessions": 8             ← para el aviso "te quedan N sesiones gratis"
 }
 ```
+
+Las seis últimas claves las añade `shine_entitlement` por `hook_shine_learner_alter()`
+(`shine_account.api.php`) y salen en **todas** las rutas que devuelven un `learner` (también
+`/shine/me` y el canje de códigos). Reglas de cobertura en "Entitlements → Acceso".
 
 ### Endpoints
 
 ```
-POST   /shine/learners                  {display_name, avatar?}   → 201 {learner}
+POST   /shine/learners                  {display_name, avatar?, langcode?}   → 201 {learner}
 GET    /shine/learners                                            → 200 {learners: [...]}
 GET    /shine/learners/{uuid}                                     → 200 {learner}
-PATCH  /shine/learners/{uuid}           {display_name?, avatar?}  → 200 {learner}
+PATCH  /shine/learners/{uuid}           {display_name?, avatar?, langcode?}  → 200 {learner, reset}
 POST   /shine/learners/{uuid}/archive                             → 200 {learner}
 DELETE /shine/learners/{uuid}/access                              → 200 {withdrawn: true}
 POST   /shine/learners/{uuid}/invite                              → 201 {code, expires_at, learner}
@@ -642,6 +682,15 @@ POST   /shine/account/delete            {password}                → 200 {delet
   antigüedad del acceso. Los archivados se distinguen por `archived_at`.
 - **`PATCH`**: `display_name` se recorta (espacios) y admite hasta 60 caracteres; `avatar: null` o
   `""` quitan el avatar, ausente = no tocar. Solo `owner`.
+- **Idioma del alumno (FASE 18)**: `langcode` (`es` | `ca`, sin distinguir mayúsculas) se elige en
+  el alta junto con el nombre; ausente, `es`. Otro valor: `422 validation` con `field: langcode`.
+  El `PATCH` con `langcode` cambia el idioma de trabajo y, si es distinto del actual, **reinicia
+  el progreso del alumno** en la misma transacción (`plans/multiidioma/analisis.md` 2.3): niveles a
+  Level0 con razón `language_change` en el histórico, logs, resúmenes y valoraciones borrados,
+  todas sus sesiones despublicadas. La respuesta lleva `reset: true`; con el mismo idioma (o sin
+  `langcode` en el cuerpo), `reset: false` y nada cambia. Guardar el usuario revoca sus tokens
+  (gotcha 20 de CLAUDE.md): tras un `reset: true` la app pide un token de alumno nuevo y vuelve a
+  un dashboard vacío. Solo `owner`. Para trabajar en los dos idiomas, dos perfiles del mismo niño.
 - **`archive`**: fija `field_archived_at` y **revoca todos los `oauth2_token` del alumno**; no se
   bloquea ni se borra, sigue saliendo en la lista y su progreso se sigue leyendo. Libera cupo.
   Idempotente. En v1 no se desarchiva ni se edita. Solo `owner`.
@@ -664,11 +713,26 @@ POST   /shine/account/delete            {password}                → 200 {delet
   `422 invite_invalid` **sin distinguir el motivo**. Límite de intentos con `flood`: 5 fallos por
   titular y hora (30 por IP, `shine_account.settings`) → `429 too_many_attempts` hasta que pase la
   ventana, también con el código correcto.
-- **`GET /shine/me`**: `holder` = `{uuid, display_name, email, account_kind, adult_consent_at}` y
-  `learners` (misma forma que arriba). La app lo llama al arrancar. Otros módulos amplían la
-  respuesta con `hook_shine_me_alter(array &$me, UserInterface $holder)` (documentado en
-  `shine_account.api.php`): el 04 añade `holder_status` y la cobertura por alumno; el 10,
-  `organizations`.
+- **`GET /shine/me`**: `holder` = `{uuid, display_name, email, account_kind, adult_consent_at}`,
+  `learners` (misma forma que arriba, con la cobertura de cada uno) y, desde el subplan 04,
+  `holder_status`, el plan vigente del titular:
+  ```json
+  "holder_status": {
+    "plan": "family",            ← "free" | "family" | "professional" | "school" | "courtesy"
+    "catalog_plan": "family",    ← entrada del catálogo (free, family, professional, school_classroom)
+    "status": "active",          ← "none" (gratuito) | "active" | "trial" | "grace" | "billing_retry"
+    "source": "app_store",       ← null en el gratuito
+    "expires_at": "2026-11-22T10:00:00+00:00",   ← null = no caduca
+    "max_learners": 3,
+    "covered": true,
+    "entitlement": "uuid"        ← null en el gratuito
+  }
+  ```
+  Con varios entitlements que cubren, el de mayor cupo (a igualdad, el que caduca más tarde).
+  La app lo llama al arrancar y tras cada compra. Otros módulos amplían la respuesta con
+  `hook_shine_me_alter(array &$me, UserInterface $holder)` y cada alumno con
+  `hook_shine_learner_alter()` (los dos en `shine_account.api.php`); el 10 añade `organizations`
+  y `released_by`.
 - **`POST /shine/account/delete`**: pide la contraseña aunque la petición ya lleve el token (un
   dispositivo desbloqueado no debe poder borrar la cuenta). "Borrar" es **anonimizar**: nombre de
   usuario `deleted-{uuid}`, email e `init` `deleted+{uuid}@shine.invalid`, nombre para mostrar,
@@ -693,10 +757,34 @@ POST   /shine/account/delete            {password}                → 200 {delet
 | 409 | `last_owner` | Retirar el acceso del único `owner` |
 | 409 | `in_progress` | Otra creación de alumno del mismo titular en curso (lock) |
 | 422 | `learner_limit` (`max`) | Cupo de alumnos alcanzado |
-| 422 | `validation` (`field`, `message`) | Nombre vacío o de más de 60 caracteres, avatar que no es una clave (`[A-Za-z0-9_-]{1,32}`), contraseña o código ausentes |
+| 422 | `validation` (`field`, `message`) | Nombre vacío o de más de 60 caracteres, avatar que no es una clave (`[A-Za-z0-9_-]{1,32}`), `langcode` que no es `es` ni `ca`, contraseña o código ausentes |
 | 422 | `invite_invalid` | Código de vínculo caducado, usado, inexistente, mal formado o de un alumno archivado (un solo error para todos) |
 | 422 | `own_invite` | El titular canjea un código que generó él mismo |
 | 429 | `too_many_attempts` | Demasiados canjes fallidos (5 por titular y hora, 30 por IP) |
+
+### Idiomas (FASE 18)
+
+El sitio tiene dos idiomas, `es` (por defecto, sin prefijo de URL) y `ca` (prefijo `/ca`); `en`
+sigue instalado solo porque las entidades de configuración llevan `langcode: en`, y no se negocia
+(prefijo `/en`, sin contenido). Qué significa el idioma en cada cosa
+(`plans/multiidioma/analisis.md` 2.1):
+
+- **Alumno**: `preferred_langcode` del usuario (`langcode` en la forma `learner`). Lo fija el alta
+  y solo lo cambia el `PATCH` con reinicio. El token de alumno no cambia.
+- **Actividades**: nodos independientes por idioma (`langcode` del nodo), nunca traducciones. El
+  generador, el techo por contenido y el ciclo solo miran actividades del idioma del alumno, y la
+  sesión nace con el `langcode` del alumno. Las consultas JSON:API de actividades, sesiones y
+  seguimiento **no cambian**: un alumno `ca` solo recibe sesiones con actividades `ca`.
+- **Recursos traducidos** (`content_translation`): áreas (`taxonomy_term/areas`), ciclos
+  (`taxonomy_term/activity_cycle`) y mensajes (`activity_message/*`). El mismo `uuid` en los dos
+  idiomas; se piden con el prefijo de idioma en la URL y JSON:API devuelve esa traducción:
+  `GET /jsonapi/taxonomy_term/areas` (castellano) y `GET /ca/jsonapi/taxonomy_term/areas`
+  (catalán, `langcode: ca` en los atributos). Sin traducción, la original.
+- **Textos de la app**: la API no devuelve textos de interfaz; la app los tiene en sus catálogos
+  `src/locales/es.json` y `ca.json` (subplan 03) y elige el idioma por el alumno activo (04).
+- **Scripts por entorno**: `scripts/migrate-langcode-en-to-es.php` (migración única del contenido
+  anterior a la FASE 18), `scripts/translate-interface-terms.php` (traducción `ca` de áreas,
+  ciclo y mensajes; idempotente) y, desde el subplan 02, los términos fonológicos por idioma.
 
 ### Token de alumno (grant OAuth `shine_learner`)
 
@@ -773,10 +861,46 @@ accounts`.
 
 ## Entitlements (FASE 17)
 
-Módulo `shine_entitlement` (`docs/monetization.md` §4; subplan `plans/entitlement/03`). Aquí solo
-el modelo y la administración: la decisión de acceso (quién está cubierto, cupo efectivo, muro
-402) es del subplan 04, y los webhooks que crean entitlements de pago, de 07 (RevenueCat) y 11
-(Stripe). **La app no consulta esta entidad**: le llega lo que necesita por `GET /shine/me`.
+Módulo `shine_entitlement` (`docs/monetization.md` §4; subplanes `plans/entitlement/03` y `04`).
+El modelo, la administración y la decisión de acceso (quién está cubierto, cupo efectivo, muro
+402); los webhooks que crean entitlements de pago son de 07 (RevenueCat) y 11 (Stripe). **La app
+no consulta esta entidad**: le llega lo que necesita por `GET /shine/me` y por el 402 de
+`POST /shine/session/generate`.
+
+### Acceso: servicio `shine_entitlement.access` (subplan 04)
+
+`EntitlementAccessInterface` (`src/Access/`): `holderStatus(holder)` → `HolderStatus`;
+`coveredBy(learner)` → `Coverage` (`organization` | `holder` | `trial`) o NULL;
+`learnerCovered(learner)`; `canGenerateRegular(learner)` → `AccessDecision` (permitido con su
+cobertura, o motivo `trial_exhausted` | `learner_paused` | `learner_not_covered` |
+`released_by_organization`, siempre con `completed_regular` y `free_regular_sessions`);
+`maxLearners(holder)` y `canCreateLearner(holder)`.
+
+Reglas (`docs/monetization.md` §4.1):
+- **Titular cubierto** = algún entitlement suyo con estado `active`, `trial`, `grace` o
+  `billing_retry`, ya empezado (`field_starts_at`) y con `field_expires_at` vacío o futuro.
+  `paused`, `expired`, `revoked` y los caducados no cubren. Sin ninguno: plan `free` del catálogo
+  (cupo 1).
+- **Cobertura de un alumno**, en orden: (1) plaza de organización (hueco
+  `OrganizationCoverageInterface`, servicio `shine_entitlement.organization_coverage`, que el
+  subplan 10 sustituye); (2) cualquier adulto con `learner_access` activo cubierto por un plan: si
+  es `owner`, el alumno tiene que estar entre los primeros `max_learners` alumnos activos de los que
+  es `owner` por fecha de creación (los que sobran quedan `paused`); un `guardian` o `staff` cubre
+  **sin gastar su propio cupo**; (3) prueba gratuita: menos de `free_regular_sessions` regulares
+  completadas, contando todas las del alumno (también las operadas por otro adulto). Nada de eso:
+  `covered_by: none`.
+- Una cuenta `holder` que juega consigo misma (anteriores a la FASE 17) se cubre con su propio
+  plan, sin cupo, y si no con la prueba.
+- **Cupo de alumnos**: `shine_account.learner_quota` queda decorado por
+  `EntitlementLearnerQuota`: `POST /shine/learners` admite hasta `max_learners` del plan vigente.
+- **Muro**: `EntitlementGate` (etiqueta `shine_level.session_gate`) solo actúa en la rama
+  `regular`; el controlador traduce la denegación a `402` ("Generar (u obtener) la siguiente
+  sesión").
+- **Caché** (`cache.default`): plan vigente por titular con etiquetas `user:{uid}` y
+  `entitlement_list`; cobertura "por plan" por alumno con las de todos los usuarios y accesos
+  consultados (`learner_access_list`, `entitlement_list`, `user:{adulto}`, `user:{hermano}`). Guardar
+  un entitlement, crear, vincular, retirar o archivar un alumno la invalidan solos; las caducidades
+  e inicios futuros caducan por `expire`. El contador de la prueba no se cachea.
 
 ### Entidad `entitlement`
 
@@ -838,6 +962,77 @@ webhooks lo traducen a 422 + watchdog para que la store o Stripe reintenten),
 Todo con el permiso `administer shine entitlements`. Para aplicar a lo ya vendido un cambio del
 catálogo: `ddev drush shine-entitlement:recalc [--plan=ID] [--dry-run]` (solo entitlements vivos:
 ni `expired` ni `revoked` ni caducados).
+
+---
+
+## Webhooks (FASE 17)
+
+### RevenueCat
+
+`POST /shine/webhooks/revenuecat` (módulo `shine_entitlement`, subplan 07; `docs/monetization.md`
+§6.1). Ruta anónima: la autentica la cabecera `Authorization`, que debe ser **exactamente** el
+valor de `$settings['shine_entitlement.revenuecat_webhook_secret']` (`settings.php`, nunca en
+config ni en git) y el mismo que se configura en el panel de RevenueCat (Integrations → Webhooks →
+"Authorization header value"). Comparación en tiempo constante. **El valor no puede empezar por
+`Bearer `**: el proveedor de autenticación de simple_oauth es global y toma cualquier
+`Authorization: Bearer …` por un token OAuth (401 antes del controlador), y `_oauth_skip_auth` no
+lo evita en una ruta solo POST (simple_oauth la busca con un GET y no la encuentra). Se procesan
+tanto `environment: SANDBOX` como `PRODUCTION`: las compras de TestFlight y de las pruebas
+internas de Play llegan como sandbox.
+
+Cuerpo: el de RevenueCat (`{"api_version": "1.0", "event": {...}}`). El evento se guarda entero en
+`field_raw_event`.
+
+| Respuesta | Cuándo |
+|---|---|
+| `200 {applied: true, type, event, entitlement, status}` | Evento aplicado |
+| `200 {applied: false, outcome: "skipped", reason: "duplicate" \| "stale"}` | Mismo `id` que el último aplicado, o `event_timestamp_ms` anterior al último aplicado (idempotencia) |
+| `200 {applied: false, ignored: true, reason}` | No es para nosotros y RevenueCat no debe reintentar: `test`, `unsupported_type`, `unsupported_store` (solo `APP_STORE`, `MAC_APP_STORE` y `PLAY_STORE`; Stripe va por su propio webhook, subplan 11), `unknown_holder` (ni `app_user_id`, ni `aliases`, ni `original_app_user_id` son el UUID de un titular activo: usuario borrado o id anónimo), `no_transaction_id`, `unknown_transfer_target`, `nothing_to_transfer` |
+| `400 {error: invalid_payload}` / `400 {outcome: "invalid", reason}` | Sin objeto `event`; sin `type`, `id` o `event_timestamp_ms`; un evento que activa sin `product_id` o sin `expiration_at_ms` |
+| `401 {error: unauthorized \| webhook_not_configured}` | Cabecera ausente o distinta; secreto sin configurar |
+| `422 {error: unknown_product, source, product_id}` | El producto no está en el catálogo de planes: RevenueCat reintenta; añadirlo en `/admin/config/shine/plans` (§4.3) |
+
+Identidades: el titular es `app_user_id` (la app hace `Purchases.logIn(uuid del titular)`), con
+`aliases` y `original_app_user_id` como respaldo. El entitlement es la pareja (origen por `store`,
+`field_external_id` = **`original_transaction_id`**, el id de la suscripción, estable entre
+renovaciones en las dos stores; `transaction_id` si faltara). `original_app_user_id` no vale: dos
+suscripciones del mismo usuario chocarían y un `TRANSFER` lo mueve. Un `TRANSFER` no trae
+transacción: mueve todos los entitlements de store de los `transferred_from` al primer titular de
+`transferred_to`.
+
+Tabla de eventos tal como ha quedado:
+
+| Evento | Qué hace |
+|---|---|
+| `INITIAL_PURCHASE`, `RENEWAL`, `UNCANCELLATION`, `SUBSCRIPTION_EXTENDED`, `REFUND_REVERSED` | Crea o actualiza: `active` (`trial` si `period_type = TRIAL`), `expires_at` = `expiration_at_ms`, `cancelled_at` vacío. Plan y cupo del producto del evento (`PlanCatalog::resolveExternal`) |
+| `PRODUCT_CHANGE` | Igual, con el producto de `new_product_id` (si viene) o `product_id`. El cupo sigue al producto del último evento que activa: la `RENEWAL` siguiente trae el vigente |
+| `CANCELLATION` | `cancelled_at` = momento del evento; el acceso sigue hasta `expires_at`. Si `cancel_reason = CUSTOMER_SUPPORT` es un **reembolso**: `revoked` y `expires_at` = ahora (RevenueCat no tiene evento `REFUND`) |
+| `BILLING_ISSUE` | `billing_retry` (sigue cubriendo); `expires_at` = `grace_period_expiration_at_ms` si hay gracia, si no la caducidad del evento |
+| `EXPIRATION` | `expired`; `revoked` si `expiration_reason = CUSTOMER_SUPPORT`; `paused` si `SUBSCRIPTION_PAUSED`. `expires_at` = la caducidad del evento, nunca después de ahora |
+| `SUBSCRIPTION_PAUSED` (Play) | Solo anuncia la pausa al final del periodo: el estado no cambia; el acceso lo corta la `EXPIRATION` posterior |
+| `TRANSFER` | Los entitlements de store pasan al titular de `transferred_to` |
+| `TEST` | Ignorado (200) |
+| `NON_RENEWING_PURCHASE`, `TEMPORARY_ENTITLEMENT_GRANT`, `INVOICE_ISSUANCE`, `PURCHASE_REDEEMED`, `PRICE_INCREASE_*`, `EXPERIMENT_ENROLLMENT`, `VIRTUAL_CURRENCY_TRANSACTION`, `SUBSCRIBER_ALIAS` | Ignorados con aviso en watchdog (no vendemos nada de eso) |
+
+Cualquier evento de una suscripción de la que no llegó la compra crea el entitlement con el estado
+que toque (una `EXPIRATION` suelta deja un `expired`): queda el rastro y nadie gana acceso. Cada
+evento se aplica en una transacción y deja `field_last_event_id` y `field_event_timestamp` (ms); al
+terminar se invalidan `entitlement_list` y `user:{uid}` de los titulares tocados, así que
+`GET /shine/me` cambia sin limpiar cachés. Todo queda en watchdog, canal `shine_entitlement`.
+
+**Refresco bajo demanda** (§6.1, consultar la API REST de RevenueCat si el entitlement de store
+caduca en menos de una hora): sin implementar, no hay clave de API todavía. Queda
+`SubscriberRefreshInterface` (servicio `shine_entitlement.revenuecat_refresh`, hoy
+`NullSubscriberRefresh`) y el flag `shine_entitlement.settings: revenuecat_refresh = false`; la
+clave iría en `$settings['shine_entitlement.revenuecat_api_key']`.
+
+Probar en local con los fixtures de `tests/fixtures/revenuecat/` (uno por tipo de evento),
+sustituyendo `{{APP_USER_ID}}` por el UUID del titular:
+```bash
+curl -s -X POST https://shine.ddev.site/shine/webhooks/revenuecat \
+  -H 'Authorization: local-dev-secret' -H 'Content-Type: application/json' \
+  -d "$(sed "s/{{APP_USER_ID}}/$UUID/" shine/public_html/modules/custom/shine_entitlement/tests/fixtures/revenuecat/initial_purchase.json)"
+```
 
 ---
 

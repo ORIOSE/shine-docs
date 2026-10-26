@@ -5,12 +5,13 @@ alimenta la actividad "Posición de imágenes" (node activity_image_position) y 
 de "Ordena las sílabas" (node activity_syllable_order). Estado a 2026-10-21.
 
 
-> **Estado a 2026-10-23.** Anclas aprobadas (gato, manzana, coche). Prioridad 1 completa y aceptada
-> (157 de 157, con búho de frente y hormiga cenital). Prioridad 2 generada con Cowork y revisada: 148
-> de 150 aceptadas; pendientes cara (regenerar sin pelo para que no se confunda con cabeza), cangrejo
-> y pizarra (un intento más con pista nueva). Prioridad 3 pendiente. Ficheros en
-> shine/content/images/ con su manifest.json; hojas de contacto, resúmenes y prompts en
-> shine/content/images/_revision/.
+> **Estado a 2026-10-26: banco completo.** Las tres prioridades generadas con Cowork y revisadas:
+> 432 imágenes aceptadas de 437 palabras; 5 descartadas tras la revisión visual (mota, suma, tela,
+> dama y codo, marcadas DESCARTADA en la tabla; las cuatro primeras eran palabras de apoyo y codo era
+> indistinguible de brazo). Ficheros en shine/content/images/ con su manifest.json; hojas de contacto,
+> resúmenes y prompts en shine/content/images/_revision/. Siguiente paso: el handler de importación
+> de activity_image_position en shine_content (sección 2, "Importador"). Cautelas para montar
+> grupos en 5.7.
 
 Tiene dos partes:
 
@@ -121,20 +122,25 @@ nombre de fichero del manifiesto.
   la ü a u (plátano → platano.png, muñeca → muneca.png, pingüino → pinguino.png). Sin espacios ni
   guiones: el banco solo tiene sustantivos de una palabra. Así la URL no necesita codificación y
   el nombre se puede derivar de la palabra sin tabla.
-- **Nombre del media en Drupal** (name) y **alt**: la palabra tal cual se escribe, en minúsculas
-  y con su tilde ("plátano"). Es lo que busca el importador de sílabas y lo que se copia en
-  field_text del ítem de posición de imágenes. **Tiene que ser único** en el banco: una imagen por
-  palabra. Si se generan variantes, se elige una y las demás no se cargan.
-- **field_text del ítem**: la palabra en minúsculas, en singular, sin artículo ("pato", no "el
-  pato" ni "Pato"). El player la muestra en grande; el artículo va en el manifiesto por si en el
-  futuro se lee en voz alta ("¿Dónde estaba el pato?").
+- **Nombre del media en Drupal** (name) y **alt**: el slug del fichero ("platano"), neutro entre
+  idiomas (decidido en la FASE 18, plans/multiidioma/analisis.md 3.7: la misma imagen sirve en
+  castellano y en catalán y la palabra cambia). Es la clave `imagen` de los lotes de sílabas y de
+  posición de imágenes; los crea `drush shine-content:import-images` a partir del manifiesto.
+  **Tiene que ser único** en el banco: una imagen por palabra. Si se generan variantes, se elige
+  una y las demás no se cargan.
+- **field_text del ítem**: la palabra en el idioma de la actividad, en minúsculas, en singular,
+  sin artículo ("pato", no "el pato" ni "Pato"; en catalán "ànec"). La pone el lote en la clave
+  `nombre` (un objeto por idioma cuando el registro lleva `idiomas`), no el media. El player la
+  muestra en grande; el artículo va en el manifiesto por si en el futuro se lee en voz alta.
 - **Plurales fijos**: gafas, tijeras, maracas, macarrones, palomitas, canicas, castañuelas se
   nombran en plural porque así se dicen; la ilustración muestra el objeto completo (las dos
   lentes, las dos maracas).
 - **El manifiesto lleva el silabeo** (pan-ta-lón) y el nivel lector orientativo de cada palabra,
   para poder montar lotes de "Ordena las sílabas" directamente desde él (la clave imagen del lote
-  es el nombre del media) y para elegir nombres legibles en Level0 y Level1 de posición de
-  imágenes (solo palabras con lectura L0 o L1).
+  es el slug) y para elegir nombres legibles en Level0 y Level1 de posición de imágenes (solo
+  palabras con lectura L0 o L1). La ficha catalana de cada imagen (nombre, artículo, sílabas,
+  nivel lector y grupos) está en plans/multiidioma/banco-imagenes-equivalencia-ca.csv, validada
+  por el experto; el subplan 05 la incorpora al manifiesto como bloque ca.
 - **Categoría, subcategoría y etiquetas** son lo que necesita la tabla de niveles de 5.4 del
   catálogo: categorías distintas (Level0 a Level2), misma categoría amplia (Level3 a Level5),
   misma categoría estrecha (Level6 y Level7), parecidas en forma o color (Level8), con nombres
@@ -144,8 +150,8 @@ nombre de fichero del manifiesto.
   la huella de contenido del importador no incluye la imagen, pero el nombre sí es la clave de
   los lotes. Una imagen nueva para la misma palabra sustituye el fichero del media existente,
   no crea otro media.
-- **Código de las actividades**: IMG-Lnn-MEM-nnn (catálogo 3.4). El banco no lleva código; lo
-  llevan las actividades que lo usan.
+- **Código de las actividades**: IMG-XX-Lnn-MEM-nnn (catálogo 3.4, XX = ES o CA). El banco no lleva
+  código; lo llevan las actividades que lo usan.
 
 ---
 
@@ -256,8 +262,10 @@ estado de cada palabra (pendiente, candidatas, aceptada, descartada) y la fecha.
 ### 5.4 Manifiesto
 
 Un único fichero manifest.json con una entrada por palabra. Es el contrato con el importador de
-Drupal, que creará un media de tipo imagen por entrada con name = nombre y alt = nombre, y con
-los generadores de ejercicios, que eligen palabras por categoría, etiquetas y nivel lector.
+Drupal (`drush shine-content:import-images`, desde la FASE 18), que crea un media de tipo imagen
+por entrada aceptada con name = slug del fichero y alt = slug (no la palabra: la clave es neutra
+entre idiomas), y con los generadores de ejercicios, que eligen palabras por categoría, etiquetas
+y nivel lector.
 
 ```json
 {
@@ -370,8 +378,8 @@ para el modelo (en inglés, es lo que va en {SUBJECT}) y etiquetas con la priori
 | puma.png | puma | el | pu-ma | L0 | tan puma (cougar) sitting, front view, same seated frontal pose as the cat and the tiger, plain coat with no stripes | vis:felinos, fon:pu-, P2 |
 | leopardo.png | leopardo | el | le-o-par-do | L3 | leopard with clearly visible spots sitting, front view, same seated frontal pose as the cat and the tiger | vis:felinos, P2 |
 | pantera.png | pantera | la | pan-te-ra | L1 | black panther sitting, front view, same seated frontal pose as the cat and the tiger | vis:felinos, fon:pan-, P2 |
-| lince.png | lince | el | lin-ce | L1 | lynx sitting, tufted ears, short tail | vis:felinos, P3 |
-| guepardo.png | guepardo | el | gue-par-do | L2 | cheetah standing, side view, tear stripes | vis:felinos, P3 |
+| lince.png | lince | el | lin-ce | L1 | lynx sitting, front view, tufted ears, short tail, same seated frontal pose as the cat and the tiger | vis:felinos, P3 |
+| guepardo.png | guepardo | el | gue-par-do | L2 | cheetah sitting, front view, black tear stripes from the eyes, plain round black spots, same seated frontal pose as the cat and the tiger | vis:felinos, P3 |
 | hiena.png | hiena | la | hie-na | L1 | spotted hyena standing, side view | vis:cánidos, P2 |
 | coyote.png | coyote | el | co-yo-te | L1 | coyote standing, side view, sandy coat | vis:cánidos, fon:co-, P3 |
 | topo.png | topo | el | to-po | L0 | mole with pink nose and big paws, front view | fon:to-, P3 |
@@ -396,7 +404,7 @@ para el modelo (en inglés, es lo que va en {SUBJECT}) y etiquetas con la priori
 | flamenco.png | flamenco | el | fla-men-co | L2 | pink flamingo standing on two legs, side view, long curved neck, same profile pose as the other birds | vis:aves, vis:rosa, P2 |
 | pinguino.png | pingüino | el | pin-güi-no | L2 | penguin standing, side view, same profile pose as the duck, black back and white belly, flipper and feet visible | vis:aves, fon:pin-, P1 |
 | tucan.png | tucán | el | tu-cán | L1 | toucan with big colorful beak, side view | vis:aves, P3 |
-| cisne.png | cisne | el | cis-ne | L1 | white swan floating, side view | vis:aves, vis:blanco, P3 |
+| cisne.png | cisne | el | cis-ne | L1 | white swan standing, side view, long curved neck, same profile pose as the duck | vis:aves, vis:blanco, P3 |
 
 #### Animales marinos
 
@@ -407,7 +415,7 @@ para el modelo (en inglés, es lo que va en {SUBJECT}) y etiquetas con la priori
 | delfin.png | delfín | el | del-fín | L1 | grey-blue dolphin jumping, side view | vis:mar, P1 |
 | ballena.png | ballena | la | ba-lle-na | L1 | blue whale, side view, small water spout | vis:mar, vis:azul, P1 |
 | pulpo.png | pulpo | el | pul-po | L1 | purple octopus, front view, eight tentacles | vis:mar, fon:pu-, P1 |
-| cangrejo.png | cangrejo | el | can-gre-jo | L2 | friendly red crab, front view, two big raised claws and a few legs on each side (the exact leg count does not matter) | vis:mar, P2 |
+| cangrejo.png | cangrejo | el | can-gre-jo | L2 | friendly red crab, front view, claws up, a few legs on each side (the exact leg count does not matter) | vis:mar, P2 |
 | medusa.png | medusa | la | me-du-sa | L1 | pink translucent jellyfish, front view | vis:mar, fon:me-, P3 |
 | gamba.png | gamba | la | gam-ba | L1 | pink shrimp, side view | vis:mar, P3 |
 | concha.png | concha | la | con-cha | L1 | scallop seashell, fan shaped, front view | vis:mar, P3 |
@@ -668,7 +676,7 @@ para el modelo (en inglés, es lo que va en {SUBJECT}) y etiquetas con la priori
 | corazon.png | corazón | el | co-ra-zón | L1 | red heart symbol | vis:rojo, fon:co-, P1 |
 | barriga.png | barriga | la | ba-rri-ga | L1 | round belly with navel, torso only | vis:cuerpo, P3 |
 | una.png | uña | la | u-ña | L1 | fingertip with a painted pink nail, close-up | vis:cuerpo, P3 |
-| codo.png | codo | el | co-do | L1 | bent elbow, close-up of arm | vis:cuerpo, fon:co-, P3 |
+| codo.png | codo | el | co-do | L1 | bent elbow, close-up of arm | vis:cuerpo, fon:co-, P3, DESCARTADA (un brazo doblado es igual que brazo) |
 | hueso.png | hueso | el | hue-so | L1 | cartoon bone | vis:blanco, P2 |
 | esqueleto.png | esqueleto | el | es-que-le-to | L3 | friendly cartoon skeleton standing | vis:blanco, P3 |
 | bigote.png | bigote | el | bi-go-te | L1 | curly black mustache, shown alone | P3 |
@@ -801,7 +809,7 @@ para el modelo (en inglés, es lo que va en {SUBJECT}) y etiquetas con la priori
 | acordeon.png | acordeón | el | a-cor-de-ón | L3 | accordion | vis:instrumentos, P3 |
 | arpa.png | arpa | el | ar-pa | L1 | harp | vis:instrumentos, P3 |
 | castanuelas.png | castañuelas | las | cas-ta-ñue-las | L3 | pair of castanets | vis:instrumentos, P3 |
-| armonica.png | armónica | la | ar-mó-ni-ca | L3 | harmonica | vis:instrumentos, vis:viento, P3 |
+| armonica.png | armónica | la | ar-mó-ni-ca | L3 | harmonica, upright vertical, front view, clearly visible row of holes | vis:instrumentos, vis:viento, P3 |
 | microfono.png | micrófono | el | mi-cró-fo-no | L3 | handheld microphone | P3 |
 
 #### Personajes y profesiones
@@ -847,14 +855,14 @@ cara, copa, capa, cuna; pato, pala, pan, pino, patín, payaso; mono, mano; dado,
 | lima.png | lima | la | li-ma | L0 | green lime fruit, whole | vis:verde, vis:redondo, fon:li-, P3 |
 | lata.png | lata | la | la-ta | L0 | plain tin can without label | fon:la-, P2 |
 | ala.png | ala | el | a-la | L0 | single feathered bird wing | fon:a-, P3 |
-| mota.png | mota | la | mo-ta | L0 | single large polka dot on a small piece of fabric | fon:mo-, P3 |
+| mota.png | mota | la | mo-ta | L0 | single large polka dot on a small piece of fabric | fon:mo-, P3, DESCARTADA (un lunar sobre tela no se nombra "mota") |
 | nata.png | nata | la | na-ta | L0 | swirl of whipped cream in a small bowl | vis:blanco, fon:na-, P3 |
 | tapon.png | tapón | el | ta-pón | L1 | cork stopper | fon:ta-, P3 |
 | pipa.png | pipa | la | pi-pa | L0 | single sunflower seed with striped shell | fon:pi-, P3 |
 | nene.png | nene | el | ne-ne | L0 | toddler standing, smiling | vis:personas, fon:ne-, P3 |
-| dama.png | dama | la | da-ma | L0 | elegant lady in a long dress | vis:personas, fon:da-, P3 |
-| tela.png | tela | la | te-la | L0 | folded piece of blue fabric | fon:te-, P3 |
-| suma.png | suma | la | su-ma | L0 | plus sign made of two wooden blocks (no digits) | fon:su-, P3 |
+| dama.png | dama | la | da-ma | L0 | elegant lady in a long dress | vis:personas, fon:da-, P3, DESCARTADA (se confunde con princesa) |
+| tela.png | tela | la | te-la | L0 | folded piece of blue fabric | fon:te-, P3, DESCARTADA (una tela doblada es igual que la toalla) |
+| suma.png | suma | la | su-ma | L0 | plus sign made of two wooden blocks (no digits) | fon:su-, P3, DESCARTADA (el signo más de madera se lee "cruz") |
 
 Nota para esta última tabla: son palabras de apoyo para completar grupos; si una no se ilustra
 sin ambigüedad (mota, suma, tela), se descarta sin más.
@@ -886,6 +894,9 @@ imágenes compartan silueta y tamaño pero se distingan a primera vista.
 - **Pares mínimos y casi mínimos** (Level10): casa, taza, cara, copa, capa, cuna; pato, palo,
   pala, pavo, pan; gorro, gorra; dado, dedo; bota, boca; mono, mano; pino, piano; oso, ojo,
   olla, ola; luna, lupa, lana, lima, lata; polo, pelo, palo; sol, sal.
+- **Parejas casi iguales que solo deben coincidir en un grupo de Level8 o superior** (en los
+  niveles bajos la pregunta "¿en qué posición estaba?" sería injusta): naranja y mandarina; carta y
+  sobre; gusano y oruga; pierna y rodilla; rana y sapo; leopardo y guepardo; lobo y coyote.
 - **Letras espejo en el nombre** (b, d, p, q, para la discriminación visual): bebé, dado, dedo,
   bota, pato, búho, burro, pulpo, puma, queso, bombilla, bandera, pelota, pipa, dama, polo.
 

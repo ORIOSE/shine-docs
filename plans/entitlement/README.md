@@ -41,12 +41,12 @@ El propio plan de planes se ha escrito con Fable.
 | 3 | `02-backend-token-de-alumno.md` | 17a | Fable | 01b | [x] 2026-10-23 |
 | 4 | `01c-backend-vinculo-por-codigo.md` | 17a y §5.6 | Fable | 01b (en paralelo con 02) | [x] 2026-10-23 |
 | 5 | `03-backend-entitlement-y-catalogo.md` | 17c | Opus | 01a (en paralelo con 01b, 01c y 02) | [x] 2026-10-23 |
-| 6 | `04-backend-acceso-y-muro.md` | 17c | Fable | 01c, 03 | [ ] |
-| 7 | `05-app-doble-token-y-alumnos.md` | 17b | Fable | 02, 04 | [ ] |
-| 8 | `06-app-alumnos-y-vinculo.md` | 17b y §5.6 | Opus | 05 | [ ] |
+| 6 | `04-backend-acceso-y-muro.md` | 17c | Fable | 01c, 03 | [x] 2026-10-23 |
+| 7 | `05-app-doble-token-y-alumnos.md` | 17b | Fable | 02, 04 | [x] 2026-10-23 |
+| 8 | `06-app-alumnos-y-vinculo.md` | 17b y §5.6 | Opus | 05 | [x] 2026-10-23 |
 | 9 | `06b-app-plan-y-borrado-de-cuenta.md` | 17b | Opus | 05 (en paralelo con 06) | [ ] |
 | 10 | `09-stores-y-revenuecat-configuracion.md` | 17d | Opus | identidad de la app (`plans/prompts/14b`); **empezar cuanto antes**, en paralelo | [ ] |
-| 11 | `07-backend-webhook-revenuecat.md` | 17d | Fable | 03, 04 | [ ] |
+| 11 | `07-backend-webhook-revenuecat.md` | 17d | Fable | 03, 04 | [x] 2026-10-26 |
 | 12 | `08-app-paywall-y-compras.md` | 17d | Opus | 05, 06b, 07, 09 | [ ] |
 | 13 | `10-backend-organizaciones.md` | 17e y §5.6 | Fable | 01c, 04 | [ ] |
 | 14 | `11-backend-stripe.md` | 17e | Fable | 03, 10 | [ ] |

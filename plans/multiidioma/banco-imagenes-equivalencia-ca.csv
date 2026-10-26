@@ -1,0 +1,433 @@
+﻿slug;categoria;subcategoria;etiquetas_visuales;nombre_es;articulo_es;silabas_es;lectura_es;grupos_fon_es;nombre_ca;articulo_ca;silabas_ca;lectura_ca;grupos_fon_ca;usable_ca;observaciones
+burro;animales-domesticos-y-de-granja;granja;vis:granja;burro;el;bu-rro;L1;espejo:b;ruc;el;ruc;L1;;sí;També ase.
+caballo;animales-domesticos-y-de-granja;granja;vis:granja;caballo;el;ca-ba-llo;L1;fon:ca-;cavall;el;ca-vall;L1;fon:ca-, graf:ll;sí;
+cabra;animales-domesticos-y-de-granja;granja;vis:granja;cabra;la;ca-bra;L2;fon:ca-;cabra;la;ca-bra;L2;fon:ca-;sí;
+cerdo;animales-domesticos-y-de-granja;granja;vis:granja;cerdo;el;cer-do;L1;;porc;el;porc;L2;espejo:p;sí;Monosíl·lab freqüent amb coda simple: L2 (excepció de l'expert).
+conejo;animales-domesticos-y-de-granja;animales-domesticos-y-de-granja;;conejo;el;co-ne-jo;L1;fon:co-;conill;el;co-nill;L1;fon:co-, graf:ll;sí;
+gallina;animales-domesticos-y-de-granja;aves;vis:aves, vis:granja;gallina;la;ga-lli-na;L1;fon:ga-;gallina;la;ga-lli-na;L1;fon:ga-, graf:ll;sí;
+gallo;animales-domesticos-y-de-granja;aves;vis:aves, vis:granja;gallo;el;ga-llo;L1;fon:ga-;gall;el;gall;L1;graf:ll;sí;
+gato;animales-domesticos-y-de-granja;felinos;vis:felinos;gato;el;ga-to;L1;fon:ga-;gat;el;gat;L1;;sí;Parell mínim amb got (vaso).
+mula;animales-domesticos-y-de-granja;granja;vis:granja;mula;la;mu-la;L0;fon:mu-;mula;la;mu-la;L0;;sí;
+oveja;animales-domesticos-y-de-granja;granja;vis:granja;oveja;la;o-ve-ja;L1;;ovella;l';o-ve-lla;L1;fon:o-, graf:ll;sí;
+pato;animales-domesticos-y-de-granja;aves;vis:aves;pato;el;pa-to;L0;fon:pa-;ànec;l';à-nec;L1;fon:a-;sí;
+pavo;animales-domesticos-y-de-granja;aves;vis:aves;pavo;el;pa-vo;L1;fon:pa-;gall dindi;el;;;;no;Dues paraules. Alternativa d'una sola paraula: indiot (in-di-ot, hiat, L3), menys habitual per a un infant.
+perro;animales-domesticos-y-de-granja;cánidos;vis:cánidos;perro;el;pe-rro;L1;fon:pe-;gos;el;gos;L1;;sí;
+pollito;animales-domesticos-y-de-granja;amarillo;vis:amarillo, vis:aves;pollito;el;po-lli-to;L1;fon:po-;pollet;el;po-llet;L1;fon:po-, espejo:p, graf:ll;sí;
+raton;animales-domesticos-y-de-granja;animales-domesticos-y-de-granja;;ratón;el;ra-tón;L1;fon:ra-;ratolí;el;ra-to-lí;L1;fon:ra-;sí;
+toro;animales-domesticos-y-de-granja;granja;vis:granja;toro;el;to-ro;L1;fon:to-;toro;el;to-ro;L1;fon:to-;sí;També brau.
+vaca;animales-domesticos-y-de-granja;granja;vis:granja;vaca;la;va-ca;L1;fon:va-;vaca;la;va-ca;L1;;sí;
+ballena;animales-marinos;mar;vis:mar, vis:azul;ballena;la;ba-lle-na;L1;;balena;la;ba-le-na;L1;fon:ba-, espejo:b;sí;
+caballito;animales-marinos;mar;vis:mar;caballito;el;ca-ba-lli-to;L3;fon:ca-;cavallet;el;ca-va-llet;L1;fon:ca-, graf:ll;sí;"Cavallet de mar; sol també vol dir cavall petit. La imatge ho desfà."
+cangrejo;animales-marinos;mar;vis:mar;cangrejo;el;can-gre-jo;L2;;cranc;el;cranc;L2;fon:cr-;sí;
+concha;animales-marinos;mar;vis:mar;concha;la;con-cha;L1;;petxina;la;pet-xi-na;L2;espejo:p, graf:tx;sí;El dígraf tx se separa (IEC): pet-xi-na.
+delfin;animales-marinos;mar;vis:mar;delfín;el;del-fín;L1;;dofí;el;do-fí;L1;espejo:d;sí;
+gamba;animales-marinos;mar;vis:mar;gamba;la;gam-ba;L1;;gamba;la;gam-ba;L1;;sí;
+medusa;animales-marinos;mar;vis:mar;medusa;la;me-du-sa;L1;fon:me-;medusa;la;me-du-sa;L1;fon:me-, sib:sonora;sí;
+pez;animales-marinos;mar;vis:mar;pez;el;pez;L1;fon:pe-;peix;el;peix;L2;espejo:p, graf:ix;sí;
+pulpo;animales-marinos;mar;vis:mar;pulpo;el;pul-po;L1;fon:pu-;pop;el;pop;L1;espejo:p;sí;
+tiburon;animales-marinos;mar;vis:mar, vis:gris;tiburón;el;ti-bu-rón;L1;;tauró;el;tau-ró;L1;fon:tau-;sí;
+ardilla;animales-salvajes;marrón;vis:marrón;ardilla;la;ar-di-lla;L1;;esquirol;l';es-qui-rol;L1;fon:es-;sí;
+camello;animales-salvajes;animales-salvajes;;camello;el;ca-me-llo;L1;fon:ca-;camell;el;ca-mell;L1;fon:ca-, graf:ll;sí;
+canguro;animales-salvajes;animales-salvajes;;canguro;el;can-gu-ro;L1;;cangur;el;can-gur;L1;;sí;
+caracol;animales-salvajes;animales-salvajes;;caracol;el;ca-ra-col;L1;fon:ca-;cargol;el;car-gol;L1;fon:car-;sí;Coincideix amb tornillo (cargol): s'ha deixat usable el caragol i no el cargol de ferro.
+cebra;animales-salvajes;rayas;vis:rayas;cebra;la;ce-bra;L2;;zebra;la;ze-bra;L2;sib:sonora;sí;
+ciervo;animales-salvajes;marrón;vis:marrón;ciervo;el;cier-vo;L1;;cérvol;el;cér-vol;L1;;sí;
+cocodrilo;animales-salvajes;verde;vis:verde;cocodrilo;el;co-co-dri-lo;L3;fon:co-;cocodril;el;co-co-dril;L2;fon:co-;sí;
+coyote;animales-salvajes;cánidos;vis:cánidos;coyote;el;co-yo-te;L1;fon:co-;coiot;el;co-iot;L1;fon:co-;sí;"Mot poc freqüent per a un infant; la i és consonàntica (no hi ha hiat)."
+elefante;animales-salvajes;gris;vis:gris;elefante;el;e-le-fan-te;L3;;elefant;l';e-le-fant;L3;fon:e-;sí;Plurisíl·lab amb coda nt: L3.
+erizo;animales-salvajes;animales-salvajes;;erizo;el;e-ri-zo;L1;;eriçó;l';e-ri-çó;L1;fon:e-, graf:ç, sib:sorda;sí;
+foca;animales-salvajes;gris;vis:gris, vis:mar;foca;la;fo-ca;L1;fon:fo-;foca;la;fo-ca;L1;fon:fo-;sí;
+guepardo;animales-salvajes;felinos;vis:felinos;guepardo;el;gue-par-do;L2;;guepard;el;gue-pard;L3;;sí;
+gusano;animales-salvajes;verde;vis:verde;gusano;el;gu-sa-no;L1;;cuc;el;cuc;L1;;sí;
+hiena;animales-salvajes;cánidos;vis:cánidos;hiena;la;hie-na;L1;;hiena;la;hi-e-na;L3;fon:hi-;sí;
+hipopotamo;animales-salvajes;gris;vis:gris;hipopótamo;el;hi-po-pó-ta-mo;L5;;hipopòtam;l';hi-po-pò-tam;L3;fon:hi-;sí;
+jirafa;animales-salvajes;amarillo;vis:amarillo;jirafa;la;ji-ra-fa;L1;;girafa;la;gi-ra-fa;L1;;sí;
+koala;animales-salvajes;gris;vis:gris;koala;el;ko-a-la;L3;;coala;el;co-a-la;L3;fon:co-;sí;
+lagarto;animales-salvajes;verde;vis:verde;lagarto;el;la-gar-to;L1;fon:la-;sargantana;la;sar-gan-ta-na;L3;;sí;Si la imatge es llegeix com un llangardaix gran, llangardaix (llan-gar-daix, L2).
+leon;animales-salvajes;felinos;vis:felinos, vis:amarillo;león;el;le-ón;L3;;lleó;el;lle-ó;L3;fon:lle-, graf:ll;sí;
+leopardo;animales-salvajes;felinos;vis:felinos;leopardo;el;le-o-par-do;L3;;lleopard;el;lle-o-pard;L3;fon:lle-, graf:ll;sí;
+lince;animales-salvajes;felinos;vis:felinos;lince;el;lin-ce;L1;;linx;el;linx;L3;;sí;
+lobo;animales-salvajes;cánidos;vis:cánidos;lobo;el;lo-bo;L1;fon:lo-;llop;el;llop;L1;graf:ll;sí;
+mono;animales-salvajes;animales-salvajes;;mono;el;mo-no;L0;fon:mo-;mico;el;mi-co;L1;fon:mi-;sí;També mona.
+murcielago;animales-salvajes;animales-salvajes;;murciélago;el;mur-cié-la-go;L3;;ratpenat;el;rat-pe-nat;L1;;sí;Mot compost d'una sola paraula (rat + penat).
+oso;animales-salvajes;marrón;vis:marrón;oso;el;o-so;L0;fon:o-;ós;l';ós;L1;fon:os-;sí;Parella quasi idèntica amb os (hueso): només canvia l'accent. Bona per a discriminació, no per a nivells baixos.
+panda;animales-salvajes;animales-salvajes;;panda;el;pan-da;L1;fon:pan-;panda;el;pan-da;L1;fon:pan-, espejo:p;sí;
+pantera;animales-salvajes;felinos;vis:felinos;pantera;la;pan-te-ra;L1;fon:pan-;pantera;la;pan-te-ra;L1;fon:pan-, espejo:p;sí;
+puma;animales-salvajes;felinos;vis:felinos;puma;el;pu-ma;L0;fon:pu-;puma;el;pu-ma;L0;espejo:p;sí;
+rana;animales-salvajes;verde;vis:verde;rana;la;ra-na;L1;fon:ra-;granota;la;gra-no-ta;L2;fon:gr-;sí;
+rinoceronte;animales-salvajes;gris;vis:gris;rinoceronte;el;ri-no-ce-ron-te;L5;;rinoceront;el;ri-no-ce-ront;L3;sib:sorda;sí;
+sapo;animales-salvajes;animales-salvajes;;sapo;el;sa-po;L0;fon:sa-;gripau;el;gri-pau;L2;fon:gr-;sí;
+serpiente;animales-salvajes;verde;vis:verde;serpiente;la;ser-pien-te;L1;;serp;la;serp;L2;;sí;Monosíl·lab freqüent amb coda simple: L2 (excepció de l'expert).
+tigre;animales-salvajes;felinos;vis:felinos;tigre;el;ti-gre;L2;;tigre;el;ti-gre;L2;fon:ti-;sí;
+topo;animales-salvajes;animales-salvajes;;topo;el;to-po;L0;fon:to-;talp;el;talp;L2;;sí;
+tortuga;animales-salvajes;verde;vis:verde;tortuga;la;tor-tu-ga;L1;fon:tor-;tortuga;la;tor-tu-ga;L1;fon:tor-;sí;
+zorro;animales-salvajes;cánidos;vis:cánidos;zorro;el;zo-rro;L1;fon:-rro;guineu;la;gui-neu;L2;fon:gui-;sí;
+aguila;aves;aves;vis:aves;águila;el;á-gui-la;L2;;àliga;l';à-li-ga;L1;fon:a-;sí;També àguila.
+buho;aves;aves;vis:aves;búho;el;bú-ho;L3;espejo:b;mussol;el;mus-sol;L1;graf:ss, sib:sorda;sí;"Genèric infantil; el búho gran és el duc."
+ciguena;aves;aves;vis:aves, vis:blanco;cigüeña;la;ci-güe-ña;L2;;cigonya;la;ci-go-nya;L1;fon:ci-, graf:ny;sí;
+cisne;aves;aves;vis:aves, vis:blanco;cisne;el;cis-ne;L1;;cigne;el;cig-ne;L1;;sí;
+flamenco;aves;aves;vis:aves, vis:rosa;flamenco;el;fla-men-co;L2;;flamenc;el;fla-menc;L3;fon:fl-;sí;
+loro;aves;aves;vis:aves, vis:verde;loro;el;lo-ro;L1;fon:lo-;lloro;el;llo-ro;L1;graf:ll;sí;
+pajaro;aves;aves;vis:aves;pájaro;el;pá-ja-ro;L1;fon:pa-;ocell;l';o-cell;L1;fon:o-, graf:ll, sib:sorda;sí;
+paloma;aves;aves;vis:aves, vis:blanco;paloma;la;pa-lo-ma;L1;fon:pa-;colom;el;co-lom;L1;fon:co-;sí;
+pinguino;aves;aves;vis:aves;pingüino;el;pin-güi-no;L2;fon:pin-;pingüí;el;pin-güí;L2;fon:pin-, espejo:p;sí;
+tucan;aves;aves;vis:aves;tucán;el;tu-cán;L1;;tucan;el;tu-can;L1;fon:tu-;sí;
+alfombra;casa-y-muebles;casa-y-muebles;;alfombra;la;al-fom-bra;L2;;catifa;la;ca-ti-fa;L1;fon:ca-;sí;
+armario;casa-y-muebles;casa-y-muebles;;armario;el;ar-ma-rio;L1;;armari;l';ar-ma-ri;L1;fon:ar-;sí;
+banera;casa-y-muebles;blanco;vis:blanco;bañera;la;ba-ñe-ra;L1;;banyera;la;ba-nye-ra;L1;fon:ba-, espejo:b, graf:ny;sí;
+bombilla;casa-y-muebles;amarillo;vis:amarillo;bombilla;la;bom-bi-lla;L1;espejo:b, fon:bo-;bombeta;la;bom-be-ta;L1;fon:bom-, espejo:b;sí;
+cama;casa-y-muebles;casa-y-muebles;;cama;la;ca-ma;L1;fon:ca-;llit;el;llit;L1;graf:ll;sí;Parell mínim amb llet (leche).
+casa;casa-y-muebles;casa-y-muebles;;casa;la;ca-sa;L1;fon:ca-;casa;la;ca-sa;L1;fon:ca-, sib:sonora;sí;
+cepillo;casa-y-muebles;casa-y-muebles;;cepillo;el;ce-pi-llo;L1;;raspall;el;ras-pall;L1;fon:ras-, graf:ll;sí;
+cojin;casa-y-muebles;casa-y-muebles;;cojín;el;co-jín;L1;fon:co-;coixí;el;coi-xí;L2;graf:ix;sí;
+cortina;casa-y-muebles;casa-y-muebles;;cortina;la;cor-ti-na;L1;;cortina;la;cor-ti-na;L1;fon:cor-;sí;
+cuadro;casa-y-muebles;casa-y-muebles;;cuadro;el;cua-dro;L2;;quadre;el;qua-dre;L2;espejo:q;sí;
+cubo;casa-y-muebles;casa-y-muebles;;cubo;el;cu-bo;L1;fon:cu-;galleda;la;ga-lle-da;L1;fon:ga-, graf:ll;sí;
+cuna;casa-y-muebles;casa-y-muebles;;cuna;la;cu-na;L1;fon:cu-;bressol;el;bres-sol;L2;fon:br-, espejo:b, graf:ss, sib:sorda;sí;
+escalera;casa-y-muebles;casa-y-muebles;;escalera;la;es-ca-le-ra;L3;;escala;l';es-ca-la;L1;fon:es-;sí;
+escoba;casa-y-muebles;casa-y-muebles;;escoba;la;es-co-ba;L1;;escombra;l';es-com-bra;L2;fon:es-;sí;
+espejo;casa-y-muebles;casa-y-muebles;;espejo;el;es-pe-jo;L1;;mirall;el;mi-rall;L1;fon:mi-, graf:ll;sí;
+jabon;casa-y-muebles;casa-y-muebles;;jabón;el;ja-bón;L1;;sabó;el;sa-bó;L1;fon:sa-;sí;
+jarron;casa-y-muebles;casa-y-muebles;;jarrón;el;ja-rrón;L1;;gerro;el;ger-ro;L1;fon:ger-;sí;Parell mínim amb gerra (jarra).
+lampara;casa-y-muebles;casa-y-muebles;;lámpara;la;lám-pa-ra;L1;;làmpada;la;làm-pa-da;L1;;sí;Col·loquialment llum.
+llave;casa-y-muebles;amarillo;vis:amarillo;llave;la;lla-ve;L1;;clau;la;clau;L2;fon:cl-;sí;Coincideix amb clavo (clau): s'ha deixat usable la clau de pany.
+maceta;casa-y-muebles;casa-y-muebles;;maceta;la;ma-ce-ta;L1;fon:ma-;test;el;test;L2;;sí;Torreta en valencià.
+mesa;casa-y-muebles;casa-y-muebles;;mesa;la;me-sa;L0;fon:me-;taula;la;tau-la;L1;fon:tau-;sí;
+nevera;casa-y-muebles;blanco;vis:blanco;nevera;la;ne-ve-ra;L1;;nevera;la;ne-ve-ra;L1;;sí;
+ordenador;casa-y-muebles;casa-y-muebles;;ordenador;el;or-de-na-dor;L3;;ordinador;l';or-di-na-dor;L3;;sí;
+peine;casa-y-muebles;casa-y-muebles;;peine;el;pei-ne;L1;fon:pe-;pinta;la;pin-ta;L1;fon:pin-, espejo:p;sí;
+puerta;casa-y-muebles;marrón;vis:marrón;puerta;la;puer-ta;L1;;porta;la;por-ta;L1;espejo:p;sí;
+reloj;casa-y-muebles;redondo;vis:redondo;reloj;el;re-loj;L1;;rellotge;el;re-llot-ge;L2;fon:re-, graf:ll, graf:tg;sí;
+silla;casa-y-muebles;casa-y-muebles;;silla;la;si-lla;L1;fon:si-;cadira;la;ca-di-ra;L1;fon:ca-;sí;
+sofa;casa-y-muebles;casa-y-muebles;;sofá;el;so-fá;L1;fon:so-;sofà;el;so-fà;L1;fon:so-;sí;
+telefono;casa-y-muebles;casa-y-muebles;;teléfono;el;te-lé-fo-no;L3;fon:te-;telèfon;el;te-lè-fon;L1;fon:te-;sí;
+television;casa-y-muebles;casa-y-muebles;;televisión;la;te-le-vi-sión;L3;fon:te-;televisió;la;te-le-vi-si-ó;L5;fon:te-, sib:sonora;sí;Cinc síl·labes i hiat (L5). Alternativa infantil: tele (te-le, L0).
+toalla;casa-y-muebles;casa-y-muebles;;toalla;la;to-a-lla;L3;fon:to-;tovallola;la;to-va-llo-la;L3;fon:to-, graf:ll;sí;
+vela;casa-y-muebles;casa-y-muebles;;vela;la;ve-la;L1;fon:ve-;espelma;l';es-pel-ma;L1;fon:es-;sí;
+ventana;casa-y-muebles;casa-y-muebles;;ventana;la;ven-ta-na;L1;;finestra;la;fi-nes-tra;L2;fon:fi-;sí;
+bandeja;cocina-y-mesa;cocina-y-mesa;;bandeja;la;ban-de-ja;L1;;safata;la;sa-fa-ta;L1;fon:sa-;sí;
+botella;cocina-y-mesa;cocina-y-mesa;;botella;la;bo-te-lla;L1;fon:bo-;ampolla;l';am-po-lla;L1;fon:am-, graf:ll;sí;
+cesta;cocina-y-mesa;cocina-y-mesa;;cesta;la;ces-ta;L1;;cistell;el;cis-tell;L1;graf:ll;sí;També cistella.
+cuchara;cocina-y-mesa;cocina-y-mesa;;cuchara;la;cu-cha-ra;L1;fon:cu-;cullera;la;cu-lle-ra;L1;graf:ll;sí;
+cuchillo;cocina-y-mesa;cocina-y-mesa;;cuchillo;el;cu-chi-llo;L1;fon:cu-;ganivet;el;ga-ni-vet;L1;fon:ga-;sí;
+horno;cocina-y-mesa;cocina-y-mesa;;horno;el;hor-no;L1;;forn;el;forn;L2;;sí;
+jarra;cocina-y-mesa;cocina-y-mesa;;jarra;la;ja-rra;L1;;gerra;la;ger-ra;L1;fon:ger-;sí;Parell mínim amb gerro (jarrón).
+olla;cocina-y-mesa;cocina-y-mesa;;olla;la;o-lla;L1;fon:o-;olla;l';o-lla;L1;fon:o-, graf:ll;sí;
+plato;cocina-y-mesa;redondo;vis:redondo, vis:blanco;plato;el;pla-to;L2;fon:pla-;plat;el;plat;L2;fon:plat-, fon:pl-, espejo:p;sí;
+sarten;cocina-y-mesa;cocina-y-mesa;;sartén;la;sar-tén;L1;;paella;la;pa-e-lla;L3;fon:pa-, espejo:p, graf:ll;sí;"Ambigu amb el plat (paella); la imatge ho desfà. Alternativa: pella."
+tapa;cocina-y-mesa;cocina-y-mesa;;tapa;la;ta-pa;L0;fon:ta-;tapa;la;ta-pa;L0;fon:ta-;sí;Parell mínim amb tap (tapón).
+taza;cocina-y-mesa;cocina-y-mesa;;taza;la;ta-za;L1;fon:ta-;tassa;la;tas-sa;L1;graf:ss, sib:sorda;sí;
+tenedor;cocina-y-mesa;cocina-y-mesa;;tenedor;el;te-ne-dor;L1;fon:te-;forquilla;la;for-qui-lla;L1;fon:for-, graf:ll;sí;
+tetera;cocina-y-mesa;cocina-y-mesa;;tetera;la;te-te-ra;L1;fon:te-;tetera;la;te-te-ra;L1;fon:te-;sí;
+vaso;cocina-y-mesa;cocina-y-mesa;;vaso;el;va-so;L1;fon:va-;got;el;got;L1;;sí;Parell mínim amb gat (gato) i gos (perro).
+balon;colegio-y-juguetes;redondo;vis:redondo;balón;el;ba-lón;L1;;pilota;la;pi-lo-ta;L1;fon:pi-, espejo:p;sí;Coincideix amb pelota (pilota): s'ha deixat usable aquesta imatge (la gran).
+canicas;colegio-y-juguetes;redondo;vis:redondo;canicas;las;ca-ni-cas;L1;fon:ca-;bales;les;ba-les;L1;fon:ba-, espejo:b;sí;Plural fix.
+columpio;colegio-y-juguetes;colegio-y-juguetes;;columpio;el;co-lum-pio;L1;fon:co-;gronxador;el;gron-xa-dor;L2;fon:gr-;sí;
+cometa;colegio-y-juguetes;colegio-y-juguetes;;cometa;la;co-me-ta;L1;fon:co-;estel;l';es-tel;L1;fon:es-;sí;"Estel = joguina; per a l'estrella del cel s'usa estrella."
+cuaderno;colegio-y-juguetes;colegio-y-juguetes;;cuaderno;el;cua-der-no;L1;;llibreta;la;lli-bre-ta;L2;fon:lli-, graf:ll;sí;També quadern (qua-dern, L3).
+dado;colegio-y-juguetes;colegio-y-juguetes;;dado;el;da-do;L0;espejo:d, fon:da-;dau;el;dau;L1;espejo:d;sí;
+estuche;colegio-y-juguetes;colegio-y-juguetes;;estuche;el;es-tu-che;L1;;estoig;l';es-toig;L2;fon:es-, graf:ig;sí;
+globo;colegio-y-juguetes;rojo;vis:rojo, vis:redondo;globo;el;glo-bo;L2;fon:glo-;globus;el;glo-bus;L2;fon:gl-;sí;
+goma;colegio-y-juguetes;colegio-y-juguetes;;goma;la;go-ma;L1;fon:go-;goma;la;go-ma;L1;;sí;
+lapiz;colegio-y-juguetes;amarillo;vis:amarillo, vis:alargado;lápiz;el;lá-piz;L1;fon:la-;llapis;el;lla-pis;L1;fon:lla-, graf:ll;sí;
+libro;colegio-y-juguetes;colegio-y-juguetes;;libro;el;li-bro;L2;fon:li-;llibre;el;lli-bre;L2;fon:lli-, graf:ll;sí;
+mochila;colegio-y-juguetes;colegio-y-juguetes;;mochila;la;mo-chi-la;L1;fon:mo-;motxilla;la;mot-xi-lla;L2;graf:ll, graf:tx;sí;
+muneca;colegio-y-juguetes;colegio-y-juguetes;;muñeca;la;mu-ñe-ca;L1;fon:mu-;nina;la;ni-na;L0;;sí;
+pala;colegio-y-juguetes;colegio-y-juguetes;;pala;la;pa-la;L0;fon:pa-;pala;la;pa-la;L0;fon:pa-, espejo:p;sí;
+papel;colegio-y-juguetes;blanco;vis:blanco;papel;el;pa-pel;L1;fon:pa-;paper;el;pa-per;L1;fon:pa-, espejo:p;sí;
+pegamento;colegio-y-juguetes;colegio-y-juguetes;;pegamento;el;pe-ga-men-to;L3;fon:pe-;cola;la;co-la;L1;fon:co-;sí;També pegament. Cola també vol dir cua en alguns parlars.
+pelota;colegio-y-juguetes;redondo;vis:redondo, vis:rojo;pelota;la;pe-lo-ta;L1;fon:pe-;pilota;la;pi-lo-ta;L1;;no;Coincideix amb balon (pilota). Si cal distingir-les: bola (bo-la, L1) per a la petita.
+peluche;colegio-y-juguetes;marrón;vis:marrón;peluche;el;pe-lu-che;L1;fon:pe-;peluix;el;pe-luix;L2;fon:pe-, espejo:p, graf:ix;sí;
+peonza;colegio-y-juguetes;colegio-y-juguetes;;peonza;la;pe-on-za;L3;fon:pe-;baldufa;la;bal-du-fa;L1;espejo:b;sí;
+pincel;colegio-y-juguetes;colegio-y-juguetes;;pincel;el;pin-cel;L1;fon:pin-;pinzell;el;pin-zell;L1;fon:pin-, espejo:p, graf:ll, sib:sonora;sí;
+pizarra;colegio-y-juguetes;colegio-y-juguetes;;pizarra;la;pi-za-rra;L1;fon:pi-;pissarra;la;pis-sar-ra;L1;fon:pis-, espejo:p, graf:ss, sib:sorda;sí;
+puzle;colegio-y-juguetes;colegio-y-juguetes;;puzle;el;puz-le;L1;;puzle;el;puz-le;L1;espejo:p, sib:sonora;sí;També trencaclosques (tren-ca-clos-ques, L3).
+regla;colegio-y-juguetes;alargado;vis:alargado;regla;la;re-gla;L2;;regle;el;re-gle;L2;fon:re-;sí;
+robot;colegio-y-juguetes;colegio-y-juguetes;;robot;el;ro-bot;L1;;robot;el;ro-bot;L1;fon:ro-;sí;
+rotulador;colegio-y-juguetes;colegio-y-juguetes;;rotulador;el;ro-tu-la-dor;L3;;retolador;el;re-to-la-dor;L3;fon:re-;sí;
+sacapuntas;colegio-y-juguetes;colegio-y-juguetes;;sacapuntas;el;sa-ca-pun-tas;L3;fon:sa-;maquineta;la;ma-qui-ne-ta;L3;fon:ma-;sí;
+tijeras;colegio-y-juguetes;colegio-y-juguetes;;tijeras;las;ti-je-ras;L1;;tisores;les;ti-so-res;L1;fon:ti-, sib:sonora;sí;Plural fix.
+tobogan;colegio-y-juguetes;colegio-y-juguetes;;tobogán;el;to-bo-gán;L1;fon:to-;tobogan;el;to-bo-gan;L1;fon:to-;sí;
+yoyo;colegio-y-juguetes;redondo;vis:redondo;yoyó;el;yo-yó;L1;;io-io;el;;;;no;Grafia amb guionet: el guionet es confon amb el separador de síl·labes.
+barriga;cuerpo;cuerpo;vis:cuerpo;barriga;la;ba-rri-ga;L1;;panxa;la;pan-xa;L1;fon:pan-, espejo:p;sí;
+bigote;cuerpo;cuerpo;;bigote;el;bi-go-te;L1;;bigoti;el;bi-go-ti;L1;fon:bi-, espejo:b;sí;
+boca;cuerpo;cuerpo;vis:cuerpo;boca;la;bo-ca;L1;fon:bo-;boca;la;bo-ca;L1;fon:bo-, espejo:b;sí;
+brazo;cuerpo;cuerpo;vis:cuerpo;brazo;el;bra-zo;L2;;braç;el;braç;L2;fon:br-, espejo:b, graf:ç;sí;
+cabeza;cuerpo;cuerpo;vis:cuerpo;cabeza;la;ca-be-za;L1;fon:ca-;cap;el;cap;L1;;sí;Parell mínim amb capa i copa.
+corazon;cuerpo;rojo;vis:rojo;corazón;el;co-ra-zón;L1;fon:co-;cor;el;cor;L1;fon:cor-;sí;
+dedo;cuerpo;cuerpo;vis:cuerpo;dedo;el;de-do;L0;espejo:d, fon:de-;dit;el;dit;L1;espejo:d;sí;
+diente;cuerpo;cuerpo;vis:cuerpo, vis:blanco;diente;el;dien-te;L1;;dent;la;dent;L2;espejo:d;sí;Monosíl·lab freqüent amb coda simple: L2 (excepció de l'expert).
+esqueleto;cuerpo;blanco;vis:blanco;esqueleto;el;es-que-le-to;L3;;esquelet;l';es-que-let;L1;fon:es-;sí;
+hueso;cuerpo;blanco;vis:blanco;hueso;el;hue-so;L1;;os;l';os;L1;fon:os-;sí;Parella quasi idèntica amb ós (oso).
+lengua;cuerpo;cuerpo;vis:cuerpo;lengua;la;len-gua;L1;;llengua;la;llen-gua;L1;graf:ll;sí;
+mano;cuerpo;cuerpo;vis:cuerpo;mano;la;ma-no;L0;fon:ma-;mà;la;mà;L0;fon:ma-;sí;
+nariz;cuerpo;cuerpo;vis:cuerpo;nariz;la;na-riz;L1;;nas;el;nas;L1;;sí;
+ojo;cuerpo;cuerpo;vis:cuerpo;ojo;el;o-jo;L1;fon:o-;ull;l';ull;L1;graf:ll;sí;
+oreja;cuerpo;cuerpo;vis:cuerpo;oreja;la;o-re-ja;L1;fon:o-;orella;l';o-re-lla;L1;fon:o-, graf:ll;sí;
+pelo;cuerpo;cuerpo;vis:cuerpo;pelo;el;pe-lo;L0;fon:pe-;cabell;el;ca-bell;L1;fon:ca-, graf:ll;sí;Cabell (del cap), no pèl.
+pie;cuerpo;cuerpo;vis:cuerpo;pie;el;pie;L1;fon:pi-;peu;el;peu;L1;espejo:p;sí;
+pierna;cuerpo;cuerpo;vis:cuerpo;pierna;la;pier-na;L1;;cama;la;ca-ma;L1;fon:ca-;sí;Fals amic amb el castellà cama (llit).
+rodilla;cuerpo;cuerpo;vis:cuerpo;rodilla;la;ro-di-lla;L1;;genoll;el;ge-noll;L1;fon:ge-, graf:ll;sí;
+una;cuerpo;cuerpo;vis:cuerpo;uña;la;u-ña;L1;;ungla;l';un-gla;L2;;sí;
+aguacate;frutas;verde;vis:verde;aguacate;el;a-gua-ca-te;L3;;alvocat;l';al-vo-cat;L1;fon:al-;sí;
+cereza;frutas;rojo;vis:rojo, vis:redondo;cereza;la;ce-re-za;L1;;cirera;la;ci-re-ra;L1;fon:ci-;sí;
+ciruela;frutas;morado;vis:morado, vis:redondo;ciruela;la;ci-rue-la;L1;;pruna;la;pru-na;L2;fon:pr-, espejo:p;sí;
+coco;frutas;marrón;vis:marrón, vis:redondo;coco;el;co-co;L1;fon:co-;coco;el;co-co;L1;fon:co-;sí;
+fresa;frutas;rojo;vis:rojo;fresa;la;fre-sa;L2;fon:fre-;maduixa;la;ma-dui-xa;L2;fon:ma-, graf:ix;sí;
+granada;frutas;rojo;vis:rojo, vis:redondo;granada;la;gra-na-da;L2;;magrana;la;ma-gra-na;L2;fon:ma-;sí;
+higo;frutas;morado;vis:morado;higo;el;hi-go;L1;;figa;la;fi-ga;L1;fon:fi-;sí;
+kiwi;frutas;verde;vis:verde;kiwi;el;ki-wi;L1;;kiwi;el;ki-wi;L1;;sí;Lletres k i w, alienes a l'alfabet català bàsic.
+limon;frutas;amarillo;vis:amarillo;limón;el;li-món;L1;fon:li-;llimona;la;lli-mo-na;L1;fon:lli-, graf:ll;sí;
+mandarina;frutas;naranja;vis:naranja, vis:redondo;mandarina;la;man-da-ri-na;L3;fon:man-;mandarina;la;man-da-ri-na;L3;;sí;
+manzana;frutas;rojo;vis:rojo, vis:redondo;manzana;la;man-za-na;L1;fon:man-;poma;la;po-ma;L0;fon:po-, espejo:p;sí;
+melocoton;frutas;redondo;vis:redondo;melocotón;el;me-lo-co-tón;L3;fon:me-;préssec;el;prés-sec;L2;fon:pr-, espejo:p, graf:ss, sib:sorda;sí;
+melon;frutas;verde;vis:verde;melón;el;me-lón;L1;fon:me-;meló;el;me-ló;L0;fon:me-;sí;
+naranja;frutas;naranja;vis:naranja, vis:redondo;naranja;la;na-ran-ja;L1;;taronja;la;ta-ron-ja;L1;fon:ta-;sí;
+pera;frutas;verde;vis:verde;pera;la;pe-ra;L1;fon:pe-;pera;la;pe-ra;L1;fon:pe-, espejo:p;sí;
+pina;frutas;amarillo;vis:amarillo;piña;la;pi-ña;L1;fon:pi-;pinya;la;pi-nya;L1;fon:pi-, espejo:p, graf:ny;sí;
+platano;frutas;amarillo;vis:amarillo;plátano;el;plá-ta-no;L2;fon:pla-;plàtan;el;plà-tan;L2;fon:pla-, fon:pl-, espejo:p;sí;
+sandia;frutas;rojo;vis:rojo, vis:verde;sandía;la;san-dí-a;L3;;síndria;la;sín-dri-a;L3;;sí;
+uva;frutas;morado;vis:morado;uva;la;u-va;L1;;raïm;el;ra-ïm;L3;fon:ra-;sí;
+aguja;herramientas-y-objetos;herramientas-y-objetos;;aguja;la;a-gu-ja;L1;;agulla;l';a-gu-lla;L1;fon:a-, graf:ll;sí;
+ancla;herramientas-y-objetos;mar;vis:mar;ancla;el;an-cla;L2;;àncora;l';àn-co-ra;L1;;sí;
+balanza;herramientas-y-objetos;herramientas-y-objetos;;balanza;la;ba-lan-za;L1;;balança;la;ba-lan-ça;L1;fon:ba-, espejo:b, graf:ç;sí;
+bandera;herramientas-y-objetos;herramientas-y-objetos;;bandera;la;ban-de-ra;L1;espejo:b;bandera;la;ban-de-ra;L1;espejo:b;sí;
+bolsa;herramientas-y-objetos;herramientas-y-objetos;;bolsa;la;bol-sa;L1;fon:bo-;bossa;la;bos-sa;L1;espejo:b, graf:ss, sib:sorda;sí;Coincideix amb bolso (bossa): s'ha deixat usable aquesta imatge.
+brujula;herramientas-y-objetos;redondo;vis:redondo;brújula;la;brú-ju-la;L2;;brúixola;la;brúi-xo-la;L2;fon:brui-, fon:br-, espejo:b, graf:ix;sí;
+cadena;herramientas-y-objetos;herramientas-y-objetos;;cadena;la;ca-de-na;L1;fon:ca-;cadena;la;ca-de-na;L1;fon:ca-;sí;
+caja;herramientas-y-objetos;marrón;vis:marrón;caja;la;ca-ja;L1;fon:ca-;caixa;la;cai-xa;L2;graf:ix;sí;Capsa (cap-sa, L1) si la imatge es veu petita.
+camara;herramientas-y-objetos;herramientas-y-objetos;;cámara;la;cá-ma-ra;L1;fon:ca-;càmera;la;cà-me-ra;L1;fon:ca-;sí;
+campana;herramientas-y-objetos;amarillo;vis:amarillo;campana;la;cam-pa-na;L1;fon:cam-;campana;la;cam-pa-na;L1;;sí;
+candado;herramientas-y-objetos;herramientas-y-objetos;;candado;el;can-da-do;L1;;cadenat;el;ca-de-nat;L1;fon:ca-;sí;
+carta;herramientas-y-objetos;herramientas-y-objetos;;carta;la;car-ta;L1;fon:car-;carta;la;car-ta;L1;fon:car-;sí;
+clavo;herramientas-y-objetos;herramientas;vis:herramientas;clavo;el;cla-vo;L2;;clau;el;clau;L2;;no;Coincideix amb llave (clau). Sense alternativa d'una paraula.
+cofre;herramientas-y-objetos;marrón;vis:marrón;cofre;el;co-fre;L2;fon:co-;cofre;el;co-fre;L2;fon:co-;sí;
+copa;herramientas-y-objetos;amarillo;vis:amarillo;copa;la;co-pa;L1;fon:co-;copa;la;co-pa;L1;fon:co-;sí;Parell mínim amb capa i cap.
+cuerda;herramientas-y-objetos;herramientas-y-objetos;;cuerda;la;cuer-da;L1;fon:cu-;corda;la;cor-da;L1;fon:cor-;sí;
+hilo;herramientas-y-objetos;herramientas-y-objetos;;hilo;el;hi-lo;L1;;fil;el;fil;L1;;sí;
+iman;herramientas-y-objetos;rojo;vis:rojo;imán;el;i-mán;L1;;imant;l';i-mant;L3;fon:i-;sí;
+lana;herramientas-y-objetos;herramientas-y-objetos;;lana;la;la-na;L0;fon:la-;llana;la;lla-na;L1;fon:lla-, graf:ll;sí;
+linterna;herramientas-y-objetos;herramientas-y-objetos;;linterna;la;lin-ter-na;L1;;llanterna;la;llan-ter-na;L1;graf:ll;sí;
+lupa;herramientas-y-objetos;redondo;vis:redondo;lupa;la;lu-pa;L0;fon:lu-;lupa;la;lu-pa;L0;;sí;
+mapa;herramientas-y-objetos;herramientas-y-objetos;;mapa;el;ma-pa;L0;fon:ma-;mapa;el;ma-pa;L0;fon:ma-;sí;
+martillo;herramientas-y-objetos;herramientas;vis:herramientas;martillo;el;mar-ti-llo;L1;fon:mar-;martell;el;mar-tell;L1;fon:mar-, graf:ll;sí;
+medalla;herramientas-y-objetos;redondo;vis:redondo, vis:amarillo;medalla;la;me-da-lla;L1;fon:me-;medalla;la;me-da-lla;L1;fon:me-, graf:ll;sí;
+moneda;herramientas-y-objetos;redondo;vis:redondo, vis:amarillo;moneda;la;mo-ne-da;L1;fon:mo-;moneda;la;mo-ne-da;L1;fon:mo-;sí;
+palo;herramientas-y-objetos;alargado;vis:alargado, vis:marrón;palo;el;pa-lo;L0;fon:pa-;pal;el;pal;L1;fon:pal-, espejo:p;sí;
+pesa;herramientas-y-objetos;herramientas-y-objetos;;pesa;la;pe-sa;L0;fon:pe-;pes;el;pes;L1;espejo:p;sí;
+pila;herramientas-y-objetos;alargado;vis:alargado;pila;la;pi-la;L0;fon:pi-;pila;la;pi-la;L0;fon:pi-, espejo:p;sí;
+rastrillo;herramientas-y-objetos;herramientas;vis:herramientas;rastrillo;el;ras-tri-llo;L2;;rasclet;el;ras-clet;L2;fon:ras-;sí;
+red;herramientas-y-objetos;mar;vis:mar;red;la;red;L1;;xarxa;la;xar-xa;L1;graf:x;sí;
+regadera;herramientas-y-objetos;verde;vis:verde;regadera;la;re-ga-de-ra;L3;;regadora;la;re-ga-do-ra;L3;fon:re-;sí;
+regalo;herramientas-y-objetos;herramientas-y-objetos;;regalo;el;re-ga-lo;L1;;regal;el;re-gal;L1;fon:re-;sí;
+rueda;herramientas-y-objetos;redondo;vis:redondo;rueda;la;rue-da;L1;;roda;la;ro-da;L1;fon:ro-;sí;
+sal;herramientas-y-objetos;herramientas-y-objetos;;sal;la;sal;L1;fon:sa-;sal;la;sal;L1;fon:sal-;sí;Parell mínim amb sol.
+sello;herramientas-y-objetos;herramientas-y-objetos;;sello;el;se-llo;L1;fon:se-;segell;el;se-gell;L1;fon:se-, graf:ll;sí;
+sierra;herramientas-y-objetos;herramientas;vis:herramientas;sierra;la;sie-rra;L1;;serra;la;ser-ra;L1;;sí;
+silbato;herramientas-y-objetos;herramientas-y-objetos;;silbato;el;sil-ba-to;L1;;xiulet;el;xiu-let;L1;graf:x;sí;
+sobre;herramientas-y-objetos;blanco;vis:blanco;sobre;el;so-bre;L2;fon:so-;sobre;el;so-bre;L2;fon:so-;sí;
+termometro;herramientas-y-objetos;alargado;vis:alargado;termómetro;el;ter-mó-me-tro;L3;;termòmetre;el;ter-mò-me-tre;L3;;sí;
+tirita;herramientas-y-objetos;herramientas-y-objetos;;tirita;la;ti-ri-ta;L1;;tireta;la;ti-re-ta;L1;fon:ti-;sí;
+tornillo;herramientas-y-objetos;herramientas;vis:herramientas;tornillo;el;tor-ni-llo;L1;fon:tor-;cargol;el;car-gol;L1;;no;Coincideix amb caracol (cargol). Sense alternativa d'una paraula.
+tubo;herramientas-y-objetos;alargado;vis:alargado;tubo;el;tu-bo;L1;fon:tu-;tub;el;tub;L1;;sí;
+abeja;insectos-y-bichos;insectos;vis:insectos, vis:amarillo;abeja;la;a-be-ja;L1;;abella;l';a-be-lla;L1;fon:a-, graf:ll;sí;
+arana;insectos-y-bichos;insectos;vis:insectos;araña;la;a-ra-ña;L1;;aranya;l';a-ra-nya;L1;fon:a-, graf:ny;sí;
+escarabajo;insectos-y-bichos;insectos;vis:insectos;escarabajo;el;es-ca-ra-ba-jo;L5;;escarabat;l';es-ca-ra-bat;L3;fon:es-;sí;
+hormiga;insectos-y-bichos;insectos;vis:insectos;hormiga;la;hor-mi-ga;L1;;formiga;la;for-mi-ga;L1;fon:for-;sí;
+libelula;insectos-y-bichos;insectos;vis:insectos;libélula;la;li-bé-lu-la;L3;;libèl·lula;la;li-bel-lu-la;L3;graf:l·l;sí;Ela geminada: el punt volat se substitueix pel guió de síl·labes.
+mariposa;insectos-y-bichos;insectos;vis:insectos;mariposa;la;ma-ri-po-sa;L3;fon:ma-;papallona;la;pa-pa-llo-na;L3;fon:pa-, espejo:p, graf:ll;sí;
+mariquita;insectos-y-bichos;insectos;vis:insectos, vis:rojo;mariquita;la;ma-ri-qui-ta;L3;fon:ma-;marieta;la;ma-ri-e-ta;L3;fon:ma-;sí;
+mosca;insectos-y-bichos;insectos;vis:insectos;mosca;la;mos-ca;L1;fon:mo-;mosca;la;mos-ca;L1;fon:mos-;sí;
+mosquito;insectos-y-bichos;insectos;vis:insectos;mosquito;el;mos-qui-to;L1;fon:mo-;mosquit;el;mos-quit;L1;fon:mos-;sí;
+oruga;insectos-y-bichos;insectos;vis:insectos, vis:verde;oruga;la;o-ru-ga;L1;;eruga;l';e-ru-ga;L1;fon:e-;sí;
+saltamontes;insectos-y-bichos;insectos;vis:insectos, vis:verde;saltamontes;el;sal-ta-mon-tes;L3;;saltamartí;el;sal-ta-mar-tí;L3;fon:sal-;sí;Llagosta és ambigu (també el crustaci).
+acordeon;instrumentos-musicales;instrumentos;vis:instrumentos;acordeón;el;a-cor-de-ón;L3;;acordió;l';a-cor-di-ó;L3;fon:a-;sí;
+armonica;instrumentos-musicales;instrumentos;vis:instrumentos, vis:viento;armónica;la;ar-mó-ni-ca;L3;;harmònica;l';har-mò-ni-ca;L3;;sí;
+arpa;instrumentos-musicales;instrumentos;vis:instrumentos;arpa;el;ar-pa;L1;;arpa;l';ar-pa;L1;fon:ar-;sí;
+bateria;instrumentos-musicales;instrumentos;vis:instrumentos;batería;la;ba-te-rí-a;L3;;bateria;la;ba-te-ri-a;L3;fon:ba-, espejo:b;sí;
+castanuelas;instrumentos-musicales;instrumentos;vis:instrumentos;castañuelas;las;cas-ta-ñue-las;L3;;castanyoles;les;cas-ta-nyo-les;L3;fon:cas-, graf:ny;sí;Plural fix.
+clarinete;instrumentos-musicales;instrumentos;vis:instrumentos, vis:viento;clarinete;el;cla-ri-ne-te;L3;;clarinet;el;cla-ri-net;L2;fon:cl-;sí;
+flauta;instrumentos-musicales;instrumentos;vis:instrumentos, vis:viento;flauta;la;flau-ta;L2;fon:fl-;flauta;la;flau-ta;L2;fon:fl-;sí;
+guitarra;instrumentos-musicales;instrumentos;vis:instrumentos;guitarra;la;gui-ta-rra;L2;;guitarra;la;gui-tar-ra;L2;fon:gui-;sí;
+maracas;instrumentos-musicales;instrumentos;vis:instrumentos;maracas;las;ma-ra-cas;L1;fon:ma-;maraques;les;ma-ra-ques;L1;fon:ma-;sí;Plural fix.
+microfono;instrumentos-musicales;instrumentos-musicales;;micrófono;el;mi-cró-fo-no;L3;;micròfon;el;mi-crò-fon;L2;fon:mi-;sí;
+pandereta;instrumentos-musicales;instrumentos;vis:instrumentos, vis:redondo;pandereta;la;pan-de-re-ta;L3;fon:pan-;pandereta;la;pan-de-re-ta;L3;fon:pan-, espejo:p;sí;
+piano;instrumentos-musicales;instrumentos;vis:instrumentos;piano;el;pia-no;L1;fon:pi-;piano;el;pi-a-no;L3;fon:pi-, espejo:p;sí;En català i + a és hiat (pi-a-no): L3 per la taula 2.3.
+saxofon;instrumentos-musicales;instrumentos;vis:instrumentos, vis:viento;saxofón;el;sa-xo-fón;L1;fon:sa-;saxòfon;el;sa-xò-fon;L1;fon:sa-;sí;La x sona ks.
+tambor;instrumentos-musicales;instrumentos;vis:instrumentos;tambor;el;tam-bor;L1;;tambor;el;tam-bor;L1;;sí;
+trombon;instrumentos-musicales;instrumentos;vis:instrumentos, vis:viento;trombón;el;trom-bón;L2;fon:tr-;trombó;el;trom-bó;L2;fon:trom-, fon:tr-;sí;
+trompeta;instrumentos-musicales;instrumentos;vis:instrumentos, vis:viento;trompeta;la;trom-pe-ta;L2;fon:tr-;trompeta;la;trom-pe-ta;L2;fon:trom-, fon:tr-;sí;
+tuba;instrumentos-musicales;instrumentos;vis:instrumentos, vis:viento;tuba;la;tu-ba;L1;fon:tu-;tuba;la;tu-ba;L1;fon:tu-;sí;
+violin;instrumentos-musicales;instrumentos;vis:instrumentos;violín;el;vio-lín;L1;;violí;el;vi-o-lí;L3;;sí;
+xilofono;instrumentos-musicales;instrumentos;vis:instrumentos;xilófono;el;xi-ló-fo-no;L3;;xilòfon;el;xi-lò-fon;L1;graf:x;sí;
+buzon;lugares-y-construcciones;amarillo;vis:amarillo;buzón;el;bu-zón;L1;;bústia;la;bús-ti-a;L3;espejo:b;sí;
+cabana;lugares-y-construcciones;edificios;vis:edificios;cabaña;la;ca-ba-ña;L1;fon:ca-;cabana;la;ca-ba-na;L1;fon:ca-;sí;
+castillo;lugares-y-construcciones;edificios;vis:edificios;castillo;el;cas-ti-llo;L1;;castell;el;cas-tell;L1;fon:cas-, graf:ll;sí;
+escuela;lugares-y-construcciones;edificios;vis:edificios;escuela;la;es-cue-la;L1;;escola;l';es-co-la;L1;fon:es-;sí;
+faro;lugares-y-construcciones;edificios;vis:edificios, vis:mar;faro;el;fa-ro;L1;;far;el;far;L1;;sí;
+farola;lugares-y-construcciones;lugares-y-construcciones;;farola;la;fa-ro-la;L1;;fanal;el;fa-nal;L1;fon:fa-;sí;
+fuente;lugares-y-construcciones;lugares-y-construcciones;;fuente;la;fuen-te;L1;;font;la;font;L2;;sí;
+granja;lugares-y-construcciones;edificios;vis:edificios, vis:granja;granja;la;gran-ja;L2;;granja;la;gran-ja;L2;fon:gran-, fon:gr-;sí;
+hospital;lugares-y-construcciones;edificios;vis:edificios;hospital;el;hos-pi-tal;L1;;hospital;l';hos-pi-tal;L1;;sí;
+iglu;lugares-y-construcciones;blanco;vis:blanco;iglú;el;i-glú;L2;;iglú;l';i-glú;L2;fon:i-;sí;
+jaula;lugares-y-construcciones;lugares-y-construcciones;;jaula;la;jau-la;L1;;gàbia;la;gà-bi-a;L3;fon:ga-;sí;
+molino;lugares-y-construcciones;edificios;vis:edificios;molino;el;mo-li-no;L1;fon:mo-;molí;el;mo-lí;L0;fon:mo-;sí;
+piramide;lugares-y-construcciones;lugares-y-construcciones;;pirámide;la;pi-rá-mi-de;L3;fon:pi-;piràmide;la;pi-rà-mi-de;L3;fon:pi-, espejo:p;sí;
+piscina;lugares-y-construcciones;azul;vis:azul;piscina;la;pis-ci-na;L1;;piscina;la;pis-ci-na;L1;fon:pis-, espejo:p;sí;
+puente;lugares-y-construcciones;lugares-y-construcciones;;puente;el;puen-te;L1;;pont;el;pont;L2;espejo:p;sí;
+semaforo;lugares-y-construcciones;lugares-y-construcciones;;semáforo;el;se-má-fo-ro;L3;;semàfor;el;se-mà-for;L1;fon:se-;sí;
+tienda;lugares-y-construcciones;edificios;vis:edificios;tienda;la;tien-da;L1;;botiga;la;bo-ti-ga;L1;fon:bo-, espejo:b;sí;
+torre;lugares-y-construcciones;edificios;vis:edificios;torre;la;to-rre;L1;fon:to-;torre;la;tor-re;L1;fon:tor-;sí;
+arbol;naturaleza;verde;vis:verde, vis:plantas;árbol;el;ár-bol;L1;;arbre;l';ar-bre;L2;fon:ar-;sí;
+arcoiris;naturaleza;cielo;vis:cielo;arcoíris;el;ar-co-í-ris;L3;;arc de Sant Martí;l';;;;no;Quatre paraules.
+bellota;naturaleza;marrón;vis:marrón;bellota;la;be-llo-ta;L1;;gla;la;gla;L2;fon:gl-;sí;També aglà. Mot poc freqüent per a un infant.
+cactus;naturaleza;verde;vis:verde, vis:plantas;cactus;el;cac-tus;L1;;cactus;el;cac-tus;L1;;sí;
+cueva;naturaleza;naturaleza;;cueva;la;cue-va;L1;;cova;la;co-va;L1;fon:co-;sí;
+estrella;naturaleza;amarillo;vis:amarillo, vis:cielo;estrella;la;es-tre-lla;L2;;estrella;l';es-tre-lla;L2;fon:es-, graf:ll;sí;Estel es reserva per a la joguina (cometa).
+flor;naturaleza;plantas;vis:plantas;flor;la;flor;L2;fon:fl-;flor;la;flor;L2;fon:fl-;sí;
+fuego;naturaleza;naranja;vis:naranja;fuego;el;fue-go;L1;;foc;el;foc;L1;;sí;
+girasol;naturaleza;amarillo;vis:amarillo, vis:plantas;girasol;el;gi-ra-sol;L1;;gira-sol;el;;;;no;Grafia amb guionet (gira-sol, mira-sol).
+hoja;naturaleza;verde;vis:verde, vis:plantas;hoja;la;ho-ja;L1;;fulla;la;fu-lla;L1;graf:ll;sí;
+isla;naturaleza;naturaleza;;isla;la;is-la;L1;;illa;l';i-lla;L1;fon:i-, graf:ll;sí;
+lluvia;naturaleza;cielo;vis:cielo;lluvia;la;llu-via;L1;;pluja;la;plu-ja;L2;fon:pl-, espejo:p;sí;
+luna;naturaleza;cielo;vis:cielo;luna;la;lu-na;L0;fon:lu-;lluna;la;llu-na;L1;graf:ll;sí;
+margarita;naturaleza;plantas;vis:plantas, vis:blanco;margarita;la;mar-ga-ri-ta;L3;;margarida;la;mar-ga-ri-da;L3;fon:mar-;sí;
+montana;naturaleza;naturaleza;;montaña;la;mon-ta-ña;L1;fon:mon-;muntanya;la;mun-ta-nya;L1;graf:ny;sí;
+nido;naturaleza;naturaleza;;nido;el;ni-do;L0;fon:ni-;niu;el;niu;L1;;sí;
+nube;naturaleza;cielo;vis:cielo, vis:blanco;nube;la;nu-be;L1;fon:nu-;núvol;el;nú-vol;L1;;sí;
+ola;naturaleza;azul;vis:azul, vis:mar;ola;la;o-la;L0;fon:o-;ona;l';o-na;L0;fon:o-;sí;
+palmera;naturaleza;plantas;vis:plantas, vis:verde;palmera;la;pal-me-ra;L1;;palmera;la;pal-me-ra;L1;fon:pal-, espejo:p;sí;
+piedra;naturaleza;gris;vis:gris;piedra;la;pie-dra;L2;fon:pi-;pedra;la;pe-dra;L2;fon:pe-, espejo:p;sí;
+pino;naturaleza;plantas;vis:plantas, vis:verde;pino;el;pi-no;L0;fon:pi-;pi;el;pi;L0;fon:pi-, espejo:p;sí;
+planeta;naturaleza;cielo;vis:cielo;planeta;el;pla-ne-ta;L2;fon:pla-;planeta;el;pla-ne-ta;L2;fon:pla-, fon:pl-, espejo:p;sí;
+playa;naturaleza;naturaleza;;playa;la;pla-ya;L2;fon:pla-;platja;la;plat-ja;L2;fon:plat-, fon:pl-, espejo:p, graf:tj;sí;
+rama;naturaleza;plantas;vis:plantas;rama;la;ra-ma;L1;fon:ra-;branca;la;bran-ca;L2;fon:br-, espejo:b;sí;
+rayo;naturaleza;amarillo;vis:amarillo, vis:cielo;rayo;el;ra-yo;L1;fon:ra-;llamp;el;llamp;L2;graf:ll;sí;
+rio;naturaleza;azul;vis:azul;río;el;rí-o;L3;;riu;el;riu;L1;;sí;
+rosa;naturaleza;rojo;vis:rojo, vis:plantas;rosa;la;ro-sa;L1;fon:ro-;rosa;la;ro-sa;L1;fon:ro-, sib:sonora;sí;
+sol;naturaleza;amarillo;vis:amarillo, vis:redondo, vis:cielo;sol;el;sol;L1;fon:so-;sol;el;sol;L1;;sí;Parell mínim amb sal.
+trebol;naturaleza;verde;vis:verde, vis:plantas;trébol;el;tré-bol;L2;fon:tr-;trèvol;el;trè-vol;L2;fon:tr-;sí;
+tronco;naturaleza;marrón;vis:marrón;tronco;el;tron-co;L2;fon:tr-;tronc;el;tronc;L2;fon:tr-;sí;
+tulipan;naturaleza;plantas;vis:plantas, vis:rojo;tulipán;el;tu-li-pán;L1;;tulipa;la;tu-li-pa;L1;fon:tu-;sí;
+volcan;naturaleza;naturaleza;;volcán;el;vol-cán;L1;;volcà;el;vol-cà;L1;;sí;
+ala;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;;ala;el;a-la;L0;fon:a-;ala;l';a-la;L0;fon:a-;sí;
+cara;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;;cara;la;ca-ra;L1;fon:ca-;cara;la;ca-ra;L1;fon:ca-;sí;
+lata;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;;lata;la;la-ta;L0;fon:la-;llauna;la;llau-na;L1;graf:ll;sí;
+lima;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;verde;vis:verde, vis:redondo;lima;la;li-ma;L0;fon:li-;llima;la;lli-ma;L1;fon:lli-, graf:ll;sí;"La fruita (llima); l'eina també es diu llima."
+nata;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;blanco;vis:blanco;nata;la;na-ta;L0;fon:na-;nata;la;na-ta;L0;;sí;
+nene;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;personas;vis:personas;nene;el;ne-ne;L0;fon:ne-;nen;el;nen;L1;;sí;
+pipa;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;;pipa;la;pi-pa;L0;fon:pi-;pipa;la;pi-pa;L0;fon:pi-, espejo:p;sí;
+polo;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;;polo;el;po-lo;L0;fon:po-;polo;el;po-lo;L0;fon:po-, espejo:p;sí;Gelat de pal.
+tapon;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;pares-y-palabras-cortas-niveles-bajos-y-grupos-fonologicos;;tapón;el;ta-pón;L1;fon:ta-;tap;el;tap;L1;;sí;Parell mínim amb tapa.
+astronauta;personajes-y-profesiones;personas;vis:personas, vis:blanco;astronauta;el;as-tro-nau-ta;L3;;astronauta;l';as-tro-nau-ta;L3;;sí;
+bebe;personajes-y-profesiones;personas;vis:personas;bebé;el;be-bé;L1;espejo:b;bebè;el;be-bè;L1;espejo:b;sí;
+bombero;personajes-y-profesiones;personas;vis:personas;bombero;el;bom-be-ro;L1;fon:bo-;bomber;el;bom-ber;L1;fon:bom-, espejo:b;sí;
+bruja;personajes-y-profesiones;personas;vis:personas;bruja;la;bru-ja;L2;;bruixa;la;brui-xa;L2;fon:brui-, fon:br-, espejo:b, graf:ix;sí;
+caballero;personajes-y-profesiones;personas;vis:personas;caballero;el;ca-ba-lle-ro;L3;fon:ca-;cavaller;el;ca-va-ller;L1;fon:ca-, graf:ll;sí;
+cartero;personajes-y-profesiones;personas;vis:personas;cartero;el;car-te-ro;L1;fon:car-;carter;el;car-ter;L1;fon:car-;sí;
+cocinero;personajes-y-profesiones;personas;vis:personas;cocinero;el;co-ci-ne-ro;L3;fon:co-;cuiner;el;cui-ner;L1;;sí;
+dinosaurio;personajes-y-profesiones;verde;vis:verde;dinosaurio;el;di-no-sau-rio;L3;;dinosaure;el;di-no-sau-re;L3;espejo:d, sib:sonora;sí;
+dragon;personajes-y-profesiones;verde;vis:verde;dragón;el;dra-gón;L2;;drac;el;drac;L2;espejo:d;sí;
+duende;personajes-y-profesiones;personas;vis:personas, vis:verde;duende;el;duen-de;L1;;follet;el;fo-llet;L1;fon:fo-, graf:ll;sí;
+fantasma;personajes-y-profesiones;blanco;vis:blanco;fantasma;el;fan-tas-ma;L1;;fantasma;el;fan-tas-ma;L1;;sí;
+granjero;personajes-y-profesiones;personas;vis:personas, vis:granja;granjero;el;gran-je-ro;L2;;granger;el;gran-ger;L2;fon:gran-, fon:gr-;sí;
+hada;personajes-y-profesiones;personas;vis:personas;hada;el;ha-da;L1;;fada;la;fa-da;L1;fon:fa-;sí;
+mago;personajes-y-profesiones;personas;vis:personas;mago;el;ma-go;L1;fon:ma-;mag;el;mag;L1;fon:mag-;sí;
+medico;personajes-y-profesiones;personas;vis:personas;médico;el;mé-di-co;L1;fon:me-;metge;el;met-ge;L2;graf:tg;sí;
+monstruo;personajes-y-profesiones;morado;vis:morado;monstruo;el;mons-truo;L3;;monstre;el;mons-tre;L3;;sí;
+payaso;personajes-y-profesiones;personas;vis:personas;payaso;el;pa-ya-so;L1;fon:pa-;pallasso;el;pa-llas-so;L1;fon:pa-, espejo:p, graf:ll, graf:ss, sib:sorda;sí;
+pirata;personajes-y-profesiones;personas;vis:personas;pirata;el;pi-ra-ta;L1;fon:pi-;pirata;el;pi-ra-ta;L1;fon:pi-, espejo:p;sí;
+policia;personajes-y-profesiones;personas;vis:personas;policía;el;po-li-cí-a;L3;fon:po-;policia;el;po-li-ci-a;L3;fon:po-, espejo:p, sib:sorda;sí;
+princesa;personajes-y-profesiones;personas;vis:personas;princesa;la;prin-ce-sa;L2;;princesa;la;prin-ce-sa;L2;fon:pr-, espejo:p, sib:sonora;sí;
+reina;personajes-y-profesiones;personas;vis:personas;reina;la;rei-na;L1;;reina;la;rei-na;L1;fon:rei-;sí;
+rey;personajes-y-profesiones;personas;vis:personas;rey;el;rey;L1;;rei;el;rei;L1;fon:rei-;sí;
+sirena;personajes-y-profesiones;mar;vis:mar;sirena;la;si-re-na;L1;fon:si-;sirena;la;si-re-na;L1;;sí;
+superheroe;personajes-y-profesiones;personas;vis:personas;superhéroe;el;su-per-hé-ro-e;L5;;superheroi;el;su-per-he-roi;L3;;sí;
+unicornio;personajes-y-profesiones;blanco;vis:blanco;unicornio;el;u-ni-cor-nio;L3;;unicorn;l';u-ni-corn;L3;fon:u-;sí;
+abrigo;ropa-y-complementos;ropa;vis:ropa;abrigo;el;a-bri-go;L2;;abric;l';a-bric;L2;fon:a-;sí;
+anillo;ropa-y-complementos;redondo;vis:redondo;anillo;el;a-ni-llo;L1;;anell;l';a-nell;L1;fon:a-, graf:ll;sí;
+banador;ropa-y-complementos;ropa;vis:ropa;bañador;el;ba-ña-dor;L1;;banyador;el;ba-nya-dor;L1;fon:ba-, espejo:b, graf:ny;sí;
+bolso;ropa-y-complementos;ropa-y-complementos;;bolso;el;bol-so;L1;fon:bo-;bossa;la;bos-sa;L1;;no;Coincideix amb bolsa (bossa). Bossa de mà són tres paraules.
+bota;ropa-y-complementos;calzado;vis:calzado;bota;la;bo-ta;L1;fon:bo-;bota;la;bo-ta;L1;fon:bo-, espejo:b;sí;
+boton;ropa-y-complementos;redondo;vis:redondo;botón;el;bo-tón;L1;fon:bo-;botó;el;bo-tó;L1;fon:bo-, espejo:b;sí;
+bufanda;ropa-y-complementos;ropa;vis:ropa;bufanda;la;bu-fan-da;L1;;bufanda;la;bu-fan-da;L1;espejo:b;sí;
+calcetin;ropa-y-complementos;ropa;vis:ropa;calcetín;el;cal-ce-tín;L1;;mitjó;el;mit-jó;L2;graf:tj;sí;
+camiseta;ropa-y-complementos;ropa;vis:ropa;camiseta;la;ca-mi-se-ta;L3;fon:ca-;samarreta;la;sa-mar-re-ta;L3;fon:sa-;sí;
+capa;ropa-y-complementos;ropa-y-complementos;;capa;la;ca-pa;L1;fon:ca-;capa;la;ca-pa;L1;fon:ca-;sí;Parell mínim amb copa i cap.
+chaqueta;ropa-y-complementos;ropa;vis:ropa;chaqueta;la;cha-que-ta;L1;;jaqueta;la;ja-que-ta;L1;;sí;
+cinturon;ropa-y-complementos;ropa-y-complementos;;cinturón;el;cin-tu-rón;L1;;cinturó;el;cin-tu-ró;L1;;sí;
+collar;ropa-y-complementos;ropa-y-complementos;;collar;el;co-llar;L1;fon:co-;collaret;el;co-lla-ret;L1;fon:co-, graf:ll;sí;També collar.
+corbata;ropa-y-complementos;ropa;vis:ropa;corbata;la;cor-ba-ta;L1;;corbata;la;cor-ba-ta;L1;fon:cor-;sí;
+corona;ropa-y-complementos;amarillo;vis:amarillo;corona;la;co-ro-na;L1;fon:co-;corona;la;co-ro-na;L1;fon:co-;sí;
+cremallera;ropa-y-complementos;ropa-y-complementos;;cremallera;la;cre-ma-lle-ra;L3;;cremallera;la;cre-ma-lle-ra;L3;fon:cr-, graf:ll;sí;
+falda;ropa-y-complementos;ropa;vis:ropa;falda;la;fal-da;L1;;faldilla;la;fal-di-lla;L1;graf:ll;sí;
+gafas;ropa-y-complementos;ropa-y-complementos;;gafas;las;ga-fas;L1;fon:ga-;ulleres;les;u-lle-res;L1;fon:u-, graf:ll;sí;Plural fix.
+gorra;ropa-y-complementos;sombreros;vis:sombreros;gorra;la;go-rra;L1;fon:go-;gorra;la;gor-ra;L1;fon:gor-;sí;
+gorro;ropa-y-complementos;sombreros;vis:sombreros;gorro;el;go-rro;L1;fon:go-;gorro;el;gor-ro;L1;fon:gor-;sí;
+guante;ropa-y-complementos;ropa;vis:ropa;guante;el;guan-te;L1;;guant;el;guant;L2;;sí;
+lazo;ropa-y-complementos;rojo;vis:rojo;lazo;el;la-zo;L1;fon:la-;llaç;el;llaç;L1;graf:ç, graf:ll;sí;
+maleta;ropa-y-complementos;ropa-y-complementos;;maleta;la;ma-le-ta;L1;fon:ma-;maleta;la;ma-le-ta;L1;fon:ma-;sí;
+pantalon;ropa-y-complementos;ropa;vis:ropa;pantalón;el;pan-ta-lón;L1;fon:pan-;pantalons;els;pan-ta-lons;L3;fon:pan-, espejo:p;sí;Forma habitual en plural (coda ns, L3). Singular pantaló (pan-ta-ló, L1).
+paraguas;ropa-y-complementos;ropa-y-complementos;;paraguas;el;pa-ra-guas;L1;fon:pa-;paraigua;el;pa-rai-gua;L1;fon:pa-, espejo:p;sí;
+pijama;ropa-y-complementos;ropa;vis:ropa;pijama;el;pi-ja-ma;L1;fon:pi-;pijama;el;pi-ja-ma;L1;fon:pi-, espejo:p;sí;
+sandalia;ropa-y-complementos;calzado;vis:calzado;sandalia;la;san-da-lia;L1;;sandàlia;la;san-dà-li-a;L3;;sí;
+sombrero;ropa-y-complementos;sombreros;vis:sombreros;sombrero;el;som-bre-ro;L2;;barret;el;bar-ret;L1;espejo:b;sí;
+vestido;ropa-y-complementos;ropa;vis:ropa;vestido;el;ves-ti-do;L1;;vestit;el;ves-tit;L1;;sí;
+zapatilla;ropa-y-complementos;calzado;vis:calzado;zapatilla;la;za-pa-ti-lla;L3;;sabatilla;la;sa-ba-ti-lla;L3;fon:sa-, graf:ll;sí;
+zapato;ropa-y-complementos;calzado;vis:calzado;zapato;el;za-pa-to;L1;;sabata;la;sa-ba-ta;L1;fon:sa-;sí;
+ambulancia;vehiculos;vehículos;vis:vehículos;ambulancia;la;am-bu-lan-cia;L3;;ambulància;l';am-bu-làn-ci-a;L5;fon:am-;sí;
+autobus;vehiculos;vehículos;vis:vehículos, vis:amarillo;autobús;el;au-to-bús;L1;;autobús;l';au-to-bús;L1;;sí;
+avion;vehiculos;vehículos;vis:vehículos;avión;el;a-vión;L1;;avió;l';a-vi-ó;L3;fon:a-;sí;
+barco;vehiculos;vehículos;vis:vehículos, vis:mar;barco;el;bar-co;L1;;vaixell;el;vai-xell;L2;graf:ll, graf:ix;sí;
+bicicleta;vehiculos;vehículos;vis:vehículos;bicicleta;la;bi-ci-cle-ta;L3;;bicicleta;la;bi-ci-cle-ta;L3;fon:bi-, espejo:b, sib:sorda;sí;Col·loquialment bici (bi-ci, L1).
+camion;vehiculos;vehículos;vis:vehículos;camión;el;ca-mión;L1;fon:ca-;camió;el;ca-mi-ó;L3;fon:ca-;sí;
+canoa;vehiculos;mar;vis:mar;canoa;la;ca-no-a;L3;fon:ca-;canoa;la;ca-no-a;L3;fon:ca-;sí;
+coche;vehiculos;vehículos;vis:vehículos;coche;el;co-che;L1;fon:co-;cotxe;el;cot-xe;L2;graf:tx;sí;El dígraf tx se separa (IEC): cot-xe.
+cohete;vehiculos;vehículos;vis:vehículos;cohete;el;co-he-te;L1;fon:co-;coet;el;co-et;L3;fon:co-;sí;
+excavadora;vehiculos;vehículos;vis:vehículos, vis:amarillo;excavadora;la;ex-ca-va-do-ra;L5;;excavadora;l';ex-ca-va-do-ra;L5;;sí;
+furgoneta;vehiculos;vehículos;vis:vehículos;furgoneta;la;fur-go-ne-ta;L3;;furgoneta;la;fur-go-ne-ta;L3;;sí;
+grua;vehiculos;vehiculos;;grúa;la;grú-a;L3;;grua;la;gru-a;L3;fon:gr-;sí;
+helicoptero;vehiculos;vehículos;vis:vehículos;helicóptero;el;he-li-cóp-te-ro;L5;;helicòpter;l';he-li-còp-ter;L3;;sí;
+moto;vehiculos;vehículos;vis:vehículos;moto;la;mo-to;L0;fon:mo-;moto;la;mo-to;L0;fon:mo-;sí;
+patin;vehiculos;vehiculos;;patín;el;pa-tín;L1;fon:pa-;patí;el;pa-tí;L0;fon:pa-, espejo:p;sí;
+patinete;vehiculos;vehiculos;;patinete;el;pa-ti-ne-te;L3;fon:pa-;patinet;el;pa-ti-net;L1;fon:pa-, espejo:p;sí;
+submarino;vehiculos;vehículos;vis:vehículos, vis:mar;submarino;el;sub-ma-ri-no;L3;;submarí;el;sub-ma-rí;L1;;sí;
+tractor;vehiculos;vehículos;vis:vehículos, vis:granja;tractor;el;trac-tor;L2;fon:tr-;tractor;el;trac-tor;L2;fon:tr-;sí;
+tren;vehiculos;vehículos;vis:vehículos;tren;el;tren;L2;fon:tr-;tren;el;tren;L2;fon:tr-;sí;
+trineo;vehiculos;vehiculos;;trineo;el;tri-ne-o;L3;fon:tr-;trineu;el;tri-neu;L2;fon:tr-;sí;
+arroz;verduras-y-comida;blanco;vis:blanco;arroz;el;a-rroz;L1;;arròs;l';ar-ròs;L1;fon:ar-;sí;
+berenjena;verduras-y-comida;morado;vis:morado;berenjena;la;be-ren-je-na;L3;;albergínia;l';al-ber-gí-ni-a;L5;fon:al-;sí;
+bocadillo;verduras-y-comida;verduras-y-comida;;bocadillo;el;bo-ca-di-llo;L3;fon:bo-;entrepà;l';en-tre-pà;L2;fon:en-;sí;
+calabaza;verduras-y-comida;naranja;vis:naranja, vis:redondo;calabaza;la;ca-la-ba-za;L3;fon:ca-;carbassa;la;car-bas-sa;L1;fon:car-, graf:ss, sib:sorda;sí;
+caramelo;verduras-y-comida;verduras-y-comida;;caramelo;el;ca-ra-me-lo;L3;fon:ca-;caramel;el;ca-ra-mel;L1;fon:ca-;sí;
+cebolla;verduras-y-comida;redondo;vis:redondo;cebolla;la;ce-bo-lla;L1;;ceba;la;ce-ba;L1;;sí;
+chocolate;verduras-y-comida;marrón;vis:marrón;chocolate;el;cho-co-la-te;L3;;xocolata;la;xo-co-la-ta;L3;graf:x;sí;
+galleta;verduras-y-comida;redondo;vis:redondo, vis:marrón;galleta;la;ga-lle-ta;L1;fon:ga-;galeta;la;ga-le-ta;L1;fon:ga-;sí;
+hamburguesa;verduras-y-comida;verduras-y-comida;;hamburguesa;la;ham-bur-gue-sa;L3;;hamburguesa;l';ham-bur-gue-sa;L3;sib:sonora;sí;
+helado;verduras-y-comida;verduras-y-comida;;helado;el;he-la-do;L1;;gelat;el;ge-lat;L1;fon:ge-;sí;
+huevo;verduras-y-comida;blanco;vis:blanco, vis:amarillo;huevo;el;hue-vo;L1;;ou;l';ou;L1;;sí;
+jamon;verduras-y-comida;verduras-y-comida;;jamón;el;ja-món;L1;;pernil;el;per-nil;L1;espejo:p;sí;
+leche;verduras-y-comida;blanco;vis:blanco;leche;la;le-che;L1;fon:le-;llet;la;llet;L1;graf:ll;sí;Parell mínim amb llit (cama).
+lechuga;verduras-y-comida;verde;vis:verde;lechuga;la;le-chu-ga;L1;;enciam;l';en-ci-am;L3;fon:en-;sí;
+macarrones;verduras-y-comida;verduras-y-comida;;macarrones;los;ma-ca-rro-nes;L3;fon:ma-;macarrons;els;ma-car-rons;L3;fon:ma-;sí;Plural fix.
+magdalena;verduras-y-comida;verduras-y-comida;;magdalena;la;mag-da-le-na;L3;;magdalena;la;mag-da-le-na;L3;fon:mag-;sí;
+maiz;verduras-y-comida;amarillo;vis:amarillo;maíz;el;ma-íz;L3;fon:ma-;blat de moro;el;;;;no;Tres paraules. Panís en valencià.
+miel;verduras-y-comida;amarillo;vis:amarillo;miel;la;miel;L1;;mel;la;mel;L1;;sí;
+palomitas;verduras-y-comida;verduras-y-comida;;palomitas;las;pa-lo-mi-tas;L3;fon:pa-;crispetes;les;cris-pe-tes;L2;fon:cr-;sí;Plural fix.
+pan;verduras-y-comida;marrón;vis:marrón;pan;el;pan;L1;fon:pan-, fon:pa-;pa;el;pa;L0;fon:pa-, espejo:p;sí;
+patata;verduras-y-comida;marrón;vis:marrón;patata;la;pa-ta-ta;L1;fon:pa-;patata;la;pa-ta-ta;L1;fon:pa-, espejo:p;sí;
+pepino;verduras-y-comida;verde;vis:verde, vis:alargado;pepino;el;pe-pi-no;L1;fon:pe-;cogombre;el;co-gom-bre;L2;fon:co-;sí;
+pimiento;verduras-y-comida;rojo;vis:rojo;pimiento;el;pi-mien-to;L1;fon:pi-;pebrot;el;pe-brot;L2;fon:pe-, espejo:p;sí;
+pizza;verduras-y-comida;redondo;vis:redondo;pizza;la;piz-za;L1;;pizza;la;piz-za;L1;espejo:p;sí;Grafia estrangera (zz).
+pollo;verduras-y-comida;verduras-y-comida;;pollo;el;po-llo;L1;fon:po-;pollastre;el;po-llas-tre;L2;fon:po-, espejo:p, graf:ll;sí;
+queso;verduras-y-comida;amarillo;vis:amarillo;queso;el;que-so;L1;espejo:q;formatge;el;for-mat-ge;L2;fon:for-, graf:tg;sí;
+rosquilla;verduras-y-comida;redondo;vis:redondo;rosquilla;la;ros-qui-lla;L1;;rosquilla;la;ros-qui-lla;L1;graf:ll;sí;
+salchicha;verduras-y-comida;verduras-y-comida;;salchicha;la;sal-chi-cha;L1;;salsitxa;la;sal-sit-xa;L2;fon:sal-, graf:tx;sí;
+seta;verduras-y-comida;verduras-y-comida;;seta;la;se-ta;L0;fon:se-;bolet;el;bo-let;L1;fon:bo-, espejo:b;sí;
+sopa;verduras-y-comida;verduras-y-comida;;sopa;la;so-pa;L0;fon:so-;sopa;la;so-pa;L0;fon:so-;sí;
+tarta;verduras-y-comida;verduras-y-comida;;tarta;la;tar-ta;L1;fon:tar-;pastís;el;pas-tís;L1;fon:pas-, espejo:p;sí;
+tomate;verduras-y-comida;rojo;vis:rojo, vis:redondo;tomate;el;to-ma-te;L1;fon:to-;tomàquet;el;to-mà-quet;L1;fon:to-;sí;
+tortilla;verduras-y-comida;verduras-y-comida;;tortilla;la;tor-ti-lla;L1;fon:tor-;truita;la;trui-ta;L2;fon:tr-;sí;"Ambigu amb el peix (truita); la imatge ho desfà."
+yogur;verduras-y-comida;blanco;vis:blanco;yogur;el;yo-gur;L1;;iogurt;el;io-gurt;L3;;sí;
+zanahoria;verduras-y-comida;naranja;vis:naranja, vis:alargado;zanahoria;la;za-na-ho-ria;L3;;pastanaga;la;pas-ta-na-ga;L3;fon:pas-, espejo:p;sí;
+zumo;verduras-y-comida;naranja;vis:naranja;zumo;el;zu-mo;L1;;suc;el;suc;L1;;sí;

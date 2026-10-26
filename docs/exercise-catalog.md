@@ -221,9 +221,12 @@ Este volumen es el motivo de automatizar. Orden de prioridad al generar:
 
 ### 3.4 Código de actividad
 
-Formato propuesto para field_activity_code: TIPO-Lnn-AREA-nnn. Ejemplo: MAT-L04-PER-007 es la
-matriz número 7 de Level4 en Procesos Perceptivos. Si la actividad tiene dos niveles, se usa el más
-bajo.
+Formato de field_activity_code desde la FASE 18: TIPO-XX-Lnn-AREA-nnn, con XX = idioma de la
+actividad en mayúsculas (ES o CA). Ejemplo: MAT-ES-L04-PER-007 es la matriz castellana número 7 de
+Level4 en Procesos Perceptivos; MAT-CA-L04-PER-007 es otra actividad, catalana, con su propia
+numeración. Si la actividad tiene dos niveles, se usa el más bajo. (Antes de la FASE 18 el código
+no llevaba idioma; los lotes de shine/content/ se reescribieron con ES y se reimportaron, decisión 5
+de plans/multiidioma/README.md.)
 
 | Prefijo de tipo | Tipo | | Código de área | Área |
 |---|---|---|---|---|
@@ -236,7 +239,8 @@ bajo.
 | SEG | Segmentación léxica | | | |
 | REP | Repetición rápida de palabra | | | |
 
-Actividades de ciclo: TIPO-CIC-CICLO-peso, por ejemplo BLK-CIC-SILABAS-030.
+Actividades de ciclo: TIPO-XX-CIC-CICLO-peso, por ejemplo BLK-ES-CIC-SILABAS-030 (el ciclo catalán
+es BLK-CA-CIC-SILABAS-nnn: mismo término de ciclo, traducido, con actividades propias).
 
 Reglas:
 
@@ -250,18 +254,22 @@ Reglas:
   la huella, y así ni el código ni el material se reutilizan: el inventario y el importador (4.4)
   cuentan también las despublicadas.
 
-**Huella de contenido** (desde el 2026-10-21). Además del código, cada actividad lleva en
-field_content_hash el sha256 de (tipo, forma canónica de su material). La forma canónica la define
+**Huella de contenido** (desde el 2026-10-21; con idioma desde la FASE 18). Además del código, cada
+actividad lleva en field_content_hash el sha256 de (tipo, idioma, forma canónica de su material). La
+forma canónica la define
 el handler de cada tipo (`canonicalContent`): el conjunto de elementos, sin orden ni segundos, en
 el parpadeo y la repetición rápida; las palabras enteras, sin sobrantes, imagen ni corte silábico,
 en el reordenamiento de sílabas; las frases en la segmentación; objetivos, dimensiones y
-cuadrículas, sin orden de rondas ni tiempo, en la matriz. La escribe el módulo shine_content al
+cuadrículas, sin orden de rondas ni tiempo, en la matriz; los grupos de imágenes (slugs en orden y
+posición preguntada, sin nombres ni orden de grupos) en la posición de imágenes. La escribe el
+módulo shine_content al
 guardar cualquier actividad (venga del importador o de la interfaz de Drupal) y
 `drush shine-content:rehash` la recalcula en bloque. Dos actividades del mismo tipo con la misma
 huella son la misma actividad: el importador no deja entrar la segunda (4.4). La comparación es
-por tipo: la misma palabra en un parpadeo y en un reordenamiento no es duplicado, porque la
-mecánica es otra. La misma huella en dos niveles sí lo es: es un error de etiquetado, no contenido
-nuevo.
+por tipo e idioma: la misma palabra en un parpadeo y en un reordenamiento no es duplicado, porque la
+mecánica es otra, y el mismo material en castellano y en catalán tampoco (son dos actividades,
+plans/multiidioma/analisis.md 2.2: lo compartible se comparte en el lote con `idiomas`, no en
+Drupal). La misma huella en dos niveles sí lo es: es un error de etiquetado, no contenido nuevo.
 
 **Unidades léxicas.** Cada tipo declara también sus unidades (`units`): elementos, palabras, frases
 o cuadrículas, normalizadas (minúsculas, espacios simples, sin repetidos). Con ellas se mide el
@@ -322,17 +330,27 @@ activity_image_position, que trabaja con imágenes. Los tipos de texto de la FAS
 reordenamiento de sílabas y segmentación) deben reutilizar los mismos storages al crearse
 (docs/conventions.md); en la matriz el vocabulario natural es el tramo perceptivo.
 
-**Términos en cada entorno.** Los vocabularios y campos son config (viajan con drush cim); los
-términos son contenido y se crean con un script idempotente, que también corrige padre, peso y
-descripción si cambian y nunca borra:
+**Términos en cada entorno, por idioma (FASE 18).** Los vocabularios y campos son config (viajan con
+drush cim); los términos son contenido. Cada idioma tiene su propio juego de términos en los mismos
+dos vocabularios (términos con `langcode` es o ca, nunca traducciones): la tabla de arriba es la
+castellana; la catalana (4 grupos y 33 términos de sonoridad, 4 grupos y 19 de esfuerzo, con
+nombres propios como "s sorda", "tx/ig", "grafies s/ss/c/ç", "Dígrafs simples", "Ela geminada (l·l)")
+está en `plans/multiidioma/estructura-ca.md`, apartados 3 y 4, definida con el experto. Los datos
+viven en `shine/scripts/phonology-terms.es.json` y `phonology-terms.ca.json` (objeto con `langcode`
+y `vocabularies`; por vocabulario, lista de grupos con `name`, `description` y `children`, en el
+orden que fija el peso) y los crea un script idempotente por idioma, que también corrige padre,
+peso y descripción si cambian y nunca borra:
 
 ```bash
-cd shine && ddev drush php:script scripts/create-phonology-terms.php
+cd shine && ddev drush php:script scripts/create-phonology-terms.php -- es
+cd shine && ddev drush php:script scripts/create-phonology-terms.php -- ca
 ```
 
-Los nombres son únicos dentro de cada vocabulario (el script falla si encuentra duplicados), porque
-el cargador referencia los términos por nombre. Lectura por JSON:API con `access content`:
-`GET /jsonapi/taxonomy_term/sonority` y `GET /jsonapi/taxonomy_term/decoding_effort`.
+Los nombres son únicos dentro de cada vocabulario e idioma (el script falla si encuentra
+duplicados), porque el cargador referencia los términos por nombre dentro del idioma del registro
+(4.3). Lectura por JSON:API con `access content`: `GET /jsonapi/taxonomy_term/sonority` y
+`GET /jsonapi/taxonomy_term/decoding_effort` devuelven los dos idiomas (filtrar con
+`filter[langcode]=ca`).
 
 ---
 
@@ -383,16 +401,18 @@ generadores y cargador: un generador nuevo solo tiene que producir este formato.
 | Clave | Contenido | Ejemplo |
 |---|---|---|
 | tipo | Node type | activity_letter_matrix |
-| codigo | field_activity_code (3.4) | MAT-L04-PER-007 |
-| titulo | title | Encuentra todas las d |
+| codigo | field_activity_code (3.4); con `idiomas`, sin la parte de idioma, que inserta el importador | MAT-ES-L04-PER-007 (con `idiomas`: MAT-L04-PER-007) |
+| idioma | Idioma del nodo, es o ca (FASE 18). Obligatorio salvo con `idiomas` | ca |
+| idiomas | Lista de idiomas: el importador crea un nodo por idioma con el mismo material | ["es", "ca"] |
+| titulo | title; con `idiomas`, un texto o un objeto por idioma | {"es": "Encuentra todas las d", "ca": "Troba totes les d"} |
 | area_principal | Nombre exacto del término de areas | Procesos Perceptivos (Discriminación Visual y Auditiva) |
 | area_secundaria | Nombre exacto o vacío | Funciones Ejecutivas y Atención |
 | niveles | Lista de nombres de término | Level4 |
-| instruccion | field_custom_explanation | Toca todas las d que veas. |
+| instruccion | field_custom_explanation; texto u objeto por idioma | Toca todas las d que veas. |
 | explicacion | Título del explanation_message, o vacío | Letter matrix |
 | ciclo, peso_ciclo | Solo actividades de ciclo | Sílabas, 30 |
-| sonoridad | Nombres de término de sonority (3.5), segundo nivel | p/b, t/d |
-| esfuerzo | Nombres de término de decoding_effort (3.5), segundo nivel | Trabadas con r (CCV) |
+| sonoridad | Nombres de término de sonority (3.5) del idioma del nodo, segundo nivel; con `idiomas`, lista (mismo nombre en los dos idiomas) u objeto por idioma | p/b, t/d |
+| esfuerzo | Nombres de término de decoding_effort (3.5) del idioma del nodo, segundo nivel; igual que sonoridad | {"es": ["Trabadas con r (CCV)"], "ca": ["Travades amb r (CCV)"]} |
 | contenido | Campos propios del tipo (secciones 5 y 6) | |
 | origen | Generador, versión y semilla, para poder regenerar | mat-gen 1.0, semilla 4411 |
 
@@ -407,8 +427,17 @@ Reglas del contrato que aplica el importador (4.4):
   acepta y no se guarda.
 - Claves desconocidas, en el registro o en `contenido`, son error: así un campo mal escrito no pasa
   en silencio.
-- `codigo` debe seguir 3.4; el prefijo tiene que ser el del tipo y `Lnn` tiene que ser el nivel más
-  bajo de `niveles`. `CIC` exige `ciclo` y `peso_ciclo`.
+- `codigo` debe seguir 3.4; el prefijo tiene que ser el del tipo, `XX` el idioma del registro y
+  `Lnn` el nivel más bajo de `niveles`. `CIC` exige `ciclo` y `peso_ciclo`. Un código nunca cambia
+  de idioma.
+- **Idioma** (FASE 18): todo registro lleva `idioma` (es o ca) o `idiomas` (lista sin repetidos);
+  sin ninguna de las dos, error. Con `idiomas` el importador produce un registro por idioma: el
+  código se completa con XX, y en cualquier valor (título, instrucción, sonoridad, esfuerzo y
+  dentro de `contenido`, por ejemplo el `nombre` de una imagen) un objeto cuyas claves son solo
+  idiomas admitidos, {"es": ..., "ca": ...}, se sustituye por el valor del idioma; falta un idioma
+  en el objeto, error. Un valor escalar vale para todos. Áreas, niveles, ciclos y explicación se
+  referencian siempre por su nombre canónico castellano (son términos únicos, traducidos); los
+  términos fonológicos se buscan dentro del idioma del nodo (vocabularios por idioma).
 - `sonoridad` y `esfuerzo` admiten solo términos de segundo nivel (3.5).
 - `area_secundaria` no puede ser la principal.
 - El registro es la **verdad completa** de la actividad: al actualizar, lo que no aparece se vacía
@@ -437,10 +466,12 @@ La ruta es relativa al directorio desde el que se lanza el comando (los lotes vi
   registro se ha creado, actualizado o está sin cambios: volver a importar el mismo lote no toca
   nada. Si la actividad ya tiene activitysummary, se niega a cambiar el contenido (regla de 3.4),
   pero sí admite cambios de metadatos (título, etiquetas, instrucción).
-- Crea las actividades sin publicar y con dueño el usuario 1; con publish las publica (también las
-  que ya existían). Nunca despublica.
-- **Duplicados** (desde el 2026-10-21): tras validar cada registro compara su material con el de
-  todas las actividades existentes de su tipo (publicadas o no, con la huella calculada al
+- Crea las actividades sin publicar, con dueño el usuario 1 y con el `langcode` del registro; con
+  publish las publica (también las que ya existían). Nunca despublica. El informe lleva una fila
+  por idioma (un registro con `idiomas` [es, ca] son dos filas, dos nodos y dos códigos).
+- **Duplicados** (desde el 2026-10-21; por idioma desde la FASE 18): tras validar cada registro
+  compara su material con el de todas las actividades existentes de su tipo **e idioma** (publicadas
+  o no, con la huella calculada al
   momento, no la guardada, para que un nodo sin huella no la esquive) y con los registros
   anteriores del lote. Es **error**, y no se escribe nada: la misma huella con otro código
   ("contenido: idéntico al de BLK-L00-VEL-001 (nodo 9)"), o un solapamiento de unidades del 80 %
@@ -452,34 +483,47 @@ La ruta es relativa al directorio desde el que se lanza el comando (los lotes vi
 - Si hay actividades sin huella guardada lo dice al final: `drush shine-content:rehash` las
   rellena (una vez tras importar la config en un entorno que ya tenía contenido, y cada vez que
   cambie la forma canónica de algún tipo).
-- Al terminar imprime la tabla de cobertura área × nivel de lo publicado, con la misma definición de
-  contenido que el techo por contenido y el generador de sesiones (publicadas, sin ciclo), y marca
-  con * las celdas por debajo del mínimo de 3.3.
+- Al terminar imprime una tabla de cobertura área × nivel de lo publicado **por idioma** (es y ca),
+  con la misma definición de contenido que el techo por contenido y el generador de sesiones
+  (publicadas, sin ciclo, del idioma del alumno), y marca con * las celdas por debajo del mínimo de
+  3.3.
 
-Importa `activity_blink`, los tres tipos de la FASE 13 y la repetición rápida (FASE 16). Cada tipo es un *handler* (`ActivityHandlerInterface`: validar
+Importa `activity_blink`, los tres tipos de la FASE 13, la repetición rápida (FASE 16) y, desde la
+FASE 18, la posición de imágenes (5.4). Cada tipo es un *handler* (`ActivityHandlerInterface`: validar
 `contenido`, volcarlo en el nodo, saber si cambió, leerlo del nodo en formato de lote y dar su
 forma canónica y sus unidades, 3.4) registrado con el tag `shine_content_handler`
 en `shine_content.services.yml`; lo común (código, título, áreas, niveles, instrucción,
-explicación, ciclo, sonoridad y esfuerzo) lo hace `ContentImporter`. Añadir `activity` (lista y
-lectura en voz alta) es una clase más; los tipos con imágenes o paragraphs (5.4, 6.2) necesitarán
-además crear media y paragraphs desde el handler. Tests:
+explicación, ciclo, sonoridad y esfuerzo, idioma) lo hace `ContentImporter` (con `Localizer` para
+los valores por idioma). Añadir `activity` (lista y lectura en voz alta) es una clase más. Tests:
 `cd shine && ddev exec vendor/bin/phpunit -c phpunit.xml public_html/modules/custom/shine_content`.
 
 **Comando Drush `shine-content:inventory`** (la lista de exclusión del generador): vuelca lo que
-ya existe, publicado o no, con filtros `--type`, `--level` y `--area`. En tabla: código, tipo,
-niveles, área, publicada y unidades, más el siguiente código libre por prefijo (contando las
-despublicadas) y las unidades que ya están en 3 o más actividades del mismo tipo y nivel. Con
-`--json` (o `--out=fichero.json`): cada actividad en el formato del lote, tal como la aceptaría el
-importador, más nid, publicada, hash y unidades; aparte siguiente_codigo y uso_unidades (tipo,
-nivel, unidad, número de actividades). Ese fichero es lo que se le da al generador antes de
-escribir un lote nuevo: "no uses estas palabras, estas sílabas ya tienen 4 listas en Level0, el
-siguiente código es BLK-L00-VEL-008". Sale de la base de datos y no de los ficheros de lote, porque
-hay actividades que no vienen de ningún lote.
+ya existe, publicado o no, con filtros `--type`, `--level`, `--area` y `--lang` (es o ca). En tabla:
+código, idioma, tipo, niveles, área, publicada y unidades, más el siguiente código libre por prefijo
+(con idioma, contando las despublicadas) y las unidades que ya están en 3 o más actividades del
+mismo tipo, idioma y nivel. Con `--json` (o `--out=fichero.json`): cada actividad en el formato del
+lote, tal como la aceptaría el importador (con `idioma`), más nid, publicada, hash y unidades; aparte
+siguiente_codigo y uso_unidades (tipo, idioma, nivel, unidad, número de actividades). Ese fichero es
+lo que se le da al generador antes de escribir un lote nuevo: "no uses estas palabras, estas sílabas
+ya tienen 4 listas en Level0, el siguiente código es BLK-CA-L00-VEL-008". Sale de la base de datos y
+no de los ficheros de lote, porque hay actividades que no vienen de ningún lote.
 
 ```bash
-ddev drush shine-content:inventory                                   # tabla
-ddev drush shine-content:inventory --type=activity_blink --level=Level0 --out=private/inventario-blink-l0.json
+ddev drush shine-content:inventory                                   # tabla, los dos idiomas
+ddev drush shine-content:inventory --lang=ca --type=activity_blink --level=Level0 --out=private/inventario-blink-l0-ca.json
 ddev drush shine-content:rehash                                      # recalcular huellas
+```
+
+**Comando Drush `shine-content:import-images`** (FASE 18): importa el banco de imágenes
+(docs/generador/Banco de imágenes.md) como media de tipo imagen, uno por entrada aceptada del
+manifiesto, con **name y alt = slug del fichero** (platano), la clave neutra entre idiomas que usan
+las claves `imagen` de los lotes (5.4 y 6.2). Los ficheros se copian a public://banco-imagenes/.
+Idempotente: sin cambios si el fichero es el mismo (sha256), sustituye el fichero del mismo media si
+cambió, nunca crea dos media para la misma palabra; las entradas descartadas no se importan.
+
+```bash
+ddev drush shine-content:import-images content/images/manifest.json --dry-run
+ddev drush shine-content:import-images content/images/manifest.json
 ```
 
 **Alternativa: JSON:API.** La escritura por JSON:API está habilitada (la app ya la usa para logs y
@@ -799,17 +843,26 @@ desplazamiento (comprobar con 6).
 1. Elegir del banco la categoría según la relación que pide el nivel.
 2. Para cada grupo, tomar N imágenes sin repetir dentro de la actividad y fijar la posición a
    preguntar según la columna del nivel.
-3. Al cargar: crear el media si no existe (por nombre de fichero o huella), después los paragraphs
-   i1_item, después los i1 y por último el nodo. Las referencias a paragraphs necesitan el id y el
-   id de revisión.
+3. Cargar el lote: el handler crea los paragraphs i1_item e i1 y el nodo; los media del banco
+   tienen que existir antes (`drush shine-content:import-images`, 4.4).
 
-Claves de contenido: grupos, cada uno con imagenes (lista de archivo y nombre) y posicion.
+**Clave `contenido` del lote** (`ImagePositionActivityHandler`, prefijo IMG, desde la FASE 18):
+`grupos`, lista de al menos 2 grupos; cada grupo un objeto con `posicion` (entero entre 1 y el
+número de imágenes) e `imagenes` (lista de 2 a 6 objetos con `imagen`, el slug del banco = name del
+media, en minúsculas ASCII, y `nombre`, lo que se lee en la pregunta, texto de 1 a 255 caracteres sin
+HTML). Imágenes y nombres distintos dentro del grupo; el media tiene que existir exactamente uno.
+Bilingüe desde el inicio: en un registro con `idiomas` [es, ca] el `nombre` es un objeto por idioma
+({"es": "gato", "ca": "gat"}) y la imagen es la misma (nombres catalanes:
+plans/multiidioma/banco-imagenes-equivalencia-ca.csv). Forma canónica: los grupos con sus slugs en
+orden y la posición preguntada, sin nombres ni orden de grupos; unidades: los slugs. Al reimportar,
+un grupo que no cambia conserva su paragraph; un grupo que cambia se crea de nuevo con sus ítems.
 
 **Ejemplo.**
 
 | Clave | Valor |
 |---|---|
-| codigo | IMG-L03-MEM-001 |
+| codigo | IMG-ES-L03-MEM-001 |
+| idioma | es |
 | titulo | ¿Dónde estaba cada animal? |
 | area_principal | Memoria de Trabajo (Auditiva y Visual) |
 | area_secundaria | Funciones Ejecutivas y Atención |
@@ -961,7 +1014,8 @@ entre intentos, se puede guardar también el orden barajado.
 
 **Clave `contenido` del lote** (`SyllableOrderActivityHandler`, prefijo SIL): `palabras` (lista de al
 menos 4; cada una un texto "pan-ta-lón" o un objeto con `silabas`, `sobrantes` opcional en el mismo
-formato e `imagen` opcional = nombre de un media de tipo imagen, que debe existir exactamente uno).
+formato e `imagen` opcional = slug del banco de imágenes, que es el name del media de tipo imagen
+(`drush shine-content:import-images`, 4.4), y debe existir exactamente uno).
 Sin palabras repetidas. Los paragraphs existentes se reutilizan si no cambian y se sustituyen si
 cambian (los antiguos quedan huérfanos y los purga entity_reference_revisions).
 

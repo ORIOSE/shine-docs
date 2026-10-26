@@ -183,10 +183,14 @@ Reglas:
      en casa.
   2. Alguno de sus titulares con `learner_access` activo está cubierto por un plan personal
      (`family`, `courtesy`) y el alumno figura entre los primeros `max_learners` alumnos de los que
-     ese titular es `owner` (orden de creación).
+     ese titular es `owner` (orden de creación). **Lectura implementada en 04 (2026-10-23)**: la
+     condición del cupo solo aplica si ese adulto es `owner`; un `guardian` o `staff` con plan
+     cubre al alumno sin gastar su propio cupo (su cupo solo cuenta sus alumnos `owner`, §3.3).
   3. Prueba gratuita por sesiones (§4.4).
   Los alumnos que exceden un cupo quedan "en pausa", visibles pero no operables, hasta que se
-  amplíe el plan o se archive otro.
+  amplíe el plan o se archive otro. Mientras les quede prueba gratuita siguen jugando con ella
+  (`covered_by: trial`); "en pausa" es lo que queda cuando ni el cupo ni la prueba los cubren.
+  Un entitlement con `field_starts_at` futuro no cubre hasta esa fecha.
 - Nunca se consume cupo ni prueba de la familia por un alumno que un centro ya tiene en plaza.
 - `courtesy`/`manual` sirve para betas, logopedas colaboradores y soporte. Se crea desde el
   admin de Drupal.
@@ -195,14 +199,24 @@ Reglas:
 
 ```php
 interface EntitlementAccessInterface {
-  public function holderStatus(UserInterface $holder): HolderStatus;   // plan, status, expires_at, max_learners, learners_covered[]
+  public function holderStatus(UserInterface $holder): HolderStatus;   // plan, status, source, expires_at, max_learners, covered, entitlement
   public function learnerCovered(UserInterface $learner): bool;
-  public function canGenerateRegular(UserInterface $learner): AccessDecision; // true, o razón: trial_exhausted | learner_not_covered | learner_paused | released_by_organization
-  public function coveredBy(UserInterface $learner): ?Coverage;             // organization | holder | trial, con el entitlement y, si aplica, el nombre del centro
+  public function canGenerateRegular(UserInterface $learner): AccessDecision; // allowed + coverage, o reason: trial_exhausted | learner_not_covered | learner_paused | released_by_organization; siempre completed_regular y free_regular_sessions
+  public function coveredBy(UserInterface $learner): ?Coverage;             // organization | holder | trial, con el entitlement, el adulto y, si aplica, el nombre del centro
+  public function maxLearners(UserInterface $holder): int;                  // cupo del plan vigente (sustituye a shine_account.learner_quota)
+  public function canCreateLearner(UserInterface $holder): bool;
+  public function completedRegular(UserInterface $learner): int;
+  public function freeRegularSessions(): int;
 }
 ```
 
-Caché por usuario con tags `user:{uid}` y `entitlement:{id}`; los webhooks invalidan.
+Implementado en 04 (2026-10-23, `shine_entitlement/src/Access/`; detalle en `api-design.md`,
+"Entitlements → Acceso"). `holderStatus()` no devuelve `learners_covered[]`: la cobertura va en
+cada alumno de `GET /shine/me`. Caché en `cache.default` por usuario con etiquetas `user:{uid}`,
+`entitlement_list`, `learner_access_list` y las de los usuarios consultados, de modo que guardar
+un entitlement (webhooks, admin) o tocar accesos y alumnos invalida sin código extra; lo que
+depende del reloj caduca por `expire`. La cobertura por organización (punto 1 de §4.1) es un
+hueco, `OrganizationCoverageInterface`, que rellena el subplan 10.
 
 ### 4.3 Catálogo de planes (config entity `shine_entitlement.plan`)
 
@@ -242,12 +256,15 @@ se quiera aplicar un cambio a todos.
 - **Todas las sesiones de evaluación**, siempre: bloque inicial, periódicas y por racha. Nunca
   cuentan para la prueba ni requieren cobertura.
 - **Las primeras `free_regular_sessions` sesiones regulares completadas de cada alumno**
-  (parámetro en `shine_level.settings`, junto a X e Y; hipótesis N = 8). Se cuentan sesiones con
-  `field_session_kind = regular` y `field_completed_at` no nulo del alumno. Una sesión regular
-  generada pero no completada no consume cupo.
+  (parámetro en `shine_level.settings`, junto a X e Y; N = 8 desde 04, 2026-10-23). Se cuentan
+  sesiones **publicadas** con `field_session_kind = regular` y `field_completed_at` no nulo del
+  alumno. Una sesión regular generada pero no completada no consume cupo; una despublicada
+  (pendiente caducada, reinicio de niveles) tampoco.
 - Regla de ajuste de N: debe superar el número de regulares que, con X e Y vigentes, garantiza
   al menos una evaluación de ajuste (periódica a los Y días a tres sesiones por semana, o por
-  racha). El objetivo es que "Mi progreso" muestre un cambio de nivel antes del muro.
+  racha). El objetivo es que "Mi progreso" muestre un cambio de nivel antes del muro. El
+  formulario `/admin/config/shine/level` avisa si N es menor que `periodic_sessions +
+  evaluation_sessions` (8 = 6 + 2 con los valores por defecto).
 - Aviso suave en la app a partir de `free_regular_sessions - 3` ("te quedan 3 sesiones gratis").
 - Sin prueba gratuita de store (evita doble prueba y tarjeta antes de ver valor).
 - Abuso por re-creación de alumnos: no se mitiga; el plan gratuito permite un alumno y un alumno
@@ -315,19 +332,24 @@ al `uid` propietario. El token lleva un claim `operated_by` con el UUID del titu
 
 ### 5.4 Muro de pago
 
-`POST /shine/session/generate` incorpora, **antes** del árbol de decisión de `level-system.md` §6:
+`POST /shine/session/generate` incorpora, **después** de decidir la rama del árbol de
+`level-system.md` §6 y antes de escribir nada (implementado en 04, 2026-10-23, como una
+puerta `SessionGateInterface` de `shine_level` que registra `shine_entitlement`):
 
 ```
-$branch = $generator->decide($learner);          // árbol de decisión de level-system.md §6
-if ($branch->kind === 'regular'
-    && $completedRegular($learner) >= $settings->get('free_regular_sessions')
-    && !$access->learnerCovered($learner)) {
+$plan = $generator->plan($learner);              // árbol de decisión de level-system.md §6
+if ($plan->branch === 'regular' && !$access->canGenerateRegular($learner)->allowed) {
   return 402 {"error":"payment_required",
-              "reason":"trial_exhausted"|"learner_not_covered"|"learner_paused",
-              "free_regular_sessions": 8, "completed_regular": 8,
-              "holder_status": {...}}
+              "reason":"trial_exhausted"|"learner_not_covered"|"learner_paused"|"released_by_organization",
+              "branch":"regular", "free_regular_sessions": 8, "completed_regular": 8,
+              "paused": false, "released_by": null,
+              "holder_status": {plan, catalog_plan, status, source, expires_at, max_learners, covered, entitlement}}
 }
 ```
+
+`holder_status` es el del titular que opera (claim `operated_by` del token de alumno; sin él, el
+`owner` más antiguo). La prueba gratuita es el último paso de la cobertura (§4.1), así que
+`canGenerateRegular` ya la incluye. Forma exacta en `api-design.md`.
 
 Toda rama que produzca una sesión de evaluación (`initial`, `continue_evaluation`, `evidence`,
 `trigger_easy`, `trigger_hard`, `periodic`) queda fuera del gating. Solo la rama `regular`
@@ -338,8 +360,9 @@ Level0 a Level1"). La app, al recibir `402`, muestra el paywall (Familia) o la p
 centro o profesional debe activar tu acceso" (si el titular es miembro de una organización sin
 entitlement).
 
-`GET /shine/me` incluye por alumno `completed_regular` y `free_regular_sessions` para el aviso
-suave y para el texto del muro.
+`GET /shine/me` incluye por alumno `covered_by`, `paused`, `blocked_reason`, `completed_regular`
+y `free_regular_sessions` para el aviso suave y para el texto del muro (también en
+`GET /shine/learners`).
 
 `GET /shine/me` (nuevo) devuelve en una sola llamada: titular, `holder_status` (plan, status,
 expires_at, max_learners, source), alumnos con su cobertura, y organizaciones con rol. La app lo
@@ -407,7 +430,8 @@ Mismo perfil en dos dispositivos. La sesión pendiente es única por alumno: si 
 una y no la termina, en casa se abre esa misma sesión; la app lo indica ("sesión empezada en el
 centro") y permite continuarla. No se permite descartarla desde otro dispositivo; si lleva más
 de 7 días sin completarse, `session/generate` la despublica y crea una nueva (regla general,
-no específica de este caso).
+no específica de este caso; parámetro `pending_max_days` de `shine_level.settings`, implementado
+en 04).
 
 Permisos resumidos: `owner` y `coordinator` del centro editan, invitan, liberan y archivan;
 `guardian` opera, ve progreso y retira su propio acceso; `staff` opera y ve progreso. Implementado
@@ -436,17 +460,21 @@ El vínculo por código (pasos 5 de "Centro" y 2 de "Familia") está implementad
 
 | Evento RevenueCat | Acción en `entitlement` |
 |---|---|
-| `INITIAL_PURCHASE`, `RENEWAL`, `UNCANCELLATION`, `PRODUCT_CHANGE` | upsert `active`, `expires_at` = `expiration_at_ms`, `source` según `store` |
-| `TRIAL_STARTED` (via `period_type = TRIAL`) | `trial` |
-| `CANCELLATION` | no cambia el acceso; anota `cancelled_at`; expira sola al llegar `expires_at` |
-| `BILLING_ISSUE` | `billing_retry` (acceso mantenido) |
-| `EXPIRATION` | `expired` |
-| `SUBSCRIPTION_PAUSED` (Play) | `paused` |
-| `REFUND` / `REVOKED` | `revoked` inmediato |
-| `TRANSFER` | mover entitlement al nuevo `app_user_id` |
+| `INITIAL_PURCHASE`, `RENEWAL`, `UNCANCELLATION`, `PRODUCT_CHANGE`, `SUBSCRIPTION_EXTENDED`, `REFUND_REVERSED` | upsert `active`, `expires_at` = `expiration_at_ms`, `source` según `store`, plan y cupo del producto del evento |
+| `period_type = TRIAL` en cualquiera de los anteriores | `trial` |
+| `CANCELLATION` | no cambia el acceso; anota `cancelled_at`; expira sola al llegar `expires_at`. Con `cancel_reason = CUSTOMER_SUPPORT` es un reembolso: `revoked` inmediato (RevenueCat no tiene evento `REFUND`) |
+| `BILLING_ISSUE` | `billing_retry` (acceso mantenido hasta el fin del periodo de gracia) |
+| `EXPIRATION` | `expired` (`revoked` si `expiration_reason = CUSTOMER_SUPPORT`, `paused` si `SUBSCRIPTION_PAUSED`) |
+| `SUBSCRIPTION_PAUSED` (Play) | solo anuncia la pausa al final del periodo; el estado lo cambia la `EXPIRATION` posterior |
+| `TRANSFER` | mover los entitlements de store de `transferred_from` al titular de `transferred_to` |
 
-- Idempotencia: `field_external_id` + `event_id`; los eventos se procesan por `event_timestamp`
-  y se descartan los anteriores al último aplicado.
+Implementado en 07 (2026-10-26) tal como está en `api-design.md`, "Webhooks": la tabla anterior
+hablaba de `REFUND`/`REVOKED`, que no existen en RevenueCat, y ponía `paused` en el
+`SUBSCRIPTION_PAUSED`, que llega antes de que acabe el periodo pagado.
+
+- Idempotencia: el entitlement es (`source`, `field_external_id` = `original_transaction_id`);
+  guarda el `id` y el `event_timestamp_ms` del último evento aplicado y descarta los repetidos y
+  los anteriores.
 - Además del webhook, `GET /shine/me` puede refrescar bajo demanda consultando la API REST de
   RevenueCat (subscriber endpoint) si el entitlement local está a menos de 1 h de expirar; cubre
   webhooks perdidos.

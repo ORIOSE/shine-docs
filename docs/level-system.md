@@ -278,6 +278,14 @@ radar (±3) pero no la evidencia ni los niveles, para que cada señal tenga un �
   material de ciclo sería inalcanzable para el generador. El techo solo baja: si un área no
   tiene contenido en Level0 pero sí en Level1, el bloque inicial no puede probarla (se omite
   con aviso en watchdog) hasta que exista material en Level0.
+- **Idioma (FASE 18)**: "contenido" significa siempre actividades **del idioma del alumno**
+  (`preferred_langcode` del usuario, `LevelLadder::languageOf()`). `LevelLadder::contentQuery()` y
+  `hasContent()` reciben el `langcode` y el techo, el generador, las sesiones de ajuste y el ciclo
+  lo usan: un alumno `ca` solo puede subir a un nivel con actividades `ca` en esa área, aunque
+  existan castellanas. La sesión nace con el `langcode` del alumno. Cambiar el idioma de un alumno
+  es un reinicio destructivo (`LevelReset::resetForLanguageChange()`, razón `language_change` en
+  el histórico): niveles a Level0, logs, resúmenes y valoraciones borrados y todas sus sesiones
+  despublicadas. Modelo en `plans/multiidioma/analisis.md`.
 - **Freno por aciertos**: donde el summary tenga `field_items_count > 0`, un `easy` con
   `field_correct_count / field_items_count < accuracy_floor` (por defecto 0,6) se trata como
   `ok` a efectos de nivel. La valoración cruda se guarda intacta.
@@ -291,10 +299,13 @@ radar (±3) pero no la evidencia ni los niveles, para que cada señal tenga un �
 ## 6. Generador de sesiones
 
 Se ejecuta en servidor (servicio `shine_level.session_generator`) cuando el usuario no tiene
-ninguna sesión pendiente. Devuelve un nodo `session` con `uid` del usuario.
+ninguna sesión pendiente. Devuelve un nodo `session` con `uid` y `langcode` del usuario. Todas
+las consultas de actividades de abajo llevan implícito `langcode = idioma del usuario` (§5.5);
+`drush shine-level:generate --dry-run` lo imprime ("Idioma: xx.").
 
 ```
 generarSesion(usuario):
+  idioma = preferred_langcode del usuario (o el del sitio)
   niveles = cargar userarealevel del usuario (crear en Level0 las que falten)
 
   si usuario.onboarding_state == evaluating:
@@ -378,6 +389,9 @@ Se separa con un vocabulario propio.
 - En las actividades: `field_cycle` (ref term, opcional) y `field_cycle_weight` (integer,
   opcional) para el orden pedagógico. Las actividades con ciclo **ignoran el filtro de nivel**
   en el generador.
+- Las actividades de ciclo son de un idioma como las demás (FASE 18): `siguienteDelCiclo` solo
+  mira las del idioma del usuario, así que cada idioma tiene su propio recorrido ("Sílabas" en
+  castellano y "Síl·labes" en catalán son el mismo término traducido con actividades distintas).
 - `siguienteDelCiclo(usuario)`: para cada ciclo, la actividad del ciclo con menos
   `activitysummary` del usuario (en cualquier sesión, no solo la actual); a igualdad, la de
   menor `field_cycle_weight`; sin peso, aleatoria entre las empatadas. Así la vuelta 2 no
@@ -408,6 +422,8 @@ Se separa con un vocabulario propio.
 | `accuracy_floor` | 0.6 | aciertos mínimos para que un `easy` cuente |
 | `min_ratings_after_change` | 2 | histéresis |
 | `area_selection` | `rotation` | `rotation` o `weakest_first` |
+| `free_regular_sessions` | 8 | FASE 17 (`monetization.md` §4.4): sesiones regulares **completadas** gratis por alumno, las haya operado quien sea. A partir de la siguiente, sin cobertura, `POST /shine/session/generate` responde 402. Las de evaluación nunca cuentan ni pasan por el muro. El formulario avisa si es menor que `periodic_sessions + evaluation_sessions` (con los valores por defecto, 8 = 6 + 2, no avisa) |
+| `pending_max_days` | 7 | FASE 17 (`monetization.md` §5.6): una sesión pendiente creada hace más de N días se despublica (sin borrar) la próxima vez que se pide sesión y se genera otra. Una sesión despublicada no existe para el generador ni para `countCompletedSessions` |
 
 ---
 
