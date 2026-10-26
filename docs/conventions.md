@@ -179,6 +179,20 @@ interface ActivityPlayerProps {
 // 6. El padre se encarga de enviar el log a la API
 ```
 
+### Textos e idiomas (FASE 18)
+
+Ningún texto visible va escrito en el código: todos viven en src/locales/es.json y src/locales/ca.json, que tienen exactamente las mismas claves (lo comprueba src/lib/__tests__/i18n.test.ts). Los comentarios siguen en castellano.
+
+- **Uso**: t('ui.dashboard.title') o t('player.letterMatrix.find', { letter }) de src/lib/i18n.ts, igual en componentes que en lógica pura (sin proveedor ni contexto). Las claves están tipadas a partir de es.json: una clave que no existe no compila. El idioma por defecto y de reserva es es.
+- **Dos espacios de nombres**: ui.* para lo que lee el tutor (pantallas, botones, estadísticas, errores, instrucciones de la intro de cada actividad) y player.* para lo que lee el niño dentro del juego (preguntas, resultados, motivación de fin de actividad, "¿Cómo ha ido?" y preguntas de fin de sesión). Hoy los dos usan el idioma de la app; separarlos (interfaz del tutor, juego del niño) será un cambio en el selector de idioma, no en los textos.
+- **Claves**: por pantalla o componente y en camelCase: ui.learners.new.title, ui.statistics.detail.empty, player.imagePosition.question. Los textos compartidos de verdad van en ui.common (volver, cancelar, guardar, errores de conexión) y las fechas en ui.date.
+- **Marcadores y plurales**: %{nombre} para valores (t('ui.operator.other', { name })). Un plural es un objeto con one y other (y zero si hace falta) y se pide con count, que también se puede usar como %{count}.
+- **Nada calculado al cargar un módulo**: el idioma cambia en caliente, así que una constante con texto se convierte en función o guarda la clave y llama a t() al pintar. Las funciones de src/lib que devuelven texto (operatorLabel, formatPerSecond, generateErrorCopy...) llaman a t() dentro.
+- **Fechas y números**: formatDayMonth(fecha) para "6 de noviembre" o "6 de novembre" (el mes va con su preposición en el catálogo porque en catalán se apostrofa: "1 d’octubre"); toLocaleDateString e Intl con dateLocale() (es-ES o ca-ES), nunca con un locale fijo; decimales con coma en los dos idiomas con formatDecimal().
+- **Catalán**: trato de tú al tutor y al niño, tono amable, sin tecnicismos; apóstrofo tipográfico (’), comillas «» y punto volado U+00B7 en l·l. La traducción actual es provisional hasta que la revise un hablante nativo.
+- **Cambio de idioma**: setLocale(locale); el layout raíz usa useLocale() como key de la pila de navegación para que todas las pantallas se vuelvan a pintar. Sin alumno, la app usa el idioma del dispositivo si es castellano o catalán, y castellano si no (deviceLocale()).
+- **Textos nativos y de tienda**: nombre visible y avisos de permisos por idioma en shine-app/native-locales/{es,ca}.json (clave locales de app.json); idiomas declarados con el plugin expo-localization (supportedLocales).
+
 ---
 
 ## 4. Convenciones de API (JSON:API)
