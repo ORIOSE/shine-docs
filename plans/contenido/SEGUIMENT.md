@@ -34,7 +34,7 @@ Encàrrecs: 12 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0
 | GEN | Generador de sessions: no reservar forat a àrees sense contingut | aplicat | SessionGenerator::planRegular(), 2026-10-29. |
 | TAG | Etiquetes fonològiques (esforç) calculades per estructura | aplicat | estructura.py, etiquetar_lote.py; 20 activitats etiquetades, prompts 05, 07, 08. |
 | SRC | Registre de fonts de dades | aplicat | docs/fuentes-de-datos.md; regla a CLAUDE.md. |
-| F20 | FASE 20: seqüència amb regla (CPT), segon tipus de Funcions Executives | en curs | E13 aprovada el 2026-10-29 (secundària Velocitat). Lot R-SEQ1 aprovat pel grup sense canvis i publicat: 3 per nivell i idioma, que amb la matriu amb regla donen 6 per cel·la a Funcions Executives. Fet: model a Drupal, importador, avaluador (Pr), app, generador, missatges d'explicació, verificació per l'API. Pendent: jugar-ho a Expo web i en un mòbil real. |
+| F20 | FASE 20: seqüència amb regla (CPT), segon tipus de Funcions Executives | en curs | E13 aprovada el 2026-10-29 (secundària Velocitat). Lot R-SEQ1 aprovat pel grup sense canvis i publicat: 3 per nivell i idioma, que amb la matriu amb regla donen 6 per cel·la a Funcions Executives. Fet: model a Drupal, importador, avaluador (Pr), app, generador, missatges d'explicació, verificació per l'API i a Expo web amb la Marta (es) i el Pau (ca), les quatre regles, la pràctica, la pausa i la regla oculta. Pendent: provar-ho en un mòbil real. |
 
 ## Encàrrecs al grup d'experts
 

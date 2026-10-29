@@ -2956,7 +2956,17 @@ mismo día sin cambios de parámetros, con secundaria Velocidad (`lliuraments/E1
   (`lliuraments/respostes-2026-10-30/LOT-fe-secuencia-regla-v1-resposta.md`; cita los códigos, los
   pares y los recuentos reales del lote). `--publish`: 66 nodos publicados; Funciones Ejecutivas
   queda con 6 por celda de Level0 a Level10 en los dos idiomas (3 de la matriz y 3 de la secuencia).
-- [ ] Pendiente: recorrido en Expo web y en un móvil real (precisión del reloj).
+- [x] **Recorrido en Expo web (2026-10-29)**: `jose@test.com`, sesiones de prueba de
+  `private/scripts/fase20-session.php` (Marta, es: s1 con práctica, s3, s4 y s3 con regla oculta;
+  Pau, ca: s2 y s4). Toques simulados con un script en la página según los índices del nodo, con un
+  objetivo dejado pasar y un cebo tocado a propósito: todas las pantallas finales y los summaries
+  cuadran (por ejemplo s3 9/10 y 7/8, s2 21/22 y 7/8, regla oculta 13/14 y 9/10). Práctica con
+  "¡Esa sí!"; pausa: el elemento interrumpido no cuenta y el tiempo en pausa no suma (47,5 s); en
+  Drupal 23 logs con `field_response` y tiempos de reacción de 459 a 500 ms. Textos catalanes
+  correctos. **Cambio**: el fondo oscuro de s4 pasa de gris claro (el de las filas oscuras de la
+  matriz) a la tinta del sistema de diseño con texto blanco, y la fila clara de la regla lleva
+  borde: con una tarjeta nueva cada 1,6 a 1,8 s el gris no se distinguía.
+- [ ] Pendiente: prueba en un móvil real (precisión del reloj y del toque).
 
 ## FASE 19 — Matriz con regla (Funciones Ejecutivas y Atención)
 
