@@ -2921,6 +2921,137 @@ pendientes.
 sustituir los valores **EJEMPLO**, fijar precios y comprobar en RevenueCat los cuatro productos
 sin avisos.
 
+### 10. Backend: organizaciones, membresías, plazas y liberación del alumno (`shine_org`) (2026-10-29)
+
+Módulo nuevo `shine_org` (depende de `shine_account` y `shine_entitlement`) más los puntos de
+extensión que le faltaban a `shine_account`. Detalle de la API en `docs/api-design.md`
+("Organizaciones"); decisiones en `docs/monetization.md` §5.6.
+
+- **Entidades** (campos de código, calcadas de `learner_access` / `learner_invite`): `organization`
+  (`label`, `field_org_kind` practice/school, `field_tax_id`, `field_billing_email`, `field_owner`
+  = clave `owner`, `status`), `organization_membership` (organización, titular = `owner`,
+  `field_role` coordinator/professional/teacher, `status`; índice único por pareja, reactivación en
+  vez de duplicado) y `organization_invite` (código de centro: `field_code_hash` HMAC único y oculto,
+  `field_role`, `field_max_uses` 0 = sin límite, `field_uses`, `field_expires`, `field_created_by` =
+  `owner`, `status`). Handlers de acceso (miembros activos ven su organización; cada uno sus
+  membresías; el creador sus códigos; escritura solo admin), `hook_jsonapi_*_filter_access` en las
+  tres (gotcha 16), list builders, formularios y la ficha `/admin/shine/organizations/{id}`.
+- **Campos que faltaban**: `field_organization`, `field_released_by` y `field_released_at` en
+  `user` (config en `config/sync`, ocultos en los displays, solo servidor por
+  `hook_entity_field_access`) y `field_organization` en `entitlement` como **campo base que aporta
+  `shine_org`** con `hook_entity_base_field_info()` (en vez del `hook_update_N` del plan: la entidad
+  `organization` nace aquí y `shine_entitlement` no puede depender de `shine_org`; Drupal lo
+  instala con el módulo; `shine_org_update_11001` idempotente por si acaso).
+- **Códigos de centro y `join`**: `OrganizationInviteManager` (8 caracteres, mismo alfabeto y
+  HMAC con otra clave que los de alumno; multiuso; `redeem` idempotente para quien ya es miembro,
+  incluso con el código agotado; un solo error `invite_invalid`; `flood` en el controlador con
+  umbrales de `shine_org.settings`). `OrganizationManager` (`membershipFor`, `membershipsOf`,
+  `membersOf`, `isMember`, `isCoordinator`, `addMember`, `toArray`, `memberToArray`). El titular
+  responsable nace coordinador (`hook_organization_insert`). `hook_shine_me_alter` añade
+  `organizations[]`.
+- **Alumnos en plaza**: `LearnerManager::create()` acepta `organization` (UUID) y pasa por
+  `shine_account.learner_placement` (interfaz nueva con implementación nula; `shine_org.placement`
+  la decora: miembro activo de una organización activa, plazas libres), con lock por organización
+  en vez de por titular, `field_organization` fijado y acceso `owner`/`organization`; sin cupo
+  personal. Accesos `staff` (`OrganizationLearners`: solo coordinadores; solo a miembros activos;
+  `DELETE` solo retira `staff`). `LearnerAccessPolicy` gana `coordinator` por
+  `shine_account.organization_roles` (interfaz nueva, decorada por `shine_org.roles`): `isManager()`
+  = `owner` o coordinador de la organización del alumno; `canSee()` (lo que separa el 404 en las
+  rutas de cuenta: acceso o coordinador), `canRelease()`, `effectiveRole()` (`coordinator` en la
+  forma `learner`). `LearnerManager::learnerFor()` usa `canSee()`; `toArray()` muestra `invite` a
+  quien puede invitar.
+- **Cobertura por organización**: `OrganizationCoverage` decora
+  `shine_entitlement.organization_coverage`: licencia = entitlement con `field_organization` que
+  cubre (mismo criterio que el plan personal, la de mayor cupo), plazas = `max_learners`, en plaza =
+  entre los primeros por orden de alta entre los activos; devuelve `Coverage::ORGANIZATION` con el
+  nombre, las etiquetas (organización, `entitlement_list`, alumnos en plaza) y la caducidad.
+  `releasedBy()` lee `field_released_by` dentro de `released_notice_days` (30). En
+  `EntitlementAccess`: una licencia de organización **no** es el plan personal del titular
+  (`isOrganizationLicense()`), `Coverage` lleva `cacheExpire`, la caché por alumno respeta la
+  caducidad de la licencia y comprueba que siga cubriendo al hidratar, y `released_by` se calcula
+  en cada llamada (ventana de días) en vez de cachearse. `hook_shine_learner_alter` añade
+  `organization` y `released_by` (este solo mientras ningún plan cubra al alumno).
+- **Liberar al alumno**: `LearnerManager::release()` (`POST /shine/learners/{uuid}/release`, en
+  `shine_account`): `field_organization` a nulo, `field_released_by` / `field_released_at`,
+  accesos de origen `organization` desactivados (el `owner` docente y los `staff`), `guardian` más
+  antiguo promovido a `owner` si no queda ninguno, archivo con revocación de tokens si no queda
+  nadie; transacción. El 402 de la siguiente regular trae `reason: released_by_organization` y
+  `released_by` (lo que 04 dejó preparado).
+- **Licencias desde el admin**: `EntitlementForm` acepta `?organization={id}` (precarga
+  organización, titular responsable y catálogo `professional`); la ficha de la organización enlaza
+  "Conceder licencia". `hook_entitlement_presave` exige plan `professional` o `school` con
+  organización. Plan de catálogo nuevo **`school_individual`** ("Centro, perfiles individuales",
+  `school`, 1 alumno por asiento): la licencia de un centro con alumnos individuales se compra por
+  plazas (`school_classroom` tiene 0 alumnos por asiento y era inútil para este caso).
+- **Config**: `shine_org.settings` (`invite_ttl_days` 30, `invite_default_max_uses` 10, límites de
+  `flood`, `released_notice_days` 30) con esquema; `shine_entitlement.plan.school_individual`; los
+  tres campos de usuario y sus displays. `cim -y` idempotente.
+
+**Decisiones y desviaciones del plan**:
+- El coordinador gestiona sin `learner_access` pero **no opera**: para pedir el token de un alumno
+  del centro se da acceso `staff`. Así `canOperate()` (el token) sigue siendo "hay fila de acceso".
+- Los alumnos del centro no entran en `/shine/learners` ni en `/shine/me` del coordinador (en un
+  colegio serían cientos): los lista `GET /shine/organizations/{uuid}/learners`.
+- `GET /shine/organizations` y `GET /shine/organizations/{uuid}` no estaban en el plan; la app (12)
+  los necesita para mostrar el centro y, al coordinador, sus miembros y alumnos.
+- Códigos de centro de 8 caracteres (2^40) porque son multiuso y duran semanas; los de alumno siguen
+  con 6.
+- Una licencia caducada o revocada **sin** `release` deja a los alumnos en plaza sin cobertura de
+  organización: pasan a la prueba o al plan de la familia vinculada (orden normal de §4.1), y el
+  docente los ve `paused` si él mismo no tiene plan. No se archivan solos.
+- Dentro de una misma petición, `organizationOf()` y `membershipsOf()` cargan la organización por
+  id desde el storage, no con `->entity` del campo: el campo guarda la primera instancia resuelta y
+  no ve un guardado posterior (lo destapó el test al desactivar la organización).
+
+**Tests kernel** (`shine_org/tests/src/Kernel/`, 10 tests, 535 aserciones, sobre
+`EntitlementAccessKernelTestBase`): `OrganizationInviteTest` (canje con minúsculas y guion,
+repetido sin gastar uso, agotado, caducado, mal formado, flood 429 y limpieza, alumno 403,
+organización inactiva; `/shine/me` y `GET /shine/organizations*` con miembros solo para el
+coordinador y 404 para un extraño; titular en dos organizaciones con un alumno en plaza de cada
+una), `SeatCoverageTest` (plaza cubre al docente y a la familia sin cupo ni prueba; licencia no es
+plan personal; plaza llena 422, archivar libera plaza, no miembro y UUID desconocido 403, cupo
+reducido deja fuera al último, licencia revocada y organización inactiva; plan personal con
+organización rechazado; coordinador ve/edita/invita sin acceso y con `role: coordinator`, staff
+opera y no archiva, retirar solo staff, alumno propio sin staff, coordinador degradado pierde todo),
+`ReleaseTest` (promoción del guardian, `released_by`, 402 `released_by_organization` con la prueba
+gastada en el aula, ventana de 30 días → `trial_exhausted`, cortesía vuelve a generar, liberar dos
+veces 409; sin familia archiva y revoca tokens, el coordinador libera sin acceso; guardian y
+extraño no liberan, alumno propio 409). Las suites de `shine_account` y `shine_entitlement` siguen
+en verde (58 tests).
+
+**Verificación en el sitio** (tres titulares nuevos por REST, gotcha 14; admin con `drush uli`):
+en `/admin/shine/organizations/add` se crea "Centro Luna" con Carla como responsable (nace
+coordinadora), "Conceder licencia" precarga organización y titular y se guarda `school_individual`
+× 2 (cupo 2), "Generar código de centro" muestra el código una vez. Dani: `join` 200 (`teacher`,
+`covered`, 2 plazas), `POST /shine/learners` con `organization` 201 (`covered_by: organization`,
+`covered_by_organization: Centro Luna`, bloque `organization`), token de alumno y
+`session/generate` 201, invitación para la familia. Fina: `join` del código de alumno 200, ve a Lía
+`guardian` y cubierta por el centro, su cupo gratuito sigue siendo 1 (segundo alumno propio 422),
+`generate` 200 con la misma pendiente. Segunda alumna en plaza 201, tercera 422 `organization_limit
+max 2`; `GET /shine/organizations/{uuid}` con `members` solo para Carla; `.../learners` con las dos
+alumnas `role: coordinator`. `release` por Dani: `role null`, `organization null`, `covered_by
+none`, `released_by Centro Luna`, `blocked_reason released_by_organization`, Fina `owner`; Dani
+404 después. Con Lía fuera del bloque inicial y la prueba a 0: `generate` → **402
+`released_by_organization`** con `released_by` y `holder_status` gratuito; con una cortesía para
+Fina, 201. `drush shine-level:generate --dry-run` imprime el mismo cuerpo. Las tres colecciones de
+admin y la ficha renderizan; watchdog sin errores nuevos; `cim -y` sin cambios;
+`free_regular_sessions` devuelto a 8. Datos de prueba borrados (`private/scripts/cleanup-fase17-10.php`),
+también la cortesía huérfana de la titular borrada en 06b.
+
+**Para subplanes siguientes**:
+- **11 (Stripe)**: el checkout crea `organization` (+ coordinador automático) y su entitlement con
+  `field_organization`, plan `professional` o `school`, catálogo `professional` /
+  `school_individual` / `school_classroom`, `quantity` = asientos. Nada más: la cobertura y las
+  plazas ya salen de ahí.
+- **12 (app)**: `organizations[]` de `/shine/me`, `GET /shine/organizations/{uuid}` (+ `members`,
+  `.../learners` para el coordinador), "Tengo un código de centro" → `POST /shine/organizations/join`,
+  alta de alumno con `organization`, `role: coordinator`, `organization` y `released_by` en la forma
+  `learner`, `staff` y `release` desde la ficha, y el 402 `released_by_organization` ("el centro ha
+  dejado de cubrir el acceso de {alumna}").
+- El coordinador no puede generar códigos de centro desde la API (solo el admin); si la app lo
+  necesita, `POST /shine/organizations/{uuid}/invites {role, max_uses?}` sobre
+  `OrganizationInviteManager::create()`.
+
 ---
 
 ## FASE 20 — Secuencia con regla (segundo tipo de Funciones Ejecutivas y Atención)

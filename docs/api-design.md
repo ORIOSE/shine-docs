@@ -640,28 +640,31 @@ reciben `403` (la página 403 de Drupal; el código es lo que cuenta). Cuerpos y
   "archived_at": null,                   ← fecha ISO si está archivado
   "onboarding_state": "evaluating",      ← field_onboarding_state del alumno (shine_level)
   "langcode": "ca",                      ← FASE 18: idioma de trabajo del alumno, "es" | "ca" (preferred_langcode)
-  "role": "owner",                       ← rol del titular que pregunta sobre este alumno
+  "role": "owner",                       ← rol del titular que pregunta; "coordinator" si gestiona al alumno por su organización sin tener acceso (10)
   "adults": [                            ← adultos con acceso activo, del más antiguo al más nuevo
     { "uuid": "c468dfeb-...", "display_name": "Ana", "role": "owner" }
   ],
-  "invite": null,                        ← solo para el owner: {created, expires_at} si hay un código vivo (nunca el código)
+  "invite": null,                        ← solo para quien puede invitar: {created, expires_at} si hay un código vivo (nunca el código)
+  "organization": null,                  ← FASE 17e (10): {uuid, label} de la organización en cuya plaza está, o null
   "covered_by": "trial",                 ← FASE 17 (04): "organization" | "holder" | "trial" | "none"
   "covered_by_organization": null,       ← nombre del centro, solo si covered_by = organization (subplan 10)
   "paused": false,                       ← fuera del cupo de un adulto con plan (visible, no operable)
   "blocked_reason": null,                ← por qué no recibiría una regular (el `reason` del 402), o null
   "completed_regular": 3,                ← regulares completadas, las haya operado quien sea
-  "free_regular_sessions": 8             ← para el aviso "te quedan N sesiones gratis"
+  "free_regular_sessions": 8,            ← para el aviso "te quedan N sesiones gratis"
+  "released_by": null                    ← FASE 17e (10): centro que lo liberó hace menos de 30 días, mientras ningún plan lo cubra
 }
 ```
 
-Las seis últimas claves las añade `shine_entitlement` por `hook_shine_learner_alter()`
-(`shine_account.api.php`) y salen en **todas** las rutas que devuelven un `learner` (también
+Las claves de cobertura (`covered_by` a `free_regular_sessions`) las añade `shine_entitlement` y
+`organization` y `released_by` las añade `shine_org`, los dos por `hook_shine_learner_alter()`
+(`shine_account.api.php`); salen en **todas** las rutas que devuelven un `learner` (también
 `/shine/me` y el canje de códigos). Reglas de cobertura en "Entitlements → Acceso".
 
 ### Endpoints
 
 ```
-POST   /shine/learners                  {display_name, avatar?, langcode?}   → 201 {learner}
+POST   /shine/learners                  {display_name, avatar?, langcode?, organization?} → 201 {learner}
 GET    /shine/learners                                            → 200 {learners: [...]}
 GET    /shine/learners/{uuid}                                     → 200 {learner}
 PATCH  /shine/learners/{uuid}           {display_name?, avatar?, langcode?}  → 200 {learner, reset}
@@ -669,6 +672,7 @@ POST   /shine/learners/{uuid}/archive                             → 200 {learn
 DELETE /shine/learners/{uuid}/access                              → 200 {withdrawn: true}
 POST   /shine/learners/{uuid}/invite                              → 201 {code, expires_at, learner}
 POST   /shine/learners/join             {code}                    → 200 {learner}
+POST   /shine/learners/{uuid}/release                             → 200 {learner}      (10: fin de la plaza de organización)
 GET    /shine/me                                                  → 200 {holder, learners}
 POST   /shine/account/delete            {password}                → 200 {deleted: true}
 ```
@@ -677,7 +681,11 @@ POST   /shine/account/delete            {password}                → 200 {delet
   evaluating`, activo) y su `learner_access` `owner`/`created`, en una transacción. Cupo: servicio
   `shine_account.learner_quota` (plan gratuito, **1** alumno; `shine_entitlement` lo sustituye en el
   subplan 04). Contra el cupo cuentan los alumnos **activos** (no archivados) de los que el titular
-  es `owner` y que no ocupan plaza de una organización (subplan 10).
+  es `owner` y que no ocupan plaza de una organización. Con **`organization`** (UUID, FASE 17e,
+  subplan 10) el alumno nace **en plaza** de esa organización: `field_organization` fijado, acceso
+  `owner`/`organization`, sin tocar el cupo personal; solo para miembros activos de una
+  organización activa (`403 not_member`, también si el UUID no existe) y mientras queden plazas en
+  su licencia (`422 organization_limit` con `max`). Detalle en "Organizaciones".
 - **`GET /shine/learners`**: una sola lista, activos primero y archivados después, cada grupo por
   antigüedad del acceso. Los archivados se distinguen por `archived_at`.
 - **`PATCH`**: `display_name` se recorta (espacios) y admite hasta 60 caracteres; `avatar: null` o
@@ -713,6 +721,9 @@ POST   /shine/account/delete            {password}                → 200 {delet
   `422 invite_invalid` **sin distinguir el motivo**. Límite de intentos con `flood`: 5 fallos por
   titular y hora (30 por IP, `shine_account.settings`) → `429 too_many_attempts` hasta que pase la
   ventana, también con el código correcto.
+- **`POST /shine/learners/{uuid}/release`** (subplan 10): fin de la plaza. Solo el `owner` (el
+  docente que lo creó) o un `coordinator` de la organización; alumno sin plaza → `409
+  not_in_organization`. Qué hace, en "Organizaciones → Liberar al alumno".
 - **`GET /shine/me`**: `holder` = `{uuid, display_name, email, account_kind, adult_consent_at}`,
   `learners` (misma forma que arriba, con la cobertura de cada uno) y, desde el subplan 04,
   `holder_status`, el plan vigente del titular:
@@ -731,8 +742,9 @@ POST   /shine/account/delete            {password}                → 200 {delet
   Con varios entitlements que cubren, el de mayor cupo (a igualdad, el que caduca más tarde).
   La app lo llama al arrancar y tras cada compra. Otros módulos amplían la respuesta con
   `hook_shine_me_alter(array &$me, UserInterface $holder)` y cada alumno con
-  `hook_shine_learner_alter()` (los dos en `shine_account.api.php`); el 10 añade `organizations`
-  y `released_by`.
+  `hook_shine_learner_alter()` (los dos en `shine_account.api.php`); `shine_org` añade
+  `organizations[]` (las organizaciones de las que es miembro, forma en "Organizaciones") y
+  `released_by` por alumno.
 - **`POST /shine/account/delete`**: pide la contraseña aunque la petición ya lleve el token (un
   dispositivo desbloqueado no debe poder borrar la cuenta). "Borrar" es **anonimizar**: nombre de
   usuario `deleted-{uuid}`, email e `init` `deleted+{uuid}@shine.invalid`, nombre para mostrar,
@@ -749,16 +761,20 @@ POST   /shine/account/delete            {password}                → 200 {delet
 |---|---|---|
 | 400 | `invalid_json` | El cuerpo no es un objeto JSON |
 | 403 | (403 de Drupal) | El token no es de un titular: alumno, anónimo, cuenta borrada |
-| 403 | `role_not_allowed` | El acceso existe pero el rol no permite la acción (`guardian` o `staff` editando o archivando) |
+| 403 | `role_not_allowed` | El acceso existe pero el rol no permite la acción (`guardian` o `staff` editando, archivando o liberando; un miembro que no es `coordinator` repartiendo accesos `staff` o listando los alumnos del centro) |
+| 403 | `not_member` | `POST /shine/learners` con `organization` de la que el titular no es miembro activo (o que no existe o está inactiva: un solo error) |
 | 403 | `invalid_password` | Borrado de cuenta con contraseña incorrecta |
 | 403 | `too_many_attempts` | Cinco contraseñas incorrectas en una hora (servicio `flood`); tampoco se acepta la correcta hasta que pase |
 | 404 | `not_found` | El UUID no es de un alumno al que este titular tenga acceso activo. También si existe y es de otro titular: **nunca 403**, para no revelar que existe |
 | 409 | `archived` | Editar un alumno archivado o generarle un código de vínculo |
 | 409 | `last_owner` | Retirar el acceso del único `owner` |
-| 409 | `in_progress` | Otra creación de alumno del mismo titular en curso (lock) |
+| 409 | `in_progress` | Otra creación de alumno del mismo titular (o en plaza de la misma organización) en curso (lock) |
+| 409 | `not_in_organization` | `release` o `staff` sobre un alumno que no está en plaza de ninguna organización |
+| 409 | `not_staff` | Retirar un acceso que no es `staff` (el `owner` no se retira por ahí) |
 | 422 | `learner_limit` (`max`) | Cupo de alumnos alcanzado |
-| 422 | `validation` (`field`, `message`) | Nombre vacío o de más de 60 caracteres, avatar que no es una clave (`[A-Za-z0-9_-]{1,32}`), `langcode` que no es `es` ni `ca`, contraseña o código ausentes |
-| 422 | `invite_invalid` | Código de vínculo caducado, usado, inexistente, mal formado o de un alumno archivado (un solo error para todos) |
+| 422 | `organization_limit` (`max`) | No quedan plazas en la licencia de la organización (`max` 0 = sin licencia que cubra) |
+| 422 | `validation` (`field`, `message`) | Nombre vacío o de más de 60 caracteres, avatar que no es una clave (`[A-Za-z0-9_-]{1,32}`), `langcode` que no es `es` ni `ca`, `organization` que no es un texto, `member` que no es miembro activo, contraseña o código ausentes |
+| 422 | `invite_invalid` | Código de vínculo caducado, usado, inexistente, mal formado o de un alumno archivado (un solo error para todos). También el código de centro agotado, caducado, inexistente o de una organización inactiva |
 | 422 | `own_invite` | El titular canjea un código que generó él mismo |
 | 429 | `too_many_attempts` | Demasiados canjes fallidos (5 por titular y hora, 30 por IP) |
 
@@ -867,6 +883,125 @@ accounts`.
 
 ---
 
+## Organizaciones (FASE 17e)
+
+Módulo `shine_org` (`docs/monetization.md` §3.4, §4.1 punto 1 y §5.6; subplan `plans/entitlement/10`,
+2026-10-29). Un **gabinete** (`practice`) o **centro** (`school`) es una entidad `organization` con un
+titular responsable (`field_owner`); sus profesionales y docentes son titulares con una
+`organization_membership` (`coordinator` | `professional` | `teacher`); sus alumnos son usuarios
+`learner` con `field_organization` fijado, que **ocupan plaza** de la **licencia** de la organización
+(el `entitlement` con `field_organization`, plan `professional` o `school`). La plaza cubre a todos
+los adultos del alumno, también a la familia vinculada por código, y nunca consume cupo ni prueba de
+nadie. La organización, su licencia y sus códigos de centro los crea hoy el administrador
+(`/admin/shine/organizations`); Stripe (11) creará organización y licencia desde el checkout.
+
+Todas las rutas exigen Bearer de un titular (`_shine_holder`). Una organización de la que el titular no
+es miembro es `404`, nunca `403`.
+
+### Forma de `organization`
+
+```json
+{
+  "uuid": "c50dced4-...",
+  "label": "Centro Luna",
+  "kind": "school",                 ← "practice" | "school"
+  "role": "teacher",                ← rol del titular que pregunta: "coordinator" | "professional" | "teacher"
+  "covered": true,                  ← la licencia cubre ahora (mismos estados y fechas que un plan personal)
+  "plan": "school",                 ← tipo de la licencia que cubre, o null
+  "expires_at": null,               ← caducidad de la licencia (ISO), null = no caduca
+  "max_learners": 2,                ← plazas (0 sin licencia que cubra)
+  "used_seats": 1                   ← alumnos activos en plaza
+}
+```
+
+Es la forma de `organizations[]` en `GET /shine/me` y de todas las rutas de abajo.
+
+### Endpoints
+
+```
+POST   /shine/organizations/join           {code}      → 200 {organization}
+GET    /shine/organizations                            → 200 {organizations: [...]}
+GET    /shine/organizations/{uuid}                     → 200 {organization, members?}
+GET    /shine/organizations/{uuid}/learners            → 200 {learners: [...]}        (coordinador)
+POST   /shine/learners                     {..., organization}  → 201 {learner}       (alumno en plaza)
+POST   /shine/learners/{uuid}/staff        {member}    → 200 {learner}                (coordinador)
+DELETE /shine/learners/{uuid}/staff/{member_uuid}      → 200 {learner}                (coordinador)
+POST   /shine/learners/{uuid}/release                  → 200 {learner}                (owner o coordinador)
+```
+
+- **`join`**: el titular teclea un **código de centro** y pasa a miembro con el rol del código. El
+  código tiene 8 caracteres del mismo alfabeto que los de vínculo (sin 0/O ni 1/I; se normaliza:
+  mayúsculas, sin espacios ni guiones), es **multiuso** (`field_max_uses`, 0 = sin límite) y dura
+  `invite_ttl_days` (30, `shine_org.settings`); en la base de datos solo vive su HMAC. Si ya es
+  miembro activo, 200 con su membresía sin gastar un uso, aunque el código esté agotado (la app
+  puede reintentar); una membresía retirada se reactiva y gasta un uso. Agotado, caducado,
+  inexistente, mal formado o de una organización inactiva: `422 invite_invalid` sin distinguir;
+  límite de intentos con `flood` (5 por titular y hora, 30 por IP) → `429 too_many_attempts`.
+- **`GET /shine/organizations/{uuid}`**: `members[]` (`{uuid, display_name, email, role, since}`)
+  solo para coordinadores. **`.../learners`**: los alumnos activos en plaza, en la forma `learner`
+  (con `role: coordinator`), solo para coordinadores (`403 role_not_allowed` para los demás
+  miembros); los docentes ven los suyos en `/shine/learners`.
+- **Alumno en plaza** (`POST /shine/learners` con `organization`): el docente lo crea como miembro;
+  `field_organization` fijado, acceso `owner` con origen `organization`, plaza comprobada bajo un
+  lock por organización (`422 organization_limit`), **sin** cupo personal (`learner_limit` no
+  aplica) y sin consumir prueba mientras la plaza lo cubra. El resto del ciclo (editar, archivar,
+  invitar a la familia, token de alumno) es el de cualquier alumno. Archivarlo libera la plaza.
+- **Roles sobre el alumno en plaza** (`LearnerAccessPolicy`): el `owner` (docente) como siempre; un
+  **`coordinator`** de la organización gestiona al alumno (ver, editar, invitar, archivar, liberar)
+  **sin** `learner_access`, con `role: coordinator` en la forma `learner`, pero no opera (sin acceso
+  no hay token): para trabajar con él se da acceso `staff` a sí mismo. **`staff`** (otro miembro,
+  concedido por un coordinador con `POST .../staff {member}`, origen `organization`) opera y ve el
+  progreso; no edita, archiva ni libera. `DELETE .../staff/{member_uuid}` retira solo accesos
+  `staff` (`409 not_staff` para el `owner`). Un miembro que deja de ser coordinador pierde todo
+  sobre los alumnos que no tenía por acceso.
+- **Liberar al alumno** (`release`, §5.6): `field_organization` a nulo (plaza libre),
+  `field_released_by` y `field_released_at`; los accesos del personal del centro (origen
+  `organization`: el `owner` docente y los `staff`) se desactivan. Si queda algún adulto (la
+  familia vinculada) y ningún `owner`, el `guardian` más antiguo pasa a `owner` y el alumno cuenta
+  desde entonces en su cupo personal; si no queda nadie, el alumno se **archiva** (tokens
+  revocados, invitaciones anuladas). Todo en una transacción. A partir de ahí la cobertura sigue
+  el orden normal (plan del nuevo `owner`, o la prueba contando **todas** las regulares
+  completadas, también las del aula). Durante `released_notice_days` (30) la forma `learner` lleva
+  `released_by` = nombre del centro mientras ningún plan lo cubra (sí con `trial` o `none`), y el
+  402 de `session/generate` devuelve `reason: released_by_organization` (con `released_by`) en vez
+  de `trial_exhausted`; pasado el plazo, `trial_exhausted`. El `release` del docente devuelve el
+  alumno con `role: null`; su siguiente `GET` es 404.
+- **Borrado de cuenta** (`POST /shine/account/delete`): un alumno en plaza nunca se anonimiza con
+  el adulto que se va (solo se retira su acceso), también si era su único adulto.
+
+### Cobertura por organización (`OrganizationCoverage`)
+
+Sustituye al hueco `shine_entitlement.organization_coverage` (04). Un alumno está cubierto por su
+organización si: su `field_organization` apunta a una organización **activa**; la organización tiene
+una licencia que **cubre** (entitlement con `field_organization`, estado `active` | `trial` | `grace` |
+`billing_retry`, empezado y sin caducar; con varias, la de mayor cupo); y el alumno está entre los
+primeros `max_learners` alumnos activos de la organización **por orden de alta** (los que sobran, por
+una reducción del cupo, caen al siguiente paso: plan de algún adulto o prueba). `covered_by:
+organization` y `covered_by_organization` = nombre. Una licencia de organización **no** es el plan
+personal de su titular (`holder_status` del coordinador sigue siendo `free` si no tiene otro).
+Caché: la de `shine_entitlement.access`, con las etiquetas de la organización, `entitlement_list` y
+los alumnos en plaza, y caducidad = la de la licencia.
+
+### JSON:API y administración
+
+`organization`, `organization_membership` y `organization_invite` están expuestas en JSON:API solo en
+lectura: la organización la ven sus miembros activos (filtro "own" = `field_owner`), la membresía su
+titular (`field_user`), el código quien lo generó (`field_created_by`) y **sin `field_code_hash`**;
+`hook_jsonapi_*_filter_access` en las tres (gotcha 16). `field_organization`, `field_released_by` y
+`field_released_at` del usuario y `field_organization` del entitlement solo los escribe el servidor
+(`hook_entity_field_access`).
+
+| Ruta | Qué |
+|---|---|
+| `/admin/shine/organizations` | Lista (nombre, tipo, titular responsable, plazas usadas/total, activa) y "Añadir organización". El titular responsable nace coordinador |
+| `/admin/shine/organizations/{id}` | Ficha: miembros, códigos de centro, alumnos en plaza (con sus adultos y si están cubiertos) y licencias; acciones "Editar", "Añadir miembro", "Generar código de centro" (rol, usos, días; **el código solo se muestra una vez**) y "Conceder licencia" (formulario de entitlements con organización y titular precargados; plan del catálogo `professional`, `school_individual` o `school_classroom`) |
+| `/admin/shine/organization-memberships`, `/admin/shine/organization-invites` | Colecciones de las entidades (alta y edición de membresías; edición y borrado de códigos) |
+
+Todo con el permiso `administer shine organizations`. Config: `shine_org.settings`
+(`invite_ttl_days` 30, `invite_default_max_uses` 10, límites de `flood`, `released_notice_days` 30).
+
+---
+
 ## Entitlements (FASE 17)
 
 Módulo `shine_entitlement` (`docs/monetization.md` §4; subplanes `plans/entitlement/03` y `04`).
@@ -889,9 +1024,9 @@ Reglas (`docs/monetization.md` §4.1):
   `billing_retry`, ya empezado (`field_starts_at`) y con `field_expires_at` vacío o futuro.
   `paused`, `expired`, `revoked` y los caducados no cubren. Sin ninguno: plan `free` del catálogo
   (cupo 1).
-- **Cobertura de un alumno**, en orden: (1) plaza de organización (hueco
-  `OrganizationCoverageInterface`, servicio `shine_entitlement.organization_coverage`, que el
-  subplan 10 sustituye); (2) cualquier adulto con `learner_access` activo cubierto por un plan: si
+- **Cobertura de un alumno**, en orden: (1) plaza de organización (`OrganizationCoverageInterface`,
+  servicio `shine_entitlement.organization_coverage`, que `shine_org` implementa desde el subplan
+  10: ver "Organizaciones → Cobertura por organización"); (2) cualquier adulto con `learner_access` activo cubierto por un plan: si
   es `owner`, el alumno tiene que estar entre los primeros `max_learners` alumnos activos de los que
   es `owner` por fecha de creación (los que sobran quedan `paused`); un `guardian` o `staff` cubre
   **sin gastar su propio cupo**; (3) prueba gratuita: menos de `free_regular_sessions` regulares
@@ -929,9 +1064,11 @@ Un derecho de acceso de pago de un **titular**, independiente de quién cobra.
 | `field_raw_event`, `field_event_timestamp` (ms), `field_last_event_id` | | Rastro de los webhooks para auditoría e idempotencia (07, 11). **Solo los ven los administradores** |
 | `label` | | Generada: "Familia · app_store · marta@…" (se regenera si cambia el email del titular, también al borrar la cuenta) |
 
-`field_organization` (ref a `organization`) llega con el subplan 10. Valores fuera de lista, plan
-`free`, titular que es alumno, asientos < 1 o caducidad vacía en un origen de pago: el guardado
-falla (`preSave`), también desde código.
+`field_organization` (ref a `organization`, campo base que aporta `shine_org`, subplan 10): la
+licencia de un gabinete o centro; solo con plan `professional` o `school`, y **no** cuenta como plan
+personal de su titular (ver "Organizaciones"). Valores fuera de lista, plan `free`, titular que es
+alumno, asientos < 1, caducidad vacía en un origen de pago u organización con plan personal: el
+guardado falla (`preSave` o hook), también desde código.
 
 **JSON:API** (`/jsonapi/entitlement/entitlement`): el titular ve **solo los suyos** con el permiso
 `view own entitlement entities` (lo tiene `authenticated`): `filter[field_holder.id]={su uuid}`
@@ -950,6 +1087,7 @@ puede estar en dos planes (lo valida el formulario).
 | `free` | family | 1 | 0 | — (el de quien no tiene entitlement; no se borra ni se concede) |
 | `family` | family | 3 | 0 | `app_store:` y `play_store:` `shine_family_monthly` / `shine_family_annual` |
 | `professional` | professional | 15 | 0 | `stripe:price_REEMPLAZAR_pro_monthly` / `_annual` (marcadores: los ids reales llegan con 09 y 11) |
+| `school_individual` | school | 1 | 0 | `stripe:price_REEMPLAZAR_school_learner_annual` (licencia de centro con perfiles individuales: un asiento por alumno; añadido en 10) |
 | `school_classroom` | school | 0 | 1 | `stripe:price_REEMPLAZAR_classroom_annual` |
 
 Servicio `shine_entitlement.plan_catalog` (`PlanCatalog`): `get(id)`, `all()`, `free()`,

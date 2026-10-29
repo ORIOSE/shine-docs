@@ -66,7 +66,7 @@ Sin cambios estructurales. Campos nuevos en `user`:
 | Campo | Tipo | Uso |
 |---|---|---|
 | `field_account_kind` | list_string: `holder`, `learner` | Distingue titular de alumno gestionado. Requerido, por defecto `holder`. Solo lo escribe el servidor. |
-| `field_organization` | entity_reference (organization) | Solo en alumnos de centro o gabinete: la organización en cuya licencia ocupan plaza. Nulo en alumnos de familia. **Se crea en 17e** (subplan 10), con la entidad `organization`. |
+| `field_organization` | entity_reference (organization) | Solo en alumnos de centro o gabinete: la organización en cuya licencia ocupan plaza. Nulo en alumnos de familia. **Creado en 17e** (subplan 10, 2026-10-29) junto con `field_released_by` (organization) y `field_released_at` (timestamp), que registran la liberación de §5.6. Los tres en `config/sync`; solo los escribe el servidor. |
 | `field_adult_consent` | boolean | Aceptación en el registro ("soy mayor de edad y responsable del alumno"). Obligatoria en el registro anónimo (422 si falta); solo se escribe al crear la cuenta. |
 | `field_adult_consent_at` | timestamp | Lo fija el servidor la primera vez que `field_adult_consent` pasa a verdadero. Vacío con consentimiento = cuenta anterior a la FASE 17. |
 | `field_archived_at` | timestamp | Alumno archivado (§5.2). Solo lo escribe el servidor. |
@@ -163,7 +163,7 @@ monetización; se especifica aquí para que el modelo lo admita sin cambios.
 | Campo | Tipo | Valores / notas |
 |---|---|---|
 | `field_holder` | entity_reference (user) | Titular cubierto. Para origen `organization`, el titular miembro. |
-| `field_organization` | entity_reference (organization) | Solo en origen `organization`. **Se añade en 17e** (subplan 10, campo base con `hook_update_N`). |
+| `field_organization` | entity_reference (organization) | La licencia de un gabinete o centro (plan `professional` o `school`, cualquier origen: `manual` hoy, `stripe` en 11). **Añadido en 17e** (subplan 10) como campo base que aporta `shine_org` con `hook_entity_base_field_info()`. Un entitlement con organización no es el plan personal de su titular. |
 | `field_catalog_plan` | entity_reference (`shine_entitlement_plan`) | **Añadido en 03 (2026-10-23)**: la entrada del catálogo de la que sale el cupo. Hace falta para calcular `max_learners` y para `recalc`: `field_plan` no basta (`courtesy` no tiene entrada propia y un centro puede tener varias). Nunca `free`. |
 | `field_plan` | list_string | `family`, `professional`, `school`, `courtesy`. Vacío = el `plan` de la entrada del catálogo. |
 | `field_source` | list_string | `app_store`, `play_store`, `stripe`, `organization`, `manual` |
@@ -238,6 +238,10 @@ De aquí salen los cupos. Es configuración exportable a `config/sync`, no códi
 | `learners_per_seat` | 3 | 15 | 0 (sin perfiles individuales) |
 | `groups_per_seat` | 0 | 0 | 1 |
 | `external_ids` | `app_store:shine_family_monthly`, `app_store:shine_family_annual`, `play_store:shine_family_monthly`, `play_store:shine_family_annual` | `stripe:price_xxx_pro_monthly`, `stripe:price_xxx_pro_annual` | `stripe:price_xxx_classroom_annual` |
+
+Añadido en 10 (2026-10-29): `school_individual` ("Centro, perfiles individuales", `school`, 1 alumno
+por asiento, 0 grupos): la licencia de un centro que trabaja con alumnos individuales se compra por
+plazas (`quantity` = alumnos). Un centro puede tener las dos.
 
 Resolución en los webhooks:
 - RevenueCat: `product_id` + `store` → busca en `external_ids` → plan y `learners_per_seat`;
@@ -447,8 +451,13 @@ en 04).
 
 Permisos resumidos: `owner` y `coordinator` del centro editan, invitan, liberan y archivan;
 `guardian` opera, ve progreso y retira su propio acceso; `staff` opera y ve progreso. Implementado
-en el servicio `shine_account.learner_access_policy` (01b); `coordinator` y el `release` llegan
-con las organizaciones (10).
+en el servicio `shine_account.learner_access_policy` (01b); `coordinator` (sin `learner_access`,
+por la membresía) y el `release` llegaron con las organizaciones (10, 2026-10-29; módulo
+`shine_org`, detalle en `api-design.md`, "Organizaciones"). Decisiones de 10: el coordinador
+gestiona pero no opera sin darse acceso `staff`; el `release` desactiva los accesos de origen
+`organization` (el `owner` docente y los `staff`); `released_by` se informa durante
+`released_notice_days` (30) mientras ningún plan cubra al alumno; una licencia de centro con
+perfiles individuales es el plan de catálogo `school_individual` (un asiento por alumno).
 
 El vínculo por código (pasos 5 de "Centro" y 2 de "Familia") está implementado en 01c
 (2026-10-23) y vale igual para dos adultos de una misma familia: `POST /shine/learners/{uuid}/invite`
@@ -584,8 +593,10 @@ en `client.ts`, gestión de alumnos en ajustes, pantalla de borrado de cuenta (e
 Console, paywall, webhook `revenuecat`, restaurar compras, pruebas en sandbox y TestFlight /
 pruebas internas de Play.
 
-**17e. Organizaciones y canal web**: `shine_org`, invitaciones, Stripe Checkout y webhook,
-pantalla de código en la app, estado "activa tu acceso desde tu centro".
+**17e. Organizaciones y canal web**: `shine_org` (organizaciones, membresías, códigos de centro,
+alumnos en plaza, cobertura por organización, accesos `staff`, `release` del alumno y
+`field_organization` en usuario y entitlement; subplan 10, 2026-10-29), Stripe Checkout y webhook
+(11), pantalla de código en la app, estado "activa tu acceso desde tu centro" (12).
 
 **17f. Modo aula** (posterior): grupos, sesión `group`, estadísticas de grupo.
 
@@ -598,7 +609,8 @@ Orden recomendado: 17a → 17c → 17b → 17d → 17e. 17a y 17c antes de cualq
 - X, Y y N (`free_regular_sessions`): N se fija en función de X e Y para garantizar una
   evaluación de ajuste dentro de la prueba. Hipótesis N = 8.
 - Cupo exacto de Profesional y precio de ampliación.
-- Derivación centro → familia: vínculo o transferencia de alumno.
+- Derivación centro → familia: **cerrada** (§5.6, implementada en 01c y 10): vínculo por código,
+  nunca transferencia ni copia; el `release` promueve al `guardian` a `owner`.
 - Facturación profesional: Drupal Commerce vs Stripe Checkout + facturación externa.
 - Precios de partida de Familia (mensual y anual): pendientes desde el subplan 09 (2026-10-29).
 - Nombre definitivo de la app, bundle id y package: bloquean el registro en las dos stores
