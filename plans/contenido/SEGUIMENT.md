@@ -13,7 +13,7 @@ Estats: **pendent** (no començat), **en curs**, **enviat** (a revisió del grup
 | Retirades (sense publicar) | 4 | 2 |
 | De les quals, del cicle Sílabas (publicades + en revisió) | 38 + 0 | 44 + 0 |
 
-Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 3.
+Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0.
 
 ## Fases i tasques
 
@@ -73,14 +73,12 @@ Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 3
 
 | Origen | Pregunta | Estat | Resposta |
 |---|---|---|---|
-| E01-E02 | Malsonant, sensible o cap marca (no és si s'exclouen de les llistes, sinó on poden sortir): culo/cul, teta, polla/cardar, tonto/tonta, pedo, pixa/pitu/tita (pito ja no porta marca) i els despectius (canalla, chusma, gentuza, desgraciada) | enviat |  |
-| Estructura | Català, Level2: gust i camp (codes st i mp) eren a l'excepció de monosíl·labs freqüents (font, llamp), però la resposta del 2026-10-29 les posa a Level3. Quina val? | enviat |  |
-| Estructura | Català, Level2: al, del i pel també dins de l'excepció gramatical (aplicat per coherència amb als, dels i pels)? | enviat |  |
 | Cicle castellà | güe/güi sense volta desordenada; paraules de 6 o 7 anys; família x; família h; cobertura de les inverses | tancat | Aprovat: gue/gui afegit; 3 paraules canviades (lata, prisa, boxeo); x i h es mantenen. |
 | E01 | Ajust de 'vosotros' (rang de la forma de tercera del plural) | tancat | Aprovat: es manté el rang de la tercera del plural (E01-resposta.md). |
 | E01 | Vocabulari infantil a partir de Level3: comptar dins de rang les paraules de la llista infantil | tancat | Aprovat: la paraula de la llista infantil compta dins de rang des de Level3 (lexico.py). |
 | E01 | Formes flexionades rares (jugábamos): regla per forma o per lema | tancat | Regla mixta: forma vàlida si el lema és dins de rang i el temps és del nivell (lexico.py, by_lemma). |
 | E01 | Veseig, malsonant o sensible, polisèmics vulgars, americanismes, sigles, diminutius (criteris 4 a 9) | tancat | Veseig americà; malsonant (bloqueja) separat de sensible (des de Level5, amb revisió); caca i pito sense marca; americanismes marcats; sigles fora; diminutius amb el lema de la base (32). Aplicat amb ajustos_llistes.py. |
+| E01-E02 | Malsonant, sensible o cap marca (no és si s'exclouen de les llistes, sinó on poden sortir): culo/cul, teta, polla/cardar, tonto/tonta, pedo, pixa/pitu/tita (pito ja no porta marca) i els despectius (canalla, chusma, gentuza, desgraciada) | tancat | Resposta del 2026-10-29: culo, polla, cardar i pixa malsonants; cul, teta, tonto/tonta, canalla, chusma, gentuza i desgraciada sensibles; pedo, pitu i tita sense marca (respostes-2026-10-30/dubtes-oberts-resposta.md). |
 | E01-E04 | Mostres de 300 files de les llistes: la resposta les accepta si l'encert és del 90 % o més (o els errors el 3 % o menys), però no diu el resultat. Es van revisar? | tancat | Revisades: les llistes queden acceptades (2026-10-29). |
 | E02 | Formes vàlides que gairebé sempre són errada o castellà (series, varem, creo) | tancat | Descartades les formes minoritàries o castellanes (distancia, copia, sentencia, formula, creo). |
 | E02 | Topònims amb grafia castellana o estrangera; sigles d'organitzacions | tancat | Topònims no catalanitzats i sigles, fora (20 exònims descartats). |
@@ -100,6 +98,8 @@ Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 3
 | E10 | Longitud de la lectura, noms propis, taula de nivell mínim | tancat | 35 a 80 paraules en un paràgraf; noms curts sense travades ni hiats (Leo, Teo, Mia com a excepció); mana la taula. |
 | E11 | Decisions de les guies editorials (quotes, festes, llocs, temps verbals, signes, diàleg en un paràgraf) | tancat | Guies aprovades. Precisions aplicades: cap diàleg a Level1 i Level2, 2 intervencions a Level3 i Level4, 4 des de Level5; futur i condicional a Level4; meitat de textos neutres de Level0 a Level3; llocs genèrics fins a Level3. |
 | Estructura | Català, Level2: 'els', 'dels', 'pels', 'als' i plurals en -ns i -ls dins de l'excepció de coda? | tancat | Sí (2026-10-29): els, dels, pels i als, i els plurals regulars en -ns i -ls d'una base de Level1 o Level2, a Level2 com a excepció gramatical i morfològica; les codes complexes d'arrel (text, verd, disc) a Level3. Aplicat a estructura.py, catàleg, guia catalana i prompts 07 i 08. |
+| Estructura | Català, Level2: gust i camp (codes st i mp) eren a l'excepció de monosíl·labs freqüents (font, llamp), però la resposta del 2026-10-29 les posa a Level3. Quina val? | tancat | Level3 (2026-10-29). A Level2 només els plurals regulars en -ns/-ls i les formes gramaticals: es retira l'excepció de monosíl·labs del 2026-10-27 (dent, pont, porc... a Level3). |
+| Estructura | Català, Level2: al, del i pel també dins de l'excepció gramatical (aplicat per coherència amb als, dels i pels)? | tancat | Aprovat (2026-10-29). |
 | Tanda 2 | Alleujament a Level0; pseudoparaules a Level1; paraules d'ordena les síl·labes de Level0 (pato, sapo) | tancat | Sense alleujament a Level0; pseudoparaules del banc a Level1, sí; pato i sapo, sí (segon dado canviat per pato). |
 | Tanda 2 | Frases d'alleujament a la llista de Level2; 'lo ayuda' i 'la corta'; 'la iaia'; velocitat a Level0 | tancat | Alleujament com ara; 'lo ayuda' correcte; 'la iaia' evita l'apòstrof. Sense canvis. |
 | Taxonomies | Termes nous (2026-10-29): sonoritat es ñ, b/v, h muda, r/rr; ca grafies r/rr; grup d'esforç morfològic i lèxic (polisíl·labes, compostes, derivades, pronoms febles, homòfons). Els valideu? | tancat | Aprovats tots (revisió de la tanda 7, 2026-10-29). |

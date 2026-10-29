@@ -24,11 +24,11 @@ plans/multiidioma/estructura-ca.md (apartat 5).
   l, s, t, n, d (ma, pa, la, no, so; mapa, sopa, pala, lupa, moto, nina). Level1 totes les CV, les
   inverses VC (al, en, is), les mixtes CVC freqüents (gat, sol, cap, pa, llit), els dígrafs simples
   (ny, ll, ss, rr, qu, gu) i que/qui. Level2 travades amb l i r (pla, bra, tren), dígrafs complexos
-  (tx, ig, tg, tj, ix), gue/gui/güe/güi i els monosíl·labs molt freqüents amb coda final simple
-  (dent, pont, porc, serp, forn, guant, talp, llamp, cranc, tronc), i com a excepció gramatical i
-  morfològica els, al, als, del, dels, pel i pels i els plurals regulars en -ns i -ls d'una base de
+  (tx, ig, tg, tj, ix), gue/gui/güe/güi i, com a úniques excepcions de coda, les formes
+  gramaticals els, al, als, del, dels, pel i pels i els plurals regulars en -ns i -ls d'una base de
   Level1 o Level2 (nens, pans, trens, pals, galls; grup d'experts, 2026-10-29). Level3 codes
-  complexes CVCC i VCC d'arrel (temps, forts, trans, ins, verd, text, disc), ela geminada
+  complexes CVCC i VCC d'arrel, també en monosíl·labs (temps, forts, trans, ins, verd, text, disc,
+  dent, porc, gust, camp; grup d'experts, 2026-10-29), ela geminada
   (col·legi), apostrofació i la resta de contraccions (l’avi, d’un) i hiats (pi-a-no, lle-ó). De Level4 en endavant la dificultat és la longitud, la
   freqüència, els pronoms febles i el vocabulari acadèmic.
 - **Sil·labació del IEC**: els dígrafs tx, ix, ig, tg, tj, ss, rr i l·l se separen entre síl·labes

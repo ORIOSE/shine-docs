@@ -172,16 +172,16 @@ confirmada per l’expert, amb l’excepció dels monosíl·labs (resposta 4).
 | Directes resta (CV), Inverses (VC), Mixtes i finals (CVC), Dígrafs simples | Level1 | gat, pa, sol, cap, nyap, lluna; que, qui |
 | Travades amb l (CCV), Travades amb r (CCV), Dígrafs complexos | Level2 | pla, bra, tren, cotxe, metge; gue, gui, güe, güi |
 | Complexes: CCVC | Level2 | plat, tren, drac |
-| Complexes: monosíl·labs molt freqüents amb coda final simple (nt, rt, rm, st, mp, rc, rp, rn, lp, nc) | Level2 | dent, pont, font, porc, serp, forn, guant, talp, llamp, cranc, tronc; verbs surt, dorm |
-| Complexes: VCC i CVCC | Level3 | temps, forts, trans, ins, parcs |
+| Complexes: VCC i CVCC, també en monosíl·labs | Level3 | temps, forts, trans, ins, parcs, dent, porc, gust, camp |
+| Excepció gramatical i morfològica: els, al, als, del, dels, pel, pels i plurals regulars en -ns i -ls d’una base de Level1 o Level2 | Level2 | els nens, pans, trens, pals, galls |
 | Ela geminada (l·l), Apostrofació i contraccions | Level3 | col·legi, l’avi, d’un |
 | Hiats | Level3 | pi-a-no, lle-ó, a-vi-ó, co-et |
 | Mirall, rotacions i grafies diacrítiques | Qualsevol | transversal: l’esforç perceptiu no depèn de l’estructura |
 
-L’excepció dels monosíl·labs: fonològicament CVCC és d’esforç alt (Level3), però en català hi ha
-un grup de monosíl·labs d’altíssima freqüència infantil acabats en coda doble simple (dent, pont,
-porc, serp) que no té sentit bloquejar fins als 8 anys; Level3 queda per als plurisíl·labs i les
-codes menys freqüents (forts, temps, parcs, trans).
+Les codes dobles d’arrel (-nt, -rt, -st, -mp, -rc, -sc, -xt...) són de Level3 també en els
+monosíl·labs (dent, pont, porc, serp, gust, camp). L’excepció de monosíl·labs freqüents a Level2
+del 2026-10-27 la va retirar el grup el 2026-10-29: a Level2 les úniques excepcions de coda són les
+formes gramaticals (els, al, als, del, dels, pel, pels) i els plurals regulars en -ns i -ls.
 
 ## 4. El que és propi del català
 

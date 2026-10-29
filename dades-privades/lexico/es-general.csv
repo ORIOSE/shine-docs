@@ -8286,8 +8286,8 @@ atiende,atender,verb,11.407,7132,,Vis-3p0n,8.32,7848,9.880,5866,7132,,sí
 interpretaciones,interpretación,nom,11.412,7133,,Nfpc---n,8.32,7899,0.865,27694,7133,,sí
 proyecciones,proyección,nom,11.412,7134,,Nfpc---n,5.5,10707,1.851,17899,7134,,sí
 aguda,agudo,adj,11.374,7135,,Afsq--pn,5.62,10397,3.942,11169,7135,,sí
-tonto,tonto,adj,7.938,7136,,Amsq--pn,24.5,3261,110.168,825,7136,,sí
-tonto,tonto,nom,3.284,7136,,Nmsc---n,24.5,3261,110.168,825,7136,,sí
+tonto,tonto,adj,7.938,7136,sensible,Amsq--pn,24.5,3261,110.168,825,7136,,sí
+tonto,tonto,nom,3.284,7136,sensible,Nmsc---n,24.5,3261,110.168,825,7136,,sí
 combina,combinar,verb,11.35,7137,,Vis-3p0n,6.31,9609,3.101,13013,7137,,sí
 continuamente,continuamente,adv,11.407,7138,,R------n,10.7,6480,4.038,10980,7138,,sí
 listado,listado,nom,11.237,7139,,Nmsc---n,10.0,6880,1.923,17490,7139,,sí
@@ -10506,8 +10506,8 @@ gustar,gustar,verb,8.461,9045,,V----v0n,11.2,6280,16.875,3890,9045,,sí
 curiosos,curioso,nom,4.489,9046,,Nmpc---n,4.17,12896,1.490,20311,9046,,sí
 curiosos,curioso,adj,3.97,9046,,Ampq--pn,4.17,12896,1.490,20311,9046,,sí
 perón,perón,npropi,8.459,9047,,N--p---f,8.91,7549,,,9047,,sí
-tonta,tonto,adj,7.452,9048,,Afsq--pn,12.9,5673,37.332,2031,9048,,sí
-tonta,tonto,nom,0.991,9048,,Nfsc---n,12.9,5673,37.332,2031,9048,,sí
+tonta,tonto,adj,7.452,9048,sensible,Afsq--pn,12.9,5673,37.332,2031,9048,,sí
+tonta,tonto,nom,0.991,9048,sensible,Nfsc---n,12.9,5673,37.332,2031,9048,,sí
 éticas,ético,adj,8.218,9049,,Afpq--pn,2.45,18543,0.625,32809,9049,,sí
 puntas,punta,nom,8.324,9050,,Nfpc---n,7.08,8900,4.495,10253,9050,,sí
 sustancial,sustancial,adj,8.457,9051,,Afsq--pn,4.9,11602,1.514,20249,9051,,sí
@@ -11555,7 +11555,7 @@ app,app,nom,6.325,9928,,Nfsc---n,22.4,3492,,,9928,,sí
 app,app,npropi,1.194,9928,,N--p---f,22.4,3492,,,9928,,sí
 exigía,exigir,verb,7.519,9929,,Vis-3i0n,3.31,15114,0.409,40018,9929,,sí
 suben,subir,verb,7.512,9930,,Vip-3p0n,9.55,7167,4.423,10370,9930,,sí
-tetas,teta,nom,7.426,9931,malsonante,Nfpc---n,16.2,4667,26.322,2770,9931,,sí
+tetas,teta,nom,7.426,9931,sensible,Nfpc---n,16.2,4667,26.322,2770,9931,,sí
 citó,citar,verb,7.51,9932,,Vis-3t0n,2.88,16500,1.010,25285,9932,,sí
 funcionales,funcional,adj,7.51,9933,,Ampq--pn,4.57,12128,0.745,29805,9933,,sí
 valora,valorar,verb,7.464,9934,,Vis-3p0n,4.9,11616,1.995,17141,9934,,sí
@@ -16897,8 +16897,8 @@ convertidos,convertido,adj,1.176,14468,,Ampq--pn,2.82,16764,0.769,29236,14468,,s
 etnia,etnia,nom,4.418,14469,,Nfsc---n,4.68,11920,0.072,76837,14469,,sí
 insulto,insulto,nom,4.341,14470,,Nmsc---n,9.77,7005,6.418,8041,14470,,sí
 yema,yema,nom,4.394,14471,,Nfsc---n,1.48,25575,0.721,30547,14471,,sí
-desgraciado,desgraciado,adj,2.58,14472,,Amsq--pn,4.37,12498,41.851,1835,14472,,sí
-desgraciado,desgraciado,nom,1.796,14472,,Nmsc---n,4.37,12498,41.851,1835,14472,,sí
+desgraciado,desgraciado,adj,2.58,14472,sensible,Amsq--pn,4.37,12498,41.851,1835,14472,,sí
+desgraciado,desgraciado,nom,1.796,14472,sensible,Nmsc---n,4.37,12498,41.851,1835,14472,,sí
 esmeralda,esmeralda,npropi,2.567,14473,,N--p---f,3.72,13975,4.712,9893,14473,,sí
 esmeralda,esmeralda,nom,1.62,14473,,Nfsc---n,3.72,13975,4.712,9893,14473,,sí
 guardián,guardián,nom,3.999,14474,,Nmsc---n,5.13,11166,7.188,7406,14474,,sí
@@ -19509,8 +19509,8 @@ arrojado,arrojar,verb,3.299,16712,,V----p0n,2.51,18013,2.788,13924,16712,,sí
 deshidratación,deshidratación,nom,3.637,16713,,Nfsc---n,1.35,26762,1.514,20113,16713,,sí
 moverme,mover,verb,3.637,16714,,V----v1n(me),2.45,18464,6.034,8378,16714,,sí
 retribución,retribución,nom,3.637,16715,,Nfsc---n,2.69,17434,1.274,22315,16715,,sí
-tontos,tonto,adj,2.178,16716,,Ampq--pn,12.9,5674,23.486,3003,16716,,sí
-tontos,tonto,nom,1.459,16716,,Nmpc---n,12.9,5674,23.486,3003,16716,,sí
+tontos,tonto,adj,2.178,16716,sensible,Ampq--pn,12.9,5674,23.486,3003,16716,,sí
+tontos,tonto,nom,1.459,16716,sensible,Nmpc---n,12.9,5674,23.486,3003,16716,,sí
 burguesa,burgués,adj,3.465,16717,,Afsq--pn,2.57,17780,0.409,39712,16717,,sí
 burgués,burgués,adj,2.494,16718,,Amsq--pn,2.69,17245,0.865,27537,16718,,sí
 burgués,burgués,nom,1.123,16718,,Nmsc---n,2.69,17245,0.865,27537,16718,,sí
@@ -25477,8 +25477,8 @@ ruleta,ruleta,nom,2.469,21807,,Nfsc---n,2.29,19353,2.043,16877,21807,,sí
 agravar,agravar,verb,2.469,21808,,V----v0n,0.98,32196,0.216,52235,21808,,sí
 autoritarios,autoritario,adj,2.392,21809,,Ampq--pn,1.78,22552,,,21809,,sí
 brindaron,brindar,verb,2.465,21810,,Vip-3t0n,1.12,29727,0.072,74546,21810,,sí
-canalla,canalla,nom,1.315,21811,,Nmsc---n,2.29,19162,4.423,10337,21811,,sí
-canalla,canalla,adj,1.11,21811,,Amsq--pn,2.29,19162,4.423,10337,21811,,sí
+canalla,canalla,nom,1.315,21811,sensible,Nmsc---n,2.29,19162,4.423,10337,21811,,sí
+canalla,canalla,adj,1.11,21811,sensible,Amsq--pn,2.29,19162,4.423,10337,21811,,sí
 continentales,continental,adj,2.467,21812,,Afpq--pn,2.24,19464,0.312,45005,21812,,sí
 disímiles,disímil,adj,2.469,21813,,Ampq--pn,,,,,21813,,sí
 mechón,mechón,nom,2.469,21814,,Nmsc---n,,,1.058,24811,21814,,sí
@@ -29058,7 +29058,7 @@ muecas,mueca,nom,2.01,24817,,Nfpc---n,,,0.457,38177,24817,,sí
 perversión,perversión,nom,2.024,24818,,Nfsc---n,1.58,24464,1.418,21014,24818,,sí
 preparándose,preparar,verb,2.024,24819,,V----g1n(se),1.86,22122,2.284,15785,24819,,sí
 sordera,sordera,nom,2.006,24820,,Nfsc---n,,,0.433,39437,24820,,sí
-teta,teta,nom,1.98,24821,malsonante,Nfsc---n,3.09,15932,4.471,10290,24821,,sí
+teta,teta,nom,1.98,24821,sensible,Nfsc---n,3.09,15932,4.471,10290,24821,,sí
 víbora,víbora,nom,1.664,24822,,Nfsc---n,1.78,22814,5.144,9343,24822,,sí
 víbora,víbora,npropi,0.36,24822,,N--p---f,1.78,22814,5.144,9343,24822,,sí
 corregimiento,corregimiento,nom,2.021,24823,,Nmsc---n,1.45,25668,,,24823,,sí
@@ -29200,8 +29200,8 @@ caramba,caramba,interj,1.746,24938,,I------n,1.95,21273,24.423,2917,24938,,sí
 caramba,caramba,nom,0.245,24938,,Nfsc---n,1.95,21273,24.423,2917,24938,,sí
 convocan,convocar,verb,2.008,24939,,Vip-3p0n,2.09,20365,0.072,75213,24939,,sí
 decorativos,decorativo,adj,2.008,24940,,Ampq--pn,1.66,23610,0.288,46670,24940,,sí
-desgraciada,desgraciado,adj,1.64,24941,,Afsq--pn,2.0,20989,4.423,10346,24941,,sí
-desgraciada,desgraciado,nom,0.366,24941,,Nfsc---n,2.0,20989,4.423,10346,24941,,sí
+desgraciada,desgraciado,adj,1.64,24941,sensible,Afsq--pn,2.0,20989,4.423,10346,24941,,sí
+desgraciada,desgraciado,nom,0.366,24941,sensible,Nfsc---n,2.0,20989,4.423,10346,24941,,sí
 disuelve,disolver,verb,2.008,24942,,Vis-3p0n,1.55,24689,0.649,31832,24942,,sí
 estudiamos,estudiar,verb,2.008,24943,,Vip-1p0n,2.09,20412,2.909,13562,24943,,sí
 exceptuando,exceptuar,verb,2.008,24944,,V----g0n,2.82,16793,1.010,25362,24944,,sí
@@ -31097,8 +31097,8 @@ danesa,danés,adj,1.474,26576,,Afsq--pn,1.78,22612,0.433,38776,26576,,sí
 danesa,danés,nom,0.335,26576,,Nfsc---n,1.78,22612,0.433,38776,26576,,sí
 danubio,danubio,npropi,1.823,26577,,N--p---f,1.66,23607,0.433,38777,26577,,sí
 deficientes,deficiente,adj,1.735,26578,,Ampq--pn,1.48,25345,0.264,48546,26578,,sí
-desgraciados,desgraciado,nom,1.108,26579,,Nmpc---n,2.63,17543,8.894,6357,26579,,sí
-desgraciados,desgraciado,adj,0.689,26579,,Ampq--pn,2.63,17543,8.894,6357,26579,,sí
+desgraciados,desgraciado,nom,1.108,26579,sensible,Nmpc---n,2.63,17543,8.894,6357,26579,,sí
+desgraciados,desgraciado,adj,0.689,26579,sensible,Ampq--pn,2.63,17543,8.894,6357,26579,,sí
 diríamos,decir,verb,1.823,26580,,Vip-1c0n,,,1.322,21752,26580,,no
 disminuya,disminuir,verb,1.823,26581,,Vss-3p0n,1.23,28278,0.601,33013,26581,,sí
 esparta,esparta,npropi,1.821,26582,,N--p---f,3.09,15792,,,26582,,sí
@@ -33424,8 +33424,8 @@ persiguió,perseguir,verb,1.631,28537,,Vis-3t0n,1.78,22730,2.933,13513,28537,,s�
 quino,quino,npropi,1.487,28538,,N--p---f,,,,,28538,,no
 saltillo,saltillo,npropi,1.573,28539,,N--p---f,3.16,15668,,,28539,,sí
 señorial,señorial,adj,1.631,28540,,Amsq--pn,1.23,28487,0.096,72663,28540,,sí
-tontas,tonto,adj,1.333,28541,,Afpq--pn,2.88,16680,5.481,8933,28541,,sí
-tontas,tonto,nom,0.298,28541,,Nfpc---n,2.88,16680,5.481,8933,28541,,sí
+tontas,tonto,adj,1.333,28541,sensible,Afpq--pn,2.88,16680,5.481,8933,28541,,sí
+tontas,tonto,nom,0.298,28541,sensible,Nfpc---n,2.88,16680,5.481,8933,28541,,sí
 úrsula,úrsula,npropi,1.631,28542,,N--p---f,,,5.000,9518,28542,,no
 aglutina,aglutinar,verb,1.629,28543,,Vis-3p0n,,,0.048,81993,28543,,no
 aguado,aguado,npropi,1.154,28544,,N--p---f,1.29,27429,0.673,31079,28544,,sí
@@ -49941,8 +49941,8 @@ besito,beso,nom,0.83,42734,,Nmsc---n,1.7,23218,4.062,10928,42734,,sí
 cambiados,cambiar,verb,0.68,42735,,Vmp--d0n,,,0.505,35922,42735,,no
 cambiados,cambiado,adj,0.157,42735,,Ampq--pn,,,0.505,35922,42735,,no
 cambiaran,cambiar,verb,0.836,42736,,Vsph3i0n,1.02,31445,0.769,29197,42736,,sí
-canallas,canalla,nom,0.638,42737,,Nmpc---n,1.07,30556,1.418,20901,42737,,sí
-canallas,canalla,adj,0.188,42737,,Ampq--pn,1.07,30556,1.418,20901,42737,,sí
+canallas,canalla,nom,0.638,42737,sensible,Nmpc---n,1.07,30556,1.418,20901,42737,,sí
+canallas,canalla,adj,0.188,42737,sensible,Ampq--pn,1.07,30556,1.418,20901,42737,,sí
 careció,carecer,verb,0.836,42738,,Vis-3t0n,,,0.048,83720,42738,,no
 claroscuros,claroscuro,nom,0.821,42739,,Nmpc---n,,,,,42739,,no
 condensar,condensar,verb,0.836,42740,,V----v0n,,,0.072,75035,42740,,no
@@ -50587,7 +50587,7 @@ cadaqués,cadaqués,npropi,0.817,43291,,N--p---f,,,,,43291,,no
 calentadores,calentador,nom,0.812,43292,,Nmpc---n,,,0.312,44867,43292,,no
 captaron,captar,verb,0.817,43293,,Vip-3t0n,,,0.673,31165,43293,,no
 catania,catania,npropi,0.817,43294,,N--p---f,,,,,43294,,no
-chusma,chusma,nom,0.812,43295,,Nfsc---n,1.78,22579,1.442,20703,43295,,sí
+chusma,chusma,nom,0.812,43295,sensible,Nfsc---n,1.78,22579,1.442,20703,43295,,sí
 combatirla,combatir,verb,0.817,43296,,V----v1n(la),,,0.240,50413,43296,,no
 conciso,conciso,adj,0.812,43297,,Amsq--pn,0.98,32283,0.962,26033,43297,,sí
 conmocionó,conmocionar,verb,0.817,43298,,Vis-3t0n,,,0.385,40907,43298,,no
@@ -59906,7 +59906,7 @@ feudalismo,feudalismo,nom,0.607,51291,,Nmsc---n,1.07,30677,,,51291,,sí
 filigranati,filigranati,npropi,0.607,51292,,N--p---f,,,,,51292,,no
 filosofar,filosofar,verb,0.602,51293,,V----v0n,,,0.192,55399,51293,,no
 frugal,frugal,adj,0.6,51294,,Afsq--pn,,,,,51294,,no
-gentuza,gentuza,nom,0.607,51295,,Nfsc---n,1.66,23666,0.769,29332,51295,,sí
+gentuza,gentuza,nom,0.607,51295,sensible,Nfsc---n,1.66,23666,0.769,29332,51295,,sí
 habláramos,hablar,verb,0.607,51296,,Vsph1i0n,,,1.779,18313,51296,,no
 heredamos,heredar,verb,0.607,51297,,Vip-1p0n,,,0.385,41280,51297,,no
 imanol,imanol,npropi,0.607,51298,,N--p---f,,,,,51298,,no
@@ -73997,8 +73997,8 @@ denegada,denegar,verb,0.413,63421,,Vfs--d0n,1.05,31067,2.861,13694,63421,,sí
 denim,denim,nom,0.364,63422,,Nmsc---n,,,,,63422,,no
 denim,denim,npropi,0.049,63422,,N--p---f,,,,,63422,,no
 derrick,derrick,npropi,0.413,63423,,N--p---f,,,,,63423,,no
-desgraciadas,desgraciado,adj,0.311,63424,,Afpq--pn,,,0.529,35239,63424,,no
-desgraciadas,desgraciado,nom,0.09,63424,,Nfpc---n,,,0.529,35239,63424,,no
+desgraciadas,desgraciado,adj,0.311,63424,sensible,Afpq--pn,,,0.529,35239,63424,,no
+desgraciadas,desgraciado,nom,0.09,63424,sensible,Nfpc---n,,,0.529,35239,63424,,no
 desoxirribonucleico,desoxirribonucleico,adj,0.413,63425,,Amsq--pn,,,,,63425,,no
 dietistas,dietista,nom,0.413,63426,,Nmpc---n,,,0.096,69427,63426,,no
 embarcan,embarcar,verb,0.413,63427,,Vip-3p0n,,,0.096,69607,63427,,no
@@ -99100,8 +99100,8 @@ terrícola,terrícola,nom,0.046,85107,,Nmsc---n,,,0.793,29092,85107,,no
 tipitapa,tipitapa,npropi,0.234,85108,,N--p---f,,,,,85108,,no
 tirofijo,tirofijo,npropi,0.234,85109,,N--p---f,,,,,85109,,no
 tolerarlo,tolerar,verb,0.234,85110,,V----v1n(lo),,,1.034,25202,85110,,no
-tontito,tontito,nom,0.124,85111,,Nmsc---n,,,1.611,19520,85111,,no
-tontito,tonto,adj,0.106,85111,,Amsq--pn,,,1.611,19520,85111,,no
+tontito,tontito,nom,0.124,85111,sensible,Nmsc---n,,,1.611,19520,85111,,no
+tontito,tonto,adj,0.106,85111,sensible,Amsq--pn,,,1.611,19520,85111,,no
 tornielli,tornielli,npropi,0.234,85112,,N--p---f,,,,,85112,,no
 trabuco,trabuco,nom,0.17,85113,,Nmsc---n,,,,,85113,,no
 trabuco,trabuco,npropi,0.062,85113,,N--p---f,,,,,85113,,no

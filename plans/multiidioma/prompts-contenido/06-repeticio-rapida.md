@@ -12,9 +12,9 @@ título "Prompt", lo que se pega en Cowork o en Codex.
   términos catalanes de segundo nivel de estructura-ca.md 3 y 4 ("Directes inicials (CV)", "Mixtes
   i finals (CVC)", "Dígrafs simples", "Travades amb r (CCV)", "Complexes (CCVC, VCC, CVCC)"; "m",
   "s sorda", "ll", "g/gu", "c/qu/k", "tx/ig"...). Describen solo el material objetivo, no el alivio.
-- **Excepción del experto** (resposta-estructura-ca.md 4): monosílabos muy frecuentes con coda
-  final simple (dent, pont, porc, serp, forn, guant, talp, llamp, cranc, tronc) son Level2, aunque
-  CVCC sea Level3. Se etiquetan como "Complexes (CCVC, VCC, CVCC)".
+- **Codas dobles en monosílabos** (dent, pont, porc, serp, gust, camp): Level3, como toda CVCC. La
+  excepción de Level2 del 2026-10-27 la retiró el grupo el 2026-10-29; en Level2 solo entran, como
+  excepción, els, al, als, del, dels, pel, pels y los plurales regulares en -ns y -ls (nens, pals).
 - **Level0, revisión del experto (2026-10-27)**: palabras concretas y familiares para un niño de
   5 años (sopa, nina, pila, pota, mapa, moto); sala y dona se retiraron del primer lote. La x es de
   Level1, así que xupa, que propuso el experto, no entra en Level0.
@@ -45,8 +45,8 @@ ritmo (repeticiones por segundo); no hay aciertos ni errores. Entregas un JSON q
    familiares para un niño de 5 años (mapa, sopa, nina, pila; no sala ni dona);
    Level1, resto de CV, inversas, mixtas CVC (gat, sol, nas), dígrafos simples (llet, pinya);
    Level2, trabadas CCV (pluja, cabra), CCVC (plat, tren, drac), dígrafos complejos (cotxe,
-   metge), monosílabos muy frecuentes con coda simple (dent, pont, porc, forn); Level3, CVCC y
-   VCC (temps, forts), hiatos (piano, lleó), ela geminada (col·legi), apóstrofos; desde Level4,
+   metge), plurales regulares en -ns y -ls (nens, pals); Level3, CVCC y VCC, también en
+   monosílabos (temps, forts, dent, pont), hiatos (piano, lleó), ela geminada (col·legi), apóstrofos; desde Level4,
    todas.
 4. Cada actividad trabaja **un grupo objetivo** (una estructura y, si procede, una sonoridad):
    "paraules amb ll i ny", "travades amb r". Se etiqueta ese grupo en esfuerzo (y sonoridad si
@@ -60,7 +60,7 @@ ritmo (repeticiones por segundo); no hay aciertos ni errores. Entregas un JSON q
 |---|---|---|---|
 | Level0 | 4 | 10 | Bisílabas CV muy frecuentes (mapa, mula, sopa, nina); el adulto modela la palabra antes |
 | Level1 | 5 (4 + 1 alivio) | 10 | CVC frecuentes (gat, sol, dit), dígrafos simples (llet, lluna, pinya) |
-| Level2 | 5 (4 + 1 alivio) | 10 | Trabadas (pluja, cabra, tren), coda simple (dent, pont), dígrafos complejos (cotxe) |
+| Level2 | 5 (4 + 1 alivio) | 10 | Trabadas (pluja, cabra, tren), plurales en -ns y -ls (nens, pals), dígrafos complejos (cotxe) |
 | Level3 | 5 (4 + 1 alivio) | 15 | CVCC, hiatos, ela geminada, apóstrofos, 3 a 4 sílabas (temps, piano, col·legi, l’avió) |
 | Level4 a Level6 | 5 a 6 | 15 | 4 a 5 sílabas; una o dos pseudopalabras |
 | Level7 a Level10 | 6 | 20 | Polisílabas y vocabulario académico; dos pseudopalabras |

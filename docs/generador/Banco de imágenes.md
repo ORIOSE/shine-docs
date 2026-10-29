@@ -155,8 +155,8 @@ nombre de fichero del manifiesto.
   `ca`: `nombre` (singular, minúsculas, el más natural para un niño de 5 a 7 años), `articulo`
   (el, la, l'), `silabas` con el silabeo del IEC (los dígrafos tx, ix, ig, tg, tj, ss, rr y l·l se
   separan: cot-xe, cai-xa, col-le-gi; ny, ll, qu, gu van unidos: pi-nya, llu-na), `lectura` (nivel
-  lector catalán según la tabla 2.3 catalana del catálogo, con la excepción del experto: monosílabos
-  muy frecuentes con coda simple en L2, como dent, pont, porc), `etiquetas` (fon: sílaba inicial,
+  lector catalán según la tabla 2.3 catalana del catálogo; los monosílabos con coda doble, como
+  dent, pont o porc, son L3 desde el 2026-10-29), `etiquetas` (fon: sílaba inicial,
   espejo: letras b d p q, graf: dígrafos y grafías propias, sib: sibilante sorda o sonora),
   `usable` y, si hace falta, `nota`. **usable: false** marca las 9 imágenes que no se usan en
   catalán (el nombre coincide con el de otra imagen, tiene varias palabras o lleva guion); la

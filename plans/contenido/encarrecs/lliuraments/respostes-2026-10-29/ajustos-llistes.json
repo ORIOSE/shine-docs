@@ -1,5 +1,5 @@
 {
-  "_nota": "Ajustos de les llistes de vocabulari decidits pel grup d'experts el 2026-10-29 (respostes E01 a E04 d'aquesta carpeta). Els aplica shine/content/generadores/ajustos_llistes.py sobre shine/private/lexico/ després de cada regeneració. 'marca' es completa amb la separació malsonante/sensible (fitxer marques-*.tsv).",
+  "_nota": "Ajustos de les llistes de vocabulari decidits pel grup d'experts el 2026-10-29 (respostes E01 a E04 d'aquesta carpeta). Els aplica shine/content/generadores/ajustos_llistes.py sobre shine/private/lexico/ després de cada regeneració. 'marca' es completa amb la separació malsonante/sensible (fitxer marques-*.tsv). Marques dels mots dubtosos: resposta del grup del 2026-10-29 (respostes-2026-10-30/dubtes-oberts-resposta.md).",
   "es-general": {
     "font": "E01-resposta.md (criteris 5, 6 i 9)",
     "lema": {
@@ -36,7 +36,23 @@
       "varita": "vara",
       "vasito": "vaso"
     },
-    "marca": {}
+    "marca": {
+      "teta": "sensible",
+      "tetas": "sensible",
+      "tonto": "sensible",
+      "tonta": "sensible",
+      "tontos": "sensible",
+      "tontas": "sensible",
+      "tontito": "sensible",
+      "canalla": "sensible",
+      "canallas": "sensible",
+      "chusma": "sensible",
+      "gentuza": "sensible",
+      "desgraciado": "sensible",
+      "desgraciada": "sensible",
+      "desgraciados": "sensible",
+      "desgraciadas": "sensible"
+    }
   },
   "ca-general": {
     "font": "E02-resposta.md (criteris 2, 3, 5, 6 i 7)",
@@ -70,7 +86,29 @@
     "marca": {
       "podis": "",
       "xic": "",
-      "mos": "dialectal"
+      "mos": "dialectal",
+      "cul": "sensible",
+      "culs": "sensible",
+      "teta": "sensible",
+      "tetes": "sensible",
+      "carda": "malsonante",
+      "cardo": "malsonante",
+      "carden": "malsonante",
+      "cardem": "malsonante",
+      "cardat": "malsonante",
+      "cardar": "malsonante",
+      "polla": "malsonante",
+      "polles": "malsonante",
+      "tonto": "sensible",
+      "tonta": "sensible",
+      "tontos": "sensible",
+      "tontes": "sensible",
+      "desgraciat": "sensible",
+      "desgraciada": "sensible",
+      "desgraciats": "sensible",
+      "pixa": "malsonante",
+      "pitu": "",
+      "tita": ""
     }
   },
   "es-infantil": {

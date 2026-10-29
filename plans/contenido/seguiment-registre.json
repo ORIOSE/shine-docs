@@ -590,7 +590,8 @@
   {
    "origen": "E01-E02",
    "pregunta": "Malsonant, sensible o cap marca (no és si s'exclouen de les llistes, sinó on poden sortir): culo/cul, teta, polla/cardar, tonto/tonta, pedo, pixa/pitu/tita (pito ja no porta marca) i els despectius (canalla, chusma, gentuza, desgraciada)",
-   "estat": "enviat"
+   "estat": "tancat",
+   "resposta": "Resposta del 2026-10-29: culo, polla, cardar i pixa malsonants; cul, teta, tonto/tonta, canalla, chusma, gentuza i desgraciada sensibles; pedo, pitu i tita sense marca (respostes-2026-10-30/dubtes-oberts-resposta.md)."
   },
   {
    "origen": "E05-E06",
@@ -601,12 +602,14 @@
   {
    "origen": "Estructura",
    "pregunta": "Català, Level2: gust i camp (codes st i mp) eren a l'excepció de monosíl·labs freqüents (font, llamp), però la resposta del 2026-10-29 les posa a Level3. Quina val?",
-   "estat": "enviat"
+   "estat": "tancat",
+   "resposta": "Level3 (2026-10-29). A Level2 només els plurals regulars en -ns/-ls i les formes gramaticals: es retira l'excepció de monosíl·labs del 2026-10-27 (dent, pont, porc... a Level3)."
   },
   {
    "origen": "Estructura",
    "pregunta": "Català, Level2: al, del i pel també dins de l'excepció gramatical (aplicat per coherència amb als, dels i pels)?",
-   "estat": "enviat"
+   "estat": "tancat",
+   "resposta": "Aprovat (2026-10-29)."
   },
   {
    "origen": "Taxonomies",

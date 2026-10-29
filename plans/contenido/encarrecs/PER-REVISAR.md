@@ -72,7 +72,7 @@ articles i pronoms "els", "dels", "pels", "als" i els plurals en -ns i -ls de pa
 ## Preguntes noves després de la resposta del 2026-10-29
 
 1. **Mostres de 300 files (E01 a E04)**: **resolt (2026-10-29)**, revisades; les llistes queden acceptades.
-2. **Malsonant, sensible o cap marca**: el dubte no és si s'exclouen de les llistes (hi continuen), sinó quina marca porta cadascuna, perquè la marca decideix on pot sortir: malsonant, mai; sensible, només des de Level5 i amb revisió; cap marca, a qualsevol nivell, també a Level0. Aquest és el repartiment que hem fet; confirmeu-lo o canvieu-lo:
+2. **Malsonant, sensible o cap marca**: **resolt (2026-10-29)**, vegeu `lliuraments/respostes-2026-10-30/dubtes-oberts-resposta.md` (cul, teta, tonto, canalla, chusma, gentuza i desgraciada, sensibles; pixa, malsonant; pitu i tita, sense marca; la resta, com ara). Pregunta original: el dubte no és si s'exclouen de les llistes (hi continuen), sinó quina marca porta cadascuna, perquè la marca decideix on pot sortir: malsonant, mai; sensible, només des de Level5 i amb revisió; cap marca, a qualsevol nivell, també a Level0. Aquest és el repartiment que hem fet; confirmeu-lo o canvieu-lo:
 
    | Paraula | Marca actual | Dubte |
    |---|---|---|
@@ -88,6 +88,6 @@ articles i pronoms "els", "dels", "pels", "als" i els plurals en -ns i -ls de pa
 
 3. **Accent de les pseudoparaules (E05)**: **resolt (2026-10-29)**, l'accent només quan el demana la regla general (brasún sí, trumidal no).
 4. **Coda catalana a Level2**: **resolt (2026-10-29)**, els, dels, pels, als i els plurals regulars en -ns i -ls d'una base de Level1 o Level2 entren a Level2; les codes d'arrel (text, verd, disc) es queden a Level3. Dos aclariments:
-   - La resposta posa "gust" i "camp" a Level3, però l'excepció aprovada el 2026-10-27 (monosíl·labs molt freqüents amb coda final simple) inclou les codes st i mp (font, llamp). Quina val per a gust i camp? Mentre no respongueu, mantenim l'excepció del 2026-10-27 (Level2).
-   - Hem aplicat la mateixa excepció a al, del i pel, per coherència amb als, dels i pels. D'acord?
+   - "gust" i "camp": **resolt (2026-10-29)**, Level3. A Level2 les úniques excepcions de coda són els plurals regulars i les formes gramaticals, de manera que es retira l'excepció de monosíl·labs del 2026-10-27 (dent, pont, porc i la resta passen a Level3).
+   - al, del i pel a Level2: **resolt (2026-10-29)**, aprovat.
 5. **Tanda 2**: la resposta diu que queden validats tots els lots de Level0 a Level10. Només existeixen i s'han revisat Level0 a Level2; la tanda 3 (Level3) serà la propera revisió.

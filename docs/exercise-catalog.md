@@ -150,8 +150,8 @@ columnas se leen igual que en la tabla castellana (máximos, no mínimos).
 |---|---|---|---|---|---|---|
 | Level0 | V y CV con m, p, l, s, t, n, d | 1 a 2 | 500 más frecuentes | no aplica | no aplica | no aplica |
 | Level1 | Todas las CV (incluidas c/qu, g/gu, r/rr, ny, ll, ss), VC, CVC frecuentes (gat, pa, sol), diptongos simples | 1 a 3 | 1.000 | 3 a 5 | 35 a 80 | 30 a 50 |
-| Level2 | + CCV con l y r, CCVC, dígrafos tx, ig, tg, tj, gue/gui, güe/güi, qüe/qüi (que y qui ya en Level1), monosílabos muy frecuentes con coda final simple (dent, pont, porc, serp) | 2 a 3 | 2.000 | 4 a 6 | 35 a 80 | 50 a 70 |
-| Level3 | + VCC y CVCC (ins, cons, trans, forts, temps), ela geminada (l·l), apóstrofo (l’, d’) y contracciones, hiatos | 3 a 4 | 3.000 | 6 a 8 | 35 a 80 | 70 a 90 |
+| Level2 | + CCV con l y r, CCVC, dígrafos tx, ig, tg, tj, gue/gui, güe/güi, qüe/qüi (que y qui ya en Level1), y como únicas excepciones de coda els, al, als, del, dels, pel, pels y los plurales regulares en -ns y -ls (nens, pans) | 2 a 3 | 2.000 | 4 a 6 | 35 a 80 | 50 a 70 |
+| Level3 | + VCC y CVCC, también en monosílabos (ins, trans, forts, temps, dent, porc, gust, camp), ela geminada (l·l), apóstrofo (l’, d’) y contracciones, hiatos | 3 a 4 | 3.000 | 6 a 8 | 35 a 80 | 70 a 90 |
 | Level4 | Todas (incluidos los pronombres débiles simples) | 3 a 4 | 5.000 | 7 a 10 | 35 a 80 | 90 a 110 |
 | Level5 | Todas | 3 a 5 | 7.000 | 8 a 12 | 35 a 80 | 100 a 120 |
 | Level6 | Todas | 4 a 5 | 10.000 | 10 a 14 | 35 a 80 | 110 a 130 |
@@ -180,10 +180,11 @@ plans/multiidioma/resposta-estructura-ca.md):
 - **que y qui en Level1** (grupo c/qu de "Directes resta") y gue/gui, güe/güi, qüe/qüi en Level2. La
   tabla 2.3 del experto ponía "gu/qu + e/i" en Level2; su apartado 7 ponía c/qu y g/gu en Level1.
   Coincide con el castellano (c/qu en Level1, gue/gui en Level2).
-- **Monosílabos muy frecuentes con coda final simple en Level2** (dent, pont, porc, serp, forn,
-  guant, talp, llamp, cranc, tronc, y los verbos surt y dorm, añadidos por el experto el
-  2026-10-27 con la coda rm). En castellano las CVCC van siempre a Level3; en catalán se
-  reserva Level3 para plurisílabas y codas menos frecuentes (forts, temps, parcs, trans).
+- **Monosílabos con coda doble en Level3** (dent, pont, porc, serp, forn, guant, talp, llamp,
+  cranc, tronc, gust, camp; verbos surt y dorm). La excepción de Level2 que el experto propuso el
+  2026-10-27 quedó retirada por el grupo el 2026-10-29: las codas dobles de raíz (-nt, -rt, -st,
+  -mp, -rc...) son Level3 también en monosílabos, como en castellano, y en Level2 solo quedan la
+  excepción gramatical y morfológica del punto siguiente.
 - **Excepción gramatical y morfológica en Level2** (grupo de expertos, 2026-10-29): els, al, als,
   del, dels, pel y pels, imprescindibles para escribir frases en plural con sintaxis natural, y los
   plurales regulares en -ns y -ls de una base de Level1 o Level2 (nens, pans, trens, pals, galls):
@@ -435,9 +436,8 @@ el experto el 2026-10-26):
 | Directes resta (CV), Inverses (VC), Mixtes i finals (CVC), Dígrafs simples | Level1 | gat, pa, sol, cap, nyap, lluna; que, qui |
 | Travades amb l (CCV), Travades amb r (CCV), Dígrafs complexos | Level2 | pla, bra, tren, cotxe, metge; gue, gui, güe, güi, qüe, qüi |
 | Complexes (CCVC, VCC, CVCC): CCVC | Level2 | plat, tren, drac |
-| Complexes (CCVC, VCC, CVCC): VCC y CVCC | Level3 | temps, forts, trans, ins, verd, text, disc |
+| Complexes (CCVC, VCC, CVCC): VCC y CVCC, también en monosílabos | Level3 | temps, forts, trans, ins, verd, text, disc, dent, porc, gust, camp (2026-10-29) |
 | Hiats | Level3 | piano, lleó, país, riure (término del 2026-10-29) |
-| Complexes: monosílabos muy frecuentes con coda final simple (nt, rt, rm, st, mp, rc, rp, rn, lp, nc) | Level2 | dent, pont, font, porc, serp, forn, guant, talp, llamp, cranc, tronc; verbs surt, dorm |
 | Excepción gramatical y morfológica: els, al, als, del, dels, pel, pels y plurales regulares en -ns y -ls de una base de Level1 o Level2 | Level2 | els nens, el pa dels avis, pans, trens, pals, galls (grupo de expertos, 2026-10-29) |
 | Ela geminada (l·l), Apostrofació i contraccions | Level3 | col·legi, l’avi, d’un |
 | Mirall, rotacions y Grafies diacrítiques i especials | Cualquiera | Transversal; en la matriz (6.1) lo fija la tabla del tipo |
@@ -1122,8 +1122,8 @@ y caracol, cargol; bolso y bolsa, bossa: de cada pareja queda usable una sola im
 palabras o con guion (gall dindi, blat de moro, arc de Sant Martí, gira-sol, io-io). Parejas y
 pares mínimos nuevos del catalán, para los niveles altos y nunca para los bajos: gat, got y gos;
 llit y llet; gerro y gerra; tapa y tap; ós y os; sal y sol; cap, capa y copa. El nivel lector de la
-pregunta es el catalán (`lectura` del bloque ca, con la excepción de los monosílabos con coda simple
-en L2: dent, pont, porc): en Level1 solo nombres con lectura L0 o L1 en catalán. **En Level0 solo
+pregunta es el catalán (`lectura` del bloque ca; los monosílabos con coda doble, como dent, pont o porc, son L3 desde
+el 2026-10-29): en Level1 solo nombres con lectura L0 o L1 en catalán. **En Level0 solo
 monosílabos (pa, pi, sol, nen) o bisílabos de sílabas abiertas simples (pila, sopa, boca)**, sin
 dígrafos, grupos consonánticos ni diptongos, en los dos idiomas (revisión del experto, 2026-10-27:
 el primer lote metía taronja y cirera, de tres sílabas, porque el generador aceptaba lectura L1

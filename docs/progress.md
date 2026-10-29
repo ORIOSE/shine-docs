@@ -1901,6 +1901,18 @@ experto revisa todo, no hay otro entorno de producción).
   copias de base de datos. `_revision` y `__pycache__` dejan de estar en el git de Drupal. Mapa y
   cómo recrear los enlaces en `dades-privades/README.md`. Comprobado: lexico.py, la fusión de
   imágenes, etiquetar_lote y el dry-run del importador funcionan a través de los enlaces.
+- [x] **Últimas dudas del grupo cerradas (2026-10-29)**: respuesta en
+  `plans/contenido/encarrecs/lliuraments/respostes-2026-10-30/dubtes-oberts-resposta.md`. Marcas de
+  las listas (`ajustos-llistes.json` + `ajustos_llistes.py`): cul, teta, tonto/tonta (también en
+  castellano), canalla, chusma, gentuza y desgraciado/desgraciat, sensibles; pixa y todas las formas
+  de cardar, malsonantes; pitu y tita, sin marca. Catalán: se retira la excepción de Level2 de
+  monosílabos con coda doble (2026-10-27); en `estructura.py` Level2 solo admite las formas
+  gramaticales (els, al, als, del, dels, pel, pels) y los plurales regulares en -ns y -ls; dent, pont,
+  porc, gust, camp... son Level3. Recalculados `estructura_min` de `ca-infantil.csv` (72 palabras) y
+  la `lectura` catalana de 12 imágenes del manifiesto. Corregidas REP-CA-L02-VEL-003 (nens, pals en
+  lugar de dent, pont; summary de prueba borrado) e IMG-L02-MEM-004 (pantera y libro en lugar de topo
+  y concha). Catálogo, taxonomía y guía catalanas, banco de imágenes, estructura-ca y prompt 06
+  actualizados.
 - Pendiente (siguiente): tirada de imágenes del 2026-10-30 (fusión, import-images, posición de
   imágenes de Level9 y Level10, ya aprobada); Funcions Executives de 3 a 6 por celda.
 

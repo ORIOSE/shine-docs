@@ -2631,7 +2631,7 @@ coalició,coalició,nom,30.9,2629,,ud,26.024,3117,,sí,sí
 comuns,comú,adj,30.9,2630,,ud,12.765,5788,,sí,sí
 condemnat,condemnar,verb,30.9,2631,,ud,24.057,3347,,sí,sí
 consultar,consultar,verb,30.9,2632,,ud,19.943,3971,,sí,sí
-cul,cul,nom,30.9,2633,malsonante,ud,46.845,1797,,sí,sí
+cul,cul,nom,30.9,2633,sensible,ud,46.845,1797,,sí,sí
 definició,definició,nom,30.9,2634,,ud,21.354,3735,,sí,sí
 desprès,desprendre,verb,30.9,2635,,ud,4.098,13544,,sí,sí
 destruir,destruir,verb,30.9,2636,,ud,24.99,3244,,sí,sí
@@ -13133,7 +13133,7 @@ tanquem,tancar,verb,3.55,13136,,diccionari,1.708,24116,,sí,sí
 tiradors,tirador,nom,3.55,13137,,ud,1.465,26461,,sí,sí
 tirà,tirar,verb,3.55,13138,,diccionari,8.659,7895,,sí,sí
 titula,titular,verb,3.55,13139,,ud,2.022,21801,,sí,sí
-tonto,tonto,adj,3.55,13140,,ud+opus,1.52,25903,,sí,sí
+tonto,tonto,adj,3.55,13140,sensible,ud+opus,1.52,25903,,sí,sí
 trobaria,trobar,verb,3.55,13141,,diccionari,20.868,3816,,sí,sí
 tèrmic,tèrmic,adj,3.55,13142,,ud,1.685,24293,,sí,sí
 uniformes,uniforme,nom,3.55,13143,,diccionari+opus,7.719,8615,,sí,sí
@@ -13371,7 +13371,7 @@ daus,dau,nom,3.39,13374,,diccionari,4.772,12185,,sí,sí
 declaren,declarar,verb,3.39,13375,,ud,1.889,22697,,sí,sí
 decència,decència,nom,3.39,13376,,diccionari,2.993,16858,,sí,sí
 degustació,degustació,nom,3.39,13377,,ud,0.572,43701,,sí,sí
-desgraciat,desgraciat,adj,3.39,13378,,diccionari,15.524,4923,,sí,sí
+desgraciat,desgraciat,adj,3.39,13378,sensible,diccionari,15.524,4923,,sí,sí
 despatxos,despatx,nom,3.39,13379,,ud,5.227,11397,,sí,sí
 dissidents,dissident,adj,3.39,13380,,ud,2.327,19951,,sí,sí
 dublín,dublín,npropi,3.39,13382,,ud,,,,sí,sí
@@ -15988,7 +15988,7 @@ tenerife,tenerife,npropi,2.51,15997,,ud,,,,sí,sí
 teules,teula,nom,2.51,15998,,diccionari,3.558,15010,,sí,sí
 titulació,titulació,nom,2.51,15999,,ud,1.747,23807,,sí,sí
 todd,todd,npropi,2.51,16000,,ud,,,,sí,sí
-tonta,tonto,adj,2.51,16001,,diccionari+opus,1.591,25107,,sí,sí
+tonta,tonto,adj,2.51,16001,sensible,diccionari+opus,1.591,25107,,sí,sí
 toquem,tocar,verb,2.51,16002,,ud+opus,2.077,21413,,sí,sí
 trair,trair,verb,2.51,16003,,ud,7.617,8690,,sí,sí
 trames,trama,nom,2.51,16004,,diccionari,1.027,32297,,sí,sí
@@ -17141,11 +17141,11 @@ controvertida,controvertit,adj,2.19,17150,,ud,1.16,30146,,sí,sí
 crancs,cranc,nom,2.19,17151,,diccionari,2.468,19170,,sí,sí
 crispetes,crispeta,nom,2.19,17152,,ud,1.262,28830,,sí,sí
 cristo,cristo,nom,2.19,17153,,diccionari,2.625,18404,,sí,sí
-culs,cul,nom,2.19,17154,,diccionari,2.1,21248,,sí,sí
+culs,cul,nom,2.19,17154,sensible,diccionari,2.1,21248,,sí,sí
 dau,dau,nom,2.19,17155,,ud+opus,3.017,16765,,sí,sí
 degradat,degradar,verb,2.19,17156,,ud,1.528,25752,,sí,sí
 deportivo,deportivo,npropi,2.19,17157,,ud,,,,no,sí
-desgraciats,desgraciat,adj,2.19,17158,,diccionari,5.556,10924,,sí,sí
+desgraciats,desgraciat,adj,2.19,17158,sensible,diccionari,5.556,10924,,sí,sí
 detecten,detectar,verb,2.19,17159,,diccionari,1.144,30454,,sí,sí
 direu,dir,verb,2.19,17160,,diccionari,4.38,12910,,sí,sí
 dissenya,dissenyar,verb,2.19,17161,,ud,0.588,43074,,sí,sí
@@ -18803,7 +18803,7 @@ talibans,talibà,adj,1.86,18816,,diccionari,2.453,19232,,sí,sí
 tanqui,tancar,verb,1.86,18817,,ud,3.001,16818,,sí,sí
 telecomunicació,telecomunicació,nom,1.86,18818,,ud,0.603,42504,,sí,sí
 tessalònica,tessalònica,npropi,1.86,18819,,diccionari,,,,sí,sí
-tetes,teta,nom,1.86,18820,malsonante,diccionari,0.838,36041,,sí,sí
+tetes,teta,nom,1.86,18820,sensible,diccionari,0.838,36041,,sí,sí
 tigres,tigre,nom,1.86,18821,,diccionari,2.155,20910,,sí,sí
 tivissa,tivissa,npropi,1.86,18822,,diccionari,,,,sí,sí
 toquin,tocar,verb,1.86,18823,,ud,1.473,26319,,sí,sí
@@ -26406,7 +26406,7 @@ calatayud,calatayud,npropi,0.912,26424,,diccionari,,,,sí,sí
 campa,campar,verb,0.912,26425,,diccionari,0.752,38195,,sí,sí
 cançoner,cançoner,nom,0.912,26426,,diccionari+opus,1.528,25768,,sí,sí
 capil·lar,capil·lar,adj,0.912,26427,,diccionari,0.76,37999,,sí,sí
-carda,cardar,verb,0.912,26428,,diccionari,0.58,43349,,sí,sí
+carda,cardar,verb,0.912,26428,malsonante,diccionari,0.58,43349,,sí,sí
 carmelites,carmelita,nom,0.912,26429,,ud+opus,0.94,33956,,sí,sí
 carrefour,carrefour,npropi,0.912,26430,,ud,,,,sí,sí
 cavernes,caverna,nom,0.912,26431,,diccionari,4.302,13081,,sí,sí
@@ -26622,7 +26622,7 @@ taüts,taüt,nom,0.912,26640,,diccionari,2.061,21492,,sí,sí
 tendrà,tenir,verb,0.912,26641,dialectal,diccionari,0.415,50831,,sí,sí
 terminacions,terminació,nom,0.912,26642,,diccionari,0.572,43629,,sí,sí
 terrorífic,terrorífic,adj,0.912,26643,,diccionari,2.03,21738,,sí,sí
-teta,teta,nom,0.912,26644,malsonante,diccionari,0.478,47746,,sí,sí
+teta,teta,nom,0.912,26644,sensible,diccionari,0.478,47746,,sí,sí
 teula,teula,nom,0.912,26645,,diccionari,1.144,30468,,sí,sí
 tiffany,tiffany,npropi,0.912,26646,,diccionari,,,,sí,sí
 tornaríem,tornar,verb,0.912,26647,,diccionari,2.022,21772,,sí,sí
@@ -28760,7 +28760,7 @@ tallo,tallar,verb,0.776,28778,,diccionari,1.222,29307,,sí,sí
 tas,tas,nom,0.776,28779,,diccionari,0.478,47801,,sí,sí
 terciari,terciari,adj,0.776,28780,,ud,3.628,14793,,sí,sí
 tomaca,tomaca,nom,0.776,28781,dialectal,diccionari,0.298,58929,,sí,sí
-tontos,tonto,nom,0.776,28782,,ud,0.306,58197,,sí,sí
+tontos,tonto,nom,0.776,28782,sensible,ud,0.306,58197,,sí,sí
 tortell,tortell,nom,0.776,28783,,ud+opus,0.956,33674,,sí,sí
 triarà,triar,verb,0.776,28784,,diccionari,0.713,39338,,sí,sí
 truco,trucar,verb,0.776,28785,,diccionari,5.407,11138,,sí,sí
@@ -31486,7 +31486,7 @@ pianos,piano,nom,0.631,31506,,diccionari,1.019,32404,,sí,sí
 picazo,picazo,npropi,0.631,31507,,diccionari,,,,sí,sí
 pip,pipar,verb,0.631,31508,,diccionari,1.199,29602,,sí,sí
 pistons,pistó,nom,0.631,31509,,diccionari,0.799,37022,,sí,sí
-pixa,pixar,verb,0.631,31510,sensible,diccionari,1.183,29907,,sí,sí
+pixa,pixar,verb,0.631,31510,malsonante,diccionari,1.183,29907,,sí,sí
 planoles,planoles,npropi,0.631,31511,,diccionari,,,,sí,sí
 polly,polly,npropi,0.631,31512,,diccionari,,,,sí,sí
 primordials,primordial,adj,0.631,31513,,ud,1.332,27951,,sí,sí
@@ -32942,7 +32942,7 @@ depuradores,depuradora,nom,0.562,32963,,ud,0.76,37929,,sí,sí
 desamortització,desamortització,nom,0.562,32964,,diccionari,1.669,24392,,sí,sí
 descarto,descartar,verb,0.562,32965,,diccionari,0.65,41080,,sí,sí
 desenvoluparen,desenvolupar,verb,0.562,32966,,diccionari,1.136,30537,,sí,sí
-desgraciada,desgraciat,adj,0.562,32967,,diccionari,6.919,9309,,sí,sí
+desgraciada,desgraciat,adj,0.562,32967,sensible,diccionari,6.919,9309,,sí,sí
 desmentit,desmentir,verb,0.562,32968,,ud,0.964,33552,,sí,sí
 desperdici,desperdici,nom,0.562,32969,,diccionari,0.039,128057,,sí,sí
 diglòssia,diglòssia,nom,0.562,32970,,diccionari,0.259,62559,,sí,sí
@@ -33071,7 +33071,7 @@ percebuda,percebre,verb,0.562,33092,,ud,0.909,34603,,sí,sí
 perdonin,perdonar,verb,0.562,33093,,diccionari,1.458,26481,,sí,sí
 perseguien,perseguir,verb,0.562,33094,,diccionari,3.667,14676,,sí,sí
 pirotècnics,pirotècnic,adj,0.562,33095,,diccionari,0.243,64418,,sí,sí
-pitu,pitu,nom,0.562,33096,sensible,opus,,,,no,sí
+pitu,pitu,nom,0.562,33096,,opus,,,,no,sí
 plantegi,plantejar,verb,0.562,33097,,ud,0.893,34926,,sí,sí
 plegable,plegable,adj,0.562,33098,,diccionari,2.233,20425,,sí,sí
 poltrona,poltrona,nom,0.562,33099,,ud+opus,2.343,19866,,sí,sí
@@ -33137,7 +33137,7 @@ tera,tera,nom,0.562,33158,,diccionari,0.29,59553,,sí,sí
 terminator,terminator,npropi,0.562,33159,,opus,,,,no,sí
 tietes,tieta,nom,0.562,33160,,diccionari,1.105,31075,,sí,sí
 timpà,timpà,nom,0.562,33161,,ud,1.544,25634,,sí,sí
-tita,tita,nom,0.562,33162,sensible,diccionari,1.215,29405,,sí,sí
+tita,tita,nom,0.562,33162,,diccionari,1.215,29405,,sí,sí
 torino,torino,npropi,0.562,33163,,diccionari,,,,sí,sí
 torroja,torroja,npropi,0.562,33164,,ud,,,,sí,sí
 transmissors,transmissor,adj,0.562,33165,,diccionari,0.737,38516,,sí,sí
@@ -33497,7 +33497,7 @@ tdr,tdr,npropi,0.55,33518,,ud,,,,sí,no
 teodor,teodor,npropi,0.55,33519,,diccionari,,,,sí,no
 terrier,terrier,adj,0.55,33520,,diccionari,1.356,27658,,sí,no
 tinguessis,tenir,verb,0.55,33521,,diccionari,3.801,14299,,sí,no
-tontes,tonto,nom,0.55,33522,,diccionari,0.11,86834,,sí,no
+tontes,tonto,nom,0.55,33522,sensible,diccionari,0.11,86834,,sí,no
 totxos,totxo,nom,0.55,33523,,diccionari,1.881,22777,,sí,no
 transcendents,transcendent,adj,0.55,33524,,diccionari,1.011,32588,,sí,no
 transfronterer,transfronterer,adj,0.55,33525,,ud,0.259,62091,,sí,no
@@ -38176,7 +38176,7 @@ calça,calçar,verb,0.389,38197,,ud,1.889,22701,,sí,no
 canberra,canberra,npropi,0.389,38198,,diccionari,,,,sí,no
 cantàbric,cantàbric,adj,0.389,38199,,diccionari,0.47,48094,,sí,no
 carbonet,carbonet,nom,0.389,38200,,diccionari,0.846,35951,,sí,no
-cardo,cardar,verb,0.389,38201,,diccionari,0.415,50798,,sí,no
+cardo,cardar,verb,0.389,38201,malsonante,diccionari,0.415,50798,,sí,no
 carlyle,carlyle,npropi,0.389,38202,,diccionari,,,,sí,no
 carrió,carrió,npropi,0.389,38203,,diccionari,,,,sí,no
 cavalleries,cavalleria,nom,0.389,38204,,diccionari,1.779,23546,,sí,no
@@ -41482,7 +41482,7 @@ cambril,cambril,nom,0.309,41503,,diccionari,0.956,33612,,sí,no
 candelera,candelera,npropi,0.309,41504,,ud,0.674,40508,,sí,no
 caníbals,caníbal,adj,0.309,41505,,diccionari,1.042,32040,,sí,no
 caracteritzades,caracteritzar,verb,0.309,41506,,diccionari,0.744,38410,,sí,no
-carden,cardar,verb,0.309,41507,,diccionari,0.212,67700,,sí,no
+carden,cardar,verb,0.309,41507,malsonante,diccionari,0.212,67700,,sí,no
 carenat,carenar,verb,0.309,41508,,diccionari,0.125,83174,,sí,no
 carga,carga,nom,0.309,41509,,diccionari,0.36,53889,,sí,no
 carver,carver,npropi,0.309,41510,,diccionari,,,,sí,no
