@@ -184,6 +184,12 @@ plans/multiidioma/resposta-estructura-ca.md):
   guant, talp, llamp, cranc, tronc, y los verbos surt y dorm, añadidos por el experto el
   2026-10-27 con la coda rm). En castellano las CVCC van siempre a Level3; en catalán se
   reserva Level3 para plurisílabas y codas menos frecuentes (forts, temps, parcs, trans).
+- **Excepción gramatical y morfológica en Level2** (grupo de expertos, 2026-10-29): els, al, als,
+  del, dels, pel y pels, imprescindibles para escribir frases en plural con sintaxis natural, y los
+  plurales regulares en -ns y -ls de una base de Level1 o Level2 (nens, pans, trens, pals, galls):
+  el niño aplica una flexión transparente, no decodifica una coda de raíz. Las codas complejas de
+  raíz (text, verd, disc) siguen en Level3, y los apóstrofos y las contracciones siguen siendo la
+  dificultad que se trabaja desde Level3.
 - **Silabeo con dígrafos separados**: tx, ix, ig, tg, tj, ss, rr y l·l se parten entre sílabas
   (cot-xe, cai-xa, met-ge, tas-sa, car-ro, col-le-gi), como manda el IEC. En castellano ch, ll y
   rr van unidos (co-che, ca-lle, pe-rro).
@@ -369,14 +375,24 @@ recoge la justificación clínica de cada grupo.
 
 | Vocabulario (vid) | Campo | Grupos (primer nivel) | Términos concretos (segundo nivel) |
 |---|---|---|---|
-| Sonority (sonority) | field_sonority | Consonantes continuas | m, l, s, f, n, r, j |
+| Sonority (sonority) | field_sonority | Consonantes continuas | m, l, s, f, n, r, j, ñ (2026-10-29) |
 | | | Consonantes oclusivas | p, t, b, d, c, k, q, g, ch |
 | | | Oposición sorda/sonora | p/b, t/d, k/g, f/v |
-| | | Inconsistencias grafema-fonema | s/z/c, k/q/c, ll/y, g/j |
+| | | Inconsistencias grafema-fonema | s/z/c, k/q/c, ll/y, g/j, b/v, h muda, r/rr (2026-10-29) |
 | Decoding effort (decoding_effort) | field_decoding_effort | Esfuerzo bajo | Vocal aislada (V), Directas iniciales (CV) |
 | | | Esfuerzo medio | Directas resto (CV), Inversas (VC), Mixtas (CVC) |
-| | | Esfuerzo alto estructural | Trabadas con l (CCV), Trabadas con r (CCV), Complejas (CCVC, VCC, CVCC) |
+| | | Esfuerzo alto estructural | Trabadas con l (CCV), Trabadas con r (CCV), Complejas (CCVC, VCC, CVCC), Hiatos (desde el 2026-10-29) |
 | | | Esfuerzo alto perceptivo | Espejo b-d, Espejo p-q, Espejo b-p, Espejo d-q, Rotación n-u, Rotación m-w |
+| | | Esfuerzo morfológico y léxico (2026-10-29) | Polisílabas (4 o más sílabas), Palabras compuestas, Derivadas (prefijos y sufijos), Pronombres átonos, Homófonos y parónimos |
+
+**Agrupar por sonoridad y por dificultad** (indicación del usuario, 2026-10-29): siempre que el
+tipo lo permita, el material de trabajo de una actividad se agrupa en torno a un término de
+sonoridad (un grupo fonético: p/b, s/z/c, ny, tg/tj...) y a uno de esfuerzo, y la actividad lleva
+los dos. Si falta un término, se añade a `scripts/phonology-terms.{es,ca}.json` y se crea con
+`create-phonology-terms.php`; el grupo de expertos lo valida en la siguiente revisión. El grupo
+"Esfuerzo morfológico y léxico" (catalán: "Esforç morfològic i lèxic") cubre la dificultad de
+Level4 en adelante; "Polisílabas" lo calcula `estructura.activity_effort` (la mitad o más de las
+palabras con 4 o más sílabas), los otros cuatro los pone quien escribe el lote.
 
 Cada término lleva en su descripción las letras, sílabas de ejemplo y el motivo clínico. Respecto
 al resumen JSON del documento de origen, el tramo perceptivo se desglosa por pares (el JSON no
@@ -406,6 +422,7 @@ no lee estos campos. Para el generador de contenido, el nivel mínimo en que apa
 | Directas resto (CV), Inversas (VC), Mixtas (CVC) | Level1 |
 | Trabadas con l (CCV), Trabadas con r (CCV) | Level2 |
 | Complejas (CCVC, VCC, CVCC) | Level2 para CCVC, Level3 para VCC y CVCC |
+| Hiatos | Level3 (término añadido por el grupo en la revisión de la tanda 3, 2026-10-29; en catalán, Hiats). Solo etiqueta la actividad si al menos un tercio de sus palabras tienen hiato (revisión de la tanda 5) |
 | Espejo y rotaciones | Cualquiera: el esfuerzo perceptivo no depende de la estructura. En la matriz (6.1) lo fija la tabla del tipo. |
 
 **Nivel mínimo por estructura (catalán).** Para el contenido catalán, con los términos de
@@ -418,8 +435,10 @@ el experto el 2026-10-26):
 | Directes resta (CV), Inverses (VC), Mixtes i finals (CVC), Dígrafs simples | Level1 | gat, pa, sol, cap, nyap, lluna; que, qui |
 | Travades amb l (CCV), Travades amb r (CCV), Dígrafs complexos | Level2 | pla, bra, tren, cotxe, metge; gue, gui, güe, güi, qüe, qüi |
 | Complexes (CCVC, VCC, CVCC): CCVC | Level2 | plat, tren, drac |
-| Complexes (CCVC, VCC, CVCC): VCC y CVCC | Level3 | temps, forts, trans, ins |
+| Complexes (CCVC, VCC, CVCC): VCC y CVCC | Level3 | temps, forts, trans, ins, verd, text, disc |
+| Hiats | Level3 | piano, lleó, país, riure (término del 2026-10-29) |
 | Complexes: monosílabos muy frecuentes con coda final simple (nt, rt, rm, st, mp, rc, rp, rn, lp, nc) | Level2 | dent, pont, font, porc, serp, forn, guant, talp, llamp, cranc, tronc; verbs surt, dorm |
+| Excepción gramatical y morfológica: els, al, als, del, dels, pel, pels y plurales regulares en -ns y -ls de una base de Level1 o Level2 | Level2 | els nens, el pa dels avis, pans, trens, pals, galls (grupo de expertos, 2026-10-29) |
 | Ela geminada (l·l), Apostrofació i contraccions | Level3 | col·legi, l’avi, d’un |
 | Mirall, rotacions y Grafies diacrítiques i especials | Cualquiera | Transversal; en la matriz (6.1) lo fija la tabla del tipo |
 
@@ -852,6 +871,14 @@ estadísticas).
 - Índice de legibilidad para el español (Fernández Huerta o Szigriszt-Pazos con la escala INFLESZ)
   como control adicional, con umbrales por nivel calibrados con los primeros lotes revisados.
 - Tema apto para la edad, sin contenidos sensibles.
+- Tiempos verbales del nivel (solo presente en Level1 y Level2; pasados desde Level3; futuro y
+  condicional desde Level4; subjuntivo desde Level5), comprobados por la puerta léxica
+  (`lexico.py`, `tense_check`, también en segmentación).
+- Guía editorial aprobada por el grupo el 2026-10-29 (E11, plans/contenido/encarrecs/lliuraments/
+  E11-guia-editorial-es.md y -ca.md): temas por edad y excluidos, la mitad de los textos de Level0 a
+  Level3 neutros de edad, cuotas de género y familia, diálogo por nivel (ninguno en Level1 y Level2,
+  dos intervenciones en Level3 y Level4, cuatro como mucho desde Level5), números en letras y signos
+  por nivel.
 
 **Cómo generarlo.** Redacción asistida: se construye la petición al modelo con los parámetros del
 nivel (palabras, frase media, estructuras admitidas, rango de frecuencia, tema), se valida el
@@ -1241,6 +1268,27 @@ filas, 45 s, 7 objetivos (en negrita):
 | Fila 7 | q | p | g | b | **d** | q |
 
 Distractores: b aparece 10 veces, q 10, p 8 y g 7.
+
+**Matriz con regla (FASE 19, Funciones Ejecutivas y Atención).** Misma mecánica y mismo bundle;
+el niño toca solo las celdas que cumplen una regla, y las que se parecen al objetivo sin cumplirla
+son **cebos** (comisión impulsiva). Plan, familias y parámetros por nivel en
+`plans/funcions-executives/README.md`; código `MAT-XX-Lnn-ATE-nnn`, área principal Funciones
+Ejecutivas y Atención. En el lote, `contenido` lleva además:
+
+- `regla`: `{"tipo": "r1"}` (clave de fila: la primera columna es la clave y no se toca; sin
+  `objetivo`), `{"tipo": "r2" | "r3", "contexto": "a"}` (después de / menos después de, con
+  `objetivo` = una sola celda), o `{"tipo": "r4", "filas": {"clara": {"objetivo": "s"}, "oscura":
+  {"objetivo": "m"}}}` (alternancia: filas pares claras, impares oscuras; cada clase admite
+  `contexto` para la r2 dentro de la clase de Level10). `"oculta": true` en Level9 y Level10.
+- `objetivos_por_ronda` y `cebos_por_ronda`, obligatorios: el importador clasifica las celdas con
+  la regla (`MatrixRule`, solo dentro de la fila, sin distinguir mayúsculas), rechaza la ronda si
+  los recuentos no coinciden, si una fila empieza con el objetivo justo después de otra que acaba
+  con el contexto o si la actividad tiene menos de 5 objetivos en total, y guarda los índices en
+  `field_target_cells` y `field_lure_cells` (uno por ronda, como `field_cells`).
+- Nodo: `field_rule` (r1 a r4), `field_rule_params` (JSON de la regla canónica, entra en la
+  huella), `field_target` con lo que se busca ("p"; en r1, las claves; en r4, "s, m"). Log y
+  summary: `field_lure_marks`. El freno por aciertos usa (encontrados − cebos) / objetivos.
+- Sin `regla`, la matriz es la de siempre y `cebos_por_ronda` es un error.
 
 ### 6.2 Reordenamiento de sílabas (prompt 13b, node activity_syllable_order)
 

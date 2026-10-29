@@ -123,7 +123,8 @@ la web.
 | Origen | Generadas con un modelo de imágenes (herramienta integrada image_gen de Cowork, modelo no expuesto; el manifiesto registra lote, fecha y posproceso). Revisadas una a una. Nombres castellano y catalán revisados por el experto. |
 | Ubicación | `shine/content/images/` y `manifest.json`; especificación en `docs/generador/Banco de imágenes.md`. |
 | Licencia | Contenido propio generado para el proyecto. **Pendiente**: confirmar las condiciones de uso comercial de la herramienta de generación. |
-| Lote 2 | 122 imágenes nuevas para Level9 y Level10 (encargo E09), mismo estilo y anclas; prompt en `docs/generador/Banco de imágenes - lote 2 (E09).md`, fichas en `shine/content/images/manifest-lote2.json`. Pendientes de generar (2026-10-29). |
+| Lote 2 | 122 imágenes nuevas para Level9 y Level10 (encargo E09), mismo estilo y anclas; prompt en `docs/generador/Banco de imágenes - lote 2 (E09).md`, fichas en `shine/content/images/manifest-lote2.json`. Generadas con la misma herramienta (lote `ampliacion122` del manifiesto, hojas de contacto en `_revision/ampliacion122/`); revisión visual de Claude (Anthropic), Opus, delegada por el usuario el 2026-10-29: 81 aceptadas e importadas, 5 por repetir, 16 descartadas por no usarse (`generadores/fusionar_ampliacion122.py`). |
+| Ejemplos de regla | Cuatro PNG de ejemplo de la matriz con regla (FASE 19) en `shine/content/images/explicaciones/`, dibujados con GD por `shine/scripts/rule-explanation-images.php` (formas geométricas, sin fuentes ni imágenes de terceros). |
 
 ## 4. Textos y lotes de actividades
 

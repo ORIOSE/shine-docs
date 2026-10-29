@@ -1,6 +1,7 @@
 # E11. Guía editorial de los textos (castellano)
 
-> Borrador redactado por el equipo (Claude, modelo Opus) el 2026-10-28 para que lo revise el grupo de expertos.
+> Redactada por el equipo (Claude, modelo Opus) el 2026-10-28. **Aprobada por el grupo de expertos el 2026-10-29**
+> (respostes-2026-10-29/E11-resposta.md) con los ajustes que recoge el apartado final; esta versión ya los incluye.
 
 **Ámbito.** Frases de segmentación y de lista de texto y textos de lectura en voz alta en
 castellano. Rige junto con lo ya decidido (E10): mandan la tabla 2.3 y la de nivel mínimo por
@@ -9,7 +10,7 @@ propios en el apartado 3. Franjas: 5 a 7 años = Level0 a Level2; 8 a 10 = Level
 12 = Level6 y Level7; 13 a 15 = Level8 a Level10.
 
 **Regla previa: nivel bajo no es lector pequeño.** El nivel es por área: un chico de 13 años con
-dislexia puede trabajar en Level1. Por eso, en Level0 a Level2, al menos la mitad de los textos de
+dislexia puede trabajar en Level1. Por eso, en Level0 a Level3, al menos la mitad de los textos de
 cada lote deben ser "neutros de edad": aceptables para un lector de 12 años (hechos sencillos sobre
 animales reales, cocina, deporte, viajes, oficios), sin diminutivos ni tono de cuento para bebés.
 
@@ -105,15 +106,16 @@ Se rechaza el texto o la frase que contenga cualquiera de estos elementos, tambi
 | Nivel | Se admite (además de lo anterior) |
 |---|---|
 | Level1 | Presente de indicativo; querer o poder + infinitivo |
-| Level2 | Pretérito perfecto compuesto (ha salido), ir a + infinitivo |
-| Level3 | Narración en pasado: pretérito perfecto simple e imperfecto. Diálogo |
+| Level2 | Ir a + infinitivo (va a llover); todavía sin pasados |
+| Level3 | Pasados: pretérito perfecto compuesto (ha salido), perfecto simple e imperfecto. Diálogo |
 | Level4 | Pluscuamperfecto, futuro y condicional simples |
 | Level5 | Presente de subjuntivo en subordinadas frecuentes (cuando llegue, para que vea) |
 | Level6 y Level7 | Imperfecto de subjuntivo en -ra, pasiva refleja (se fabrica) |
 | Level8 a Level10 | Pasiva con ser, gerundio subordinado, nominalizaciones. Imperfecto en -se, como mucho una vez por texto. Futuro de subjuntivo, nunca |
 
-- **Diálogo**: desde Level3, como mucho dos personajes y cuatro intervenciones, dentro del único
-  párrafo (convención en el apartado 6). En Level1 y Level2, ninguno.
+- **Diálogo**: ninguno en Level1 y Level2; en Level3 y Level4, dos intervenciones como mucho; de
+  Level5 a Level7, cuatro como mucho; desde Level8, cuatro como mucho y dos personajes. Siempre
+  dentro del único párrafo (convención en el apartado 6).
 - **Humor: sí**, situacional y amable (el perro se lleva el calcetín, la lluvia en la excursión).
   Juegos de palabras desde Level6; ironía desde Level8; nunca a costa de alguien.
 - **Finales**: siempre cerrados y serenos, no necesariamente felices. Level1 y Level2, escenas sin
@@ -231,31 +233,35 @@ así". Las frases son de segmentación.
   los influencers y algunos dejan de comer para parecerse a ellos. (imagen corporal, trastornos de
   la alimentación, redes como problema)
 
-## Decisiones que el grupo tiene que confirmar
+## Decisiones confirmadas por el grupo (2026-10-29)
 
-Esta guía toma algunas decisiones para las que no había regla. Confirmadlas o cambiadlas:
+El grupo aprobó la guía y las diez decisiones; donde precisó un valor, la guía ya lo aplica:
 
-1. **Leo, Teo y Mía** llevan hiato, que la tabla de nivel mínimo pone en Level3. **Resuelto por el
-   grupo (2026-10-29)**: en Level1 y Level2 se priorizan nombres sin hiato (Pol, Pau, Marc, Pep, Ana,
-   Lola, Sara) y Leo, Teo y Mía se admiten solo como excepción de nombre muy frecuente.
-   Se admiten nombres con sílaba cerrada (Marta, Lucas, Omar), como Sol en la lista del grupo.
-2. **Lector mayor en niveles bajos**: en Level0 a Level2, la mitad de los textos de cada lote como
-   mínimo deben valer para un lector de 12 años (temas sin edad).
+1. **Nombres**: en Level1 y Level2, nombres sin hiato ni trabada (Sol, Lola, Ana, Sara, Pau, Lucas,
+   Omar...). Leo, Teo y Mía llevan hiato y entran en Level3, salvo como excepción de nombre muy
+   frecuente. Se admiten nombres con sílaba cerrada (Marta, Lucas, Omar).
+2. **Textos neutros de edad**: al menos la mitad de cada lote en Level0 a Level3 (antes, Level0 a
+   Level2).
 3. **Animales que hablan**: uno de cada cinco textos como mucho en Level1 y Level2; ninguno desde
    Level3.
 4. **Cuotas por lote**: del 40 al 60 % de protagonistas chicas; de cada diez textos con familia,
    tres como mínimo no son de padre, madre e hijos; un mismo nombre, en tres textos como mucho.
-5. **Fiestas religiosas fuera** (Navidad, Reyes, Semana Santa); también toros, caza y clubes
-   deportivos reales. Patrimonio con nombre desde Level6; personajes históricos desde Level7.
+5. **Fuera** las fiestas religiosas (Navidad, Reyes, Semana Santa), los toros, la caza y los clubes
+   deportivos reales. Fiestas laicas y costumbres locales, sí. Patrimonio con nombre desde Level6;
+   personajes históricos desde Level7.
 6. **Lugares reales**: genéricos hasta Level3; lugares de España como escenario en Level4 y Level5;
    geografía con datos desde Level6.
-7. **Diálogo** desde Level3, como mucho dos personajes y cuatro intervenciones, seguidas dentro del
-   único párrafo (la norma habitual pone cada intervención en su línea).
-8. **Tiempos verbales**: pasado desde Level3, subjuntivo desde Level5.
-9. **Signos**: dos puntos desde Level4; punto y coma, paréntesis y comillas desde Level6; siglas
-   desde Level8; sin frases interrogativas ni exclamativas en segmentación.
-10. **Le/lo etimológico estricto** (sin el leísmo de persona que admite la RAE), sin años,
-    porcentajes ni números romanos, sin preguntas al lector y sin moraleja.
+7. **Diálogo**: ninguno en Level1 y Level2; dos intervenciones como mucho en Level3 y Level4; cuatro
+   como mucho desde Level5. Seguidas dentro del único párrafo.
+8. **Tiempos verbales**: solo presente en Level1 y Level2 (el perfecto compuesto pasa a Level3);
+   pasados desde Level3; futuro y condicional desde Level4; subjuntivo desde Level5. Lo comprueba
+   la puerta léxica en lectura y segmentación (lexico.py, `tense_check`).
+9. **Signos y números**: números siempre en letras; dos puntos desde Level4; punto y coma,
+   paréntesis y comillas desde Level6; siglas desde Level8; sin frases interrogativas ni
+   exclamativas en segmentación.
+10. **Segmentación** sin mayúsculas ni signos; **lista de texto** con frases con mayúscula inicial y
+    punto final. Le/lo etimológico estricto, sin años, porcentajes ni números romanos, sin preguntas
+    al lector y sin moraleja.
 
 Contradicciones encontradas en documentos anteriores: el ejemplo de Level2 de la Guía de
 Parametrización usa "Pedro" (trabada, contra E10.2) y el de Level8 escribe "siglo XXI" (contra los

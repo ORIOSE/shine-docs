@@ -1,0 +1,361 @@
+opcio,nivell,idioma,grup,nom,existent,slug,criteri
+mixta,9,ca,ca-9-01,cabana,sí,cabana,marrón + ca-
+mixta,9,ca,ca-9-01,cabell,sí,pelo,marrón + ca-
+mixta,9,ca,ca-9-01,cacau,lot 2,cacao,marrón + ca-
+mixta,9,ca,ca-9-01,cacauet,lot 2,cacahuete,marrón + ca-
+mixta,9,ca,ca-9-02,maquineta,sí,sacapuntas,rojo + ma-
+mixta,9,ca,ca-9-02,maraques,sí,maracas,rojo + ma-
+mixta,9,ca,ca-9-02,marieta,sí,mariquita,rojo + ma-
+mixta,9,ca,ca-9-02,matamosques,lot 2,matamoscas,rojo + ma-
+mixta,9,ca,ca-9-03,camilla,lot 2,camilla,blanco + ca-
+mixta,9,ca,ca-9-03,camisó,lot 2,camison,blanco + ca-
+mixta,9,ca,ca-9-03,capella,lot 2,capilla,blanco + ca-
+mixta,9,ca,ca-9-03,caravana,lot 2,caravana,blanco + ca-
+mixta,9,ca,ca-9-04,espiga,lot 2,espiga,alargado + es-
+mixta,9,ca,ca-9-04,espàrrec,lot 2,esparrago,alargado + es-
+mixta,9,ca,ca-9-04,espàtula,lot 2,espatula,alargado + es-
+mixta,9,ca,ca-9-04,esquí,lot 2,esqui,alargado + es-
+mixta,9,ca,ca-9-05,pianista,lot 2,pianista,personas + pi-
+mixta,9,ca,ca-9-05,picapedrer,lot 2,picapedrero,personas + pi-
+mixta,9,ca,ca-9-05,piragüista,lot 2,piraguista,personas + pi-
+mixta,9,ca,ca-9-05,pirata,sí,pirata,personas + pi-
+mixta,9,ca,ca-9-06,coet,sí,cohete,blanco + co-
+mixta,9,ca,ca-9-06,coliflor,lot 2,coliflor,blanco + co-
+mixta,9,ca,ca-9-06,colom,sí,paloma,blanco + co-
+mixta,9,ca,ca-9-06,conill,sí,conejo,blanco + co-
+mixta,9,ca,ca-9-07,calaix,lot 2,cajon,marrón + ca-
+mixta,9,ca,ca-9-07,calaixera,lot 2,comoda,marrón + ca-
+mixta,9,ca,ca-9-07,camell,sí,camello,marrón + ca-
+mixta,9,ca,ca-9-07,canyella,lot 2,canela,marrón + ca-
+mixta,9,ca,ca-9-08,macarrons,sí,macarrones,rojo + ma-
+mixta,9,ca,ca-9-08,maduixa,sí,fresa,rojo + ma-
+mixta,9,ca,ca-9-08,matrioixca,lot 2,matrioska,rojo + ma-
+mixta,9,ca,ca-9-08,maó,lot 2,ladrillo,rojo + ma-
+mixta,9,ca,ca-9-09,bacallà,lot 2,bacalao,blanco + ba-
+mixta,9,ca,ca-9-09,ballarina,lot 2,bailarina,blanco + ba-
+mixta,9,ca,ca-9-09,banyera,sí,banera,blanco + ba-
+mixta,9,ca,ca-9-09,baralla,lot 2,baraja,blanco + ba-
+mixta,9,ca,ca-9-10,escut,lot 2,escudo,gris + es-
+mixta,9,ca,ca-9-10,espàtula,lot 2,espatula,gris + es-
+mixta,9,ca,ca-9-10,esquella,lot 2,cencerro,gris + es-
+mixta,9,ca,ca-9-10,estufa,lot 2,estufa,gris + es-
+mixta,9,ca,ca-9-11,pacient,lot 2,paciente,personas + pa-
+mixta,9,ca,ca-9-11,paleta,lot 2,albanil,personas + pa-
+mixta,9,ca,ca-9-11,pallasso,sí,payaso,personas + pa-
+mixta,9,ca,ca-9-11,paracaigudista,lot 2,paracaidista,personas + pa-
+mixta,9,ca,ca-9-12,coet,sí,cohete,blanco + co-
+mixta,9,ca,ca-9-12,coliflor,lot 2,coliflor,blanco + co-
+mixta,9,ca,ca-9-12,colom,sí,paloma,blanco + co-
+mixta,9,ca,ca-9-12,conill,sí,conejo,blanco + co-
+mixta,9,ca,ca-9-13,cabana,sí,cabana,marrón + ca-
+mixta,9,ca,ca-9-13,capibara,lot 2,capibara,marrón + ca-
+mixta,9,ca,ca-9-13,caravel·la,lot 2,carabela,marrón + ca-
+mixta,9,ca,ca-9-13,cavall,sí,caballo,marrón + ca-
+mixta,9,ca,ca-9-14,magrana,sí,granada,rojo + ma-
+mixta,9,ca,ca-9-14,manyopla,lot 2,manopla,rojo + ma-
+mixta,9,ca,ca-9-14,maquineta,sí,sacapuntas,rojo + ma-
+mixta,9,ca,ca-9-14,maraques,sí,maracas,rojo + ma-
+mixta,9,ca,ca-9-15,bacallà,lot 2,bacalao,blanco + ba-
+mixta,9,ca,ca-9-15,ballarina,lot 2,bailarina,blanco + ba-
+mixta,9,ca,ca-9-15,bata,lot 2,bata,blanco + ba-
+mixta,9,ca,ca-9-15,batedora,lot 2,batidora,blanco + ba-
+mixta,9,ca,ca-9-16,escut,lot 2,escudo,gris + es-
+mixta,9,ca,ca-9-16,espàtula,lot 2,espatula,gris + es-
+mixta,9,ca,ca-9-16,esquella,lot 2,cencerro,gris + es-
+mixta,9,ca,ca-9-16,estàtua,lot 2,estatua,gris + es-
+mixta,9,ca,ca-9-17,pacient,lot 2,paciente,personas + pa-
+mixta,9,ca,ca-9-17,paleta,lot 2,albanil,personas + pa-
+mixta,9,ca,ca-9-17,pallasso,sí,payaso,personas + pa-
+mixta,9,ca,ca-9-17,patinador,lot 2,patinador,personas + pa-
+mixta,9,ca,ca-9-18,cassola,lot 2,cazuela,marrón + cas-
+mixta,9,ca,ca-9-18,castanya,lot 2,castana,marrón + cas-
+mixta,9,ca,ca-9-18,castanyoles,sí,castanuelas,marrón + cas-
+mixta,9,ca,ca-9-18,castor,lot 2,castor,marrón + cas-
+mixta,9,ca,ca-9-19,cabell,sí,pelo,marrón + ca-
+mixta,9,ca,ca-9-19,cacau,lot 2,cacao,marrón + ca-
+mixta,9,ca,ca-9-19,cacauet,lot 2,cacahuete,marrón + ca-
+mixta,9,ca,ca-9-19,calaix,lot 2,cajon,marrón + ca-
+mixta,9,ca,ca-9-20,cacatua,lot 2,cacatua,blanco + ca-
+mixta,9,ca,ca-9-20,calamar,lot 2,calamar,blanco + ca-
+mixta,9,ca,ca-9-20,calendari,lot 2,calendario,blanco + ca-
+mixta,9,ca,ca-9-20,camilla,lot 2,camilla,blanco + ca-
+mixta,9,ca,ca-9-21,banyera,sí,banera,blanco + ba-
+mixta,9,ca,ca-9-21,baralla,lot 2,baraja,blanco + ba-
+mixta,9,ca,ca-9-21,bata,lot 2,bata,blanco + ba-
+mixta,9,ca,ca-9-21,batedora,lot 2,batidora,blanco + ba-
+mixta,9,ca,ca-9-22,escut,lot 2,escudo,gris + es-
+mixta,9,ca,ca-9-22,espàtula,lot 2,espatula,gris + es-
+mixta,9,ca,ca-9-22,estufa,lot 2,estufa,gris + es-
+mixta,9,ca,ca-9-22,estàtua,lot 2,estatua,gris + es-
+mixta,9,ca,ca-9-23,pacient,lot 2,paciente,personas + pa-
+mixta,9,ca,ca-9-23,paleta,lot 2,albanil,personas + pa-
+mixta,9,ca,ca-9-23,paracaigudista,lot 2,paracaidista,personas + pa-
+mixta,9,ca,ca-9-23,patinador,lot 2,patinador,personas + pa-
+mixta,9,ca,ca-9-24,cassola,lot 2,cazuela,marrón + cas-
+mixta,9,ca,ca-9-24,castanya,lot 2,castana,marrón + cas-
+mixta,9,ca,ca-9-24,castanyoles,sí,castanuelas,marrón + cas-
+mixta,9,ca,ca-9-24,castor,lot 2,castor,marrón + cas-
+mixta,9,ca,ca-9-25,calaixera,lot 2,comoda,marrón + ca-
+mixta,9,ca,ca-9-25,camell,sí,camello,marrón + ca-
+mixta,9,ca,ca-9-25,canyella,lot 2,canela,marrón + ca-
+mixta,9,ca,ca-9-25,capibara,lot 2,capibara,marrón + ca-
+mixta,9,ca,ca-9-26,camisa,lot 2,camisa,blanco + ca-
+mixta,9,ca,ca-9-26,camisó,lot 2,camison,blanco + ca-
+mixta,9,ca,ca-9-26,capella,lot 2,capilla,blanco + ca-
+mixta,9,ca,ca-9-26,caravana,lot 2,caravana,blanco + ca-
+mixta,9,ca,ca-9-27,escuradents,lot 2,mondadientes,alargado + es-
+mixta,9,ca,ca-9-27,espaguetis,lot 2,espaguetis,alargado + es-
+mixta,9,ca,ca-9-27,espiga,lot 2,espiga,alargado + es-
+mixta,9,ca,ca-9-27,espàrrec,lot 2,esparrago,alargado + es-
+mixta,9,ca,ca-9-28,pianista,lot 2,pianista,personas + pi-
+mixta,9,ca,ca-9-28,picapedrer,lot 2,picapedrero,personas + pi-
+mixta,9,ca,ca-9-28,pilot,lot 2,piloto,personas + pi-
+mixta,9,ca,ca-9-28,piragüista,lot 2,piraguista,personas + pi-
+mixta,9,ca,ca-9-29,camió,sí,camion,rojo + ca-
+mixta,9,ca,ca-9-29,canoa,sí,canoa,rojo + ca-
+mixta,9,ca,ca-9-29,capa,sí,capa,rojo + ca-
+mixta,9,ca,ca-9-29,caramel,sí,caramelo,rojo + ca-
+mixta,9,ca,ca-9-30,cadenat,sí,candado,amarillo + ca-
+mixta,9,ca,ca-9-30,canari,lot 2,canario,amarillo + ca-
+mixta,9,ca,ca-9-30,canelobre,lot 2,candelabro,amarillo + ca-
+mixta,9,ca,ca-9-30,cavallet,sí,caballito,amarillo + ca-
+mixta,9,ca,ca-9-31,macarrons,sí,macarrones,rojo + ma-
+mixta,9,ca,ca-9-31,maduixa,sí,fresa,rojo + ma-
+mixta,9,ca,ca-9-31,magrana,sí,granada,rojo + ma-
+mixta,9,ca,ca-9-31,manyopla,lot 2,manopla,rojo + ma-
+mixta,9,ca,ca-9-32,cacatua,lot 2,cacatua,blanco + ca-
+mixta,9,ca,ca-9-32,calamar,lot 2,calamar,blanco + ca-
+mixta,9,ca,ca-9-32,calendari,lot 2,calendario,blanco + ca-
+mixta,9,ca,ca-9-32,camisa,lot 2,camisa,blanco + ca-
+mixta,9,ca,ca-9-33,escuradents,lot 2,mondadientes,alargado + es-
+mixta,9,ca,ca-9-33,espaguetis,lot 2,espaguetis,alargado + es-
+mixta,9,ca,ca-9-33,espàtula,lot 2,espatula,alargado + es-
+mixta,9,ca,ca-9-33,esquí,lot 2,esqui,alargado + es-
+mixta,9,ca,ca-9-34,pianista,lot 2,pianista,personas + pi-
+mixta,9,ca,ca-9-34,picapedrer,lot 2,picapedrero,personas + pi-
+mixta,9,ca,ca-9-34,pilot,lot 2,piloto,personas + pi-
+mixta,9,ca,ca-9-34,pirata,sí,pirata,personas + pi-
+mixta,9,ca,ca-9-35,camió,sí,camion,rojo + ca-
+mixta,9,ca,ca-9-35,canoa,sí,canoa,rojo + ca-
+mixta,9,ca,ca-9-35,capa,sí,capa,rojo + ca-
+mixta,9,ca,ca-9-35,caramel,sí,caramelo,rojo + ca-
+mixta,9,ca,ca-9-36,cadenat,sí,candado,amarillo + ca-
+mixta,9,ca,ca-9-36,canari,lot 2,canario,amarillo + ca-
+mixta,9,ca,ca-9-36,canelobre,lot 2,candelabro,amarillo + ca-
+mixta,9,ca,ca-9-36,cavallet,sí,caballito,amarillo + ca-
+mixta,10,ca,ca-10-01,casa,sí,casa,família ca_a i _apa
+mixta,10,ca,ca-10-01,cama,sí,pierna,família ca_a i _apa
+mixta,10,ca,ca-10-01,capa,sí,capa,família ca_a i _apa
+mixta,10,ca,ca-10-01,cara,sí,cara,família ca_a i _apa
+mixta,10,ca,ca-10-01,mapa,sí,mapa,família ca_a i _apa
+mixta,10,ca,ca-10-01,tapa,sí,tapa,família ca_a i _apa
+mixta,10,ca,ca-10-02,copa,sí,copa,família co_a i _opa
+mixta,10,ca,ca-10-02,cola,sí,pegamento,família co_a i _opa
+mixta,10,ca,ca-10-02,cova,sí,cueva,família co_a i _opa
+mixta,10,ca,ca-10-02,coca,no,,família co_a i _opa
+mixta,10,ca,ca-10-02,sopa,sí,sopa,família co_a i _opa
+mixta,10,ca,ca-10-02,capa,sí,capa,família co_a i _opa
+mixta,10,ca,ca-10-03,casa,sí,casa,família ca_a i co_a
+mixta,10,ca,ca-10-03,cama,sí,pierna,família ca_a i co_a
+mixta,10,ca,ca-10-03,cara,sí,cara,família ca_a i co_a
+mixta,10,ca,ca-10-03,capa,sí,capa,família ca_a i co_a
+mixta,10,ca,ca-10-03,copa,sí,copa,família ca_a i co_a
+mixta,10,ca,ca-10-03,cola,sí,pegamento,família ca_a i co_a
+mixta,10,ca,ca-10-04,mapa,sí,mapa,família _apa i _opa
+mixta,10,ca,ca-10-04,tapa,sí,tapa,família _apa i _opa
+mixta,10,ca,ca-10-04,capa,sí,capa,família _apa i _opa
+mixta,10,ca,ca-10-04,copa,sí,copa,família _apa i _opa
+mixta,10,ca,ca-10-04,sopa,sí,sopa,família _apa i _opa
+mixta,10,ca,ca-10-04,cova,sí,cueva,família _apa i _opa
+mixta,10,ca,ca-10-05,bota,sí,bota,"cadena bo_a, _oca i co_a"
+mixta,10,ca,ca-10-05,boca,sí,boca,"cadena bo_a, _oca i co_a"
+mixta,10,ca,ca-10-05,foca,sí,foca,"cadena bo_a, _oca i co_a"
+mixta,10,ca,ca-10-05,coca,no,,"cadena bo_a, _oca i co_a"
+mixta,10,ca,ca-10-05,copa,sí,copa,"cadena bo_a, _oca i co_a"
+mixta,10,ca,ca-10-05,cola,sí,pegamento,"cadena bo_a, _oca i co_a"
+mixta,10,ca,ca-10-06,bota,sí,bota,cadena _ota i _oma
+mixta,10,ca,ca-10-06,gota,no,,cadena _ota i _oma
+mixta,10,ca,ca-10-06,nota,no,,cadena _ota i _oma
+mixta,10,ca,ca-10-06,goma,sí,goma,cadena _ota i _oma
+mixta,10,ca,ca-10-06,poma,sí,manzana,cadena _ota i _oma
+mixta,10,ca,ca-10-06,puma,sí,puma,cadena _ota i _oma
+mixta,10,ca,ca-10-07,bota,sí,bota,família bo_a i _ota
+mixta,10,ca,ca-10-07,boca,sí,boca,família bo_a i _ota
+mixta,10,ca,ca-10-07,foca,sí,foca,família bo_a i _ota
+mixta,10,ca,ca-10-07,botó,sí,boton,família bo_a i _ota
+mixta,10,ca,ca-10-07,bata,no,,família bo_a i _ota
+mixta,10,ca,ca-10-07,gota,no,,família bo_a i _ota
+mixta,10,ca,ca-10-08,gota,no,,"família _ota, bo_a i _oca"
+mixta,10,ca,ca-10-08,nota,no,,"família _ota, bo_a i _oca"
+mixta,10,ca,ca-10-08,bota,sí,bota,"família _ota, bo_a i _oca"
+mixta,10,ca,ca-10-08,bata,no,,"família _ota, bo_a i _oca"
+mixta,10,ca,ca-10-08,boca,sí,boca,"família _ota, bo_a i _oca"
+mixta,10,ca,ca-10-08,coca,no,,"família _ota, bo_a i _oca"
+mixta,10,ca,ca-10-09,poma,sí,manzana,"cadena _oma, _ota i bot_"
+mixta,10,ca,ca-10-09,goma,sí,goma,"cadena _oma, _ota i bot_"
+mixta,10,ca,ca-10-09,gota,no,,"cadena _oma, _ota i bot_"
+mixta,10,ca,ca-10-09,nota,no,,"cadena _oma, _ota i bot_"
+mixta,10,ca,ca-10-09,bota,sí,bota,"cadena _oma, _ota i bot_"
+mixta,10,ca,ca-10-09,botó,sí,boton,"cadena _oma, _ota i bot_"
+mixta,10,ca,ca-10-10,cara,sí,cara,"família ca_a, cap_ i co_a"
+mixta,10,ca,ca-10-10,casa,sí,casa,"família ca_a, cap_ i co_a"
+mixta,10,ca,ca-10-10,cama,sí,pierna,"família ca_a, cap_ i co_a"
+mixta,10,ca,ca-10-10,capa,sí,capa,"família ca_a, cap_ i co_a"
+mixta,10,ca,ca-10-10,copa,sí,copa,"família ca_a, cap_ i co_a"
+mixta,10,ca,ca-10-10,cova,sí,cueva,"família ca_a, cap_ i co_a"
+mixta,10,ca,ca-10-11,gat,sí,gato,"família g_t, _ot i po_"
+mixta,10,ca,ca-10-11,got,sí,vaso,"família g_t, _ot i po_"
+mixta,10,ca,ca-10-11,gos,sí,perro,"família g_t, _ot i po_"
+mixta,10,ca,ca-10-11,pot,no,,"família g_t, _ot i po_"
+mixta,10,ca,ca-10-11,pou,no,,"família g_t, _ot i po_"
+mixta,10,ca,ca-10-11,pop,sí,pulpo,"família g_t, _ot i po_"
+mixta,10,ca,ca-10-12,pal,sí,palo,"família _al, _ol i co_"
+mixta,10,ca,ca-10-12,sal,sí,sal,"família _al, _ol i co_"
+mixta,10,ca,ca-10-12,sol,sí,sol,"família _al, _ol i co_"
+mixta,10,ca,ca-10-12,col,no,,"família _al, _ol i co_"
+mixta,10,ca,ca-10-12,cor,sí,corazon,"família _al, _ol i co_"
+mixta,10,ca,ca-10-12,sac,no,,"família _al, _ol i co_"
+mixta,10,ca,ca-10-13,sal,sí,sal,"família sa_, _uc i s_l"
+mixta,10,ca,ca-10-13,sac,no,,"família sa_, _uc i s_l"
+mixta,10,ca,ca-10-13,suc,sí,zumo,"família sa_, _uc i s_l"
+mixta,10,ca,ca-10-13,cuc,sí,gusano,"família sa_, _uc i s_l"
+mixta,10,ca,ca-10-13,ruc,sí,burro,"família sa_, _uc i s_l"
+mixta,10,ca,ca-10-13,sol,sí,sol,"família sa_, _uc i s_l"
+mixta,10,ca,ca-10-14,sol,sí,sol,"família s_l, co_ i sa_"
+mixta,10,ca,ca-10-14,col,no,,"família s_l, co_ i sa_"
+mixta,10,ca,ca-10-14,cor,sí,corazon,"família s_l, co_ i sa_"
+mixta,10,ca,ca-10-14,sal,sí,sal,"família s_l, co_ i sa_"
+mixta,10,ca,ca-10-14,sac,no,,"família s_l, co_ i sa_"
+mixta,10,ca,ca-10-14,suc,sí,zumo,"família s_l, co_ i sa_"
+mixta,10,ca,ca-10-15,cuc,sí,gusano,"família _uc, sa_ i _al"
+mixta,10,ca,ca-10-15,ruc,sí,burro,"família _uc, sa_ i _al"
+mixta,10,ca,ca-10-15,suc,sí,zumo,"família _uc, sa_ i _al"
+mixta,10,ca,ca-10-15,sac,no,,"família _uc, sa_ i _al"
+mixta,10,ca,ca-10-15,sal,sí,sal,"família _uc, sa_ i _al"
+mixta,10,ca,ca-10-15,pal,sí,palo,"família _uc, sa_ i _al"
+mixta,10,ca,ca-10-16,gorro,sí,gorro,família g_rr_ i _orro
+mixta,10,ca,ca-10-16,gorra,sí,gorra,família g_rr_ i _orro
+mixta,10,ca,ca-10-16,gerro,sí,jarron,família g_rr_ i _orro
+mixta,10,ca,ca-10-16,gerra,sí,jarra,família g_rr_ i _orro
+mixta,10,ca,ca-10-16,serra,sí,sierra,família g_rr_ i _orro
+mixta,10,ca,ca-10-16,porro,no,,família g_rr_ i _orro
+mixta,10,ca,ca-10-17,pila,sí,pila,família pi_a + parell _ap
+mixta,10,ca,ca-10-17,pala,sí,pala,família pi_a + parell _ap
+mixta,10,ca,ca-10-17,pipa,sí,pipa,família pi_a + parell _ap
+mixta,10,ca,ca-10-17,pica,no,,família pi_a + parell _ap
+mixta,10,ca,ca-10-17,cap,sí,cabeza,família pi_a + parell _ap
+mixta,10,ca,ca-10-17,tap,sí,tapon,família pi_a + parell _ap
+mixta,10,ca,ca-10-18,cap,sí,cabeza,família _ap i na_ + parell p_
+mixta,10,ca,ca-10-18,tap,sí,tapon,família _ap i na_ + parell p_
+mixta,10,ca,ca-10-18,nap,no,,família _ap i na_ + parell p_
+mixta,10,ca,ca-10-18,nas,sí,nariz,família _ap i na_ + parell p_
+mixta,10,ca,ca-10-18,pa,sí,pan,família _ap i na_ + parell p_
+mixta,10,ca,ca-10-18,pi,sí,pino,família _ap i na_ + parell p_
+mixta,10,ca,ca-10-19,castell,sí,castillo,família _artell i c_stell + parell ll_t
+mixta,10,ca,ca-10-19,cistell,sí,cesta,família _artell i c_stell + parell ll_t
+mixta,10,ca,ca-10-19,cartell,no,,família _artell i c_stell + parell ll_t
+mixta,10,ca,ca-10-19,martell,sí,martillo,família _artell i c_stell + parell ll_t
+mixta,10,ca,ca-10-19,llet,sí,leche,família _artell i c_stell + parell ll_t
+mixta,10,ca,ca-10-19,llit,sí,cama,família _artell i c_stell + parell ll_t
+mixta,10,ca,ca-10-20,lluna,sí,luna,família ll_na i ll_ma + parell o_
+mixta,10,ca,ca-10-20,llana,sí,lana,família ll_na i ll_ma + parell o_
+mixta,10,ca,ca-10-20,llama,no,,família ll_na i ll_ma + parell o_
+mixta,10,ca,ca-10-20,llima,sí,lima,família ll_na i ll_ma + parell o_
+mixta,10,ca,ca-10-20,ou,sí,huevo,família ll_na i ll_ma + parell o_
+mixta,10,ca,ca-10-20,os,sí,hueso,família ll_na i ll_ma + parell o_
+mixta,10,ca,ca-10-21,pinya,sí,pina,dos trios: pin_a i _aleta
+mixta,10,ca,ca-10-21,pinta,sí,peine,dos trios: pin_a i _aleta
+mixta,10,ca,ca-10-21,pinça,no,,dos trios: pin_a i _aleta
+mixta,10,ca,ca-10-21,galeta,sí,galleta,dos trios: pin_a i _aleta
+mixta,10,ca,ca-10-21,maleta,sí,maleta,dos trios: pin_a i _aleta
+mixta,10,ca,ca-10-21,paleta,no,,dos trios: pin_a i _aleta
+mixta,10,ca,ca-10-22,gat,sí,gato,dos trios: g_t i pi_a
+mixta,10,ca,ca-10-22,got,sí,vaso,dos trios: g_t i pi_a
+mixta,10,ca,ca-10-22,gos,sí,perro,dos trios: g_t i pi_a
+mixta,10,ca,ca-10-22,pila,sí,pila,dos trios: g_t i pi_a
+mixta,10,ca,ca-10-22,pala,sí,pala,dos trios: g_t i pi_a
+mixta,10,ca,ca-10-22,pipa,sí,pipa,dos trios: g_t i pi_a
+mixta,10,ca,ca-10-23,pal,sí,palo,dos trios: _al/_ol i _oma
+mixta,10,ca,ca-10-23,sal,sí,sal,dos trios: _al/_ol i _oma
+mixta,10,ca,ca-10-23,sol,sí,sol,dos trios: _al/_ol i _oma
+mixta,10,ca,ca-10-23,poma,sí,manzana,dos trios: _al/_ol i _oma
+mixta,10,ca,ca-10-23,goma,sí,goma,dos trios: _al/_ol i _oma
+mixta,10,ca,ca-10-23,puma,sí,puma,dos trios: _al/_ol i _oma
+mixta,10,ca,ca-10-24,ruc,sí,burro,dos trios: _uc i pin_a
+mixta,10,ca,ca-10-24,cuc,sí,gusano,dos trios: _uc i pin_a
+mixta,10,ca,ca-10-24,suc,sí,zumo,dos trios: _uc i pin_a
+mixta,10,ca,ca-10-24,pinya,sí,pina,dos trios: _uc i pin_a
+mixta,10,ca,ca-10-24,pinta,sí,peine,dos trios: _uc i pin_a
+mixta,10,ca,ca-10-24,pinça,no,,dos trios: _uc i pin_a
+mixta,10,ca,ca-10-25,galeta,sí,galleta,dos trios: _aleta i _ap
+mixta,10,ca,ca-10-25,maleta,sí,maleta,dos trios: _aleta i _ap
+mixta,10,ca,ca-10-25,paleta,no,,dos trios: _aleta i _ap
+mixta,10,ca,ca-10-25,cap,sí,cabeza,dos trios: _aleta i _ap
+mixta,10,ca,ca-10-25,tap,sí,tapon,dos trios: _aleta i _ap
+mixta,10,ca,ca-10-25,nap,no,,dos trios: _aleta i _ap
+mixta,10,ca,ca-10-26,gorro,sí,gorro,família g_rr_ + parell _iu
+mixta,10,ca,ca-10-26,gorra,sí,gorra,família g_rr_ + parell _iu
+mixta,10,ca,ca-10-26,gerro,sí,jarron,família g_rr_ + parell _iu
+mixta,10,ca,ca-10-26,gerra,sí,jarra,família g_rr_ + parell _iu
+mixta,10,ca,ca-10-26,riu,sí,rio,família g_rr_ + parell _iu
+mixta,10,ca,ca-10-26,niu,sí,nido,família g_rr_ + parell _iu
+mixta,10,ca,ca-10-27,castell,sí,castillo,dos trios: c_stell i ll_na
+mixta,10,ca,ca-10-27,cistell,sí,cesta,dos trios: c_stell i ll_na
+mixta,10,ca,ca-10-27,cartell,no,,dos trios: c_stell i ll_na
+mixta,10,ca,ca-10-27,lluna,sí,luna,dos trios: c_stell i ll_na
+mixta,10,ca,ca-10-27,llana,sí,lana,dos trios: c_stell i ll_na
+mixta,10,ca,ca-10-27,llama,no,,dos trios: c_stell i ll_na
+mixta,10,ca,ca-10-28,pot,no,,dos trios: po_ i ll_ma
+mixta,10,ca,ca-10-28,pou,no,,dos trios: po_ i ll_ma
+mixta,10,ca,ca-10-28,pop,sí,pulpo,dos trios: po_ i ll_ma
+mixta,10,ca,ca-10-28,llima,sí,lima,dos trios: po_ i ll_ma
+mixta,10,ca,ca-10-28,llama,no,,dos trios: po_ i ll_ma
+mixta,10,ca,ca-10-28,llana,sí,lana,dos trios: po_ i ll_ma
+mixta,10,ca,ca-10-29,pica,no,,dos trios: pi_a i _ota
+mixta,10,ca,ca-10-29,pipa,sí,pipa,dos trios: pi_a i _ota
+mixta,10,ca,ca-10-29,pila,sí,pila,dos trios: pi_a i _ota
+mixta,10,ca,ca-10-29,gota,no,,dos trios: pi_a i _ota
+mixta,10,ca,ca-10-29,nota,no,,dos trios: pi_a i _ota
+mixta,10,ca,ca-10-29,bota,sí,bota,dos trios: pi_a i _ota
+mixta,10,ca,ca-10-30,nap,no,,dos trios: na_ i co_
+mixta,10,ca,ca-10-30,nas,sí,nariz,dos trios: na_ i co_
+mixta,10,ca,ca-10-30,tap,sí,tapon,dos trios: na_ i co_
+mixta,10,ca,ca-10-30,col,no,,dos trios: na_ i co_
+mixta,10,ca,ca-10-30,cor,sí,corazon,dos trios: na_ i co_
+mixta,10,ca,ca-10-30,sol,sí,sol,dos trios: na_ i co_
+mixta,10,ca,ca-10-31,cavallet,sí,caballito,"tres parells: cavalle_, ca_ell, esc_la"
+mixta,10,ca,ca-10-31,cavaller,sí,caballero,"tres parells: cavalle_, ca_ell, esc_la"
+mixta,10,ca,ca-10-31,camell,sí,camello,"tres parells: cavalle_, ca_ell, esc_la"
+mixta,10,ca,ca-10-31,cabell,sí,pelo,"tres parells: cavalle_, ca_ell, esc_la"
+mixta,10,ca,ca-10-31,escala,sí,escalera,"tres parells: cavalle_, ca_ell, esc_la"
+mixta,10,ca,ca-10-31,escola,sí,escuela,"tres parells: cavalle_, ca_ell, esc_la"
+mixta,10,ca,ca-10-32,sabata,sí,zapato,"tres parells: sa_ata, ban_era, o_ella"
+mixta,10,ca,ca-10-32,safata,sí,bandeja,"tres parells: sa_ata, ban_era, o_ella"
+mixta,10,ca,ca-10-32,banyera,sí,banera,"tres parells: sa_ata, ban_era, o_ella"
+mixta,10,ca,ca-10-32,bandera,sí,bandera,"tres parells: sa_ata, ban_era, o_ella"
+mixta,10,ca,ca-10-32,ovella,sí,oveja,"tres parells: sa_ata, ban_era, o_ella"
+mixta,10,ca,ca-10-32,orella,sí,oreja,"tres parells: sa_ata, ban_era, o_ella"
+mixta,10,ca,ca-10-33,pollet,sí,pollito,"tres parells: _ollet, _iu, ro_a"
+mixta,10,ca,ca-10-33,follet,sí,duende,"tres parells: _ollet, _iu, ro_a"
+mixta,10,ca,ca-10-33,riu,sí,rio,"tres parells: _ollet, _iu, ro_a"
+mixta,10,ca,ca-10-33,niu,sí,nido,"tres parells: _ollet, _iu, ro_a"
+mixta,10,ca,ca-10-33,rosa,sí,rosa,"tres parells: _ollet, _iu, ro_a"
+mixta,10,ca,ca-10-33,roda,sí,rueda,"tres parells: _ollet, _iu, ro_a"
+mixta,10,ca,ca-10-34,peu,sí,pie,"tres parells: pe_, _ont, _lla"
+mixta,10,ca,ca-10-34,pes,sí,pesa,"tres parells: pe_, _ont, _lla"
+mixta,10,ca,ca-10-34,pont,sí,puente,"tres parells: pe_, _ont, _lla"
+mixta,10,ca,ca-10-34,font,sí,fuente,"tres parells: pe_, _ont, _lla"
+mixta,10,ca,ca-10-34,olla,sí,olla,"tres parells: pe_, _ont, _lla"
+mixta,10,ca,ca-10-34,illa,sí,isla,"tres parells: pe_, _ont, _lla"
+mixta,10,ca,ca-10-35,panda,sí,panda,"tres parells: pan_a, _la, ll_t"
+mixta,10,ca,ca-10-35,panxa,sí,barriga,"tres parells: pan_a, _la, ll_t"
+mixta,10,ca,ca-10-35,gla,sí,bellota,"tres parells: pan_a, _la, ll_t"
+mixta,10,ca,ca-10-35,ala,sí,ala,"tres parells: pan_a, _la, ll_t"
+mixta,10,ca,ca-10-35,llet,sí,leche,"tres parells: pan_a, _la, ll_t"
+mixta,10,ca,ca-10-35,llit,sí,cama,"tres parells: pan_a, _la, ll_t"
+mixta,10,ca,ca-10-36,pa,sí,pan,"tres parells: p_, o_, sa_ata"
+mixta,10,ca,ca-10-36,pi,sí,pino,"tres parells: p_, o_, sa_ata"
+mixta,10,ca,ca-10-36,ou,sí,huevo,"tres parells: p_, o_, sa_ata"
+mixta,10,ca,ca-10-36,os,sí,hueso,"tres parells: p_, o_, sa_ata"
+mixta,10,ca,ca-10-36,sabata,sí,zapato,"tres parells: p_, o_, sa_ata"
+mixta,10,ca,ca-10-36,safata,sí,bandeja,"tres parells: p_, o_, sa_ata"

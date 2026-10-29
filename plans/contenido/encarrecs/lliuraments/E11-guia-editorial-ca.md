@@ -1,6 +1,7 @@
 # E11. Guia editorial dels textos (català)
 
-> Esborrany redactat per l'equip (Claude, model Opus) el 2026-10-28 perquè el revisi el grup d'experts.
+> Redactada per l'equip (Claude, model Opus) el 2026-10-28. **Aprovada pel grup d'experts el 2026-10-29**
+> (respostes-2026-10-29/E11-resposta.md) amb els ajustos que recull l'apartat final; aquesta versió ja els inclou.
 
 **Abast.** Frases de segmentació, elements i frases de llista de text i textos de lectura en veu
 alta en català. Aquesta guia diu de què es parla i com s'escriu; la longitud, les estructures i la
@@ -14,8 +15,9 @@ nivell).
 Level5; 11 a 12 = Level6 i Level7; 13 a 15 = Level8 a Level10.
 
 **Temes sense edat.** El nivell és per àrea: un alumne d'onze anys amb dislèxia pot llegir textos de
-Level2. De Level1 a Level3 els temes han de servir igual per a sis anys que per a dotze (animals,
-natura, menjar, esport, objectes, oficis); res de criatura petita (nadons, bolquers, xumets).
+Level2. De Level0 a Level3, la meitat dels textos de cada lot com a mínim han de servir igual per
+a sis anys que per a dotze (animals, natura, menjar, esport, objectes, oficis); res de criatura
+petita (nadons, bolquers, xumets) en cap text.
 
 ## 1. Temes per franja d'edat
 
@@ -77,16 +79,17 @@ quatre d'un lot amb una tradició, i el text s'ha d'entendre sense conèixer-la.
 
 | Referència | Sí o no, des de | Condició |
 |---|---|---|
-| Sant Jordi (roses i llibres), castells, gegants, mona, castanyada, els Reis | Sí, Level2 | Castells sense caigudes; cap text posa en dubte la màgia (Reis, tió, fada de les dents) |
+| Sant Jordi (roses i llibres), castells, gegants, mona, castanyada | Sí, Level2 | Castells sense caigudes; cap text posa en dubte la màgia (tió, fada de les dents) |
 | Tió, sardana, Carnestoltes | Sí, Level3 | "Picar el tió" |
 | Revetlla de Sant Joan | Sí, Level4 | Foguera i coca, sense petards |
 | Llegenda de Sant Jordi | Sí, Level5 | "El cavaller venç el drac", sense sang ni mort |
 | Correfoc, caganer | Sí, Level6 | En un expositiu sobre costums; sense cremades, escatologia ni religió |
-| Onze de Setembre, equips de futbol | No | Política i marques |
+| Onze de Setembre, equips de futbol, festes religioses (Reis, Setmana Santa, Ramadà) | No | Política, marques i religió |
 
-**Llocs.** Level1 i Level2: cap topònim, només noms comuns (el mar, la muntanya, el poble). Des de
-Level3, topònims de Catalunya dins de les estructures del nivell (Barcelona, Girona, Montserrat, el
-Pirineu, l'Ebre). Des de Level5, d'arreu del món. Mai escoles, botigues ni carrers concrets, ni "la
+**Llocs.** Fins a Level3: cap topònim, només noms comuns (el mar, la muntanya, el poble). Level4 i
+Level5, topònims de Catalunya i de la Península com a escenari, sense dades i dins de les
+estructures del nivell (Barcelona, Girona, Montserrat, el Pirineu, l'Ebre). Des de Level6,
+geografia d'arreu del món amb dades. Mai escoles, botigues ni carrers concrets, ni "la
 ciutat més bonica".
 
 ## 5. To i registre
@@ -97,11 +100,11 @@ ciutat més bonica".
 | Nivell | Temps verbals | Diàleg |
 |---|---|---|
 | Level1 i Level2 | Només present d'indicatiu | No |
-| Level3 | + passat perifràstic (va anar), imperfet (era), perfet (ha arribat), futur (anirem), imperatiu al diàleg | Com a molt 2 intervencions curtes |
-| Level4 | + condicional (voldria) | Com a molt 2 |
-| Level5 | + present de subjuntiu en subordinades (perquè vingui) | Com a molt 3 |
-| Level6 i Level7 | + plusquamperfet (havia arribat), imperfet de subjuntiu (si tingués) | Com a molt 3; expositius sense |
-| Level8 a Level10 | Tots, excepte el passat simple (anà) | Cites curtes entre cometes |
+| Level3 | + passat perifràstic (va anar), imperfet (era), perfet (ha arribat), imperatiu al diàleg | Com a molt 2 intervencions curtes |
+| Level4 | + futur (anirem) i condicional (voldria) | Com a molt 2 |
+| Level5 | + present de subjuntiu en subordinades (perquè vingui) | Com a molt 4 |
+| Level6 i Level7 | + plusquamperfet (havia arribat), imperfet de subjuntiu (si tingués) | Com a molt 4; expositius sense |
+| Level8 a Level10 | Tots, excepte el passat simple (anà) | Com a molt 4; cites curtes entre cometes |
 
 - **Humor**: sí, de situació i amable, mai a costa d'algú. Sense ironia ni dobles sentits fins a
   Level6; jocs de paraules des de Level6.
@@ -114,7 +117,8 @@ ciutat més bonica".
 ## 6. Convencions tipogràfiques
 
 **Lectura en veu alta.** Puntuació normal; només el signe final d'exclamació i d'interrogació (mai ¿
-ni ¡); sense parèntesis; punts suspensius com a molt un cop, des de Level3.
+ni ¡); dos punts des de Level4; parèntesis i cometes baixes des de Level6; punts suspensius com a
+molt un cop, des de Level3.
 
 - **Diàleg amb guió llarg** enganxat a la intervenció; l'incís va entre guions i el punt, després
   del de tancament: «—Vine aquí —diu la Lola—. Mira el cel.» Després de ! o ?, minúscula: «—Que
@@ -125,7 +129,7 @@ ni ¡); sense parèntesis; punts suspensius com a molt un cop, des de Level3.
   de nou) des de Level5. Sense anys fins a Level6; des de Level7, un com a molt i en lletres, millor
   "a mitjan segle passat". Sense símbols (%, €, km): "la meitat", "quilòmetres". Segles en lletres,
   mai xifres romanes. Sigles, només des de Level9 i una de molt coneguda i explicada (ADN).
-- Cometes baixes « » per a cites des de Level7. Dies i mesos en minúscula; Sant Jordi, Nadal.
+- Cometes baixes « » per a cites des de Level6. Dies i mesos en minúscula; Sant Jordi, Nadal.
   Títol de dues a cinc paraules, sense punt.
 
 **Llista de text.** Síl·labes i paraules en minúscula, sense punt ni article (excepte les d'apòstrof
@@ -217,33 +221,39 @@ Criteri: un nen de l'edat sense dificultats ho llegeix sense ajuda i diu "Bé ai
   l'oposició només sap mentir. Segons l'INE, el 45 % dels joves no confia en els polítics.»
   (política i opinió, xifres, sigla, actualitat datada)
 
-## Decisions que el grup ha de confirmar
+## Decisions confirmades pel grup (2026-10-29)
 
-Aquesta guia pren algunes decisions per a les quals no hi havia regla. Confirmeu-les o canvieu-les:
+El grup va aprovar la guia i les deu decisions; on va precisar un valor, la guia ja l'aplica:
 
-1. **Diàleg en un sol paràgraf**: cada intervenció amb guió va seguida dins del paràgraf, perquè la
-   lectura és d'un sol paràgraf. L'alternativa seria admetre salts de línia a l'app.
-2. **"Hi ha" i "es diu" de Level1 a Level3**, com a formes fixes, tot i que els pronoms febles no
-   entren fins a Level4 (els exemples de la guia del grup ja les fan servir).
-3. **Noms**: l'Ana espera a Level3 perquè porta apòstrof; article "en" davant de consonant (en
-   Pau); Leo, Teo i Mia tenen hiat (Level3 a la taula); **resolt pel grup (2026-10-29)**: a Level1 i
-   Level2 es prioritzen noms sense hiat (Pol, Pau, Marc, Pep, Ana, Lola, Sara) i Leo, Teo i Mia
-   només com a excepció de nom molt freqüent; llista de noms des de Level3 (Jana, Nil, Laia, Amina, Omar...).
-4. **Temes sense edat de Level1 a Level3**: un usuari més gran pot llegir aquests nivells (res de
-   nadons ni bolquers).
-5. **Quotes per lot**: del 40 al 60 % de protagonistes noies; un text de cada cinc com a mínim amb
-   una família que no sigui mare i pare; un text de cada quatre com a màxim amb una tradició;
-   animals que parlen fins a Level4 i després un de cada cinc; com a molt dos personatges amb nom a
-   Level1 i Level2 i tres de Level3 a Level5.
+1. **Diàleg en un sol paràgraf**: cada intervenció amb guió va seguida dins del paràgraf.
+2. **"Hi ha" i "es diu" de Level1 a Level3**, com a formes fixes.
+3. **Noms**: l'Ana espera a Level3 perquè porta apòstrof; article "en" davant de consonant (en Pau).
+   A Level1 i Level2 es prioritzen noms sense hiat (Pol, Pau, Marc, Pep, Lola, Sara) i Leo, Teo i
+   Mia només com a excepció de nom molt freqüent; llista de noms des de Level3 (Jana, Nil, Laia,
+   Amina, Omar...).
+4. **Temes sense edat**: la meitat de cada lot com a mínim, de Level0 a Level3.
+5. **Quotes per lot**: del 40 al 60 % de protagonistes noies; de cada deu textos amb família, tres
+   com a mínim amb una família que no sigui mare, pare i fills; un mateix nom, en tres textos com a
+   molt; un text de cada quatre com a màxim amb una tradició; animals que parlen fins a Level4 i
+   després un de cada cinc; com a molt dos personatges amb nom a Level1 i Level2 i tres de Level3 a
+   Level5.
 6. **Calendari cultural**: Sant Jordi i castells des de Level2; tió des de Level3; la llegenda de
-   Sant Jordi des de Level5, sense mort; caganer i correfoc des de Level6; fora l'Onze de Setembre i
-   els equips de futbol; cap text posa en dubte la màgia (Reis, tió).
-7. **Llocs**: cap topònim a Level1 i Level2; Catalunya des de Level3; la resta del món des de Level5.
-8. **Temps verbals**: només present a Level1 i Level2; perifràstic, imperfet, perfet i futur des de
-   Level3; subjuntiu des de Level5; mai el passat simple.
-9. **Xifres i sigles**: sense anys fins a Level6; hores amb quarts des de Level5; sigles des de
-   Level9; cap xifra romana.
-10. **Frases de la llista de text** amb majúscula inicial i punt final.
+   Sant Jordi des de Level5, sense mort; caganer i correfoc des de Level6. Fora les festes
+   religioses (Reis, Setmana Santa), l'Onze de Setembre i els equips de futbol; cap text posa en
+   dubte la màgia (tió, fada de les dents).
+7. **Llocs**: genèrics fins a Level3; Catalunya i la Península a Level4 i Level5; la resta del món,
+   amb dades, des de Level6 (abans: Catalunya des de Level3 i el món des de Level5).
+8. **Temps verbals**: només present a Level1 i Level2; perifràstic, imperfet i perfet des de
+   Level3; futur i condicional des de Level4 (abans el futur entrava a Level3); subjuntiu des de
+   Level5; mai el passat simple. Ho comprova la porta lèxica a la lectura i la segmentació
+   (lexico.py, `tense_check`).
+9. **Xifres, signes i sigles**: números sempre en lletres; sense anys fins a Level6; hores amb
+   quarts des de Level5; dos punts des de Level4; parèntesis i cometes des de Level6; sigles des
+   de Level9; cap xifra romana.
+10. **Llista de text**: frases amb majúscula inicial i punt final. **Segmentació**: sense
+    majúscules ni signes.
+11. **Diàleg per nivells**: cap a Level1 i Level2; com a molt dues intervencions a Level3 i Level4;
+    com a molt quatre des de Level5.
 
 Observacions: "quan hagueu acabat" del missatge d'interfície proposat passa a "quan hàgiu acabat"
 (varietat central); "amb", "els" i "molt" (codes de Level3 a la taula) surten a l'exemple de Level1

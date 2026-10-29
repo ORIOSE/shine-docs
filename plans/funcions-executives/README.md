@@ -13,13 +13,28 @@ estas actividades es Funciones Ejecutivas y Atención.
 
 ## Decisiones cerradas (grupo de expertos, 2026-10-29)
 
-1. Opción (a) de la propuesta: matriz con regla, como fase propia.
-2. Se adoptan los **valores por defecto** de la propuesta para todo lo que el grupo no respondió
-   en detalle: las cuatro familias de regla y su nivel de entrada, símbolos en Level0 y Level2,
-   cebos que restan del acierto, tiempos por ronda y regla oculta al empezar la ronda en Level9 y
-   Level10.
-3. Mientras no haya contenido del área, la matriz, la posición de imágenes y la repetición rápida
-   la llevan como secundaria, y el generador no le reserva hueco (hecho el 2026-10-29).
+Respuestas: lliuraments/E10-4-funcions-executives-proposta-respostes.md y, con las 12 preguntas de
+detalle, lliuraments/respostes-2026-10-29/E10-4-resposta.md.
+
+1. Opción (a) de la propuesta: matriz con regla, como fase propia. La opción (d), secuencia con
+   regla (tipo CPT), será el segundo tipo del área en la v1.1. La (b), instrucciones encadenadas,
+   pasa a la v1.1 como actividad de Memoria de Trabajo, cuando haya locuciones.
+2. Foco del área: inhibición, flexibilidad y atención sostenida. La memoria de trabajo se queda en
+   su área (posición de imágenes); la regla oculta de Level9 y Level10 es la única carga de memoria.
+3. Las cuatro familias de regla y su nivel de entrada, como en la tabla de abajo.
+4. Símbolos (● ▲ ■ ★) en Level0 y Level2, cuando entra una regla nueva, para separar la carga
+   ejecutiva de la lectora.
+5. Los cebos tocados restan del acierto efectivo (comisión impulsiva).
+6. Al revelar: los cebos tocados vuelven al color neutro sin mensaje de error y los objetivos que
+   faltaron se marcan con un aro ámbar.
+7. La regla se muestra al empezar y se oculta al empezar el rastreo en Level9 y Level10.
+8. "Antes" = a la izquierda, permitido desde Level2 y siempre con flecha ([a] → [p]).
+9. Tiempo por ronda: sin límite en Level0 a Level2; de 60 a 40 s en Level3 a Level8; 50 s en
+   Level9 y Level10.
+10. Mientras no haya contenido del área, la matriz, la posición de imágenes y la repetición rápida
+    la llevan como secundaria, y el generador no le reserva hueco (hecho el 2026-10-29).
+11. El área entra en la rotación con 3 actividades por celda (régimen de apertura, como el catalán)
+    y sigue hasta las 6 del régimen ordinario.
 
 ## Parámetros por defecto (propuesta 3.1)
 
@@ -46,7 +61,7 @@ estas actividades es Funciones Ejecutivas y Atención.
 
 Acierto efectivo para el freno por aciertos del evaluador: (objetivos encontrados − cebos tocados)
 / objetivos, con mínimo 0. Al revelar, los cebos tocados vuelven al color neutro sin mensaje de
-error (como las falsas marcas de hoy).
+error (como las falsas marcas de hoy) y los objetivos que faltaron llevan un aro ámbar.
 
 ## Subplanes
 
@@ -56,8 +71,8 @@ error (como las falsas marcas de hoy).
 | 02 | Importador | Clave `regla` en `contenido` de `LetterMatrixActivityHandler`: validación por familia, cálculo de objetivos y cebos a partir de la regla (el lote declara los recuentos y el importador los comprueba), huella con la regla, prefijo y área `ATE` (`MAT-XX-Lnn-ATE-nnn`). Kernel tests. | Un lote con un recuento que no cuadra se rechaza; los lotes de matriz actuales se reimportan sin cambios. |
 | 03 | Evaluador | `SessionEvaluator`: acierto efectivo con cebos en el freno por aciertos cuando el summary tiene `field_lure_marks` (comprobando `hasField`, como en la repetición rápida). Tests. | Un niño que toca todos los objetivos y todos los cebos no puede subir de nivel por acierto. |
 | 04 | App | `letterMatrix.ts`: objetivos por índice de celda, no por texto; columna de clave (R1); fondo alterno de filas (R4); enunciado de la regla con fichas ([a] → [p]); regla oculta al empezar la ronda (Level9 y Level10); cebos tocados en el log y el summary; textos es y ca en los catálogos de idioma. Tests de la lógica pura y de los payloads. | Se juega una matriz de cada regla en Expo web, en los dos idiomas, y los registros llegan a Drupal con los cebos. |
-| 05 | Generador y lotes | `shine/content/generadores/matriz_regla.py` con semilla: material de baja semejanza visual (nunca b, d, p, q como objetivo y cebo), 40 a 50 % de celdas neutras, regla mirada solo dentro de la fila, sin parejas que cumplan la regla por azar. Lotes compartidos es y ca de Level0 a Level8 (registro con `idiomas`) y por idioma en Level9 y Level10, 6 actividades por nivel, con revisión del grupo (protocolo E12). | Cobertura del área con 6 actividades por nivel en los dos idiomas tras la revisión. |
-| 06 | Mensajes y verificación | Un mensaje de explicación por familia de regla, con imagen de ejemplo, en los dos idiomas; el área vuelve a la rotación sola en cuanto tiene contenido (no hay que tocar el generador); recorrido completo con un alumno de cada idioma; documentación (catálogo 6.1, activity-system, CLAUDE.md, progress). | Sesiones regulares con un hueco de Funciones Ejecutivas lleno y radar del área moviéndose por actividad principal. |
+| 05 | Generador y lotes | `shine/content/generadores/matriz_regla.py` con semilla: material de baja semejanza visual (nunca b, d, p, q como objetivo y cebo), 40 a 50 % de celdas neutras, regla mirada solo dentro de la fila, sin parejas que cumplan la regla por azar. Lotes compartidos es y ca de Level0 a Level8 (registro con `idiomas`) y por idioma en Level9 y Level10: primero 3 actividades por nivel (apertura del área) y después hasta 6, con revisión del grupo (protocolo E12). | Cobertura del área con 6 actividades por nivel en los dos idiomas tras la revisión. |
+| 06 | Mensajes y verificación | Un mensaje de explicación por familia de regla, con imagen de ejemplo, en los dos idiomas; el área vuelve a la rotación sola en cuanto tiene contenido (no hay que tocar el generador), primero con 3 actividades por celda; recorrido completo con un alumno de cada idioma; documentación (catálogo 6.1, activity-system, CLAUDE.md, progress). | Sesiones regulares con un hueco de Funciones Ejecutivas lleno y radar del área moviéndose por actividad principal. |
 
 Orden: 01 → 02 → 03 y 04 en paralelo → 05 → 06. El 05 puede empezar en cuanto exista el contrato del
 02 (la forma del lote), con el generador probado contra el validador.

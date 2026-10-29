@@ -1,0 +1,86 @@
+[
+ {
+  "id": "E01",
+  "titol": "Llista general del castellà",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E01-revisio.md",
+  "paquet": "E01-llista-general-es.zip"
+ },
+ {
+  "id": "E02",
+  "titol": "Llista general del català",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E02-revisio.md",
+  "paquet": "E02-llista-general-ca.zip"
+ },
+ {
+  "id": "E03",
+  "titol": "Vocabulari infantil del castellà",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E03-revisio.md",
+  "paquet": "E03-llista-infantil-es.zip"
+ },
+ {
+  "id": "E04",
+  "titol": "Vocabulari infantil del català",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E04-revisio.md",
+  "paquet": "E04-llista-infantil-ca.zip"
+ },
+ {
+  "id": "E05",
+  "titol": "Banc de pseudoparaules, castellà",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E05-E06-revisio.md",
+  "paquet": "E05-E06-pseudoparaules.zip"
+ },
+ {
+  "id": "E06",
+  "titol": "Banc de pseudoparaules, català",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E05-E06-revisio.md",
+  "paquet": "E05-E06-pseudoparaules.zip"
+ },
+ {
+  "id": "E07",
+  "titol": "Matriu de Level7 a Level10, castellà",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E07-E08-revisio.md",
+  "paquet": "E07-E08-matriu.zip"
+ },
+ {
+  "id": "E08",
+  "titol": "Matriu de Level7 a Level10 i grafies pròpies, català",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E07-E08-revisio.md",
+  "paquet": "E07-E08-matriu.zip"
+ },
+ {
+  "id": "E09",
+  "titol": "Grups d'imatges de Level9 i Level10",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/lliuraments/E09-revisio.md",
+  "paquet": "E09-grups-imatges.zip"
+ },
+ {
+  "id": "E10",
+  "titol": "Decisions pedagògiques (4 preguntes)",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/E10-decisions.md",
+  "paquet": "E10-4-funcions-executives.zip"
+ },
+ {
+  "id": "E11",
+  "titol": "Guia editorial dels textos",
+  "estat": "aplicat",
+  "fitxa": "(les guies acaben amb les decisions per confirmar)",
+  "paquet": "E11-guia-editorial.zip"
+ },
+ {
+  "id": "E12",
+  "titol": "Protocol de revisió de lots",
+  "estat": "tancat",
+  "fitxa": "plans/contenido/encarrecs/E12-protocol-revisio.md",
+  "paquet": ""
+ }
+]

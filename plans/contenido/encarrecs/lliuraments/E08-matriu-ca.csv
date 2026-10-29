@@ -49,23 +49,23 @@ nivell,objectiu,distractors,tipus,nota
 8,gro|glo,gor|gru|gol,travada,
 8,dro|bro,dor|dri|bor,travada,
 8,cla|cra,cal|clu|car,travada,
-9,escala,cscala|escaia|escela|esoala,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,pàgina,bàgina|pàglna|pàqina|qàgina,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,pizza,bizza|pisza|pizze|plzza,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,pedal,pcdal|pedai|pedol|qedal,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,cotxet,cctxet|cofxet|eotxet|ootxet,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,ferro,fcrro|fenro|ferno|ferrc,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,diner,dincr|diuer|dlner|qiner,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,perill,berill|parill|penill|periil,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,pintor,bintor|pintcr|pinton|piutor,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-9,gegant,gagant|gcgant|geganf|gegent,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
-10,nota|mota,mofa|moto|nata|noto,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,pau|pou,bou|peu|pon,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,por|par,bar|per|pon,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+9,cella,aella|cclla|cellc|oella,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,futbol,fntbol|futbal|futdol|futqol,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,dòmino,dòminc|dòmiuo|dònino|pòmino,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,xurro,xmrro|xnrro|xurrc|xurre,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,colom,aolom|cclom|celom|eolom,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,bombó,bcmbó|bomdó|bonbó|boubó,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,pardal,dardal|pardel|pcrdal|perdal,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,aigua,aigma|aiguc|eigua|oigua,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,parc,darc|pcrc|perc|qarc,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,sucre,smcre|suare|sucra|sucrc,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+10,pau|dau,deu|pam|peu|pou,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,pou|bou,beu|pau|peu|pon,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,tos|fos,fas|fes|tes,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,pol|bol,bel|dol|pal|pel,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,preu|breu,brou|prem|pren|prou,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,neu|meu,mem|nau|nen|nou,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,nom|nou,mou|nau|neu,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,pansa|dansa,densa|pausa|pensa,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,nota|mota,mofa|moto|neta|noto,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
 10,fam|tam,fan|fem|tan|tem,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,moto|noto,mato|mota|nota,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,fira|tira,fina|tina|tiro,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,bala|pala,bela|bola|pela,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,taller|faller,fallar|fallen|tallar|tallen,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,mama|mana,mena|mona|nana,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
-10,bar|par,ban|per|por,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada

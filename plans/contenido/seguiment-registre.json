@@ -1,0 +1,590 @@
+{
+ "_nota": "Registre del seguiment. Estats: pendent, en curs, enviat (a revisió), respost (resposta rebuda, per aplicar), aplicat, tancat. El genera i el llegeix shine/content/generadores/seguiment.py, que escriu plans/contenido/SEGUIMENT.md. Cada canvi d'estat s'anota aquí i es regenera el document.",
+ "actualitzat": "2026-10-29",
+ "fases": [
+  {
+   "id": "C1",
+   "titol": "Cicle castellà Sílabas (38 activitats)",
+   "estat": "aplicat",
+   "detall": "Aprovat amb 3 canvis (lima → lata, prado → prisa, examen → boxeo) i el contrast gue/gui; publicat el 2026-10-29. Resposta plans/contenido/encarrecs/lliuraments/respostes-2026-10-29/LOT-ciclo-silabas-es-v1-resposta.md."
+  },
+  {
+   "id": "C2",
+   "titol": "Tanda 2: completar Level0 a Level2 fins a 6 per cel·la",
+   "estat": "aplicat",
+   "detall": "Aprovat; canvis aplicats (SIL-ES-L00-LIN-005 amb pato) i 9 lots publicats el 2026-10-29. Resposta plans/contenido/encarrecs/lliuraments/respostes-2026-10-29/LOT-tanda2-level0-2-resposta.md. La resposta diu que tot Level0 a Level10 queda validat: no és així, només és Level0 a Level2."
+  },
+  {
+   "id": "C3",
+   "titol": "Tanda 3: Level3 sencer, tots dos idiomes",
+   "estat": "aplicat",
+   "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda3-level3-resposta.md) i publicada: 49 activitats. Amb la decisió 2, terme d'esforç nou Hiatos / Hiats a les dues taxonomies (estructura.py, phonology-terms) i 12 activitats reetiquetades."
+  },
+  {
+   "id": "C4",
+   "titol": "Tanda 4: Level4 sencer, tots dos idiomes",
+   "estat": "aplicat",
+   "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda4-level4-resposta.md) i publicada: 48 activitats. Decisió 1: model mixt de parpelleig des de Level3 (paraules reals + pseudoparaules + 30 % d'alleujament), fixat als prompts 03 dels dos idiomes."
+  },
+  {
+   "id": "C5",
+   "titol": "Tanda 5: Level5 sencer, tots dos idiomes",
+   "estat": "aplicat",
+   "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda5-level5-resposta.md) i publicada: 48 activitats. Decisions: termòmetre permès; pronoms combinats a la segmentació a Level7; l'etiqueta d'hiat només si un terç o més de les paraules en tenen (estructura.activity_effort), 17 activitats de Level3 a Level5 reetiquetades."
+  },
+  {
+   "id": "C6",
+   "titol": "Tanda 6: Level6 sencer, tots dos idiomes",
+   "estat": "aplicat",
+   "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda6-level6-resposta.md) i publicada: 48 activitats. Validats: ordena les síl·labes sense dibuix a Level6, lectures expositives, enclítics (en català només amb apòstrof), subjuntiu imperfet."
+  },
+  {
+   "id": "C7",
+   "titol": "Tanda 7: Level7 sencer, tots dos idiomes",
+   "estat": "aplicat",
+   "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda7-level7-resposta.md) i publicada: 48 activitats. Validats els termes nous de sonoritat i el grup d'esforç morfològic i lèxic, les síl·labes sobrants ortogràfiques, els homòfons a la segmentació i els pronoms combinats en català."
+  },
+  {
+   "id": "C8",
+   "titol": "Tanda 8: Level8 sencer, tots dos idiomes",
+   "estat": "en curs",
+   "detall": "48 activitats (24 es, 24 ca) importades sense publicar el 2026-10-29; paquet a shine/private/enviament-2026-10-29-tanda8/LOT-tanda8-level8.zip, amb set decisions."
+  },
+  {
+   "id": "IMG2",
+   "titol": "Banc d'imatges, lot 2 (122 imatges per a Level9 i Level10)",
+   "estat": "en curs",
+   "detall": "81 candidates acceptades (revisió de Claude als fulls de contactes) i importades al banc el 2026-10-29 amb generadores/fusionar_ampliacion122.py; 16 descartades (cap grup E09 les fa servir). Per a la tirada del 2026-10-30: 20 pendents que calen i 5 per repetir (mango, pasa, bol, caqui, bacalao), llista a _revision/ampliacion122/repetir-2026-10-29.md. Després, tornar a executar la fusió, import-images i els lots de posició d'imatges de Level9 i Level10. Lots de Level9 i Level10 ja escrits (imagenes-{es,ca}-level9-10-v1.json, generadores/e09_lots.py, 12 activitats per idioma, cap imatge repetida dins d'una activitat): la prova d'importació només falla per les 25 imatges de la tirada; demà es verifica i s'importen."
+  },
+  {
+   "id": "F19",
+   "titol": "FASE 19: matriu amb regla (Funcions Executives)",
+   "estat": "en curs",
+   "detall": "Subplans 01 a 06 fets el 2026-10-29. Lots aprovats pel grup sense canvis i publicats: 3 per nivell i idioma, l'àrea entra a la rotació. Missatge d'explicació per família amb imatge d'exemple a la intro de l'activitat. Verificat a Expo web amb la Marta (es) i el Pau (ca) en R1. Falta jugar R2, R3, R4 i la regla oculta a l'app i arribar a 6 per cel·la."
+  },
+  {
+   "id": "GEN",
+   "titol": "Generador de sessions: no reservar forat a àrees sense contingut",
+   "estat": "aplicat",
+   "detall": "SessionGenerator::planRegular(), 2026-10-29."
+  },
+  {
+   "id": "TAG",
+   "titol": "Etiquetes fonològiques (esforç) calculades per estructura",
+   "estat": "aplicat",
+   "detall": "estructura.py, etiquetar_lote.py; 20 activitats etiquetades, prompts 05, 07, 08."
+  },
+  {
+   "id": "SRC",
+   "titol": "Registre de fonts de dades",
+   "estat": "aplicat",
+   "detall": "docs/fuentes-de-datos.md; regla a CLAUDE.md."
+  }
+ ],
+ "encarrecs": [
+  {
+   "id": "E01",
+   "titol": "Llista general del castellà",
+   "estat": "aplicat",
+   "lliurament": "shine/private/lexico/es-general.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E01-revisio.md",
+   "paquet": "E01-llista-general-es.zip"
+  },
+  {
+   "id": "E02",
+   "titol": "Llista general del català",
+   "estat": "aplicat",
+   "lliurament": "shine/private/lexico/ca-general.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E02-revisio.md",
+   "paquet": "E02-llista-general-ca.zip"
+  },
+  {
+   "id": "E03",
+   "titol": "Vocabulari infantil del castellà",
+   "estat": "aplicat",
+   "lliurament": "shine/private/lexico/es-infantil.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E03-revisio.md",
+   "paquet": "E03-llista-infantil-es.zip"
+  },
+  {
+   "id": "E04",
+   "titol": "Vocabulari infantil del català",
+   "estat": "aplicat",
+   "lliurament": "shine/private/lexico/ca-infantil.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E04-revisio.md",
+   "paquet": "E04-llista-infantil-ca.zip"
+  },
+  {
+   "id": "E05",
+   "titol": "Banc de pseudoparaules, castellà",
+   "estat": "aplicat",
+   "lliurament": "plans/contenido/encarrecs/lliuraments/E05-pseudoparaules-es.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E05-E06-revisio.md",
+   "paquet": "E05-E06-pseudoparaules.zip"
+  },
+  {
+   "id": "E06",
+   "titol": "Banc de pseudoparaules, català",
+   "estat": "aplicat",
+   "lliurament": "plans/contenido/encarrecs/lliuraments/E06-pseudoparaules-ca.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E05-E06-revisio.md",
+   "paquet": "E05-E06-pseudoparaules.zip"
+  },
+  {
+   "id": "E07",
+   "titol": "Matriu de Level7 a Level10, castellà",
+   "estat": "aplicat",
+   "lliurament": "plans/contenido/encarrecs/lliuraments/E07-matriu-es.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E07-E08-revisio.md",
+   "paquet": "E07-E08-matriu.zip"
+  },
+  {
+   "id": "E08",
+   "titol": "Matriu de Level7 a Level10 i grafies pròpies, català",
+   "estat": "aplicat",
+   "lliurament": "plans/contenido/encarrecs/lliuraments/E08-matriu-ca.csv",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E07-E08-revisio.md",
+   "paquet": "E07-E08-matriu.zip"
+  },
+  {
+   "id": "E09",
+   "titol": "Grups d'imatges de Level9 i Level10",
+   "estat": "aplicat",
+   "lliurament": "plans/contenido/encarrecs/lliuraments/E09-grups-imatges-es.csv, E09-grups-imatges-ca.csv, definitius E09-grups-imatges-{es,ca}-definitiu.csv (decisió a E09-revisio-resposta.md)",
+   "fitxa": "plans/contenido/encarrecs/lliuraments/E09-revisio.md",
+   "paquet": "E09-grups-imatges.zip"
+  },
+  {
+   "id": "E10",
+   "titol": "Decisions pedagògiques (4 preguntes)",
+   "estat": "aplicat",
+   "lliurament": "plans/multiidioma/respostes-dubtes-expert.md, lliuraments/E10-4-funcions-executives-proposta-respostes.md",
+   "fitxa": "plans/contenido/encarrecs/E10-decisions.md",
+   "paquet": "E10-4-funcions-executives.zip"
+  },
+  {
+   "id": "E11",
+   "titol": "Guia editorial dels textos",
+   "estat": "aplicat",
+   "lliurament": "plans/contenido/encarrecs/lliuraments/E11-guia-editorial-es.md, E11-guia-editorial-ca.md",
+   "fitxa": "(les guies acaben amb les decisions per confirmar)",
+   "paquet": "E11-guia-editorial.zip"
+  },
+  {
+   "id": "E12",
+   "titol": "Protocol de revisió de lots",
+   "estat": "tancat",
+   "lliurament": "(sense lliurament: és el procediment)",
+   "fitxa": "plans/contenido/encarrecs/E12-protocol-revisio.md",
+   "paquet": ""
+  }
+ ],
+ "revisions": [
+  {
+   "id": "R-CA1",
+   "titol": "Lots catalans de Level0 a Level2 (subplan 05)",
+   "fitxa": "plans/multiidioma/revisio-lots-ca.md",
+   "paquet": "",
+   "estat": "aplicat",
+   "lots": [
+    "matriz-es-ca-level0-2-v1.json",
+    "imagenes-es-ca-level0-2-v1.json",
+    "blink-ca-level0-2-v1.json",
+    "ciclo-sillabes-ca-v1.json",
+    "silabas-ca-level0-2-v1.json",
+    "repeticion-ca-level0-2-v1.json",
+    "segmentacion-ca-level1-2-v1.json",
+    "matriz-ca-level3-v1.json"
+   ]
+  },
+  {
+   "id": "R-CIC-ES",
+   "titol": "Cicle castellà Sílabas",
+   "fitxa": "plans/contenido/revision/ciclo-silabas-es-v1.md",
+   "paquet": "LOT-ciclo-silabas-es-v1.zip",
+   "estat": "aplicat",
+   "lots": [
+    "ciclo-silabas-es-v1.json"
+   ]
+  },
+  {
+   "id": "R-T2",
+   "titol": "Tanda 2, Level0 a Level2",
+   "fitxa": "plans/contenido/revision/tanda2-level0-2.md",
+   "paquet": "LOT-tanda2-level0-2.zip",
+   "estat": "aplicat",
+   "lots": [
+    "silabas-es-level0-2-v1.json",
+    "segmentacion-es-level1-2-v1.json",
+    "lista-es-level0-2-v1.json",
+    "lectura-es-level1-2-v1.json",
+    "repeticion-es-level0-v1.json",
+    "llista-ca-level0-2-v1.json",
+    "lectura-ca-level1-2-v1.json",
+    "matriz-es-ca-level0-2-v2.json",
+    "imagenes-es-ca-level0-2-v2.json"
+   ]
+  },
+  {
+   "id": "R-T3",
+   "titol": "Tanda 3, Level3",
+   "fitxa": "plans/contenido/revision/tanda3-level3.md",
+   "paquet": "LOT-tanda3-level3.zip",
+   "estat": "aplicat",
+   "lots": [
+    "silabas-es-level3-v1.json",
+    "segmentacion-es-level3-v1.json",
+    "lista-es-level3-v1.json",
+    "blink-es-level3-v1.json",
+    "repeticion-es-level3-v1.json",
+    "lectura-es-level3-v1.json",
+    "silabas-ca-level3-v1.json",
+    "segmentacion-ca-level3-v1.json",
+    "llista-ca-level3-v1.json",
+    "blink-ca-level3-v1.json",
+    "repeticion-ca-level3-v1.json",
+    "lectura-ca-level3-v1.json",
+    "matriz-es-ca-level3-v1.json",
+    "imagenes-es-ca-level3-v1.json",
+    "matriz-ca-level3-v1.json"
+   ]
+  },
+  {
+   "id": "R-FE1",
+   "titol": "Funcions Executives: matriu amb regla, 3 per nivell",
+   "fitxa": "plans/contenido/revision/fe-matriz-regla-v1.md",
+   "paquet": "LOT-fe-matriz-regla-v1.zip",
+   "estat": "aplicat",
+   "lots": [
+    "matriz-regla-es-ca-level0-8-v1.json",
+    "matriz-regla-level9-10-v1.json"
+   ]
+  },
+  {
+   "id": "R-T4",
+   "titol": "Tanda 4, Level4",
+   "fitxa": "plans/contenido/revision/tanda4-level4.md",
+   "paquet": "LOT-tanda4-level4.zip",
+   "estat": "aplicat",
+   "lots": [
+    "silabas-es-level4-v1.json",
+    "segmentacion-es-level4-v1.json",
+    "lista-es-level4-v1.json",
+    "blink-es-level4-v1.json",
+    "repeticion-es-level4-v1.json",
+    "lectura-es-level4-v1.json",
+    "silabas-ca-level4-v1.json",
+    "segmentacion-ca-level4-v1.json",
+    "llista-ca-level4-v1.json",
+    "blink-ca-level4-v1.json",
+    "repeticion-ca-level4-v1.json",
+    "lectura-ca-level4-v1.json",
+    "matriz-es-ca-level4-v1.json",
+    "imagenes-es-ca-level4-v1.json"
+   ]
+  },
+  {
+   "id": "R-T5",
+   "titol": "Tanda 5, Level5",
+   "fitxa": "plans/contenido/revision/tanda5-level5.md",
+   "paquet": "LOT-tanda5-level5.zip",
+   "estat": "aplicat",
+   "lots": [
+    "silabas-es-level5-v1.json",
+    "segmentacion-es-level5-v1.json",
+    "lista-es-level5-v1.json",
+    "blink-es-level5-v1.json",
+    "repeticion-es-level5-v1.json",
+    "lectura-es-level5-v1.json",
+    "silabas-ca-level5-v1.json",
+    "segmentacion-ca-level5-v1.json",
+    "llista-ca-level5-v1.json",
+    "blink-ca-level5-v1.json",
+    "repeticion-ca-level5-v1.json",
+    "lectura-ca-level5-v1.json",
+    "matriz-es-ca-level5-v1.json",
+    "imagenes-es-ca-level5-v1.json"
+   ]
+  },
+  {
+   "id": "R-T6",
+   "titol": "Tanda 6, Level6",
+   "fitxa": "plans/contenido/revision/tanda6-level6.md",
+   "paquet": "LOT-tanda6-level6.zip",
+   "estat": "aplicat",
+   "lots": [
+    "silabas-es-level6-v1.json",
+    "segmentacion-es-level6-v1.json",
+    "lista-es-level6-v1.json",
+    "blink-es-level6-v1.json",
+    "repeticion-es-level6-v1.json",
+    "lectura-es-level6-v1.json",
+    "silabas-ca-level6-v1.json",
+    "segmentacion-ca-level6-v1.json",
+    "llista-ca-level6-v1.json",
+    "blink-ca-level6-v1.json",
+    "repeticion-ca-level6-v1.json",
+    "lectura-ca-level6-v1.json",
+    "matriz-es-ca-level6-v1.json",
+    "imagenes-es-ca-level6-v1.json"
+   ]
+  },
+  {
+   "id": "R-T7",
+   "titol": "Tanda 7, Level7",
+   "fitxa": "plans/contenido/revision/tanda7-level7.md",
+   "paquet": "LOT-tanda7-level7.zip",
+   "estat": "aplicat",
+   "lots": [
+    "silabas-es-level7-v1.json",
+    "segmentacion-es-level7-v1.json",
+    "lista-es-level7-v1.json",
+    "blink-es-level7-v1.json",
+    "repeticion-es-level7-v1.json",
+    "lectura-es-level7-v1.json",
+    "silabas-ca-level7-v1.json",
+    "segmentacion-ca-level7-v1.json",
+    "llista-ca-level7-v1.json",
+    "blink-ca-level7-v1.json",
+    "repeticion-ca-level7-v1.json",
+    "lectura-ca-level7-v1.json",
+    "matriz-es-ca-level7-v1.json",
+    "imagenes-es-ca-level7-v1.json"
+   ]
+  },
+  {
+   "id": "R-T8",
+   "titol": "Tanda 8, Level8",
+   "fitxa": "plans/contenido/revision/tanda8-level8.md",
+   "paquet": "LOT-tanda8-level8.zip",
+   "estat": "pendent",
+   "lots": [
+    "silabas-es-level8-v1.json",
+    "segmentacion-es-level8-v1.json",
+    "lista-es-level8-v1.json",
+    "blink-es-level8-v1.json",
+    "repeticion-es-level8-v1.json",
+    "lectura-es-level8-v1.json",
+    "silabas-ca-level8-v1.json",
+    "segmentacion-ca-level8-v1.json",
+    "llista-ca-level8-v1.json",
+    "blink-ca-level8-v1.json",
+    "repeticion-ca-level8-v1.json",
+    "lectura-ca-level8-v1.json",
+    "matriz-es-ca-level8-v1.json",
+    "imagenes-es-ca-level8-v1.json"
+   ]
+  }
+ ],
+ "dubtes": [
+  {
+   "origen": "E01",
+   "pregunta": "Ajust de 'vosotros' (rang de la forma de tercera del plural)",
+   "estat": "tancat",
+   "resposta": "Aprovat: es manté el rang de la tercera del plural (E01-resposta.md)."
+  },
+  {
+   "origen": "E01",
+   "pregunta": "Vocabulari infantil a partir de Level3: comptar dins de rang les paraules de la llista infantil",
+   "estat": "tancat",
+   "resposta": "Aprovat: la paraula de la llista infantil compta dins de rang des de Level3 (lexico.py)."
+  },
+  {
+   "origen": "E01",
+   "pregunta": "Formes flexionades rares (jugábamos): regla per forma o per lema",
+   "estat": "tancat",
+   "resposta": "Regla mixta: forma vàlida si el lema és dins de rang i el temps és del nivell (lexico.py, by_lemma)."
+  },
+  {
+   "origen": "E01",
+   "pregunta": "Veseig, malsonant o sensible, polisèmics vulgars, americanismes, sigles, diminutius (criteris 4 a 9)",
+   "estat": "tancat",
+   "resposta": "Veseig americà; malsonant (bloqueja) separat de sensible (des de Level5, amb revisió); caca i pito sense marca; americanismes marcats; sigles fora; diminutius amb el lema de la base (32). Aplicat amb ajustos_llistes.py."
+  },
+  {
+   "origen": "E02",
+   "pregunta": "Formes vàlides que gairebé sempre són errada o castellà (series, varem, creo)",
+   "estat": "tancat",
+   "resposta": "Descartades les formes minoritàries o castellanes (distancia, copia, sentencia, formula, creo)."
+  },
+  {
+   "origen": "E02",
+   "pregunta": "Topònims amb grafia castellana o estrangera; sigles d'organitzacions",
+   "estat": "tancat",
+   "resposta": "Topònims no catalanitzats i sigles, fora (20 exònims descartats)."
+  },
+  {
+   "origen": "E02",
+   "pregunta": "Malsonant o sensible, i no marcar els termes d'identitat",
+   "estat": "tancat",
+   "resposta": "Malsonant separat de sensible; els termes d'identitat, sense cap marca."
+  },
+  {
+   "origen": "E02",
+   "pregunta": "Dialectal (podis, mos, xic) i col·loquialismes d'origen castellà (tio, nòvio, barco)",
+   "estat": "tancat",
+   "resposta": "podis i xic estàndard, mos dialectal; tio, nòvio i tonteria es queden; barbarismes clars fora."
+  },
+  {
+   "origen": "E02",
+   "pregunta": "Vocabulari infantil a partir de Level3 i formes flexionades rares (com a E01)",
+   "estat": "tancat",
+   "resposta": "Com a E01: rescat infantil des de Level3 i regla mixta lema més temps."
+  },
+  {
+   "origen": "E02",
+   "pregunta": "Llista de diacrítics del 2017 (sense sóc, amb mà) i compostos sense accent",
+   "estat": "tancat",
+   "resposta": "Confirmada la llista oficial de l'IEC (2026-10-29)."
+  },
+  {
+   "origen": "E03",
+   "pregunta": "Temps verbals per nivell; un nivell per lema; llista infantil a partir de Level3",
+   "estat": "tancat",
+   "resposta": "Temps per forma a les llistes (E03 punt 1); un nivell per lema amb excepcions (gracias 0, vale 0, deberes 1, repente 1); rescat des de Level3."
+  },
+  {
+   "origen": "E04",
+   "pregunta": "75 conflictes entre la llista i lots ja revisats (lupa, puma a Level0): baixar-les a la llista?",
+   "estat": "tancat",
+   "resposta": "Aprovat baixar-les: 54 nivells corregits a ca-infantil (mam, papa, puma a 0; llar a 2; roig i xoc afegits)."
+  },
+  {
+   "origen": "E04",
+   "pregunta": "Temps verbals (sense passat simple); un nivell per lema; llista infantil a partir de Level3",
+   "estat": "tancat",
+   "resposta": "Aprovat, sense passat simple; un nivell per lema amb excepcions; rescat des de Level3."
+  },
+  {
+   "origen": "E05-E06",
+   "pregunta": "Criteri 5: es permet canviar la primera lletra (ñopa i copa)?",
+   "estat": "tancat",
+   "resposta": "Sí, es pot canviar la primera lletra (ñopa i copa); no una lletra posterior."
+  },
+  {
+   "origen": "E05-E06",
+   "pregunta": "Pronunciabilitat de les pseudoparaules de Level7 a Level10",
+   "estat": "tancat",
+   "resposta": "Pronunciables. El grup demana accent gràfic quan calgui (brasún); trumidál no s'aplica perquè una aguda en -l no porta accent (vegeu el dubte nou)."
+  },
+  {
+   "origen": "E07-E08",
+   "pregunta": "Pseudoparaules estranyes a Level9 (blcho); varietat de Level10; vocabulari de 14 o 15 anys",
+   "estat": "tancat",
+   "resposta": "Substitucions dins de la mateixa classe (consonant per consonant, vocal per vocal), amb famílies de forma; Level10 es manté; vocabulari molt conegut. Conjunts regenerats."
+  },
+  {
+   "origen": "E09",
+   "pregunta": "Opció A, B o mixta per idioma; etiquetes visuals que falten al banc; massa ca- a Level9",
+   "estat": "tancat",
+   "resposta": "Castellà A (grups de 6); català mixta (Level9 de 4, Level10 de 6) sense professions abstractes; 37 etiquetes visuals afegides; ca- acceptat. Grups definitius a E09-grups-imatges-{es,ca}-definitiu.csv."
+  },
+  {
+   "origen": "E10",
+   "pregunta": "Funcions Executives: opció i valors per defecte",
+   "estat": "tancat",
+   "resposta": "Matriu amb regla com a FASE 19 amb els valors per defecte; ara, àrea secundària (2026-10-29)."
+  },
+  {
+   "origen": "E10",
+   "pregunta": "Longitud de la lectura, noms propis, taula de nivell mínim",
+   "estat": "tancat",
+   "resposta": "35 a 80 paraules en un paràgraf; noms curts sense travades ni hiats (Leo, Teo, Mia com a excepció); mana la taula."
+  },
+  {
+   "origen": "E11",
+   "pregunta": "Decisions de les guies editorials (quotes, festes, llocs, temps verbals, signes, diàleg en un paràgraf)",
+   "estat": "tancat",
+   "resposta": "Guies aprovades. Precisions aplicades: cap diàleg a Level1 i Level2, 2 intervencions a Level3 i Level4, 4 des de Level5; futur i condicional a Level4; meitat de textos neutres de Level0 a Level3; llocs genèrics fins a Level3."
+  },
+  {
+   "origen": "Estructura",
+   "pregunta": "Català, Level2: 'els', 'dels', 'pels', 'als' i plurals en -ns i -ls dins de l'excepció de coda?",
+   "estat": "tancat",
+   "resposta": "Sí (2026-10-29): els, dels, pels i als, i els plurals regulars en -ns i -ls d'una base de Level1 o Level2, a Level2 com a excepció gramatical i morfològica; les codes complexes d'arrel (text, verd, disc) a Level3. Aplicat a estructura.py, catàleg, guia catalana i prompts 07 i 08."
+  },
+  {
+   "origen": "Cicle castellà",
+   "pregunta": "güe/güi sense volta desordenada; paraules de 6 o 7 anys; família x; família h; cobertura de les inverses",
+   "estat": "tancat",
+   "resposta": "Aprovat: gue/gui afegit; 3 paraules canviades (lata, prisa, boxeo); x i h es mantenen."
+  },
+  {
+   "origen": "Tanda 2",
+   "pregunta": "Alleujament a Level0; pseudoparaules a Level1; paraules d'ordena les síl·labes de Level0 (pato, sapo)",
+   "estat": "tancat",
+   "resposta": "Sense alleujament a Level0; pseudoparaules del banc a Level1, sí; pato i sapo, sí (segon dado canviat per pato)."
+  },
+  {
+   "origen": "Tanda 2",
+   "pregunta": "Frases d'alleujament a la llista de Level2; 'lo ayuda' i 'la corta'; 'la iaia'; velocitat a Level0",
+   "estat": "tancat",
+   "resposta": "Alleujament com ara; 'lo ayuda' correcte; 'la iaia' evita l'apòstrof. Sense canvis."
+  },
+  {
+   "origen": "E01-E04",
+   "pregunta": "Mostres de 300 files de les llistes: la resposta les accepta si l'encert és del 90 % o més (o els errors el 3 % o menys), però no diu el resultat. Es van revisar?",
+   "estat": "tancat",
+   "resposta": "Revisades: les llistes queden acceptades (2026-10-29)."
+  },
+  {
+   "origen": "E01-E02",
+   "pregunta": "Malsonant, sensible o cap marca (no és si s'exclouen de les llistes, sinó on poden sortir): culo/cul, teta, polla/cardar, tonto/tonta, pedo, pixa/pitu/tita (pito ja no porta marca) i els despectius (canalla, chusma, gentuza, desgraciada)",
+   "estat": "enviat"
+  },
+  {
+   "origen": "E05-E06",
+   "pregunta": "Accent de les pseudoparaules: proposem posar-lo només quan ho demana la regla general (brasún sí, trumidal no, perquè és aguda acabada en -l). D'acord?",
+   "estat": "tancat",
+   "resposta": "D'acord: l'accent només quan el demana la regla general (2026-10-29)."
+  },
+  {
+   "origen": "Estructura",
+   "pregunta": "Català, Level2: gust i camp (codes st i mp) eren a l'excepció de monosíl·labs freqüents (font, llamp), però la resposta del 2026-10-29 les posa a Level3. Quina val?",
+   "estat": "enviat"
+  },
+  {
+   "origen": "Estructura",
+   "pregunta": "Català, Level2: al, del i pel també dins de l'excepció gramatical (aplicat per coherència amb als, dels i pels)?",
+   "estat": "enviat"
+  },
+  {
+   "origen": "Taxonomies",
+   "pregunta": "Termes nous (2026-10-29): sonoritat es ñ, b/v, h muda, r/rr; ca grafies r/rr; grup d'esforç morfològic i lèxic (polisíl·labes, compostes, derivades, pronoms febles, homòfons). Els valideu?",
+   "estat": "tancat",
+   "resposta": "Aprovats tots (revisió de la tanda 7, 2026-10-29)."
+  }
+ ],
+ "recursos": [
+  {
+   "titol": "Llistes de freqüència generals (es, ca)",
+   "estat": "aplicat",
+   "detall": "es-general.csv 87.611 formes (CORPES XXI); ca-general.csv 51.547 formes (wordfreq). Ajustos de la resposta aplicats el 2026-10-29 amb ajustos_llistes.py (lemes de diminutius, marques malsonant i sensible, descarts)."
+  },
+  {
+   "titol": "Llistes de vocabulari infantil (es, ca)",
+   "estat": "aplicat",
+   "detall": "es-infantil.csv 2.408 lemes; ca-infantil.csv 2.554 lemes. Nivells per forma i conflictes amb lots revisats aplicats el 2026-10-29."
+  },
+  {
+   "titol": "Bancs de pseudoparaules (es, ca)",
+   "estat": "aplicat",
+   "detall": "672 i 670."
+  },
+  {
+   "titol": "Banc d'imatges",
+   "estat": "aplicat",
+   "detall": "432 imatges importades; lot 2 de 122 en generació."
+  },
+  {
+   "titol": "Porta lèxica i d'estructura",
+   "estat": "aplicat",
+   "detall": "lexico.py (llistes), estructura.py (taula de nivell mínim), etiquetar_lote.py, revision_lote.py."
+  },
+  {
+   "titol": "Tauler visual de seguiment",
+   "estat": "aplicat",
+   "detall": "https://claude.ai/artifact/7JkStNDLcYkg8H74rvokZv (privat); llegeix els JSON de plans/contenido/seguiment-dades."
+  }
+ ]
+}

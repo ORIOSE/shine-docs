@@ -1738,9 +1738,141 @@ experto revisa todo, no hay otro entorno de producción).
   y "nens" (Level3 por la tabla), pregunta al grupo en PER-REVISAR.md. La matriz lleva esfuerzo solo
   con letras espejo (las 9 de Level0 sin pareja espejo quedan sin él) y la posición de imágenes no
   tiene estos campos.
-- Pendiente (siguiente): lotes por tanda según plans/contenido/README.md (ciclo castellano, Level0
-  a Level2 hasta 6 por celda, Level3 en adelante), cada uno con dry-run, importación, revisión del
-  experto y publicación; revisión de E01 a E11 por el grupo; Funciones Ejecutivas (decisión E10.4).
+- [x] **Tanda 2, Level0 a Level2 (2026-10-29)**: 9 lotes importados **sin publicar**, 48 registros (64 nodos):
+  castellano `silabas-es-level0-2-v1` (6), `segmentacion-es-level1-2-v1` (3), `lista-es-level0-2-v1` (9),
+  `lectura-es-level1-2-v1` (2), `repeticion-es-level0-v1` (1); catalán `llista-ca-level0-2-v1` (9),
+  `lectura-ca-level1-2-v1` (2); bilingües `matriz-es-ca-level0-2-v2` (8, con `matriz.py --targets`) e
+  `imagenes-es-ca-level0-2-v2` (8). Textos escritos por dos agentes Opus con los prompts como contrato;
+  comprobaciones independientes limpias (estructura, puerta léxica infantil, dry-run). Al aprobarse,
+  todas las celdas de Level0 a Level2 quedan con 6 o más en los dos idiomas y se despublican
+  SIL-ES-L00-LIN-001, SIL-ES-L00-LIN-002 y SEG-ES-L01-LIN-001. Revisión:
+  plans/contenido/revision/tanda2-level0-2.md (paquete `LOT-tanda2-level0-2.zip`). Nuevo
+  `generadores/revision_lote.py` (fichero de revisión de cualquier lote). Corregidos de paso: el
+  catálogo 5.2 (la lectura vuelve a tener secundaria Lingüística; el cambio de E10.4 era para 6.4) y
+  `estructura.py` (cranc y tronc, monosílabos con trabada y coda nc, en Level2 como dice la tabla).
+- [x] **Respuestas del grupo aplicadas (2026-10-29)**: once respuestas en
+  plans/contenido/encarrecs/lliuraments/respostes-2026-10-29/. Ciclo castellano y tanda 2 aprobados con
+  cambios (lata, prisa, boxeo, gue/gui; pato en SIL-ES-L00-LIN-005) y **publicados**; despublicados
+  SIL-ES-L00-LIN-001, SIL-ES-L00-LIN-002 y SEG-ES-L01-LIN-001 (siguen en los lotes de ejemplo de las
+  fases 13 y 18: no reimportarlos con `--publish`). Puerta léxica (`lexico.py`): rescate infantil desde
+  Level3, lema más tiempo verbal, malsonante bloqueado, sensible bloqueado por debajo de Level5 y
+  comprobación de tiempos en lectura y segmentación (corregido LEC-ES-L02-VEL-001). Listas ajustadas
+  con `generadores/ajustos_llistes.py` (idempotente). E07 y E08 regenerados con sustituciones dentro
+  de la misma familia de forma. E09: castellano opción A, catalán mixta con Level9 rehecho sin
+  profesiones abstractas (`generadores/e09_definitiu.py`, lliuraments/E09-revisio-resposta.md); 37
+  etiquetas visuales nuevas en el manifiesto; 22 imágenes pendientes del lote 2 ya no hacen falta.
+  E10.4: detalle en plans/funcions-executives/README.md. E11: guías aprobadas y ajustadas (diálogo por
+  nivel, futuro y condicional en Level4, mitad de textos neutros de Level0 a Level3, lugares por
+  nivel), prompts 07, 08 y 09 y catálogo 5.2. Dudas abiertas: muestras de 300 filas de E01 a E04 sin
+  resultado, casos dudosos de malsonante y sensible, tilde de las pseudopalabras (trumidal) y el
+  "els" catalán en Level2.
+- [x] **Segunda ronda de respuestas (2026-10-29)**: muestras de E01 a E04 revisadas (listas
+  aceptadas); tilde de las pseudopalabras solo con la regla general; en catalán, Level2 admite els,
+  al, als, del, dels, pel, pels y los plurales regulares en -ns y -ls de una base de Level1 o Level2
+  (`estructura.py`, catálogo 3.5, estructura-ca.md, guía catalana, prompts 07 y 08; columna
+  `estructura_min` de `ca-infantil.csv` recalculada, 253 filas). "verd" sigue en Level3:
+  SEG-CA-L02-LIN-001 pasa de "un drac verd i gros" a "un drac groc i gros" (mismo código; borrados
+  antes su summary y sus 3 logs, de Pau, cuenta de prueba: hoy todos los datos y usuarios son de
+  prueba, decisión del usuario). Dudas abiertas: marcas malsonante,
+  sensible o ninguna (tabla en PER-REVISAR.md), gust y camp (st y mp) y al, del y pel.
+- [x] **Tanda 3, Level3 (2026-10-29)**: 15 lotes importados **sin publicar**, 49 actividades (24 es,
+  25 ca): por idioma `silabas`, `segmentacion`, `lista`/`llista`, `blink`, `repeticion` y `lectura`
+  `-{es,ca}-level3-v1` (12 registros por idioma, escritos por dos agentes Opus con los prompts como
+  contrato), y bilingües `matriz-es-ca-level3-v1` (`matriz.py --seed 20261030 --levels 3 --targets
+  "L3=b,d,p,q,n,u" --first "L3=2"`: el 001 catalán es la matriz de l·l de `matriz-ca-level3-v1`, que
+  entra ahora) e `imagenes-es-ca-level3-v1` (`imagenes.py --seed 20261030 --levels 3 --per-level 6`).
+  6 por área y nivel en los dos idiomas (Perceptivos 7 en catalán). Comprobaciones repetidas por
+  separado: estructura, puerta léxica y dry-run limpios. Revisión: plans/contenido/revision/tanda3-level3.md
+  (siete decisiones para validar: mezcla del parpadeo 5 + 2 + 3, sin término de esfuerzo para hiatos,
+  lectura sin diálogo...), paquete `shine/private/enviament-2026-10-30/LOT-tanda3-level3.zip`.
+- [x] **Tanda 3 aprobada y publicada (2026-10-29)**: el grupo aprueba las 49 actividades y las siete
+  decisiones sin cambios (respostes-2026-10-30/LOT-tanda3-level3-resposta.md). Decisión 2: término de
+  esfuerzo nuevo **Hiatos** (es) / **Hiats** (ca) en "Esfuerzo alto estructural"
+  (`scripts/phonology-terms.{es,ca}.json`, `create-phonology-terms.php`), `estructura.structure_terms()`
+  lo da a toda palabra con hiato; 12 actividades de Level3 reetiquetadas y reimportadas.
+- [x] **Tanda 4, Level4 (2026-10-29)**: 14 lotes `*-level4-v1` importados **sin publicar**, 48
+  actividades (24 es, 24 ca): textos por dos agentes Opus con los lotes aprobados de Level3 como
+  modelo, `matriz.py --seed 20261029 --levels 4 --targets "L4=b,d,p,q,n,u"` e `imagenes.py --seed
+  20261029 --levels 4 --per-level 6`. Comprobaciones repetidas por separado, limpias. Revisión
+  plans/contenido/revision/tanda4-level4.md (ocho decisiones: parpadeo castellano 7 + 3 frente al 5 +
+  2 + 3 catalán, futuro en segmentación, pronombres débiles en la lectura catalana, lugares reales,
+  tusòria...), paquete `shine/private/enviament-2026-10-29-tanda4/LOT-tanda4-level4.zip`.
+- [x] **Tanda 4 aprobada y publicada (2026-10-29)**: las 48 actividades y las ocho decisiones sin
+  cambios (respostes-2026-10-30/LOT-tanda4-level4-resposta.md). Decisión 1: modelo mixto de
+  parpadeo desde Level3 (palabras reales + pseudopalabras + 25 a 30 % de alivio), escrito en los
+  prompts 03 de los dos idiomas.
+- [x] **Lotes de Level9 y Level10 de posición de imágenes, escritos (2026-10-29)**:
+  `generadores/e09_lots.py --seed 20261029` reparte los 36 grupos definitivos de E09 por nivel e
+  idioma en 6 actividades de 6 grupos sin repetir imagen dentro de una actividad (en Level10 los
+  grupos de pares mínimos comparten imágenes; por orden salían 45 repeticiones en catalán) y, si se
+  puede, sin repetir familia; posición preguntada central. `imagenes-{es,ca}-level9-10-v1.json`, 12
+  actividades por idioma. El dry-run solo falla por las 25 imágenes de la tirada del 2026-10-30
+  (las 20 pendientes y las 5 repeticiones): tras la tirada, `fusionar_ampliacion122.py`,
+  `import-images` y el import de estos dos lotes. Level8 (parecidas en forma o color) no sale de
+  E09: se monta en la tanda 8 con el prompt 02.
+- [x] **Tanda 5, Level5 (2026-10-29)**: 14 lotes `*-level5-v1` importados **sin publicar**, 48
+  actividades (24 es, 24 ca), mismo circuito que la tanda 4 (`matriz.py` e `imagenes.py --seed
+  20261029 --levels 5`). Parpadeo con el modelo mixto. Revisión plans/contenido/revision/tanda5-level5.md
+  (ocho decisiones: sílabas sobrantes, termómetro, pronombres combinados en segmentación, etiqueta de
+  hiato demasiado ancha...), paquete `shine/private/enviament-2026-10-29-tanda5/LOT-tanda5-level5.zip`.
+- [x] **Tanda 5 aprobada y publicada (2026-10-29)**: las 48 y las ocho decisiones sin cambios
+  (respostes-2026-10-30/LOT-tanda5-level5-resposta.md). Termómetro permitido en los dos idiomas;
+  pronombres combinados (li ho, se'n) en segmentación desde Level7 (prompt 07 catalán); la etiqueta
+  de hiato solo si al menos un tercio de las palabras lo tienen (`estructura.HIATUS_SHARE`,
+  `activity_effort`): 17 actividades de Level3 a Level5 reetiquetadas y reimportadas.
+- Tanda 6 (Level6, en curso, 2026-10-29): `matriz-es-ca-level6-v1` e `imagenes-es-ca-level6-v1`
+  importados sin publicar (24 nodos). `imagenes.py` no llegaba a 6 actividades en Level6 (relación
+  estrecha): si la primera imagen de un grupo no deja completarlo, ahora prueba la siguiente como
+  primera y libera las del intento (los lotes que ya salían bien salen iguales; comprobado con
+  Level5). Textos por dos agentes con los lotes de Level5 como modelo.
+- Tanda 6: textos de los dos agentes comprobados por separado e importados sin publicar; 48
+  actividades en total. Revisión plans/contenido/revision/tanda6-level6.md (siete decisiones: sílabas
+  sin dibujo, lecturas expositivas, enclíticos con apóstrofo...), paquete
+  `shine/private/enviament-2026-10-29-tanda6/LOT-tanda6-level6.zip`.
+- [x] **Tanda 6 aprobada y publicada (2026-10-29)**: las 48 y las siete decisiones sin cambios
+  (respostes-2026-10-30/LOT-tanda6-level6-resposta.md).
+- [x] **Taxonomías ampliadas (2026-10-29, a petición del usuario: agrupar siempre por sonoridad y
+  dificultad)**: sonoridad es + ñ, b/v, h muda, r/rr; ca + grafies r/rr; grupo de esfuerzo nuevo
+  "Esfuerzo morfológico y léxico" / "Esforç morfològic i lèxic" (Polisílabas, Compuestas,
+  Derivadas, Pronombres átonos / Pronoms febles, Homófonos y parónimos), 9 + 7 términos creados.
+  `activity_effort` añade Polisílabas (la mitad o más de las palabras con 4 o más sílabas). 40
+  actividades de Level3 a Level6 reetiquetadas y reimportadas. Pendiente de validar por el grupo.
+- Tanda 7: `matriz.py` amplía Level7 (sílabas trabadas compartibles: bra, dra, pra, pla, tra,
+  gra entre su inversión y otras trabadas; instrucción de sílabas; esfuerzo de trabada).
+  `imagenes-es-ca-level7-v1` con semilla 20261030 (con la de Level6 la primera actividad repetía
+  el 83 % de la de Level6). Los dos importados sin publicar.
+- [x] **Sonoridad en lo ya publicado (2026-10-29)**: `generadores/sonoritat.py` propone, para cada
+  actividad sin `sonoridad`, el grupo de so que ya comparten sus palabras de trabajo (sin las de
+  alivio: un sonido o grafía en el 80 %, o una oposición con las dos bandas en el 30 % y juntas en el
+  80 %). Revisadas a mano: 28 actividades de Level3 a Level6 etiquetadas (r y l en las trabadas, s
+  en las codas ns/bs, t en las codas finales catalanas, grafies l/ll/l·l en la ela geminada) y
+  reimportadas publicadas. Descartadas las coincidencias (t/d o r en ordena las sílabas y en las
+  compuestas). Las otras 53 actividades no comparten ningún grupo: se agruparán al escribir nuevas.
+- **Corregido (2026-10-29)**: `create-phonology-terms.php` buscaba el término con
+  `loadByProperties`, y la comparación de MariaDB no distingue la ñ de la n: al añadir "ñ" sobrescribió
+  la descripción y el peso de "n". Ahora filtra por el nombre exacto; "n" restaurado y "ñ" creado
+  (término 147). `TermResolver` del importador ya comparaba en PHP por nombre exacto.
+- Tanda 7: textos de los dos agentes (con la regla de sonoridad y dificultad: cada actividad con su
+  grupo de so y su esfuerzo) comprobados por separado e importados sin publicar; 48 actividades.
+  Revisión plans/contenido/revision/tanda7-level7.md (siete decisiones, la primera los términos
+  nuevos), paquete `shine/private/enviament-2026-10-29-tanda7/LOT-tanda7-level7.zip`.
+- [x] **Tanda 7 aprobada y publicada (2026-10-29)**: las 48 y las siete decisiones sin cambios,
+  incluidos los términos nuevos de las taxonomías (respostes-2026-10-30/LOT-tanda7-level7-resposta.md).
+- Tanda 8 (Level8, en curso, 2026-10-29): `imagenes.py` genera Level8 (relación `visual`: el grupo
+  comparte una etiqueta vis:, con las parejas casi iguales permitidas; `--avoid` con los cuatro
+  oficios que el grupo quitó de E09) y `matriz.py` Level8 (doble objetivo de sílabas trabadas, bra
+  y dra, repartido a partes iguales; la salida de los niveles de un solo objetivo no cambia,
+  comprobado con Level3 y Level7). Los dos importados sin publicar; textos por dos agentes.
+- **Corregido (2026-10-29)**: `lexico.py` marcaba "així" y "matí" como pretérito simple (la
+  morfología de Softcatalà las tiene también como formas raras de aixir y matar). Ahora la
+  comprobación de tiempos se salta las formas que las listas solo conocen como no verbo
+  (`Lexicon.never_verb`, columna categoria); menjà se sigue marcando.
+- Tanda 8: textos importados sin publicar (listas de 15 elementos en Level8, como el catálogo 5.1: el
+  primer encargo decía 12 por error y se corrigió). 48 actividades. Revisión
+  plans/contenido/revision/tanda8-level8.md, paquete
+  `shine/private/enviament-2026-10-29-tanda8/LOT-tanda8-level8.zip`.
+- Pendiente (siguiente): revisión de la tanda 8; tandas 9 y 10 (matrices de palabras por idioma,
+  textos; la posición de imágenes ya está escrita); tirada de imágenes del 2026-10-30.
 
 ## FASE 17 — Monetización y modelo de cuentas
 
@@ -2666,8 +2798,61 @@ cambios.
 - [x] **Plan (2026-10-29)**: plans/funcions-executives/README.md, aprobado por el grupo como fase propia
   con los valores por defecto de la propuesta E10.4 (cuatro familias de regla, cebos que restan del
   acierto, tiempos por ronda, regla oculta en Level9 y Level10). Seis subplanes: modelo en Drupal,
-  importador, evaluador, app, generador y lotes, mensajes y verificación.
-- Pendiente: subplanes 01 a 06.
+  importador, evaluador, app, generador y lotes, mensajes y verificación. Las 12 respuestas de detalle
+  (aro ámbar en los objetivos que faltan, flecha para "antes", apertura con 3 por celda; opción (d) y
+  (b) para la v1.1) se añadieron al plan el 2026-10-29.
+- [x] **01. Modelo (2026-10-29)**: en `activity_letter_matrix`, `field_rule` (list_string r1 a r4),
+  `field_rule_params` (JSON de la regla canónica), `field_target_cells` y `field_lure_cells`
+  (string_long múltiples, índices por ronda); `field_lure_marks` (integer) en `loglettermatrix` y
+  `summary_letter_matrix`. Creados con `private/scripts/fase19-01-campos-regla.php` y `drush cex`
+  (la API de campos de lista quiere `allowed_values` como clave => etiqueta).
+- [x] **02. Importador (2026-10-29)**: `MatrixRule` (lógica pura: validar, forma canónica,
+  clasificar celdas en objetivos y cebos, filas ambiguas, texto de `field_target`) y la clave `regla`
+  en `LetterMatrixActivityHandler` con `objetivos_por_ronda` y `cebos_por_ronda` obligatorios;
+  inventario con la regla y los recuentos (reimportar da "sin cambios"); huella con la regla solo si
+  la hay (las matrices de siempre conservan la suya). Contrato en el catálogo 6.1. Tests: unit
+  `MatrixRuleTest` y dos kernel en `Fase13HandlersTest`; `shine_content` 50 en verde.
+- [x] **03. Evaluador (2026-10-29)**: `SessionEvaluator::effectiveRating()` resta `field_lure_marks`
+  de los aciertos si el summary lo tiene (`hasField`, mínimo 0). Test `testLuresSubtractFromAccuracy`;
+  `shine_level` 62 en verde.
+- [x] **04. App (2026-10-29)**: `src/lib/letterMatrix.ts` (`parseRule`, `parseRuleRounds`: objetivos
+  y cebos por índice desde `field_target_cells` / `field_lure_cells`; `evaluateRound` separa
+  `lureMarks` de `falseMarks`; `isKeyCell`, `rowClass`), `LetterMatrixPlayer` (regla en fichas
+  [a] → [p] en lugar del objetivo, columna de clave no tocable en r1, fondo de las filas oscuras en
+  r4, con `oculta` cada ronda empieza enseñando la regla y el tiempo corre al pulsar "Empezar a
+  buscar"), `field_lure_marks` en log y summary solo con regla (la matriz de siempre no cambia de
+  payload), textos `player.letterMatrix.rule.*` en es y ca. `tsc`, lint y 293 tests en verde.
+  **Pendiente**: jugar una matriz de cada regla en Expo web (hace falta contenido publicado).
+- [x] **05. Generador y lotes (2026-10-29)**: `shine/content/generadores/matriz_regla.py` (semilla,
+  misma clasificación que `MatrixRule`, sin b/d/p/q, neutros sin rasgos comunes con objetivo y
+  contexto, objetivos en las dos mitades, tope por fila hasta Level3, sin filas ambiguas).
+  `matriz-regla-es-ca-level0-8-v1` (27 registros, `idiomas`) y `matriz-regla-level9-10-v1` (6 por
+  idioma, artículo + nombre): 66 actividades, 3 por nivel e idioma, importadas **sin publicar**.
+  Revisión plans/contenido/revision/fe-matriz-regla-v1.md (`revision_lote.py` muestra la regla y
+  cada ronda por filas con objetivos en negrita y cebos en cursiva), paquete
+  `shine/private/enviament-2026-10-30/LOT-fe-matriz-regla-v1.zip`.
+- [x] **Revisión y publicación (2026-10-29)**: el grupo aprueba el lote entero y las seis decisiones
+  (respostes-2026-10-30/LOT-fe-matriz-regla-v1-resposta.md); los 66 nodos publicados con
+  `--publish`. Funciones Ejecutivas tiene 3 por nivel en los dos idiomas y entra en la rotación
+  (la siguiente sesión de Marta ya trae MAT-ES-L00-ATE). Jugada en Expo web con Marta: la clave de
+  fila no se toca, el cebo marcado vuelve a neutro sin mensaje, y llegan `field_lure_marks` 1 al
+  summary y al log de la ronda 1 (`field_correct` falso). El click del extensión de Chrome no
+  dispara las tarjetas del selector de alumno (sí `element.click()`): es de la herramienta, no de la app.
+- [x] **06. Mensajes y verificación (2026-10-29)**: `shine/scripts/rule-explanation-images.php`
+  (GD, sin fuentes: cuatro PNG de ejemplo en `content/images/explicaciones/`, objetivos en teal con
+  check, clave en gris, flecha del contexto, fondo de las filas oscuras) y
+  `shine/scripts/create-rule-explanations.php` (contenido por entorno, idempotente: media `regla-r1`
+  a `regla-r4` y los `explanation_message` "Rule key row", "Rule after", "Rule except after" y "Rule
+  alternate", texto para el adulto en es y traducción ca). `matriz_regla.py` referencia el de cada
+  familia; lotes reimportados (solo cambia `explicacion`). App: `getExplanationMessage()`
+  (`src/lib/api/messages.ts`, caché por idioma) y la intro de `ActivityBase` enseña la imagen y el
+  texto si el mensaje trae imagen (los mensajes genéricos no cambian nada), con la intro desplazable
+  y sin el icono grande para que quepa. En la matriz, ●, ■ y ◆ se agrandan (`SYMBOL_SCALE`): con la
+  fuente del sistema salían mucho más pequeños que ▲ y ★. Recorrido en Expo web con Pau (ca): intro
+  con la imagen y el texto catalán, matriz r1 en catalán. 293 tests en verde. Metro no recarga los
+  cambios hechos fuera del editor: tras editar, `npx expo start --web --clear`.
+- Pendiente: jugar en la app r2, r3, r4 y la regla oculta (cuando un alumno llegue a esos niveles o
+  con un alumno de prueba subido de nivel) y las 6 por celda del régimen ordinario.
 
 ## FASE 18 — Multiidioma (castellano y catalán)
 **Estado**: ✅ Completada el 2026-10-27 (06), con los pendientes listados en 06 y en `plans/multiidioma/README.md` ("Lo que quedó fuera"). Plan de planes en `plans/multiidioma/README.md`; análisis en `plans/multiidioma/analisis.md`.

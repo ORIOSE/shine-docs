@@ -25,9 +25,11 @@ plans/multiidioma/estructura-ca.md (apartat 5).
   inverses VC (al, en, is), les mixtes CVC freqüents (gat, sol, cap, pa, llit), els dígrafs simples
   (ny, ll, ss, rr, qu, gu) i que/qui. Level2 travades amb l i r (pla, bra, tren), dígrafs complexos
   (tx, ig, tg, tj, ix), gue/gui/güe/güi i els monosíl·labs molt freqüents amb coda final simple
-  (dent, pont, porc, serp, forn, guant, talp, llamp, cranc, tronc). Level3 codes complexes CVCC i
-  VCC (temps, forts, trans, ins), ela geminada (col·legi), apostrofació i contraccions (l’avi, d’un,
-  al, del) i hiats (pi-a-no, lle-ó). De Level4 en endavant la dificultat és la longitud, la
+  (dent, pont, porc, serp, forn, guant, talp, llamp, cranc, tronc), i com a excepció gramatical i
+  morfològica els, al, als, del, dels, pel i pels i els plurals regulars en -ns i -ls d'una base de
+  Level1 o Level2 (nens, pans, trens, pals, galls; grup d'experts, 2026-10-29). Level3 codes
+  complexes CVCC i VCC d'arrel (temps, forts, trans, ins, verd, text, disc), ela geminada
+  (col·legi), apostrofació i la resta de contraccions (l’avi, d’un) i hiats (pi-a-no, lle-ó). De Level4 en endavant la dificultat és la longitud, la
   freqüència, els pronoms febles i el vocabulari acadèmic.
 - **Sil·labació del IEC**: els dígrafs tx, ix, ig, tg, tj, ss, rr i l·l se separen entre síl·labes
   (cot-xe, cai-xa, pet-xi-na, met-ge, plat-ja, tas-sa, car-ro, col-le-gi); ny, ll, qu i gu van

@@ -34,6 +34,8 @@ Lo que hay a 2026-10-27 (publicado, sin ciclo, Level0 / Level1 / Level2): castel
 catalán. Falta: completar Level0 a Level2 hasta 6 (unas 26 en castellano y 19 en catalán), el
 ciclo castellano (38) y Level3 a Level10 enteros (192 por idioma). Unas 470 actividades nuevas.
 
+Estado al día: `plans/contenido/SEGUIMENT.md` (se regenera con `shine/content/generadores/seguiment.py`).
+
 ## Orden de trabajo
 
 1. **Ciclo castellano** (ciclo-silabas-es-v1, 38 actividades): es lo único que hoy diferencia

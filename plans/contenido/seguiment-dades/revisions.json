@@ -1,0 +1,102 @@
+[
+ {
+  "id": "R-CA1",
+  "titol": "Lots catalans de Level0 a Level2 (subplan 05)",
+  "estat": "aplicat",
+  "registres": 111,
+  "activitats": 129,
+  "publicades": 129,
+  "fitxa": "plans/multiidioma/revisio-lots-ca.md",
+  "paquet": ""
+ },
+ {
+  "id": "R-CIC-ES",
+  "titol": "Cicle castellà Sílabas",
+  "estat": "aplicat",
+  "registres": 38,
+  "activitats": 38,
+  "publicades": 38,
+  "fitxa": "plans/contenido/revision/ciclo-silabas-es-v1.md",
+  "paquet": "LOT-ciclo-silabas-es-v1.zip"
+ },
+ {
+  "id": "R-T2",
+  "titol": "Tanda 2, Level0 a Level2",
+  "estat": "aplicat",
+  "registres": 48,
+  "activitats": 64,
+  "publicades": 64,
+  "fitxa": "plans/contenido/revision/tanda2-level0-2.md",
+  "paquet": "LOT-tanda2-level0-2.zip"
+ },
+ {
+  "id": "R-T3",
+  "titol": "Tanda 3, Level3",
+  "estat": "aplicat",
+  "registres": 37,
+  "activitats": 49,
+  "publicades": 49,
+  "fitxa": "plans/contenido/revision/tanda3-level3.md",
+  "paquet": "LOT-tanda3-level3.zip"
+ },
+ {
+  "id": "R-FE1",
+  "titol": "Funcions Executives: matriu amb regla, 3 per nivell",
+  "estat": "aplicat",
+  "registres": 39,
+  "activitats": 66,
+  "publicades": 66,
+  "fitxa": "plans/contenido/revision/fe-matriz-regla-v1.md",
+  "paquet": "LOT-fe-matriz-regla-v1.zip"
+ },
+ {
+  "id": "R-T4",
+  "titol": "Tanda 4, Level4",
+  "estat": "aplicat",
+  "registres": 36,
+  "activitats": 48,
+  "publicades": 48,
+  "fitxa": "plans/contenido/revision/tanda4-level4.md",
+  "paquet": "LOT-tanda4-level4.zip"
+ },
+ {
+  "id": "R-T5",
+  "titol": "Tanda 5, Level5",
+  "estat": "aplicat",
+  "registres": 36,
+  "activitats": 48,
+  "publicades": 48,
+  "fitxa": "plans/contenido/revision/tanda5-level5.md",
+  "paquet": "LOT-tanda5-level5.zip"
+ },
+ {
+  "id": "R-T6",
+  "titol": "Tanda 6, Level6",
+  "estat": "aplicat",
+  "registres": 36,
+  "activitats": 48,
+  "publicades": 48,
+  "fitxa": "plans/contenido/revision/tanda6-level6.md",
+  "paquet": "LOT-tanda6-level6.zip"
+ },
+ {
+  "id": "R-T7",
+  "titol": "Tanda 7, Level7",
+  "estat": "aplicat",
+  "registres": 36,
+  "activitats": 48,
+  "publicades": 48,
+  "fitxa": "plans/contenido/revision/tanda7-level7.md",
+  "paquet": "LOT-tanda7-level7.zip"
+ },
+ {
+  "id": "R-T8",
+  "titol": "Tanda 8, Level8",
+  "estat": "pendent",
+  "registres": 36,
+  "activitats": 48,
+  "publicades": 0,
+  "fitxa": "plans/contenido/revision/tanda8-level8.md",
+  "paquet": "LOT-tanda8-level8.zip"
+ }
+]

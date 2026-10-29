@@ -1,5 +1,7 @@
 # Per revisar: lliuraments dels encàrrecs E01 a E11 (2026-10-28)
 
+L'estat al dia de tot (encàrrecs, revisions, dubtes i contingut per nivell) és a `plans/contenido/SEGUIMENT.md`.
+
 A petició del grup, els lliuraments els ha redactat l'equip (Claude, model Opus, amb programes de
 comprovació) i el grup els revisa. Cada paquet porta la seva **fitxa de revisió**: què s'ha fet,
 què cal mirar, quins criteris s'han de decidir i on tornar la resposta.
@@ -27,6 +29,7 @@ E12 (protocol de revisió de lots) no té lliurament: s'aplica a cada lot.
 | Paquet (zip) | Perfil | Fitxer de revisió | Què ha de fer |
 |---|---|---|---|
 | `LOT-ciclo-silabas-es-v1.zip` | logopeda (castellà) | `plans/contenido/revision/ciclo-silabas-es-v1.md` | 38 activitats del cicle Sílabas castellà (com a mínim les 7 amb ★) i 5 dubtes; resposta al mateix fitxer, columnes Correcta i Comentari |
+| `LOT-tanda2-level0-2.zip` | logopeda o mestre, un per idioma (hi ha registres compartits) | `plans/contenido/revision/tanda2-level0-2.md` | 48 registres de Level0 a Level2 (9 lots: ordena les síl·labes, segmentació, llista de text, lectura en veu alta, repetició, matriu, posició d'imatges) i 7 dubtes; resposta al mateix fitxer |
 
 ## Ubicació dels fitxers (per a qui tingui accés al repositori)
 
@@ -65,3 +68,26 @@ articles i pronoms "els", "dels", "pels", "als" i els plurals en -ns i -ls de pa
 - Els noms propis "Leo", "Teo" i "Mía/Mia" de la decisió E10.2 tenen hiat. **Resolt (2026-10-29)**:
   sense hiat a Level1 i Level2 (Pol, Pau, Marc, Pep, Ana, Lola, Sara), Leo, Teo i Mia com a excepció.
 - La lectura en veu alta: **resolt (2026-10-29)**, 35 a 80 paraules en un sol paràgraf.
+
+## Preguntes noves després de la resposta del 2026-10-29
+
+1. **Mostres de 300 files (E01 a E04)**: **resolt (2026-10-29)**, revisades; les llistes queden acceptades.
+2. **Malsonant, sensible o cap marca**: el dubte no és si s'exclouen de les llistes (hi continuen), sinó quina marca porta cadascuna, perquè la marca decideix on pot sortir: malsonant, mai; sensible, només des de Level5 i amb revisió; cap marca, a qualsevol nivell, també a Level0. Aquest és el repartiment que hem fet; confirmeu-lo o canvieu-lo:
+
+   | Paraula | Marca actual | Dubte |
+   |---|---|---|
+   | culo (es), cul (ca) | malsonant | En català "cul" és el mot estàndard; en castellà la resposta posava "culo" com a exemple de malsonant. Sensible? |
+   | teta (es, ca) | malsonant | És anatomia (sensible) o vulgar (malsonant)? |
+   | polla, cardar (ca) | malsonant | Tenen sentit neutre (gallina jove, cardar la llana) però domina el vulgar. |
+   | polla (es) | malsonant | Sense dubte; només per confirmar. |
+   | tonto, tonta (ca) | cap | Insult lleu d'ús infantil corrent: sense marca, pot sortir a Level0. Ho voleu així? |
+   | pedo (es) | cap | Escatològic infantil, com "caca", que el grup va deixar sense marca. |
+   | pixa (ca) | sensible | "Pixar" és neutre; el nom és vulgar. Malsonant? |
+   | pitu, tita (ca) | sensible | Mots infantils per al penis. El grup va treure la marca a "pito" en castellà: els deixem també sense marca? |
+   | canalla, chusma, gentuza, desgraciada (es) | cap | Despectius de registre literari: sense marca. O malsonant? |
+
+3. **Accent de les pseudoparaules (E05)**: **resolt (2026-10-29)**, l'accent només quan el demana la regla general (brasún sí, trumidal no).
+4. **Coda catalana a Level2**: **resolt (2026-10-29)**, els, dels, pels, als i els plurals regulars en -ns i -ls d'una base de Level1 o Level2 entren a Level2; les codes d'arrel (text, verd, disc) es queden a Level3. Dos aclariments:
+   - La resposta posa "gust" i "camp" a Level3, però l'excepció aprovada el 2026-10-27 (monosíl·labs molt freqüents amb coda final simple) inclou les codes st i mp (font, llamp). Quina val per a gust i camp? Mentre no respongueu, mantenim l'excepció del 2026-10-27 (Level2).
+   - Hem aplicat la mateixa excepció a al, del i pel, per coherència amb als, dels i pels. D'acord?
+5. **Tanda 2**: la resposta diu que queden validats tots els lots de Level0 a Level10. Només existeixen i s'han revisat Level0 a Level2; la tanda 3 (Level3) serà la propera revisió.

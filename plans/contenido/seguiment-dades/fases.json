@@ -1,0 +1,80 @@
+[
+ {
+  "id": "C1",
+  "titol": "Cicle castellà Sílabas (38 activitats)",
+  "estat": "aplicat",
+  "detall": "Aprovat amb 3 canvis (lima → lata, prado → prisa, examen → boxeo) i el contrast gue/gui; publicat el 2026-10-29. Resposta plans/contenido/encarrecs/lliuraments/respostes-2026-10-29/LOT-ciclo-silabas-es-v1-resposta.md."
+ },
+ {
+  "id": "C2",
+  "titol": "Tanda 2: completar Level0 a Level2 fins a 6 per cel·la",
+  "estat": "aplicat",
+  "detall": "Aprovat; canvis aplicats (SIL-ES-L00-LIN-005 amb pato) i 9 lots publicats el 2026-10-29. Resposta plans/contenido/encarrecs/lliuraments/respostes-2026-10-29/LOT-tanda2-level0-2-resposta.md. La resposta diu que tot Level0 a Level10 queda validat: no és així, només és Level0 a Level2."
+ },
+ {
+  "id": "C3",
+  "titol": "Tanda 3: Level3 sencer, tots dos idiomes",
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda3-level3-resposta.md) i publicada: 49 activitats. Amb la decisió 2, terme d'esforç nou Hiatos / Hiats a les dues taxonomies (estructura.py, phonology-terms) i 12 activitats reetiquetades."
+ },
+ {
+  "id": "C4",
+  "titol": "Tanda 4: Level4 sencer, tots dos idiomes",
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda4-level4-resposta.md) i publicada: 48 activitats. Decisió 1: model mixt de parpelleig des de Level3 (paraules reals + pseudoparaules + 30 % d'alleujament), fixat als prompts 03 dels dos idiomes."
+ },
+ {
+  "id": "C5",
+  "titol": "Tanda 5: Level5 sencer, tots dos idiomes",
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda5-level5-resposta.md) i publicada: 48 activitats. Decisions: termòmetre permès; pronoms combinats a la segmentació a Level7; l'etiqueta d'hiat només si un terç o més de les paraules en tenen (estructura.activity_effort), 17 activitats de Level3 a Level5 reetiquetades."
+ },
+ {
+  "id": "C6",
+  "titol": "Tanda 6: Level6 sencer, tots dos idiomes",
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda6-level6-resposta.md) i publicada: 48 activitats. Validats: ordena les síl·labes sense dibuix a Level6, lectures expositives, enclítics (en català només amb apòstrof), subjuntiu imperfet."
+ },
+ {
+  "id": "C7",
+  "titol": "Tanda 7: Level7 sencer, tots dos idiomes",
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda7-level7-resposta.md) i publicada: 48 activitats. Validats els termes nous de sonoritat i el grup d'esforç morfològic i lèxic, les síl·labes sobrants ortogràfiques, els homòfons a la segmentació i els pronoms combinats en català."
+ },
+ {
+  "id": "C8",
+  "titol": "Tanda 8: Level8 sencer, tots dos idiomes",
+  "estat": "en curs",
+  "detall": "48 activitats (24 es, 24 ca) importades sense publicar el 2026-10-29; paquet a shine/private/enviament-2026-10-29-tanda8/LOT-tanda8-level8.zip, amb set decisions."
+ },
+ {
+  "id": "IMG2",
+  "titol": "Banc d'imatges, lot 2 (122 imatges per a Level9 i Level10)",
+  "estat": "en curs",
+  "detall": "81 candidates acceptades (revisió de Claude als fulls de contactes) i importades al banc el 2026-10-29 amb generadores/fusionar_ampliacion122.py; 16 descartades (cap grup E09 les fa servir). Per a la tirada del 2026-10-30: 20 pendents que calen i 5 per repetir (mango, pasa, bol, caqui, bacalao), llista a _revision/ampliacion122/repetir-2026-10-29.md. Després, tornar a executar la fusió, import-images i els lots de posició d'imatges de Level9 i Level10. Lots de Level9 i Level10 ja escrits (imagenes-{es,ca}-level9-10-v1.json, generadores/e09_lots.py, 12 activitats per idioma, cap imatge repetida dins d'una activitat): la prova d'importació només falla per les 25 imatges de la tirada; demà es verifica i s'importen."
+ },
+ {
+  "id": "F19",
+  "titol": "FASE 19: matriu amb regla (Funcions Executives)",
+  "estat": "en curs",
+  "detall": "Subplans 01 a 06 fets el 2026-10-29. Lots aprovats pel grup sense canvis i publicats: 3 per nivell i idioma, l'àrea entra a la rotació. Missatge d'explicació per família amb imatge d'exemple a la intro de l'activitat. Verificat a Expo web amb la Marta (es) i el Pau (ca) en R1. Falta jugar R2, R3, R4 i la regla oculta a l'app i arribar a 6 per cel·la."
+ },
+ {
+  "id": "GEN",
+  "titol": "Generador de sessions: no reservar forat a àrees sense contingut",
+  "estat": "aplicat",
+  "detall": "SessionGenerator::planRegular(), 2026-10-29."
+ },
+ {
+  "id": "TAG",
+  "titol": "Etiquetes fonològiques (esforç) calculades per estructura",
+  "estat": "aplicat",
+  "detall": "estructura.py, etiquetar_lote.py; 20 activitats etiquetades, prompts 05, 07, 08."
+ },
+ {
+  "id": "SRC",
+  "titol": "Registre de fonts de dades",
+  "estat": "aplicat",
+  "detall": "docs/fuentes-de-datos.md; regla a CLAUDE.md."
+ }
+]

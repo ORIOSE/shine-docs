@@ -18,12 +18,14 @@ título "Prompt", lo que se pega en Cowork o en Codex.
 - **Enclíticos con guion** (dona-m’ho): el importador todavía no los admite. Hasta que se programe
   la mejora (pendiente en el catálogo 8), en Level6 solo enclíticos con apóstrofo (posa’t, mira’l);
   el experto lo aceptó como solución temporal.
-- **Apóstrofos y contracciones** (l’avi, d’un, al, del, pel) aparecen desde Level3: son la
+- **Apóstrofos y contracciones** (l’avi, d’un, al, del, pel) se trabajan desde Level3: son la
   dificultad de segmentación propia del catalán ("Apostrofació i contraccions", esfuerzo alto
   estructural). El importador admite el apóstrofo recto y el tipográfico; usar el tipográfico (’).
 - **Estructuras**: Level1 sin trabadas ni dígrafos complejos ni codas complejas (surt y dorm son
   Level2 por la excepción de monosílabos frecuentes con coda simple, confirmada por el experto el
-  2026-10-27); Level2 con trabadas; Level3 con CVCC, hiatos, l·l y apóstrofos.
+  2026-10-27); Level2 con trabadas y, como excepción, els, al, als, del, dels, pel, pels y los
+  plurales regulares en -ns y -ls (els nens juguen; grupo de expertos, 2026-10-29), nunca una coda
+  compleja de raíz (verd, text, disc); Level3 con CVCC, hiatos, l·l y apóstrofos.
 - Hoy solo existen Level0 a Level2 en local; el prompt cubre hasta Level10.
 
 ---
@@ -46,7 +48,9 @@ la app. Entregas un JSON que importa Drupal.
    sa), "la bruixa vola" (vol + a) y "el plat és a la taula" (ala) son buenas, y casa, pare, mare,
    escola y pilota se pueden usar. Descarta la frase hasta Level6 solo si otra partición forma una
    frase que un niño podría leer con sentido.
-3. **Apóstrofos y contracciones** solo desde Level3 (l’avi, d’un, l’ós, al, del, pel, als);
+3. **Apóstrofos** solo desde Level3 (l’avi, d’un, l’ós); las contracciones al, del, pel, als, dels
+   y pels y el artículo els se admiten desde Level2, pero la frase de Level2 no se construye para
+   trabajarlas (eso es Level3);
    pronombres febles delante del verbo desde Level5 (el veu, la porta, em dona), unidos al verbo
    desde Level6 solo con apóstrofo (porta’l, posa’t; el guion de dona-me’l todavía no lo admite el
    importador); homófonos y pares que se confunden desde Level7 (a veure /
@@ -55,8 +59,10 @@ la app. Entregas un JSON que importa Drupal.
    en Level2, 3.000 en Level3, 5.000 en Level4, 7.000 en Level5, 10.000 en Level6, 15.000 en
    Level7, 20.000 en Level8, sin límite desde Level9. Level1 sin trabadas, dígrafos complejos ni
    codas complejas; Level2 con trabadas y dígrafos complejos; Level3 con CVCC, hiatos, l·l.
-5. Frases naturales y con sentido para un niño, en presente, con sujetos cotidianos (el gat, la
-   nena, el tren, la pluja).
+5. Frases naturales y con sentido para un niño, con sujetos cotidianos (el gat, la nena, el tren,
+   la pluja). Tiempos (guía editorial E11, aprobada el 2026-10-29): solo presente en Level1 y
+   Level2; pasados desde Level3 (perifrástico, nunca el pasado simple); futuro y condicional desde
+   Level4; subjuntivo desde Level5. Lo comprueba `lexico.py` (`tense_check`).
 
 ### Parámetros por nivel
 
@@ -67,7 +73,7 @@ la app. Entregas un JSON que importa Drupal.
 | Level2 | 5 | 4 a 5 | Artículos, preposiciones y conjunciones (el, la, un, a, de, amb, i) |
 | Level3 | 5 | 5 a 6 | Apóstrofos y contracciones (l’avi va al parc, el nen beu l’aigua) |
 | Level4 | 5 | 6 a 7 | Contracciones y apóstrofos con más longitud (els nens del poble van a l’escola) |
-| Level5 | 6 | 7 a 8 | Pronombres febles delante del verbo (la mare el porta a casa) |
+| Level5 | 6 | 7 a 8 | Pronombres febles simples delante del verbo (la mare el porta a casa); los combinados (li ho, se'n) desde Level7 (grupo, 2026-10-29) |
 | Level6 | 6 | 8 a 9 | Pronombres unidos al verbo con apóstrofo (posa’t les botes abans de sortir, mira’l) |
 | Level7 | 6 | 9 a 10 | Pares que se confunden: a veure / haver, si no / sinó, per què / perquè, també / tan bé |
 | Level8 | 6 | 10 a 11 | Ídem con vocabulario menos frecuente |

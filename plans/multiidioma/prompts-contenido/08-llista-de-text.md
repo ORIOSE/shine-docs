@@ -34,14 +34,16 @@ en voz alta y toca la pantalla para pasar al siguiente; se mide el tiempo de cad
 
 1. **Catalán normativo** (IEC 2017, variedad central), minúsculas, acentos abiertos y cerrados,
    dièresi, ç, l·l con punto volado (U+00B7), apóstrofo tipográfico (’); sin nombres propios.
-   Las frases llevan su puntuación normal.
+   Las frases llevan mayúscula inicial y punto final (guía editorial E11, aprobada el 2026-10-29);
+   interrogativas y exclamativas desde Level3. Sílabas y palabras, en minúscula y sin punto.
 2. **Elementos homogéneos** dentro de una actividad (todo palabras o todo frases) y sin
    elementos repetidos.
 3. **Nivel = edad de referencia 5 + n**. Estructuras, longitud y frecuencia de la tabla 2.3
    catalana y del nivel mínimo de estructura-ca.md (apartado 5): monosílabos CVC muy frecuentes
    desde Level1 (gat, sol, cap), dígrafos simples en Level1 (ny, ll, ss, rr, qu, gu), trabadas y
-   dígrafos complejos (tx, ix, ig, tg, tj) en Level2, ela geminada, apóstrofos, contracciones e
-   hiatos desde Level3. Rangos de frecuencia del catálogo 3.6.
+   dígrafos complejos (tx, ix, ig, tg, tj) en Level2 (con els, al, als, del, dels, pel, pels y los
+   plurales regulares en -ns y -ls como excepción), ela geminada, apóstrofos, el resto de
+   contracciones e hiatos desde Level3. Rangos de frecuencia del catálogo 3.6.
 4. **Variante de pseudopalabras** (desde Level2, decodificación): fonotaxis catalana (pro, pso,
    frou, nyola, plim, trum), sin coincidir con ninguna palabra catalana ni castellana.
 5. **Alivio**: el 25 a 30 % de los elementos son sílabas o palabras de Level0 (a, e, ma, pa, sol,

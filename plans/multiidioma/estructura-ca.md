@@ -158,8 +158,10 @@ desglosa en tres (la ela geminada va en 4.3).
 | Directes resta (CV), Inverses (VC), Mixtes i finals (CVC), Dígrafs simples | Level1 | gat, pa, sol, cap, nyap, lluna |
 | Travades amb l (CCV), Travades amb r (CCV), Dígrafs complexos | Level2 | pla, bra, tren, cotxe, metge |
 | Complexes: CCVC | Level2 | plat, tren, drac |
-| Complexes: VCC i CVCC | Level3 | temps, forts, trans, ins |
+| Complexes: VCC i CVCC | Level3 | temps, forts, trans, ins, verd, text, disc |
+| Hiats | Level3 | piano, lleó, país, riure (terme afegit pel grup el 2026-10-29) |
 | Complexes: monosílabos muy frecuentes con coda final simple (nt, rt, rm, st, mp, rc, rp, rn, lp, nc) | Level2 | dent, pont, font, porc, serp, forn, guant, talp, llamp, cranc, tronc; verbs surt, dorm |
+| Excepción gramatical y morfológica: els, al, als, del, dels, pel, pels y plurales regulares en -ns y -ls de una base de Level1 o Level2 | Level2 | els nens, el pa dels avis, pans, trens, pals, galls (grupo de expertos, 2026-10-29) |
 | Ela geminada (l·l), Apostrofació i contraccions | Level3 | col·legi, l'avi, d'un |
 | Mirall, rotacions i grafies diacrítiques | Cualquiera | transversal |
 

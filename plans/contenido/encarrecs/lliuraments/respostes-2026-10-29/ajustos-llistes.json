@@ -1,0 +1,120 @@
+{
+  "_nota": "Ajustos de les llistes de vocabulari decidits pel grup d'experts el 2026-10-29 (respostes E01 a E04 d'aquesta carpeta). Els aplica shine/content/generadores/ajustos_llistes.py sobre shine/private/lexico/ després de cada regeneració. 'marca' es completa amb la separació malsonante/sensible (fitxer marques-*.tsv).",
+  "es-general": {
+    "font": "E01-resposta.md (criteris 5, 6 i 9)",
+    "lema": {
+      "bichito": "bicho",
+      "bolita": "bola",
+      "botellita": "botella",
+      "burrito": "burro",
+      "caballito": "caballo",
+      "carrito": "carro",
+      "casita": "casa",
+      "colita": "cola",
+      "conejito": "conejo",
+      "cubito": "cubo",
+      "cucharadita": "cucharada",
+      "figurita": "figura",
+      "gallito": "gallo",
+      "gordito": "gordo",
+      "manita": "mano",
+      "mañanita": "mañana",
+      "mesita": "mesa",
+      "monito": "mono",
+      "monjita": "monja",
+      "negrito": "negro",
+      "pajarito": "pájaro",
+      "parejita": "pareja",
+      "perrito": "perro",
+      "pinito": "pino",
+      "rollito": "rollo",
+      "soldadito": "soldado",
+      "toallita": "toalla",
+      "torito": "toro",
+      "tortita": "torta",
+      "trabajito": "trabajo",
+      "varita": "vara",
+      "vasito": "vaso"
+    },
+    "marca": {}
+  },
+  "ca-general": {
+    "font": "E02-resposta.md (criteris 2, 3, 5, 6 i 7)",
+    "descartar": {
+      "distancia": "homògraf minoritari: distància",
+      "copia": "homògraf minoritari: còpia",
+      "sentencia": "homògraf minoritari: sentència",
+      "formula": "homògraf minoritari: fórmula",
+      "creo": "castellà",
+      "zaragoza": "topònim: Saragossa",
+      "china": "topònim: Xina",
+      "paris": "topònim: París",
+      "berlin": "topònim: Berlín",
+      "dublin": "topònim: Dublín",
+      "helsinki": "topònim: Hèlsinki",
+      "quebec": "topònim: Quebec (Québec)",
+      "california": "topònim: Califòrnia",
+      "canada": "topònim: Canadà",
+      "georgia": "topònim: Geòrgia",
+      "galicia": "topònim: Galícia",
+      "arabia": "topònim: Aràbia",
+      "columbia": "topònim: Colúmbia",
+      "iberia": "topònim: Ibèria",
+      "hispania": "topònim: Hispània",
+      "sahara": "topònim: Sàhara",
+      "avila": "topònim: Àvila",
+      "soria": "topònim: Sòria",
+      "alaba": "topònim: Àlaba",
+      "aragon": "topònim: Aragó"
+    },
+    "marca": {
+      "podis": "",
+      "xic": "",
+      "mos": "dialectal"
+    }
+  },
+  "es-infantil": {
+    "font": "E03-resposta.md (criteri 2: nivell per forma en fórmules pragmàtiques)",
+    "nivell_forma": {
+      "gracias": 0,
+      "gracia": 2,
+      "vale": 0,
+      "deberes": 1,
+      "repente": 1
+    }
+  },
+  "ca-infantil": {
+    "font": "E04-resposta.md (criteris 2 i 3)",
+    "nivell_conflictes_lots": true,
+    "nivell_forma": {
+      "mam": 0,
+      "nones": 0,
+      "bua": 0,
+      "papa": 0,
+      "dret": 1,
+      "llar": 2,
+      "cu": 1,
+      "ge": 1,
+      "pe": 1,
+      "maco": 0,
+      "guapo": 0,
+      "puma": 0
+    },
+    "afegir": [
+      {
+        "forma": "roig",
+        "lema": "roig",
+        "categoria": "adj",
+        "nivell": 1,
+        "nota": "acceptat en lots revisats pel grup"
+      },
+      {
+        "forma": "xoc",
+        "lema": "xoc",
+        "categoria": "nom",
+        "nivell": 2,
+        "nota": "acceptat en lots revisats pel grup"
+      }
+    ]
+  }
+}

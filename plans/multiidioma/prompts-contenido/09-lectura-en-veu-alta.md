@@ -46,6 +46,16 @@ Velocidad de Procesamiento; secundaria: Competencia Lingüística y Fonológica.
    catalana (apóstrofos y contracciones desde Level3, pronombres febles simples desde Level4 y
    combinados desde Level7) y el 95 % dentro de su rango de frecuencia (catálogo 3.6).
 4. **Un solo párrafo**: `parrafos` lleva exactamente un texto, de 1.200 caracteres como mucho.
+5. **Guía editorial** (E11, aprobada por el grupo el 2026-10-29: plans/contenido/encarrecs/lliuraments/
+   E11-guia-editorial-ca.md, y la -es para castellano). Lo esencial: **diálogo** ninguno en Level1 y
+   Level2, dos intervenciones como mucho en Level3 y Level4, cuatro como mucho desde Level5, seguidas
+   dentro del párrafo; **tiempos** solo presente en Level1 y Level2, pasados (en catalán perifrástico,
+   nunca el pasado simple) desde Level3, futuro y condicional desde Level4, subjuntivo desde Level5;
+   **números siempre en letras**, dos puntos desde Level4, paréntesis y comillas desde Level6, siglas
+   desde Level8 (castellano) o Level9 (catalán); de Level0 a Level3, la mitad de los textos del lote
+   **neutros de edad** (valen para un lector de 12 años); de 40 a 60 % de protagonistas chicas, tres
+   de cada diez familias no nucleares y un mismo nombre en tres textos como mucho; lugares genéricos
+   hasta Level3; sin fiestas religiosas ni clubes deportivos reales.
 
 ### Parámetros por nivel (catálogo 5.2)
 

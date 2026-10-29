@@ -68,6 +68,11 @@ y toca para pasar al siguiente; el adulto cuenta errores y, al contar uno, se sa
    (2 por actividad en Level1 a Level3) y **alivio** (25 a 30 % de los elementos): sílabas o
    palabras de Level0 (a, e, i, o, u, ma, pa, la, no, sol, sopa, mesa), **intercaladas en
    posiciones al azar, nunca al final ni dos seguidas**.
+   **Desde Level3, modelo mixto** (grupo de expertos, revisiones de las tandas 3 y 4, 2026-10-29):
+   palabras reales con la estructura o la longitud del nivel como material de trabajo, más
+   pseudopalabras de esa misma estructura y alivio del 25 a 30 %. Con 10 elementos, 5 + 2 + 3; con
+   12, 6 + 3 + 3; con 15, 8 + 3 + 4. Las filas de Level4 a Level7 describen la estructura de las
+   pseudopalabras; las palabras reales siguen la misma.
 4. **Pseudopalabras**: pronunciables con la fonotaxis castellana, formadas con sílabas del nivel y
    que **no sean palabras** en castellano ni en catalán (ni formas verbales, ni coloquialismos,
    ni nombres propios). No repetir las que ya están en el inventario.
