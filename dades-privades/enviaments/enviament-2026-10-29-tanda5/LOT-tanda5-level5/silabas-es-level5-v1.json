@@ -1,0 +1,113 @@
+{
+  "lote": "silabas-es-level5-v1",
+  "descripcion": "2 actividades castellanas de reordenamiento de sílabas (activity_syllable_order) de Level5: 6 palabras de 4 sílabas cada una, con imagen del banco como pista (clave imagen = slug, silabeo del manifiesto) y, por primera vez, 1 sílaba sobrante por palabra (catálogo 6.2). La sobrante es una sílaba directa sencilla que no se parece a ninguna de la palabra: las sobrantes parecidas (bra si está bar) son de Level7. SIL-ES-L05-LIN-001: palabras de 4 sílabas con sílabas cerradas y diptongo: ca-len-da-rio, sal-ta-mon-tes, pan-de-re-ta, fur-go-ne-ta, be-ren-je-na, ro-tu-la-dor. SIL-ES-L05-LIN-002: palabras de 4 sílabas con esdrújulas y diptongo: ca-la-ba-za, ca-mi-se-ta, li-bé-lu-la, pi-rá-mi-de, xi-ló-fo-no, mur-cié-la-go. Ninguna palabra repite sílaba ni está en los lotes de Level3 y Level4, y ninguna ordenación de 4 de las 5 fichas forma otra palabra castellana (comprobado contra las listas generales e infantiles; solo aparece la forma de corpus casemita, que no es una palabra). Descartadas por la puerta léxica (fuera del rango 7.000): patinador, apicultor, carabela, candelabro, carretilla, camionero; cacatúa y capibara no están en la lista; mariquita está marcada como sensible y no se usa; las de comida poco saludable (chocolate, caramelo, piruleta, hamburguesa, palomitas, magdalena) y las de hospital o miedo (ambulancia, termómetro, esqueleto) no se usan por la guía E11.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano desde el manifiesto del banco (contenido castellano de Level5). Prompt: plans/contenido/prompts-es/05-ordena-silabas.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-ES-L05-LIN-001",
+      "idioma": "es",
+      "titulo": "Ordena las sílabas con dibujo",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Mira el dibujo y toca las sílabas en orden para formar su nombre. Sobra una sílaba.",
+      "explicacion": "Syllable order",
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "ca-len-da-rio",
+            "sobrantes": "mo",
+            "imagen": "calendario"
+          },
+          {
+            "silabas": "sal-ta-mon-tes",
+            "sobrantes": "pi",
+            "imagen": "saltamontes"
+          },
+          {
+            "silabas": "pan-de-re-ta",
+            "sobrantes": "lu",
+            "imagen": "pandereta"
+          },
+          {
+            "silabas": "fur-go-ne-ta",
+            "sobrantes": "si",
+            "imagen": "furgoneta"
+          },
+          {
+            "silabas": "be-ren-je-na",
+            "sobrantes": "to",
+            "imagen": "berenjena"
+          },
+          {
+            "silabas": "ro-tu-la-dor",
+            "sobrantes": "me",
+            "imagen": "rotulador"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Directas resto (CV)",
+        "Mixtas (CVC)"
+      ]
+    },
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-ES-L05-LIN-002",
+      "idioma": "es",
+      "titulo": "Ordena las sílabas con dibujo",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Mira el dibujo y toca las sílabas en orden para formar su nombre. Sobra una sílaba.",
+      "explicacion": "Syllable order",
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "ca-la-ba-za",
+            "sobrantes": "ño",
+            "imagen": "calabaza"
+          },
+          {
+            "silabas": "ca-mi-se-ta",
+            "sobrantes": "pu",
+            "imagen": "camiseta"
+          },
+          {
+            "silabas": "li-bé-lu-la",
+            "sobrantes": "fe",
+            "imagen": "libelula"
+          },
+          {
+            "silabas": "pi-rá-mi-de",
+            "sobrantes": "so",
+            "imagen": "piramide"
+          },
+          {
+            "silabas": "xi-ló-fo-no",
+            "sobrantes": "pe",
+            "imagen": "xilofono"
+          },
+          {
+            "silabas": "mur-cié-la-go",
+            "sobrantes": "ti",
+            "imagen": "murcielago"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Directas resto (CV)",
+        "Mixtas (CVC)"
+      ]
+    }
+  ]
+}

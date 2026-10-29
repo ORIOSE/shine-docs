@@ -1,0 +1,13 @@
+{
+  "subject": "a ballet dancer in a white tutu standing on tiptoe, friendly face",
+  "prompt": "Use case: stylized-concept. New Shine educational picture, match the three approved anchors which are STYLE REFERENCES ONLY, not edit targets. 1024x1024 transparent PNG. Required dominant color/form: blanco, personas. Recognizable as Spanish word bailarina when seen alone at 110 points. Flat colors, no highlights, gradients or textures. Full body for people unless hint says otherwise, friendly, vary natural skin tones; female bailarina, animadora, pitonisa, alternate others. No text, digits, labels, logos, watermarks, arrows, speech bubbles or weapons. Integral parts and explicitly requested plural or compound subjects are allowed, no unrequested objects or scenery. Animal anatomy/limb count is not a rejection criterion. \nFlat vector illustration of a single a ballet dancer in a white tutu standing on tiptoe, friendly face, children's educational flashcard style.\nClean continuous dark charcoal (#1E1E2E) outline of uniform medium weight, simple rounded shapes,\nflat colors with at most one flat shade per color, no gradients, no textures.\nThe object keeps its natural, most recognizable colors. Whole object visible, centered,\nfront or three-quarter view, occupying about 70% of the canvas with clear margins on all sides.\nTransparent background. No scene, no ground, no cast shadow, no frame, no border.\nNo text, no letters, no numbers, no logos, no watermark, no hands, no extra objects.\nFriendly, calm, modern picture-book look; consistent with the reference images.\n",
+  "refs": [
+    "/Users/josellamas/var/www/shine-project/shine/content/images/gato.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/manzana.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/coche.png"
+  ],
+  "round": 1,
+  "numero": 13,
+  "grupo": "blanco, personas",
+  "correccion": ""
+}

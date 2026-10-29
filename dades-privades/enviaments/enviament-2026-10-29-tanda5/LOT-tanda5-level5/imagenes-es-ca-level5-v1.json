@@ -1,0 +1,1370 @@
+{
+  "lote": "imagenes-es-ca-level5-v1",
+  "descripcion": "6 actividades de posición de imágenes con idiomas [es, ca] (un nodo por idioma, misma imagen y nombre por idioma) para Level5. Parámetros de docs/exercise-catalog.md 5.4; nombres del bloque ca del manifiesto (validado por el experto); ninguna imagen repetida en el lote; sin pares confusos en catalán dentro de un grupo.",
+  "origen": {
+    "generador": "shine/content/generadores/imagenes.py",
+    "version": "1.0",
+    "semilla": 20261029,
+    "fecha": "2026-10-29",
+    "manifest_sha256": "eaf57082d6e813f122ca3535ebf06e48beb96a7f72d9f1edaa2b515bbd3fc675",
+    "comando": "python3 imagenes.py --seed 20261029 --levels 5 --per-level 6 --start L05=1 --lote imagenes-es-ca-level5-v1 --out ../imagenes-es-ca-level5-v1.json"
+  },
+  "actividades": [
+    {
+      "tipo": "activity_image_position",
+      "codigo": "IMG-L05-MEM-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "¿Dónde estaba?",
+        "ca": "On era?"
+      },
+      "area_principal": "Memoria de Trabajo (Auditiva y Visual)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Mira bien dónde está cada dibujo. Después te preguntaremos en qué posición estaba uno de ellos.",
+        "ca": "Mira bé on és cada dibuix. Després et preguntarem en quina posició era un d’ells."
+      },
+      "explicacion": "Image Position",
+      "contenido": {
+        "grupos": [
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "oreja",
+                "nombre": {
+                  "es": "oreja",
+                  "ca": "orella"
+                }
+              },
+              {
+                "imagen": "brazo",
+                "nombre": {
+                  "es": "brazo",
+                  "ca": "braç"
+                }
+              },
+              {
+                "imagen": "rodilla",
+                "nombre": {
+                  "es": "rodilla",
+                  "ca": "genoll"
+                }
+              },
+              {
+                "imagen": "nariz",
+                "nombre": {
+                  "es": "nariz",
+                  "ca": "nas"
+                }
+              },
+              {
+                "imagen": "mano",
+                "nombre": {
+                  "es": "mano",
+                  "ca": "mà"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "ciervo",
+                "nombre": {
+                  "es": "ciervo",
+                  "ca": "cérvol"
+                }
+              },
+              {
+                "imagen": "tigre",
+                "nombre": {
+                  "es": "tigre",
+                  "ca": "tigre"
+                }
+              },
+              {
+                "imagen": "guepardo",
+                "nombre": {
+                  "es": "guepardo",
+                  "ca": "guepard"
+                }
+              },
+              {
+                "imagen": "leon",
+                "nombre": {
+                  "es": "león",
+                  "ca": "lleó"
+                }
+              },
+              {
+                "imagen": "panda",
+                "nombre": {
+                  "es": "panda",
+                  "ca": "panda"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "imagenes": [
+              {
+                "imagen": "bombilla",
+                "nombre": {
+                  "es": "bombilla",
+                  "ca": "bombeta"
+                }
+              },
+              {
+                "imagen": "escalera",
+                "nombre": {
+                  "es": "escalera",
+                  "ca": "escala"
+                }
+              },
+              {
+                "imagen": "ventana",
+                "nombre": {
+                  "es": "ventana",
+                  "ca": "finestra"
+                }
+              },
+              {
+                "imagen": "peine",
+                "nombre": {
+                  "es": "peine",
+                  "ca": "pinta"
+                }
+              },
+              {
+                "imagen": "colchon",
+                "nombre": {
+                  "es": "colchón",
+                  "ca": "matalàs"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "rosquilla",
+                "nombre": {
+                  "es": "rosquilla",
+                  "ca": "rosquilla"
+                }
+              },
+              {
+                "imagen": "patata",
+                "nombre": {
+                  "es": "patata",
+                  "ca": "patata"
+                }
+              },
+              {
+                "imagen": "coliflor",
+                "nombre": {
+                  "es": "coliflor",
+                  "ca": "coliflor"
+                }
+              },
+              {
+                "imagen": "hamburguesa",
+                "nombre": {
+                  "es": "hamburguesa",
+                  "ca": "hamburguesa"
+                }
+              },
+              {
+                "imagen": "cebolla",
+                "nombre": {
+                  "es": "cebolla",
+                  "ca": "ceba"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "sarten",
+                "nombre": {
+                  "es": "sartén",
+                  "ca": "paella"
+                }
+              },
+              {
+                "imagen": "horno",
+                "nombre": {
+                  "es": "horno",
+                  "ca": "forn"
+                }
+              },
+              {
+                "imagen": "batidora",
+                "nombre": {
+                  "es": "batidora",
+                  "ca": "batedora"
+                }
+              },
+              {
+                "imagen": "olla",
+                "nombre": {
+                  "es": "olla",
+                  "ca": "olla"
+                }
+              },
+              {
+                "imagen": "plato",
+                "nombre": {
+                  "es": "plato",
+                  "ca": "plat"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "activity_image_position",
+      "codigo": "IMG-L05-MEM-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "¿Dónde estaba?",
+        "ca": "On era?"
+      },
+      "area_principal": "Memoria de Trabajo (Auditiva y Visual)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Mira bien dónde está cada dibujo. Después te preguntaremos en qué posición estaba uno de ellos.",
+        "ca": "Mira bé on és cada dibuix. Després et preguntarem en quina posició era un d’ells."
+      },
+      "explicacion": "Image Position",
+      "contenido": {
+        "grupos": [
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "cueva",
+                "nombre": {
+                  "es": "cueva",
+                  "ca": "cova"
+                }
+              },
+              {
+                "imagen": "luna",
+                "nombre": {
+                  "es": "luna",
+                  "ca": "lluna"
+                }
+              },
+              {
+                "imagen": "flor",
+                "nombre": {
+                  "es": "flor",
+                  "ca": "flor"
+                }
+              },
+              {
+                "imagen": "fuego",
+                "nombre": {
+                  "es": "fuego",
+                  "ca": "foc"
+                }
+              },
+              {
+                "imagen": "nido",
+                "nombre": {
+                  "es": "nido",
+                  "ca": "niu"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "corona",
+                "nombre": {
+                  "es": "corona",
+                  "ca": "corona"
+                }
+              },
+              {
+                "imagen": "boton",
+                "nombre": {
+                  "es": "botón",
+                  "ca": "botó"
+                }
+              },
+              {
+                "imagen": "corbata",
+                "nombre": {
+                  "es": "corbata",
+                  "ca": "corbata"
+                }
+              },
+              {
+                "imagen": "bufanda",
+                "nombre": {
+                  "es": "bufanda",
+                  "ca": "bufanda"
+                }
+              },
+              {
+                "imagen": "sandalia",
+                "nombre": {
+                  "es": "sandalia",
+                  "ca": "sandàlia"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "carta",
+                "nombre": {
+                  "es": "carta",
+                  "ca": "carta"
+                }
+              },
+              {
+                "imagen": "rueda",
+                "nombre": {
+                  "es": "rueda",
+                  "ca": "roda"
+                }
+              },
+              {
+                "imagen": "cadena",
+                "nombre": {
+                  "es": "cadena",
+                  "ca": "cadena"
+                }
+              },
+              {
+                "imagen": "boya",
+                "nombre": {
+                  "es": "boya",
+                  "ca": "boia"
+                }
+              },
+              {
+                "imagen": "rastrillo",
+                "nombre": {
+                  "es": "rastrillo",
+                  "ca": "rasclet"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "imagenes": [
+              {
+                "imagen": "acordeonista",
+                "nombre": {
+                  "es": "acordeonista",
+                  "ca": "acordionista"
+                }
+              },
+              {
+                "imagen": "fantasma",
+                "nombre": {
+                  "es": "fantasma",
+                  "ca": "fantasma"
+                }
+              },
+              {
+                "imagen": "camarografo",
+                "nombre": {
+                  "es": "camarógrafo",
+                  "ca": "camarògraf"
+                }
+              },
+              {
+                "imagen": "astronauta",
+                "nombre": {
+                  "es": "astronauta",
+                  "ca": "astronauta"
+                }
+              },
+              {
+                "imagen": "dragon",
+                "nombre": {
+                  "es": "dragón",
+                  "ca": "drac"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "cacahuete",
+                "nombre": {
+                  "es": "cacahuete",
+                  "ca": "cacauet"
+                }
+              },
+              {
+                "imagen": "salchicha",
+                "nombre": {
+                  "es": "salchicha",
+                  "ca": "salsitxa"
+                }
+              },
+              {
+                "imagen": "pizza",
+                "nombre": {
+                  "es": "pizza",
+                  "ca": "pizza"
+                }
+              },
+              {
+                "imagen": "berenjena",
+                "nombre": {
+                  "es": "berenjena",
+                  "ca": "albergínia"
+                }
+              },
+              {
+                "imagen": "caramelo",
+                "nombre": {
+                  "es": "caramelo",
+                  "ca": "caramel"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "activity_image_position",
+      "codigo": "IMG-L05-MEM-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "¿Dónde estaba?",
+        "ca": "On era?"
+      },
+      "area_principal": "Memoria de Trabajo (Auditiva y Visual)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Mira bien dónde está cada dibujo. Después te preguntaremos en qué posición estaba uno de ellos.",
+        "ca": "Mira bé on és cada dibuix. Després et preguntarem en quina posició era un d’ells."
+      },
+      "explicacion": "Image Position",
+      "contenido": {
+        "grupos": [
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "microfono",
+                "nombre": {
+                  "es": "micrófono",
+                  "ca": "micròfon"
+                }
+              },
+              {
+                "imagen": "castanuelas",
+                "nombre": {
+                  "es": "castañuelas",
+                  "ca": "castanyoles"
+                }
+              },
+              {
+                "imagen": "clarinete",
+                "nombre": {
+                  "es": "clarinete",
+                  "ca": "clarinet"
+                }
+              },
+              {
+                "imagen": "saxofon",
+                "nombre": {
+                  "es": "saxofón",
+                  "ca": "saxòfon"
+                }
+              },
+              {
+                "imagen": "tambor",
+                "nombre": {
+                  "es": "tambor",
+                  "ca": "tambor"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "flamenco",
+                "nombre": {
+                  "es": "flamenco",
+                  "ca": "flamenc"
+                }
+              },
+              {
+                "imagen": "paloma",
+                "nombre": {
+                  "es": "paloma",
+                  "ca": "colom"
+                }
+              },
+              {
+                "imagen": "perdiz",
+                "nombre": {
+                  "es": "perdiz",
+                  "ca": "perdiu"
+                }
+              },
+              {
+                "imagen": "cisne",
+                "nombre": {
+                  "es": "cisne",
+                  "ca": "cigne"
+                }
+              },
+              {
+                "imagen": "tucan",
+                "nombre": {
+                  "es": "tucán",
+                  "ca": "tucan"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "imagenes": [
+              {
+                "imagen": "col",
+                "nombre": {
+                  "es": "col",
+                  "ca": "col"
+                }
+              },
+              {
+                "imagen": "helado",
+                "nombre": {
+                  "es": "helado",
+                  "ca": "gelat"
+                }
+              },
+              {
+                "imagen": "calabaza",
+                "nombre": {
+                  "es": "calabaza",
+                  "ca": "carbassa"
+                }
+              },
+              {
+                "imagen": "seta",
+                "nombre": {
+                  "es": "seta",
+                  "ca": "bolet"
+                }
+              },
+              {
+                "imagen": "bollo",
+                "nombre": {
+                  "es": "bollo",
+                  "ca": "brioix"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "aventurero",
+                "nombre": {
+                  "es": "aventurero",
+                  "ca": "aventurer"
+                }
+              },
+              {
+                "imagen": "cavernicola",
+                "nombre": {
+                  "es": "cavernícola",
+                  "ca": "cavernícola"
+                }
+              },
+              {
+                "imagen": "picapedrero",
+                "nombre": {
+                  "es": "picapedrero",
+                  "ca": "picapedrer"
+                }
+              },
+              {
+                "imagen": "albanil",
+                "nombre": {
+                  "es": "albañil",
+                  "ca": "paleta"
+                }
+              },
+              {
+                "imagen": "bebe",
+                "nombre": {
+                  "es": "bebé",
+                  "ca": "bebè"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "pintalabios",
+                "nombre": {
+                  "es": "pintalabios",
+                  "ca": "pintallavis"
+                }
+              },
+              {
+                "imagen": "pesa",
+                "nombre": {
+                  "es": "pesa",
+                  "ca": "pes"
+                }
+              },
+              {
+                "imagen": "cuerda",
+                "nombre": {
+                  "es": "cuerda",
+                  "ca": "corda"
+                }
+              },
+              {
+                "imagen": "moneda",
+                "nombre": {
+                  "es": "moneda",
+                  "ca": "moneda"
+                }
+              },
+              {
+                "imagen": "medalla",
+                "nombre": {
+                  "es": "medalla",
+                  "ca": "medalla"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "activity_image_position",
+      "codigo": "IMG-L05-MEM-004",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "¿Dónde estaba?",
+        "ca": "On era?"
+      },
+      "area_principal": "Memoria de Trabajo (Auditiva y Visual)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Mira bien dónde está cada dibujo. Después te preguntaremos en qué posición estaba uno de ellos.",
+        "ca": "Mira bé on és cada dibuix. Després et preguntarem en quina posició era un d’ells."
+      },
+      "explicacion": "Image Position",
+      "contenido": {
+        "grupos": [
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "mosquito",
+                "nombre": {
+                  "es": "mosquito",
+                  "ca": "mosquit"
+                }
+              },
+              {
+                "imagen": "escarabajo",
+                "nombre": {
+                  "es": "escarabajo",
+                  "ca": "escarabat"
+                }
+              },
+              {
+                "imagen": "mariquita",
+                "nombre": {
+                  "es": "mariquita",
+                  "ca": "marieta"
+                }
+              },
+              {
+                "imagen": "arana",
+                "nombre": {
+                  "es": "araña",
+                  "ca": "aranya"
+                }
+              },
+              {
+                "imagen": "abeja",
+                "nombre": {
+                  "es": "abeja",
+                  "ca": "abella"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "campana",
+                "nombre": {
+                  "es": "campana",
+                  "ca": "campana"
+                }
+              },
+              {
+                "imagen": "paracaidas",
+                "nombre": {
+                  "es": "paracaídas",
+                  "ca": "paracaigudes"
+                }
+              },
+              {
+                "imagen": "candado",
+                "nombre": {
+                  "es": "candado",
+                  "ca": "cadenat"
+                }
+              },
+              {
+                "imagen": "balanza",
+                "nombre": {
+                  "es": "balanza",
+                  "ca": "balança"
+                }
+              },
+              {
+                "imagen": "cana",
+                "nombre": {
+                  "es": "caña",
+                  "ca": "canya"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "tenedor",
+                "nombre": {
+                  "es": "tenedor",
+                  "ca": "forquilla"
+                }
+              },
+              {
+                "imagen": "cesta",
+                "nombre": {
+                  "es": "cesta",
+                  "ca": "cistell"
+                }
+              },
+              {
+                "imagen": "cazo",
+                "nombre": {
+                  "es": "cazo",
+                  "ca": "cassó"
+                }
+              },
+              {
+                "imagen": "cuchillo",
+                "nombre": {
+                  "es": "cuchillo",
+                  "ca": "ganivet"
+                }
+              },
+              {
+                "imagen": "cazuela",
+                "nombre": {
+                  "es": "cazuela",
+                  "ca": "cassola"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "rama",
+                "nombre": {
+                  "es": "rama",
+                  "ca": "branca"
+                }
+              },
+              {
+                "imagen": "cactus",
+                "nombre": {
+                  "es": "cactus",
+                  "ca": "cactus"
+                }
+              },
+              {
+                "imagen": "palmera",
+                "nombre": {
+                  "es": "palmera",
+                  "ca": "palmera"
+                }
+              },
+              {
+                "imagen": "nube",
+                "nombre": {
+                  "es": "nube",
+                  "ca": "núvol"
+                }
+              },
+              {
+                "imagen": "copo",
+                "nombre": {
+                  "es": "copo",
+                  "ca": "floc"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "imagenes": [
+              {
+                "imagen": "cacao",
+                "nombre": {
+                  "es": "cacao",
+                  "ca": "cacau"
+                }
+              },
+              {
+                "imagen": "fresa",
+                "nombre": {
+                  "es": "fresa",
+                  "ca": "maduixa"
+                }
+              },
+              {
+                "imagen": "pera",
+                "nombre": {
+                  "es": "pera",
+                  "ca": "pera"
+                }
+              },
+              {
+                "imagen": "naranja",
+                "nombre": {
+                  "es": "naranja",
+                  "ca": "taronja"
+                }
+              },
+              {
+                "imagen": "melocoton",
+                "nombre": {
+                  "es": "melocotón",
+                  "ca": "préssec"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "activity_image_position",
+      "codigo": "IMG-L05-MEM-005",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "¿Dónde estaba?",
+        "ca": "On era?"
+      },
+      "area_principal": "Memoria de Trabajo (Auditiva y Visual)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Mira bien dónde está cada dibujo. Después te preguntaremos en qué posición estaba uno de ellos.",
+        "ca": "Mira bé on és cada dibuix. Després et preguntarem en quina posició era un d’ells."
+      },
+      "explicacion": "Image Position",
+      "contenido": {
+        "grupos": [
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "pimiento",
+                "nombre": {
+                  "es": "pimiento",
+                  "ca": "pebrot"
+                }
+              },
+              {
+                "imagen": "galleta",
+                "nombre": {
+                  "es": "galleta",
+                  "ca": "galeta"
+                }
+              },
+              {
+                "imagen": "sopa",
+                "nombre": {
+                  "es": "sopa",
+                  "ca": "sopa"
+                }
+              },
+              {
+                "imagen": "zumo",
+                "nombre": {
+                  "es": "zumo",
+                  "ca": "suc"
+                }
+              },
+              {
+                "imagen": "yogur",
+                "nombre": {
+                  "es": "yogur",
+                  "ca": "iogurt"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "regalo",
+                "nombre": {
+                  "es": "regalo",
+                  "ca": "regal"
+                }
+              },
+              {
+                "imagen": "camara",
+                "nombre": {
+                  "es": "cámara",
+                  "ca": "càmera"
+                }
+              },
+              {
+                "imagen": "ancla",
+                "nombre": {
+                  "es": "ancla",
+                  "ca": "àncora"
+                }
+              },
+              {
+                "imagen": "termometro",
+                "nombre": {
+                  "es": "termómetro",
+                  "ca": "termòmetre"
+                }
+              },
+              {
+                "imagen": "hilo",
+                "nombre": {
+                  "es": "hilo",
+                  "ca": "fil"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "cama",
+                "nombre": {
+                  "es": "cama",
+                  "ca": "llit"
+                }
+              },
+              {
+                "imagen": "cajon",
+                "nombre": {
+                  "es": "cajón",
+                  "ca": "calaix"
+                }
+              },
+              {
+                "imagen": "percha",
+                "nombre": {
+                  "es": "percha",
+                  "ca": "penjador"
+                }
+              },
+              {
+                "imagen": "candelabro",
+                "nombre": {
+                  "es": "candelabro",
+                  "ca": "canelobre"
+                }
+              },
+              {
+                "imagen": "cojin",
+                "nombre": {
+                  "es": "cojín",
+                  "ca": "coixí"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "imagenes": [
+              {
+                "imagen": "hueso",
+                "nombre": {
+                  "es": "hueso",
+                  "ca": "os"
+                }
+              },
+              {
+                "imagen": "corazon",
+                "nombre": {
+                  "es": "corazón",
+                  "ca": "cor"
+                }
+              },
+              {
+                "imagen": "diente",
+                "nombre": {
+                  "es": "diente",
+                  "ca": "dent"
+                }
+              },
+              {
+                "imagen": "pierna",
+                "nombre": {
+                  "es": "pierna",
+                  "ca": "cama"
+                }
+              },
+              {
+                "imagen": "boca",
+                "nombre": {
+                  "es": "boca",
+                  "ca": "boca"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "burro",
+                "nombre": {
+                  "es": "burro",
+                  "ca": "ruc"
+                }
+              },
+              {
+                "imagen": "perro",
+                "nombre": {
+                  "es": "perro",
+                  "ca": "gos"
+                }
+              },
+              {
+                "imagen": "toro",
+                "nombre": {
+                  "es": "toro",
+                  "ca": "toro"
+                }
+              },
+              {
+                "imagen": "cerdo",
+                "nombre": {
+                  "es": "cerdo",
+                  "ca": "porc"
+                }
+              },
+              {
+                "imagen": "gallo",
+                "nombre": {
+                  "es": "gallo",
+                  "ca": "gall"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "activity_image_position",
+      "codigo": "IMG-L05-MEM-006",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "¿Dónde estaba?",
+        "ca": "On era?"
+      },
+      "area_principal": "Memoria de Trabajo (Auditiva y Visual)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Mira bien dónde está cada dibujo. Después te preguntaremos en qué posición estaba uno de ellos.",
+        "ca": "Mira bé on és cada dibuix. Després et preguntarem en quina posició era un d’ells."
+      },
+      "explicacion": "Image Position",
+      "contenido": {
+        "grupos": [
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "pala",
+                "nombre": {
+                  "es": "pala",
+                  "ca": "pala"
+                }
+              },
+              {
+                "imagen": "dado",
+                "nombre": {
+                  "es": "dado",
+                  "ca": "dau"
+                }
+              },
+              {
+                "imagen": "peon",
+                "nombre": {
+                  "es": "peón",
+                  "ca": "peó"
+                }
+              },
+              {
+                "imagen": "sacapuntas",
+                "nombre": {
+                  "es": "sacapuntas",
+                  "ca": "maquineta"
+                }
+              },
+              {
+                "imagen": "tobogan",
+                "nombre": {
+                  "es": "tobogán",
+                  "ca": "tobogan"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "rinoceronte",
+                "nombre": {
+                  "es": "rinoceronte",
+                  "ca": "rinoceront"
+                }
+              },
+              {
+                "imagen": "serpiente",
+                "nombre": {
+                  "es": "serpiente",
+                  "ca": "serp"
+                }
+              },
+              {
+                "imagen": "rana",
+                "nombre": {
+                  "es": "rana",
+                  "ca": "granota"
+                }
+              },
+              {
+                "imagen": "elefante",
+                "nombre": {
+                  "es": "elefante",
+                  "ca": "elefant"
+                }
+              },
+              {
+                "imagen": "lobo",
+                "nombre": {
+                  "es": "lobo",
+                  "ca": "llop"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 4,
+            "imagenes": [
+              {
+                "imagen": "television",
+                "nombre": {
+                  "es": "televisión",
+                  "ca": "televisió"
+                }
+              },
+              {
+                "imagen": "alfombra",
+                "nombre": {
+                  "es": "alfombra",
+                  "ca": "catifa"
+                }
+              },
+              {
+                "imagen": "ordenador",
+                "nombre": {
+                  "es": "ordenador",
+                  "ca": "ordinador"
+                }
+              },
+              {
+                "imagen": "cuadro",
+                "nombre": {
+                  "es": "cuadro",
+                  "ca": "quadre"
+                }
+              },
+              {
+                "imagen": "comoda",
+                "nombre": {
+                  "es": "cómoda",
+                  "ca": "calaixera"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 3,
+            "imagenes": [
+              {
+                "imagen": "cremallera",
+                "nombre": {
+                  "es": "cremallera",
+                  "ca": "cremallera"
+                }
+              },
+              {
+                "imagen": "gafas",
+                "nombre": {
+                  "es": "gafas",
+                  "ca": "ulleres"
+                }
+              },
+              {
+                "imagen": "zapato",
+                "nombre": {
+                  "es": "zapato",
+                  "ca": "sabata"
+                }
+              },
+              {
+                "imagen": "lazo",
+                "nombre": {
+                  "es": "lazo",
+                  "ca": "llaç"
+                }
+              },
+              {
+                "imagen": "vestido",
+                "nombre": {
+                  "es": "vestido",
+                  "ca": "vestit"
+                }
+              }
+            ]
+          },
+          {
+            "posicion": 2,
+            "imagenes": [
+              {
+                "imagen": "calamar",
+                "nombre": {
+                  "es": "calamar",
+                  "ca": "calamar"
+                }
+              },
+              {
+                "imagen": "cangrejo",
+                "nombre": {
+                  "es": "cangrejo",
+                  "ca": "cranc"
+                }
+              },
+              {
+                "imagen": "ballena",
+                "nombre": {
+                  "es": "ballena",
+                  "ca": "balena"
+                }
+              },
+              {
+                "imagen": "coral",
+                "nombre": {
+                  "es": "coral",
+                  "ca": "corall"
+                }
+              },
+              {
+                "imagen": "tiburon",
+                "nombre": {
+                  "es": "tiburón",
+                  "ca": "tauró"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

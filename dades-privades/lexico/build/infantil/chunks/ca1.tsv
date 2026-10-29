@@ -1,0 +1,1115 @@
+lema	categoria	rango_lema	banco_imagenes	lotes_L0_L2
+el	det	1		sí
+de	prep	2		sí
+a	prep	3		
+i	conj	4		
+que	pron	5		sí
+un	det	6		sí
+ser	verb	7		sí
+en	prep	8		sí
+per	prep	9		
+haver	verb	10		sí
+anar	verb	11		sí
+del	prep	12		
+es	pron	13		sí
+no	adv	14		sí
+amb	prep	15		sí
+al	prep	16		sí
+aquest	det	17		
+seu	det	18		
+fer	verb	19		sí
+com	conj	20		
+més	adv	21		
+dels	prep	22		
+tenir	verb	23		sí
+poder	verb	24		
+estar	verb	25		
+hi	pron	26		sí
+o	conj	27		
+si	conj	28		sí
+any	nom	29		
+però	conj	30		
+tot	pron	31		
+dir	verb	32	sí	sí
+em	pron	33		sí
+ens	pron	34		
+tot	det	35		
+molt	adv	36		sí
+als	prep	37		
+ja	adv	38		sí
+ho	pron	39		sí
+altre	det	40		
+també	adv	41		
+et	pron	42		sí
+veure	verb	43		
+cap	nom	44	sí	sí
+nostre	det	45		
+dia	nom	46		
+voler	verb	47		
+això	pron	48		
+sobre	prep	49	sí	
+nou	adj	50		
+quan	conj	51		
+primer	adj	52		
+ara	adv	53		
+entre	prep	54		
+fins	prep	55		
+on	adv	56		sí
+què	pron	57		
+dos	num	58		
+gran	adj	59		sí
+pel	prep	60		
+perquè	conj	61		
+persona	nom	62		
+des	prep	63		
+després	adv	64		
+fet	nom	65		
+bo	adj	66		
+mateix	det	67		
+saber	verb	68		
+part	nom	69		
+només	adv	70		
+trobar	verb	71		
+sense	prep	72		
+molt	det	73		
+dona	nom	74		sí
+jo	pron	75		sí
+donar	verb	76		
+us	pron	77		sí
+encara	adv	78		
+ell	pron	79		
+li	pron	80		sí
+gent	nom	81		
+en	pron	82		sí
+meu	det	83		
+parlar	verb	84		
+lloc	nom	85		
+així	adv	86		
+durant	prep	87		
+cosa	nom	88		sí
+català	adj	89		
+qui	pron	90		sí
+ni	conj	91		sí
+contra	prep	92		
+algun	det	93		
+deixar	verb	94		
+passar	verb	95		
+posar	verb	96		
+qual	pron	97		
+país	nom	98		
+arribar	verb	99		
+millor	adj	100		
+gràcies	interj	101		
+ciutat	nom	102		
+començar	verb	103		
+tant	adv	104		
+manera	nom	105		
+tornar	verb	106		
+temps	nom	107		
+creure	verb	108		sí
+govern	nom	109		
+grup	nom	110		
+cada	det	111		
+món	nom	112		
+vida	nom	113		
+portar	verb	114	sí	
+acabar	verb	115		
+hora	nom	116		sí
+públic	adj	117		
+pels	prep	118		
+vegada	nom	119		
+quedar	verb	120		
+bé	adv	121		
+sempre	adv	122		
+passat	adj	123		
+casa	nom	124	sí	sí
+partit	nom	125		
+viure	verb	126		
+tan	adv	127		
+tres	num	128		sí
+quin	det	129		sí
+home	nom	130		sí
+cas	nom	131		
+mort	nom	132		
+mes	nom	133		
+sant	nom	134		
+família	nom	135		
+història	nom	136		
+teu	det	137		
+aquí	adv	138		
+sol	adj	139	sí	sí
+abans	adv	140		
+segons	prep	141		
+pensar	verb	142		
+res	pron	143		
+punt	nom	144		
+moment	nom	145		
+venir	verb	146		sí
+forma	nom	147		
+el	pron	148		sí
+seguir	verb	149		
+poble	nom	150		sí
+polític	adj	151		
+dret	nom	152		sí
+semblar	verb	153		
+social	adj	154		
+treballar	verb	155		
+caldre	verb	156		
+aquell	det	157		
+projecte	nom	158		
+demanar	verb	159		
+avui	adv	160		
+mai	adv	161		
+esperar	verb	162		
+explicar	verb	163		
+espanyol	adj	164		
+fill	nom	165		
+nom	nom	166		
+cop	nom	167		
+president	nom	168		
+sortir	verb	169		
+sí	adv	170		
+aconseguir	verb	171		
+segon	adj	172		
+servei	nom	173		
+problema	nom	174		
+nosaltres	pron	175		
+empresa	nom	176		
+guerra	nom	177		
+petit	adj	178		
+els	pron	179		
+equip	nom	180		
+escola	nom	181	sí	sí
+presentar	verb	182		
+setmana	nom	183		
+conèixer	verb	184		
+nit	nom	185		sí
+divers	det	186		
+final	nom	187		sí
+centre	nom	188		
+carrer	nom	189		
+suport	nom	190		
+important	adj	191		
+davant	prep	192		
+últim	adj	193		
+diferent	adj	194		
+feina	nom	195		
+agradar	verb	196		
+qualsevol	det	197		
+clar	adj	198		
+algun	pron	199		
+informació	nom	200		
+perdre	verb	201		
+imatge	nom	202		
+ben	adv	203		
+mentre	conj	204		
+dins	adv	205		
+tu	pron	206		sí
+acord	nom	207		
+llibre	nom	208	sí	sí
+rebre	verb	209		
+força	nom	210		
+recordar	verb	211		
+mirar	verb	212		
+jove	nom	213		
+tractar	verb	214		
+pare	nom	215		sí
+obra	nom	216		
+únic	adj	217		
+internacional	adj	218		
+general	adj	219		
+servir	verb	220		
+utilitzar	verb	221		
+política	nom	222		
+sota	prep	223		
+llengua	nom	224	sí	
+foto	nom	225		
+tal	det	226		
+entendre	verb	227		
+nacional	adj	228		
+continuar	verb	229		
+programa	nom	230		
+permetre	verb	231		
+web	nom	232		
+sistema	nom	233		
+treball	nom	234		
+poc	adv	235		
+nen	nom	236	sí	sí
+unit	adj	237		
+dada	nom	238		
+terra	nom	239		
+menys	adv	240		
+tothom	pron	241		
+llegir	verb	242		
+compte	nom	243		
+canvi	nom	244		
+aigua	nom	245		sí
+alt	adj	246		
+guanyar	verb	247		
+llei	nom	248		
+nord	nom	249		
+amic	nom	250		
+canviar	verb	251		
+pas	nom	252		
+sentir	verb	253		
+zona	nom	254		
+prendre	verb	255		
+rei	nom	256	sí	sí
+crear	verb	257		
+article	nom	258		
+mà	nom	259	sí	
+propi	adj	260		
+membre	nom	261		
+joc	nom	262		sí
+exemple	nom	263		
+banda	nom	264		
+ajudar	verb	265		
+març	nom	266		
+tipus	nom	267		
+camp	nom	268		
+cultura	nom	269		
+procés	nom	270		
+fora	adv	271		
+potser	adv	272		
+llarg	adj	273		
+llibertat	nom	274		
+policia	nom	275	sí	
+mantenir	verb	276		
+doncs	adv	277		
+ningú	pron	278		
+quatre	num	279		
+setembre	nom	280		
+acte	nom	281		
+convertir	verb	282		
+plaça	nom	283		
+societat	nom	284		
+idea	nom	285		
+paraula	nom	286		
+major	adj	287		
+participar	verb	288		
+vostre	det	289		
+activitat	nom	290		
+resultat	nom	291		
+partir	verb	292		
+baix	adj	293		
+terme	nom	294		
+principal	adj	295		
+europeu	adj	296		
+entrar	verb	297		
+dur	verb	298		sí
+necessitar	verb	299		
+tema	nom	300		
+publicar	verb	301		
+decidir	verb	302		
+buscar	verb	303		
+universitat	nom	304		
+considerar	verb	305		
+pagar	verb	306		
+milió	nom	307		
+població	nom	308		
+local	adj	309		
+algú	pron	310		
+octubre	nom	311		
+través	nom	312		
+lliure	adj	313		
+morir	verb	314		
+camí	nom	315		
+costat	nom	316		
+festa	nom	317		
+humà	adj	318		
+pla	nom	319		sí
+conegut	adj	320		
+cinc	num	321		
+educació	nom	322		
+sinó	conj	323		
+mare	nom	324		sí
+premi	nom	325		
+intentar	verb	326		
+espai	nom	327		
+cert	det	328		
+següent	adj	329		
+art	nom	330		
+vídeo	nom	331		
+xarxa	nom	332	sí	
+abril	nom	333		
+antic	adj	334		
+minut	nom	335		
+possible	adj	336		
+darrer	adj	337		
+relació	nom	338		
+línia	nom	339		
+jugar	verb	340		sí
+consell	nom	341		
+oficial	adj	342		
+popular	adj	343		
+cos	nom	344		sí
+objectiu	nom	345		
+situació	nom	346		
+escoltar	verb	347		
+incloure	verb	348		
+edició	nom	349		
+illa	nom	350	sí	sí
+mig	num	351		
+estat	nom	352		
+juliol	nom	353		
+ús	nom	354		
+celebrar	verb	355		
+música	nom	356		
+campanya	nom	357		
+sentit	nom	358		
+estudi	nom	359		
+causa	nom	360		
+majoria	nom	361		
+elecció	nom	362		
+notícia	nom	363		
+mica	nom	364		
+escriure	verb	365		
+acció	nom	366		
+sud	nom	367		
+oferir	verb	368		
+segur	adj	369		
+proper	adj	370		
+república	nom	371		
+nivell	nom	372		
+actual	adj	373		
+juny	nom	374		
+maig	nom	375		sí
+mostra	nom	376		
+civil	adj	377		
+resta	nom	378		
+favor	nom	379		
+llista	nom	380		
+valencià	adj	381		
+febrer	nom	382		
+massa	adv	383		sí
+prou	adv	384		
+realitat	nom	385		
+cara	nom	386	sí	
+atenció	nom	387		
+matí	nom	388		
+obert	adj	389		
+por	nom	390		
+segle	nom	391		
+obrir	verb	392		
+fort	adj	393		
+econòmic	adj	394		
+especial	adj	395		
+enviar	verb	396		
+presó	nom	397		
+llavors	adv	398		
+entrada	nom	399		
+francès	adj	400		
+paper	nom	401	sí	
+alumne	nom	402		
+comunitat	nom	403		
+cultural	adj	404		
+veritat	nom	405		
+pregunta	nom	406		
+poc	det	407		
+ciutadà	nom	408		
+ajuda	nom	409		
+director	nom	410		
+mal	nom	411		
+pel·lícula	nom	412		sí
+agost	nom	413		
+prop	adv	414		
+seguretat	nom	415		
+prova	nom	416		
+diner	nom	417		
+moviment	nom	418		
+èxit	nom	419		
+club	nom	420		
+mar	nom	421		sí
+comunicació	nom	422		
+classe	nom	423		
+autor	nom	424		
+ajuntament	nom	425		
+motiu	nom	426		
+mundial	adj	427		
+font	nom	428	sí	
+càrrec	nom	429		
+mitjà	nom	430		
+aparèixer	verb	431		
+negre	adj	432		
+principi	nom	433		
+tocar	verb	434		
+ordre	nom	435		
+futur	nom	436		
+salut	nom	437		
+organització	nom	438		
+germà	nom	439		
+formar	verb	440		
+resposta	nom	441		
+pau	nom	442		
+nombre	nom	443		
+caure	verb	444		sí
+curs	nom	445		
+edifici	nom	446		
+parlament	nom	447		
+novembre	nom	448		
+estiu	nom	449		
+raó	nom	450		
+compartir	verb	451		
+respecte	nom	452		
+blanc	adj	453		sí
+lluita	nom	454		
+allò	pron	455		
+desembre	nom	456		
+fi	nom	457		sí
+tard	adv	458		
+cotxe	nom	459	sí	sí
+territori	nom	460		
+cançó	nom	461		
+real	adj	462		sí
+temporada	nom	463		
+mesura	nom	464		
+defensa	nom	465		
+gairebé	adv	466		
+barri	nom	467		
+militar	adj	468		
+anglès	nom	469		
+històric	adj	470		
+pàgina	nom	471		
+tercer	adj	472		
+organitzar	verb	473		
+ahir	adv	474		
+central	adj	475		
+deu	num	476		
+sis	num	477		
+interès	nom	478		
+atac	nom	479		
+via	nom	480		
+diari	nom	481		
+regió	nom	482		
+model	nom	483		
+usuari	nom	484		
+lluitar	verb	485		
+municipal	adj	486		
+igual	adj	487		
+anomenat	adj	488		
+quant	det	489		
+demà	adv	490		
+e	nom	491		
+costa	nom	492		
+base	nom	493		
+descobrir	verb	494		
+exèrcit	nom	495		
+voltant	nom	496		
+mercat	nom	497		
+viatge	nom	498		
+construir	verb	499		
+control	nom	500		
+professor	nom	501		
+treure	verb	502		
+unió	nom	503		
+patir	verb	504		
+aviat	adv	505		
+finalment	adv	506		
+fons	nom	507		
+total	nom	508		
+experiència	nom	509		
+preguntar	verb	510		
+desenvolupament	nom	511		
+preparar	verb	512		
+destacar	verb	513		
+aprendre	verb	514		
+agafar	verb	515		
+valor	nom	516		
+company	nom	517		
+tampoc	adv	518		
+comú	adj	519		
+suposar	verb	520		
+sèrie	nom	521		
+llum	nom	522		
+associació	nom	523		
+mostrar	verb	524		
+comptar	verb	525		
+demostrar	verb	526		
+oportunitat	nom	527		
+gener	nom	528		
+mitjançant	prep	529		
+americà	adj	530		
+vista	nom	531		
+riu	nom	532	sí	sí
+entitat	nom	533		
+accés	nom	534		
+fàcil	adj	535		
+natural	adj	536		
+junt	adj	537		
+esquerra	nom	538		
+color	nom	539		
+marxa	nom	540		
+realitzar	verb	541		
+debat	nom	542		
+anterior	adj	543		
+independència	nom	544		
+capital	nom	545		
+malgrat	prep	546		
+difícil	adj	547		
+preu	nom	548		sí
+festival	nom	549		
+evitar	verb	550		
+teatre	nom	551		
+estudiant	nom	552		
+matar	verb	553		
+qüestió	nom	554		
+publicació	nom	555		
+artista	nom	556		
+institut	nom	557		
+producte	nom	558		
+tancar	verb	559		
+afegir	verb	560		
+proposta	nom	561		
+missatge	nom	562		
+senyor	nom	563		
+jugador	nom	564		
+tant	det	565		
+actualment	adv	566		
+santa	nom	567		
+vosaltres	pron	568		
+marxar	verb	569		
+existir	verb	570		
+representar	verb	571		
+visita	nom	572		
+entrevista	nom	573		
+reconèixer	verb	574		
+municipi	nom	575		
+decisió	nom	576		
+parc	nom	577		
+cor	nom	578	sí	sí
+produir	verb	579		
+sort	nom	580		
+pena	nom	581		
+especialment	adv	582		
+sovint	adv	583		
+obtenir	verb	584		
+títol	nom	585		
+significar	verb	586		
+edat	nom	587		
+sector	nom	588		
+vi	nom	589		sí
+companyia	nom	590		
+informar	verb	591		
+nació	nom	592		
+mitjà	adj	593		
+recurs	nom	594		
+acceptar	verb	595		
+número	nom	596		
+interior	nom	597		
+justícia	nom	598		
+realment	adv	599		
+reunió	nom	600		
+material	nom	601		
+sala	nom	602		
+necessari	adj	603		
+filla	nom	604		
+mestre	nom	605		
+ocupar	verb	606		
+qualitat	nom	607		
+assegurar	verb	608		
+clau	nom	609	sí	sí
+gaudir	verb	610		
+menjar	nom	611		
+departament	nom	612		
+dubte	nom	613		
+vell	adj	614		
+efecte	nom	615		
+data	nom	616		
+allà	adv	617		
+personal	nom	618		
+son	nom	619		sí
+màxim	adj	620		
+assassinat	nom	621		
+opinió	nom	622		
+violència	nom	623		
+ull	nom	624	sí	
+castell	nom	625	sí	
+euro	nom	626		
+directe	adj	627		
+parar	verb	628		
+fotografia	nom	629		
+mapa	nom	630	sí	sí
+àrea	nom	631		
+jornada	nom	632		
+text	nom	633		
+economia	nom	634		
+defensar	verb	635		
+pujar	verb	636		sí
+premsa	nom	637		
+futbol	nom	638		
+sobretot	adv	639		
+formació	nom	640		
+recuperar	verb	641		
+ministre	nom	642		
+televisió	nom	643	sí	
+recollir	verb	644		
+ple	adj	645		
+comissió	nom	646		
+greu	adj	647		
+versió	nom	648		
+valer	verb	649		
+dissabte	nom	650		
+just	adv	651		
+desenvolupar	verb	652		
+treballador	nom	653		
+comprar	verb	654		
+víctima	nom	655		
+origen	nom	656		
+endavant	adv	657		
+construcció	nom	658		
+museu	nom	659		
+revista	nom	660		
+església	nom	661		
+manifestació	nom	662		
+pitjor	adj	663		
+contingut	nom	664		
+néixer	verb	665		
+direcció	nom	666		
+diputat	nom	667		
+investigació	nom	668		
+set	num	669		
+iniciar	verb	670		
+atacar	verb	671		
+referència	nom	672		
+falta	nom	673		
+taula	nom	674	sí	sí
+actuar	verb	675		
+personatge	nom	676		
+proposar	verb	677		
+dreta	nom	678		
+privat	adj	679		
+amor	nom	680		
+estimar	verb	681		
+relacionat	adj	682		
+oblidar	verb	683		
+digital	adj	684		
+posició	nom	685		
+condició	nom	686		
+carta	nom	687	sí	
+muntanya	nom	688	sí	sí
+peu	nom	689	sí	
+iniciativa	nom	690		
+unitat	nom	691		
+unir	verb	692		
+concert	nom	693		
+escriptor	nom	694		
+ràdio	nom	695		
+periodista	nom	696		
+ple	nom	697		sí
+administració	nom	698		
+funcionar	verb	699		
+responsable	nom	700		
+escrit	nom	701		
+format	adj	702		
+pràctica	nom	703		
+vot	nom	704		
+ensenyar	verb	705		
+diumenge	nom	706		
+habitatge	nom	707		
+diferència	nom	708		
+arreu	adv	709		
+mil	num	710		
+gènere	nom	711		
+tecnologia	nom	712		
+aturar	verb	713		
+exposició	nom	714		
+foc	nom	715	sí	sí
+canal	nom	716		
+resultar	verb	717		
+protegir	verb	718		
+democràtic	adj	719		
+victòria	nom	720		
+tribunal	nom	721		
+funció	nom	722		
+planta	nom	723		
+veí	nom	724		
+tarda	nom	725		
+aleshores	adv	726		
+època	nom	727		
+noia	nom	728		
+provocar	verb	729		
+mena	nom	730		
+superior	adj	731		
+hospital	nom	732	sí	
+millorar	verb	733		
+present	adj	734		
+animal	nom	735		
+oficina	nom	736		
+trencar	verb	737		
+divendres	nom	738		
+presentació	nom	739		
+interessant	adj	740		
+necessitat	nom	741		
+declarar	verb	742		
+cinema	nom	743		
+estació	nom	744		
+rus	adj	745		
+inici	nom	746		
+ciència	nom	747		
+informe	nom	748		
+castellà	nom	749		
+negoci	nom	750		
+respondre	verb	751		
+tradicional	adj	752		
+energia	nom	753		
+operació	nom	754		
+esdeveniment	nom	755		
+participació	nom	756		
+reunir	verb	757		
+taller	nom	758		
+representant	nom	759		
+vila	nom	760		
+conjunt	nom	761		
+líder	nom	762		
+est	nom	763		sí
+gaire	adv	764		
+dirigir	verb	765		
+trobada	nom	766		
+arma	nom	767		
+tradició	nom	768		
+port	nom	769		
+element	nom	770		
+situat	adj	771		
+aplicació	nom	772		
+aprovar	verb	773		
+recerca	nom	774		
+dedicat	adj	775		
+lluny	adv	776		
+feliç	adj	777		
+volta	nom	778		
+comercial	adj	779		
+conflicte	nom	780		
+solució	nom	781		
+crisi	nom	782		
+judici	nom	783		
+perill	nom	784		
+marc	nom	785		
+aire	nom	786		
+opció	nom	787		
+complir	verb	788		
+educatiu	adj	789		
+risc	nom	790		
+quantitat	nom	791		
+establir	verb	792		
+estudiar	verb	793		
+usar	verb	794		
+estil	nom	795		
+dirigit	adj	796		
+generar	verb	797		
+assemblea	nom	798		
+capaç	adj	799		
+secció	nom	800		
+seguit	adj	801		
+votar	verb	802		
+entorn	nom	803		
+obstant	adv	804		
+augmentar	verb	805		
+declaració	nom	806		
+institució	nom	807		
+visitar	verb	808		
+vendre	verb	809		
+agent	nom	810		
+congrés	nom	811		
+amenaça	nom	812		
+créixer	verb	813		
+memòria	nom	814		
+musical	adj	815		
+nota	nom	816		
+guàrdia	nom	817		
+superar	verb	818		
+període	nom	819		
+normal	adj	820		
+detall	nom	821		
+actuació	nom	822		
+noi	nom	823		
+porta	nom	824		
+eina	nom	825		
+verd	adj	826		sí
+bonic	adj	827		
+original	adj	828		
+discurs	nom	829		
+esdevenir	verb	830		
+cent	num	831		
+marca	nom	832		
+ràpid	adj	833		
+democràcia	nom	834		
+escena	nom	835		
+esport	nom	836		
+tirar	verb	837		
+pedra	nom	838	sí	sí
+alcalde	nom	839		
+batalla	nom	840		
+producció	nom	841		
+creació	nom	842		
+infantil	adj	843		
+enllaç	nom	844		
+fet	adj	845		
+carretera	nom	846		
+esportiu	adj	847		
+regne	nom	848		
+palau	nom	849		
+enllà	adv	850		
+importància	nom	851		
+veu	nom	852		
+to	nom	853		sí
+anomenar	verb	854		
+exterior	adj	855		
+cadena	nom	856	sí	
+físic	adj	857		
+crítica	nom	858		
+habitant	nom	859		
+córrer	verb	860		
+honor	nom	861		
+metre	nom	862		
+protecció	nom	863		
+nena	nom	864		sí
+bandera	nom	865	sí	
+or	nom	866		sí
+conferència	nom	867		
+bloc	nom	868		
+gestió	nom	869		
+banc	nom	870		sí
+document	nom	871		
+religiós	adj	872		
+pressió	nom	873		
+expressió	nom	874		
+somni	nom	875		
+signar	verb	876		
+contacte	nom	877		
+miler	nom	878		
+constitució	nom	879		
+propietat	nom	880		
+meitat	nom	881		
+curt	adj	882		
+conseqüència	nom	883		
+anunciar	verb	884		
+pis	nom	885		
+patrimoni	nom	886		
+alemany	adj	887		
+complet	adj	888		
+plataforma	nom	889		
+aprofitar	verb	890		
+presència	nom	891		
+independent	adj	892		
+lliga	nom	893		
+vuit	num	894		
+indicar	verb	895		
+pobre	adj	896		
+aspecte	nom	897		
+front	nom	898		
+convidar	verb	899		
+possibilitat	nom	900		
+pont	nom	901	sí	sí
+amagar	verb	902		
+compromís	nom	903		
+triar	verb	904		
+abandonar	verb	905		
+ruta	nom	906		
+esforç	nom	907		
+malaltia	nom	908		
+selecció	nom	909		
+penjar	verb	910		
+mal	adj	911		
+viu	adj	912		
+reforma	nom	913		
+gana	nom	914		sí
+sortida	nom	915		
+responsabilitat	nom	916		
+afirmar	verb	917		
+comerç	nom	918		
+comarca	nom	919		
+platja	nom	920	sí	sí
+aniversari	nom	921		
+grec	adj	922		
+fundació	nom	923		
+denunciar	verb	924		
+tasca	nom	925		
+nombrós	adj	926		
+tancat	adj	927		
+error	nom	928		
+sessió	nom	929		
+electoral	adj	930		
+moure	verb	931		
+transport	nom	932		
+salvar	verb	933		
+copa	nom	934	sí	
+coneixement	nom	935		
+quart	nom	936		
+femení	adj	937		
+familiar	nom	938		
+hola	interj	939		
+internet	nom	940		
+soldat	nom	941		
+intervenció	nom	942		
+dedicar	verb	943		
+peça	nom	944		
+tren	nom	945	sí	sí
+província	nom	946		
+faltar	verb	947		
+dòlar	nom	948		
+revolució	nom	949		
+frontera	nom	950		
+ésser	nom	951		
+negar	verb	952		
+estructura	nom	953		sí
+comentari	nom	954		
+tècnic	adj	955		
+electrònic	adj	956		
+literatura	nom	957		
+vaixell	nom	958	sí	
+pertànyer	verb	959		
+obligar	verb	960		
+caixa	nom	961	sí	sí
+afectar	verb	962		
+probablement	adv	963		
+categoria	nom	964		
+grau	nom	965		
+gratuït	adj	966		
+apuntar	verb	967		
+famós	adj	968		
+capacitat	nom	969		
+arbre	nom	970	sí	
+reduir	verb	971		
+record	nom	972		
+client	nom	973		
+jutge	nom	974		sí
+cridar	verb	975		
+dormir	verb	976		
+concurs	nom	977		
+parella	nom	978		
+vermell	adj	979		
+codi	nom	980		
+biblioteca	nom	981		
+almenys	adv	982		
+darrere	adv	983		
+escollir	verb	984		
+figura	nom	985		
+pròxim	adj	986		
+roig	adj	987		sí
+corrent	nom	988		
+règim	nom	989		
+testimoni	nom	990		
+autoritat	nom	991		
+tret	nom	992		
+retirar	verb	993		
+advocat	nom	994		
+lingüístic	adj	995		
+concepte	nom	996		
+resoldre	verb	997		
+voluntat	nom	998		
+sopar	nom	999		
+reial	adj	1000		
+candidat	nom	1001		
+col·laboració	nom	1002		
+mínim	nom	1003		
+participant	nom	1004		
+omplir	verb	1005		
+contrari	adj	1006		
+imaginar	verb	1007		
+tractament	nom	1008		
+ocupació	nom	1009		
+actiu	adj	1010		
+papa	nom	1011		
+modern	adj	1012		
+botiga	nom	1013	sí	
+avançar	verb	1014		
+controlar	verb	1015		
+roba	nom	1016		
+mitjana	nom	1017		
+quant	adv	1018		
+simplement	adv	1019		
+totalment	adv	1020		
+urbà	adj	1021		
+culpa	nom	1022		
+límit	nom	1023		
+net	adj	1024		
+aplicar	verb	1025		
+tallar	verb	1026		
+llançar	verb	1027		
+refugiat	nom	1028		
+dependre	verb	1029		
+bosc	nom	1030		sí
+confirmar	verb	1031		
+vaga	nom	1032		
+blau	adj	1033		sí
+espècie	nom	1034		
+ric	adj	1035		
+enrere	adv	1036		
+juntament	adv	1037		
+quasi	adv	1038		
+indústria	nom	1039		
+aixecar	verb	1040		
+pressupost	nom	1041		
+objecte	nom	1042		
+col·lectiu	nom	1043		
+restaurant	nom	1044		
+marcar	verb	1045		
+fals	adj	1046		
+preocupar	verb	1047		
+cel	nom	1048		sí
+desitjar	verb	1049		
+visió	nom	1050		
+legal	adj	1051		
+flor	nom	1052	sí	sí
+baixar	verb	1053		
+anàlisi	nom	1054		
+sanitari	adj	1055		
+hotel	nom	1056		
+escala	nom	1057	sí	
+promoure	verb	1058		
+generació	nom	1059		
+acollir	verb	1060		
+esperança	nom	1061		
+ambient	nom	1062		
+gos	nom	1063	sí	sí
+crida	nom	1064		
+directament	adv	1065		
+impossible	adj	1066		
+sentiment	nom	1067		
+particular	adj	1068		
+àmbit	nom	1069		
+exigir	verb	1070		
+pell	nom	1071		
+preferir	verb	1072		
+disseny	nom	1073		
+cantar	verb	1074		sí
+cursa	nom	1075		
+expressar	verb	1076		
+caràcter	nom	1077		
+sang	nom	1078		
+carrera	nom	1079		
+telèfon	nom	1080	sí	
+dècada	nom	1081		
+content	adj	1082		
+doble	num	1083		
+mòbil	nom	1084		
+professional	adj	1085		
+vall	nom	1086		
+metge	nom	1087	sí	sí
+propietari	nom	1088		
+clàssic	adj	1089		
+pista	nom	1090		
+cita	nom	1091		
+observar	verb	1092		
+ocasió	nom	1093		
+fugir	verb	1094		
+adonar	verb	1095		
+ampli	adj	1096		
+concentració	nom	1097		
+arxiu	nom	1098		
+simple	adj	1099		sí
+repte	nom	1100		
+estrany	adj	1101		
+detenir	verb	1102		
+casar	verb	1103		
+plaure	verb	1104		
+traducció	nom	1105		
+disc	nom	1106		
+alhora	adv	1107		
+completament	adv	1108		
+ii	num	1109		
+oest	nom	1110		
+oi	interj	1111		
+correu	nom	1112		
+cartell	nom	1113		
+merèixer	verb	1114		

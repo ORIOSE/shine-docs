@@ -1,0 +1,107 @@
+{
+  "lote": "silabas-es-level10-v1",
+  "descripcion": "2 actividades castellanas de reordenamiento de sílabas (activity_syllable_order) de Level10: 6 palabras de vocabulario académico de 6 y 7 sílabas cada una, sin imagen y con 2 sílabas sobrantes parecidas por palabra, como pide la fila de Level10 del prompt 05 y del catálogo 6.2 (los mismos parámetros que Level9, con palabras de hasta 7 sílabas y vocabulario académico en vez de baja frecuencia). Se aplica el mismo modelo de sobrantes que el grupo aprobó en Level9: una es la misma sílaba con la otra grafía del grupo y la otra es la inversa de una sílaba de la palabra. Cada actividad se agrupa en torno a un término de sonoridad que no salió en el reordenamiento de Level9 (regla del 2026-10-29). SIL-ES-L10-LIN-001, b/v: ob-ser-va-cio-na-les, vul-ne-ra-bi-li-dad, con-ser-va-cio-nis-ta, in-vo-lun-ta-ria-men-te (7 sílabas), bio-tec-no-lo-gí-a, ad-mi-nis-tra-ti-vo; sobrantes de grafía ba por va, vi por bi, ba por va, bo por vo, vio por bio y bo por vo, que suenan igual en todo el castellano, e inversas res por ser, ar por ra, sin por nis, ni por in, cet por tec y tar por tra. SIL-ES-L10-LIN-002, h muda: ho-ri-zon-tal-men-te, his-to-rio-grá-fi-co, he-te-ro-gé-ne-o, hi-dro-e-léc-tri-ca, ha-bi-ta-cio-na-les, her-mé-ti-ca-men-te; sobrantes de grafía o por ho, is por his, e por he, i por hi, a por ha y er por her (la misma sílaba sin la h, que no suena), e inversas noz por zon, if por fi, or por ro, dor por dro, at por ta e it por ti. Silabeo de la RAE: bio y rio son diptongos (bio-tec-no-lo-gí-a, his-to-rio-grá-fi-co) y ne-o, dro-e y gí-a son hiatos. Ninguna palabra está en lotes castellanos anteriores. Ninguna ordenación de 6 fichas (los huecos de las palabras de 6 sílabas) ni de 7 u 8 forma otra palabra castellana o catalana, comprobado por programa con matriz_conjuntos.all_forms (listas generales e infantiles, diccionario de Softcatalà y CORPES); en involuntariamente, que tiene 7 huecos, 6 fichas forman voluntariamente, que no llena los huecos, y con 5 fichas solo salen formas que tampoco los llenan (tecnología en biotecnología, hidroléctrica en hidroeléctrica). Sílabas repetidas entre palabras: va, cio y les en la 001 y men y te en la 002; no se repite ninguna dentro de una palabra. Descartadas: humidificador (6 fichas forman la forma catalana humidificau), homogeneidad (ho-mo-ge-nei-dad tiene 5 sílabas, ei es diptongo), humanitariamente (6 fichas forman unitariamente y el tema roza las catástrofes), investigadores (ya sale en la lectura de Level8) e invisibilidad (la sobrante bi repetiría una ficha de la palabra).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level10), sin imagen y con 2 sobrantes parecidas según la tabla de parámetros del prompt. Ambigüedad comprobada por programa con matriz_conjuntos.all_forms. Prompt: plans/contenido/prompts-es/05-ordena-silabas.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-ES-L10-LIN-001",
+      "idioma": "es",
+      "titulo": "Ordena las sílabas",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca las sílabas en orden para formar la palabra. Sobran dos sílabas.",
+      "explicacion": "Syllable order",
+      "sonoridad": [
+        "b/v"
+      ],
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "ob-ser-va-cio-na-les",
+            "sobrantes": "ba-res"
+          },
+          {
+            "silabas": "vul-ne-ra-bi-li-dad",
+            "sobrantes": "vi-ar"
+          },
+          {
+            "silabas": "con-ser-va-cio-nis-ta",
+            "sobrantes": "ba-sin"
+          },
+          {
+            "silabas": "in-vo-lun-ta-ria-men-te",
+            "sobrantes": "bo-ni"
+          },
+          {
+            "silabas": "bio-tec-no-lo-gí-a",
+            "sobrantes": "vio-cet"
+          },
+          {
+            "silabas": "ad-mi-nis-tra-ti-vo",
+            "sobrantes": "bo-tar"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Polisílabas (4 o más sílabas)",
+        "Trabadas con r (CCV)"
+      ]
+    },
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-ES-L10-LIN-002",
+      "idioma": "es",
+      "titulo": "Ordena las sílabas",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca las sílabas en orden para formar la palabra. Sobran dos sílabas.",
+      "explicacion": "Syllable order",
+      "sonoridad": [
+        "h muda"
+      ],
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "ho-ri-zon-tal-men-te",
+            "sobrantes": "o-noz"
+          },
+          {
+            "silabas": "his-to-rio-grá-fi-co",
+            "sobrantes": "is-if"
+          },
+          {
+            "silabas": "he-te-ro-gé-ne-o",
+            "sobrantes": "e-or"
+          },
+          {
+            "silabas": "hi-dro-e-léc-tri-ca",
+            "sobrantes": "i-dor"
+          },
+          {
+            "silabas": "ha-bi-ta-cio-na-les",
+            "sobrantes": "a-at"
+          },
+          {
+            "silabas": "her-mé-ti-ca-men-te",
+            "sobrantes": "er-it"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Hiatos",
+        "Polisílabas (4 o más sílabas)"
+      ]
+    }
+  ]
+}

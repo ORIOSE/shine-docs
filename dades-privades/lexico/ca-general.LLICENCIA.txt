@@ -1,0 +1,20 @@
+ca-general.csv: lista de frecuencia general del catalán (encargo E02), 2026-10-28.
+
+Fuentes
+- Frecuencia y rango: wordfreq 3.1.1 (Robyn Speer), lista "large" del catalán (Viquipèdia,
+  subtítulos, noticias, web, redes; todo el dominio lingüístico). Datos CC BY-SA 4.0.
+  "frecuencia" = apariciones por millón; los diacríticos anteriores a la norma del IEC de 2017
+  ("dóna", "vénen", "fóra", "sóc", compuestos como "rodamón") se han sumado a la forma actual
+  (columna fusionadas) y los enclíticos con apóstrofo ("dona'm") al verbo.
+- Lema y categoría: UD_Catalan-AnCora 2.18 (CC BY 4.0, anotación manual) y, si falta, el
+  diccionario de Softcatalà (catalan-dict-tools, commit 32d7abc, LGPL 2.1 o GPL 2.0).
+- Columna de contraste frecuencia_softcatala / rango_softcatala: frecuencias del mismo
+  repositorio de Softcatalà (corpus no documentado).
+- Revisión, descartes, marcas (malsonante, dialectal, extranjera) y lemas corregidos: Claude
+  (Anthropic), modelo Opus, 36.000 formas en 8 tandas. Pendiente de la revisión del grupo.
+
+Condiciones
+- Uso interno del proyecto (puerta léxica del generador). Sin redistribución: vive en
+  shine/private/lexico/, fuera de git. Si se publicara, con atribución y bajo CC BY-SA 4.0.
+- No sale del CTILC (fuente normativa recomendada por el grupo): no tiene exportación abierta.
+- Registro completo de fuentes: docs/fuentes-de-datos.md. Tubería: build/ca-general/.

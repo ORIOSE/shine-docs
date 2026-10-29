@@ -92,11 +92,31 @@
  {
   "id": "R-T8",
   "titol": "Tanda 8, Level8",
-  "estat": "pendent",
+  "estat": "aplicat",
   "registres": 36,
   "activitats": 48,
-  "publicades": 0,
+  "publicades": 48,
   "fitxa": "plans/contenido/revision/tanda8-level8.md",
   "paquet": "LOT-tanda8-level8.zip"
+ },
+ {
+  "id": "R-T9",
+  "titol": "Tanda 9, Level9 (i posició d'imatges de Level10)",
+  "estat": "aplicat",
+  "registres": 60,
+  "activitats": 36,
+  "publicades": 36,
+  "fitxa": "plans/contenido/revision/tanda9-level9.md",
+  "paquet": "LOT-tanda9-level9.zip"
+ },
+ {
+  "id": "R-T10",
+  "titol": "Tanda 10, Level10",
+  "estat": "aplicat",
+  "registres": 36,
+  "activitats": 36,
+  "publicades": 36,
+  "fitxa": "plans/contenido/revision/tanda10-level10.md",
+  "paquet": "LOT-tanda10-level10.zip"
  }
 ]

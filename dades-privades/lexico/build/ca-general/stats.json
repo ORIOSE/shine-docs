@@ -1,0 +1,35 @@
+{
+ "filas": 51547,
+ "descartes_revisados": 2610,
+ "descartes_cola": 4820,
+ "motivos": {
+  "altra llengua": 1255,
+  "altres": 209,
+  "sigla/abreviatura": 606,
+  "castellanisme": 77,
+  "errada": 463
+ },
+ "fusiones_opus": 2,
+ "con_fusionadas": 144,
+ "cambios": 1850,
+ "marcas": {
+  "dialectal": 260,
+  "malsonante": 141,
+  "extranjera": 173
+ },
+ "categorias": {
+  "prep": 32,
+  "det": 114,
+  "conj": 16,
+  "pron": 67,
+  "adv": 670,
+  "verb": 15291,
+  "nom": 16487,
+  "adj": 9462,
+  "num": 58,
+  "interj": 58,
+  "npropi": 9292
+ },
+ "opus": 599,
+ "forma_20000": "bàltic"
+}

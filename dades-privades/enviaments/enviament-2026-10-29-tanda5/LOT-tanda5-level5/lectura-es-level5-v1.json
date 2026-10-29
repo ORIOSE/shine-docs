@@ -1,0 +1,31 @@
+{
+  "lote": "lectura-es-level5-v1",
+  "descripcion": "1 texto castellano de lectura en voz alta (activity, formato audio_reading) de Level5: narrativo con un apunte expositivo verdadero (la niebla es una nube que toca el suelo), un solo párrafo de 77 palabras en 8 frases (media 9,6; la más larga, 14), con las primeras subordinadas (para bajar, que la niebla es, mientras esperaban, cuando salió) y presente de subjuntivo en una subordinada frecuente (que llegue), que la guía E11 admite desde Level5. Un lugar de España muy conocido como escenario, sin datos (Sierra Nevada, guía E11). Un pequeño problema resuelto por los personajes: la niebla tapa la pista y esperan en el refugio hasta que sale el sol. En estilo indirecto, sin diálogo (el diálogo exige la raya, que no se usa). Protagonista chica (Irene) con su abuelo; una monitora, en un oficio sin estereotipo. 77 palabras a 110 ppm: 42 segundos.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level5), siguiendo la guía editorial E11. Prompt: plans/contenido/prompts-es/09-lectura-en-voz-alta.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LEC-ES-L05-VEL-001",
+      "idioma": "es",
+      "titulo": "Niebla en Sierra Nevada",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Pulsa Empezar a leer, lee el texto en voz alta y, cuando acabes, pulsa He terminado.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "audio_reading",
+        "parrafos": [
+          "En invierno, Irene viajó a Sierra Nevada con su abuelo para bajar en trineo. El primer día, una niebla espesa cubrió la montaña. Desde el refugio no se veía la pista. Su abuelo le explicó que la niebla es una nube que toca el suelo. Mientras esperaban, tomaron una sopa caliente. Cuando salió el sol, una monitora le enseñó a frenar con los pies. Después, Irene bajó muy despacio. Ahora está deseando que llegue el próximo invierno."
+        ],
+        "segundos": 42
+      }
+    }
+  ]
+}

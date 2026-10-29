@@ -1,0 +1,74 @@
+forma	accion	lema	categoria	marca	nota
+eeh	descartar				onomatopeya oral
+eemm	descartar				onomatopeya oral
+vph	descartar				sigla
+imc	descartar				sigla
+fsln	descartar				sigla
+pnc	descartar				sigla
+bng	descartar				sigla
+minsa	descartar				sigla
+anp	descartar				sigla
+stem	descartar				sigla inglesa
+alca	descartar				sigla (ALCA)
+msnm	descartar				abreviatura
+plc	descartar				sigla
+dpa	descartar				sigla
+ens	descartar				sigla
+bipa	descartar				sigla
+cgpj	descartar				sigla
+cnmv	descartar				sigla
+csj	descartar				sigla
+msp	descartar				sigla
+conacyt	descartar				sigla
+eei	descartar				sigla
+tdah	descartar				sigla
+ipcc	descartar				sigla
+colillas	corregir	colilla	nom		
+palillos	corregir	palillo	nom		
+corralito	corregir	corralito	nom		
+persiana	corregir	persiana	nom		
+competían	corregir	competir	verb		
+muleta	corregir	muleta	nom		
+caperucita	corregir	caperucita	npropi		
+salita	corregir	sala	nom		
+merluza	corregir	merluza	nom		
+batidora	corregir	batidora	nom		
+veladas	corregir	velada	nom		
+veintiuno	corregir	veintiuno	num		
+espejuelos	corregir	espejuelo	nom	americano	gafas
+aló	corregir	aló	interj	americano	
+huevón	marcar	huevón	adj	malsonante+americano	
+pubis	marcar	pubis	nom	malsonante	sensible
+estadunidense	marcar	estadounidense	adj	americano	
+estadunidenses	marcar	estadounidense	adj	americano	
+jonrón	marcar	jonrón	nom	americano	
+jonrones	marcar	jonrón	nom	americano	
+peloteros	marcar	pelotero	nom	americano	
+pelotero	marcar	pelotero	nom	americano	
+bateo	marcar	bateo	nom	americano	
+pitcheo	marcar	pitcheo	nom	americano	
+bateó	marcar	batear	verb	americano	
+bateador	marcar	bateador	nom	americano	
+bateadores	marcar	bateador	nom	americano	
+inning	marcar	inning	nom	extranjera+americano	
+volteó	marcar	voltear	verb	americano	
+creés	marcar	creer	verb	americano	voseo
+entendés	marcar	entender	verb	americano	voseo
+acordás	marcar	acordar	verb	americano	voseo
+presupuestal	marcar	presupuestal	adj	americano	
+dizque	marcar	dizque	adv	americano	
+vinotinto	marcar	vinotinto	nom	americano	
+coctel	marcar	cóctel	nom	americano	
+priísta	marcar	priista	adj	americano	
+internación	marcar	internación	nom	americano	
+sorpresiva	marcar	sorpresivo	adj	americano	
+sorpresivo	marcar	sorpresivo	adj	americano	
+develar	marcar	develar	verb	americano	
+choclo	marcar	choclo	nom	americano	
+perredista	marcar	perredista	adj	americano	
+falencias	marcar	falencia	nom	americano	
+vocera	marcar	vocero	nom	americano	
+presea	marcar	presea	nom	americano	
+mariguana	marcar	marihuana	nom	americano	
+ránking	marcar	ranking	nom	extranjera	
+abertzale	marcar	aberzale	adj	extranjera	

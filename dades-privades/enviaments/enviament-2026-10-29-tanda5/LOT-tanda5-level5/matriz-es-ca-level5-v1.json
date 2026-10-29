@@ -1,0 +1,314 @@
+{
+  "lote": "matriz-es-ca-level5-v1",
+  "descripcion": "Matrices de discriminación visual de Level0 a Level2 (FASE 18, subplan 05): tres por nivel con idiomas [es, ca] (letras universales p, b, d, q, n, u, m, w: el importador crea un nodo por idioma). La matriz solo catalana de la ela geminada va en matriz-ca-level3-v1 (Level3, revisión del experto del 2026-10-27). Parámetros de docs/exercise-catalog.md 6.1; objetivos por ronda, reparto entre mitades, tope de 2 por fila y distractores equilibrados comprobados por el generador. Contenido de prueba pendiente de la revisión del experto (plans/multiidioma/revisio-lots-ca.md).",
+  "origen": {
+    "generador": "generadores/matriz.py",
+    "version": "1.0",
+    "semilla": 20261029,
+    "nota": "python3 generadores/matriz.py --seed 20261029 --out matriz-es-ca-level0-2-v1.json (desde shine/content/)"
+  },
+  "actividades": [
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-L05-PER-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Encuentra todas las b",
+        "ca": "Troba totes les b"
+      },
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca todas las letras iguales a la que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+        "ca": "Toca totes les lletres iguals a la que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar."
+      },
+      "explicacion": "Letter matrix",
+      "esfuerzo": {
+        "es": [
+          "Espejo b-d",
+          "Espejo b-p"
+        ],
+        "ca": [
+          "Mirall b-d",
+          "Mirall b-p"
+        ]
+      },
+      "contenido": {
+        "objetivo": "b",
+        "columnas": 6,
+        "filas": 8,
+        "rondas": [
+          "d p n d g p u n q n p b q p b d u g b u p g b n g d q d b b q q q d b u g u n g b p u n d p n q"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 35
+      },
+      "origen": {
+        "distractores": [
+          "d",
+          "p",
+          "q",
+          "g",
+          "n",
+          "u"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-L05-PER-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Encuentra todas las d",
+        "ca": "Troba totes les d"
+      },
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca todas las letras iguales a la que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+        "ca": "Toca totes les lletres iguals a la que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar."
+      },
+      "explicacion": "Letter matrix",
+      "esfuerzo": {
+        "es": [
+          "Espejo b-d",
+          "Espejo d-q"
+        ],
+        "ca": [
+          "Mirall b-d",
+          "Mirall d-q"
+        ]
+      },
+      "contenido": {
+        "objetivo": "d",
+        "columnas": 6,
+        "filas": 8,
+        "rondas": [
+          "d n d p u q n g b u q u q q n g q g p p p q n p b d g d n g u d d u b g u b d n n b b d g p q b"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 35
+      },
+      "origen": {
+        "distractores": [
+          "b",
+          "q",
+          "p",
+          "g",
+          "n",
+          "u"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-L05-PER-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Encuentra todas las p",
+        "ca": "Troba totes les p"
+      },
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca todas las letras iguales a la que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+        "ca": "Toca totes les lletres iguals a la que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar."
+      },
+      "explicacion": "Letter matrix",
+      "esfuerzo": {
+        "es": [
+          "Espejo p-q",
+          "Espejo b-p"
+        ],
+        "ca": [
+          "Mirall p-q",
+          "Mirall b-p"
+        ]
+      },
+      "contenido": {
+        "objetivo": "p",
+        "columnas": 6,
+        "filas": 8,
+        "rondas": [
+          "d u p n p n q u q b u b q d n p b u b g p q p n p g d n g g d p g d d u p q b d q g n u n b g q"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 35
+      },
+      "origen": {
+        "distractores": [
+          "q",
+          "b",
+          "d",
+          "g",
+          "n",
+          "u"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-L05-PER-004",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Encuentra todas las q",
+        "ca": "Troba totes les q"
+      },
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca todas las letras iguales a la que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+        "ca": "Toca totes les lletres iguals a la que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar."
+      },
+      "explicacion": "Letter matrix",
+      "esfuerzo": {
+        "es": [
+          "Espejo p-q",
+          "Espejo d-q"
+        ],
+        "ca": [
+          "Mirall p-q",
+          "Mirall d-q"
+        ]
+      },
+      "contenido": {
+        "objetivo": "q",
+        "columnas": 6,
+        "filas": 8,
+        "rondas": [
+          "q d u u q p b b b d n b p q g q g b n g g u n p u u d g q q u d p d g p q q b n p d n p d n b g"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 35
+      },
+      "origen": {
+        "distractores": [
+          "p",
+          "d",
+          "b",
+          "g",
+          "n",
+          "u"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-L05-PER-005",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Encuentra todas las n",
+        "ca": "Troba totes les n"
+      },
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca todas las letras iguales a la que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+        "ca": "Toca totes les lletres iguals a la que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar."
+      },
+      "explicacion": "Letter matrix",
+      "esfuerzo": {
+        "es": [
+          "Rotación n-u"
+        ],
+        "ca": [
+          "Rotació n-u"
+        ]
+      },
+      "contenido": {
+        "objetivo": "n",
+        "columnas": 6,
+        "filas": 8,
+        "rondas": [
+          "n h u n h n h u h m h n u u u h m n m n m u u u n h u h m h h m m h u m m h m m n h m m u u h u"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 35
+      },
+      "origen": {
+        "distractores": [
+          "u",
+          "m",
+          "h"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-L05-PER-006",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Encuentra todas las u",
+        "ca": "Troba totes les u"
+      },
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca todas las letras iguales a la que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+        "ca": "Toca totes les lletres iguals a la que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar."
+      },
+      "explicacion": "Letter matrix",
+      "esfuerzo": {
+        "es": [
+          "Rotación n-u"
+        ],
+        "ca": [
+          "Rotació n-u"
+        ]
+      },
+      "contenido": {
+        "objetivo": "u",
+        "columnas": 6,
+        "filas": 8,
+        "rondas": [
+          "n w w n w n m n m m u n n m u w m n w m m n n w u m w w u n m m w w m u u w w n n u m n m w m u"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 35
+      },
+      "origen": {
+        "distractores": [
+          "n",
+          "m",
+          "w"
+        ]
+      }
+    }
+  ]
+}

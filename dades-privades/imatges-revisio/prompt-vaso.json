@@ -1,0 +1,12 @@
+{
+  "subject": "clear drinking glass with water",
+  "prompt": "All provided images are approved STYLE REFERENCES ONLY, not edit targets. The first three are the required anchors. Additional references, when present, are accepted images of this same category. Generate a NEW single-word flashcard for the specified subject, never a composite of reference subjects. Match the anchors' uniform medium charcoal outlines, rounded simple shapes, flat palette, clear legibility at 110px. Animal fur must be simplified like the cat and original dog: few large color shapes, almost no interior fur strokes, fewer lines than wolf. No gradients, no textures. Square 1024x1024. Whole subject in central 72% square with clear transparent margins. One subject only except naturally plural words or essential integral parts explicitly requested. No added decorative objects, text, letters, numerals or logos.\nFlat vector illustration of a single clear drinking glass with water, children's educational flashcard style.\nClean continuous dark charcoal (#1E1E2E) outline of uniform medium weight, simple rounded shapes,\nflat colors with at most one flat shade per color, no gradients, no textures.\nThe object keeps its natural, most recognizable colors. Whole object visible, centered,\nfront or three-quarter view, occupying about 70% of the canvas with clear margins on all sides.\nTransparent background. No scene, no ground, no cast shadow, no frame, no border.\nNo text, no letters, no numbers, no logos, no watermark, no hands, no extra objects.\nFriendly, calm, modern picture-book look; consistent with the reference images.\nSubject-specific consistency: \n",
+  "refs": [
+    "/Users/josellamas/var/www/shine-project/shine/content/images/gato.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/manzana.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/coche.png"
+  ],
+  "attempt": 1,
+  "categoria": "cocina-y-mesa",
+  "original": "clear drinking glass with water"
+}

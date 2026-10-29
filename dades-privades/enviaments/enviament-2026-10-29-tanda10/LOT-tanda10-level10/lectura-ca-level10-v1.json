@@ -1,0 +1,31 @@
+{
+  "lote": "lectura-ca-level10-v1",
+  "descripcion": "1 text català de lectura en veu alta (activity, audio_reading) de Level10, d’un sol paràgraf de 78 paraules, 4 frases (mitjana 19,5, la més llarga de 24). Divulgatiu general, com demana el Level10 (prompt 09 i catàleg 5.2), amb un tema d’economia bàsica, que la guia E11 (apartat 1) reserva per a Level10: què és la inflació, per què fa perdre valor als estalvis i com la frenen els bancs centrals apujant els tipus d’interès. Fets que no caduquen, sense xifres, anys, sigles, persones ni llocs reals. La última frase dona l’altra cara de la mesura (si s’apugen massa, poden alentir l’economia), amb un to argumentatiu de dues bandes, sense opinió ni moralina. Tecnicismes: inflació, economistes, bancs centrals, tipus d’interès, préstecs, consum, creixement. Estil indirecte, sense diàleg (el guió llarg no es fa servir en aquest lot). Pronom feble enclític (frenar-la), admès des de Level4. segundos = 78 × 60 / 160 = 29.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Text original escrit a mà amb el prompt plans/multiidioma/prompts-contenido/09-lectura-en-veu-alta.md (fila Level10), la taula de nivell mínim de plans/multiidioma/estructura-ca.md (apartat 5) i la guia editorial E11. Comprovat amb lexico.py --lang ca. Pendent de la revisió de l’expert."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LEC-CA-L10-VEL-001",
+      "idioma": "ca",
+      "titulo": "Per què pugen els preus",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Prem Començar a llegir, llegeix el text en veu alta i, quan acabis, prem He acabat.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "audio_reading",
+        "parrafos": [
+          "Quan els preus de gairebé tots els productes pugen alhora durant un període llarg, els economistes diuen que hi ha inflació. Amb els mateixos diners, doncs, es poden comprar menys coses que abans, i els estalvis guardats a casa perden valor a poc a poc. Per frenar-la, els bancs centrals solen apujar els tipus d’interès, una mesura que encareix els préstecs i refreda el consum. Tanmateix, si els apugen massa, també poden alentir el creixement de tota l’economia."
+        ],
+        "segundos": 29
+      }
+    }
+  ]
+}

@@ -1871,8 +1871,38 @@ experto revisa todo, no hay otro entorno de producción).
   primer encargo decía 12 por error y se corrigió). 48 actividades. Revisión
   plans/contenido/revision/tanda8-level8.md, paquete
   `shine/private/enviament-2026-10-29-tanda8/LOT-tanda8-level8.zip`.
-- Pendiente (siguiente): revisión de la tanda 8; tandas 9 y 10 (matrices de palabras por idioma,
-  textos; la posición de imágenes ya está escrita); tirada de imágenes del 2026-10-30.
+- [x] **Tanda 8 aprobada y publicada (2026-10-29)**: las 48 y las siete decisiones sin cambios
+  (respostes-2026-10-30/LOT-tanda8-level8-resposta.md).
+- Tanda 9 (2026-10-29): 14 lotes `*-level9-v1` importados sin publicar (36 actividades), con las
+  matrices de palabras escritas por idioma (`matriz-{es,ca}-level9-v1`, 3 × 7, 6 objetivos entre
+  pseudopalabras de una letra cambiada) y dos sílabas sobrantes en ordena las sílabas (catálogo
+  6.2). La revisión incluye la posición de imágenes de Level9 y Level10 (pendiente de la tirada).
+  Revisión plans/contenido/revision/tanda9-level9.md, paquete
+  `shine/private/enviament-2026-10-29-tanda9/LOT-tanda9-level9.zip`.
+- [x] **Tanda 9 aprobada y publicada (2026-10-29)**: las 36 y las siete decisiones sin cambios,
+  incluida la posición de imágenes de Level9 y Level10, que se importa y publica tras la tirada
+  (respostes-2026-10-30/LOT-tanda9-level9-resposta.md).
+- Tanda 10 (2026-10-29), la última: 14 lotes `*-level10-v1` importados sin publicar (36
+  actividades), matrices de doble objetivo con palabras reales por idioma. Comprobado que el
+  fichero temporal compartido por los dos agentes no mezcló idiomas. Revisión
+  plans/contenido/revision/tanda10-level10.md, paquete
+  `shine/private/enviament-2026-10-29-tanda10/LOT-tanda10-level10.zip`.
+- [x] **Tanda 10 aprobada y publicada (2026-10-29)**: la primera respuesta del grupo citaba material
+  que no era el del lote (su herramienta no leyó el paquete); se pidió una revisión complementaria de
+  las actividades afectadas, que sí cita el material real y lo aprueba
+  (respostes-2026-10-30/LOT-tanda10-level10-resposta*.md). **El catálogo de texto y matriz de
+  Level0 a Level10 está publicado en los dos idiomas.** Lección: comprobar siempre que la revisión
+  cita el material del lote antes de publicar.
+- [x] **Datos privados bajo git (2026-10-29)**: `shine/private/lexico`, los `shine/private/enviament-*` y
+  `shine/content/images/_revision` se movieron a `dades-privades/` (git de docs, privado) y en su
+  sitio quedan enlaces simbólicos, así que las rutas de los scripts y de esta documentación siguen
+  valiendo; `shine/private/scripts` se copia a `dades-privades/scripts-copia` (el original se ejecuta
+  en ddev). Fuera de git: el CORPES (130 MB, límite de GitHub), las claves OAuth, settings.php y las
+  copias de base de datos. `_revision` y `__pycache__` dejan de estar en el git de Drupal. Mapa y
+  cómo recrear los enlaces en `dades-privades/README.md`. Comprobado: lexico.py, la fusión de
+  imágenes, etiquetar_lote y el dry-run del importador funcionan a través de los enlaces.
+- Pendiente (siguiente): tirada de imágenes del 2026-10-30 (fusión, import-images, posición de
+  imágenes de Level9 y Level10, ya aprobada); Funcions Executives de 3 a 6 por celda.
 
 ## FASE 17 — Monetización y modelo de cuentas
 

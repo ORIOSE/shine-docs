@@ -1,0 +1,51 @@
+{
+  "lote": "repeticion-es-level10-v1",
+  "descripcion": "1 actividad castellana de repetición rápida (activity_rapid_repetition) de Level10: 6 palabras a 20 segundos cada una (prompt 06, fila de Level7 a Level10: polisílabas y vocabulario académico, dos pseudopalabras). Agrupada en torno a la ñ (regla del 2026-10-29), grupo que no salió en Level9: 3 palabras de 5 y 6 sílabas con ñ (acompañamiento, señalizaciones, diseñadora), 2 pseudopalabras de 6 sílabas de Level10 del banco E05 con ñ (ñibirgrutemintol, vedanfalprenañi; son las dos únicas del banco con ñ) y 1 alivio de Level0 (pato) en una posición que no es la última. Cinco pasan de los 12 caracteres que caben en grande en un móvil (nota del prompt; el importador admite 30): acompañamiento y señalizaciones, 14; vedanfalprenañi, 15; ñibirgrutemintol, 16; diseñadora tiene 10. Descartadas: pequeñísimo (no es vocabulario académico) y enseñanzas (4 sílabas).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level10). Pseudopalabras de plans/contenido/encarrecs/lliuraments/E05-pseudoparaules-es.csv (Level10: ñibirgrutemintol, vedanfalprenañi), no usadas en ningún lote. Prompt: plans/contenido/prompts-es/06-repeticion-rapida.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_rapid_repetition",
+      "codigo": "REP-ES-L10-VEL-001",
+      "idioma": "es",
+      "titulo": "Repite rápido: palabras largas con ñ",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Di tú primero la palabra para que el alumno la oiga y enséñasela. Cuando pulses Comenzar, la palabra se esconderá: el alumno tiene que repetirla en voz alta tantas veces como pueda mientras tú cuentas.",
+      "explicacion": "Rapid repetition",
+      "sonoridad": [
+        "ñ"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "ñ en palabras de 5 y 6 sílabas (a-com-pa-ña-mien-to, se-ña-li-za-cio-nes, di-se-ña-do-ra) y pseudopalabras de 6 sílabas (ñi-bir-gru-te-min-tol, ve-dan-fal-pre-na-ñi), con un alivio",
+        "palabras": [
+          "acompañamiento",
+          "ñibirgrutemintol",
+          "señalizaciones",
+          "pato",
+          "vedanfalprenañi",
+          "diseñadora"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real"
+        ],
+        "segundos": 20
+      },
+      "esfuerzo": [
+        "Polisílabas (4 o más sílabas)",
+        "Trabadas con r (CCV)"
+      ]
+    }
+  ]
+}

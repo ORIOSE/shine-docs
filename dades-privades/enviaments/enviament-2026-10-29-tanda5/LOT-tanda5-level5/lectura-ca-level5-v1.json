@@ -1,0 +1,31 @@
+{
+  "lote": "lectura-ca-level5-v1",
+  "descripcion": "1 text català de lectura en veu alta (activity, audio_reading) de Level5, d’un sol paràgraf de 78 paraules, 7 frases (mitjana 11,1, la més llarga de 12). Narratiu amb una part expositiva senzilla (què és un observatori i quan es veuen bé les estrelles), tema de planetes i natura per a la franja de 8 a 10 anys, protagonista noia (la Jana, de la llista de noms des de Level3) amb el seu avi, i una científica com a adulta que ajuda. Lloc real de Catalunya com a escenari, sense dades (el Montsec), permès a Level4 i Level5; Saturn com a fet que no caduca. Primeres subordinades del Level5: final amb subjuntiu present (Perquè les estrelles es vegin bé), completiva amb subjuntiu (cal que no hi hagi núvols), temporal (Quan la Jana hi va mirar) i completiva en estil indirecte amb condicional (va dir que mai no oblidaria aquella nit). Passat perifràstic i imperfet, present a la part expositiva, pronoms febles simples davant del verb (els va deixar, hi va mirar, es vegin), sense subjuntiu imperfet (Level6). Sense diàleg: la intervenció es dona en estil indirecte, perquè el guió llarg del diàleg no es fa servir en aquest lot. Sense xifres. segundos = 78 × 60 / 110, arrodonit.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Text original escrit a mà amb el prompt plans/multiidioma/prompts-contenido/09-lectura-en-veu-alta.md, la taula de nivell mínim de plans/multiidioma/estructura-ca.md (apartat 5) i la guia editorial E11. Comprovat amb lexico.py --lang ca. Pendent de la revisió de l’expert."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LEC-CA-L05-VEL-001",
+      "idioma": "ca",
+      "titulo": "Una nit al Montsec",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Prem Començar a llegir, llegeix el text en veu alta i, quan acabis, prem He acabat.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "audio_reading",
+        "parrafos": [
+          "Una nit d’estiu, la Jana i l’avi van anar al Montsec. Allà dalt hi ha un observatori per estudiar el cel. Perquè les estrelles es vegin bé, cal que no hi hagi núvols. Per sort, el cel estava net i ple de punts brillants. Una científica els va deixar mirar per un aparell enorme. Quan la Jana hi va mirar, va descobrir els anells de Saturn. De tornada, la Jana va dir que mai no oblidaria aquella nit."
+        ],
+        "segundos": 43
+      }
+    }
+  ]
+}

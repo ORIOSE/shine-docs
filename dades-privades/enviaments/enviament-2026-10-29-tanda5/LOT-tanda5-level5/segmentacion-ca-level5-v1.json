@@ -1,0 +1,67 @@
+{
+  "lote": "segmentacion-ca-level5-v1",
+  "descripcion": "2 actividades catalanas de segmentación léxica (activity_word_split) de Level5, 6 frases de 7 a 8 palabras cada una. La dificultad que se trabaja es la del Level5 catalán: pronombres débiles simples delante del verbo, plenos (el porta, ens explica, em deixa, li dones, hi anirem, la canto) y apostrofados, que se leen unidos al verbo (s’amaga, m’ajuda, m’agrada), con las contracciones y los apóstrofos de Level3 y Level4 (a l’escola, del seu hort, a l’estació del tren). Subjuntivo presente en subordinada, permitido desde Level5 (guía editorial E11): vol que li portem, quan vegis. Sin pronombres combinados (li ho, se’n), que el catálogo pone en Level5 para este tipo pero la tabla 2.3 y la guía E11 dejan para Level7; sin enclíticos, sin nombres propios, minúsculas sin puntuación y apóstrofo tipográfico. Ninguna otra partición forma una frase con sentido. No repite ninguna frase de Level3 ni de Level4.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano con el prompt plans/multiidioma/prompts-contenido/07-segmentacio.md, la tabla de nivel mínimo de plans/multiidioma/estructura-ca.md (apartado 5) y la guía editorial E11; sin semilla. Comprobado con etiquetar_lote.py y lexico.py --lang ca. Pendiente de la revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-CA-L05-LIN-001",
+      "idioma": "ca",
+      "titulo": "Separa les paraules",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "La frase està escrita sense espais. Toca una lletra per posar-hi un espai just al davant, fins a separar totes les paraules, i prem Comprovar.",
+      "explicacion": "Word split",
+      "contenido": {
+        "frases": [
+          "la mare el porta a l’escola cada dia",
+          "l’avi ens explica un conte abans de dormir",
+          "la meva cosina em deixa la seva bicicleta",
+          "els avis ens porten tomàquets del seu hort",
+          "quan arribo a casa el gos em saluda",
+          "la mestra vol que li portem els dibuixos"
+        ]
+      },
+      "esfuerzo": [
+        "Apostrofació i contraccions",
+        "Complexes (CCVC, VCC, CVCC)",
+        "Hiats"
+      ]
+    },
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-CA-L05-LIN-002",
+      "idioma": "ca",
+      "titulo": "Separa les paraules",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "La frase està escrita sense espais. Toca una lletra per posar-hi un espai just al davant, fins a separar totes les paraules, i prem Comprovar.",
+      "explicacion": "Word split",
+      "contenido": {
+        "frases": [
+          "el gat s’amaga i la nena el busca",
+          "el meu germà m’ajuda a fer els deures",
+          "aquesta cançó m’agrada i la canto sovint",
+          "a la platja hi anirem tots junts demà",
+          "quan vegis l’àvia li dones aquesta carta",
+          "els cosins ens esperen a l’estació del tren"
+        ]
+      },
+      "esfuerzo": [
+        "Apostrofació i contraccions",
+        "Complexes (CCVC, VCC, CVCC)",
+        "Hiats"
+      ]
+    }
+  ]
+}

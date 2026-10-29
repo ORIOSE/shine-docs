@@ -1,0 +1,148 @@
+{
+  "lote": "blink-ca-level5-v1",
+  "descripcion": "3 actividades de parpadeo (activity_blink) en catalán para Level5, de 10 elementos a 1,5 s, escritas a mano con la estructura catalana del experto (plans/multiidioma/estructura-ca.md). Level5 trabaja palabras y pseudopalabras de tres sílabas: trabadas con r (trompeta, programa, setembre, pregunta, octubre), trabadas con l (planeta, clarinet, aplaudir, flotador, eclipsi) y el dígrafo ny (castanya, banyera, aranya, pestanya, banyador). Modelo mixto aprobado (prompt 03, punto 3): 5 palabras reales con la estructura y la longitud del nivel, 2 pseudopalabras de esa misma estructura y 3 de alivio (30 %), intercalados, nunca al final ni dos seguidos. Pseudopalabras del banco E06 (nivel 5: brolajat, jonofras, gladoper, lublamip, nyolevas, sopunyo), no usadas en ningún lote. Sonoridad y esfuerzo describen solo el material objetivo. Ningún elemento de Level3 ni de Level4; muntanya (ya en el ciclo Síl·labes) y rossinyol (rango por encima de 7.000) se descartaron.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano con el prompt plans/multiidioma/prompts-contenido/03-parpelleig.md; sin semilla. Pseudopalabras de plans/contenido/encarrecs/lliuraments/E06-pseudoparaules-ca.csv (aprobado por el grupo el 2026-10-29), no usadas en ningún lote. Comprobado con lexico.py --lang ca. Pendiente de revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-CA-L05-VEL-001",
+      "idioma": "ca",
+      "titulo": "Paraules de tres síl·labes amb travada amb r",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta així que aparegui i toca per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "esfuerzo": [
+        "Travades amb r (CCV)",
+        "Complexes (CCVC, VCC, CVCC)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "travades amb r en paraules de tres síl·labes: trompeta, programa, setembre, pregunta, octubre",
+        "elementos": [
+          "trompeta",
+          "a",
+          "programa",
+          "brolajat",
+          "setembre",
+          "sol",
+          "pregunta",
+          "jonofras",
+          "o",
+          "octubre"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-CA-L05-VEL-002",
+      "idioma": "ca",
+      "titulo": "Paraules de tres síl·labes amb travada amb l",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta així que aparegui i toca per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "esfuerzo": [
+        "Travades amb l (CCV)",
+        "Complexes (CCVC, VCC, CVCC)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "travades amb l en paraules de tres síl·labes: planeta, clarinet, aplaudir, flotador, eclipsi",
+        "elementos": [
+          "planeta",
+          "clarinet",
+          "no",
+          "gladoper",
+          "pa",
+          "aplaudir",
+          "flotador",
+          "e",
+          "lublamip",
+          "eclipsi"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-CA-L05-VEL-003",
+      "idioma": "ca",
+      "titulo": "Paraules de tres síl·labes amb ny",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta així que aparegui i toca per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "ny"
+      ],
+      "esfuerzo": [
+        "Dígrafs simples"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "dígraf ny en paraules de tres síl·labes: castanya, banyera, aranya, pestanya, banyador",
+        "elementos": [
+          "castanya",
+          "la",
+          "banyera",
+          "nyolevas",
+          "so",
+          "aranya",
+          "sopunyo",
+          "pestanya",
+          "i",
+          "banyador"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      }
+    }
+  ]
+}

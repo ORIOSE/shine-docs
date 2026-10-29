@@ -1,0 +1,189 @@
+{
+  "lote": "llista-ca-level10-v1",
+  "descripcion": "3 llistes de text catalanes (activity, vertical_list) de Level10, de 15 elements (catàleg 5.1). Les 2 de descodificació (Competencia Lingüística y Fonológica) segueixen el model de Level9 amb paraules una mica més llargues: 8 paraules reals de sis i set síl·labes (la taula 2.3 catalana demana de 5 a 7 o més; la fila Level10 del catàleg 5.1 i del prompt 08 només parla de frases), 3 pseudoparaules de cinc i sis síl·labes del banc E06 (nivell 10) i 4 d’alleujament (27 %). Cada una s’agrupa al voltant d’un terme de sonoritat no usat a Level9 (regla del 2026-10-29): l’oposició s sorda/s sonora, amb paraules que porten la s sonora (s entre vocals, també després del prefix des-) i la sorda escrita c o ss (desintegració, posicionament, visualització, desinformació, resiliència, minuciosament, dosificació, desorientació) i les tres pseudoparaules del grup s sorda/s sonora del banc (bilipessazuc, gebissezalpam, letidissazar); i les grafies b/v, amb paraules que porten totes dues lletres (invisibilitat, variabilitat, visibilització, invariablement, abreviació, benevolència, inviolabilitat, inevitablement) i tres pseudoparaules amb b o v (fitalbinvana, vanfrolquibrimo, tevavaslapre; el banc no té grup b/v i s’han triat de grups que porten aquestes lletres, com a Level9 amb j/g). La de velocitat (Rendimiento y Velocidad de Procesamiento) segueix la fila Level10 del catàleg: 11 frases de 18 a 22 paraules i de 112 a 118 caràcters (l’importador n’admet 120) amb vocabulari general adult dels temes de 13 a 15 anys de la guia E11 (mobilitat, consum responsable, voluntariat ambiental, astronomia, energia solar, notícies falses, estalvi d’aigua, tecnologia, lectura, economia bàsica i clima), amb subordinades temporals, condicionals, causals, finals i de relatiu i imperfet de subjuntiu (tanquéssim), i 4 frases d’alleujament fetes només amb paraules de Level0 (La nena neda. Posa la sopa. Dona la lupa. La pala pesa.), perquè la llista sigui tota de frases (catàleg 5.1, elements homogenis). Sense sonoritat a la de frases: no treballa un grup fonètic (prompt 08, regla 7), com la castellana de Level10. L’alleujament va intercalat, mai al final ni seguit, i és diferent a cada llista i del de Level9. Cap paraula real de les llistes de descodificació no surt en lots de Level3 a Level9. segundos_por_elemento: 1,5 a les de paraules (1 × 60 / 160 ppm, velocitat de referència de Level10, amb el mínim d’1,5) i 7,5 a la de frases (20 paraules de mitjana × 60 / 160).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrit a mà amb el prompt plans/multiidioma/prompts-contenido/08-llista-de-text.md (fila Level10), la taula de nivell mínim de plans/multiidioma/estructura-ca.md (apartat 5) i la guia editorial E11. Pseudoparaules de plans/contenido/encarrecs/lliuraments/E06-pseudoparaules-ca.csv (nivell 10, aprovat pel grup el 2026-10-29), no usades en cap lot. Comprovat amb etiquetar_lote.py i lexico.py --lang ca. Pendent de la revisió de l’expert."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LIS-CA-L10-LIN-001",
+      "idioma": "ca",
+      "titulo": "Paraules llargues amb s sorda i sonora",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta i toca la pantalla per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "s sorda/s sonora"
+      ],
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "s sonora (s entre vocals) i s sorda (c, ss) en paraules de sis i set síl·labes",
+        "elementos": [
+          "desintegració",
+          "bilipessazuc",
+          "a",
+          "posicionament",
+          "visualització",
+          "pala",
+          "gebissezalpam",
+          "desinformació",
+          "so",
+          "resiliència",
+          "minuciosament",
+          "letidissazar",
+          "tela",
+          "dosificació",
+          "desorientació"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      },
+      "esfuerzo": [
+        "Complexes (CCVC, VCC, CVCC)",
+        "Hiats",
+        "Polisíl·labes (4 o més síl·labes)",
+        "Derivades (prefixos i sufixos)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-CA-L10-LIN-002",
+      "idioma": "ca",
+      "titulo": "Paraules llargues amb b i v",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta i toca la pantalla per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "grafies b/v"
+      ],
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "b i v, que sonen igual en català central, en paraules de sis i set síl·labes",
+        "elementos": [
+          "invisibilitat",
+          "i",
+          "fitalbinvana",
+          "variabilitat",
+          "visibilització",
+          "lupa",
+          "invariablement",
+          "vanfrolquibrimo",
+          "abreviació",
+          "no",
+          "benevolència",
+          "inviolabilitat",
+          "tevavaslapre",
+          "pota",
+          "inevitablement"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      },
+      "esfuerzo": [
+        "Complexes (CCVC, VCC, CVCC)",
+        "Hiats",
+        "Polisíl·labes (4 o més síl·labes)",
+        "Derivades (prefixos i sufixos)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-CA-L10-VEL-001",
+      "idioma": "ca",
+      "titulo": "Frases llargues de divulgació",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Llegeix cada frase en veu alta i toca la pantalla per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "frases de 18 a 22 paraules amb vocabulari general adult i subordinades",
+        "elementos": [
+          "Moltes ciutats han fet carrils per a bicicletes perquè la gent pugui anar a la feina sense agafar el cotxe cada dia.",
+          "Quan comprem fruita de temporada als pagesos de la comarca, el producte viatja menys i arriba més fresc a la taula.",
+          "La nena neda.",
+          "Els voluntaris que netegen la platja cada primavera recullen els plàstics i els altres residus que el mar hi deixa.",
+          "Si mirem el cel en una nit clara lluny de les ciutats, podem veure milers d’estrelles i fins i tot algun planeta.",
+          "Les plaques solars dels terrats transformen la llum del sol en electricitat i redueixen el consum dels edificis.",
+          "Posa la sopa.",
+          "Abans de compartir una notícia que ens sorprèn, convé comprovar qui l’ha escrita i si altres mitjans diuen el mateix.",
+          "Una bona part de l’aigua que gastem a casa es podria estalviar si tanquéssim l’aixeta mentre ens raspallem les dents.",
+          "Dona la lupa.",
+          "Els programes de traducció aprenen de molts textos, però a vegades encara confonen dues paraules que s’assemblen molt.",
+          "La biblioteca del barri organitza tertúlies cada mes perquè els lectors comentin plegats el llibre que han triat.",
+          "La pala pesa.",
+          "Quan una empresa fabrica productes que duren més anys, els clients gasten menys diners i es generen menys residus.",
+          "Els científics estudien el gel de les glaceres perquè guarda informació valuosa sobre el clima de fa milers d’anys."
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 7.5
+      },
+      "esfuerzo": [
+        "Apostrofació i contraccions",
+        "Complexes (CCVC, VCC, CVCC)"
+      ]
+    }
+  ]
+}

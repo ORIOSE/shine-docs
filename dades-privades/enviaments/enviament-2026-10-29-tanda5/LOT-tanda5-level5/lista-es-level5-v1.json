@@ -1,0 +1,157 @@
+{
+  "lote": "lista-es-level5-v1",
+  "descripcion": "3 listas de texto castellanas de Level5 (activity, formato vertical_list), 12 elementos cada una (catálogo 5.1). Decodificación (área Competencia Lingüística y Fonológica), con la composición de 12 elementos del prompt 03 (6 + 3 + 3): LIS-ES-L05-LIN-001, palabras de 4 y 5 sílabas con trabada de r (tr, gr, br, pr, dr), sin hiatos para que el esfuerzo sea el de la trabada, y LIS-ES-L05-LIN-002, palabras de 4 y 5 sílabas con sílabas inversas y cerradas (es, im, or, in, al); cada una con 6 palabras reales, 3 pseudopalabras de Level5 del banco E05 de su mismo grupo y 3 alivios de Level0 intercalados (nunca al final ni seguidos). Velocidad (área Rendimiento y Velocidad de Procesamiento): LIS-ES-L05-VEL-001, 9 frases de 8 a 10 palabras con subordinadas, pronombres átonos y presente de subjuntivo (para que crezcan, es necesario que bebamos, ojalá haga; Level5, guía E11) y 3 frases de alivio hechas solo con palabras de Level0.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level5). Pseudopalabras de plans/contenido/encarrecs/lliuraments/E05-pseudoparaules-es.csv (Level5: bratelu, prezuta, fudrico, ancibo, ustañe, nisfoga), no usadas en ningún lote. Prompt: plans/contenido/prompts-es/08-lista-de-texto.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LIS-ES-L05-LIN-001",
+      "idioma": "es",
+      "titulo": "Palabras muy largas con tr, gr y pr",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Lee cada palabra en voz alta y toca la pantalla para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "trabadas con r en palabras de 4 y 5 sílabas (tre, gri, bri, pre, tra, dro)",
+        "elementos": [
+          "entrenamiento",
+          "bratelu",
+          "sopa",
+          "agricultura",
+          "equilibrio",
+          "mesa",
+          "prezuta",
+          "presentación",
+          "tradicional",
+          "casa",
+          "fudrico",
+          "dromedario"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real"
+        ]
+      },
+      "esfuerzo": [
+        "Trabadas con r (CCV)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-ES-L05-LIN-002",
+      "idioma": "es",
+      "titulo": "Palabras muy largas con es, in y or",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Lee cada palabra en voz alta y toca la pantalla para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "sílabas inversas y cerradas en palabras de 4 y 5 sílabas (es, im, or, in, al)",
+        "elementos": [
+          "estudiante",
+          "importante",
+          "ancibo",
+          "luna",
+          "ordenador",
+          "ustañe",
+          "espectáculo",
+          "pato",
+          "invernadero",
+          "nisfoga",
+          "mapa",
+          "almohada"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real"
+        ]
+      },
+      "esfuerzo": [
+        "Directas resto (CV)",
+        "Inversas (VC)",
+        "Mixtas (CVC)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-ES-L05-VEL-001",
+      "idioma": "es",
+      "titulo": "Lee rápido frases muy largas",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Lee cada frase en voz alta y toca la pantalla para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "frases de 8 a 10 palabras con subordinadas, pronombres átonos y presente de subjuntivo",
+        "elementos": [
+          "Cuando termine la clase, saldremos al patio a jugar.",
+          "Mi abuela riega las semillas para que crezcan pronto.",
+          "Papá me da la sopa.",
+          "La científica observa las estrellas con un telescopio.",
+          "Los alumnos preparan un experimento con agua y vinagre.",
+          "Mi hermano me presta su linterna para la excursión.",
+          "Toma la moto de papá.",
+          "Es necesario que bebamos agua después de hacer deporte.",
+          "La maestra nos recomienda un libro de aventuras.",
+          "Mamá me pasa la pelota.",
+          "Las abejas vuelan de flor en flor durante la primavera.",
+          "Ojalá mañana haga buen tiempo para ir en bicicleta."
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ]
+      },
+      "esfuerzo": [
+        "Hiatos"
+      ]
+    }
+  ]
+}

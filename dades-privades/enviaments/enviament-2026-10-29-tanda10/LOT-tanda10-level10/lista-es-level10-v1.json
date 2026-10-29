@@ -1,0 +1,184 @@
+{
+  "lote": "lista-es-level10-v1",
+  "descripcion": "3 listas de texto castellanas de Level10 (activity, formato vertical_list), 15 elementos cada una (catálogo 5.1 y prompt 08). Decodificación (área Competencia Lingüística y Fonológica), con la composición de 15 del prompt 03 (8 + 3 + 4): 8 palabras reales de vocabulario académico de 6 y 7 sílabas (la tabla 2.3 pide 5 a 7 o más; la fila de Level10 del prompt 08 solo habla de frases, así que las de decodificación siguen el modelo de Level9 con palabras algo más largas), 3 pseudopalabras de 5 y 6 sílabas de Level10 del banco E05 y 4 alivios de Level0 intercalados (nunca al final ni seguidos). Agrupadas por sonoridad (regla del 2026-10-29) en grupos que no salieron en Level9: LIS-ES-L10-LIN-001, m (matemáticamente, meteorológico, microorganismos, multidisciplinar, metodológico, monumentalidad, microprocesadores, medioambientales; pseudopalabras empezadas por m: madoquincrozus, misenjestrugu, mudumolgracul), con prefijos y compuestos cultos (micro-, multi-, meteoro-, medio-), y LIS-ES-L10-LIN-002, k/q/c (características, contemporáneo, clasificaciones, colaboraciones, cooperativas, conmemorativo, climatológico, esquemáticamente; pseudopalabras con el sonido k escrito c o qu: quindetecriritre, cobansclemabscol, culfremopibin), con derivadas de co- y con- y la grafía que en esquemáticamente; las dos llevan también Derivadas. Velocidad (área Rendimiento y Velocidad de Procesamiento): LIS-ES-L10-VEL-001, 11 frases de 18 a 21 palabras y de 104 a 114 caracteres (el importador admite 120) con vocabulario general adulto de los temas de 13 a 15 años de la guía E11 (energía solar, fisiología del deporte, una noticia ficticia neutra de una biblioteca de barrio, un debate cotidiano sobre el uniforme, polinización, árboles en la ciudad, arquitectura y luz natural, astronomía, compostaje, el oficio de traductora e ingeniería de puentes), con pasiva con ser (fue reformada), pasiva refleja (se observan), relativas, subordinadas causales, finales y consecutivas (tan lejanas que) y presente de subjuntivo (vayan, elija, cambie), y 4 frases de alivio hechas solo con palabras de Level0, distintas de las de Level9. Sin sonoridad en la de frases: no trabaja un grupo fonético (prompt 08, regla 7). Ninguna palabra real de las listas de decodificación está en lotes castellanos anteriores. Descartadas: telecomunicaciones y comunicaciones (Level9 ya tiene telecomunicación), calificaciones (las notas del colegio, guía E11), mineralógico (tres palabras en -lógico en la misma lista), multiplicaciones (dos con multi-), cuantitativamente (demasiadas en -mente).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level10). Pseudopalabras de plans/contenido/encarrecs/lliuraments/E05-pseudoparaules-es.csv (Level10: madoquincrozus, misenjestrugu, mudumolgracul, quindetecriritre, cobansclemabscol, culfremopibin), no usadas en ningún lote. Prompt: plans/contenido/prompts-es/08-lista-de-texto.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LIS-ES-L10-LIN-001",
+      "idioma": "es",
+      "titulo": "Palabras muy largas con m",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Lee cada palabra en voz alta y toca la pantalla para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "m"
+      ],
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "m en palabras cultas de 6 y 7 sílabas (ma-te-má-ti-ca-men-te, me-te-o-ro-ló-gi-co, mi-cro-or-ga-nis-mos, mul-ti-dis-ci-pli-nar, me-to-do-ló-gi-co, mo-nu-men-ta-li-dad, mi-cro-pro-ce-sa-do-res, me-dio-am-bien-ta-les) y pseudopalabras de 5 sílabas empezadas por m (ma-do-quin-cro-zus, mi-sen-jes-tru-gu, mu-du-mol-gra-cul)",
+        "elementos": [
+          "matemáticamente",
+          "madoquincrozus",
+          "pala",
+          "meteorológico",
+          "microorganismos",
+          "misenjestrugu",
+          "tela",
+          "multidisciplinar",
+          "metodológico",
+          "sopa",
+          "mudumolgracul",
+          "monumentalidad",
+          "dedo",
+          "microprocesadores",
+          "medioambientales"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ]
+      },
+      "esfuerzo": [
+        "Polisílabas (4 o más sílabas)",
+        "Trabadas con l (CCV)",
+        "Trabadas con r (CCV)",
+        "Derivadas (prefijos y sufijos)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-ES-L10-LIN-002",
+      "idioma": "es",
+      "titulo": "Palabras muy largas con el sonido k",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Lee cada palabra en voz alta y toca la pantalla para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "k/q/c"
+      ],
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "sonido k escrito c y qu en palabras de 6 y 7 sílabas (ca-rac-te-rís-ti-cas, con-tem-po-rá-ne-o, cla-si-fi-ca-cio-nes, co-la-bo-ra-cio-nes, co-o-pe-ra-ti-vas, con-me-mo-ra-ti-vo, cli-ma-to-ló-gi-co, es-que-má-ti-ca-men-te) y pseudopalabras de 5 y 6 sílabas (quin-de-te-cri-ri-tre, co-bans-cle-mabs-col, cul-fre-mo-pi-bin)",
+        "elementos": [
+          "características",
+          "contemporáneo",
+          "nido",
+          "quindetecriritre",
+          "clasificaciones",
+          "peso",
+          "colaboraciones",
+          "cobansclemabscol",
+          "cooperativas",
+          "lana",
+          "conmemorativo",
+          "culfremopibin",
+          "sala",
+          "climatológico",
+          "esquemáticamente"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ]
+      },
+      "esfuerzo": [
+        "Complejas (CCVC, VCC, CVCC)",
+        "Polisílabas (4 o más sílabas)",
+        "Derivadas (prefijos y sufijos)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-ES-L10-VEL-001",
+      "idioma": "es",
+      "titulo": "Lee rápido frases de ciencia, ciudad y oficios",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Lee cada frase en voz alta y toca la pantalla para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "frases de 18 a 21 palabras con vocabulario general adulto, subordinadas, pasiva y nominalizaciones",
+        "elementos": [
+          "Los paneles solares convierten la luz del sol en electricidad, que luego se usa en casa o se guarda en baterías.",
+          "Cuando un ciclista entrena en altura, su cuerpo fabrica más glóbulos rojos para llevar oxígeno a los músculos.",
+          "Mamá toma té.",
+          "La biblioteca del barrio, que fue reformada en invierno, abrirá también los domingos para que vayan más vecinos.",
+          "Unos creen que el uniforme escolar evita comparaciones, y otros prefieren que cada alumno elija su propia ropa.",
+          "Las abejas son clave para muchos cultivos porque, al visitar las flores, llevan el polen de una planta a otra.",
+          "La moto pita.",
+          "En muchas ciudades se han plantado árboles en las aceras para dar sombra y reducir el calor del asfalto.",
+          "Los arquitectos estudian la orientación de un edificio antes de construirlo para aprovechar mejor la luz del día.",
+          "Pasa la tela.",
+          "Con los telescopios espaciales se observan galaxias tan lejanas que su luz tarda millones de años en llegar.",
+          "El compostaje convierte los restos de fruta y verdura en abono, que después sirve para fertilizar el huerto.",
+          "Dame una pala.",
+          "La traductora revisa cada frase con calma y compara el original con su versión para no perder ningún matiz.",
+          "Los ingenieros diseñan puentes capaces de soportar el viento y los cambios de temperatura sin que cambie su forma."
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ]
+      },
+      "esfuerzo": [
+        "Complejas (CCVC, VCC, CVCC)"
+      ]
+    }
+  ]
+}

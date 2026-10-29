@@ -1,0 +1,701 @@
+pseudoparaula,nivell,sillabes,grup,nota
+nyale,1,nya-le,ny,
+nyefo,1,nye-fo,ny,
+nyode,1,nyo-de,ny,
+nonyi,1,no-nyi,ny,
+nyine,1,nyi-ne,ny,
+lluse,1,llu-se,ll,
+llaqui,1,lla-qui,ll,
+llibe,1,lli-be,ll,
+llomun,1,llo-mun,ll,
+llebon,1,lle-bon,ll,
+quesse,1,ques-se,ss,
+vusse,1,vus-se,ss,
+gisse,1,gis-se,ss,
+dossu,1,dos-su,ss,
+virru,1,vir-ru,rr,
+durre,1,dur-re,rr,
+dorru,1,dor-ru,rr,
+lerru,1,ler-ru,rr,
+goquel,1,go-quel,qu,
+quesir,1,que-sir,qu,
+moquir,1,mo-quir,qu,
+nequir,1,ne-quir,qu,
+queçon,1,que-çon,ç,
+guboç,1,gu-boç,ç,
+neduç,1,ne-duç,ç,
+maboç,1,ma-boç,ç,
+xorun,1,xo-run,x,
+xijol,1,xi-jol,x,
+xunor,1,xu-nor,x,
+xegu,1,xe-gu,x,
+sajul,1,sa-jul,j/g,
+jutol,1,ju-tol,j/g,
+nujal,1,nu-jal,j/g,
+mejun,1,me-jun,j/g,
+gobun,1,go-bun,g,
+gupal,1,gu-pal,g,
+gaful,1,ga-ful,g,
+togun,1,to-gun,g,
+fovu,1,fo-vu,f,
+febun,1,fe-bun,f,
+nofil,1,no-fil,f,
+nufir,1,nu-fir,f,
+vicun,1,vi-cun,b/v,
+sovun,1,so-vun,b/v,
+luvil,1,lu-vil,b/v,
+vepil,1,ve-pil,b/v,
+rabur,1,ra-bur,r inicial,
+ridul,1,ri-dul,r inicial,
+ropul,1,ro-pul,r inicial,
+ruvan,1,ru-van,r inicial,
+olfi,1,ol-fi,inversa l,
+ilbu,1,il-bu,inversa l,
+elpu,1,el-pu,inversa l,
+ulvo,1,ul-vo,inversa l,
+onqui,1,on-qui,inversa n,
+unfe,1,un-fe,inversa n,
+enli,1,en-li,inversa n,
+inque,1,in-que,inversa n,
+usvi,1,us-vi,inversa s,
+ospu,1,os-pu,inversa s,
+isvu,1,is-vu,inversa s,
+asju,1,as-ju,inversa s,
+irfu,1,ir-fu,inversa r,
+orju,1,or-ju,inversa r,
+erfi,1,er-fi,inversa r,
+urque,1,ur-que,inversa r,
+pejom,1,pe-jom,CVC,
+ripom,1,ri-pom,CVC,
+nirun,1,ni-run,CVC,
+tinop,1,ti-nop,CVC,
+mopli,2,mo-pli,pl,
+gueple,2,gue-ple,pl,
+quepli,2,que-pli,pl,
+japlo,2,ja-plo,pl,
+blifa,2,bli-fa,bl,
+bloli,2,blo-li,bl,
+blupo,2,blu-po,bl,
+quibli,2,qui-bli,bl,
+gocla,2,go-cla,cl,
+clufo,2,clu-fo,cl,
+sacli,2,sa-cli,cl,
+quecla,2,que-cla,cl,
+lefli,2,le-fli,fl,
+lifla,2,li-fla,fl,
+gueflo,2,gue-flo,fl,
+rofli,2,ro-fli,fl,
+nogli,2,no-gli,gl,
+glesi,2,gle-si,gl,
+guegla,2,gue-gla,gl,
+glime,2,gli-me,gl,
+vupri,2,vu-pri,pr,
+popri,2,po-pri,pr,
+guipro,2,gui-pro,pr,
+pupro,2,pu-pro,pr,
+brebi,2,bre-bi,br,
+mebri,2,me-bri,br,
+bragui,2,bra-gui,br,
+brogue,2,bro-gue,br,
+docri,2,do-cri,cr,
+croqui,2,cro-qui,cr,
+gocre,2,go-cre,cr,
+guecri,2,gue-cri,cr,
+vafri,2,va-fri,fr,
+frapi,2,fra-pi,fr,
+frubi,2,fru-bi,fr,
+quefri,2,que-fri,fr,
+grequi,2,gre-qui,gr,
+groli,2,gro-li,gr,
+grique,2,gri-que,gr,
+dugra,2,du-gra,gr,
+motri,2,mo-tri,tr,
+butri,2,bu-tri,tr,
+treque,2,tre-que,tr,
+guitri,2,gui-tri,tr,
+drulo,2,dru-lo,dr,
+judri,2,ju-dri,dr,
+guedro,2,gue-dro,dr,
+drori,2,dro-ri,dr,
+guitxe,2,guit-xe,tx,
+setxi,2,set-xi,tx,
+guetxi,2,guet-xi,tx,
+mutxe,2,mut-xe,tx,
+goixe,2,goi-xe,ix,ix sona x
+vuixi,2,vui-xi,ix,ix sona x
+nuixan,2,nui-xan,ix,ix sona x
+quebaig,2,que-baig,ig,ig final sona tx
+vumig,2,vu-mig,ig,ig final sona tx
+pufig,2,pu-fig,ig,ig final sona tx
+guetge,2,guet-ge,tg,
+votge,2,vot-ge,tg,
+latgi,2,lat-gi,tg,
+netjo,2,net-jo,tj,
+guetjo,2,guet-jo,tj,
+datjo,2,dat-jo,tj,
+guebi,2,gue-bi,gue/gui,
+noguil,2,no-guil,gue/gui,
+biguil,2,bi-guil,gue/gui,
+güefe,2,güe-fe,güe/güi,dièresi: la u sona
+legüel,2,le-güel,güe/güi,dièresi: la u sona
+ragüir,2,ra-güir,güe/güi,dièresi: la u sona
+ensfa,3,ens-fa,VCC,
+onsque,3,ons-que,VCC,
+obsfi,3,obs-fi,VCC,
+insqui,3,ins-qui,VCC,
+anspe,3,ans-pe,VCC,
+unspi,3,uns-pi,VCC,
+lunint,3,lu-nint,coda nt,
+pacunt,3,pa-cunt,coda nt,
+ropint,3,ro-pint,coda nt,
+tobunt,3,to-bunt,coda nt,
+niguint,3,ni-guint,coda nt,
+bijunt,3,bi-junt,coda nt,
+deburt,3,de-burt,coda rt,
+fupart,3,fu-part,coda rt,
+tecort,3,te-cort,coda rt,
+sepurt,3,se-purt,coda rt,
+bimurt,3,bi-murt,coda rt,
+quebart,3,que-bart,coda rt,
+ferasp,3,fe-rasp,coda sp,
+nasosp,3,na-sosp,coda sp,
+guelasp,3,gue-lasp,coda sp,
+tumasp,3,tu-masp,coda sp,
+senusp,3,se-nusp,coda sp,
+quicasp,3,qui-casp,coda sp,
+nequest,3,ne-quest,coda st,
+cusist,3,cu-sist,coda st,
+nosist,3,no-sist,coda st,
+didast,3,di-dast,coda st,
+tibost,3,ti-bost,coda st,
+telist,3,te-list,coda st,
+labosc,3,la-bosc,coda sc,
+guemesc,3,gue-mesc,coda sc,
+vasesc,3,va-sesc,coda sc,
+fidasc,3,fi-dasc,coda sc,
+sinesc,3,si-nesc,coda sc,
+jubirs,3,ju-birs,coda rs/ns,
+cunors,3,cu-nors,coda rs/ns,
+fipans,3,fi-pans,coda rs/ns,
+quenons,3,que-nons,coda rs/ns,
+nelans,3,ne-lans,coda rs/ns,
+selalt,3,se-lalt,coda lt/lp/lc,
+quelolp,3,que-lolp,coda lt/lp/lc,
+pafolp,3,pa-folp,coda lt/lp/lc,
+dilelp,3,di-lelp,coda lt/lp/lc,
+fepult,3,fe-pult,coda lt/lp/lc,
+gumarm,3,gu-marm,coda rc/rp/rn/rm,
+faporp,3,fa-porp,coda rc/rp/rn/rm,
+jasern,3,ja-sern,coda rc/rp/rn/rm,
+quecorm,3,que-corm,coda rc/rp/rn/rm,
+mitarn,3,mi-tarn,coda rc/rp/rn/rm,
+tabenc,3,ta-benc,coda mp/nc,
+suvamp,3,su-vamp,coda mp/nc,
+quebomp,3,que-bomp,coda mp/nc,
+merunc,3,me-runc,coda mp/nc,
+mivenc,3,mi-venc,coda mp/nc,
+queal,3,que-al,hiat,dues vocals en síl·labes diferents
+jaol,3,ja-ol,hiat,dues vocals en síl·labes diferents
+gueor,3,gue-or,hiat,dues vocals en síl·labes diferents
+meol,3,me-ol,hiat,dues vocals en síl·labes diferents
+quiol,3,qui-ol,hiat,dues vocals en síl·labes diferents
+vaüp,3,va-üp,hiat amb dièresi,dièresi: hiat
+gueïm,3,gue-ïm,hiat amb dièresi,dièresi: hiat
+geüc,3,ge-üc,hiat amb dièresi,dièresi: hiat
+voüc,3,vo-üc,hiat amb dièresi,dièresi: hiat
+queüm,3,que-üm,hiat amb dièresi,dièresi: hiat
+nal·lu,3,nal-lu,l·l,punt volat; es parteix l-l
+lol·lu,3,lol-lu,l·l,punt volat; es parteix l-l
+ril·lu,3,ril-lu,l·l,punt volat; es parteix l-l
+quel·lu,3,quel-lu,l·l,punt volat; es parteix l-l
+val·lun,3,val-lun,l·l,punt volat; es parteix l-l
+guiplep,4,gui-plep,pl,
+plasup,4,pla-sup,pl,
+buplos,4,bu-plos,pl,
+moplup,4,mo-plup,pl,
+ploquen,4,plo-quen,pl,
+veblic,4,ve-blic,bl,
+blopuc,4,blo-puc,bl,
+toblim,4,to-blim,bl,
+blemit,4,ble-mit,bl,
+blidop,4,bli-dop,bl,
+clamup,4,cla-mup,cl,
+clinap,4,cli-nap,cl,
+joclur,4,jo-clur,cl,
+meclil,4,me-clil,cl,
+quecloc,4,que-cloc,cl,
+niflet,4,ni-flet,fl,
+fluler,4,flu-ler,fl,
+soflin,4,so-flin,fl,
+flijom,4,fli-jom,fl,
+poflap,4,po-flap,fl,
+gliquil,4,gli-quil,gl,
+teglor,4,te-glor,gl,
+coglap,4,co-glap,gl,
+beglal,4,be-glal,gl,
+glejac,4,gle-jac,gl,
+prebim,4,pre-bim,pr,
+pripec,4,pri-pec,pr,
+reprac,4,re-prac,pr,
+prabut,4,pra-but,pr,
+poprel,4,po-prel,pr,
+nibrap,4,ni-brap,br,
+subrom,4,su-brom,br,
+fubrin,4,fu-brin,br,
+jabrol,4,ja-brol,br,
+brijat,4,bri-jat,br,
+nocrec,4,no-crec,cr,
+crusil,4,cru-sil,cr,
+gocruc,4,go-cruc,cr,
+jacrot,4,ja-crot,cr,
+cralec,4,cra-lec,cr,
+rufral,4,ru-fral,fr,
+refrul,4,re-frul,fr,
+nofrin,4,no-frin,fr,
+pofrar,4,po-frar,fr,
+pifrun,4,pi-frun,fr,
+grudor,4,gru-dor,gr,
+lugrop,4,lu-grop,gr,
+graguip,4,gra-guip,gr,
+segrul,4,se-grul,gr,
+gremam,4,gre-mam,gr,
+trolum,4,tro-lum,tr,
+letrul,4,le-trul,tr,
+trutac,4,tru-tac,tr,
+notrut,4,no-trut,tr,
+trimac,4,tri-mac,tr,
+ladric,4,la-dric,dr,
+drunap,4,dru-nap,dr,
+dridep,4,dri-dep,dr,
+guedrit,4,gue-drit,dr,
+mudrit,4,mu-drit,dr,
+frel·lac,4,frel-lac,l·l,punt volat; es parteix l-l
+dral·lot,4,dral-lot,l·l,punt volat; es parteix l-l
+crul·lim,4,crul-lim,l·l,punt volat; es parteix l-l
+fral·lum,4,fral-lum,l·l,punt volat; es parteix l-l
+prel·lin,4,prel-lin,l·l,punt volat; es parteix l-l
+frabost,4,fra-bost,coda complexa,
+netrimp,4,ne-trimp,coda complexa,
+peglurm,4,pe-glurm,coda complexa,
+bodrast,4,bo-drast,coda complexa,
+gleguinc,4,gle-guinc,coda complexa,
+nyimifor,5,nyi-mi-for,ny,
+sopunyo,5,so-pu-nyo,ny,
+nyolevas,5,nyo-le-vas,ny,
+vanyobe,5,va-nyo-be,ny,
+calanyus,5,ca-la-nyus,ny,
+lletequin,5,lle-te-quin,ll,
+nellari,5,ne-lla-ri,ll,
+llubomo,5,llu-bo-mo,ll,
+sallorgui,5,sa-llor-gui,ll,
+tillade,5,ti-lla-de,ll,
+dussapa,5,dus-sa-pa,ss,
+tossove,5,tos-so-ve,ss,
+jablusse,5,ja-blus-se,ss,
+tessebo,5,tes-se-bo,ss,
+dessimi,5,des-si-mi,ss,
+deborro,5,de-bor-ro,rr,
+dusirri,5,du-sir-ri,rr,
+fisarren,5,fi-sar-ren,rr,
+lurrove,5,lur-ro-ve,rr,
+samirro,5,sa-mir-ro,rr,
+quegani,5,que-ga-ni,qu,
+glaqueni,5,gla-que-ni,qu,
+miquiren,5,mi-qui-ren,qu,
+quilasma,5,qui-las-ma,qu,
+mamequi,5,ma-me-qui,qu,
+ladofruç,5,la-do-fruç,ç,
+dipiçal,5,di-pi-çal,ç,
+tesbeçun,5,tes-be-çun,ç,
+mapejoç,5,ma-pe-joç,ç,
+pemilmiç,5,pe-mil-miç,ç,
+cafagi,5,ca-fa-gi,j/g,
+firgaja,5,fir-ga-ja,j/g,
+jonofras,5,jo-no-fras,j/g,
+sugilgo,5,su-gil-go,j/g,
+lergepram,5,ler-ge-pram,j/g,
+landatxos,5,lan-dat-xos,tx,
+drobuvotx,5,dro-bu-votx,tx,
+netxebo,5,net-xe-bo,tx,
+tosatxo,5,to-sat-xo,tx,
+goquitxel,5,go-quit-xel,tx,
+tigrigoix,5,ti-gri-goix,ix,ix sona x
+lofoixe,5,lo-foi-xe,ix,ix sona x
+puixafam,5,pui-xa-fam,ix,ix sona x
+faixomot,5,fai-xo-mot,ix,ix sona x
+didoixin,5,di-doi-xin,ix,ix sona x
+fugatgin,5,fu-gat-gin,tg/tj,
+sucotgel,5,su-cot-gel,tg/tj,
+jatjoli,5,jat-jo-li,tg/tj,
+letjolun,5,let-jo-lun,tg/tj,
+ratgebup,5,rat-ge-bup,tg/tj,
+logueme,5,lo-gue-me,gue/gui,
+dagueban,5,da-gue-ban,gue/gui,
+doguitra,5,do-gui-tra,gue/gui,
+guedobo,5,gue-do-bo,gue/gui,
+plosogue,5,plo-so-gue,gue/gui,
+vaslegle,5,vas-le-gle,travada amb l,
+catobler,5,ca-to-bler,travada amb l,
+nabiflol,5,na-bi-flol,travada amb l,
+lublamip,5,lu-bla-mip,travada amb l,
+gladoper,5,gla-do-per,travada amb l,
+paframom,5,pa-fra-mom,travada amb r,
+lupafre,5,lu-pa-fre,travada amb r,
+brolajat,5,bro-la-jat,travada amb r,
+cabefram,5,ca-be-fram,travada amb r,
+trefleda,5,tre-fle-da,travada amb r,
+isgludo,5,is-glu-do,inversa,
+ilmarfar,5,il-mar-far,inversa,
+usdonir,5,us-do-nir,inversa,
+ossiplet,5,os-si-plet,inversa,
+unjarma,5,un-jar-ma,inversa,
+pranvusot,6,pran-vu-sot,travada i coda,
+prisninoc,6,pris-ni-noc,travada i coda,
+tifrolse,6,ti-frol-se,travada i coda,
+fodraspos,6,fo-dras-pos,travada i coda,
+pefringrom,6,pe-frin-grom,travada i coda,
+tudrafrac,6,tu-dra-frac,doble travada,
+glagrome,6,gla-gro-me,doble travada,
+brocudro,6,bro-cu-dro,doble travada,
+prisglotur,6,pris-glo-tur,doble travada,
+praflunop,6,pra-flu-nop,doble travada,
+sanuvesc,6,sa-nu-vesc,coda complexa,
+cajodomp,6,ca-jo-domp,coda complexa,
+lijadolc,6,li-ja-dolc,coda complexa,
+golnejons,6,gol-ne-jons,coda complexa,
+daberent,6,da-be-rent,coda complexa,
+senluop,6,sen-lu-op,hiat,dues vocals en síl·labes diferents
+cravuo,6,cra-vu-o,hiat,dues vocals en síl·labes diferents
+miluom,6,mi-lu-om,hiat,dues vocals en síl·labes diferents
+jantaom,6,jan-ta-om,hiat,dues vocals en síl·labes diferents
+greamit,6,gre-a-mit,hiat,dues vocals en síl·labes diferents
+gepaït,6,ge-pa-ït,hiat amb dièresi,dièresi: hiat
+baïpic,6,ba-ï-pic,hiat amb dièresi,dièresi: hiat
+guenaïc,6,gue-na-ïc,hiat amb dièresi,dièresi: hiat
+jamaüt,6,ja-ma-üt,hiat amb dièresi,dièresi: hiat
+comeüm,6,co-me-üm,hiat amb dièresi,dièresi: hiat
+crul·lija,6,crul-li-ja,l·l,punt volat; es parteix l-l
+tidol·la,6,ti-dol-la,l·l,punt volat; es parteix l-l
+rol·live,6,rol-li-ve,l·l,punt volat; es parteix l-l
+mal·lune,6,mal-lu-ne,l·l,punt volat; es parteix l-l
+jabul·lep,6,ja-bul-lep,l·l,punt volat; es parteix l-l
+misloqueix,6,mis-lo-queix,x/ix,ix sona x
+xeclasit,6,xe-cla-sit,x/ix,
+xugritil,6,xu-gri-til,x/ix,
+jaixupo,6,jai-xu-po,x/ix,ix sona x
+laboixa,6,la-boi-xa,x/ix,ix sona x
+blacuvoig,6,bla-cu-voig,tx/ig,ig final sona tx
+lamefaig,6,la-me-faig,tx/ig,ig final sona tx
+gibatxan,6,gi-bat-xan,tx/ig,
+droletxi,6,dro-let-xi,tx/ig,
+bretxejo,6,bret-xe-jo,tx/ig,
+neratgec,6,ne-rat-gec,tg/tj,
+patgilne,6,pat-gil-ne,tg/tj,
+sequetjac,6,se-quet-jac,tg/tj,
+fecotjas,6,fe-cot-jas,tg/tj,
+molatja,6,mo-lat-ja,tg/tj,
+cogüeses,6,co-güe-ses,güe/güi,dièresi: la u sona
+basgüeda,6,bas-güe-da,güe/güi,dièresi: la u sona
+güemofar,6,güe-mo-far,güe/güi,dièresi: la u sona
+gegüibor,6,ge-güi-bor,güe/güi,dièresi: la u sona
+degüive,6,de-güi-ve,güe/güi,dièresi: la u sona
+natonyem,6,na-to-nyem,ny/ll,
+rotillum,6,ro-ti-llum,ny/ll,
+noquinyer,6,no-qui-nyer,ny/ll,
+lanyibi,6,la-nyi-bi,ny/ll,
+lliretep,6,lli-re-tep,ny/ll,
+nessezot,6,nes-se-zot,s sorda/s sonora,ss sorda i s/z sonora
+messuzo,6,mes-su-zo,s sorda/s sonora,ss sorda i s/z sonora
+lossezo,6,los-se-zo,s sorda/s sonora,ss sorda i s/z sonora
+trissezec,6,tris-se-zec,s sorda/s sonora,ss sorda i s/z sonora
+missezip,6,mis-se-zip,s sorda/s sonora,ss sorda i s/z sonora
+dabirpe,6,da-bir-pe,codes medials,
+sosmilgui,6,sos-mil-gui,codes medials,
+pepalbi,6,pe-pal-bi,codes medials,
+susombe,6,su-som-be,codes medials,
+compelgal,6,com-pel-gal,codes medials,
+noguilin,6,no-gui-lin,qu/gu,
+viglagui,6,vi-gla-gui,qu/gu,
+naguital,6,na-gui-tal,qu/gu,
+crenegue,6,cre-ne-gue,qu/gu,
+desenquem,6,de-sen-quem,qu/gu,
+laclirono,7,la-cli-ro-no,travada amb l,
+dasafledet,7,da-sa-fle-det,travada amb l,
+voglomula,7,vo-glo-mu-la,travada amb l,
+peblirdajos,7,pe-blir-da-jos,travada amb l,
+blemefobut,7,ble-me-fo-but,travada amb l,
+nedugobros,7,ne-du-go-bros,travada amb r,
+nesfromaque,7,nes-fro-ma-que,travada amb r,
+simigreto,7,si-mi-gre-to,travada amb r,
+tidigrotes,7,ti-di-gro-tes,travada amb r,
+rasulicri,7,ra-su-li-cri,travada amb r,
+nyeritiquis,7,nye-ri-ti-quis,ny,
+tonyesana,7,to-nye-sa-na,ny,
+gemaglenyas,7,ge-ma-gle-nyas,ny,
+doponyufa,7,do-po-nyu-fa,ny,
+nyuvorabon,7,nyu-vo-ra-bon,ny,
+bacrijolle,7,ba-cri-jo-lle,ll,
+tabellecar,7,ta-be-lle-car,ll,
+cabullanit,7,ca-bu-lla-nit,ll,
+sotellado,7,so-te-lla-do,ll,
+notollodis,7,no-to-llo-dis,ll,
+flosacaditx,7,flo-sa-ca-ditx,tx,
+nebepatxa,7,ne-be-pat-xa,tx,
+beclatonatx,7,be-cla-to-natx,tx,
+cronutxema,7,cro-nut-xe-ma,tx,
+natxatome,7,nat-xa-to-me,tx,
+menetevoix,7,me-ne-te-voix,ix,ix sona x
+cromengomuix,7,cro-men-go-muix,ix,ix sona x
+doixomedul,7,doi-xo-me-dul,ix,ix sona x
+dagalemeix,7,da-ga-le-meix,ix,ix sona x
+saprudeveix,7,sa-pru-de-veix,ix,ix sona x
+catgeburco,7,cat-ge-bur-co,tg/tj,
+sijatjubra,7,si-jat-ju-bra,tg/tj,
+plivafatgi,7,pli-va-fat-gi,tg/tj,
+pracodutge,7,pra-co-dut-ge,tg/tj,
+memafetjac,7,me-ma-fet-jac,tg/tj,
+disamol·lut,7,di-sa-mol-lut,l·l,punt volat; es parteix l-l
+mabel·lequi,7,ma-bel-le-qui,l·l,punt volat; es parteix l-l
+quipel·lema,7,qui-pel-le-ma,l·l,punt volat; es parteix l-l
+bal·lesadep,7,bal-le-sa-dep,l·l,punt volat; es parteix l-l
+jaguembal·lo,7,ja-guem-bal-lo,l·l,punt volat; es parteix l-l
+goraguenas,7,go-ra-gue-nas,gue/gui,
+naguibasac,7,na-gui-ba-sac,gue/gui,
+tiguebosa,7,ti-gue-bo-sa,gue/gui,
+rilolague,7,ri-lo-la-gue,gue/gui,
+guilpodebe,7,guil-po-de-be,gue/gui,
+difivua,7,di-fi-vu-a,hiat,dues vocals en síl·labes diferents
+cablubae,7,ca-blu-ba-e,hiat,dues vocals en síl·labes diferents
+quearitor,7,que-a-ri-tor,hiat,dues vocals en síl·labes diferents
+menequie,7,me-ne-qui-e,hiat,dues vocals en síl·labes diferents
+biepovo,7,bi-e-po-vo,hiat,dues vocals en síl·labes diferents
+nemilobans,7,ne-mi-lo-bans,coda complexa,
+sarimifern,7,sa-ri-mi-fern,coda complexa,
+geslalpebinc,7,ges-lal-pe-binc,coda complexa,
+metomaclirs,7,me-to-ma-clirs,coda complexa,
+rotomitelc,7,ro-to-mi-telc,coda complexa,
+quecopatol,7,que-co-pa-tol,qu,
+padaquener,7,pa-da-que-ner,qu,
+nevaquifac,7,ne-va-qui-fac,qu,
+quesloteda,7,ques-lo-te-da,qu,
+quipidaprat,7,qui-pi-da-prat,qu,
+vumiçavo,7,vu-mi-ça-vo,ç,
+bofledaveç,7,bo-fle-da-veç,ç,
+manabeço,7,ma-na-be-ço,ç,
+copadoneç,7,co-pa-do-neç,ç,
+frebitersuç,7,fre-bi-ter-suç,ç,
+lacorrumo,7,la-cor-ru-mo,rr,
+farramabe,7,far-ra-ma-be,rr,
+casirrena,7,ca-sir-re-na,rr,
+sadilperrut,7,sa-dil-per-rut,rr,
+nequemerrap,7,ne-que-mer-rap,rr,
+glafanimedri,8,gla-fa-ni-me-dri,travada amb l,
+bistunofle,8,bis-tu-no-fle,travada amb l,
+baglupabejom,8,ba-glu-pa-be-jom,travada amb l,
+tidablaqui,8,ti-da-bla-qui,travada amb l,
+cligovelsarfa,8,cli-go-vel-sar-fa,travada amb l,
+cajogrundotel,8,ca-jo-grun-do-tel,travada amb r,
+guebocriter,8,gue-bo-cri-ter,travada amb r,
+gejaredrat,8,ge-ja-re-drat,travada amb r,
+fabilafrapa,8,fa-bi-la-fra-pa,travada amb r,
+simobrepabo,8,si-mo-bre-pa-bo,travada amb r,
+moplastribedi,8,mo-plas-tri-be-di,doble travada,
+cufibrogrepot,8,cu-fi-bro-gre-pot,doble travada,
+cledrovorse,8,cle-dro-vor-se,doble travada,
+difrolnopograt,8,di-frol-no-po-grat,doble travada,
+plipavufradin,8,pli-pa-vu-fra-din,doble travada,
+sajonyule,8,sa-jo-nyu-le,ny,
+nyasedomet,8,nya-se-do-met,ny,
+nyiquecrombis,8,nyi-que-crom-bis,ny,
+losanyabe,8,lo-sa-nya-be,ny,
+minyafosen,8,mi-nya-fo-sen,ny,
+quilledivobet,8,qui-lle-di-vo-bet,ll,
+mavapoquillo,8,ma-va-po-qui-llo,ll,
+degollopo,8,de-go-llo-po,ll,
+vomedellur,8,vo-me-de-llur,ll,
+sullabadir,8,su-lla-ba-dir,ll,
+digraixesa,8,di-grai-xe-sa,ix,ix sona x
+coleixenve,8,co-lei-xen-ve,ix,ix sona x
+tiduflosasoix,8,ti-du-flo-sa-soix,ix,ix sona x
+neseleixolom,8,ne-se-lei-xo-lom,ix,ix sona x
+bopuixifangam,8,bo-pui-xi-fan-gam,ix,ix sona x
+penotxuja,8,pe-not-xu-ja,tx/ig,
+dotxivusdan,8,dot-xi-vus-dan,tx/ig,
+linaletxur,8,li-na-let-xur,tx/ig,
+tutxilocrap,8,tut-xi-lo-crap,tx/ig,
+danefenobig,8,da-ne-fe-no-big,tx/ig,ig final sona tx
+fancatjudom,8,fan-cat-ju-dom,tg/tj,
+potgecanin,8,pot-ge-ca-nin,tg/tj,
+vipuberatgi,8,vi-pu-be-rat-gi,tg/tj,
+sacroromitgel,8,sa-cro-ro-mit-gel,tg/tj,
+tapevatge,8,ta-pe-vat-ge,tg/tj,
+cabul·lodesa,8,ca-bul-lo-de-sa,l·l,punt volat; es parteix l-l
+desol·lofor,8,de-sol-lo-for,l·l,punt volat; es parteix l-l
+mepal·lodure,8,me-pal-lo-du-re,l·l,punt volat; es parteix l-l
+nomusil·lo,8,no-mu-sil-lo,l·l,punt volat; es parteix l-l
+pagrul·lobo,8,pa-grul-lo-bo,l·l,punt volat; es parteix l-l
+pefigüemon,8,pe-fi-güe-mon,güe/güi,dièresi: la u sona
+benogüejon,8,be-no-güe-jon,güe/güi,dièresi: la u sona
+gosagüelcon,8,go-sa-güel-con,güe/güi,dièresi: la u sona
+vesgüefimep,8,ves-güe-fi-mep,güe/güi,dièresi: la u sona
+mafrovirgüe,8,ma-fro-vir-güe,güe/güi,dièresi: la u sona
+poejatir,8,po-e-ja-tir,hiat,dues vocals en síl·labes diferents
+tespledoa,8,tes-ple-do-a,hiat,dues vocals en síl·labes diferents
+fletrosuoma,8,fle-tro-su-o-ma,hiat,dues vocals en síl·labes diferents
+vifiotel,8,vi-fi-o-tel,hiat,dues vocals en síl·labes diferents
+nondusae,8,non-du-sa-e,hiat,dues vocals en síl·labes diferents
+sedepopalc,8,se-de-po-palc,coda complexa,
+fapogolorp,8,fa-po-go-lorp,coda complexa,
+danaterulc,8,da-na-te-rulc,coda complexa,
+pobedilusp,8,po-be-di-lusp,coda complexa,
+samofagemp,8,sa-mo-fa-gemp,coda complexa,
+lofossitum,8,lo-fos-si-tum,ss,
+lercobussep,8,ler-co-bus-sep,ss,
+dossotabar,8,dos-so-ta-bar,ss,
+dalissaton,8,da-lis-sa-ton,ss,
+bacuvossodo,8,ba-cu-vos-so-do,ss,
+ilquisine,8,il-qui-si-ne,inversa,
+ussolabi,8,us-so-la-bi,inversa,
+infedudra,8,in-fe-du-dra,inversa,
+arpacupo,8,ar-pa-cu-po,inversa,
+olfoseni,8,ol-fo-se-ni,inversa,
+rasfoquepletil,9,ras-fo-que-ple-til,travada amb l,
+dosdafoblomo,9,dos-da-fo-blo-mo,travada amb l,
+lamiflensaco,9,la-mi-flen-sa-co,travada amb l,
+perafronaglo,9,pe-ra-fro-na-glo,travada amb l,
+veclamiflabit,9,ve-cla-mi-fla-bit,travada amb l,
+fenabrolafis,9,fe-na-bro-la-fis,travada amb r,
+trafrevojudom,9,tra-fre-vo-ju-dom,travada amb r,
+bonamepapris,9,bo-na-me-pa-pris,travada amb r,
+maloridrigui,9,ma-lo-ri-dri-gui,travada amb r,
+drapucrotone,9,dra-pu-cro-to-ne,travada amb r,
+rinyolasilep,9,ri-nyo-la-si-lep,ny,
+nonyopodever,9,no-nyo-po-de-ver,ny,
+sidequifinyicot,9,si-de-qui-fi-nyi-cot,ny,
+fartonyepuve,9,far-to-nye-pu-ve,ny,
+nyocorcumiges,9,nyo-cor-cu-mi-ges,ny,
+tallecafriva,9,ta-lle-ca-fri-va,ll,
+lluvanagedesa,9,llu-va-na-ge-de-sa,ll,
+bomogofullot,9,bo-mo-go-fu-llot,ll,
+nellecatemoser,9,ne-lle-ca-te-mo-ser,ll,
+llerdusepabe,9,ller-du-se-pa-be,ll,
+faclevotxidi,9,fa-cle-vot-xi-di,tx,
+becatxitovo,9,be-cat-xi-to-vo,tx,
+saclivepafagotx,9,sa-cli-ve-pa-fa-gotx,tx,
+magutxacodite,9,ma-gut-xa-co-di-te,tx,
+fosatxagurva,9,fo-sat-xa-gur-va,tx,
+guidibisvesaixi,9,gui-di-bis-ve-sai-xi,ix,ix sona x
+suleixolopaba,9,su-lei-xo-lo-pa-ba,ix,ix sona x
+maseromubanaix,9,ma-se-ro-mu-ba-naix,ix,ix sona x
+friganadijaix,9,fri-ga-na-di-jaix,ix,ix sona x
+temoixasonadem,9,te-moi-xa-so-na-dem,ix,ix sona x
+casimbatjucalvar,9,ca-sim-bat-ju-cal-var,tg/tj,
+mesolodetgepo,9,me-so-lo-det-ge-po,tg/tj,
+mifaplitjogopo,9,mi-fa-plit-jo-go-po,tg/tj,
+lascosupitgi,9,las-co-su-pit-gi,tg/tj,
+solitgevegue,9,so-lit-ge-ve-gue,tg/tj,
+cavonatol·le,9,ca-vo-na-tol-le,l·l,punt volat; es parteix l-l
+del·lepigimo,9,del-le-pi-gi-mo,l·l,punt volat; es parteix l-l
+vol·lijufiron,9,vol-li-ju-fi-ron,l·l,punt volat; es parteix l-l
+jovel·lepebi,9,jo-vel-le-pe-bi,l·l,punt volat; es parteix l-l
+notapobol·lo,9,no-ta-po-bol-lo,l·l,punt volat; es parteix l-l
+soguifodata,9,so-gui-fo-da-ta,gue/gui,
+janaguipamami,9,ja-na-gui-pa-ma-mi,gue/gui,
+teguedaronoba,9,te-gue-da-ro-no-ba,gue/gui,
+guibafepovesos,9,gui-ba-fe-po-ve-sos,gue/gui,
+sebajoguetom,9,se-ba-jo-gue-tom,gue/gui,
+safagejoqui,9,sa-fa-ge-jo-qui,qu,
+quimimavodalir,9,qui-mi-ma-vo-da-lir,qu,
+joquidrepape,9,jo-qui-dre-pa-pe,qu,
+plarvofogendaque,9,plar-vo-fo-gen-da-que,qu,
+sipecaqueto,9,si-pe-ca-que-to,qu,
+divatolsivaç,9,di-va-tol-si-vaç,ç,
+reçalsanaguimen,9,re-çal-sa-na-gui-men,ç,
+magopabiçun,9,ma-go-pa-bi-çun,ç,
+vudanasiraç,9,vu-da-na-si-raç,ç,
+tedribaçoti,9,te-dri-ba-ço-ti,ç,
+merrejobiti,9,mer-re-jo-bi-ti,rr,
+mefarrilobas,9,me-far-ri-lo-bas,rr,
+tecajablerros,9,te-ca-ja-bler-ros,rr,
+carralanefus,9,car-ra-la-ne-fus,rr,
+vorrapugata,9,vor-ra-pu-ga-ta,rr,
+vissemacato,9,vis-se-ma-ca-to,ss,
+tofonircussa,9,to-fo-nir-cus-sa,ss,
+barequessidon,9,ba-re-ques-si-don,ss,
+nissoquebredap,9,nis-so-que-bre-dap,ss,
+ladequessefo,9,la-de-ques-se-fo,ss,
+gedenabiposc,9,ge-de-na-bi-posc,coda complexa,
+tefligepagurs,9,te-fli-ge-pa-gurs,coda complexa,
+supenamilavonc,9,su-pe-na-mi-la-vonc,coda complexa,
+flaclotudenomp,9,fla-clo-tu-de-nomp,coda complexa,
+donigaragelp,9,do-ni-ga-ra-gelp,coda complexa,
+ratodafliplecas,10,ra-to-da-fli-ple-cas,doble travada,
+biflatugeljacron,10,bi-fla-tu-gel-ja-cron,doble travada,
+crapabraglonus,10,cra-pa-bra-glo-nus,doble travada,
+modefiglatre,10,mo-de-fi-gla-tre,doble travada,
+grabladomengue,10,gra-bla-do-men-gue,doble travada,
+mapatidifrans,10,ma-pa-ti-di-frans,travada i coda complexa,
+temegepragidelc,10,te-me-ge-pra-gi-delc,travada i coda complexa,
+lacadroquimolp,10,la-ca-dro-qui-molp,travada i coda complexa,
+dregepadoflucost,10,dre-ge-pa-do-flu-cost,travada i coda complexa,
+godoclomunasc,10,go-do-clo-mu-nasc,travada i coda complexa,
+pitil·lacraja,10,pi-til-la-cra-ja,l·l i travada,punt volat; es parteix l-l
+jal·limovocron,10,jal-li-mo-vo-cron,l·l i travada,punt volat; es parteix l-l
+vetril·lambudo,10,ve-tril-lam-bu-do,l·l i travada,punt volat; es parteix l-l
+gafrisal·lujo,10,ga-fri-sal-lu-jo,l·l i travada,punt volat; es parteix l-l
+fraquepal·leto,10,fra-que-pal-le-to,l·l i travada,punt volat; es parteix l-l
+mapoalafres,10,ma-po-a-la-fres,hiat i travada,dues vocals en síl·labes diferents
+croletimeor,10,cro-le-ti-me-or,hiat i travada,dues vocals en síl·labes diferents
+tiolegrelo,10,ti-o-le-gre-lo,hiat i travada,dues vocals en síl·labes diferents
+niedrotaglop,10,ni-e-dro-ta-glop,hiat i travada,dues vocals en síl·labes diferents
+trosiosede,10,tro-si-o-se-de,hiat i travada,dues vocals en síl·labes diferents
+tribecrodaüna,10,tri-be-cro-da-ü-na,hiat amb dièresi,dièresi: hiat
+sataïtedofe,10,sa-ta-ï-te-do-fe,hiat amb dièresi,dièresi: hiat
+josjadaïqui,10,jos-ja-da-ï-qui,hiat amb dièresi,dièresi: hiat
+telnamebeüdes,10,tel-na-me-be-ü-des,hiat amb dièresi,dièresi: hiat
+gabesjoïsimur,10,ga-bes-jo-ï-si-mur,hiat amb dièresi,dièresi: hiat
+cunagalmetxol,10,cu-na-gal-met-xol,tx/tg,
+batxesogocreron,10,bat-xe-so-go-cre-ron,tx/tg,
+vegrodecodetja,10,ve-gro-de-co-det-ja,tx/tg,
+pretxismaquildebo,10,pret-xis-ma-quil-de-bo,tx/tg,
+patgicubobri,10,pat-gi-cu-bo-bri,tx/tg,
+panebeixaboc,10,pa-ne-bei-xa-boc,ix/ig,ix sona x
+nibopodobitoix,10,ni-bo-po-do-bi-toix,ix/ig,ix sona x
+jomonodaneig,10,jo-mo-no-da-neig,ix/ig,ig final sona tx
+dovunabalaix,10,do-vu-na-ba-laix,ix/ig,ix sona x
+divetidomig,10,di-ve-ti-do-mig,ix/ig,ig final sona tx
+llisdibamaquec,10,llis-di-ba-ma-quec,ny/ll,
+leminyiblogo,10,le-mi-nyi-blo-go,ny/ll,
+sonyavucale,10,so-nya-vu-ca-le,ny/ll,
+nodepalloste,10,no-de-pa-llos-te,ny/ll,
+biganyefina,10,bi-ga-nye-fi-na,ny/ll,
+posogüemaneba,10,po-so-güe-ma-ne-ba,güe/güi,dièresi: la u sona
+güedenavote,10,güe-de-na-vo-te,güe/güi,dièresi: la u sona
+tigüepranabac,10,ti-güe-pra-na-bac,güe/güi,dièresi: la u sona
+vatagüilpole,10,va-ta-güil-po-le,güe/güi,dièresi: la u sona
+sedosampratigüe,10,se-do-sam-pra-ti-güe,güe/güi,dièresi: la u sona
+patemegresorn,10,pa-te-me-gre-sorn,coda complexa,
+nomefegimisc,10,no-me-fe-gi-misc,coda complexa,
+lecavuneglort,10,le-ca-vu-ne-glort,coda complexa,
+capocotamuns,10,ca-po-co-ta-muns,coda complexa,
+brolastindumamp,10,bro-las-tin-du-mamp,coda complexa,
+necoburgoflan,10,ne-co-bur-go-flan,travada amb l,
+tudosogliferbit,10,tu-do-so-gli-fer-bit,travada amb l,
+praviclegrisdut,10,pra-vi-cle-gris-dut,travada amb l,
+fitudomabli,10,fi-tu-do-ma-bli,travada amb l,
+fraguitoneglem,10,fra-gui-to-ne-glem,travada amb l,
+tiprusininama,10,ti-pru-si-ni-na-ma,travada amb r,
+boquipraticra,10,bo-qui-pra-ti-cra,travada amb r,
+tevavaslapre,10,te-va-vas-la-pre,travada amb r,
+vanfrolquibrimo,10,van-frol-qui-bri-mo,travada amb r,
+fatafrilsapec,10,fa-ta-fril-sa-pec,travada amb r,
+letidissazar,10,le-ti-dis-sa-zar,s sorda/s sonora,ss sorda i s/z sonora
+vitessizeni,10,vi-tes-si-ze-ni,s sorda/s sonora,ss sorda i s/z sonora
+gebissezalpam,10,ge-bis-se-zal-pam,s sorda/s sonora,ss sorda i s/z sonora
+tissuzijolcon,10,tis-su-zi-jol-con,s sorda/s sonora,ss sorda i s/z sonora
+bilipessazuc,10,bi-li-pes-sa-zuc,s sorda/s sonora,ss sorda i s/z sonora
+fitalbinvana,10,fi-tal-bin-va-na,codes medials,
+cormebesama,10,cor-me-be-sa-ma,codes medials,
+sopobalquenda,10,so-po-bal-quen-da,codes medials,
+gesfenesmalat,10,ges-fe-nes-ma-lat,codes medials,
+borelarjosqui,10,bo-re-lar-jos-qui,codes medials,

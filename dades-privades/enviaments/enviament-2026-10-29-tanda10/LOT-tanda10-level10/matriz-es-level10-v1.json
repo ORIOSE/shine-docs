@@ -1,0 +1,212 @@
+{
+  "lote": "matriz-es-level10-v1",
+  "descripcion": "6 matrices castellanas de discriminación visual (activity_letter_matrix) de Level10 con palabras reales parecidas y doble objetivo, parámetros del catálogo 6.1 y del prompt 01: cuadrícula de 3 columnas por 8 filas, 1 ronda, 8 objetivos (4 de cada palabra objetivo), 45 segundos. Objetivos: dos palabras reales muy conocidas que forman un par mínimo (respuesta del grupo a E07: vocabulario muy conocido, porque la matriz mide la discriminación y no el léxico); distractores: 3 o 4 palabras reales que están a una letra de alguno de los objetivos, con la sustitución dentro de las familias de forma que aprobó el grupo en E07 (b d p q; m n u; a o e c), 16 celdas repartidas por igual (4, 4, 4 y 4, o 6, 5 y 5). Las de 001 a 003 trabajan una confusión visual, que va en esfuerzo: MAT-ES-L10-PER-001, Espejo b-d, bebo y debo entre beba, bebe, deba y debe; MAT-ES-L10-PER-002, Espejo b-p, bolo y polo entre bola, palo y pelo (conjunto de E07); MAT-ES-L10-PER-003, Rotación n-u, causa y cansa entre canso, canse, causo y cause. Las de 004 a 006 trabajan el cambio de una vocal de forma parecida (a, o, e), sin espejo ni rotación, y llevan Homófonos y parónimos: MAT-ES-L10-PER-004, manta y monta entre manto, menta y monte; MAT-ES-L10-PER-005, cuento y cuanto entre cuenta, cuanta y cuente; MAT-ES-L10-PER-006, rato y roto entre rata, reto y rota (los tres, conjuntos de E07). En cada ronda, cada objetivo exactamente 4 veces y al menos una vez en las cuatro filas de arriba y otra en las cuatro de abajo, como mucho 2 objetivos por fila, distractores equilibrados (diferencia máxima de 1) y ninguna fila con la misma palabra tres veces. Objetivos que no están en las matrices con regla de Level9 y Level10 (casa, sol, mesa, luna, pato, gato). Descartados: boda y boba (boba y bobo son insultos, guía E11), pato y dato y pan y dan (la confusión p-d no tiene término de esfuerzo), copa y capa (capo como distractor), moto y noto (moto ya sale en las matrices con regla), peso y beso (el grupo E11 aparta el romance) y las confusiones p-q, d-q y m-w (no hay pares de palabras castellanas frecuentes con ellas).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Objetivos y distractores elegidos a mano (cuatro conjuntos del banco E07 aprobado y dos nuevos, bebo y debo y causa y cansa); posiciones con random.Random(20261030) (4 de cada objetivo, cada uno al menos una vez en cada mitad, como mucho 2 objetivos por fila, distractores equilibrados). Prompt: plans/multiidioma/prompts-contenido/01-matriu.md.",
+    "semilla": 20261030
+  },
+  "actividades": [
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-ES-L10-PER-001",
+      "idioma": "es",
+      "titulo": "Encuentra todas las palabras «bebo» y «debo»",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca todas las palabras iguales a las dos que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Espejo b-d"
+      ],
+      "contenido": {
+        "objetivo": "bebo, debo",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "beba bebe bebo deba debe bebe bebo bebe beba debe bebo debo debo debo deba debe beba deba bebo bebe beba debe debo deba"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "beba",
+          "bebe",
+          "deba",
+          "debe"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-ES-L10-PER-002",
+      "idioma": "es",
+      "titulo": "Encuentra todas las palabras «bolo» y «polo»",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca todas las palabras iguales a las dos que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Espejo b-p"
+      ],
+      "contenido": {
+        "objetivo": "bolo, polo",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "pelo bola bola palo polo pelo bola palo bolo bola pelo polo bola bolo palo pelo bolo bolo polo polo palo palo bola pelo"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "bola",
+          "palo",
+          "pelo"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-ES-L10-PER-003",
+      "idioma": "es",
+      "titulo": "Encuentra todas las palabras «causa» y «cansa»",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca todas las palabras iguales a las dos que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Rotación n-u"
+      ],
+      "contenido": {
+        "objetivo": "causa, cansa",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "causa cansa canso cause canso cause causo canso causo causo cansa canse causa canse cansa cansa canse canse canso causo causa causa cause cause"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "canso",
+          "canse",
+          "causo",
+          "cause"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-ES-L10-PER-004",
+      "idioma": "es",
+      "titulo": "Encuentra todas las palabras «manta» y «monta»",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca todas las palabras iguales a las dos que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Homófonos y parónimos"
+      ],
+      "contenido": {
+        "objetivo": "manta, monta",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "manta manto manta manto menta manto manto monta manta monte monta menta monte menta menta menta manto monte monta manta monte monta monte manto"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "manto",
+          "menta",
+          "monte"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-ES-L10-PER-005",
+      "idioma": "es",
+      "titulo": "Encuentra todas las palabras «cuento» y «cuanto»",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca todas las palabras iguales a las dos que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Homófonos y parónimos"
+      ],
+      "contenido": {
+        "objetivo": "cuento, cuanto",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "cuente cuento cuenta cuente cuenta cuenta cuente cuanta cuanto cuento cuente cuenta cuanta cuento cuanto cuanta cuanta cuanto cuenta cuente cuanta cuento cuenta cuanto"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "cuenta",
+          "cuanta",
+          "cuente"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-ES-L10-PER-006",
+      "idioma": "es",
+      "titulo": "Encuentra todas las palabras «rato» y «roto»",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca todas las palabras iguales a las dos que te pedimos. Si marcas una por error, vuelve a tocarla. Cuando las tengas todas, pulsa Comprobar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Homófonos y parónimos"
+      ],
+      "contenido": {
+        "objetivo": "rato, roto",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "rota rata rata rato reto rota roto roto rata rata reto reto rato rato rota roto reto rata rata rota reto rota rato roto"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "rata",
+          "reto",
+          "rota"
+        ]
+      }
+    }
+  ]
+}

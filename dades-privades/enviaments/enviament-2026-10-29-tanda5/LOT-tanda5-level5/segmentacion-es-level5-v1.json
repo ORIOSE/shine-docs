@@ -1,0 +1,63 @@
+{
+  "lote": "segmentacion-es-level5-v1",
+  "descripcion": "2 actividades castellanas de segmentación léxica (activity_word_split) de Level5: 6 frases de 7 a 8 palabras cada una con pronombres átonos delante del verbo (me lo cuenta, nos lee, te trae, se lo dice, le teje, la ayudan), lo que pide el prompt 07 para Level5. Casi todas en presente; una frase por actividad con presente de subjuntivo en una subordinada frecuente (cuando llegue, para que no se moje), que la guía E11 admite desde Level5. Le y lo con el sistema etimológico (le teje una bufanda, lo guarda). Ninguna frase admite otra partición con sentido.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level5), siguiendo la guía editorial E11. Prompt: plans/contenido/prompts-es/07-segmentacion.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-ES-L05-LIN-001",
+      "idioma": "es",
+      "titulo": "Separa las palabras",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "La frase está escrita sin espacios. Toca una letra para poner un espacio justo delante, hasta separar todas las palabras, y pulsa Comprobar.",
+      "explicacion": "Word split",
+      "contenido": {
+        "frases": [
+          "mi abuelo me lo cuenta todas las noches",
+          "la profesora nos lee un cuento largo",
+          "el cartero te trae una carta del pueblo",
+          "mi hermano pequeño se lo dice a papá",
+          "la vecina nos presta su escalera de madera",
+          "cuando llegue la primavera las flores se abren"
+        ]
+      },
+      "esfuerzo": [
+        "Hiatos"
+      ]
+    },
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-ES-L05-LIN-002",
+      "idioma": "es",
+      "titulo": "Separa las palabras",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "La frase está escrita sin espacios. Toca una letra para poner un espacio justo delante, hasta separar todas las palabras, y pulsa Comprobar.",
+      "explicacion": "Word split",
+      "contenido": {
+        "frases": [
+          "la abuela le teje una bufanda roja",
+          "mi madre me lo explica con mucha paciencia",
+          "los niños la ayudan a regar el huerto",
+          "el entrenador nos espera en el campo",
+          "mi tía me deja su patinete azul",
+          "papá lo guarda para que no se moje"
+        ]
+      },
+      "esfuerzo": [
+        "Hiatos"
+      ]
+    }
+  ]
+}

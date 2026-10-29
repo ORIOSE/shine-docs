@@ -1,0 +1,51 @@
+{
+  "lote": "repeticion-ca-level10-v1",
+  "descripcion": "1 actividad catalana de repetición rápida de palabra (activity_rapid_repetition) de Level10, 20 segundos por palabra (prompt 06, fila Level7 a Level10: 6 palabras, polisílabas y vocabulario académico, dos pseudopalabras). Agrupada en torno a la nasal palatal ny (regla del 2026-10-29), no usada en Level9, que en repetición rápida es sobre todo articulatoria: 3 palabras largas con ny (enginyeria, companyonia y dissenyadora, de cinco sílabas; la última también con ss), 2 pseudopalabras de cinco sílabas con ny del grupo ny/ll del banco E06 de nivel 10 (biganyefina, sonyavucale) y 1 de alivio de Level0 sin ny (pota), intercalada y que no es la última. Todas caben en grande (12 caracteres como mucho). Sonoridad y esfuerzo describen solo el material objetivo.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano con el prompt plans/multiidioma/prompts-contenido/06-repeticio-rapida.md y la tabla de nivel mínimo de plans/multiidioma/estructura-ca.md (apartado 5); sin semilla. Pseudopalabras de plans/contenido/encarrecs/lliuraments/E06-pseudoparaules-ca.csv (nivel 10, aprobado por el grupo el 2026-10-29), no usadas en ningún lote. Comprobado con etiquetar_lote.py y lexico.py --lang ca. Pendiente de la revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_rapid_repetition",
+      "codigo": "REP-CA-L10-VEL-001",
+      "idioma": "ca",
+      "titulo": "Repeteix ràpid: paraules llargues amb ny",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Digues tu primer la paraula perquè l’alumne la senti i ensenya-la-hi. Quan premis Començar, la paraula s’amagarà: l’alumne l’ha de repetir en veu alta tantes vegades com pugui mentre tu comptes.",
+      "explicacion": "Rapid repetition",
+      "sonoridad": [
+        "ny"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "Nasal palatal ny en paraules llargues: enginyeria, companyonia, dissenyadora, amb dues pseudoparaules amb ny i un alleujament",
+        "palabras": [
+          "enginyeria",
+          "biganyefina",
+          "companyonia",
+          "pota",
+          "sonyavucale",
+          "dissenyadora"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real"
+        ],
+        "segundos": 20
+      },
+      "esfuerzo": [
+        "Hiats",
+        "Polisíl·labes (4 o més síl·labes)"
+      ]
+    }
+  ]
+}

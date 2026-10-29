@@ -1,0 +1,48 @@
+{
+  "lote": "repeticion-es-level5-v1",
+  "descripcion": "1 actividad castellana de repetición rápida (activity_rapid_repetition) de Level5: 3 palabras de 4 y 5 sílabas con trabada de l (planetario, clasificación, plastilina; sin hiatos, para que el esfuerzo sea el de la trabada), 2 pseudopalabras de 3 sílabas de Level5 del banco E05 con trabada de l (blazuri, cheplomu) y 1 alivio de Level0 (pala) en una posición que no es la última, 15 segundos por palabra.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level5). Pseudopalabras de plans/contenido/encarrecs/lliuraments/E05-pseudoparaules-es.csv (Level5: blazuri, cheplomu), no usadas en ningún lote. Prompt: plans/contenido/prompts-es/06-repeticion-rapida.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_rapid_repetition",
+      "codigo": "REP-ES-L05-VEL-001",
+      "idioma": "es",
+      "titulo": "Repite rápido: palabras largas con pl y bl",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Di tú primero la palabra para que el alumno la oiga y enséñasela. Cuando pulses Comenzar, la palabra se esconderá: el alumno tiene que repetirla en voz alta tantas veces como pueda mientras tú cuentas.",
+      "explicacion": "Rapid repetition",
+      "contenido": {
+        "grupo_fonetico_objetivo": "trabadas con l (pla, cla, pli, bla, plo) en palabras de 4 y 5 sílabas y pseudopalabras de 3, con un alivio",
+        "palabras": [
+          "planetario",
+          "blazuri",
+          "pala",
+          "clasificación",
+          "cheplomu",
+          "plastilina"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real"
+        ],
+        "segundos": 15
+      },
+      "esfuerzo": [
+        "Complejas (CCVC, VCC, CVCC)",
+        "Trabadas con l (CCV)"
+      ]
+    }
+  ]
+}

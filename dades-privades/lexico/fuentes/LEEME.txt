@@ -1,0 +1,9 @@
+Ficheros fuente con licencia, en el git de docs (privado, uso interno) salvo frecuencia_elementos_corpes_1_5.txt,
+que pasa de 100 MB y queda fuera de git (se vuelve a descargar de la RAE). Cada uno tiene su cita, versión, fecha, licencia y uso
+en docs/fuentes-de-datos.md (en git), que es el registro que manda. Al añadir un fichero aquí,
+añadir también su entrada allí.
+
+- frecuencia_elementos_corpes_1_5.txt: CORPES XXI (RAE), listado de frecuencias 1.5. Docs §1.1.
+- subtlex-esp/: SUBTLEX-ESP (Cuetos y col., 2011), OSF https://osf.io/xp6sz/, CC BY-NC-SA 4.0. Docs §1.2.
+- softcatala/: diccionari de LanguageTool, frecuencias y diacríticos de Softcatalà (catalan-dict-tools,
+  commit 32d7abc), LGPL 2.1 o GPL 2.0. Docs §1.5.

@@ -1,0 +1,182 @@
+{
+  "lote": "blink-es-level10-v1",
+  "descripcion": "3 actividades castellanas de parpadeo (activity_blink) de Level10: 15 elementos a 1 segundo, lo que pide la fila de Level10 del prompt 03 (palabras y pseudopalabras de 5 y 6 sílabas). Modelo mixto (prompt 03, regla 3, composición de 15): 8 palabras reales de 5 y 6 sílabas, 3 pseudopalabras de 5 y 6 sílabas de Level10 del banco E05 y 4 alivios de Level0 (27 %) intercalados, nunca al final ni seguidos. Cada actividad se agrupa en torno a un término de sonoridad (regla del 2026-10-29) que no salió en Level9: todas las palabras y pseudopalabras llevan el sonido del grupo. BLK-ES-L10-VEL-001, f (fotovoltaico, filosófico, funcionamiento, florecimiento, flexibilidad, fundamentalmente, fotocopiadora, ferrocarriles; firnefoclenfaplu, flomifribespi, fusisprefegro); BLK-ES-L10-VEL-002, l (legibilidad, limitaciones, lexicografía, lingüísticamente, localizaciones, licenciatura, levantamiento, laboriosidad; lenflumitolmen, liblafurpiclefo, lorclucensquefante); BLK-ES-L10-VEL-003, ch (aprovechamiento, anocheciendo, estrechamente, archivadores, cosechadoras, cucharadita, chapoteando, cacharrería; chubisbralnarsuz, dunjurcrofucho, jochutesfruldicul). Esfuerzo: Polisílabas, que es lo que define el nivel. Ninguna palabra real está en lotes castellanos anteriores. Descartadas: fotosíntesis, luminosidad, longitudinal y locomotora (ya en el parpadeo de Level8), archipiélago (ya en la repetición de Level8), cochinillas y pinchadiscos (4 sílabas), caprichosamente (dos palabras en -mente en la misma actividad); fisicoquímico, logarítmico, lexicográfico, lateralidad, liposoluble, achatamiento y achaparrado no están en la lista general de frecuencias (puerta léxica), y longitudinales es el plural de una palabra de Level8. La ch tiene pocas palabras de 5 y 6 sílabas: cucharadita (la medida de cocina) y cacharrería son las más cotidianas de la actividad.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level10). Pseudopalabras de plans/contenido/encarrecs/lliuraments/E05-pseudoparaules-es.csv (Level10: firnefoclenfaplu, flomifribespi, fusisprefegro, lenflumitolmen, liblafurpiclefo, lorclucensquefante, chubisbralnarsuz, dunjurcrofucho, jochutesfruldicul), no usadas en ningún lote. Prompt: plans/contenido/prompts-es/03-parpadeo.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-ES-L10-VEL-001",
+      "idioma": "es",
+      "titulo": "Palabras largas con f",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Lee cada palabra en voz alta en cuanto aparezca y toca para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "f"
+      ],
+      "esfuerzo": [
+        "Polisílabas (4 o más sílabas)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "palabras y pseudopalabras de 5 y 6 sílabas con f: fo-to-vol-tai-co / fi-lo-só-fi-co / fun-cio-na-mien-to / flo-re-ci-mien-to / fle-xi-bi-li-dad / fun-da-men-tal-men-te / fo-to-co-pia-do-ra / fe-rro-ca-rri-les / fir-ne-fo-clen-fa-plu / flo-mi-fri-bes-pi / fu-sis-pre-fe-gro",
+        "elementos": [
+          "fotovoltaico",
+          "firnefoclenfaplu",
+          "mesa",
+          "filosófico",
+          "funcionamiento",
+          "flomifribespi",
+          "o",
+          "florecimiento",
+          "flexibilidad",
+          "nota",
+          "fusisprefegro",
+          "fundamentalmente",
+          "sapo",
+          "fotocopiadora",
+          "ferrocarriles"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-ES-L10-VEL-002",
+      "idioma": "es",
+      "titulo": "Palabras largas con l",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Lee cada palabra en voz alta en cuanto aparezca y toca para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "l"
+      ],
+      "esfuerzo": [
+        "Polisílabas (4 o más sílabas)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "palabras y pseudopalabras de 5 y 6 sílabas con l: le-gi-bi-li-dad / li-mi-ta-cio-nes / le-xi-co-gra-fí-a / lin-güís-ti-ca-men-te / lo-ca-li-za-cio-nes / li-cen-cia-tu-ra / le-van-ta-mien-to / la-bo-rio-si-dad / len-flu-mi-tol-men / li-bla-fur-pi-cle-fo / lor-clu-cens-que-fan-te",
+        "elementos": [
+          "legibilidad",
+          "limitaciones",
+          "mapa",
+          "lenflumitolmen",
+          "lexicografía",
+          "e",
+          "lingüísticamente",
+          "liblafurpiclefo",
+          "localizaciones",
+          "seta",
+          "licenciatura",
+          "lorclucensquefante",
+          "toma",
+          "levantamiento",
+          "laboriosidad"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-ES-L10-VEL-003",
+      "idioma": "es",
+      "titulo": "Palabras largas con ch",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Lee cada palabra en voz alta en cuanto aparezca y toca para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "ch"
+      ],
+      "esfuerzo": [
+        "Polisílabas (4 o más sílabas)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "palabras y pseudopalabras de 5 y 6 sílabas con ch: a-pro-ve-cha-mien-to / a-no-che-cien-do / es-tre-cha-men-te / ar-chi-va-do-res / co-se-cha-do-ras / cu-cha-ra-di-ta / cha-po-te-an-do / ca-cha-rre-rí-a / chu-bis-bral-nar-suz / dun-jur-cro-fu-cho / jo-chu-tes-frul-di-cul",
+        "elementos": [
+          "aprovechamiento",
+          "anocheciendo",
+          "masa",
+          "chubisbralnarsuz",
+          "estrechamente",
+          "archivadores",
+          "pa",
+          "dunjurcrofucho",
+          "cosechadoras",
+          "cucharadita",
+          "lote",
+          "jochutesfruldicul",
+          "chapoteando",
+          "dime",
+          "cacharrería"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1
+      }
+    }
+  ]
+}

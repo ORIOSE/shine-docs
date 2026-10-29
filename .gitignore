@@ -10,3 +10,8 @@
 /.idea/
 /.editorconfig
 /.gitattributes
+
+# Dades privades (dades-privades/): van al git; el CORPES no, perquè passa de 100 MB (límit de GitHub).
+# Es torna a descarregar de la RAE (docs/fuentes-de-datos.md §1.1).
+/dades-privades/lexico/fuentes/frecuencia_elementos_corpes_1_5.txt
+**/__pycache__/

@@ -44,8 +44,20 @@
  {
   "id": "C8",
   "titol": "Tanda 8: Level8 sencer, tots dos idiomes",
-  "estat": "en curs",
-  "detall": "48 activitats (24 es, 24 ca) importades sense publicar el 2026-10-29; paquet a shine/private/enviament-2026-10-29-tanda8/LOT-tanda8-level8.zip, amb set decisions."
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda8-level8-resposta.md) i publicada: 48 activitats. Validats la posició d'imatges per etiqueta visual, les matrius de doble objectiu, les llistes de 15 i les síl·labes sobrants d'equivalència fonètica."
+ },
+ {
+  "id": "C9",
+  "titol": "Tanda 9: Level9 sencer, tots dos idiomes",
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda9-level9-resposta.md) i publicades les 36 de text i matriu. La posició d'imatges de Level9 i Level10 també està aprovada: s'importa i es publica quan arribin les 25 imatges de la tirada del 2026-10-30."
+ },
+ {
+  "id": "C10",
+  "titol": "Tanda 10: Level10 sencer, tots dos idiomes",
+  "estat": "aplicat",
+  "detall": "Aprovada sense canvis el 2026-10-29 i publicada: 36 activitats. La primera resposta citava material que no era el nostre (l'eina del revisor no va llegir el lot); la revisió complementària (respostes-2026-10-30/LOT-tanda10-level10-resposta-complementaria.md) sí que revisa el material real. Falta la posició d'imatges de Level10 (aprovada; espera la tirada)."
  },
  {
   "id": "IMG2",

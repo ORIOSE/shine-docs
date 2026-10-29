@@ -107,6 +107,14 @@
   "idioma": "ca",
   "area": "Lingüística",
   "tipus": "LIS",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "ca",
+  "area": "Lingüística",
+  "tipus": "LIS",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 2
@@ -156,7 +164,15 @@
   "area": "Lingüística",
   "tipus": "LIS",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "ca",
+  "area": "Lingüística",
+  "tipus": "LIS",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 2
  },
  {
@@ -171,6 +187,14 @@
   "idioma": "ca",
   "area": "Lingüística",
   "tipus": "SEG",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "ca",
+  "area": "Lingüística",
+  "tipus": "SEG",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 3
@@ -220,7 +244,15 @@
   "area": "Lingüística",
   "tipus": "SEG",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "ca",
+  "area": "Lingüística",
+  "tipus": "SEG",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 2
  },
  {
@@ -243,6 +275,14 @@
   "idioma": "ca",
   "area": "Lingüística",
   "tipus": "SIL",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "ca",
+  "area": "Lingüística",
+  "tipus": "SIL",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 3
@@ -292,7 +332,15 @@
   "area": "Lingüística",
   "tipus": "SIL",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "ca",
+  "area": "Lingüística",
+  "tipus": "SIL",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 2
  },
  {
@@ -372,7 +420,7 @@
   "area": "Memòria",
   "tipus": "IMG",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
   "n": 6
  },
  {
@@ -388,6 +436,14 @@
   "area": "Perceptius",
   "tipus": "MAT",
   "nivell": "Level1",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "ca",
+  "area": "Perceptius",
+  "tipus": "MAT",
+  "nivell": "Level10",
   "estat": "publicada",
   "n": 6
  },
@@ -452,7 +508,15 @@
   "area": "Perceptius",
   "tipus": "MAT",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "ca",
+  "area": "Perceptius",
+  "tipus": "MAT",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 6
  },
  {
@@ -470,6 +534,14 @@
   "nivell": "Level1",
   "estat": "publicada",
   "n": 10
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "BLK",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 3
  },
  {
   "idioma": "ca",
@@ -524,7 +596,15 @@
   "area": "Velocitat",
   "tipus": "BLK",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 3
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "BLK",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 3
  },
  {
@@ -539,6 +619,14 @@
   "idioma": "ca",
   "area": "Velocitat",
   "tipus": "LEC",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "LEC",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 1
@@ -588,7 +676,15 @@
   "area": "Velocitat",
   "tipus": "LEC",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "LEC",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 1
  },
  {
@@ -603,6 +699,14 @@
   "idioma": "ca",
   "area": "Velocitat",
   "tipus": "LIS",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "LIS",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 1
@@ -652,7 +756,15 @@
   "area": "Velocitat",
   "tipus": "LIS",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "LIS",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 1
  },
  {
@@ -675,6 +787,14 @@
   "idioma": "ca",
   "area": "Velocitat",
   "tipus": "REP",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "REP",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 3
@@ -724,7 +844,15 @@
   "area": "Velocitat",
   "tipus": "REP",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "ca",
+  "area": "Velocitat",
+  "tipus": "REP",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 1
  },
  {
@@ -835,6 +963,14 @@
   "idioma": "es",
   "area": "Lingüística",
   "tipus": "LIS",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "es",
+  "area": "Lingüística",
+  "tipus": "LIS",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 2
@@ -884,7 +1020,15 @@
   "area": "Lingüística",
   "tipus": "LIS",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "es",
+  "area": "Lingüística",
+  "tipus": "LIS",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 2
  },
  {
@@ -907,6 +1051,14 @@
   "idioma": "es",
   "area": "Lingüística",
   "tipus": "SEG",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "es",
+  "area": "Lingüística",
+  "tipus": "SEG",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 2
@@ -956,7 +1108,15 @@
   "area": "Lingüística",
   "tipus": "SEG",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "es",
+  "area": "Lingüística",
+  "tipus": "SEG",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 2
  },
  {
@@ -987,6 +1147,14 @@
   "idioma": "es",
   "area": "Lingüística",
   "tipus": "SIL",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "es",
+  "area": "Lingüística",
+  "tipus": "SIL",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 2
@@ -1036,7 +1204,15 @@
   "area": "Lingüística",
   "tipus": "SIL",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 2
+ },
+ {
+  "idioma": "es",
+  "area": "Lingüística",
+  "tipus": "SIL",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 2
  },
  {
@@ -1116,7 +1292,7 @@
   "area": "Memòria",
   "tipus": "IMG",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
   "n": 6
  },
  {
@@ -1139,6 +1315,14 @@
   "idioma": "es",
   "area": "Perceptius",
   "tipus": "MAT",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "es",
+  "area": "Perceptius",
+  "tipus": "MAT",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 7
@@ -1188,7 +1372,15 @@
   "area": "Perceptius",
   "tipus": "MAT",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "es",
+  "area": "Perceptius",
+  "tipus": "MAT",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 6
  },
  {
@@ -1211,6 +1403,14 @@
   "idioma": "es",
   "area": "Velocitat",
   "tipus": "BLK",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 3
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "BLK",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 6
@@ -1260,7 +1460,15 @@
   "area": "Velocitat",
   "tipus": "BLK",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 3
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "BLK",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 3
  },
  {
@@ -1275,6 +1483,14 @@
   "idioma": "es",
   "area": "Velocitat",
   "tipus": "LEC",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "LEC",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 1
@@ -1324,7 +1540,15 @@
   "area": "Velocitat",
   "tipus": "LEC",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "LEC",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 1
  },
  {
@@ -1339,6 +1563,14 @@
   "idioma": "es",
   "area": "Velocitat",
   "tipus": "LIS",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "LIS",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 1
@@ -1388,7 +1620,15 @@
   "area": "Velocitat",
   "tipus": "LIS",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "LIS",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 1
  },
  {
@@ -1411,6 +1651,14 @@
   "idioma": "es",
   "area": "Velocitat",
   "tipus": "REP",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "REP",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 1
@@ -1460,7 +1708,15 @@
   "area": "Velocitat",
   "tipus": "REP",
   "nivell": "Level8",
-  "estat": "revisio",
+  "estat": "publicada",
+  "n": 1
+ },
+ {
+  "idioma": "es",
+  "area": "Velocitat",
+  "tipus": "REP",
+  "nivell": "Level9",
+  "estat": "publicada",
   "n": 1
  }
 ]

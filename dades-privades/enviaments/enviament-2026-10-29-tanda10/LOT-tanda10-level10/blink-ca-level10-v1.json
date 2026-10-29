@@ -1,0 +1,186 @@
+{
+  "lote": "blink-ca-level10-v1",
+  "descripcion": "3 actividades de parpadeo (activity_blink) en catalán para Level10, de 15 elementos a 1 s, escritas a mano con la estructura catalana del experto (plans/multiidioma/estructura-ca.md). Level10 trabaja palabras y pseudopalabras de 5 y 6 sílabas (prompt 03, fila Level10; sin límite de frecuencia, catálogo 3.6). Modelo mixto aprobado (prompt 03, punto 3): 8 palabras reales, 3 pseudopalabras y 4 de alivio (27 %), intercalados, nunca al final ni dos seguidos. Cada actividad se agrupa en torno a un término de sonoridad no usado en Level9 y a la longitud (regla del 2026-10-29): las grafías r y rr (correspondència, irregularitat, interrogació, irrepetible, irresistible, arrossegament, perruqueria, ocurrència), la fricativa x/ix (desaparèixer, autoconeixement, irreconeixible, peixateria, contrabaixista, encoixinada, arxivística, mereixedora; solo x e ix con sonido x, sin ex- con sonido ks o gz) y la africada sonora tg/tj (aprenentatge, desavantatge, testimoniatge, micromecenatge, encoratjador, paisatgística, fotomuntatge, empitjorament). Pseudopalabras de 5 y 6 sílabas del banco E06 de nivel 10, no usadas en ningún lote: con r (ratodafliplecas, con r inicial fuerte; borelarjosqui; cormebesama: el banco no tiene grupo r/rr), las tres del grupo ix (nibopodobitoix, panebeixaboc, dovunabalaix) y dos del grupo tx/tg con tg o tj (patgicubobri, vegrodecodetja). La tercera de tg/tj es nueva, lefotjanimur (le-fot-ja-ni-mur, 5 sílabas): el banco solo tiene dos con tg o tj (las otras tres llevan tx, el sonido sordo) y pasa pseudo_filtre.py en nivel 10 (no existe en catalán ni en castellano, no está a una letra de una palabra conocida, no se ha usado, longitud y estructura de Level10). Alivio distinto en cada actividad y del de Level9 (e, mapa, la, sopa; o, nina, pa, mula; u, moto, sol, pila). Sonoridad y esfuerzo describen solo el material objetivo; el esfuerzo es el que da estructura.activity_effort. Ningún elemento de Level3 a Level9 ni de los ejemplos de la guía.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano con el prompt plans/multiidioma/prompts-contenido/03-parpelleig.md (fila Level10 y modelo mixto del punto 3); sin semilla. Pseudopalabras de plans/contenido/encarrecs/lliuraments/E06-pseudoparaules-ca.csv (nivel 10, aprobado por el grupo el 2026-10-29), no usadas en ningún lote, más lefotjanimur, nueva, filtrada con pseudo_filtre.py en nivel 10. Comprobado con etiquetar_lote.py y lexico.py --lang ca. Pendiente de revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-CA-L10-VEL-001",
+      "idioma": "ca",
+      "titulo": "Paraules llargues amb r i rr",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta així que aparegui i toca per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "grafies r/rr"
+      ],
+      "esfuerzo": [
+        "Complexes (CCVC, VCC, CVCC)",
+        "Hiats",
+        "Polisíl·labes (4 o més síl·labes)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "vibrant simple r i múltiple rr en paraules de cinc i sis síl·labes: correspondència, irregularitat, interrogació, irrepetible, irresistible, arrossegament, perruqueria, ocurrència",
+        "elementos": [
+          "correspondència",
+          "ratodafliplecas",
+          "e",
+          "irregularitat",
+          "interrogació",
+          "mapa",
+          "borelarjosqui",
+          "irrepetible",
+          "irresistible",
+          "la",
+          "arrossegament",
+          "cormebesama",
+          "sopa",
+          "perruqueria",
+          "ocurrència"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-CA-L10-VEL-002",
+      "idioma": "ca",
+      "titulo": "Paraules llargues amb x i ix",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta així que aparegui i toca per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "x/ix"
+      ],
+      "esfuerzo": [
+        "Complexes (CCVC, VCC, CVCC)",
+        "Polisíl·labes (4 o més síl·labes)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "fricativa sorda x o ix en paraules de cinc i sis síl·labes: desaparèixer, autoconeixement, irreconeixible, peixateria, contrabaixista, encoixinada, arxivística, mereixedora",
+        "elementos": [
+          "desaparèixer",
+          "o",
+          "autoconeixement",
+          "nibopodobitoix",
+          "irreconeixible",
+          "nina",
+          "peixateria",
+          "contrabaixista",
+          "panebeixaboc",
+          "pa",
+          "encoixinada",
+          "arxivística",
+          "mula",
+          "dovunabalaix",
+          "mereixedora"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-CA-L10-VEL-003",
+      "idioma": "ca",
+      "titulo": "Paraules llargues amb tg i tj",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta així que aparegui i toca per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "sonoridad": [
+        "tg/tj"
+      ],
+      "esfuerzo": [
+        "Complexes (CCVC, VCC, CVCC)",
+        "Polisíl·labes (4 o més síl·labes)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "africada sonora tg o tj en paraules de cinc i sis síl·labes: aprenentatge, desavantatge, testimoniatge, micromecenatge, encoratjador, paisatgística, fotomuntatge, empitjorament",
+        "elementos": [
+          "aprenentatge",
+          "desavantatge",
+          "u",
+          "patgicubobri",
+          "testimoniatge",
+          "moto",
+          "micromecenatge",
+          "vegrodecodetja",
+          "encoratjador",
+          "paisatgística",
+          "sol",
+          "fotomuntatge",
+          "lefotjanimur",
+          "pila",
+          "empitjorament"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1
+      }
+    }
+  ]
+}

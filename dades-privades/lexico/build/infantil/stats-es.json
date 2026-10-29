@@ -1,0 +1,26 @@
+{
+ "formas": 26878,
+ "formas_por_nivel": {
+  "0": 8686,
+  "1": 9717,
+  "2": 8475
+ },
+ "acumuladas": [
+  8686,
+  18403,
+  26878
+ ],
+ "lemas": 2408,
+ "lemas_por_nivel": {
+  "0": 867,
+  "1": 878,
+  "2": 663
+ },
+ "fuentes_lema": {
+  "lotes": 20,
+  "general": 1291,
+  "banco": 429,
+  "temas": 668
+ },
+ "difíciles_de_leer": 11768
+}

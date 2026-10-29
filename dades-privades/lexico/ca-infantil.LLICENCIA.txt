@@ -1,0 +1,16 @@
+ca-infantil.csv: vocabulario infantil de 5 a 7 años (encargo E04), 2026-10-28.
+
+Cómo se ha hecho (proceso híbrido aprobado por el grupo el 2026-10-28, sin acceso a LEXESP ni BDLOC)
+- Lemas candidatos: los 3.000 lemas más frecuentes de ca-general.csv (sin nombres propios ni
+  palabras marcadas), los nombres del banco de imágenes de la app y las palabras de los lotes de
+  Level0 a Level2 ya revisados por el grupo.
+- Vocabulario infantil que las listas de adultos dejan fuera, añadido por temas.
+- Nivel (0 = 5 años, 1 = 6, 2 = 7, o fuera) de cada lema: Claude (Anthropic), modelo Opus, lema a
+  lema. Pendiente de la revisión del grupo de expertos.
+- Formas flexionadas: formas y etiquetas del diccionario de Softcatalà (catalan-dict-tools, LGPL 2.1 o GPL 2.0) y frecuencia de ca-general.csv (wordfreq, CC BY-SA 4.0). Sin imperfecto ni futuro de subjuntivo ni pretérito simple; futuro, condicional
+  y presente de subjuntivo a partir de nivel 1.
+- estructura_min: nivel mínimo por estructura silábica según la tabla del catálogo
+  (shine/content/generadores/estructura.py). Informativa: la puerta léxica no la aplica.
+
+Condiciones: uso interno del proyecto, sin redistribución, fuera de git. Registro de fuentes en
+docs/fuentes-de-datos.md. Tubería en build/infantil/.

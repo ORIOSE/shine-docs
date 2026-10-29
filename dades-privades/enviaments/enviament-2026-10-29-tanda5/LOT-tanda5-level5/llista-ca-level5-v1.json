@@ -1,0 +1,160 @@
+{
+  "lote": "llista-ca-level5-v1",
+  "descripcion": "3 llistes de text catalanes (activity, vertical_list) de Level5, de 12 elements (el Level5 en té 12): 2 de descodificació (Competencia Lingüística y Fonológica: travades amb r i travades amb l en paraules de quatre i cinc síl·labes) amb 6 paraules reals de freqüència mitjana, 3 pseudoparaules del banc E06 (nivell 5, tres síl·labes amb travada) i 3 d’alleujament (25 %), i 1 de velocitat amb noms d’oficis coneguts de quatre i cinc síl·labes (Rendimiento y Velocidad de Procesamiento), amb 9 paraules i 3 d’alleujament. Oficis alternats en masculí i femení sense comentar-ho (la fotògrafa, la mecànica, el científic, el veterinari). L’alleujament va intercalat, mai al final ni seguit. Cap paraula de Level3 ni de Level4. segundos_por_elemento = 1 paraula × 60 / 110 ppm (velocitat de referència de Level5), amb el mínim d’1,5.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrit a mà amb el prompt plans/multiidioma/prompts-contenido/08-llista-de-text.md, la taula de nivell mínim de plans/multiidioma/estructura-ca.md (apartat 5) i la guia editorial E11. Pseudoparaules de plans/contenido/encarrecs/lliuraments/E06-pseudoparaules-ca.csv (nivell 5, aprovat pel grup el 2026-10-29), no usades en cap lot. Comprovat amb etiquetar_lote.py i lexico.py --lang ca. Pendent de la revisió de l’expert."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LIS-CA-L05-LIN-001",
+      "idioma": "ca",
+      "titulo": "Paraules molt llargues amb travada amb r",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta i toca la pantalla per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "travades amb r: gr, tr, pr",
+        "elementos": [
+          "agricultura",
+          "cabefram",
+          "pa",
+          "electricitat",
+          "entrenador",
+          "sol",
+          "lupafre",
+          "profunditat",
+          "casa",
+          "paframom",
+          "patrimoni",
+          "atrevida"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      },
+      "esfuerzo": [
+        "Complexes (CCVC, VCC, CVCC)",
+        "Travades amb r (CCV)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-CA-L05-LIN-002",
+      "idioma": "ca",
+      "titulo": "Paraules molt llargues amb travada amb l",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta i toca la pantalla per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "travades amb l: pl, cl, bl",
+        "elementos": [
+          "multiplicar",
+          "no",
+          "catobler",
+          "responsable",
+          "classificar",
+          "la",
+          "nabiflol",
+          "publicitat",
+          "planificar",
+          "e",
+          "vaslegle",
+          "saludable"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      },
+      "esfuerzo": [
+        "Complexes (CCVC, VCC, CVCC)",
+        "Travades amb l (CCV)"
+      ]
+    },
+    {
+      "tipo": "activity",
+      "codigo": "LIS-CA-L05-VEL-001",
+      "idioma": "ca",
+      "titulo": "Paraules dels oficis",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Llegeix cada paraula en veu alta i toca la pantalla per passar a la següent.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "vertical_list",
+        "grupo_fonetico_objetivo": "noms d’oficis coneguts de quatre i cinc síl·labes",
+        "elementos": [
+          "arquitecte",
+          "periodista",
+          "sopa",
+          "fotògrafa",
+          "electricista",
+          "sol",
+          "mecànica",
+          "científic",
+          "veterinari",
+          "pa",
+          "jardinera",
+          "escriptora"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      },
+      "esfuerzo": [
+        "Hiats"
+      ]
+    }
+  ]
+}

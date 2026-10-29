@@ -1,0 +1,145 @@
+{
+  "lote": "blink-es-level5-v1",
+  "descripcion": "3 actividades castellanas de parpadeo (activity_blink) de Level5: 10 elementos a 1,5 segundos. Modelo mixto (prompt 03, regla 3, aprobado por el grupo en las tandas 3 y 4): 5 palabras reales de 3 sílabas con la estructura del grupo como material de trabajo, 2 pseudopalabras de 3 sílabas de Level5 del banco E05 del mismo grupo y 3 alivios de Level0 (30 %) intercalados, nunca al final ni seguidos. BLK-ES-L05-VEL-001: trabadas con l (planeta, reflejo, teclado, público, ciclista; clifuta, miflazo); BLK-ES-L05-VEL-002: trabadas con r (secreto, ladrillo, cangrejo, abrigo, primero; frozalu, vecrizu); BLK-ES-L05-VEL-003: sílabas inversas y cerradas (orquesta, cartero, escuela, bolsillo, insecto; irmochu, falcumi). Sin sonoridad: desde Level4 basta el esfuerzo (prompt 03, regla 7). Descartadas por la puerta léxica (fuera del rango 7.000): flotador, nublado, plumero, pradera, garbanzo.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level5). Pseudopalabras de plans/contenido/encarrecs/lliuraments/E05-pseudoparaules-es.csv (Level5: clifuta, miflazo, frozalu, vecrizu, irmochu, falcumi), no usadas en ningún lote. Prompt: plans/contenido/prompts-es/03-parpadeo.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-ES-L05-VEL-001",
+      "idioma": "es",
+      "titulo": "Palabras con pl, fl, cl y bl",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Lee cada palabra en voz alta en cuanto aparezca y toca para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "esfuerzo": [
+        "Trabadas con l (CCV)",
+        "Complejas (CCVC, VCC, CVCC)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "palabras y pseudopalabras de 3 sílabas con trabada de l: pla-ne-ta / re-fle-jo / te-cla-do / pú-bli-co / ci-clis-ta / cli-fu-ta / mi-fla-zo",
+        "elementos": [
+          "planeta",
+          "clifuta",
+          "sol",
+          "reflejo",
+          "teclado",
+          "a",
+          "miflazo",
+          "público",
+          "mesa",
+          "ciclista"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-ES-L05-VEL-002",
+      "idioma": "es",
+      "titulo": "Palabras con tr, dr, gr, br y pr",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Lee cada palabra en voz alta en cuanto aparezca y toca para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "esfuerzo": [
+        "Trabadas con r (CCV)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "palabras y pseudopalabras de 3 sílabas con trabada de r: se-cre-to / la-dri-llo / can-gre-jo / a-bri-go / pri-me-ro / fro-za-lu / ve-cri-zu",
+        "elementos": [
+          "secreto",
+          "pa",
+          "frozalu",
+          "ladrillo",
+          "cangrejo",
+          "e",
+          "abrigo",
+          "vecrizu",
+          "sopa",
+          "primero"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      }
+    },
+    {
+      "tipo": "activity_blink",
+      "codigo": "BLK-ES-L05-VEL-003",
+      "idioma": "es",
+      "titulo": "Palabras con or, car, es, bol e in",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Lee cada palabra en voz alta en cuanto aparezca y toca para pasar a la siguiente.",
+      "explicacion": "Activity vertical text",
+      "esfuerzo": [
+        "Inversas (VC)",
+        "Mixtas (CVC)"
+      ],
+      "contenido": {
+        "grupo_fonetico_objetivo": "palabras y pseudopalabras de 3 sílabas con sílaba inversa o cerrada: or-ques-ta / car-te-ro / es-cue-la / bol-si-llo / in-sec-to / ir-mo-chu / fal-cu-mi",
+        "elementos": [
+          "orquesta",
+          "irmochu",
+          "cartero",
+          "la",
+          "escuela",
+          "bolsillo",
+          "no",
+          "falcumi",
+          "mapa",
+          "insecto"
+        ],
+        "desglose_tipos": [
+          "palabra_real",
+          "pseudopalabra",
+          "palabra_real",
+          "alivio",
+          "palabra_real",
+          "palabra_real",
+          "alivio",
+          "pseudopalabra",
+          "alivio",
+          "palabra_real"
+        ],
+        "segundos_por_elemento": 1.5
+      }
+    }
+  ]
+}

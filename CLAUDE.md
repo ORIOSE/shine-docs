@@ -250,7 +250,8 @@ shine.test/
 > **Fuentes de datos**: toda fuente externa o de criterio que se use para generar, filtrar o validar
 > contenido (listas de frecuencia, corpus, documentos de expertos, imágenes) se registra en
 > `docs/fuentes-de-datos.md` con cita, versión, fecha, licencia y uso **antes** de usarla. Los
-> ficheros con licencia van a `shine/private/lexico/fuentes/` (fuera de git).
+> ficheros con licencia van a `dades-privades/lexico/fuentes/` (git de docs, privado; `shine/private/lexico` es un
+> enlace). El CORPES (130 MB) queda fuera de git. Mapa de enlaces y cómo recrearlos en `dades-privades/README.md`.
 
 ---
 

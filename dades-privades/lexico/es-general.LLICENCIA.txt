@@ -1,0 +1,22 @@
+es-general.csv: lista de frecuencia general del castellano (encargo E01), versión 2, 2026-10-28.
+
+Fuentes
+- Frecuencia, lema y categoría: CORPES XXI (Real Academia Española, Corpus del Español del
+  Siglo XXI), listado de frecuencias de elementos, versión 1.5, facilitado por el grupo de
+  expertos (fuentes/frecuencia_elementos_corpes_1_5.txt). Texto escrito y oral de España y
+  América. "frecuencia" = apariciones por millón sin signos ortográficos (453 millones de
+  formas); los elementos de varias palabras (tiempos compuestos, locuciones, nombres propios
+  compuestos) se han repartido entre sus palabras.
+- Columna de contraste frecuencia_wordfreq / rango_wordfreq: wordfreq (Robyn Speer), CC BY-SA 4.0.
+- Columna de consulta frecuencia_subtlex / rango_subtlex: SUBTLEX-ESP (Cuetos, Glez-Nosti, Barbón y
+  Brysbaert, 2011), https://osf.io/xp6sz/, CC BY-NC-SA 4.0 (no comercial): no entra en el rango.
+- Registro completo de fuentes y citas: docs/fuentes-de-datos.md (en git).
+- Revisión, descartes, marcas y lemas corregidos: Claude (Anthropic), modelo Opus, sobre la base
+  de los treebanks UD_Spanish-AnCora (CC BY 4.0) y UD_Spanish-GSD (CC BY-SA 4.0) en la versión 1.
+  Pendiente de la revisión del grupo de expertos.
+
+Condiciones
+- Los datos del CORPES XXI son de la RAE: uso interno del proyecto (puerta léxica del generador),
+  sin redistribución. El fichero y la fuente viven en shine/private/lexico/, fuera de git.
+  Antes de cualquier uso fuera del proyecto habría que confirmar las condiciones con la RAE.
+- La tubería para regenerarla está en build/es-general/ (corpes.py, con la revisión Opus en v2/).

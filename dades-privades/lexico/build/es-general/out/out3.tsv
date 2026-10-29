@@ -1,0 +1,794 @@
+forma	accion	lema	categoria	marca	nota
+mc	descartar				sigla
+ms	descartar				abreviatura
+ne	descartar				fragmento
+nicolas	descartar				sin tilde: nicolás
+observatorio	corregir	observatorio	nom		
+oliva	corregir	oliva	nom		
+pariente	corregir	pariente	nom		
+prefieres	completar	preferir	verb		
+republica	descartar				sin tilde: república
+south	descartar				inglés
+status	marcar	status	nom	extranjera	
+tendrías	completar	tener	verb		
+tweets	completar	tweet	nom	extranjera	
+uber	completar	uber	npropi		
+vago	completar	vago	adj		
+vió	descartar				tilde incorrecta: vio
+wey	descartar				jerga americana, grafía no normativa de güey
+amlo	descartar				sigla
+azteca	corregir	azteca	adj		
+beta	corregir	beta	nom		
+chance	marcar	chance	nom	americano	
+cirujano	completar	cirujano	nom		
+conocerte	completar	conocer	verb		
+ei	descartar				interjección de chat
+ejercito	descartar				sin tilde: ejército (ejercitar 1sg es rara)
+fichas	completar	ficha	nom		
+game	descartar				inglés
+gps	descartar				sigla
+gral	descartar				abreviatura
+harías	completar	hacer	verb		
+madero	corregir	madero	nom		
+marítimo	corregir	marítimo	adj		
+matrimonios	completar	matrimonio	nom		
+music	descartar				inglés
+now	descartar				inglés
+obrera	corregir	obrero	adj		
+ordenes	corregir	ordenar	verb		forma válida de ordenar; a menudo es órdenes sin tilde
+pi	corregir	pi	nom		
+prostitutas	marcar	prostituta	nom	malsonante	
+record	descartar				sin tilde: récord
+sacas	corregir	sacar	verb		
+sencillos	corregir	sencillo	adj		
+tango	corregir	tango	nom		
+trabajadoras	corregir	trabajador	nom		
+valiosa	completar	valioso	adj		
+vendo	completar	vender	verb		
+vernos	completar	ver	verb		
+andas	completar	andar	verb		
+bailes	corregir	baile	nom		
+celoso	completar	celoso	adj		
+email	completar	email	nom	extranjera	
+formulario	completar	formulario	nom		
+hispano	corregir	hispano	adj		
+imaginas	completar	imaginar	verb		
+jajaj	descartar				internet
+nacieron	corregir	nacer	verb		
+nacion	descartar				sin tilde: nación
+network	descartar				inglés
+peli	completar	peli	nom		
+peliculas	descartar				sin tilde: películas
+quizas	descartar				sin tilde: quizás
+trabajas	completar	trabajar	verb		
+tweet	completar	tweet	nom	extranjera	
+vd	descartar				abreviatura
+africana	corregir	africano	adj		
+baila	corregir	bailar	verb		
+chavez	descartar				sin tilde: chávez
+cortina	corregir	cortina	nom		
+criado	completar	criar	verb		
+cup	descartar				inglés o sigla
+dolares	descartar				sin tilde: dólares
+enteré	corregir	enterar	verb		
+finde	completar	finde	nom		
+girl	descartar				inglés
+here	descartar				inglés
+io	descartar				otra lengua
+lei	descartar				sin tilde: leí
+lindos	marcar	lindo	adj	americano	
+muchisimo	descartar				sin tilde: muchísimo
+non	descartar				latinismo o francés, fragmento
+pack	corregir	pack	nom	extranjera	
+pd	descartar				abreviatura
+ram	descartar				sigla
+situacion	descartar				sin tilde: situación
+story	descartar				inglés
+traidores	completar	traidor	nom		
+unieron	corregir	unir	verb		
+veré	completar	ver	verb		
+was	descartar				inglés
+ahh	descartar				interjección de chat
+ano	completar	ano	nom	malsonante	
+antemano	corregir	antemano	adv		
+apps	completar	app	nom	extranjera	
+asqueroso	completar	asqueroso	adj		
+atlas	corregir	atlas	nom		
+beach	descartar				inglés
+bodega	corregir	bodega	nom		
+confundido	corregir	confundir	verb		
+dejarte	completar	dejar	verb		
+descubren	corregir	descubrir	verb		
+diaz	descartar				sin tilde: díaz
+educacion	descartar				sin tilde: educación
+extracto	completar	extracto	nom		
+have	descartar				inglés
+hdp	descartar				sigla malsonante
+increíblemente	completar	increíblemente	adv		
+kit	corregir	kit	nom	extranjera	
+lic	descartar				abreviatura
+maquina	descartar				sin tilde: máquina
+mu	descartar				onomatopeya
+nomás	completar	nomás	adv	americano	
+oido	descartar				sin tilde: oído
+pal	descartar				contracción coloquial de para el
+premium	corregir	premium	adj	extranjera	
+pudiese	corregir	poder	verb		
+queen	descartar				inglés
+verguenza	descartar				sin diéresis: vergüenza
+bicho	completar	bicho	nom		
+crack	marcar	crack	nom	extranjera	
+dragon	descartar				sin tilde: dragón
+enojada	completar	enojado	adj	americano	
+envían	corregir	enviar	verb		
+equivoco	completar	equivocar	verb		
+eua	descartar				sigla
+fingir	completar	fingir	verb		
+garcia	descartar				sin tilde: garcía
+gr	descartar				abreviatura
+hip	descartar				inglés
+interrupción	completar	interrupción	nom		
+island	descartar				inglés
+maracaibo	completar	maracaibo	npropi		
+pareces	completar	parecer	verb		
+project	descartar				inglés
+redondo	corregir	redondo	adj		
+soñando	corregir	soñar	verb		
+sp	descartar				abreviatura
+stop	corregir	stop	nom	extranjera	
+tomes	completar	tomar	verb		
+adios	descartar				sin tilde: adiós
+atado	completar	atar	verb		
+bio	descartar				abreviatura
+bro	descartar				jerga inglesa
+cabrones	completar	cabrón	nom	malsonante	
+cafe	descartar				sin tilde: café
+call	descartar				inglés
+cancer	descartar				sin tilde: cáncer
+canon	corregir	canon	nom		
+chi	descartar				fragmento
+cuan	corregir	cuan	adv		
+della	descartar				italiano
+detective	corregir	detective	nom		
+dormida	completar	dormido	adj		
+estúpidos	marcar	estúpido	nom	malsonante	
+get	descartar				inglés
+imagenes	descartar				sin tilde: imágenes
+jun	descartar				abreviatura
+ligas	corregir	liga	nom		
+moon	descartar				inglés
+mías	corregir	mío	pron		
+pana	completar	pana	nom		
+paren	corregir	parar	verb		
+part	descartar				inglés
+pides	completar	pedir	verb		
+piola	completar	piola	adj	americano	
+pt	descartar				abreviatura
+puras	corregir	puro	adj		
+ra	descartar				fragmento
+road	descartar				inglés
+sabrás	completar	saber	verb		
+see	descartar				inglés
+tardar	corregir	tardar	verb		
+tiran	completar	tirar	verb		
+vagina	marcar	vagina	nom	malsonante	
+aburrida	completar	aburrido	adj		
+añadiendo	corregir	añadir	verb		
+barca	corregir	barca	nom		
+burbuja	completar	burbuja	nom		
+chabon	descartar				sin tilde: chabón (jerga americana)
+clínicas	corregir	clínica	nom		
+comicios	corregir	comicios	nom		
+estes	descartar				sin tilde: estés
+fr	descartar				abreviatura
+high	descartar				inglés
+im	descartar				inglés
+infante	corregir	infante	nom		
+infeliz	completar	infeliz	adj		
+living	completar	living	nom	americano+extranjera	
+láser	completar	láser	nom		
+manejando	completar	manejar	verb		
+mayoria	descartar				sin tilde: mayoría
+monetario	corregir	monetario	adj		
+mármol	corregir	mármol	nom		
+narco	completar	narco	nom		
+pensaron	completar	pensar	verb		
+punk	corregir	punk	nom	extranjera	
+sanchez	descartar				sin tilde: sánchez
+sigas	completar	seguir	verb		
+sms	descartar				sigla
+stand	marcar	stand	nom	extranjera	
+tb	descartar				abreviatura
+valía	corregir	valer	verb		
+varían	corregir	variar	verb		
+vivan	corregir	vivir	verb		
+wars	descartar				inglés
+xq	descartar				internet
+acuerdas	completar	acordar	verb		
+afp	descartar				sigla
+aprox	descartar				abreviatura
+ball	descartar				inglés
+cagada	completar	cagada	nom	malsonante	
+cat	descartar				inglés
+comí	completar	comer	verb		
+die	descartar				alemán o inglés
+eligen	corregir	elegir	verb		
+er	descartar				fragmento
+fernandez	descartar				sin tilde: fernández
+hop	descartar				inglés
+imagínate	completar	imaginar	verb		
+jodan	completar	joder	verb	malsonante	
+jovenes	descartar				sin tilde: jóvenes
+maten	completar	matar	verb		
+millonarios	corregir	millonario	adj		
+neo	descartar				prefijo suelto
+ninja	corregir	ninja	nom		
+padrino	completar	padrino	nom		
+perez	descartar				sin tilde: pérez
+pito	marcar	pito	nom	malsonante	
+podcast	completar	podcast	nom	extranjera	
+subtítulos	completar	subtítulo	nom		
+wtf	descartar				internet
+amamos	completar	amar	verb		
+bolivariana	corregir	bolivariano	adj		
+box	corregir	box	nom	extranjera	
+bue	descartar				coloquial de chat
+car	descartar				inglés
+company	descartar				inglés
+empatía	completar	empatía	nom		
+gilipollas	completar	gilipollas	nom	malsonante	
+ignorantes	completar	ignorante	adj		
+logre	completar	lograr	verb		
+lunar	corregir	lunar	adj		
+mares	corregir	mar	nom		
+martinez	descartar				sin tilde: martínez
+mates	completar	mate	nom		
+metes	completar	meter	verb		
+olvidé	completar	olvidar	verb		
+ordinaria	corregir	ordinario	adj		
+paraguas	corregir	paraguas	nom		
+pág	descartar				abreviatura
+quo	descartar				latín, fragmento
+stock	corregir	stock	nom	extranjera	
+uk	descartar				sigla
+vara	corregir	vara	nom		
+version	descartar				sin tilde: versión
+watch	descartar				inglés
+about	descartar				inglés
+asiste	corregir	asistir	verb		
+apocalipsis	corregir	apocalipsis	nom		
+caca	completar	caca	nom	malsonante	
+cambiemos	completar	cambiar	verb		
+cante	completar	cantar	verb		
+case	descartar				inglés
+cooper	completar	cooper	npropi		
+creamos	completar	crear	verb		
+cuestion	descartar				sin tilde: cuestión
+eligieron	corregir	elegir	verb		
+ep	descartar				sigla
+habra	descartar				sin tilde: habrá
+happy	descartar				inglés
+inspira	completar	inspirar	verb		
+land	descartar				inglés
+latin	descartar				inglés
+lu	descartar				fragmento
+montones	completar	montón	nom		
+opinas	completar	opinar	verb		
+parezco	completar	parecer	verb		
+people	descartar				inglés
+poblacion	descartar				sin tilde: población
+podías	completar	poder	verb		
+porta	corregir	portar	verb		
+prostituta	marcar	prostituta	nom	malsonante	
+quite	completar	quitar	verb		
+review	descartar				inglés
+single	marcar	single	nom	extranjera	
+society	descartar				inglés
+suite	marcar	suite	nom	extranjera	
+uy	completar	uy	interj		
+venia	descartar				sin tilde: venía
+abrazos	completar	abrazo	nom		
+aduanas	corregir	aduana	nom		
+agarre	completar	agarrar	verb		
+bank	descartar				inglés
+bardo	corregir	bardo	nom	americano	
+cam	descartar				inglés o abreviatura
+carabineros	corregir	carabinero	nom		
+contextos	completar	contexto	nom		
+country	corregir	country	nom	extranjera	
+cruzando	completar	cruzar	verb		
+dolorosa	completar	doloroso	adj		
+dudes	completar	dudar	verb		
+electos	corregir	electo	adj		
+entere	completar	enterar	verb		
+epn	descartar				sigla
+esten	descartar				sin tilde: estén
+fierro	corregir	fierro	nom	americano	
+first	descartar				inglés
+hi	descartar				inglés
+how	descartar				inglés
+jodida	completar	jodido	adj	malsonante	
+know	descartar				inglés
+miré	completar	mirar	verb		
+noel	corregir	noel	npropi		
+odiar	completar	odiar	verb		
+pica	corregir	picar	verb		
+pinches	completar	pinche	adj	malsonante+americano	
+pj	descartar				sigla
+respetable	corregir	respetable	adj		
+right	descartar				inglés
+rubro	marcar	rubro	nom	americano	
+sacaste	completar	sacar	verb		
+sirviendo	corregir	servir	verb		
+soja	corregir	soja	nom		
+tenias	descartar				sin tilde: tenías
+terminas	completar	terminar	verb		
+tranqui	completar	tranqui	adj		
+vip	marcar	vip	nom	extranjera	
+wi	descartar				fragmento
+zapato	completar	zapato	nom		
+alumnado	completar	alumnado	nom		
+anal	marcar	anal	adj	malsonante	
+bachelet	completar	bachelet	npropi		
+cabron	descartar				sin tilde: cabrón
+cagando	completar	cagar	verb	malsonante	
+celu	completar	celu	nom	americano	
+ch	descartar				letras sueltas
+chavismo	completar	chavismo	nom		
+cobardes	completar	cobarde	adj		
+cuadernos	corregir	cuaderno	nom		
+decis	descartar				sin tilde: decís (voseo)
+dei	descartar				italiano o latín
+disfraz	completar	disfraz	nom		
+dt	descartar				sigla
+dí	descartar				tilde incorrecta: di
+empiezas	completar	empezar	verb		
+escribes	completar	escribir	verb		
+esperes	corregir	esperar	verb		
+estaria	descartar				sin tilde: estaría
+inca	corregir	inca	adj		
+jodiendo	completar	joder	verb	malsonante	
+late	corregir	latir	verb		
+lider	descartar				sin tilde: líder
+mb	descartar				abreviatura
+mierdas	completar	mierda	nom	malsonante	
+office	descartar				inglés
+piba	completar	pibe	nom	americano	
+point	descartar				inglés
+sabría	completar	saber	verb		
+shows	marcar	show	nom	extranjera	
+veis	completar	ver	verb		
+aa	descartar				letras sueltas
+arregla	completar	arreglar	verb		
+business	descartar				inglés
+but	descartar				inglés
+cejas	completar	ceja	nom		
+ceo	descartar				sigla
+chau	completar	chau	interj	americano	
+chavista	completar	chavista	adj		
+comités	corregir	comité	nom		
+cu	descartar				fragmento
+direccion	descartar				sin tilde: dirección
+estabamos	descartar				sin tilde: estábamos
+facto	descartar				latín, fragmento de de facto
+faro	completar	faro	nom		
+feriado	corregir	feriado	nom	americano	
+frances	descartar				sin tilde: francés
+graduados	completar	graduado	nom		
+guido	completar	guido	npropi		
+impresos	completar	impreso	adj		
+medico	descartar				sin tilde: médico
+mud	descartar				inglés
+ny	descartar				sigla
+old	descartar				inglés
+olimpiadas	corregir	olimpiada	nom		
+pelotudos	completar	pelotudo	adj	malsonante+americano	
+respondo	completar	responder	verb		
+secundarias	corregir	secundario	adj		
+sentirte	completar	sentir	verb		
+state	descartar				inglés
+subo	completar	subir	verb		
+tc	descartar				sigla
+tips	completar	tip	nom	extranjera	
+usarla	completar	usar	verb		
+ab	descartar				letras sueltas
+abrí	completar	abrir	verb		
+amateur	corregir	amateur	adj	extranjera	
+ara	descartar				catalán o fragmento
+aprendan	completar	aprender	verb		
+atreve	completar	atrever	verb		
+barón	corregir	barón	nom		
+busqué	completar	buscar	verb		
+estuviste	completar	estar	verb		
+grandioso	completar	grandioso	adj		
+heavy	corregir	heavy	adj	extranjera	
+incorrecto	completar	incorrecto	adj		
+matas	corregir	matar	verb		
+mp	descartar				sigla
+mx	descartar				abreviatura
+pinos	corregir	pino	nom		
+podrias	descartar				sin tilde: podrías
+sugiero	completar	sugerir	verb		
+suscriptores	completar	suscriptor	nom		
+usb	descartar				sigla
+war	descartar				inglés
+anatomía	completar	anatomía	nom		
+aquél	corregir	aquel	pron		
+avenidas	corregir	avenida	nom		
+ayudarme	completar	ayudar	verb		
+calificaciones	completar	calificación	nom		
+carajos	completar	carajo	nom	malsonante	
+cometa	corregir	cometa	nom		
+cs	descartar				sigla
+eramos	descartar				sin tilde: éramos
+escucharlo	completar	escuchar	verb		
+falto	completar	faltar	verb		
+ferias	corregir	feria	nom		
+gonzalez	descartar				sin tilde: gonzález
+got	descartar				inglés
+html	descartar				sigla
+imaginado	completar	imaginar	verb		
+interes	descartar				sin tilde: interés
+isis	completar	isis	npropi		
+llegues	completar	llegar	verb		
+miento	completar	mentir	verb		
+moscas	corregir	mosca	nom		
+noticiero	corregir	noticiero	nom	americano	
+nov	descartar				abreviatura
+ofendido	corregir	ofendido	adj		
+oigan	completar	oír	verb		
+pagaron	completar	pagar	verb		
+paginas	descartar				sin tilde: páginas
+pas	descartar				fragmento
+pen	descartar				inglés o sigla
+ph	descartar				sigla
+picante	corregir	picante	adj		
+pornografía	marcar	pornografía	nom	malsonante	
+prosa	corregir	prosa	nom		
+sabias	completar	sabio	adj		a menudo es sabías sin tilde
+smartphone	completar	smartphone	nom	extranjera	
+spanish	descartar				inglés
+store	descartar				inglés
+webs	marcar	web	nom	extranjera	
+whisky	marcar	whisky	nom	extranjera	
+andina	corregir	andino	adj		
+bebes	completar	beber	verb		
+capo	completar	capo	nom		
+chiquito	completar	chiquito	adj		
+cn	descartar				sigla
+concilio	corregir	concilio	nom		
+cubriendo	corregir	cubrir	verb		
+dead	descartar				inglés
+diploma	corregir	diploma	nom		
+dni	descartar				sigla
+duermo	completar	dormir	verb		
+east	descartar				inglés
+english	descartar				inglés
+esp	descartar				abreviatura
+exagerado	completar	exagerado	adj		
+formula	corregir	formular	verb		
+gb	descartar				abreviatura
+guardián	completar	guardián	nom		
+hadas	completar	hada	nom		
+intentas	completar	intentar	verb		
+leido	descartar				sin tilde: leído
+limitados	completar	limitado	adj		
+merezco	completar	merecer	verb		
+nieves	corregir	nieve	nom		
+notificaciones	completar	notificación	nom		
+odias	completar	odiar	verb		
+ordenación	corregir	ordenación	nom		
+petro	completar	petro	npropi		
+prime	descartar				inglés
+rachel	completar	rachel	npropi		
+reseñas	corregir	reseña	nom		
+ro	descartar				fragmento
+senadora	completar	senador	nom		
+sorry	descartar				inglés
+streaming	completar	streaming	nom	extranjera	
+tag	descartar				inglés
+tina	completar	tina	npropi		
+tratas	completar	tratar	verb		
+valley	descartar				inglés
+way	descartar				inglés
+amigable	completar	amigable	adj		
+ardiente	completar	ardiente	adj		
+arrepiento	completar	arrepentir	verb		
+asustado	completar	asustado	adj		
+avila	descartar				sin tilde: ávila
+book	descartar				inglés
+cojo	completar	coger	verb		
+colon	descartar				sin tilde: colón
+comprarme	completar	comprar	verb		
+division	descartar				sin tilde: división
+egresados	completar	egresado	nom	americano	
+hábiles	completar	hábil	adj		
+infanta	corregir	infanta	nom		
+institute	descartar				inglés
+keith	completar	keith	npropi		
+moralidad	completar	moralidad	nom		
+net	descartar				inglés
+nose	descartar				error: no sé
+ofrezco	completar	ofrecer	verb		
+place	descartar				inglés
+pokémon	completar	pokémon	npropi		
+preferiría	completar	preferir	verb		
+pronuncia	completar	pronunciar	verb		
+qe	descartar				internet
+quebrada	corregir	quebrada	nom		
+rd	descartar				sigla
+reir	descartar				sin tilde: reír
+short	corregir	short	nom	extranjera	
+sky	completar	sky	npropi		
+trolls	corregir	troll	nom	extranjera	
+violador	marcar	violador	nom	malsonante	
+who	descartar				inglés
+zorro	corregir	zorro	nom		
+agarro	completar	agarrar	verb		
+bobo	completar	bobo	adj		
+budapest	completar	budapest	npropi		
+chimenea	corregir	chimenea	nom		
+college	descartar				inglés
+consciencia	completar	consciencia	nom		
+contarle	completar	contar	verb		
+cumbia	completar	cumbia	nom		
+detienen	corregir	detener	verb		
+detras	descartar				sin tilde: detrás
+drones	completar	dron	nom		
+eclipse	corregir	eclipse	nom		
+empecemos	completar	empezar	verb		
+flujos	completar	flujo	nom		
+fé	descartar				tilde incorrecta: fe
+guardianes	corregir	guardián	nom		
+human	descartar				inglés
+imbéciles	completar	imbécil	adj	malsonante	
+iso	descartar				sigla
+jajajaj	descartar				internet
+jejeje	descartar				internet
+jodas	completar	joder	verb	malsonante	
+limites	corregir	limitar	verb		a menudo es límites sin tilde
+manteca	completar	manteca	nom		
+nico	corregir	nico	npropi		
+night	descartar				inglés
+north	descartar				inglés
+pandilla	completar	pandilla	nom		
+placeres	completar	placer	nom		
+planear	completar	planear	verb		
+plebiscito	corregir	plebiscito	nom		
+pol	descartar				fragmento
+quemando	completar	quemar	verb		
+reality	marcar	reality	nom	extranjera	
+roll	descartar				inglés
+royal	descartar				inglés
+square	descartar				inglés
+standard	corregir	standard	nom	extranjera	
+tablet	marcar	tablet	nom	extranjera	
+tendria	descartar				sin tilde: tendría
+tuyas	completar	tuyo	pron		
+url	descartar				sigla
+vagos	corregir	vago	adj		
+violadores	completar	violador	nom	malsonante	
+vírgenes	completar	virgen	nom		
+wa	descartar				fragmento
+wordpress	completar	wordpress	npropi		
+album	descartar				sin tilde: álbum
+anos	descartar				sin eñe: años
+arca	corregir	arca	nom		
+canada	descartar				sin tilde: canadá
+cfk	descartar				sigla
+cha	descartar				fragmento
+check	descartar				inglés
+clip	completar	clip	nom		
+comics	descartar				sin tilde: cómics
+cómics	corregir	cómic	nom		
+conocimos	completar	conocer	verb		
+detesto	completar	detestar	verb		
+dic	descartar				abreviatura
+energia	descartar				sin tilde: energía
+escucharon	completar	escuchar	verb		
+gordos	completar	gordo	adj		
+harás	completar	hacer	verb		
+homo	descartar				latín, fragmento
+lineas	descartar				sin tilde: líneas
+manager	marcar	manager	nom	extranjera	
+manden	completar	mandar	verb		
+mandé	corregir	mandar	verb		
+pañales	completar	pañal	nom		
+prof	descartar				abreviatura
+service	descartar				inglés
+soporto	completar	soportar	verb		
+television	descartar				sin tilde: televisión
+tia	descartar				sin tilde: tía
+trabajé	completar	trabajar	verb		
+user	descartar				inglés
+animar	completar	animar	verb		
+annie	completar	annie	npropi		
+busques	completar	buscar	verb		
+cambié	completar	cambiar	verb		
+carcel	descartar				sin tilde: cárcel
+cascos	corregir	casco	nom		
+casillas	corregir	casilla	nom		
+castaño	completar	castaño	adj		
+caño	completar	caño	nom		
+comas	corregir	coma	nom		
+cuéntame	completar	contar	verb		
+daily	descartar				inglés
+edit	descartar				inglés
+end	descartar				inglés
+escalar	completar	escalar	verb		
+esconden	completar	esconder	verb		
+fort	descartar				inglés
+gomez	descartar				sin tilde: gómez
+logan	completar	logan	npropi		
+madame	corregir	madame	nom	extranjera	
+mirad	completar	mirar	verb		
+mobile	descartar				inglés
+mon	descartar				francés o fragmento
+pelotuda	completar	pelotudo	adj	malsonante+americano	
+photoshop	completar	photoshop	npropi		
+plásticas	corregir	plástico	adj		
+pondré	completar	poner	verb		
+prender	completar	prender	verb		
+queramos	completar	querer	verb		
+quisieras	completar	querer	verb		
+religion	descartar				sin tilde: religión
+repitiendo	corregir	repetir	verb		
+sabado	descartar				sin tilde: sábado
+sabés	completar	saber	verb	americano	
+saltos	corregir	salto	nom		
+seo	descartar				sigla
+sex	descartar				inglés
+tequila	corregir	tequila	nom		
+tr	descartar				abreviatura
+ups	corregir	ups	interj		
+var	descartar				sigla
+want	descartar				inglés
+almacenar	completar	almacenar	verb		
+anita	completar	anita	npropi		
+apoyamos	completar	apoyar	verb		
+aprenda	corregir	aprender	verb		
+atún	completar	atún	nom		
+bajen	completar	bajar	verb		
+combo	completar	combo	nom		
+conceptual	completar	conceptual	adj		
+dark	descartar				inglés
+dirigencia	completar	dirigencia	nom	americano	
+exito	descartar				sin tilde: éxito
+ga	descartar				fragmento
+golden	descartar				inglés
+hablarte	completar	hablar	verb		
+hara	descartar				sin tilde: hará
+hunter	completar	hunter	npropi		
+irracional	completar	irracional	adj		
+ji	descartar				onomatopeya
+jodidos	completar	jodido	adj	malsonante	
+led	descartar				sigla
+made	descartar				inglés
+magna	corregir	magno	adj		
+mames	corregir	mamar	verb	malsonante+americano	
+mandamos	completar	mandar	verb		
+panama	descartar				sin tilde: panamá
+parásitos	corregir	parásito	nom		
+pasaste	completar	pasar	verb		
+pu	descartar				fragmento
+qui	descartar				fragmento
+remera	completar	remera	nom	americano	
+ring	marcar	ring	nom	extranjera	
+sc	descartar				sigla
+senior	corregir	senior	adj	extranjera	
+spain	descartar				inglés
+suegra	completar	suegro	nom		
+sueltos	completar	suelto	adj		
+transcripción	completar	transcripción	nom		
+ultimamente	descartar				sin tilde: últimamente
+wiki	marcar	wiki	nom	extranjera	
+yerba	marcar	yerba	nom	americano	
+únete	completar	unir	verb		
+aclaración	completar	aclaración	nom		
+adivina	completar	adivinar	verb		
+aguascalientes	completar	aguascalientes	npropi		
+ahhh	descartar				interjección de chat
+blues	marcar	blues	nom	extranjera	
+boys	descartar				inglés
+bárbaro	corregir	bárbaro	adj		
+caes	completar	caer	verb		
+capitan	descartar				sin tilde: capitán
+carpa	corregir	carpa	nom		
+contesto	completar	contestar	verb		
+desaparecidas	completar	desaparecido	adj		
+ey	completar	ey	interj		
+felix	descartar				sin tilde: félix
+fuma	completar	fumar	verb		
+graba	corregir	grabar	verb		
+gritan	completar	gritar	verb		
+guay	completar	guay	adj		
+haria	descartar				sin tilde: haría
+harold	completar	harold	npropi		
+hope	descartar				inglés
+hrs	descartar				abreviatura
+imaginé	completar	imaginar	verb		
+itinerario	completar	itinerario	nom		
+law	descartar				inglés
+legión	corregir	legión	nom		
+logré	completar	lograr	verb		
+machismo	completar	machismo	nom		
+mota	corregir	mota	nom		
+nalgas	completar	nalga	nom	malsonante	
+plátano	corregir	plátano	nom		
+port	descartar				inglés
+preste	corregir	prestar	verb		
+revolucionarias	corregir	revolucionario	adj		
+rosado	completar	rosado	adj		
+subí	completar	subir	verb		
+traté	completar	tratar	verb		
+um	descartar				interjección de chat
+victimas	descartar				sin tilde: víctimas
+view	descartar				inglés
+zero	descartar				inglés
+action	descartar				inglés
+age	descartar				inglés
+agitación	completar	agitación	nom		
+estadía	marcar	estadía	nom	americano	
+monitoreo	marcar	monitoreo	nom	americano	
+bendita	corregir	bendito	adj		
+boliche	corregir	boliche	nom	americano	
+bon	descartar				francés
+brad	completar	brad	npropi		
+calienta	completar	calentar	verb		
+casamiento	completar	casamiento	nom		
+cerebros	completar	cerebro	nom		
+conozcas	completar	conocer	verb		
+curiosidades	completar	curiosidad	nom		
+desarrollador	completar	desarrollador	nom		
+duermen	corregir	dormir	verb		
+earth	descartar				inglés
+facu	descartar				abreviatura coloquial
+fire	descartar				inglés
+fuí	descartar				tilde incorrecta: fui
+galán	corregir	galán	nom		
+ganaste	completar	ganar	verb		
+gemelas	corregir	gemelo	nom		
+giles	marcar	gil	nom	malsonante+americano	
+hablarme	completar	hablar	verb		
+haha	descartar				internet
+hornos	corregir	horno	nom		
+jeans	marcar	jeans	nom	extranjera	
+links	marcar	link	nom	extranjera	
+malvado	completar	malvado	adj		
+metropolitano	corregir	metropolitano	adj		
+milla	corregir	milla	nom		
+monton	descartar				sin tilde: montón
+moro	corregir	moro	nom		
+muchísima	completar	muchísimo	det		
+ocupadas	completar	ocupado	adj		
+pendeja	completar	pendejo	nom	malsonante+americano	
+ping	descartar				inglés o fragmento
+preguntes	completar	preguntar	verb		
+quedarnos	completar	quedar	verb		
+quedate	marcar	quedar	verb	americano	
+quemada	corregir	quemado	adj		
+research	descartar				inglés
+science	descartar				inglés
+sinopsis	corregir	sinopsis	nom		
+sports	descartar				inglés
+trayendo	corregir	traer	verb		
+when	descartar				inglés
+word	descartar				inglés
+afiliado	completar	afiliado	nom		
+amenazando	completar	amenazar	verb		
+aprendes	completar	aprender	verb		
+arg	descartar				abreviatura
+aveces	descartar				error: a veces
+bi	descartar				prefijo suelto
+cosmos	corregir	cosmos	nom		
+cuide	completar	cuidar	verb		
+cállate	completar	callar	verb		
+decido	completar	decidir	verb		
+decime	completar	decir	verb	americano	
+dream	descartar				inglés
+drive	descartar				inglés
+encontrarte	completar	encontrar	verb		
+estuvieras	completar	estar	verb		
+exitosos	completar	exitoso	adj		
+explicarle	completar	explicar	verb		
+perdiste	completar	perder	verb		

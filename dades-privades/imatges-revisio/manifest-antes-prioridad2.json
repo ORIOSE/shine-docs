@@ -1,0 +1,4502 @@
+{
+  "version": "1.0",
+  "estilo": "flat-vector-v1",
+  "lote": 1,
+  "fecha": "2026-10-22T04:31:44+02:00",
+  "generado_con": "herramienta integrada image_gen; modelo no expuesto",
+  "referencias_estilo": [
+    "gato.png",
+    "manzana.png",
+    "coche.png"
+  ],
+  "posproceso_nuevas": {
+    "tamano": [
+      512,
+      512
+    ],
+    "modo": "RGBA de 8 bits por canal",
+    "margen_minimo": 0.14,
+    "lado_maximo_contenido_px": 368,
+    "alfa": {
+      "valores_menores_o_iguales_a_16": 0,
+      "valores_mayores_o_iguales_a_240": 255
+    },
+    "anclas_modificadas": false
+  },
+  "resumen": {
+    "aceptada": 13,
+    "candidatas": 145,
+    "descartada": 1,
+    "pendiente": 0
+  },
+  "imagenes": [
+    {
+      "fichero": "gato.png",
+      "nombre": "gato",
+      "articulo": "el",
+      "silabas": "ga-to",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "subcategoria": "felinos",
+      "etiquetas": [
+        "vis:felinos",
+        "fon:ga-"
+      ],
+      "pista_visual": "orange tabby cat sitting, front view",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": true,
+      "sha256": "9fa54398f7318a16081dbed77dd06968821f9d0fb4aac4df4392ed2612380f05",
+      "bytes": 63037
+    },
+    {
+      "fichero": "manzana.png",
+      "nombre": "manzana",
+      "articulo": "la",
+      "silabas": "man-za-na",
+      "lectura": "L1",
+      "categoria": "frutas",
+      "subcategoria": "rojo",
+      "etiquetas": [
+        "vis:rojo",
+        "vis:redondo",
+        "fon:man-"
+      ],
+      "pista_visual": "red apple with leaf",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": true,
+      "sha256": "447cd5ada719096e267ee361e46c20571f9df64158cb9d84ebf1f5d258d44281",
+      "bytes": 24896
+    },
+    {
+      "fichero": "coche.png",
+      "nombre": "coche",
+      "articulo": "el",
+      "silabas": "co-che",
+      "lectura": "L1",
+      "categoria": "vehiculos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos",
+        "fon:co-"
+      ],
+      "pista_visual": "small blue car, side view",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": true,
+      "sha256": "545ff2e72feb690a002661a07be55a492c26f33453cd1827f668afd13cb17441",
+      "bytes": 35575
+    },
+    {
+      "fichero": "perro.png",
+      "nombre": "perro",
+      "articulo": "el",
+      "silabas": "pe-rro",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "subcategoria": "cánidos",
+      "etiquetas": [
+        "vis:cánidos",
+        "fon:pe-"
+      ],
+      "pista_visual": "friendly brown dog standing, side view, floppy ears",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 2,
+      "sha256": "841f548f9ef804055cc2e8e9dfe6d01f25ff41d3e8c8430cf1139189bcb2a64b",
+      "bytes": 101914,
+      "fecha": "2026-10-21T23:33:32+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "friendly brown dog sitting, floppy ears",
+      "nota": "Lote 1 aprobado; sustitución de pose expresamente autorizada y comprobada."
+    },
+    {
+      "fichero": "lobo.png",
+      "nombre": "lobo",
+      "articulo": "el",
+      "silabas": "lo-bo",
+      "lectura": "L1",
+      "categoria": "animales-salvajes",
+      "subcategoria": "cánidos",
+      "etiquetas": [
+        "vis:cánidos",
+        "fon:lo-"
+      ],
+      "pista_visual": "grey wolf standing, side view, pointed ears",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "610c37d000864007f40f83d780cc48986ffe7581cf22976057a302f09deae2b0",
+      "bytes": 116354
+    },
+    {
+      "fichero": "zorro.png",
+      "nombre": "zorro",
+      "articulo": "el",
+      "silabas": "zo-rro",
+      "lectura": "L1",
+      "categoria": "animales-salvajes",
+      "subcategoria": "cánidos",
+      "etiquetas": [
+        "vis:cánidos",
+        "fon:-rro"
+      ],
+      "pista_visual": "orange fox with white chest and bushy tail, side view",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "15fe697f08c9ca7caf3461186675e828d36a2089e24909b535254c2beacc4663",
+      "bytes": 108287
+    },
+    {
+      "fichero": "gorro.png",
+      "nombre": "gorro",
+      "articulo": "el",
+      "silabas": "go-rro",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "subcategoria": "sombreros",
+      "etiquetas": [
+        "vis:sombreros",
+        "fon:go-"
+      ],
+      "pista_visual": "knitted winter hat with pom-pom",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "4df984b5d55985849be895732329053540a1acc7cd27102b4409e4aa1e50246e",
+      "bytes": 115515
+    },
+    {
+      "fichero": "gorra.png",
+      "nombre": "gorra",
+      "articulo": "la",
+      "silabas": "go-rra",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "subcategoria": "sombreros",
+      "etiquetas": [
+        "vis:sombreros",
+        "fon:go-"
+      ],
+      "pista_visual": "baseball cap with visor, side view",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "53a0de7336fd42857f2ff643488086db8f37038dc00112d2e552fb7f11f42faf",
+      "bytes": 70450
+    },
+    {
+      "fichero": "pato.png",
+      "nombre": "pato",
+      "articulo": "el",
+      "silabas": "pa-to",
+      "lectura": "L0",
+      "categoria": "animales-domesticos-y-de-granja",
+      "subcategoria": "aves",
+      "etiquetas": [
+        "vis:aves",
+        "fon:pa-"
+      ],
+      "pista_visual": "white duck with orange beak standing, side view",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "a88d7f29eed41687f10def362dfdeb5fd71465f50185405daaa35158690a577c",
+      "bytes": 83116
+    },
+    {
+      "fichero": "pollito.png",
+      "nombre": "pollito",
+      "articulo": "el",
+      "silabas": "po-lli-to",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "vis:aves",
+        "fon:po-"
+      ],
+      "pista_visual": "small fluffy yellow chick, front view",
+      "prioridad": 2,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "8bfb30519b3b27d303a1c9501beb0995cb9fa1eaa0e01f2a05f475e45172cfad",
+      "bytes": 103244
+    },
+    {
+      "fichero": "pie.png",
+      "nombre": "pie",
+      "articulo": "el",
+      "silabas": "pie",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "fon:pi-"
+      ],
+      "pista_visual": "bare human foot, side view (a foot, not a pie)",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "8f97eed070fbb226472b4175b4fe7c7c5a46d51444d3efa6af2945eded245996",
+      "bytes": 77261
+    },
+    {
+      "fichero": "pila.png",
+      "nombre": "pila",
+      "articulo": "la",
+      "silabas": "pi-la",
+      "lectura": "L0",
+      "categoria": "herramientas-y-objetos",
+      "subcategoria": "alargado",
+      "etiquetas": [
+        "vis:alargado",
+        "fon:pi-"
+      ],
+      "pista_visual": "single AA battery, no text",
+      "prioridad": 2,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "8caf38f5dd67efdea653b963cf3ca4577cfd908a11ca60b91703ea58e3890794",
+      "bytes": 60654
+    },
+    {
+      "fichero": "dado.png",
+      "nombre": "dado",
+      "articulo": "el",
+      "silabas": "da-do",
+      "lectura": "L0",
+      "categoria": "colegio-y-juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [
+        "espejo:d",
+        "fon:da-"
+      ],
+      "pista_visual": "white six-sided die showing dots only, no digits",
+      "prioridad": 1,
+      "estado": "aceptada",
+      "fondo": "transparente",
+      "ancla": false,
+      "intentos": 1,
+      "sha256": "eb0e71fcdf334a56616a5c33e6f7580ae7e200f6040185418000a5e979ac26de",
+      "bytes": 118231
+    },
+    {
+      "fichero": "vaca.png",
+      "nombre": "vaca",
+      "articulo": "la",
+      "silabas": "va-ca",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "granja",
+      "etiquetas": [
+        "vis:granja",
+        "fon:va-"
+      ],
+      "pista_visual": "black and white dairy cow standing, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "54632b45fbd83d76d6ac625b1f3abcce37b4033c179ca2959457319f6fb9d89b",
+      "bytes": 110365,
+      "fecha": "2026-10-21T23:35:00+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cerdo.png",
+      "nombre": "cerdo",
+      "articulo": "el",
+      "silabas": "cer-do",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "granja",
+      "etiquetas": [
+        "vis:granja"
+      ],
+      "pista_visual": "pink pig standing, side view, curly tail",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "4a25eb500da347313d0918ba78cdb5c8eb4ac28309d1b3be1c41060f8255d5b8",
+      "bytes": 103968,
+      "fecha": "2026-10-21T23:35:52+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "oveja.png",
+      "nombre": "oveja",
+      "articulo": "la",
+      "silabas": "o-ve-ja",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "granja",
+      "etiquetas": [
+        "vis:granja"
+      ],
+      "pista_visual": "fluffy white sheep with black face, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "c1305621f3f3a286d53f1df31e82ef5bb903e19f09d05b31921840f281a628be",
+      "bytes": 113030,
+      "fecha": "2026-10-21T23:36:53+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cabra.png",
+      "nombre": "cabra",
+      "articulo": "la",
+      "silabas": "ca-bra",
+      "lectura": "L2",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "granja",
+      "etiquetas": [
+        "vis:granja",
+        "fon:ca-"
+      ],
+      "pista_visual": "white goat with small horns and beard, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "770782bfc17f8df508cbbdb0c7863f1f324bc6b51667900b78a47c41bc99345c",
+      "bytes": 111668,
+      "fecha": "2026-10-21T23:37:46+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "caballo.png",
+      "nombre": "caballo",
+      "articulo": "el",
+      "silabas": "ca-ba-llo",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "granja",
+      "etiquetas": [
+        "vis:granja",
+        "fon:ca-"
+      ],
+      "pista_visual": "brown horse standing, side view, flowing mane",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "acba7ee0355a2a26aa59ea147a98acbead9fadfc987b6e6b235a0fbc05664ad9",
+      "bytes": 101313,
+      "fecha": "2026-10-21T23:38:50+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "gallina.png",
+      "nombre": "gallina",
+      "articulo": "la",
+      "silabas": "ga-lli-na",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "aves",
+      "etiquetas": [
+        "vis:aves",
+        "vis:granja",
+        "fon:ga-"
+      ],
+      "pista_visual": "brown hen standing, red comb, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "1077013b788891eed33b565f4e9083ae0d4d8ac0abf65df88eb9e25398743220",
+      "bytes": 90790,
+      "fecha": "2026-10-21T23:39:40+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "conejo.png",
+      "nombre": "conejo",
+      "articulo": "el",
+      "silabas": "co-ne-jo",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "animales-domesticos-y-de-granja",
+      "etiquetas": [
+        "fon:co-"
+      ],
+      "pista_visual": "white rabbit sitting, long upright ears",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "99d4e5f8fe4df8c63ac1a103bf1cff83dcd05b89c3610240881f9eb682ce2935",
+      "bytes": 98332,
+      "fecha": "2026-10-21T23:40:43+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "raton.png",
+      "nombre": "ratón",
+      "articulo": "el",
+      "silabas": "ra-tón",
+      "lectura": "L1",
+      "categoria": "animales-domesticos-y-de-granja",
+      "categoria_titulo": "Animales domésticos y de granja",
+      "subcategoria": "animales-domesticos-y-de-granja",
+      "etiquetas": [
+        "fon:ra-"
+      ],
+      "pista_visual": "small grey mouse, round ears, long thin tail",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "9b325caaaf8f6beea76e2096ad8a477e8a26f06754a7944622878dfebedf0d5d",
+      "bytes": 116850,
+      "fecha": "2026-10-21T23:41:45+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "perro.png",
+        "pato.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "leon.png",
+      "nombre": "león",
+      "articulo": "el",
+      "silabas": "le-ón",
+      "lectura": "L3",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "felinos",
+      "etiquetas": [
+        "vis:felinos",
+        "vis:amarillo"
+      ],
+      "pista_visual": "male lion sitting with big mane, front view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "8673b50c49f4b3cd9e462005833abebc8713ea1fcef0fcff0ad70125f0d1c658",
+      "bytes": 119890,
+      "fecha": "2026-10-21T23:43:13+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tigre.png",
+      "nombre": "tigre",
+      "articulo": "el",
+      "silabas": "ti-gre",
+      "lectura": "L2",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "felinos",
+      "etiquetas": [
+        "vis:felinos"
+      ],
+      "pista_visual": "orange tiger sitting, front view, same seated frontal pose as approved cat, black stripes simplified into a few large shapes",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 3,
+      "sha256": "8aef27617e43a7d325a269e880c96ec2aa6095bd2a22e30907ea81d32c954713",
+      "bytes": 117364,
+      "fecha": "2026-10-22T00:00:26+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "orange tiger with black stripes, side view"
+    },
+    {
+      "fichero": "oso.png",
+      "nombre": "oso",
+      "articulo": "el",
+      "silabas": "o-so",
+      "lectura": "L0",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "marrón",
+      "etiquetas": [
+        "vis:marrón",
+        "fon:o-"
+      ],
+      "pista_visual": "brown bear standing on four legs, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "34f4111d7a4f796c85718c699f5cd48f6f57deb054f0e4a9efc327a607249a90",
+      "bytes": 118400,
+      "fecha": "2026-10-22T00:19:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "mono.png",
+      "nombre": "mono",
+      "articulo": "el",
+      "silabas": "mo-no",
+      "lectura": "L0",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "animales-salvajes",
+      "etiquetas": [
+        "fon:mo-"
+      ],
+      "pista_visual": "brown monkey sitting, long tail, friendly face",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "2d481cea8297accd5fca11ed4027ed954ccd5a6296ccb6484eb26c7fb5417d2c",
+      "bytes": 119035,
+      "fecha": "2026-10-22T00:19:59+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "elefante.png",
+      "nombre": "elefante",
+      "articulo": "el",
+      "silabas": "e-le-fan-te",
+      "lectura": "L3",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "gris",
+      "etiquetas": [
+        "vis:gris"
+      ],
+      "pista_visual": "grey elephant standing, side view, trunk down",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "a6d4e1ac9cbbb7f6cca52a2498fb2d0a854079a27f1db8d6cf6f0ba36f337743",
+      "bytes": 108478,
+      "fecha": "2026-10-22T00:20:49+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "jirafa.png",
+      "nombre": "jirafa",
+      "articulo": "la",
+      "silabas": "ji-ra-fa",
+      "lectura": "L1",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo"
+      ],
+      "pista_visual": "giraffe standing, full body, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "6b8b6a2740b11a5a1590e48e38da567c5711830e5d437dea92666f44b55b2256",
+      "bytes": 80428,
+      "fecha": "2026-10-22T00:21:45+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cebra.png",
+      "nombre": "cebra",
+      "articulo": "la",
+      "silabas": "ce-bra",
+      "lectura": "L2",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "rayas",
+      "etiquetas": [
+        "vis:rayas"
+      ],
+      "pista_visual": "zebra standing, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "84e05ee201865c9c2adb7523197de644c923b979c9711099a7727b24802faa99",
+      "bytes": 119646,
+      "fecha": "2026-10-22T00:22:52+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cocodrilo.png",
+      "nombre": "cocodrilo",
+      "articulo": "el",
+      "silabas": "co-co-dri-lo",
+      "lectura": "L3",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde",
+        "fon:co-"
+      ],
+      "pista_visual": "green crocodile, side view, mouth closed",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "37412964f121e98c28c249d56fdf63e52f7bac4c1f3914a6d39f412b6a3eec01",
+      "bytes": 83897,
+      "fecha": "2026-10-22T00:23:53+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "serpiente.png",
+      "nombre": "serpiente",
+      "articulo": "la",
+      "silabas": "ser-pien-te",
+      "lectura": "L1",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde"
+      ],
+      "pista_visual": "green snake coiled with head raised, friendly",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "19437ef04cb982b69cf7f2516b75b93c213e06d7cf12e04a6b1131ae58727c85",
+      "bytes": 114474,
+      "fecha": "2026-10-22T00:24:50+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tortuga.png",
+      "nombre": "tortuga",
+      "articulo": "la",
+      "silabas": "tor-tu-ga",
+      "lectura": "L1",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde",
+        "fon:tor-"
+      ],
+      "pista_visual": "green turtle walking, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "801bd8c30a5c8f386cd278f64e61bdd41864542bbe1bfe092918fd9cf0fa05cf",
+      "bytes": 98718,
+      "fecha": "2026-10-22T00:25:26+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "rana.png",
+      "nombre": "rana",
+      "articulo": "la",
+      "silabas": "ra-na",
+      "lectura": "L1",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde",
+        "fon:ra-"
+      ],
+      "pista_visual": "green frog sitting, front view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 2,
+      "sha256": "700f5356e08efefa6d7f1f84a47a7c0f19d418c392bd3b6c8c46a160b580d41c",
+      "bytes": 114683,
+      "fecha": "2026-10-22T00:27:11+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "caracol.png",
+      "nombre": "caracol",
+      "articulo": "el",
+      "silabas": "ca-ra-col",
+      "lectura": "L1",
+      "categoria": "animales-salvajes",
+      "categoria_titulo": "Animales salvajes",
+      "subcategoria": "animales-salvajes",
+      "etiquetas": [
+        "fon:ca-"
+      ],
+      "pista_visual": "snail with spiral brown shell, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 2,
+      "sha256": "36260136e268e4f497202ea11b389ff2a5ad364e3fdfdab1c492dad83906dcf9",
+      "bytes": 88534,
+      "fecha": "2026-10-22T00:29:27+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "lobo.png",
+        "zorro.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pajaro.png",
+      "nombre": "pájaro",
+      "articulo": "el",
+      "silabas": "pá-ja-ro",
+      "lectura": "L1",
+      "categoria": "aves",
+      "categoria_titulo": "Aves",
+      "subcategoria": "aves",
+      "etiquetas": [
+        "vis:aves",
+        "fon:pa-"
+      ],
+      "pista_visual": "small blue songbird standing on its own feet, side view, same profile pose as approved duck, no branch",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "711cbb82cb57460a3128000c73801c3b0c989c3f877adbe036f97beb4527a107",
+      "bytes": 93655,
+      "fecha": "2026-10-22T00:30:12+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "small blue songbird perched, side view"
+    },
+    {
+      "fichero": "paloma.png",
+      "nombre": "paloma",
+      "articulo": "la",
+      "silabas": "pa-lo-ma",
+      "lectura": "L1",
+      "categoria": "aves",
+      "categoria_titulo": "Aves",
+      "subcategoria": "aves",
+      "etiquetas": [
+        "vis:aves",
+        "vis:blanco",
+        "fon:pa-"
+      ],
+      "pista_visual": "white dove standing, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "92aef164c48e9e5d908e310ef08c7463578a9703b53cc636a6262c5d5691775d",
+      "bytes": 101117,
+      "fecha": "2026-10-22T00:31:10+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "loro.png",
+      "nombre": "loro",
+      "articulo": "el",
+      "silabas": "lo-ro",
+      "lectura": "L1",
+      "categoria": "aves",
+      "categoria_titulo": "Aves",
+      "subcategoria": "aves",
+      "etiquetas": [
+        "vis:aves",
+        "vis:verde",
+        "fon:lo-"
+      ],
+      "pista_visual": "green parrot with red and yellow wing, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "4ca1e5049569b2179c07b3f7f2963117fc8e35e1b71a9b659ebb74f0599ba850",
+      "bytes": 97650,
+      "fecha": "2026-10-22T00:32:03+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "buho.png",
+      "nombre": "búho",
+      "articulo": "el",
+      "silabas": "bú-ho",
+      "lectura": "L3",
+      "categoria": "aves",
+      "categoria_titulo": "Aves",
+      "subcategoria": "aves",
+      "etiquetas": [
+        "vis:aves",
+        "espejo:b"
+      ],
+      "pista_visual": "brown owl standing, side view, big round eye, same profile pose as approved duck",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "a15b76eba3ff7d2f73330bf614bb41e3a85d6789bed4478b87008b8582d37eed",
+      "bytes": 101276,
+      "fecha": "2026-10-22T00:33:08+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "brown owl sitting, big round eyes, front view"
+    },
+    {
+      "fichero": "pinguino.png",
+      "nombre": "pingüino",
+      "articulo": "el",
+      "silabas": "pin-güi-no",
+      "lectura": "L2",
+      "categoria": "aves",
+      "categoria_titulo": "Aves",
+      "subcategoria": "aves",
+      "etiquetas": [
+        "vis:aves",
+        "fon:pin-"
+      ],
+      "pista_visual": "penguin standing, side view, same profile pose as approved duck, black back and white belly, short flipper and feet visible",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "2e1d23d86fd5d1d4f0e9ea947273ab8555b7fd0a9ef3a7c0e629cf84cecfc20f",
+      "bytes": 85309,
+      "fecha": "2026-10-22T02:00:49+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "penguin standing, front view"
+    },
+    {
+      "fichero": "pez.png",
+      "nombre": "pez",
+      "articulo": "el",
+      "silabas": "pez",
+      "lectura": "L1",
+      "categoria": "animales-marinos",
+      "categoria_titulo": "Animales marinos",
+      "subcategoria": "mar",
+      "etiquetas": [
+        "vis:mar",
+        "fon:pe-"
+      ],
+      "pista_visual": "orange goldfish, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "e2607fc90372357c4b03207695807cf33966fb2b02dd40d52177b13896d0e3dc",
+      "bytes": 100786,
+      "fecha": "2026-10-22T02:02:14+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tiburon.png",
+      "nombre": "tiburón",
+      "articulo": "el",
+      "silabas": "ti-bu-rón",
+      "lectura": "L1",
+      "categoria": "animales-marinos",
+      "categoria_titulo": "Animales marinos",
+      "subcategoria": "mar",
+      "etiquetas": [
+        "vis:mar",
+        "vis:gris"
+      ],
+      "pista_visual": "friendly grey shark, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "c8d9276c2f60fbe4587ecb705a7f8f37017b8ddc2678ed81966b5047ca9b2d4a",
+      "bytes": 73164,
+      "fecha": "2026-10-22T02:02:59+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "delfin.png",
+      "nombre": "delfín",
+      "articulo": "el",
+      "silabas": "del-fín",
+      "lectura": "L1",
+      "categoria": "animales-marinos",
+      "categoria_titulo": "Animales marinos",
+      "subcategoria": "mar",
+      "etiquetas": [
+        "vis:mar"
+      ],
+      "pista_visual": "grey-blue dolphin jumping, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "f4bdff25e96fb99a2ebf777aa29be1efd4b45ede4fbb99f7dd5397e3e6d9c42d",
+      "bytes": 88057,
+      "fecha": "2026-10-22T02:03:42+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "ballena.png",
+      "nombre": "ballena",
+      "articulo": "la",
+      "silabas": "ba-lle-na",
+      "lectura": "L1",
+      "categoria": "animales-marinos",
+      "categoria_titulo": "Animales marinos",
+      "subcategoria": "mar",
+      "etiquetas": [
+        "vis:mar",
+        "vis:azul"
+      ],
+      "pista_visual": "blue whale, side view, small water spout",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "a3a52a24ed1e7e32990a1ba176e9f28941ca5527d98bb943f2e05c68c4e4fd53",
+      "bytes": 74697,
+      "fecha": "2026-10-22T02:04:44+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pulpo.png",
+      "nombre": "pulpo",
+      "articulo": "el",
+      "silabas": "pul-po",
+      "lectura": "L1",
+      "categoria": "animales-marinos",
+      "categoria_titulo": "Animales marinos",
+      "subcategoria": "mar",
+      "etiquetas": [
+        "vis:mar",
+        "fon:pu-"
+      ],
+      "pista_visual": "purple octopus, front view, eight tentacles",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 2,
+      "sha256": "a4ca1cc5d610fc0b9cf213bb728262e607beaab1db654b16270d748f85cbfacc",
+      "bytes": 116083,
+      "fecha": "2026-10-22T02:06:42+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "abeja.png",
+      "nombre": "abeja",
+      "articulo": "la",
+      "silabas": "a-be-ja",
+      "lectura": "L1",
+      "categoria": "insectos-y-bichos",
+      "categoria_titulo": "Insectos y bichos",
+      "subcategoria": "insectos",
+      "etiquetas": [
+        "vis:insectos",
+        "vis:amarillo"
+      ],
+      "pista_visual": "striped yellow and black bee, front view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "405af5b1f7e3ae9723052afcc5b769d56be08f6b372c6f803d2487ecc19a7973",
+      "bytes": 111585,
+      "fecha": "2026-10-22T02:08:26+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "mariposa.png",
+      "nombre": "mariposa",
+      "articulo": "la",
+      "silabas": "ma-ri-po-sa",
+      "lectura": "L3",
+      "categoria": "insectos-y-bichos",
+      "categoria_titulo": "Insectos y bichos",
+      "subcategoria": "insectos",
+      "etiquetas": [
+        "vis:insectos",
+        "fon:ma-"
+      ],
+      "pista_visual": "butterfly with open blue and orange wings, top view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "0d695ef1a3115b8c2ca1ebc0828ae192fa029b12946987ea2b97fbc7dab55a3d",
+      "bytes": 113548,
+      "fecha": "2026-10-22T02:09:17+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "hormiga.png",
+      "nombre": "hormiga",
+      "articulo": "la",
+      "silabas": "hor-mi-ga",
+      "lectura": "L1",
+      "categoria": "insectos-y-bichos",
+      "categoria_titulo": "Insectos y bichos",
+      "subcategoria": "insectos",
+      "etiquetas": [
+        "vis:insectos"
+      ],
+      "pista_visual": "black ant, side view",
+      "prioridad": 1,
+      "estado": "descartada",
+      "fondo": "transparente",
+      "intentos": 3,
+      "motivo": "No se logró una ilustración inequívoca tras tres intentos de revisión. Solo se distinguen cinco patas y cinco extremos; no se consiguió representar seis patas separadas en tres intentos. Se descarta por anatomía incorrecta.",
+      "fecha": "2026-10-22T02:12:44+02:00"
+    },
+    {
+      "fichero": "mariquita.png",
+      "nombre": "mariquita",
+      "articulo": "la",
+      "silabas": "ma-ri-qui-ta",
+      "lectura": "L3",
+      "categoria": "insectos-y-bichos",
+      "categoria_titulo": "Insectos y bichos",
+      "subcategoria": "insectos",
+      "etiquetas": [
+        "vis:insectos",
+        "vis:rojo",
+        "fon:ma-"
+      ],
+      "pista_visual": "red ladybug with black dots, top view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "3c543125a7a36895d7f0078837f4933a9b600afcf583b95113fa0989769b8197",
+      "bytes": 104275,
+      "fecha": "2026-10-22T02:13:58+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pera.png",
+      "nombre": "pera",
+      "articulo": "la",
+      "silabas": "pe-ra",
+      "lectura": "L1",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde",
+        "fon:pe-"
+      ],
+      "pista_visual": "green pear with stem",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "57270abbc186b1026740002194ba6f7216ef0e05f2fc3b57e967dd5add562d20",
+      "bytes": 74580,
+      "fecha": "2026-10-22T02:15:05+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "platano.png",
+      "nombre": "plátano",
+      "articulo": "el",
+      "silabas": "plá-ta-no",
+      "lectura": "L2",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "fon:pla-"
+      ],
+      "pista_visual": "single ripe yellow banana",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "af73c04694ed1e405ed80bc63ee6772e7efef6b08cb12412f952d36d687353c3",
+      "bytes": 65209,
+      "fecha": "2026-10-22T02:16:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "naranja.png",
+      "nombre": "naranja",
+      "articulo": "la",
+      "silabas": "na-ran-ja",
+      "lectura": "L1",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "naranja",
+      "etiquetas": [
+        "vis:naranja",
+        "vis:redondo"
+      ],
+      "pista_visual": "whole orange fruit with leaf",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "cb9f3bdebb373680a875fea2f840736c5e9a81960cbeefc94258d68b5a2f2cce",
+      "bytes": 93774,
+      "fecha": "2026-10-22T02:17:06+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "limon.png",
+      "nombre": "limón",
+      "articulo": "el",
+      "silabas": "li-món",
+      "lectura": "L1",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "fon:li-"
+      ],
+      "pista_visual": "whole yellow lemon",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "83f4b828a88b1ba8897ea433ba57dec300fc400d5eeac5b647e5f166e8360587",
+      "bytes": 92131,
+      "fecha": "2026-10-22T02:18:03+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "fresa.png",
+      "nombre": "fresa",
+      "articulo": "la",
+      "silabas": "fre-sa",
+      "lectura": "L2",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "rojo",
+      "etiquetas": [
+        "vis:rojo",
+        "fon:fre-"
+      ],
+      "pista_visual": "red strawberry with green leaves",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "966b0c8c891088f7970f9b6a58c193d311da4bdf955b34860fc34989870f792b",
+      "bytes": 114566,
+      "fecha": "2026-10-22T02:19:05+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "uva.png",
+      "nombre": "uva",
+      "articulo": "la",
+      "silabas": "u-va",
+      "lectura": "L1",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "morado",
+      "etiquetas": [
+        "vis:morado"
+      ],
+      "pista_visual": "bunch of purple grapes",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "7082278e7a8192fa0f8381c58d603fb845fff0e362a904421d216872b2949bcb",
+      "bytes": 103676,
+      "fecha": "2026-10-22T02:19:52+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "sandia.png",
+      "nombre": "sandía",
+      "articulo": "la",
+      "silabas": "san-dí-a",
+      "lectura": "L3",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "rojo",
+      "etiquetas": [
+        "vis:rojo",
+        "vis:verde"
+      ],
+      "pista_visual": "watermelon slice, red with black seeds",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "c950c70b2f8bd00bfcc854a075919c9032854e53a77640a7a3df185cb49392e9",
+      "bytes": 76755,
+      "fecha": "2026-10-22T02:21:11+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cereza.png",
+      "nombre": "cereza",
+      "articulo": "la",
+      "silabas": "ce-re-za",
+      "lectura": "L1",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "rojo",
+      "etiquetas": [
+        "vis:rojo",
+        "vis:redondo"
+      ],
+      "pista_visual": "two red cherries joined by stem",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "b40f340eda5950f07aca0415493fea046208ad2aa7fd923b6386751c72c3e4e0",
+      "bytes": 92758,
+      "fecha": "2026-10-22T02:22:16+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pina.png",
+      "nombre": "piña",
+      "articulo": "la",
+      "silabas": "pi-ña",
+      "lectura": "L1",
+      "categoria": "frutas",
+      "categoria_titulo": "Frutas",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "fon:pi-"
+      ],
+      "pista_visual": "whole pineapple",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "6f1e6c40d1d61723aeb889461d0ac143580ca68463316e019cb85738dfcb72a8",
+      "bytes": 105903,
+      "fecha": "2026-10-22T02:23:03+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tomate.png",
+      "nombre": "tomate",
+      "articulo": "el",
+      "silabas": "to-ma-te",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "rojo",
+      "etiquetas": [
+        "vis:rojo",
+        "vis:redondo",
+        "fon:to-"
+      ],
+      "pista_visual": "red tomato with green stem",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "3eb53c524fb0a35a485cd887d82f8f84eac1dca7f2d817d7caafebc5415dd263",
+      "bytes": 109102,
+      "fecha": "2026-10-22T02:23:49+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "zanahoria.png",
+      "nombre": "zanahoria",
+      "articulo": "la",
+      "silabas": "za-na-ho-ria",
+      "lectura": "L3",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "naranja",
+      "etiquetas": [
+        "vis:naranja",
+        "vis:alargado"
+      ],
+      "pista_visual": "orange carrot with green leaves",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "a8a43bcb8bb39bea15fbdfc977e4c96f8a298d7832266b1a70cf03eabb414d68",
+      "bytes": 73632,
+      "fecha": "2026-10-22T02:24:36+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "patata.png",
+      "nombre": "patata",
+      "articulo": "la",
+      "silabas": "pa-ta-ta",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "marrón",
+      "etiquetas": [
+        "vis:marrón",
+        "fon:pa-"
+      ],
+      "pista_visual": "brown potato",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "b88f54fc0ba4cb695ac821cf629a5e7aedbb3275d6e4eeab5926e8586a5b440b",
+      "bytes": 109005,
+      "fecha": "2026-10-22T02:25:19+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "seta.png",
+      "nombre": "seta",
+      "articulo": "la",
+      "silabas": "se-ta",
+      "lectura": "L0",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "verduras-y-comida",
+      "etiquetas": [
+        "fon:se-"
+      ],
+      "pista_visual": "mushroom with brown cap",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "291e121edde7f1a5c2942076960c951439bb465585460b215b1965cebc40aa32",
+      "bytes": 101149,
+      "fecha": "2026-10-22T02:26:05+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pan.png",
+      "nombre": "pan",
+      "articulo": "el",
+      "silabas": "pan",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "marrón",
+      "etiquetas": [
+        "vis:marrón",
+        "fon:pan-",
+        "fon:pa-"
+      ],
+      "pista_visual": "loaf of bread (baguette style)",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "d22fd97da6db5037794b6fa6ec75941321a4e59dcb01db54de4dd0f8fdf52a6f",
+      "bytes": 63863,
+      "fecha": "2026-10-22T02:27:07+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "queso.png",
+      "nombre": "queso",
+      "articulo": "el",
+      "silabas": "que-so",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "espejo:q"
+      ],
+      "pista_visual": "wedge of yellow cheese with holes",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "da859eddc257c54e119725b95aee8052ca27697103e3f3bbf1e4c0807177361a",
+      "bytes": 104141,
+      "fecha": "2026-10-22T02:28:24+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "huevo.png",
+      "nombre": "huevo",
+      "articulo": "el",
+      "silabas": "hue-vo",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "blanco",
+      "etiquetas": [
+        "vis:blanco",
+        "vis:amarillo"
+      ],
+      "pista_visual": "fried egg, top view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "87a410a8845fc58f47c3161ab7e4b3afd0f8596c539be10f5ddfa2d8db1ae243",
+      "bytes": 102738,
+      "fecha": "2026-10-22T02:29:10+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "leche.png",
+      "nombre": "leche",
+      "articulo": "la",
+      "silabas": "le-che",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "blanco",
+      "etiquetas": [
+        "vis:blanco",
+        "fon:le-"
+      ],
+      "pista_visual": "glass of milk with a milk carton behind it",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "42e602118330f226b3d2663b6217bc1279f56168ba2744bdcfdff8af2b9bc881",
+      "bytes": 102181,
+      "fecha": "2026-10-22T02:30:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "sopa.png",
+      "nombre": "sopa",
+      "articulo": "la",
+      "silabas": "so-pa",
+      "lectura": "L0",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "verduras-y-comida",
+      "etiquetas": [
+        "fon:so-"
+      ],
+      "pista_visual": "bowl of soup with steam",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "70cfb4c20a175048f678bafeb725b988d1e0c6996723d502518960a4fdc272c0",
+      "bytes": 98426,
+      "fecha": "2026-10-22T02:30:48+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pizza.png",
+      "nombre": "pizza",
+      "articulo": "la",
+      "silabas": "piz-za",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "redondo",
+      "etiquetas": [
+        "vis:redondo"
+      ],
+      "pista_visual": "whole round pizza, top view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "1792fa8f93eb0b8ed6933e20dfb5819398e5cfb3582d7db2e77232a4b616a4fa",
+      "bytes": 119912,
+      "fecha": "2026-10-22T02:32:01+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tarta.png",
+      "nombre": "tarta",
+      "articulo": "la",
+      "silabas": "tar-ta",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "verduras-y-comida",
+      "etiquetas": [
+        "fon:tar-"
+      ],
+      "pista_visual": "layered birthday cake without candles or text",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "be9d920bd2290109943a8a6cebf7acbe501a98a7eca39a9c83ec719a97adbab5",
+      "bytes": 113984,
+      "fecha": "2026-10-22T02:33:18+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "helado.png",
+      "nombre": "helado",
+      "articulo": "el",
+      "silabas": "he-la-do",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "verduras-y-comida",
+      "etiquetas": [],
+      "pista_visual": "ice cream cone with two scoops",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "06546bc8c5d6611823214acbfabe376c5f3541ed9d2878dd8a7c07fb635d0c05",
+      "bytes": 74235,
+      "fecha": "2026-10-22T02:34:26+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "galleta.png",
+      "nombre": "galleta",
+      "articulo": "la",
+      "silabas": "ga-lle-ta",
+      "lectura": "L1",
+      "categoria": "verduras-y-comida",
+      "categoria_titulo": "Verduras y comida",
+      "subcategoria": "redondo",
+      "etiquetas": [
+        "vis:redondo",
+        "vis:marrón",
+        "fon:ga-"
+      ],
+      "pista_visual": "round chocolate chip cookie",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "9eeee56a8408a4e35a672fbad6e0bad655ea8a01edfcc388a0cd3dbe5bdb37a5",
+      "bytes": 113573,
+      "fecha": "2026-10-22T02:35:39+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "casa.png",
+      "nombre": "casa",
+      "articulo": "la",
+      "silabas": "ca-sa",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:ca-"
+      ],
+      "pista_visual": "simple house with red roof and door",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 2,
+      "sha256": "24222a5b82b39017f4eced5954db283e3f948797ccce78886fcc6c88ac25cf13",
+      "bytes": 104669,
+      "fecha": "2026-10-22T02:37:34+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "mesa.png",
+      "nombre": "mesa",
+      "articulo": "la",
+      "silabas": "me-sa",
+      "lectura": "L0",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:me-"
+      ],
+      "pista_visual": "wooden table, front view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "31b451ffa7adbd4b9f23f38c96852ba8755e829dbad99497812d0f9edb115dbd",
+      "bytes": 49491,
+      "fecha": "2026-10-22T02:38:19+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "silla.png",
+      "nombre": "silla",
+      "articulo": "la",
+      "silabas": "si-lla",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:si-"
+      ],
+      "pista_visual": "wooden chair, front view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "fed8145eaafcadc1259e74866fbad3f0fa4112cb43d5a59a4eb6a2d2e3113f40",
+      "bytes": 74666,
+      "fecha": "2026-10-22T02:38:50+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cama.png",
+      "nombre": "cama",
+      "articulo": "la",
+      "silabas": "ca-ma",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:ca-"
+      ],
+      "pista_visual": "bed with pillow and blue blanket",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "cef17fe71d87ed53b7ad430ab12e2592808d73484ef2f1f12ca4b99b43bc925d",
+      "bytes": 94053,
+      "fecha": "2026-10-22T02:39:52+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "sofa.png",
+      "nombre": "sofá",
+      "articulo": "el",
+      "silabas": "so-fá",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:so-"
+      ],
+      "pista_visual": "green two-seat sofa",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "6ff86a07b93e53942a2a00c3848b4b07d2ff752b3220025226119f81b13dcf1d",
+      "bytes": 69986,
+      "fecha": "2026-10-22T02:41:05+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "lampara.png",
+      "nombre": "lámpara",
+      "articulo": "la",
+      "silabas": "lám-pa-ra",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [],
+      "pista_visual": "table lamp with shade, switched off",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "216889f019a81f52a9c9d751a755888dc25c6967ecce8d4ecbb95f16e9f2b578",
+      "bytes": 77385,
+      "fecha": "2026-10-22T02:42:09+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "puerta.png",
+      "nombre": "puerta",
+      "articulo": "la",
+      "silabas": "puer-ta",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "marrón",
+      "etiquetas": [
+        "vis:marrón"
+      ],
+      "pista_visual": "closed wooden door with handle",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "eef04bdabbaa05cdd10ee854bfdf04fdd2564cfc3ac44f93e2714ba84ba5bf41",
+      "bytes": 83466,
+      "fecha": "2026-10-22T02:43:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "ventana.png",
+      "nombre": "ventana",
+      "articulo": "la",
+      "silabas": "ven-ta-na",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [],
+      "pista_visual": "window with four panes and curtains",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "8b587f483586af5b0f2d72001064557f1ed308db1c8e51cb70266efb6bc0c6fc",
+      "bytes": 111935,
+      "fecha": "2026-10-22T02:44:11+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "espejo.png",
+      "nombre": "espejo",
+      "articulo": "el",
+      "silabas": "es-pe-jo",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [],
+      "pista_visual": "oval mirror with frame",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "aeca5e48b0322b9bfe5e7a5a7c0154c38038efbd88015746d9ac025f154cbccf",
+      "bytes": 107552,
+      "fecha": "2026-10-22T02:45:14+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "reloj.png",
+      "nombre": "reloj",
+      "articulo": "el",
+      "silabas": "re-loj",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "redondo",
+      "etiquetas": [
+        "vis:redondo"
+      ],
+      "pista_visual": "round wall clock without numerals, hands at ten past ten",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "7f2bec619e3d610ac2020fcb31ab07fbb35936ceaf303a549c96f34dd24e858a",
+      "bytes": 113020,
+      "fecha": "2026-10-22T02:46:32+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "telefono.png",
+      "nombre": "teléfono",
+      "articulo": "el",
+      "silabas": "te-lé-fo-no",
+      "lectura": "L3",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:te-"
+      ],
+      "pista_visual": "smartphone with blank screen",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "8dd9f6fc36123c0ed56ad2ca39dec7b110adb29b4a235d5cef8134a7e26c1ec1",
+      "bytes": 81645,
+      "fecha": "2026-10-22T02:47:32+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "llave.png",
+      "nombre": "llave",
+      "articulo": "la",
+      "silabas": "lla-ve",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo"
+      ],
+      "pista_visual": "single old-style key",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "88cf3e3a1c988e7f882e78a98e893dd86d037e6aa2d37a2761f3848439e88d15",
+      "bytes": 77955,
+      "fecha": "2026-10-22T02:48:30+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cubo.png",
+      "nombre": "cubo",
+      "articulo": "el",
+      "silabas": "cu-bo",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:cu-"
+      ],
+      "pista_visual": "blue plastic bucket with handle",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "fed03a7be69675563d905f4296afa4977b485e8400be67b3115b4108c12f5d8b",
+      "bytes": 118101,
+      "fecha": "2026-10-22T02:49:16+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "vela.png",
+      "nombre": "vela",
+      "articulo": "la",
+      "silabas": "ve-la",
+      "lectura": "L1",
+      "categoria": "casa-y-muebles",
+      "categoria_titulo": "Casa y muebles",
+      "subcategoria": "casa-y-muebles",
+      "etiquetas": [
+        "fon:ve-"
+      ],
+      "pista_visual": "lit candle",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "0bd763fcbc3670fb9fbc2249f3ad8d88a1d0569cb88fa30c87d82d0c5f577a83",
+      "bytes": 61007,
+      "fecha": "2026-10-22T02:50:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "plato.png",
+      "nombre": "plato",
+      "articulo": "el",
+      "silabas": "pla-to",
+      "lectura": "L2",
+      "categoria": "cocina-y-mesa",
+      "categoria_titulo": "Cocina y mesa",
+      "subcategoria": "redondo",
+      "etiquetas": [
+        "vis:redondo",
+        "vis:blanco",
+        "fon:pla-"
+      ],
+      "pista_visual": "empty white round plate, slight top view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "02b74cf7e1c10c5818eb5af2c75ea021cc9757f0b7b7ea2bbf3c55839c6866e5",
+      "bytes": 87565,
+      "fecha": "2026-10-22T02:50:37+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "vaso.png",
+      "nombre": "vaso",
+      "articulo": "el",
+      "silabas": "va-so",
+      "lectura": "L1",
+      "categoria": "cocina-y-mesa",
+      "categoria_titulo": "Cocina y mesa",
+      "subcategoria": "cocina-y-mesa",
+      "etiquetas": [
+        "fon:va-"
+      ],
+      "pista_visual": "clear drinking glass with water",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "d9b021272fc523d9a42c2efa7266afbd2466cadf1ba72faacb7b84b7419185d3",
+      "bytes": 108866,
+      "fecha": "2026-10-22T02:51:20+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "taza.png",
+      "nombre": "taza",
+      "articulo": "la",
+      "silabas": "ta-za",
+      "lectura": "L1",
+      "categoria": "cocina-y-mesa",
+      "categoria_titulo": "Cocina y mesa",
+      "subcategoria": "cocina-y-mesa",
+      "etiquetas": [
+        "fon:ta-"
+      ],
+      "pista_visual": "mug with handle, steam",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "873f651b41a1ffda7a5f4a0919ad2bb511d1b55e2838349d215e46d17c7bb6de",
+      "bytes": 83290,
+      "fecha": "2026-10-22T02:52:25+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cuchara.png",
+      "nombre": "cuchara",
+      "articulo": "la",
+      "silabas": "cu-cha-ra",
+      "lectura": "L1",
+      "categoria": "cocina-y-mesa",
+      "categoria_titulo": "Cocina y mesa",
+      "subcategoria": "cocina-y-mesa",
+      "etiquetas": [
+        "fon:cu-"
+      ],
+      "pista_visual": "metal spoon",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "28d61795312a1e62067c2104041ea4a61b1034308dbf1da827fc2157fbea2601",
+      "bytes": 56350,
+      "fecha": "2026-10-22T02:53:10+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tenedor.png",
+      "nombre": "tenedor",
+      "articulo": "el",
+      "silabas": "te-ne-dor",
+      "lectura": "L1",
+      "categoria": "cocina-y-mesa",
+      "categoria_titulo": "Cocina y mesa",
+      "subcategoria": "cocina-y-mesa",
+      "etiquetas": [
+        "fon:te-"
+      ],
+      "pista_visual": "metal fork",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "8303e9f301fbed2e2218d34f17e5548bb36da033e598cc7cd028c8d5e80625fa",
+      "bytes": 62618,
+      "fecha": "2026-10-22T02:54:06+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "botella.png",
+      "nombre": "botella",
+      "articulo": "la",
+      "silabas": "bo-te-lla",
+      "lectura": "L1",
+      "categoria": "cocina-y-mesa",
+      "categoria_titulo": "Cocina y mesa",
+      "subcategoria": "cocina-y-mesa",
+      "etiquetas": [
+        "fon:bo-"
+      ],
+      "pista_visual": "water bottle with blue cap, no label",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "acec5f18e31a9dd1c91d23ff3f6f4110d526c1ad8a2778f08677d7b9989e62af",
+      "bytes": 63445,
+      "fecha": "2026-10-22T02:55:12+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "libro.png",
+      "nombre": "libro",
+      "articulo": "el",
+      "silabas": "li-bro",
+      "lectura": "L2",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [
+        "fon:li-"
+      ],
+      "pista_visual": "closed book with blue cover, no title",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "46216db11e03672be218ecdf0c66f0dae7616c61dd0c8593974e6ff3b4e2ce2e",
+      "bytes": 88848,
+      "fecha": "2026-10-22T02:56:14+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "lapiz.png",
+      "nombre": "lápiz",
+      "articulo": "el",
+      "silabas": "lá-piz",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "vis:alargado",
+        "fon:la-"
+      ],
+      "pista_visual": "yellow pencil with pink eraser",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "a65730260db7afb37531cc86b94a56c22399f70610c9c67ea75f2305b23f6306",
+      "bytes": 77952,
+      "fecha": "2026-10-22T02:57:10+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "goma.png",
+      "nombre": "goma",
+      "articulo": "la",
+      "silabas": "go-ma",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [
+        "fon:go-"
+      ],
+      "pista_visual": "pink eraser block",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "c7809e85bc822b9e6c7786700b4eb695e409fb5b0e9a19e6b99267e69cfa75ad",
+      "bytes": 74508,
+      "fecha": "2026-10-22T02:58:31+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tijeras.png",
+      "nombre": "tijeras",
+      "articulo": "las",
+      "silabas": "ti-je-ras",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [],
+      "pista_visual": "scissors with red handles, closed",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 2,
+      "sha256": "15466a225c73aa172c050b530c1881795a011a61f90085a4deb86ea53ad313fd",
+      "bytes": 76927,
+      "fecha": "2026-10-22T03:00:36+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "mochila.png",
+      "nombre": "mochila",
+      "articulo": "la",
+      "silabas": "mo-chi-la",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [
+        "fon:mo-"
+      ],
+      "pista_visual": "school backpack",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "2927f4dd8c693e5a4bc5a6cb6529f4e885e7b3c8edf4350e022f8b3ae18ab417",
+      "bytes": 109764,
+      "fecha": "2026-10-22T03:01:14+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pelota.png",
+      "nombre": "pelota",
+      "articulo": "la",
+      "silabas": "pe-lo-ta",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "redondo",
+      "etiquetas": [
+        "vis:redondo",
+        "vis:rojo",
+        "fon:pe-"
+      ],
+      "pista_visual": "small red bouncing ball",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "e10a1c2e64733e1bea6d7b4387b2eb4f348e6dc0fbd2be96ccc309a6855ec8ad",
+      "bytes": 117766,
+      "fecha": "2026-10-22T03:02:20+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "balon.png",
+      "nombre": "balón",
+      "articulo": "el",
+      "silabas": "ba-lón",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "redondo",
+      "etiquetas": [
+        "vis:redondo"
+      ],
+      "pista_visual": "classic black and white football",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "886f8d9a88be6c06c121730d222aa27659cd0a060e0c971b2da9e49c5122208c",
+      "bytes": 111691,
+      "fecha": "2026-10-22T03:02:55+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "muneca.png",
+      "nombre": "muñeca",
+      "articulo": "la",
+      "silabas": "mu-ñe-ca",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [
+        "fon:mu-"
+      ],
+      "pista_visual": "rag doll with yarn hair and dress",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "cfd0ca5d0605a26d3fb60cc06f995a3103fcdb2f3ed99c5ed865ce503aaf916f",
+      "bytes": 112240,
+      "fecha": "2026-10-22T03:04:29+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cometa.png",
+      "nombre": "cometa",
+      "articulo": "la",
+      "silabas": "co-me-ta",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [
+        "fon:co-"
+      ],
+      "pista_visual": "diamond kite with tail (a kite, not a comet)",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "2f1f15a8b44978c0993e6ca9642aaed1eb4da47c1ff6b1742b00d94889bf4136",
+      "bytes": 56444,
+      "fecha": "2026-10-22T03:05:36+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "globo.png",
+      "nombre": "globo",
+      "articulo": "el",
+      "silabas": "glo-bo",
+      "lectura": "L2",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "rojo",
+      "etiquetas": [
+        "vis:rojo",
+        "vis:redondo",
+        "fon:glo-"
+      ],
+      "pista_visual": "single red party balloon on a string",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "069ad33edca5860bd0a20d6c9297652c3d99c8029426d44cb9472f14682d6cbe",
+      "bytes": 51736,
+      "fecha": "2026-10-22T03:06:43+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pala.png",
+      "nombre": "pala",
+      "articulo": "la",
+      "silabas": "pa-la",
+      "lectura": "L0",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [
+        "fon:pa-"
+      ],
+      "pista_visual": "small sand shovel",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "337f46fdf4a260f6cdca6ecdc694e787f7aae1be4c8772518fb9549f49fbac25",
+      "bytes": 58997,
+      "fecha": "2026-10-22T03:07:48+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "robot.png",
+      "nombre": "robot",
+      "articulo": "el",
+      "silabas": "ro-bot",
+      "lectura": "L1",
+      "categoria": "colegio-y-juguetes",
+      "categoria_titulo": "Colegio y juguetes",
+      "subcategoria": "colegio-y-juguetes",
+      "etiquetas": [],
+      "pista_visual": "friendly toy robot, front view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "76fa04037232ae42a984d7759b23cd2f19f3aae15aebffdf01ba3907b4f23575",
+      "bytes": 91797,
+      "fecha": "2026-10-22T03:09:37+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "dado.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "camion.png",
+      "nombre": "camión",
+      "articulo": "el",
+      "silabas": "ca-mión",
+      "lectura": "L1",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos",
+        "fon:ca-"
+      ],
+      "pista_visual": "red truck, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "dc65112994d2e53a35e0f07e111ed4c336759b68643bf56c664f200411fb1a5e",
+      "bytes": 67786,
+      "fecha": "2026-10-22T03:11:20+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "autobus.png",
+      "nombre": "autobús",
+      "articulo": "el",
+      "silabas": "au-to-bús",
+      "lectura": "L1",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos",
+        "vis:amarillo"
+      ],
+      "pista_visual": "yellow bus, side view, no text",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "83d2a701cc56f56924093dddc4e1442e7685ca9b8df3f2652ae3ce2bbed64892",
+      "bytes": 75540,
+      "fecha": "2026-10-22T03:12:30+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "moto.png",
+      "nombre": "moto",
+      "articulo": "la",
+      "silabas": "mo-to",
+      "lectura": "L0",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos",
+        "fon:mo-"
+      ],
+      "pista_visual": "motorbike, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "ad5437d94322aceaefcb995952c655e32667ac0b98606bf62b576d64ebdff70d",
+      "bytes": 98503,
+      "fecha": "2026-10-22T03:13:55+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "bicicleta.png",
+      "nombre": "bicicleta",
+      "articulo": "la",
+      "silabas": "bi-ci-cle-ta",
+      "lectura": "L3",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos"
+      ],
+      "pista_visual": "bicycle, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "997a2006e549b426040703d3fafc8be9ff39ecd51a0819d909486c278e0a02ee",
+      "bytes": 87842,
+      "fecha": "2026-10-22T03:15:26+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tren.png",
+      "nombre": "tren",
+      "articulo": "el",
+      "silabas": "tren",
+      "lectura": "L2",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos",
+        "fon:tr-"
+      ],
+      "pista_visual": "steam locomotive with one wagon, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "80ca1bc863557205ae59a4ef0687862066abdd92bc713a4c71b825f843074e43",
+      "bytes": 68742,
+      "fecha": "2026-10-22T03:16:08+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "barco.png",
+      "nombre": "barco",
+      "articulo": "el",
+      "silabas": "bar-co",
+      "lectura": "L1",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos",
+        "vis:mar"
+      ],
+      "pista_visual": "small boat with sail, side view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "9425739f0ca650131762b90637150f94b708b80063cfe76f3ad2b956d65ee3e4",
+      "bytes": 85515,
+      "fecha": "2026-10-22T03:17:55+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "avion.png",
+      "nombre": "avión",
+      "articulo": "el",
+      "silabas": "a-vión",
+      "lectura": "L1",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos"
+      ],
+      "pista_visual": "passenger airplane, side view, nose pointing right",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "dc3bc6b35c711a430a32b64766b4bb5d24a3ad42117d180b2ca14e5220449e66",
+      "bytes": 66822,
+      "fecha": "2026-10-22T03:19:21+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "passenger airplane, three-quarter view"
+    },
+    {
+      "fichero": "cohete.png",
+      "nombre": "cohete",
+      "articulo": "el",
+      "silabas": "co-he-te",
+      "lectura": "L1",
+      "categoria": "vehiculos",
+      "categoria_titulo": "Vehículos",
+      "subcategoria": "vehículos",
+      "etiquetas": [
+        "vis:vehículos",
+        "fon:co-"
+      ],
+      "pista_visual": "space rocket, horizontal side view, nose pointing right",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "ce4aa9af953d50ed4ae2c3f994c939bd076feafef0f023f75c31d92432ca9273",
+      "bytes": 61882,
+      "fecha": "2026-10-22T03:20:24+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "space rocket, upright"
+    },
+    {
+      "fichero": "camiseta.png",
+      "nombre": "camiseta",
+      "articulo": "la",
+      "silabas": "ca-mi-se-ta",
+      "lectura": "L3",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa",
+      "etiquetas": [
+        "vis:ropa",
+        "fon:ca-"
+      ],
+      "pista_visual": "plain green t-shirt",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "0394d6b8135636a31b3c4bb43f70608c2b816f07c62cf8fcf8377afd58d1fd6d",
+      "bytes": 103459,
+      "fecha": "2026-10-22T03:29:25+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pantalon.png",
+      "nombre": "pantalón",
+      "articulo": "el",
+      "silabas": "pan-ta-lón",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa",
+      "etiquetas": [
+        "vis:ropa",
+        "fon:pan-"
+      ],
+      "pista_visual": "blue jeans",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "cd1b7c2ac9a13e9d903b3809b0dfc7628efcd64db9f20b3be5c6d1598be49cfd",
+      "bytes": 115699,
+      "fecha": "2026-10-22T03:30:30+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "falda.png",
+      "nombre": "falda",
+      "articulo": "la",
+      "silabas": "fal-da",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa",
+      "etiquetas": [
+        "vis:ropa"
+      ],
+      "pista_visual": "red skirt",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "d5b3d59027988f6d3c0fb0dcbc9e8bd57e499b2fc8f82e4c0ceb6d0a8bd58d27",
+      "bytes": 92278,
+      "fecha": "2026-10-22T03:31:55+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "vestido.png",
+      "nombre": "vestido",
+      "articulo": "el",
+      "silabas": "ves-ti-do",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa",
+      "etiquetas": [
+        "vis:ropa"
+      ],
+      "pista_visual": "simple yellow dress",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "4f95d3cca8f1a95357b2b31df5ba6c35fce54577488f7978c2ec5edf29b9dae8",
+      "bytes": 114165,
+      "fecha": "2026-10-22T03:33:40+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "zapato.png",
+      "nombre": "zapato",
+      "articulo": "el",
+      "silabas": "za-pa-to",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "calzado",
+      "etiquetas": [
+        "vis:calzado"
+      ],
+      "pista_visual": "single classic brown leather dress shoe with thin dark sole and low heel, side view, toe pointing right",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 2,
+      "sha256": "14ea26f6fa803f775217fed20ea668dac3ba4132c3bc91d1dbb068217f8e4994",
+      "bytes": 57589,
+      "fecha": "2026-10-22T03:35:36+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "single brown shoe, side view"
+    },
+    {
+      "fichero": "bota.png",
+      "nombre": "bota",
+      "articulo": "la",
+      "silabas": "bo-ta",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "calzado",
+      "etiquetas": [
+        "vis:calzado",
+        "fon:bo-"
+      ],
+      "pista_visual": "single yellow rain boot",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "07e4115e67a0ea9a76184ac84d1732d01ed29d5c6f4825d08f3678ddac6119d0",
+      "bytes": 103090,
+      "fecha": "2026-10-22T03:36:30+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "calcetin.png",
+      "nombre": "calcetín",
+      "articulo": "el",
+      "silabas": "cal-ce-tín",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa",
+      "etiquetas": [
+        "vis:ropa"
+      ],
+      "pista_visual": "single striped sock",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "9d5a81ae2894afe4a32798ea3f5fb35d632d9fdb0eef7e34e7e716ab4b1a8d44",
+      "bytes": 83560,
+      "fecha": "2026-10-22T03:37:50+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "bufanda.png",
+      "nombre": "bufanda",
+      "articulo": "la",
+      "silabas": "bu-fan-da",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa",
+      "etiquetas": [
+        "vis:ropa"
+      ],
+      "pista_visual": "striped scarf",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "bd170f0610d5869a546a63338fc08e9c4eea5290b920f950dfb26009ba6500c9",
+      "bytes": 112430,
+      "fecha": "2026-10-22T03:39:35+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "gafas.png",
+      "nombre": "gafas",
+      "articulo": "las",
+      "silabas": "ga-fas",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa-y-complementos",
+      "etiquetas": [
+        "fon:ga-"
+      ],
+      "pista_visual": "pair of eyeglasses",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "747a4b3aec92d4b1c9d356c39868d9de4eef99a2c1490517fb7908a53e0969d0",
+      "bytes": 67055,
+      "fecha": "2026-10-22T03:40:59+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "corona.png",
+      "nombre": "corona",
+      "articulo": "la",
+      "silabas": "co-ro-na",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "fon:co-"
+      ],
+      "pista_visual": "gold royal crown",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "4aff9d806ae72ab9c0994531e1ba40a79916f9175ba92d51025c2ce92de3b42e",
+      "bytes": 100009,
+      "fecha": "2026-10-22T03:42:00+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "paraguas.png",
+      "nombre": "paraguas",
+      "articulo": "el",
+      "silabas": "pa-ra-guas",
+      "lectura": "L1",
+      "categoria": "ropa-y-complementos",
+      "categoria_titulo": "Ropa y complementos",
+      "subcategoria": "ropa-y-complementos",
+      "etiquetas": [
+        "fon:pa-"
+      ],
+      "pista_visual": "open umbrella",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "536956540be495ea66b4a3f00f05cee7706697c6e292535e2ac9be38415e08d2",
+      "bytes": 72315,
+      "fecha": "2026-10-22T03:42:57+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "gorro.png",
+        "gorra.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "mano.png",
+      "nombre": "mano",
+      "articulo": "la",
+      "silabas": "ma-no",
+      "lectura": "L0",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "fon:ma-"
+      ],
+      "pista_visual": "open human hand, palm forward",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "955f64d8f3bf3341381f0d128cf85fc8ddeb981e1ae9beecc1b113158ed2793d",
+      "bytes": 100215,
+      "fecha": "2026-10-22T03:44:23+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "cabeza.png",
+      "nombre": "cabeza",
+      "articulo": "la",
+      "silabas": "ca-be-za",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "fon:ca-"
+      ],
+      "pista_visual": "child head only, short brown hair, front view, friendly neutral smile, no neck or shoulders",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 2,
+      "sha256": "53f67213550ba65970ceb80899ff2434182b52a7a752ac2beb2365e129905c9a",
+      "bytes": 107451,
+      "fecha": "2026-10-22T03:46:25+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "child's head with short hair, front view, neutral smile"
+    },
+    {
+      "fichero": "ojo.png",
+      "nombre": "ojo",
+      "articulo": "el",
+      "silabas": "o-jo",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "fon:o-"
+      ],
+      "pista_visual": "single human eye with eyebrow",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "9723b11c4e967663b9879e42ddb212f266a16ca72d27faa39f594e48c7c4c7ac",
+      "bytes": 109794,
+      "fecha": "2026-10-22T03:47:33+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "nariz.png",
+      "nombre": "nariz",
+      "articulo": "la",
+      "silabas": "na-riz",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo"
+      ],
+      "pista_visual": "human nose, front view",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "a8db0b076a1b3e707f3f72eb27415bfced79f57dcb0c6fc15efcd72364d9129e",
+      "bytes": 88099,
+      "fecha": "2026-10-22T03:48:40+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "boca.png",
+      "nombre": "boca",
+      "articulo": "la",
+      "silabas": "bo-ca",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "fon:bo-"
+      ],
+      "pista_visual": "smiling mouth with lips and teeth",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "f7e8125fbc1db035d372bfa9e6fe8ecbce0eeadf311031ec411eacb12f923224",
+      "bytes": 78947,
+      "fecha": "2026-10-22T03:50:05+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "oreja.png",
+      "nombre": "oreja",
+      "articulo": "la",
+      "silabas": "o-re-ja",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "fon:o-"
+      ],
+      "pista_visual": "single human ear",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "fd10b95046158b555a315e2c4ffb852d5369325a13ef39a9a90740479c1967fb",
+      "bytes": 90107,
+      "fecha": "2026-10-22T03:51:12+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "dedo.png",
+      "nombre": "dedo",
+      "articulo": "el",
+      "silabas": "de-do",
+      "lectura": "L0",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "espejo:d",
+        "fon:de-"
+      ],
+      "pista_visual": "single index finger pointing up",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "23d71d8baa2f0667e40d674695a2fcfb952fb42367ba272c7bee0a735f706e5b",
+      "bytes": 75561,
+      "fecha": "2026-10-22T03:52:27+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "diente.png",
+      "nombre": "diente",
+      "articulo": "el",
+      "silabas": "dien-te",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "cuerpo",
+      "etiquetas": [
+        "vis:cuerpo",
+        "vis:blanco"
+      ],
+      "pista_visual": "single white tooth",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "449b37cbe8f2fab495bcfcea416465e4a1ff4f57b6bd608db16a40019777b0b7",
+      "bytes": 110311,
+      "fecha": "2026-10-22T03:53:13+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "corazon.png",
+      "nombre": "corazón",
+      "articulo": "el",
+      "silabas": "co-ra-zón",
+      "lectura": "L1",
+      "categoria": "cuerpo",
+      "categoria_titulo": "Cuerpo",
+      "subcategoria": "rojo",
+      "etiquetas": [
+        "vis:rojo",
+        "fon:co-"
+      ],
+      "pista_visual": "red heart symbol",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "92bb09537f0253da6026bf20e597dc6632c0aa81ec36b3a560685a4512ef1de1",
+      "bytes": 87209,
+      "fecha": "2026-10-22T03:54:23+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pie.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "sol.png",
+      "nombre": "sol",
+      "articulo": "el",
+      "silabas": "sol",
+      "lectura": "L1",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "vis:redondo",
+        "vis:cielo",
+        "fon:so-"
+      ],
+      "pista_visual": "yellow sun with rays, smiling softly",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "193cf9285bec1cf972fb313cf5c5ec97b7997fb346a640e135abeabf99f81e7b",
+      "bytes": 119856,
+      "fecha": "2026-10-22T03:55:35+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "luna.png",
+      "nombre": "luna",
+      "articulo": "la",
+      "silabas": "lu-na",
+      "lectura": "L0",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "cielo",
+      "etiquetas": [
+        "vis:cielo",
+        "fon:lu-"
+      ],
+      "pista_visual": "crescent moon",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "2a4581be2cfcaebd215b59bc9cf891989f98f53568d26761599cfb821b87977e",
+      "bytes": 89433,
+      "fecha": "2026-10-22T03:56:47+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "estrella.png",
+      "nombre": "estrella",
+      "articulo": "la",
+      "silabas": "es-tre-lla",
+      "lectura": "L2",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "amarillo",
+      "etiquetas": [
+        "vis:amarillo",
+        "vis:cielo"
+      ],
+      "pista_visual": "five-point yellow star",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "2abd9d2b128f353664b11e42b3ddda47a92e08188da3efa36753eadc9ff38de7",
+      "bytes": 81120,
+      "fecha": "2026-10-22T03:57:52+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "nube.png",
+      "nombre": "nube",
+      "articulo": "la",
+      "silabas": "nu-be",
+      "lectura": "L1",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "cielo",
+      "etiquetas": [
+        "vis:cielo",
+        "vis:blanco",
+        "fon:nu-"
+      ],
+      "pista_visual": "fluffy white cloud",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "fd251a6a65fb7939bd765d344f3d73a61d4732d761fb7cd1ba4b0499aecc95a7",
+      "bytes": 66996,
+      "fecha": "2026-10-22T03:59:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "lluvia.png",
+      "nombre": "lluvia",
+      "articulo": "la",
+      "silabas": "llu-via",
+      "lectura": "L1",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "cielo",
+      "etiquetas": [
+        "vis:cielo"
+      ],
+      "pista_visual": "grey cloud with falling raindrops",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "21558d58f793b8a488bb6a6d72077bb81af702747e67c352bde25b5fd681258e",
+      "bytes": 91805,
+      "fecha": "2026-10-22T04:00:13+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "arcoiris.png",
+      "nombre": "arcoíris",
+      "articulo": "el",
+      "silabas": "ar-co-í-ris",
+      "lectura": "L3",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "cielo",
+      "etiquetas": [
+        "vis:cielo"
+      ],
+      "pista_visual": "rainbow arc",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "9f9d204c93e2ca5fb1eaefad3005d6788667976efc446a11e92a55d35050fa4f",
+      "bytes": 78434,
+      "fecha": "2026-10-22T04:01:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "arbol.png",
+      "nombre": "árbol",
+      "articulo": "el",
+      "silabas": "ár-bol",
+      "lectura": "L1",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde",
+        "vis:plantas"
+      ],
+      "pista_visual": "round green tree with brown trunk",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "7f93cd1e9080e37da5a472738bd84cacc276aa47be87d99fb12ab1699bb8afc0",
+      "bytes": 92659,
+      "fecha": "2026-10-22T04:02:04+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "flor.png",
+      "nombre": "flor",
+      "articulo": "la",
+      "silabas": "flor",
+      "lectura": "L2",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "plantas",
+      "etiquetas": [
+        "vis:plantas",
+        "fon:fl-"
+      ],
+      "pista_visual": "single simple flower with five petals and stem",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "cd23dec008469d13abe40aca35b2a50c17eaafc61d7acb4953125e4a363b26ad",
+      "bytes": 97499,
+      "fecha": "2026-10-22T04:03:13+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "hoja.png",
+      "nombre": "hoja",
+      "articulo": "la",
+      "silabas": "ho-ja",
+      "lectura": "L1",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde",
+        "vis:plantas"
+      ],
+      "pista_visual": "single green leaf",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "c657b7fe92189e79e4b71736b37ab4927ef1f9bbce1a2b0c903625fc2bd2ba57",
+      "bytes": 90982,
+      "fecha": "2026-10-22T04:04:21+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "montana.png",
+      "nombre": "montaña",
+      "articulo": "la",
+      "silabas": "mon-ta-ña",
+      "lectura": "L1",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "naturaleza",
+      "etiquetas": [
+        "fon:mon-"
+      ],
+      "pista_visual": "mountain with snowy peak",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "47e286e69de2facb99e1f325031cd26745a425dbc9d4a1f7051b6fa4f8a5c9cd",
+      "bytes": 78501,
+      "fecha": "2026-10-22T04:05:33+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "fuego.png",
+      "nombre": "fuego",
+      "articulo": "el",
+      "silabas": "fue-go",
+      "lectura": "L1",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "naranja",
+      "etiquetas": [
+        "vis:naranja"
+      ],
+      "pista_visual": "campfire flames on logs",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "1e97ab8a0fccb7c45f1e0bfa794802faa7531911a6bf91e1f6131c7b97521920",
+      "bytes": 94612,
+      "fecha": "2026-10-22T04:07:02+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "pino.png",
+      "nombre": "pino",
+      "articulo": "el",
+      "silabas": "pi-no",
+      "lectura": "L0",
+      "categoria": "naturaleza",
+      "categoria_titulo": "Naturaleza",
+      "subcategoria": "plantas",
+      "etiquetas": [
+        "vis:plantas",
+        "vis:verde",
+        "fon:pi-"
+      ],
+      "pista_visual": "pine tree, triangular, green",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "907be80c6f2be839cfcea1270e70f072c7e115f91ea5ca06bc0d7285f4d6f838",
+      "bytes": 72234,
+      "fecha": "2026-10-22T04:08:11+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "castillo.png",
+      "nombre": "castillo",
+      "articulo": "el",
+      "silabas": "cas-ti-llo",
+      "lectura": "L1",
+      "categoria": "lugares-y-construcciones",
+      "categoria_titulo": "Lugares y construcciones",
+      "subcategoria": "edificios",
+      "etiquetas": [
+        "vis:edificios"
+      ],
+      "pista_visual": "stone castle with towers and flags",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "095bcd11406f5dcbdb628ad0f2c225f06c09783684324dcf02cfdb4de6b70b4b",
+      "bytes": 112111,
+      "fecha": "2026-10-22T04:09:38+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "martillo.png",
+      "nombre": "martillo",
+      "articulo": "el",
+      "silabas": "mar-ti-llo",
+      "lectura": "L1",
+      "categoria": "herramientas-y-objetos",
+      "categoria_titulo": "Herramientas y objetos",
+      "subcategoria": "herramientas",
+      "etiquetas": [
+        "vis:herramientas",
+        "fon:mar-"
+      ],
+      "pista_visual": "claw hammer",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "0399dfc4a72cd01f9a92c9ee02dc569991b319c5a0ede1140b85263b28e6f418",
+      "bytes": 65399,
+      "fecha": "2026-10-22T04:10:51+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pila.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "caja.png",
+      "nombre": "caja",
+      "articulo": "la",
+      "silabas": "ca-ja",
+      "lectura": "L1",
+      "categoria": "herramientas-y-objetos",
+      "categoria_titulo": "Herramientas y objetos",
+      "subcategoria": "marrón",
+      "etiquetas": [
+        "vis:marrón",
+        "fon:ca-"
+      ],
+      "pista_visual": "closed cardboard box",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "431b434e445348455467efacafc17c7f189f72333ddb014c9852abe6ef09c115",
+      "bytes": 102085,
+      "fecha": "2026-10-22T04:12:03+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pila.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "regalo.png",
+      "nombre": "regalo",
+      "articulo": "el",
+      "silabas": "re-ga-lo",
+      "lectura": "L1",
+      "categoria": "herramientas-y-objetos",
+      "categoria_titulo": "Herramientas y objetos",
+      "subcategoria": "herramientas-y-objetos",
+      "etiquetas": [],
+      "pista_visual": "wrapped gift box with bow",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "86ba03e39a5dec6b5acfcc4ed92da19854a369219dd226fcf7454a50ef2813c5",
+      "bytes": 107963,
+      "fecha": "2026-10-22T04:13:12+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pila.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "lupa.png",
+      "nombre": "lupa",
+      "articulo": "la",
+      "silabas": "lu-pa",
+      "lectura": "L0",
+      "categoria": "herramientas-y-objetos",
+      "categoria_titulo": "Herramientas y objetos",
+      "subcategoria": "redondo",
+      "etiquetas": [
+        "vis:redondo",
+        "fon:lu-"
+      ],
+      "pista_visual": "magnifying glass",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "72df61c688083aaedfc9ea0f2277ba1ca2fa4360d7dcfb28895ec981a057a7b6",
+      "bytes": 91110,
+      "fecha": "2026-10-22T04:14:57+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png",
+        "pila.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "guitarra.png",
+      "nombre": "guitarra",
+      "articulo": "la",
+      "silabas": "gui-ta-rra",
+      "lectura": "L2",
+      "categoria": "instrumentos-musicales",
+      "categoria_titulo": "Instrumentos musicales",
+      "subcategoria": "instrumentos",
+      "etiquetas": [
+        "vis:instrumentos"
+      ],
+      "pista_visual": "acoustic guitar",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "facc83e39b728d60ebc40c55f1a8cd49eba8746b682b5221624b950a775e445c",
+      "bytes": 66518,
+      "fecha": "2026-10-22T04:15:53+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "piano.png",
+      "nombre": "piano",
+      "articulo": "el",
+      "silabas": "pia-no",
+      "lectura": "L1",
+      "categoria": "instrumentos-musicales",
+      "categoria_titulo": "Instrumentos musicales",
+      "subcategoria": "instrumentos",
+      "etiquetas": [
+        "vis:instrumentos",
+        "fon:pi-"
+      ],
+      "pista_visual": "upright piano",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "c44296c25813b95bae19ef33daf74c088b52446185c78a657606fc241df847c1",
+      "bytes": 104070,
+      "fecha": "2026-10-22T04:17:23+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "tambor.png",
+      "nombre": "tambor",
+      "articulo": "el",
+      "silabas": "tam-bor",
+      "lectura": "L1",
+      "categoria": "instrumentos-musicales",
+      "categoria_titulo": "Instrumentos musicales",
+      "subcategoria": "instrumentos",
+      "etiquetas": [
+        "vis:instrumentos"
+      ],
+      "pista_visual": "drum with two sticks",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "984e02b8440fcb5a644b3a05099be053362e9d7f91d6b3e31d01bcf2e91dbe5b",
+      "bytes": 105099,
+      "fecha": "2026-10-22T04:18:42+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "flauta.png",
+      "nombre": "flauta",
+      "articulo": "la",
+      "silabas": "flau-ta",
+      "lectura": "L2",
+      "categoria": "instrumentos-musicales",
+      "categoria_titulo": "Instrumentos musicales",
+      "subcategoria": "instrumentos",
+      "etiquetas": [
+        "vis:instrumentos",
+        "vis:viento",
+        "fon:fl-"
+      ],
+      "pista_visual": "recorder flute, upright vertical, straight front view, complete body and finger holes visible",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "d0786c9d27c198339cb5cd49d5a488dbcac0335ed90797b29ea9148851eb3f8e",
+      "bytes": 33275,
+      "fecha": "2026-10-22T04:19:30+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB",
+      "pista_visual_original": "recorder flute"
+    },
+    {
+      "fichero": "pirata.png",
+      "nombre": "pirata",
+      "articulo": "el",
+      "silabas": "pi-ra-ta",
+      "lectura": "L1",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "personas",
+      "etiquetas": [
+        "vis:personas",
+        "fon:pi-"
+      ],
+      "pista_visual": "friendly pirate with hat and eye patch, no weapon",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "640da8226ff6e0124bf948557670d684428ffe8e5f6636e2ef1c88da5e089410",
+      "bytes": 96012,
+      "fecha": "2026-10-22T04:20:43+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "bruja.png",
+      "nombre": "bruja",
+      "articulo": "la",
+      "silabas": "bru-ja",
+      "lectura": "L2",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "personas",
+      "etiquetas": [
+        "vis:personas"
+      ],
+      "pista_visual": "friendly witch with pointed hat and broom",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "3ec6357ce2ecb8b1e61fbc86deeab00edd5b464d4ead2ee8fe43e729c235cc04",
+      "bytes": 105453,
+      "fecha": "2026-10-22T04:21:43+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "dragon.png",
+      "nombre": "dragón",
+      "articulo": "el",
+      "silabas": "dra-gón",
+      "lectura": "L2",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde"
+      ],
+      "pista_visual": "friendly green dragon with small wings",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "9788e189d51f7551dfbedad1de7675987b82d89e2bee18083a410bdf472f00da",
+      "bytes": 106657,
+      "fecha": "2026-10-22T04:23:22+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "fantasma.png",
+      "nombre": "fantasma",
+      "articulo": "el",
+      "silabas": "fan-tas-ma",
+      "lectura": "L1",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "blanco",
+      "etiquetas": [
+        "vis:blanco"
+      ],
+      "pista_visual": "cute white ghost",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "5cc2ec4ed344ecccead1a185311273b1f44e2a2ac54c785bec6ac697913a68c0",
+      "bytes": 112985,
+      "fecha": "2026-10-22T04:24:22+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "astronauta.png",
+      "nombre": "astronauta",
+      "articulo": "el",
+      "silabas": "as-tro-nau-ta",
+      "lectura": "L3",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "personas",
+      "etiquetas": [
+        "vis:personas",
+        "vis:blanco"
+      ],
+      "pista_visual": "astronaut in white spacesuit with helmet",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "8c1c2f0c72f55573a8efa9d20bc81bcc496971adbdcdff538ddd895d8e323d49",
+      "bytes": 117069,
+      "fecha": "2026-10-22T04:26:12+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "unicornio.png",
+      "nombre": "unicornio",
+      "articulo": "el",
+      "silabas": "u-ni-cor-nio",
+      "lectura": "L3",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "blanco",
+      "etiquetas": [
+        "vis:blanco"
+      ],
+      "pista_visual": "white unicorn with rainbow mane",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "8bf10fd94f87ba162525b0ccd481ba7c8e13ffce932286dd7c15c2a311f2b9b4",
+      "bytes": 109776,
+      "fecha": "2026-10-22T04:27:19+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "dinosaurio.png",
+      "nombre": "dinosaurio",
+      "articulo": "el",
+      "silabas": "di-no-sau-rio",
+      "lectura": "L3",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "verde",
+      "etiquetas": [
+        "vis:verde"
+      ],
+      "pista_visual": "friendly green long-neck dinosaur",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "324ceb8a2d0b59d4c7aab4b167031cddfadddaa5bf983b365cf81f36ff394a6c",
+      "bytes": 87657,
+      "fecha": "2026-10-22T04:28:27+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "payaso.png",
+      "nombre": "payaso",
+      "articulo": "el",
+      "silabas": "pa-ya-so",
+      "lectura": "L1",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "personas",
+      "etiquetas": [
+        "vis:personas",
+        "fon:pa-"
+      ],
+      "pista_visual": "clown with red nose and colorful outfit",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "39cef06c73152c178c5dd10e242ba5c6a3576f70a710cef15e1e03baa507d2d8",
+      "bytes": 104253,
+      "fecha": "2026-10-22T04:30:25+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    },
+    {
+      "fichero": "bebe.png",
+      "nombre": "bebé",
+      "articulo": "el",
+      "silabas": "be-bé",
+      "lectura": "L1",
+      "categoria": "personajes-y-profesiones",
+      "categoria_titulo": "Personajes y profesiones",
+      "subcategoria": "personas",
+      "etiquetas": [
+        "vis:personas",
+        "espejo:b"
+      ],
+      "pista_visual": "smiling baby in a onesie, sitting",
+      "prioridad": 1,
+      "estado": "candidatas",
+      "fondo": "transparente",
+      "intentos": 1,
+      "sha256": "2d79c3f9bbd7012f5411badfd9c5f98d2df965018d94ba8c2875302748f4edde",
+      "bytes": 112558,
+      "fecha": "2026-10-22T04:31:23+02:00",
+      "referencias_estilo": [
+        "gato.png",
+        "manzana.png",
+        "coche.png"
+      ],
+      "revision_tecnica": "512x512 RGBA, margen>=14%, alfa <=16 a 0 y >=240 a 255, <120KB"
+    }
+  ],
+  "fase": "prioridad1-completada-pendiente-revision",
+  "politica": "Solo prioridad 1 sin fichero; nuevas candidatas hasta revisión humana; anclas y aceptadas protegidas salvo perro autorizado.",
+  "pistas_visuales_modificadas": [
+    {
+      "fichero": "perro.png",
+      "original": "friendly brown dog sitting, floppy ears",
+      "utilizada": "friendly brown dog standing, side view, floppy ears",
+      "motivo": "Cambio de perro sentado a perro de pie y de lado solicitado por el usuario."
+    },
+    {
+      "fichero": "tigre.png",
+      "original": "orange tiger with black stripes, side view",
+      "utilizada": "orange tiger sitting, front view, same seated frontal pose as approved cat, black stripes simplified into a few large shapes",
+      "motivo": "Uniformar pose y punto de vista del grupo vis: según instrucción del usuario"
+    },
+    {
+      "fichero": "pajaro.png",
+      "original": "small blue songbird perched, side view",
+      "utilizada": "small blue songbird standing on its own feet, side view, same profile pose as approved duck, no branch",
+      "motivo": "Uniformar pose y punto de vista del grupo vis: según instrucción del usuario"
+    },
+    {
+      "fichero": "buho.png",
+      "original": "brown owl sitting, big round eyes, front view",
+      "utilizada": "brown owl standing, side view, big round eye, same profile pose as approved duck",
+      "motivo": "Uniformar pose y punto de vista del grupo vis: según instrucción del usuario"
+    },
+    {
+      "fichero": "pinguino.png",
+      "original": "penguin standing, front view",
+      "utilizada": "penguin standing, side view, same profile pose as approved duck, black back and white belly, short flipper and feet visible",
+      "motivo": "Uniformar pose y punto de vista del grupo vis: según instrucción del usuario"
+    },
+    {
+      "fichero": "avion.png",
+      "original": "passenger airplane, three-quarter view",
+      "utilizada": "passenger airplane, side view, nose pointing right",
+      "motivo": "Uniformar el perfil lateral y la orientación hacia la derecha del grupo vis:vehículos, según instrucción del usuario."
+    },
+    {
+      "fichero": "cohete.png",
+      "original": "space rocket, upright",
+      "utilizada": "space rocket, horizontal side view, nose pointing right",
+      "motivo": "Uniformar el perfil lateral y la orientación hacia la derecha del grupo vis:vehículos, según instrucción del usuario."
+    },
+    {
+      "fichero": "flauta.png",
+      "original": "recorder flute",
+      "utilizada": "recorder flute, upright vertical, straight front view, complete body and finger holes visible",
+      "motivo": "Uniformar pose y punto de vista del grupo vis: según instrucción del usuario"
+    },
+    {
+      "fichero": "zapato.png",
+      "original": "single brown shoe, side view",
+      "utilizada": "single classic brown leather dress shoe with thin dark sole and low heel, side view, toe pointing right",
+      "motivo": "Diferenciar zapato de zapatilla deportiva."
+    },
+    {
+      "fichero": "cabeza.png",
+      "original": "child's head with short hair, front view, neutral smile",
+      "utilizada": "child head only, short brown hair, front view, friendly neutral smile, no neck or shoulders",
+      "motivo": "Eliminar cuello y camiseta para que la imagen represente cabeza y no un niño entero."
+    }
+  ],
+  "anclas_sha256": {
+    "gato.png": "9fa54398f7318a16081dbed77dd06968821f9d0fb4aac4df4392ed2612380f05",
+    "manzana.png": "447cd5ada719096e267ee361e46c20571f9df64158cb9d84ebf1f5d258d44281",
+    "coche.png": "545ff2e72feb690a002661a07be55a492c26f33453cd1827f668afd13cb17441"
+  },
+  "prioridad2_iniciada": false,
+  "resumen_prioridad1": {
+    "aceptada": 11,
+    "candidatas": 145,
+    "descartada": 1,
+    "total_palabras": 157
+  }
+}

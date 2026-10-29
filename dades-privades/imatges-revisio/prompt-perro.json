@@ -1,0 +1,11 @@
+{
+  "subject": "friendly brown dog standing, side view, floppy ears",
+  "prompt": "Use case: stylized-concept. Generate one NEW illustration. The first three attached images are approved style anchors; the fourth dog is an accepted SAME-CATEGORY STYLE reference only. Change the dog pose for this newly authorized replacement: standing on all four legs, side profile, full body, horizontally framed, head gently turned toward viewer. Same apparent size and standing side-view pose as a wolf and fox educational flashcard. Keep clearly floppy ears and friendly brown domestic dog identity, a rounded muzzle, simple smooth fur shapes and very few interior lines. Do not recreate a seated dog.\nFlat vector illustration of a single friendly brown dog standing, side view, floppy ears, children's educational flashcard style.\nClean continuous dark charcoal (#1E1E2E) outline of uniform medium weight, simple rounded shapes,\nflat colors with at most one flat shade per color, no gradients, no textures.\nThe object keeps its natural, most recognizable colors. Whole object visible, centered,\nfront or three-quarter view, occupying about 70% of the canvas with clear margins on all sides.\nTransparent background. No scene, no ground, no cast shadow, no frame, no border.\nNo text, no letters, no numbers, no logos, no watermark, no hands, no extra objects.\nFriendly, calm, modern picture-book look; consistent with the reference images.\nSquare 1024x1024. Transparent background. No collar or accessories. Keep fur as simple as cat and dog anchors, fewer interior lines than wolf. Uniform medium charcoal contours; no gradients or texture. One animal only.",
+  "refs": [
+    "/Users/josellamas/var/www/shine-project/shine/content/images/gato.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/manzana.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/coche.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/perro.png"
+  ],
+  "motivo_pista": "Cambio de perro sentado a perro de pie y de lado solicitado por el usuario."
+}

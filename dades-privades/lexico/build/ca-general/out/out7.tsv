@@ -1,0 +1,872 @@
+forma	accion	lema	categoria	marca	nota
+mesclat	corregir	mesclar	verb		
+montana	corregir	montana	npropi		
+nosotros	descartar				castellà
+paisos	descartar				errada: països
+parti	descartar				errada: partí
+perro	descartar				castellà
+picades	corregir	picada	nom		
+product	descartar				anglès
+pronto	descartar				castellanisme
+psg	descartar				sigla
+remake	corregir	remake	nom	extranjera	
+salvadó	completar	salvadó	npropi		
+sistemàtiques	corregir	sistemàtic	adj		
+stars	descartar				anglès
+tanya	corregir	tanya	npropi		
+tertulians	corregir	tertulià	nom		
+tokio	descartar				errada: tòquio
+trob	marcar	trobar	verb	dialectal	balear
+valentin	completar	valentin	npropi		
+vegeta	corregir	vegeta	npropi		
+vertebrats	corregir	vertebrat	nom		
+verónica	completar	verónica	npropi		
+afghanistan	descartar				errada: afganistan
+antivirus	corregir	antivirus	nom		
+arcàdia	corregir	arcàdia	npropi		
+balnearis	corregir	balneari	nom		
+barrio	descartar				castellà
+bisexual	marcar	bisexual	adj	malsonante	sensible
+bs	descartar				sigla
+cans	corregir	ca	nom	dialectal	balear
+cate	descartar				paraula d'una altra llengua
+celia	completar	celia	npropi		
+cerda	descartar				errada: cerdà
+ceres	corregir	ceres	npropi		
+chef	descartar				forma no normativa: xef
+clapés	corregir	clapés	npropi		
+cluster	descartar				errada: clúster
+deluxe	descartar				anglès
+ediciones	descartar				castellà
+ent	descartar				abreviatura
+espada	descartar				castellanisme
+ever	descartar				anglès
+exàmen	descartar				errada: examen
+extravagants	corregir	extravagant	adj		
+ferreres	corregir	ferreres	npropi		
+ges	corregir	ges	adv	dialectal	
+ginger	descartar				anglès
+hija	descartar				castellà
+hippie	marcar	hippie	adj	extranjera	
+hippies	marcar	hippie	adj	extranjera	
+inspiradora	corregir	inspirador	adj		
+jun	descartar				abreviatura
+kat	descartar				paraula d'una altra llengua
+ku	descartar				sigla
+kw	descartar				abreviatura
+lights	descartar				anglès
+mass	descartar				anglès
+maxime	descartar				errada: màxime
+mesopotàmia	corregir	mesopotàmia	npropi		
+migrant	corregir	migrant	nom		
+minutos	descartar				castellà
+morning	descartar				anglès
+morse	corregir	morse	nom		
+np	descartar				abreviatura
+nuestros	descartar				castellà
+padrós	completar	padrós	npropi		
+papel	descartar				castellà
+parlam	marcar	parlar	verb	dialectal	balear
+pasat	descartar				errada: passat
+passius	corregir	passiu	adj		
+pecadors	corregir	pecador	nom		
+posteriori	descartar				llatinisme (a posteriori)
+pàgs	descartar				abreviatura
+rabbit	descartar				anglès
+rabia	descartar				errada: ràbia
+repartidor	corregir	repartidor	nom		
+search	descartar				anglès
+seguros	descartar				castellà
+sg	descartar				sigla
+shane	completar	shane	npropi		
+systems	descartar				anglès
+underground	marcar	underground	adj	extranjera	
+wikipèdia	completar	wikipèdia	npropi		
+abr	descartar				abreviatura
+afeccionat	corregir	afeccionat	nom		
+al·legat	corregir	al·legat	nom		
+arribades	corregir	arribada	nom		
+assasinat	descartar				errada: assassinat
+bajo	descartar				castellà
+bastit	corregir	bastir	verb		
+becària	corregir	becari	nom		
+bessona	corregir	bessó	nom		
+bora	corregir	bora	npropi		
+catch	descartar				anglès
+cda	descartar				sigla
+comestible	corregir	comestible	adj		
+comment	descartar				anglès
+complementari	corregir	complementari	adj		
+crespí	corregir	crespí	npropi		
+cuento	descartar				castellà
+cèl	descartar				errada: cel
+datos	descartar				castellà
+depen	descartar				errada: depèn
+derechos	descartar				castellà
+diferentes	descartar				castellà
+different	descartar				anglès
+duck	descartar				anglès
+emd	descartar				sigla
+empleo	descartar				castellà
+estomac	descartar				errada: estómac
+federación	descartar				castellà
+fotrem	marcar	fotre	verb	malsonante	
+freak	corregir	freak	nom	extranjera	
+graffiti	descartar				forma no normativa: grafit
+hipster	marcar	hipster	adj	extranjera	
+juventud	descartar				castellà
+kgb	descartar				sigla
+kr	descartar				abreviatura
+list	descartar				anglès
+michele	completar	michele	npropi		
+munté	completar	munté	npropi		
+naturalistes	corregir	naturalista	nom		
+ningun	marcar	ningun	pron	dialectal	
+ob	descartar				abreviatura
+peggy	completar	peggy	npropi		
+película	descartar				castellà
+quadrades	corregir	quadrat	adj		
+quién	descartar				castellà
+ranking	descartar				forma no normativa: rànquing
+rd	descartar				abreviatura
+rider	marcar	rider	nom	extranjera	
+rising	descartar				anglès
+sc	descartar				sigla
+session	descartar				anglès
+sev	descartar				abreviatura
+sofisticades	corregir	sofisticat	adj		
+spot	descartar				forma no normativa: espot
+squad	descartar				anglès
+sàbat	corregir	sàbat	nom		
+their	descartar				anglès
+tomata	marcar	tomata	nom	dialectal	occidental
+transportista	corregir	transportista	nom		
+troika	descartar				errada: troica
+véncer	marcar	vèncer	verb	dialectal	valencià
+worth	descartar				anglès
+amis	descartar				francès
+bao	descartar				paraula d'una altra llengua
+basquet	descartar				errada: bàsquet
+bh	descartar				sigla
+blocaire	completar	blocaire	nom		
+boletín	descartar				castellà
+brit	descartar				abreviatura
+buy	descartar				anglès
+capo	corregir	capo	nom	extranjera	
+cima	corregir	cima	nom		
+comissariat	corregir	comissariat	nom		
+dept	descartar				abreviatura
+dogv	descartar				sigla
+elite	descartar				errada: elit
+esbojarrat	corregir	esbojarrat	adj		
+estiueig	corregir	estiueig	nom		
+fbi	descartar				sigla
+fo	descartar				abreviatura
+fotuda	corregir	fotut	adj	malsonante	
+frankie	completar	frankie	npropi		
+fs	descartar				abreviatura
+futurista	corregir	futurista	adj		
+gc	descartar				sigla
+hijos	descartar				castellà
+infancia	descartar				errada: infància
+initiative	descartar				anglès
+inventiva	corregir	inventiva	nom		
+ka	descartar				lletra solta
+lan	descartar				sigla
+liceo	descartar				castellà
+lillian	completar	lillian	npropi		
+lim	descartar				abreviatura
+lloseta	corregir	lloseta	npropi		
+lol	descartar				jerga d'internet
+markus	completar	markus	npropi		
+marley	completar	marley	npropi		
+meg	completar	meg	npropi		
+memoriam	descartar				llatinisme (in memoriam)
+mimi	corregir	mimi	npropi		
+oferix	marcar	oferir	verb	dialectal	valencià
+olof	completar	olof	npropi		
+operandi	descartar				llatinisme (modus operandi)
+otros	descartar				castellà
+pag	descartar				abreviatura
+pk	descartar				abreviatura
+politiques	descartar				errada: polítiques
+québec	completar	québec	npropi		
+reaccionària	corregir	reaccionari	adj		
+refús	corregir	refús	nom		
+saldes	corregir	saldes	npropi		
+salih	completar	salih	npropi		
+sede	descartar				castellà
+solid	descartar				anglès
+stream	descartar				anglès
+só	descartar				errada
+tamany	descartar				castellanisme
+tfg	descartar				sigla
+toldrà	corregir	toldrà	npropi		
+tricicle	corregir	tricicle	nom		
+ultimes	descartar				errada: últimes
+victorià	corregir	victorià	adj		
+ón	descartar				errada: on
+mores	corregir	mora	nom		
+alforja	corregir	alforja	nom		
+amon	descartar				paraula d'una altra llengua
+assamblea	descartar				errada: assemblea
+babel	corregir	babel	npropi		
+baile	descartar				castellà
+basketball	descartar				anglès
+bibliotecàries	corregir	bibliotecari	nom		
+booth	completar	booth	npropi		
+buffet	descartar				forma no normativa: bufet
+carmelites	corregir	carmelita	nom		
+case	descartar				anglès
+claro	descartar				castellà
+constitución	descartar				castellà
+core	descartar				anglès
+coworking	descartar				anglès
+deja	descartar				castellà
+dif	descartar				abreviatura
+ein	descartar				alemany
+escapades	corregir	escapada	nom		
+fact	descartar				anglès
+fallo	descartar				castellanisme
+feis	marcar	fer	verb	dialectal	valencià i balear
+find	descartar				anglès
+frikis	descartar				forma no normativa: friqui
+fós	descartar				errada: fos
+geminada	corregir	geminat	adj		
+horticultura	corregir	horticultura	nom		
+intensives	corregir	intensiu	adj		
+jefe	descartar				castellà
+lla	marcar	lla	adv	dialectal	
+lori	completar	lori	npropi		
+lucha	descartar				castellà
+maquina	descartar				errada: màquina
+maxi	descartar				abreviatura
+modo	descartar				castellà
+mostre	marcar	mostrar	verb	dialectal	valencià
+nivel	descartar				castellà
+other	descartar				anglès
+paluzie	completar	paluzie	npropi		
+paregut	marcar	parèixer	verb	dialectal	
+pge	descartar				sigla
+pnl	descartar				sigla
+poesía	descartar				errada: poesia
+problemas	descartar				castellà
+rectangle	corregir	rectangle	nom		
+remull	corregir	remull	nom		
+return	descartar				anglès
+rl	descartar				abreviatura
+robí	corregir	robí	nom		
+samsó	corregir	samsó	npropi		
+segunda	descartar				castellà
+seguritat	descartar				errada: seguretat
+seis	descartar				castellà
+sinèrgies	descartar				errada: sinergies
+skate	marcar	skate	nom	extranjera	
+soccer	descartar				anglès
+taka	descartar				paraula d'una altra llengua
+taronger	corregir	taronger	nom		
+tendrà	marcar	tenir	verb	dialectal	balear
+teta	marcar	teta	nom	malsonante	sensible
+than	descartar				anglès
+too	descartar				anglès
+trading	descartar				anglès
+uh	descartar				onomatopeia
+unic	descartar				errada: únic
+ursula	completar	ursula	npropi		
+veronica	completar	veronica	npropi		
+wai	descartar				paraula d'una altra llengua
+well	descartar				anglès
+mestral	corregir	mestral	nom		
+cançoner	corregir	cançoner	nom		
+patinadors	corregir	patinador	nom		
+rosegadors	corregir	rosegador	nom		
+fertilitzants	corregir	fertilitzant	nom		
+sorprés	marcar	sorprendre	verb	dialectal	valencià (central sorprès)
+xxviii	descartar				nombre romà
+admin	descartar				abreviatura
+arquitecta	corregir	arquitecte	nom		
+baixador	corregir	baixador	nom		
+bernie	completar	bernie	npropi		
+boot	descartar				anglès
+brett	completar	brett	npropi		
+broken	descartar				anglès
+costas	completar	costas	npropi		
+dat	marcar	dar	verb	dialectal	valencià
+descubrir	descartar				castellà
+district	descartar				anglès
+erica	completar	erica	npropi		
+espavilat	corregir	espavilat	adj		
+estruch	completar	estruch	npropi		
+evil	descartar				anglès
+explique	marcar	explicar	verb	dialectal	valencià
+francia	descartar				castellà
+hai	descartar				paraula d'una altra llengua
+jazeera	completar	jazeera	npropi		
+junkers	completar	junkers	npropi		
+lien	descartar				paraula d'una altra llengua
+lobbies	marcar	lobby	nom	extranjera	
+mais	descartar				paraula d'una altra llengua
+mantinga	marcar	mantenir	verb	dialectal	valencià
+navid	completar	navid	npropi		
+pape	corregir	pape	npropi		
+pasos	descartar				castellà
+piece	descartar				anglès
+program	descartar				anglès
+promés	marcar	prometre	verb	dialectal	valencià (central promès)
+pum	corregir	pum	interj		
+richie	completar	richie	npropi		
+ronnie	completar	ronnie	npropi		
+sf	descartar				sigla
+singles	marcar	single	nom	extranjera	
+startups	descartar				anglès
+streep	completar	streep	npropi		
+talking	descartar				anglès
+tania	completar	tania	npropi		
+tans	descartar				errada: tants
+titans	corregir	tità	nom		
+torné	completar	torné	npropi		
+vhs	descartar				sigla
+basté	completar	basté	npropi		
+canço	descartar				errada: cançó
+carallots	marcar	carallot	adj	malsonante	insult lleu
+cartel	descartar				errada: càrtel
+cic	descartar				sigla
+cocina	descartar				castellà
+compromés	marcar	comprometre	verb	dialectal	valencià (central compromès)
+corint	corregir	corint	npropi		
+cover	corregir	cover	nom	extranjera	
+crucis	descartar				llatinisme (via crucis)
+cual	descartar				castellà
+después	descartar				castellà
+diop	completar	diop	npropi		
+direct	descartar				anglès
+dvds	descartar				sigla
+déjà	descartar				francès
+ebook	marcar	ebook	nom	extranjera	
+fariba	completar	fariba	npropi		
+friday	descartar				anglès
+fuites	corregir	fuita	nom		
+hero	descartar				anglès
+heterosexual	marcar	heterosexual	adj	malsonante	sensible
+homens	descartar				errada: homes
+honey	descartar				anglès
+indy	completar	indy	npropi		
+item	descartar				errada: ítem
+janer	corregir	janer	nom	dialectal	
+juliet	completar	juliet	npropi		
+kings	descartar				anglès
+locos	descartar				castellà
+malaltes	corregir	malalt	adj		
+massó	completar	massó	npropi		
+mateos	completar	mateos	npropi		
+math	descartar				anglès
+medica	descartar				errada: mèdica
+metafísica	corregir	metafísica	nom		
+millorem	corregir	millorar	verb		
+mrs	descartar				abreviatura
+name	descartar				anglès
+orbital	corregir	orbital	adj		
+orígen	descartar				errada: origen
+peoples	descartar				anglès
+peses	corregir	pesa	nom		
+polímer	corregir	polímer	nom		
+porcina	corregir	porcí	adj		
+presonera	corregir	presoner	nom		
+probar	descartar				castellà
+provençal	corregir	provençal	adj		
+pà	descartar				errada: pa
+quilla	corregir	quilla	nom		
+senderista	corregir	senderista	nom		
+spurs	completar	spurs	npropi		
+stephan	completar	stephan	npropi		
+successora	corregir	successor	nom		
+tremosa	completar	tremosa	npropi		
+uec	descartar				sigla
+viajes	descartar				castellà
+vie	descartar				francès
+voilà	descartar				francès
+ú	descartar				errada: u
+agrade	marcar	agradar	verb	dialectal	valencià
+ahh	descartar				onomatopeia
+ajude	marcar	ajudar	verb	dialectal	valencià
+ambulatori	corregir	ambulatori	nom		
+anders	corregir	anders	npropi		
+asi	descartar				castellà
+atp	descartar				sigla
+bartolo	completar	bartolo	npropi		
+becerra	completar	becerra	npropi		
+benlloch	completar	benlloch	npropi		
+beso	descartar				castellà
+blockchain	descartar				anglès
+bomb	descartar				anglès
+ciudadano	descartar				castellà
+compressor	corregir	compressor	nom		
+timoner	corregir	timoner	nom		
+servidora	corregir	servidor	nom		
+comediant	corregir	comediant	nom		
+assetjador	corregir	assetjador	nom		
+orellut	corregir	orellut	adj		
+tsarista	corregir	tsarista	adj		
+batudes	corregir	batuda	nom		
+curro	descartar				castellanisme
+cuyàs	completar	cuyàs	npropi		
+dans	descartar				francès
+desaparéixer	marcar	desaparèixer	verb	dialectal	valencià
+dinero	descartar				castellà
+dow	completar	dow	npropi		
+drag	descartar				anglès
+dv	descartar				abreviatura
+fake	marcar	fake	adj	extranjera	
+fapac	descartar				sigla
+funcionària	corregir	funcionari	nom		
+gab	descartar				abreviatura
+gif	descartar				sigla
+guanyara	marcar	guanyar	verb	dialectal	valencià
+jar	descartar				paraula d'una altra llengua
+kuala	completar	kuala	npropi		
+lac	descartar				errada: llac
+leah	completar	leah	npropi		
+license	descartar				anglès
+listen	descartar				anglès
+lules	descartar				paraula d'una altra llengua
+marinada	corregir	marinada	nom		
+masterclass	marcar	masterclass	nom	extranjera	
+meet	descartar				anglès
+mic	descartar				abreviatura
+mé	descartar				errada: més
+operadores	corregir	operador	nom		
+playoff	descartar				anglès
+poker	descartar				errada: pòquer
+questió	descartar				errada: qüestió
+rals	corregir	ral	nom		
+ramader	corregir	ramader	nom		
+reaccionari	corregir	reaccionari	adj		
+redisseny	corregir	redisseny	nom		
+rocs	corregir	roc	nom		
+root	descartar				anglès
+route	descartar				anglès
+router	descartar				anglès
+rèptil	corregir	rèptil	nom		
+soleil	descartar				francès
+soterranis	corregir	soterrani	nom		
+tgn	descartar				abreviatura
+th	descartar				abreviatura
+toti	descartar				paraula d'una altra llengua
+toque	marcar	tocar	verb	dialectal	valencià
+tras	descartar				castellà
+ttip	descartar				sigla
+volei	descartar				errada: vòlei
+wes	completar	wes	npropi		
+acústiques	corregir	acústic	adj		
+afp	descartar				sigla
+alavés	completar	alavés	npropi		
+alumni	descartar				llatinisme
+aspa	corregir	aspa	nom		
+aunque	descartar				castellà
+bng	descartar				sigla
+boixos	corregir	boix	nom		
+brand	descartar				anglès
+brando	corregir	brando	npropi		
+cambiar	descartar				castellà
+caribe	descartar				errada: carib
+chica	descartar				castellà
+cignes	corregir	cigne	nom		
+cnc	descartar				sigla
+computer	descartar				anglès
+confie	marcar	confiar	verb	dialectal	valencià
+cristal	descartar				castellanisme
+css	descartar				sigla
+còmiques	corregir	còmic	adj		
+diesel	descartar				errada: dièsel
+dindi	corregir	dindi	nom		
+eclipse	descartar				castellanisme
+fotrà	marcar	fotre	verb	malsonante	
+frelimo	completar	frelimo	npropi		
+german	descartar				anglès
+giants	descartar				anglès
+juego	descartar				castellà
+laca	corregir	laca	nom		
+masa	descartar				castellà
+mobil	descartar				errada: mòbil
+neto	descartar				castellà
+nic	descartar				jerga d'internet
+nitrat	corregir	nitrat	nom		
+ostia	descartar				errada: hòstia (malsonant)
+paradetes	corregir	paradeta	nom		
+person	descartar				anglès
+pimec	descartar				sigla
+portugués	marcar	portuguès	adj	dialectal	valencià
+produit	descartar				errada: produït
+près	descartar				francès
+punyeta	marcar	punyeta	nom	malsonante	
+rangers	completar	rangers	npropi		
+revival	marcar	revival	nom	extranjera	
+runners	descartar				anglès
+sammy	completar	sammy	npropi		
+scouts	descartar				anglès
+silencio	descartar				castellà
+silici	corregir	silici	nom		
+standing	descartar				anglès
+tod	descartar				paraula d'una altra llengua
+todas	descartar				castellà
+transsexual	marcar	transsexual	adj	malsonante	sensible
+ucd	descartar				sigla
+upyd	descartar				sigla
+vampire	descartar				anglès
+viam	descartar				errada: veiam
+xbox	completar	xbox	npropi		
+xml	descartar				sigla
+za	descartar				abreviatura
+adsl	descartar				sigla
+also	descartar				anglès
+anavem	descartar				errada: anàvem
+atra	descartar				errada: altra
+bd	descartar				sigla
+bebe	descartar				castellà
+boulevard	descartar				francès
+breve	descartar				castellà
+burger	descartar				anglès
+cards	descartar				anglès
+carnicer	descartar				castellanisme
+carrilet	corregir	carrilet	nom		
+cha	descartar				paraula d'una altra llengua
+chill	descartar				anglès
+circo	descartar				castellà
+cnl	descartar				sigla
+condal	corregir	condal	adj		
+connor	completar	connor	npropi		
+consort	corregir	consort	nom		
+continuament	descartar				errada: contínuament
+cosmo	descartar				paraula d'una altra llengua
+crónica	descartar				errada: crònica
+cumplir	descartar				castellà
+delegades	corregir	delegat	nom		
+det	descartar				abreviatura
+estanc	corregir	estanc	nom		
+estrés	marcar	estrès	nom	dialectal	valencià (central estrès)
+frédéric	completar	frédéric	npropi		
+gale	completar	gale	npropi		
+hidrogràfica	corregir	hidrogràfic	adj		
+iberoamericana	corregir	iberoamericà	adj		
+ide	descartar				abreviatura
+independiente	descartar				castellà
+inspiradores	corregir	inspirador	adj		
+into	descartar				anglès
+ironman	marcar	ironman	nom	extranjera	
+ist	descartar				abreviatura
+llonch	completar	llonch	npropi		
+locar	descartar				errada
+lència	descartar				errada
+majó	completar	majó	npropi		
+maxwell	corregir	maxwell	npropi		
+mercé	marcar	mercè	nom	dialectal	valencià (central mercè)
+monitoritzar	completar	monitoritzar	verb		
+montar	descartar				castellanisme
+mès	descartar				errada: més
+needs	descartar				anglès
+neri	completar	neri	npropi		
+novio	descartar				castellà
+olive	descartar				anglès
+oooh	descartar				onomatopeia
+partners	descartar				anglès
+perpendicular	corregir	perpendicular	adj		
+pn	descartar				sigla
+possat	descartar				errada: posat
+premios	descartar				castellà
+princep	descartar				errada: príncep
+reto	descartar				castellanisme
+sci	descartar				sigla
+servicios	descartar				castellà
+sharif	completar	sharif	npropi		
+sit	descartar				paraula d'una altra llengua
+small	descartar				anglès
+souza	completar	souza	npropi		
+stem	descartar				sigla
+successors	corregir	successor	nom		
+superficie	descartar				errada: superfície
+sèpia	corregir	sèpia	nom		
+tra	descartar				abreviatura
+vosc	descartar				errada
+vulva	marcar	vulva	nom	malsonante	sensible
+ying	descartar				paraula d'una altra llengua
+acabara	marcar	acabar	verb	dialectal	valencià
+albertí	corregir	albertí	npropi		
+amazing	descartar				anglès
+arne	corregir	arne	npropi		
+arsènic	corregir	arsènic	nom		
+ass	descartar				anglès
+bikini	descartar				errada: biquini
+bowling	marcar	bowling	nom	extranjera	
+bè	descartar				errada: bé
+carrero	completar	carrero	npropi		
+cata	descartar				paraula d'una altra llengua
+colegio	descartar				castellà
+cowboy	marcar	cowboy	nom	extranjera	
+devers	marcar	devers	prep	dialectal	balear
+discapacitades	corregir	discapacitat	adj		
+donara	marcar	donar	verb	dialectal	valencià
+ebro	descartar				castellà
+eléctrica	descartar				castellà
+escaire	corregir	escaire	nom		
+estudios	descartar				castellà
+fcf	descartar				sigla
+feliciano	completar	feliciano	npropi		
+geoff	completar	geoff	npropi		
+hadi	completar	hadi	npropi		
+interpol	corregir	interpol	npropi		
+leer	descartar				castellà
+left	descartar				anglès
+lehman	completar	lehman	npropi		
+leia	completar	leia	npropi		
+llicenciats	corregir	llicenciat	nom		
+matagalls	corregir	matagalls	npropi		
+missionera	corregir	missioner	nom		
+mundi	descartar				llatinisme
+nani	descartar				paraula d'una altra llengua
+necessitam	marcar	necessitar	verb	dialectal	balear
+nombrar	descartar				castellanisme
+nostàlgica	corregir	nostàlgic	adj		
+notaria	corregir	notaria	nom		
+patrimonio	descartar				castellà
+pers	descartar				abreviatura
+php	descartar				sigla
+podiem	descartar				errada: podíem
+posseïx	marcar	posseir	verb	dialectal	valencià
+quans	descartar				errada: quants
+really	descartar				anglès
+sabieu	descartar				errada: sabíeu
+sainte	descartar				francès
+schwarz	completar	schwarz	npropi		
+sheperd	completar	sheperd	npropi		
+sign	descartar				anglès
+sister	descartar				anglès
+troç	descartar				errada: tros
+twin	descartar				anglès
+very	descartar				anglès
+vettel	completar	vettel	npropi		
+vidu	corregir	vidu	nom		
+vitoria	descartar				errada: vitòria
+which	descartar				anglès
+abord	descartar				francès
+amore	descartar				italià
+analytics	descartar				anglès
+ariana	corregir	ariana	npropi		
+arn	corregir	arn	nom		
+arno	corregir	arno	npropi		
+ataque	descartar				castellà
+bint	descartar				paraula d'una altra llengua
+bolivia	descartar				errada: bolívia
+bor	corregir	bor	nom		
+bud	descartar				anglès
+buff	descartar				onomatopeia
+camara	descartar				errada: càmera
+cancel	descartar				anglès
+cfgm	descartar				sigla
+char	descartar				paraula d'una altra llengua
+chip	descartar				forma no normativa: xip
+ciments	corregir	ciment	nom		
+cinco	descartar				castellà
+cit	descartar				abreviatura
+comisión	descartar				castellà
+damien	completar	damien	npropi		
+eo	descartar				abreviatura
+escolapis	corregir	escolapi	nom		
+ess	descartar				lletra solta
+estrela	descartar				paraula d'una altra llengua
+eunuc	corregir	eunuc	nom		
+exchange	descartar				anglès
+extraure	marcar	extreure	verb	dialectal	valencià
+fac	descartar				abreviatura
+fuerza	descartar				castellà
+gemmes	corregir	gemma	nom		
+gral	descartar				abreviatura
+guo	completar	guo	npropi		
+hindu	descartar				errada: hindú
+icab	descartar				sigla
+idescat	descartar				sigla
+iglésias	completar	iglésias	npropi		
+impresionant	descartar				errada: impressionant
+jm	descartar				abreviatura
+juanma	completar	juanma	npropi		
+jump	descartar				anglès
+lau	completar	lau	npropi		
+lem	descartar				abreviatura
+manifestos	corregir	manifest	nom		
+mentira	descartar				castellanisme
+motel	corregir	motel	nom		
+nyi	descartar				paraula d'una altra llengua
+omnium	descartar				errada: òmnium
+opening	descartar				anglès
+orden	descartar				castellà
+organ	descartar				anglès
+pdi	descartar				sigla
+pio	completar	pio	npropi		
+placebo	corregir	placebo	nom		
+playboy	marcar	playboy	nom	extranjera	
+playoffs	descartar				anglès
+pubill	corregir	pubill	nom		
+quiere	descartar				castellà
+racc	descartar				sigla
+reinhardt	completar	reinhardt	npropi		
+rien	descartar				francès
+rocker	corregir	rocker	nom	extranjera	
+salellas	completar	salellas	npropi		
+sao	descartar				paraula d'una altra llengua
+scales	descartar				anglès
+shake	descartar				anglès
+size	descartar				anglès
+some	descartar				anglès
+soro	descartar				paraula d'una altra llengua
+sven	completar	sven	npropi		
+tav	descartar				sigla
+tienen	descartar				castellà
+tiki	descartar				paraula d'una altra llengua
+tomaca	marcar	tomaca	nom	dialectal	valencià
+tortell	corregir	tortell	nom		
+veim	marcar	veure	verb	dialectal	balear
+voy	descartar				castellà
+vullguen	marcar	voler	verb	dialectal	valencià
+webcam	marcar	webcam	nom	extranjera	
+xxix	descartar				nombre romà
+xxx	descartar				nombre romà
+xxvi	descartar				nombre romà
+apotecari	corregir	apotecari	nom		
+atc	descartar				sigla
+basura	descartar				castellà
+caguen	marcar	cagar	verb	malsonante	
+calàbria	corregir	calàbria	npropi		
+cello	descartar				italià
+collection	descartar				anglès
+cosplay	marcar	cosplay	nom	extranjera	
+demi	descartar				paraula d'una altra llengua
+deporte	descartar				castellà
+ejaculació	marcar	ejaculació	nom	malsonante	sensible
+empleada	corregir	empleat	nom		
+eras	descartar				castellà
+eriçó	corregir	eriçó	nom		
+ese	descartar				castellà
+fol	descartar				abreviatura
+fontserè	completar	fontserè	npropi		
+frog	descartar				anglès
+fructuós	corregir	fructuós	adj		
+function	descartar				anglès
+futuro	descartar				castellà
+gardeny	corregir	gardeny	npropi		
+giles	completar	giles	npropi		
+helsinki	completar	helsinki	npropi		
+história	descartar				errada: història
+isca	marcar	eixir	verb	dialectal	valencià
+lon	descartar				paraula d'una altra llengua
+loro	descartar				castellà
+loves	descartar				anglès
+mainstream	marcar	mainstream	adj	extranjera	
+mea	descartar				llatinisme (mea culpa)
+miedo	descartar				castellà
+mies	corregir	mies	npropi		
+mnactec	descartar				sigla
+necesito	descartar				castellà
+nel	descartar				paraula d'una altra llengua
+pagesa	corregir	pagès	nom		
+piel	descartar				castellà
+polonia	descartar				errada: polònia
+position	descartar				anglès
+ppp	descartar				sigla
+primaria	descartar				errada: primària
+primat	corregir	primat	nom		
+primero	descartar				castellà
+profesor	descartar				castellà
+rails	descartar				anglès
+rapida	descartar				errada: ràpida
+reza	descartar				castellà
+salim	completar	salim	npropi		
+samu	completar	samu	npropi		
+sandwich	descartar				forma no normativa: sandvitx
+sat	descartar				sigla
+sauveur	completar	sauveur	npropi		
+sepc	descartar				sigla
+she	descartar				anglès
+stepv	descartar				sigla
+sunny	descartar				anglès
+supòs	marcar	suposar	verb	dialectal	balear
+sèquia	descartar				errada: séquia
+tanaka	completar	tanaka	npropi		
+term	descartar				anglès
+toby	completar	toby	npropi		
+toma	descartar				castellà
+vec	descartar				abreviatura
+xurros	corregir	xurro	nom		
+acab	marcar	acabar	verb	dialectal	balear
+aci	descartar				errada: ací
+ademés	descartar				castellanisme
+afrodita	corregir	afrodita	npropi		
+aha	descartar				onomatopeia
+allo	descartar				errada: allò
+almanco	marcar	almanco	adv	dialectal	balear
+alphonse	completar	alphonse	npropi		
+anul	descartar				errada
+apostòlica	corregir	apostòlic	adj		
+assetjadors	corregir	assetjador	nom		
+bandit	corregir	bandit	nom		
+bastoners	corregir	bastoner	nom		
+bestia	descartar				errada: bèstia
+bonig	descartar				errada: bonic
+caballeros	descartar				castellà
+ccc	descartar				sigla
+cipriano	completar	cipriano	npropi		
+coming	descartar				anglès
+complaent	corregir	complaent	adj		
+confer	descartar				llatinisme
+corp	descartar				abreviatura
+crane	descartar				anglès
+croissants	marcar	croissant	nom	extranjera	
+curriculum	descartar				errada: currículum
+cursi	corregir	cursi	adj		
+cx	descartar				abreviatura
+deis	marcar	dir	verb	dialectal	
+división	descartar				castellà
+doctorats	corregir	doctorat	nom		
+donam	marcar	donar	verb	dialectal	balear
+duit	marcar	dur	verb	dialectal	
+ernst	completar	ernst	npropi		
+escribano	completar	escribano	npropi		
+examens	descartar				errada: exàmens
+fcc	descartar				sigla
+field	descartar				anglès
+follia	corregir	follia	nom		
+gardens	descartar				anglès
+hipnòtic	corregir	hipnòtic	adj		
+hm	descartar				onomatopeia
+idol	descartar				errada: ídol
+interruptors	corregir	interruptor	nom		
+kale	descartar				anglès
+kathy	completar	kathy	npropi		
+kike	completar	kike	npropi		
+lowe	completar	lowe	npropi		
+lui	descartar				francès
+noltros	descartar				errada: nosaltres
+organs	descartar				errada: òrgans
+outlet	marcar	outlet	nom	extranjera	
+palencia	descartar				errada: palència
+pay	descartar				anglès
+pepper	descartar				anglès
+pinot	completar	pinot	npropi		
+push	descartar				anglès
+rda	descartar				sigla
+realidad	descartar				castellà
+reb	descartar				abreviatura
+rip	descartar				sigla
+sabía	descartar				castellà
+sentimentals	corregir	sentimental	adj		
+sitio	descartar				castellà
+slim	descartar				anglès
+tinenta	corregir	tinent	nom		
+tocador	corregir	tocador	nom		
+transformadors	corregir	transformador	nom		
+unas	descartar				castellà
+vikings	corregir	viking	nom		
+vite	descartar				paraula d'una altra llengua
+reader	descartar				anglès
+angelica	corregir	angelica	npropi		
+artist	descartar				anglès
+auricular	corregir	auricular	nom		
+boat	descartar				anglès

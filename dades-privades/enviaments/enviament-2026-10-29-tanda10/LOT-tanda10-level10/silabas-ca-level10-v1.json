@@ -1,0 +1,107 @@
+{
+  "lote": "silabas-ca-level10-v1",
+  "descripcion": "Dos actividades catalanas de reordenamiento de sílabas (activity_syllable_order) de Level10, la fila más alta del prompt 05, del catálogo 6.2 y de la Guía de Parametrización (català): 6 palabras de vocabulario académico de 6 a 7 sílabas, sin imagen y con 2 sílabas sobrantes parecidas a sílabas de la palabra (la instrucción lo avisa con \"Hi ha dues síl·labes que sobren.\"). Cada actividad tiene 4 palabras de 6 sílabas y 2 de 7. Agrupadas por un término de sonoridad no usado en Level9 (regla del 2026-10-29), que es el de una de las sobrantes como mínimo. SIL-CA-L10-LIN-001, oposición p/b: una sobrante cambia p por b o b por p (pi en disponibilitat y automobilístic, ceb en susceptibilitat, bè en enciclopèdia, bro en professionalitat, ber en permeabilitat) y la otra cambia otro rasgo cercano (nyi por ni, sos por sus, plo por clo, ves por fes con f/v, mi por me, do por to con t/d). SIL-CA-L10-LIN-002, oposición t/d: una sobrante cambia t por d o d por t (du en multitudinari y multiculturalitat, dà en rudimentària, dat en quotidianitat, dò en satisfactòria, da en horitzontalitat) y la otra cambia otro rasgo (ni por na, mon por men, qua por quo, gul por cul con k/g, dis por tis y rid por rit, estas dos también t/d). Silabeo del IEC con los hiatos en sílabas distintas (me-a, ci-o, di-a, ri-a) y tz separado (rit-zon). Level10 no tiene límite de frecuencia (catálogo 3.6). Ninguna permutación de cuatro o más fichas, con las sobrantes o sin ellas, forma una palabra catalana ni castellana (listas generales e infantiles de los dos idiomas, diccionario de Softcatalà y formas del CORPES XXI), y ninguna sobrante repite una ficha de su palabra. Descartadas porque cuatro o más fichas forman otra palabra: emprenedoria (embreado, pretoria), bioinformàtica (informàtica), periodística (becario), exuberància (exuperància), espectroscòpia (espitosa), inoperància, ocupabilitat (ocupaba), municipalitat (basicitat), aplicabilitat (alicatat), intel·lectualitat (dualitat), etimològica (emodica), aleatòria (alleria); disponibilitat con la sobrante bo (bibolini); adaptabilitat y particularitat pasaban, pero se dejaron para no tener cinco palabras en -itat. Fuera por tema: corporativisme, propagandística, napoleònica, analfabetisme. Ninguna palabra de Level3 a Level9 ni de los ejemplos de la guía (interdisciplinari, descontextualitzar, idiosincràsia, constitucional, heterogeneïtat, microbiologia).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano con el prompt plans/multiidioma/prompts-contenido/05-ordena-sillabes.md (fila Level10), el catálogo 6.2 y la Guía de Parametrización (català), apartado 6; sin semilla. Candidatas de 6 y 7 sílabas buscadas con estructura.py en la lista general y comprobadas con una búsqueda de permutaciones (4 fichas o más, con y sin sobrantes) contra las formas de los dos idiomas; etiquetar_lote.py y lexico.py --lang ca. Pendiente de la revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-CA-L10-LIN-001",
+      "idioma": "ca",
+      "titulo": "Ordena les síl·labes",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca les síl·labes en ordre per formar la paraula. Hi ha dues síl·labes que sobren.",
+      "explicacion": "Syllable order",
+      "sonoridad": [
+        "p/b"
+      ],
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "dis-po-ni-bi-li-tat",
+            "sobrantes": "pi-nyi"
+          },
+          {
+            "silabas": "sus-cep-ti-bi-li-tat",
+            "sobrantes": "ceb-sos"
+          },
+          {
+            "silabas": "en-ci-clo-pè-di-a",
+            "sobrantes": "bè-plo"
+          },
+          {
+            "silabas": "pro-fes-si-o-na-li-tat",
+            "sobrantes": "bro-ves"
+          },
+          {
+            "silabas": "per-me-a-bi-li-tat",
+            "sobrantes": "ber-mi"
+          },
+          {
+            "silabas": "au-to-mo-bi-lís-tic",
+            "sobrantes": "pi-do"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Hiats",
+        "Polisíl·labes (4 o més síl·labes)"
+      ]
+    },
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-CA-L10-LIN-002",
+      "idioma": "ca",
+      "titulo": "Ordena les síl·labes",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca les síl·labes en ordre per formar la paraula. Hi ha dues síl·labes que sobren.",
+      "explicacion": "Syllable order",
+      "sonoridad": [
+        "t/d"
+      ],
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "mul-ti-tu-di-na-ri",
+            "sobrantes": "du-ni"
+          },
+          {
+            "silabas": "ru-di-men-tà-ri-a",
+            "sobrantes": "dà-mon"
+          },
+          {
+            "silabas": "quo-ti-di-a-ni-tat",
+            "sobrantes": "dat-qua"
+          },
+          {
+            "silabas": "mul-ti-cul-tu-ra-li-tat",
+            "sobrantes": "du-gul"
+          },
+          {
+            "silabas": "sa-tis-fac-tò-ri-a",
+            "sobrantes": "dò-dis"
+          },
+          {
+            "silabas": "ho-rit-zon-ta-li-tat",
+            "sobrantes": "da-rid"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Hiats",
+        "Polisíl·labes (4 o més síl·labes)"
+      ]
+    }
+  ]
+}

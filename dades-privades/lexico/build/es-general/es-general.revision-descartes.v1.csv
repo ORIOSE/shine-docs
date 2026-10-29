@@ -1,0 +1,3024 @@
+rango_original,forma,frecuencia,motivo
+100,mas,741.0,sin tilde: más
+256,d,302.0,letra suelta
+306,the,263.0,inglés
+316,c,251.0,letra suelta
+352,i,229.0,letra suelta
+396,s,204.0,letra suelta
+425,m,191.0,letra suelta
+458,etc,178.0,abreviatura
+511,asi,162.0,sin tilde: así
+530,p,158.0,letra suelta
+572,q,148.0,abreviatura chat
+589,x,145.0,letra suelta
+593,b,141.0,letra suelta
+605,n,141.0,letra suelta
+651,l,132.0,letra suelta
+682,of,126.0,inglés
+711,dia,120.0,sin tilde: día
+734,in,117.0,latín o inglés
+746,r,117.0,letra suelta
+826,v,107.0,letra suelta
+890,pp,97.7,sigla
+914,t,95.5,letra suelta
+915,tambien,95.5,sin tilde: también
+942,sr,93.3,abreviatura
+946,aqui,91.2,sin tilde: aquí
+957,ii,91.2,número romano
+964,re,91.2,fragmento
+969,and,89.1,inglés
+980,h,89.1,letra suelta
+1075,dr,81.3,abreviatura
+1117,to,79.4,inglés
+1130,j,77.6,letra suelta
+1157,f,75.9,letra suelta
+1161,http,75.9,abreviatura
+1183,despues,74.1,sin tilde: después
+1193,tv,74.1,sigla
+1370,k,63.1,letra suelta
+1397,dias,61.7,sin tilde: días
+1435,estan,60.3,sin tilde: están
+1579,super,55.0,sin tilde: súper
+1595,habia,53.7,sin tilde: había
+1596,jajaja,53.7,internet
+1679,pa,51.3,coloquial: para
+1693,tenia,51.3,sin tilde: tenía
+1722,iii,50.1,número romano
+1724,jaja,50.1,internet
+1849,km,46.8,abreviatura
+1884,eeuu,45.7,sigla
+1888,for,45.7,inglés
+1896,new,45.7,inglés
+1897,on,45.7,inglés
+2051,you,42.7,inglés
+2090,ahi,40.7,sin tilde: ahí
+2176,sub,39.8,fragmento
+2223,art,38.0,inglés
+2229,cm,38.0,abreviatura
+2249,paul,38.0,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+2339,iv,36.3,número romano
+2360,xd,36.3,internet
+2370,by,35.5,inglés
+2375,co,35.5,fragmento
+2418,us,35.5,inglés
+2438,et,34.7,latín o francés
+2475,anti,33.9,prefijo
+2500,mm,33.9,abreviatura u onomatopeya
+2548,ed,33.1,abreviatura
+2560,man,33.1,inglés
+2663,martin,31.6,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+2716,is,30.9,inglés
+2746,algun,30.2,sin tilde: algún
+2771,ja,30.2,onomatopeya de risa
+2799,vs,30.2,abreviatura
+2827,pais,29.5,sin tilde: país
+2906,am,28.2,inglés
+2923,it,28.2,inglés
+2982,ma,27.5,fragmento
+2987,maria,27.5,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+3018,an,26.9,inglés
+3053,my,26.9,inglés
+3055,pc,26.9,sigla
+3075,ue,26.9,sigla
+3119,mio,26.3,sin tilde: mío
+3132,razon,26.3,sin tilde: razón
+3139,so,26.3,inglés
+3186,one,25.7,inglés
+3188,oscar,25.7,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+3191,per,25.7,latín
+3194,psoe,25.7,sigla
+3209,w,25.7,letra suelta
+3210,aca,25.1,sin tilde: acá
+3269,pm,25.1,abreviatura
+3326,mexico,24.5,sin tilde: méxico
+3328,na,24.5,fragmento
+3351,sera,24.5,sin tilde: será
+3363,xx,24.5,número romano
+3374,cc,24.0,abreviatura
+3385,ee,24.0,fragmento
+3463,demas,23.4,sin tilde: demás
+3475,https,23.4,abreviatura
+3486,numero,23.4,sin tilde: número
+3496,pre,23.4,prefijo
+3548,fué,22.9,tilde indebida: fue
+3584,ud,22.9,abreviatura
+3694,go,21.9,inglés
+3736,world,21.9,inglés
+3751,city,21.4,inglés
+3781,jajajaja,21.4,internet
+3792,quito,21.4,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+3804,up,21.4,inglés
+3811,alex,20.9,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+3875,uu,20.9,fragmento
+3936,pri,20.4,sigla
+3960,via,20.4,sin tilde: vía
+3972,black,20.0,inglés
+4014,onu,20.0,sigla
+4086,park,19.5,inglés
+4102,segun,19.5,sin tilde: según
+4108,ta,19.5,fragmento coloquial
+4111,todavia,19.5,sin tilde: todavía
+4114,ultimo,19.5,sin tilde: último
+4115,unico,19.5,sin tilde: único
+4124,articulo,19.1,sin tilde: artículo
+4163,min,19.1,abreviatura
+4165,mr,19.1,abreviatura
+4198,z,19.1,letra suelta
+4200,ó,19.1,tilde indebida: o
+4201,ademas,18.6,sin tilde: además
+4248,linea,18.6,sin tilde: línea
+4249,love,18.6,inglés
+4272,sa,18.6,fragmento
+4281,we,18.6,inglés
+4283,xvi,18.6,número romano
+4289,america,18.2,sin tilde: américa
+4314,dió,18.2,tilde indebida: dio
+4325,fifa,18.2,sigla
+4378,all,17.8,inglés
+4385,big,17.8,inglés
+4386,ca,17.8,fragmento
+4390,cd,17.8,sigla
+4421,info,17.8,abreviatura
+4442,queria,17.8,sin tilde: quería
+4458,vol,17.8,abreviatura
+4459,wow,17.8,interjección inglesa
+4460,xxi,17.8,número romano
+4521,op,17.4,abreviatura
+4601,international,17.0,inglés
+4604,kg,17.0,abreviatura
+4616,ojala,17.0,sin tilde: ojalá
+4618,or,17.0,inglés
+4619,pagina,17.0,sin tilde: página
+4624,play,17.0,inglés
+4640,street,17.0,inglés
+4656,vii,17.0,numeral romano
+4717,ningun,16.6,sin tilde: ningún
+4739,this,16.6,inglés
+4745,xi,16.6,numeral romano
+4755,be,16.2,inglés
+4825,time,16.2,inglés
+4826,times,16.2,inglés
+4828,ultima,16.2,sin tilde: última
+4842,at,15.8,inglés
+4843,av,15.8,abreviatura
+4894,house,15.8,inglés
+4947,with,15.8,inglés
+4950,adn,15.5,sigla
+4965,cia,15.5,sigla
+4967,com,15.5,fragmento de dominio
+5014,po,15.5,fragmento de chat
+5094,from,15.1,inglés
+5105,jamas,15.1,sin tilde: jamás
+5124,osea,15.1,mal escrito: o sea
+5163,boy,14.8,inglés
+5189,free,14.8,inglés
+5214,mia,14.8,sin tilde: mía
+5243,st,14.8,abreviatura
+5244,star,14.8,inglés
+5259,africa,14.5,sin tilde: África
+5287,dificil,14.5,sin tilde: difícil
+5294,full,14.5,inglés
+5322,news,14.5,inglés
+5342,tí,14.5,tilde incorrecta: ti
+5344,xviii,14.5,numeral romano
+5349,ad,14.1,abreviatura
+5352,angel,14.1,sin tilde: ángel
+5364,center,14.1,inglés
+5406,podria,14.1,sin tilde: podría
+5442,alli,13.8,sin tilde: allí
+5443,american,13.8,inglés
+5508,jose,13.8,sin tilde: José
+5533,press,13.8,inglés
+5539,rapido,13.8,sin tilde: rápido
+5571,bs,13.5,abreviatura
+5572,can,13.5,inglés
+5582,day,13.5,inglés
+5593,du,13.5,francés
+5630,paris,13.5,sin tilde: París
+5658,sra,13.5,abreviatura
+5666,vera,13.5,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+5668,ésto,13.5,tilde incorrecta: esto
+5673,ai,13.2,fragmento
+5675,angeles,13.2,sin tilde: ángeles
+5697,dc,13.2,sigla
+5714,facil,13.2,sin tilde: fácil
+5732,like,13.2,inglés
+5746,nomas,13.2,sin tilde: nomás
+5768,that,13.2,inglés
+5800,corazon,12.9,sin tilde: corazón
+5831,iva,12.9,sigla
+5834,levante,12.9,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+5837,live,12.9,inglés
+5842,mg,12.9,abreviatura
+5875,simon,12.9,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+5906,baby,12.6,inglés
+5941,est,12.6,abreviatura
+5944,eu,12.6,sigla
+5954,ia,12.6,sigla
+5958,ingles,12.6,sin tilde: inglés
+5972,musica,12.6,sin tilde: música
+5983,podia,12.6,sin tilde: podía
+6083,pos,12.3,coloquial escrito de pues
+6169,gustaria,12.0,sin tilde: gustaría
+6187,lol,12.0,internet
+6189,may,12.0,inglés
+6221,team,12.0,inglés
+6231,victor,12.0,sin tilde: Víctor
+6232,viii,12.0,numeral romano
+6244,are,11.7,inglés
+6288,fi,11.7,fragmento
+6305,life,11.7,inglés
+6318,open,11.7,inglés
+6356,á,11.7,letra suelta
+6390,farc,11.5,sigla
+6399,green,11.5,inglés
+6401,id,11.5,sigla
+6405,ing,11.5,abreviatura
+6410,ip,11.5,sigla
+6423,pdf,11.5,sigla
+6428,pib,11.5,sigla
+6439,rt,11.5,internet
+6451,titulo,11.5,sin tilde: título
+6458,xv,11.5,numeral romano
+6459,xvii,11.5,numeral romano
+6460,your,11.5,inglés
+6474,bbc,11.2,sigla
+6526,home,11.2,inglés
+6562,policia,11.2,sin tilde: policía
+6573,salio,11.2,sin tilde: salió
+6577,ss,11.2,sigla
+6581,tio,11.2,sin tilde: tío
+6587,uds,11.2,abreviatura
+6592,west,11.2,inglés
+6593,will,11.2,inglés
+6596,ali,11.0,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+6607,bla,11.0,onomatopeya
+6608,blue,11.0,inglés
+6640,ej,11.0,abreviatura
+6660,fc,11.0,sigla
+6673,increible,11.0,sin tilde: increíble
+6678,lastima,11.0,sin tilde: lástima
+6690,not,11.0,inglés
+6695,pe,11.0,fragmento
+6696,pelicula,11.0,sin tilde: película
+6729,air,10.7,inglés
+6776,line,10.7,inglés
+6781,mmm,10.7,onomatopeya
+6786,off,10.7,inglés
+6820,unica,10.7,sin tilde: única
+6831,white,10.7,inglés
+6836,ac,10.5,sigla
+6850,atras,10.5,sin tilde: atrás
+6875,cv,10.5,sigla
+6879,der,10.5,alemán
+6900,ix,10.5,numeral romano
+6916,out,10.5,inglés
+6946,usd,10.5,sigla
+6954,abc,10.2,sigla
+6958,alla,10.2,sin tilde: allá
+6962,atencion,10.2,sin tilde: atención
+6970,capitulo,10.2,sin tilde: capítulo
+7030,pr,10.2,abreviatura
+7049,saint,10.2,inglés
+7063,unam,10.2,sigla
+7093,cap,10.0,abreviatura
+7101,comun,10.0,sin tilde: común
+7123,df,10.0,sigla
+7132,em,10.0,fragmento
+7155,il,10.0,italiano
+7174,men,10.0,inglés
+7276,dj,9.77,sigla
+7288,frio,9.77,sin tilde: frío
+7298,jesus,9.77,sin tilde: Jesús
+7325,ps,9.77,abreviatura
+7351,university,9.77,inglés
+7357,what,9.77,inglés
+7358,xii,9.77,numeral romano
+7359,xiii,9.77,numeral romano
+7391,decia,9.55,sin tilde: decía
+7410,express,9.55,inglés
+7414,fm,9.55,sigla
+7421,hd,9.55,sigla
+7426,je,9.55,internet
+7440,mo,9.55,fragmento
+7443,more,9.55,inglés
+7450,opinion,9.55,sin tilde: opinión
+7465,recien,9.55,sin tilde: recién
+7491,ar,9.33,fragmento
+7545,good,9.33,inglés
+7547,habian,9.33,sin tilde: habían
+7562,jr,9.33,abreviatura
+7566,leon,9.33,sin tilde: León
+7569,lopez,9.33,sin tilde: López
+7581,nasa,9.33,sigla
+7612,tel,9.33,abreviatura
+7620,union,9.33,sin tilde: unión
+7629,accion,9.12,sin tilde: acción
+7650,bo,9.12,fragmento
+7658,chan,9.12,onomatopeya
+7698,fb,9.12,sigla
+7710,inc,9.12,abreviatura
+7741,paises,9.12,sin tilde: países
+7782,vice,9.12,prefijo suelto
+7785,von,9.12,alemán
+7798,ap,8.91,abreviatura
+7800,au,8.91,fragmento
+7810,cnn,8.91,sigla
+7825,dvd,8.91,sigla
+7847,jeje,8.91,internet
+7876,peru,8.91,sin tilde: Perú
+7880,power,8.91,inglés
+7957,deberia,8.71,sin tilde: debería
+7964,dra,8.71,abreviatura
+7985,hs,8.71,abreviatura
+7988,informacion,8.71,sin tilde: información
+8007,national,8.71,inglés
+8027,relacion,8.71,sin tilde: relación
+8030,semi,8.71,prefijo suelto
+8034,sobretodo,8.71,mal escrito: sobre todo
+8046,united,8.71,inglés
+8050,wall,8.71,inglés
+8065,camara,8.51,sin tilde: cámara
+8096,face,8.51,inglés
+8100,gold,8.51,inglés
+8105,hot,8.51,inglés
+8112,journal,8.51,inglés
+8115,lgbt,8.51,sigla
+8131,ong,8.51,sigla
+8139,pense,8.51,sin tilde: pensé
+8142,pq,8.51,abreviatura
+8180,ví,8.51,tilde incorrecta: vi
+8181,young,8.51,inglés
+8196,arts,8.32,inglés
+8200,back,8.32,inglés
+8206,cdmx,8.32,sigla
+8245,ho,8.32,fragmento
+8256,ke,8.32,internet
+8300,sun,8.32,inglés
+8328,ce,8.13,letra suelta
+8329,cf,8.13,abreviatura
+8375,jordan,8.13,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+8381,little,8.13,inglés
+8393,núm,8.13,abreviatura
+8394,oir,8.13,sin tilde: oír
+8397,perdon,8.13,sin tilde: perdón
+8403,politica,8.13,sin tilde: política
+8406,qu,8.13,fragmento
+8432,xiv,8.13,numeral romano
+8455,best,7.94,inglés
+8499,group,7.94,inglés
+8505,hp,7.94,sigla
+8517,julian,7.94,sin tilde: Julián
+8519,league,7.94,inglés
+8523,long,7.94,inglés
+8541,pinto,7.94,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+8543,prd,7.94,sigla
+8562,sep,7.94,abreviatura
+8590,ba,7.76,fragmento
+8602,compañia,7.76,sin tilde: compañía
+8618,doc,7.76,abreviatura
+8636,fu,7.76,fragmento
+8638,grand,7.76,inglés
+8639,if,7.76,inglés
+8644,jajajajaja,7.76,internet
+8652,ml,7.76,abreviatura
+8689,school,7.76,inglés
+8699,telefono,7.76,sin tilde: teléfono
+8702,tl,7.76,abreviatura
+8712,vih,7.76,sigla
+8729,bad,7.59,inglés
+8742,cayo,7.59,sin tilde: cayó
+8763,down,7.59,inglés
+8773,fmi,7.59,sigla
+8791,ine,7.59,sigla
+8795,ivan,7.59,sin tilde: Iván
+8841,rodriguez,7.59,sin tilde: Rodríguez
+8845,sebastian,7.59,sin tilde: Sebastián
+8855,tenian,7.59,sin tilde: tenían
+8880,area,7.41,sin tilde: área
+8907,dejame,7.41,sin tilde: déjame
+8947,just,7.41,inglés
+8957,mc,7.41,sigla
+8966,ms,7.41,abreviatura
+8968,ne,7.41,fragmento
+8969,nicolas,7.41,sin tilde: nicolás
+9002,republica,7.41,sin tilde: república
+9013,south,7.41,inglés
+9028,vió,7.41,tilde incorrecta: vio
+9032,wey,7.41,"jerga americana, grafía no normativa de güey"
+9038,amlo,7.24,sigla
+9075,ei,7.24,interjección de chat
+9077,ejercito,7.24,sin tilde: ejército (ejercitar 1sg es rara)
+9097,game,7.24,inglés
+9100,gps,7.24,sigla
+9101,gral,7.24,abreviatura
+9127,music,7.24,inglés
+9133,now,7.24,inglés
+9160,record,7.24,sin tilde: récord
+9282,jajaj,7.08,internet
+9299,nacion,7.08,sin tilde: nación
+9300,network,7.08,inglés
+9312,peliculas,7.08,sin tilde: películas
+9322,quizas,7.08,sin tilde: quizás
+9351,vd,7.08,abreviatura
+9390,chavez,6.92,sin tilde: chávez
+9406,cup,6.92,inglés o sigla
+9411,dolares,6.92,sin tilde: dólares
+9433,girl,6.92,inglés
+9439,here,6.92,inglés
+9450,io,6.92,otra lengua
+9455,lei,6.92,sin tilde: leí
+9468,muchisimo,6.92,sin tilde: muchísimo
+9471,non,6.92,"latinismo o francés, fragmento"
+9484,pd,6.92,abreviatura
+9496,ram,6.92,sigla
+9510,situacion,6.92,sin tilde: situación
+9514,story,6.92,inglés
+9532,was,6.92,inglés
+9540,ahh,6.76,interjección de chat
+9562,beach,6.76,inglés
+9595,diaz,6.76,sin tilde: díaz
+9601,educacion,6.76,sin tilde: educación
+9624,have,6.76,inglés
+9625,hdp,6.76,sigla malsonante
+9642,lic,6.76,abreviatura
+9650,maquina,6.76,sin tilde: máquina
+9655,mu,6.76,onomatopeya
+9661,oido,6.76,sin tilde: oído
+9662,pal,6.76,contracción coloquial de para el
+9680,queen,6.76,inglés
+9715,verguenza,6.76,sin diéresis: vergüenza
+9775,dragon,6.61,sin tilde: dragón
+9787,eua,6.61,sigla
+9800,garcia,6.61,sin tilde: garcía
+9802,gr,6.61,abreviatura
+9807,hip,6.61,inglés
+9815,island,6.61,inglés
+9849,project,6.61,inglés
+9867,sp,6.61,abreviatura
+9899,adios,6.46,sin tilde: adiós
+9912,bio,6.46,abreviatura
+9913,bro,6.46,jerga inglesa
+9915,cafe,6.46,sin tilde: café
+9916,call,6.46,inglés
+9917,cancer,6.46,sin tilde: cáncer
+9925,chi,6.46,fragmento
+9938,della,6.46,italiano
+9959,get,6.46,inglés
+9971,imagenes,6.46,sin tilde: imágenes
+9984,jun,6.46,abreviatura
+10000,moon,6.46,inglés
+10011,part,6.46,inglés
+10022,pt,6.46,abreviatura
+10027,ra,6.46,fragmento
+10036,road,6.46,inglés
+10041,see,6.46,inglés
+10070,angela,6.31,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+10081,chabon,6.31,sin tilde: chabón (jerga americana)
+10102,estes,6.31,sin tilde: estés
+10113,fr,6.31,abreviatura
+10119,high,6.31,inglés
+10122,im,6.31,inglés
+10148,mayoria,6.31,sin tilde: mayoría
+10187,sanchez,6.31,sin tilde: sánchez
+10194,sms,6.31,sigla
+10202,tb,6.31,abreviatura
+10218,wars,6.31,inglés
+10219,xq,6.31,internet
+10226,afp,6.17,sigla
+10235,aprox,6.17,abreviatura
+10244,ball,6.17,inglés
+10252,cat,6.17,inglés
+10285,die,6.17,alemán o inglés
+10305,er,6.17,fragmento
+10312,fernandez,6.17,sin tilde: fernández
+10319,hop,6.17,inglés
+10333,jovenes,6.17,sin tilde: jóvenes
+10353,neo,6.17,prefijo suelto
+10365,perez,6.17,sin tilde: pérez
+10406,wtf,6.17,internet
+10429,bue,6.03,coloquial de chat
+10431,car,6.03,inglés
+10436,company,6.03,inglés
+10499,martinez,6.03,sin tilde: martínez
+10528,pág,6.03,abreviatura
+10529,quo,6.03,"latín, fragmento"
+10557,uk,6.03,sigla
+10561,version,6.03,sin tilde: versión
+10565,watch,6.03,inglés
+10569,about,5.89,inglés
+10588,benjamin,5.89,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+10601,case,5.89,inglés
+10617,cuestion,5.89,sin tilde: cuestión
+10631,ep,5.89,sigla
+10646,habra,5.89,sin tilde: habrá
+10648,happy,5.89,inglés
+10664,land,5.89,inglés
+10665,latin,5.89,inglés
+10672,lu,5.89,fragmento
+10698,people,5.89,inglés
+10701,poblacion,5.89,sin tilde: población
+10720,review,5.89,inglés
+10731,society,5.89,inglés
+10748,venia,5.89,sin tilde: venía
+10763,bank,5.75,inglés
+10768,cam,5.75,inglés o abreviatura
+10814,epn,5.75,sigla
+10816,esten,5.75,sin tilde: estén
+10824,first,5.75,inglés
+10834,hi,5.75,inglés
+10836,how,5.75,inglés
+10849,know,5.75,inglés
+10876,pj,5.75,sigla
+10890,right,5.75,inglés
+10909,tenias,5.75,sin tilde: tenías
+10924,wi,5.75,fragmento
+10957,cabron,5.62,sin tilde: cabrón
+10966,ch,5.62,letras sueltas
+10989,decis,5.62,sin tilde: decís (voseo)
+10990,dei,5.62,italiano o latín
+10996,dt,5.62,sigla
+10998,dí,5.62,tilde incorrecta: di
+11014,estaria,5.62,sin tilde: estaría
+11047,lider,5.62,sin tilde: líder
+11056,mb,5.62,abreviatura
+11065,office,5.62,inglés
+11080,point,5.62,inglés
+11121,aa,5.5,letras sueltas
+11145,business,5.5,inglés
+11146,but,5.5,inglés
+11157,ceo,5.5,sigla
+11168,cu,5.5,fragmento
+11176,direccion,5.5,sin tilde: dirección
+11188,estabamos,5.5,sin tilde: estábamos
+11194,facto,5.5,"latín, fragmento de de facto"
+11202,frances,5.5,sin tilde: francés
+11235,medico,5.5,sin tilde: médico
+11241,mud,5.5,inglés
+11243,ny,5.5,sigla
+11245,old,5.5,inglés
+11273,roman,5.5,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+11286,state,5.5,inglés
+11291,tc,5.5,sigla
+11306,ab,5.37,letras sueltas
+11317,ara,5.37,catalán o fragmento
+11327,barbara,5.37,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+11424,mp,5.37,sigla
+11425,mx,5.37,abreviatura
+11439,podrias,5.37,sin tilde: podrías
+11473,usb,5.37,sigla
+11477,war,5.37,inglés
+11518,cs,5.25,sigla
+11538,eramos,5.25,sin tilde: éramos
+11555,gonzalez,5.25,sin tilde: gonzález
+11556,got,5.25,inglés
+11560,html,5.25,sigla
+11565,interes,5.25,sin tilde: interés
+11595,nov,5.25,abreviatura
+11606,paginas,5.25,sin tilde: páginas
+11610,pas,5.25,fragmento
+11611,pen,5.25,inglés o sigla
+11615,ph,5.25,sigla
+11646,spanish,5.25,inglés
+11647,store,5.25,inglés
+11664,aaron,5.13,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+11702,cn,5.13,sigla
+11716,dead,5.13,inglés
+11727,dni,5.13,sigla
+11729,east,5.13,inglés
+11733,english,5.13,inglés
+11738,esp,5.13,abreviatura
+11752,gb,5.13,abreviatura
+11770,leido,5.13,sin tilde: leído
+11807,prime,5.13,inglés
+11823,ro,5.13,fragmento
+11832,sorry,5.13,inglés
+11837,tag,5.13,inglés
+11850,valley,5.13,inglés
+11856,way,5.13,inglés
+11876,avila,5.01,sin tilde: ávila
+11878,book,5.01,inglés
+11895,colon,5.01,sin tilde: colón
+11922,division,5.01,sin tilde: división
+11959,institute,5.01,inglés
+11981,net,5.01,inglés
+11983,nose,5.01,error: no sé
+11991,place,5.01,inglés
+12006,qe,5.01,internet
+12011,rd,5.01,sigla
+12013,reir,5.01,sin tilde: reír
+12041,who,5.01,inglés
+12079,college,4.9,inglés
+12099,detras,4.9,sin tilde: detrás
+12125,fé,4.9,tilde incorrecta: fe
+12134,human,4.9,inglés
+12145,iso,4.9,sigla
+12147,jajajaj,4.9,internet
+12148,jejeje,4.9,internet
+12172,night,4.9,inglés
+12173,north,4.9,inglés
+12187,pol,4.9,fragmento
+12209,roll,4.9,inglés
+12210,royal,4.9,inglés
+12220,square,4.9,inglés
+12226,tendria,4.9,sin tilde: tendría
+12238,url,4.9,sigla
+12249,wa,4.9,fragmento
+12260,album,4.79,sin tilde: álbum
+12262,anos,4.79,sin eñe: años
+12283,canada,4.79,sin tilde: canadá
+12291,cfk,4.79,sigla
+12292,cha,4.79,fragmento
+12293,check,4.79,inglés
+12303,comics,4.79,sin tilde: cómics
+12327,dic,4.79,abreviatura
+12337,energia,4.79,sin tilde: energía
+12359,homo,4.79,"latín, fragmento"
+12379,lineas,4.79,sin tilde: líneas
+12421,prof,4.79,abreviatura
+12442,service,4.79,inglés
+12454,television,4.79,sin tilde: televisión
+12458,tia,4.79,sin tilde: tía
+12466,user,4.79,inglés
+12503,carcel,4.68,sin tilde: cárcel
+12536,daily,4.68,inglés
+12553,edit,4.68,inglés
+12559,end,4.68,inglés
+12571,fort,4.68,inglés
+12574,gomez,4.68,sin tilde: gómez
+12612,mobile,4.68,inglés
+12615,mon,4.68,francés o fragmento
+12662,religion,4.68,sin tilde: religión
+12670,sabado,4.68,sin tilde: sábado
+12678,seo,4.68,sigla
+12680,sex,4.68,inglés
+12690,tr,4.68,abreviatura
+12697,var,4.68,sigla
+12704,want,4.68,inglés
+12719,anton,4.57,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+12757,dark,4.57,inglés
+12781,exito,4.57,sin tilde: éxito
+12788,ga,4.57,fragmento
+12790,golden,4.57,inglés
+12794,hara,4.57,sin tilde: hará
+12809,ji,4.57,onomatopeya
+12814,led,4.57,sigla
+12823,made,4.57,inglés
+12851,panama,4.57,sin tilde: panamá
+12869,pu,4.57,fragmento
+12870,qui,4.57,fragmento
+12888,sc,4.57,sigla
+12896,spain,4.57,inglés
+12908,ultimamente,4.57,sin tilde: últimamente
+12930,ahhh,4.47,interjección de chat
+12947,boys,4.47,inglés
+12951,capitan,4.47,sin tilde: capitán
+13008,felix,4.47,sin tilde: félix
+13020,haria,4.47,sin tilde: haría
+13025,hope,4.47,inglés
+13026,hrs,4.47,abreviatura
+13044,law,4.47,inglés
+13080,port,4.47,inglés
+13123,um,4.47,interjección de chat
+13128,victimas,4.47,sin tilde: víctimas
+13129,view,4.47,inglés
+13135,zero,4.47,inglés
+13137,action,4.37,inglés
+13140,age,4.37,inglés
+13157,bon,4.37,francés
+13192,earth,4.37,inglés
+13208,facu,4.37,abreviatura coloquial
+13211,fire,4.37,inglés
+13214,fuí,4.37,tilde incorrecta: fui
+13226,haha,4.37,internet
+13253,monton,4.37,sin tilde: montón
+13275,ping,4.37,inglés o fragmento
+13302,research,4.37,inglés
+13309,science,4.37,inglés
+13318,sports,4.37,inglés
+13339,when,4.37,inglés
+13340,word,4.37,inglés
+13356,arg,4.27,abreviatura
+13358,aveces,4.27,error: a veces
+13359,bi,4.27,prefijo suelto
+13405,dream,4.27,inglés
+13406,drive,4.27,inglés
+13429,ff,4.27,sigla
+13438,genero,4.27,sin tilde: género
+13445,her,4.27,inglés
+13446,his,4.27,inglés
+13461,ki,4.27,fragmento
+13501,pl,4.27,abreviatura
+13506,porq,4.27,abreviatura
+13512,proximo,4.27,sin tilde: próximo
+13525,sip,4.27,internet
+13529,talvez,4.27,error: tal vez
+13532,there,4.27,inglés
+13533,tmb,4.27,abreviatura
+13540,ultimas,4.27,sin tilde: últimas
+13550,yeah,4.27,inglés
+13562,ago,4.17,inglés
+13566,alvarez,4.17,sin tilde: álvarez
+13602,comic,4.17,sin tilde: cómic
+13606,constitucion,4.17,sin tilde: constitución
+13614,credito,4.17,sin tilde: crédito
+13634,development,4.17,inglés
+13652,estupido,4.17,sin tilde: estúpido
+13663,foundation,4.17,inglés
+13671,hard,4.17,inglés
+13696,low,4.17,inglés
+13707,mtv,4.17,sigla
+13710,oct,4.17,abreviatura
+13715,over,4.17,inglés
+13724,politicos,4.17,sin tilde: políticos
+13727,produccion,4.17,sin tilde: producción
+13730,proxima,4.17,sin tilde: próxima
+13733,págs,4.17,abreviatura
+13761,too,4.17,inglés
+13766,true,4.17,inglés
+13776,victima,4.17,sin tilde: víctima
+13792,alejo,4.07,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+13796,andres,4.07,sin tilde: andrés
+13822,cel,4.07,abreviatura
+13825,channel,4.07,inglés
+13851,dom,4.07,abreviatura
+13854,edo,4.07,abreviatura
+13860,enserio,4.07,error: en serio
+13885,history,4.07,inglés
+13898,jardin,4.07,sin tilde: jardín
+13911,lp,4.07,sigla
+13924,next,4.07,inglés
+13965,side,4.07,inglés
+13967,sim,4.07,sigla
+13973,sta,4.07,abreviatura
+13981,they,4.07,inglés
+13982,things,4.07,inglés
+13988,trailer,4.07,sin tilde: tráiler
+13994,tve,4.07,sigla
+14005,again,3.98,inglés
+14013,alvaro,3.98,sin tilde: álvaro
+14054,ci,3.98,sigla
+14066,cordoba,3.98,sin tilde: córdoba
+14081,economia,3.98,sin tilde: economía
+14088,encontre,3.98,sin tilde: encontré
+14108,habitacion,3.98,sin tilde: habitación
+14111,hare,3.98,sin tilde: haré
+14145,never,3.98,inglés
+14153,parecia,3.98,sin tilde: parecía
+14169,public,3.98,inglés
+14191,tas,3.98,apócope de chat
+14192,tecnologia,3.98,sin tilde: tecnología
+14202,ultimos,3.98,sin tilde: últimos
+14222,airlines,3.89,inglés
+14227,amsterdam,3.89,sin tilde: ámsterdam
+14255,bc,3.89,abreviatura
+14277,cp,3.89,sigla
+14282,daria,3.89,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+14299,dubai,3.89,sin tilde: dubái
+14302,eleccion,3.89,sin tilde: elección
+14319,food,3.89,inglés
+14321,fuck,3.89,inglés
+14328,guia,3.89,sin tilde: guía
+14329,habria,3.89,sin tilde: habría
+14342,jonas,3.89,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+14349,lucio,3.89,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+14351,mai,3.89,inglés o chat
+14358,milan,3.89,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+14365,nah,3.89,internet
+14372,our,3.89,inglés
+14382,please,3.89,inglés
+14390,race,3.89,inglés
+14399,region,3.89,sin tilde: región
+14407,rumania,3.89,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+14418,song,3.89,inglés
+14420,style,3.89,inglés
+14439,vo,3.89,fragmento
+14455,adrian,3.8,sin tilde: adrián
+14458,amen,3.8,sin tilde: amén
+14512,corporation,3.8,inglés
+14519,ddhh,3.8,sigla
+14520,death,3.8,inglés
+14530,diesel,3.8,sin tilde: diésel
+14583,iron,3.8,inglés
+14592,lpm,3.8,sigla malsonante
+14593,lucia,3.8,sin tilde: lucía
+14595,mad,3.8,inglés
+14606,movil,3.8,sin tilde: móvil
+14611,nm,3.8,abreviatura
+14660,sd,3.8,sigla
+14672,summer,3.8,inglés
+14677,teneis,3.8,sin tilde: tenéis
+14681,today,3.8,inglés
+14683,uff,3.8,onomatopeya de chat
+14692,work,3.8,inglés
+14693,xxx,3.8,internet
+14694,yes,3.8,inglés
+14705,after,3.72,inglés
+14706,ag,3.72,sigla
+14746,community,3.72,inglés
+14800,family,3.72,inglés
+14802,fer,3.72,fragmento
+14806,gales,3.72,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+14807,games,3.72,inglés
+14810,habeis,3.72,sin tilde: habéis
+14816,ice,3.72,inglés
+14831,ka,3.72,fragmento
+14844,maximo,3.72,sin tilde: máximo
+14847,minimo,3.72,sin tilde: mínimo
+14868,podrian,3.72,sin tilde: podrían
+14869,porfavor,3.72,error: por favor
+14887,records,3.72,inglés (sin tilde: récords)
+14893,rei,3.72,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+14896,report,3.72,inglés
+14905,rios,3.72,sin tilde: ríos
+14913,sm,3.72,sigla
+14921,studio,3.72,inglés
+14923,system,3.72,inglés
+14924,tac,3.72,sigla
+14929,think,3.72,inglés
+14931,und,3.72,alemán
+14937,vision,3.72,inglés (sin tilde: visión)
+14953,act,3.63,inglés
+14964,articulos,3.63,sin tilde: artículos
+14967,asique,3.63,error: así que
+14985,cancion,3.63,sin tilde: canción
+14994,centre,3.63,inglés
+14999,cne,3.63,sigla
+15000,codigo,3.63,sin tilde: código
+15015,cr,3.63,abreviatura
+15018,deberian,3.63,sin tilde: deberían
+15036,envio,3.63,sin tilde: envío
+15038,epoca,3.63,sin tilde: época
+15045,feb,3.63,abreviatura
+15047,fijate,3.63,sin tilde: fíjate
+15056,god,3.63,inglés
+15058,great,3.63,inglés
+15060,guardian,3.63,inglés
+15063,hab,3.63,abreviatura
+15088,ju,3.63,fragmento
+15091,last,3.63,inglés
+15094,ll,3.63,letras sueltas
+15101,make,3.63,inglés
+15102,management,3.63,inglés
+15118,mit,3.63,sigla
+15130,nu,3.63,fragmento
+15174,run,3.63,inglés
+15178,say,3.63,inglés
+15181,seran,3.63,sin tilde: serán
+15182,server,3.63,inglés
+15184,sisi,3.63,internet
+15185,southern,3.63,inglés
+15199,veia,3.63,sin tilde: veía
+15204,wp,3.63,abreviatura
+15232,association,3.55,inglés
+15238,aver,3.55,error: a ver
+15297,dir,3.55,abreviatura
+15328,friends,3.55,inglés
+15350,isbn,3.55,sigla
+15354,ko,3.55,sigla
+15381,ocde,3.55,sigla
+15383,only,3.55,inglés
+15398,pf,3.55,abreviatura
+15408,publicas,3.55,sin tilde: públicas
+15415,ramon,3.55,sin tilde: ramón
+15436,site,3.55,inglés
+15453,tech,3.55,inglés
+15484,ami,3.47,error: a mí
+15502,bull,3.47,inglés
+15506,cause,3.47,inglés
+15527,criticas,3.47,sin tilde: críticas
+15530,dance,3.47,inglés
+15559,europe,3.47,inglés
+15582,heroes,3.47,sin tilde: héroes
+15590,indice,3.47,sin tilde: índice
+15615,mt,3.47,abreviatura
+15657,revolucion,3.47,sin tilde: revolución
+15666,serian,3.47,sin tilde: serían
+15668,solucion,3.47,sin tilde: solución
+15682,take,3.47,inglés
+15692,traves,3.47,sin tilde: través
+15713,alegria,3.39,sin tilde: alegría
+15751,challenge,3.39,inglés
+15752,change,3.39,inglés
+15761,comunicacion,3.39,sin tilde: comunicación
+15771,dea,3.39,sigla
+15772,deberias,3.39,sin tilde: deberías
+15785,ds,3.39,sigla
+15825,iran,3.39,sin tilde: irán
+15830,kms,3.39,abreviatura
+15840,mass,3.39,inglés
+15851,multi,3.39,prefijo suelto
+15853,murio,3.39,sin tilde: murió
+15860,oil,3.39,inglés
+15862,olvidate,3.39,sin tilde: olvídate
+15879,politico,3.39,sin tilde: político
+15883,principe,3.39,sin tilde: príncipe
+15910,some,3.39,inglés
+15916,technology,3.39,inglés
+15917,ter,3.39,fragmento
+15922,town,3.39,inglés
+15926,two,3.39,inglés
+15937,website,3.39,inglés
+15938,win,3.39,inglés
+15949,alpha,3.31,inglés
+15962,awards,3.31,inglés
+15977,caracter,3.31,sin tilde: carácter
+15983,chu,3.31,fragmento
+15985,cl,3.31,abreviatura
+15989,code,3.31,inglés
+16053,forever,3.31,inglés
+16059,ge,3.31,letras sueltas
+16073,ie,3.31,abreviatura
+16076,imss,3.31,sigla
+16095,maquinas,3.31,sin tilde: máquinas
+16101,mrs,3.31,abreviatura
+16109,opcion,3.31,sin tilde: opción
+16124,posicion,3.31,sin tilde: posición
+16146,reunion,3.31,sin tilde: reunión
+16150,rom,3.31,sigla
+16151,sali,3.31,sin tilde: salí
+16153,sandwich,3.31,sin tilde: sándwich
+16166,space,3.31,inglés
+16182,why,3.31,inglés
+16186,ace,3.24,inglés
+16192,afa,3.24,sigla
+16221,boe,3.24,sigla
+16259,dog,3.24,inglés
+16261,elias,3.24,sin tilde: elías
+16262,empezo,3.24,sin tilde: empezó
+16286,fun,3.24,inglés
+16312,lake,3.24,inglés
+16330,money,3.24,inglés
+16331,monica,3.24,sin tilde: mónica
+16335,munich,3.24,sin tilde: múnich
+16345,other,3.24,inglés
+16360,pokemon,3.24,sin tilde: pokémon
+16390,rs,3.24,abreviatura
+16392,salon,3.24,sin tilde: salón
+16407,tn,3.24,sigla
+16426,water,3.24,sin tilde: wáter
+16428,wn,3.24,internet
+16447,arbol,3.16,sin tilde: árbol
+16457,br,3.16,abreviatura
+16459,caido,3.16,sin tilde: caído
+16460,callate,3.16,sin tilde: cállate
+16501,diria,3.16,sin tilde: diría
+16524,fast,3.16,inglés
+16549,hello,3.16,inglés
+16550,help,3.16,inglés
+16554,image,3.16,inglés
+16571,let,3.16,inglés
+16572,lg,3.16,sigla
+16585,mind,3.16,inglés
+16589,much,3.16,inglés
+16603,pac,3.16,sigla
+16627,prohibe,3.16,sin tilde: prohíbe
+16643,sat,3.16,sigla
+16655,talk,3.16,inglés
+16658,theory,3.16,inglés
+16659,tipico,3.16,sin tilde: típico
+16661,tor,3.16,fragmento
+16666,ucr,3.16,sigla
+16673,vita,3.16,latín
+16675,vzla,3.16,abreviatura
+16678,women,3.16,inglés
+16708,berlin,3.09,sin tilde: berlín
+16712,bros,3.09,abreviatura inglesa
+16715,bu,3.09,fragmento
+16722,card,3.09,inglés
+16752,design,3.09,inglés
+16763,dm,3.09,abreviatura
+16786,ever,3.09,inglés
+16795,fisica,3.09,sin tilde: física
+16800,front,3.09,inglés
+16801,ft,3.09,abreviatura
+16810,hacian,3.09,sin tilde: hacían
+16811,hahaha,3.09,internet
+16814,ibm,3.09,sigla
+16844,miercoles,3.09,sin tilde: miércoles
+16876,pgr,3.09,sigla
+16881,pnv,3.09,sigla
+16884,practicas,3.09,sin tilde: prácticas
+16904,regimen,3.09,sin tilde: régimen
+16910,ri,3.09,fragmento
+16920,she,3.09,inglés
+16955,aaa,3.02,sigla
+16971,anc,3.02,sigla
+16991,bolivar,3.02,sin tilde: bolívar
+16993,books,3.02,inglés
+16996,brother,3.02,inglés
+17005,children,3.02,inglés
+17026,core,3.02,inglés
+17041,depto,3.02,abreviatura
+17070,estara,3.02,sin tilde: estará
+17084,fria,3.02,sin tilde: fría
+17090,girls,3.02,inglés
+17101,hector,3.02,sin tilde: héctor
+17118,jajajajajaja,3.02,internet
+17121,kids,3.02,inglés
+17122,lab,3.02,abreviatura
+17126,lideres,3.02,sin tilde: líderes
+17130,ltd,3.02,abreviatura
+17138,market,3.02,inglés
+17147,mios,3.02,sin tilde: míos
+17149,nac,3.02,abreviatura
+17151,nat,3.02,fragmento
+17165,pasion,3.02,sin tilde: pasión
+17171,perdio,3.02,sin tilde: perdió
+17177,policias,3.02,sin tilde: policías
+17217,room,3.02,inglés
+17220,same,3.02,inglés
+17226,sg,3.02,sigla
+17231,source,3.02,inglés
+17240,tlc,3.02,sigla
+17243,trade,3.02,inglés
+17245,uc,3.02,sigla
+17253,volvio,3.02,sin tilde: volvió
+17255,yi,3.02,fragmento
+17264,ak,2.95,abreviatura
+17273,any,2.95,inglés
+17279,arboles,2.95,sin tilde: árboles
+17291,aya,2.95,error: haya
+17296,bbva,2.95,sigla
+17302,british,2.95,inglés
+17303,caba,2.95,sigla
+17310,cgt,2.95,sigla
+17333,daddy,2.95,inglés
+17344,dialogo,2.95,sin tilde: diálogo
+17348,dire,2.95,sin tilde: diré
+17371,forum,2.95,sin tilde: fórum
+17416,mason,2.95,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+17422,millon,2.95,sin tilde: millón
+17430,nam,2.95,fragmento
+17435,numeros,2.95,sin tilde: números
+17437,oe,2.95,internet
+17438,oo,2.95,fragmento
+17441,pag,2.95,abreviatura
+17450,podeis,2.95,sin tilde: podéis
+17451,podian,2.95,sin tilde: podían
+17476,sahara,2.95,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+17485,sl,2.95,sigla
+17492,tea,2.95,inglés
+17505,vacio,2.95,sin tilde: vacío
+17508,vé,2.95,error: ve
+17509,woman,2.95,inglés
+17511,é,2.95,letras sueltas
+17518,active,2.88,inglés
+17549,bye,2.88,inglés
+17552,caida,2.88,sin tilde: caída
+17566,circulo,2.88,sin tilde: círculo
+17577,conoci,2.88,sin tilde: conocí
+17587,cpu,2.88,sigla
+17605,dá,2.88,error: da
+17626,espiritu,2.88,sin tilde: espíritu
+17627,estais,2.88,sin tilde: estáis
+17646,garden,2.88,inglés
+17652,hbo,2.88,sigla
+17653,health,2.88,inglés
+17658,hills,2.88,inglés
+17661,imbecil,2.88,sin tilde: imbécil
+17674,jam,2.88,inglés
+17688,magic,2.88,inglés
+17694,mk,2.88,abreviatura
+17695,mmmm,2.88,onomatopeya de chat
+17696,mod,2.88,abreviatura inglesa
+17702,need,2.88,inglés
+17706,okay,2.88,inglés
+17724,podra,2.88,sin tilde: podrá
+17746,sec,2.88,abreviatura
+17763,tae,2.88,fragmento
+17768,toc,2.88,onomatopeya o sigla
+17772,uefa,2.88,sigla
+17779,wild,2.88,inglés
+17780,won,2.88,inglés
+17782,ye,2.88,fragmento
+17794,angulo,2.82,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+17796,aplicacion,2.82,sin tilde: aplicación
+17829,castle,2.82,inglés
+17840,closet,2.82,sin tilde: clóset
+17859,construccion,2.82,sin tilde: construcción
+17866,curriculum,2.82,sin tilde: currículum
+17869,deep,2.82,inglés
+17882,easy,2.82,inglés
+17920,ig,2.82,abreviatura
+17927,inegi,2.82,sigla
+17928,information,2.82,inglés
+17934,its,2.82,inglés
+17935,job,2.82,inglés
+17940,lio,2.82,sin tilde: lío
+17958,mts,2.82,abreviatura
+17962,organizacion,2.82,sin tilde: organización
+17965,pdvsa,2.82,sigla
+17968,perdi,2.82,sin tilde: perdí
+17984,pseudo,2.82,prefijo suelto
+17993,rain,2.82,inglés
+18011,seleccion,2.82,sin tilde: selección
+18015,sofia,2.82,sin tilde: Sofía
+18025,sweet,2.82,inglés
+18040,under,2.82,inglés
+18042,urban,2.82,inglés
+18051,village,2.82,inglés
+18055,weon,2.82,jerga malsonante (huevón)
+18062,abr,2.75,abreviatura
+18069,administracion,2.75,sin tilde: administración
+18077,andre,2.75,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+18109,cds,2.75,sigla
+18112,chin,2.75,onomatopeya
+18146,days,2.75,inglés
+18148,decian,2.75,sin tilde: decían
+18155,dif,2.75,sigla
+18158,edition,2.75,inglés
+18179,evil,2.75,inglés
+18204,hmm,2.75,onomatopeya de chat
+18211,int,2.75,abreviatura
+18222,key,2.75,inglés
+18223,kid,2.75,inglés
+18225,lagrimas,2.75,sin tilde: lágrimas
+18232,lost,2.75,inglés
+18244,md,2.75,abreviatura
+18252,muchisimas,2.75,sin tilde: muchísimas
+18306,ren,2.75,fragmento
+18323,start,2.75,inglés
+18333,text,2.75,inglés
+18335,topic,2.75,inglés
+18337,trad,2.75,abreviatura
+18339,trip,2.75,inglés
+18341,trust,2.75,inglés
+18342,ua,2.75,sigla
+18352,és,2.75,catalán
+18370,army,2.69,inglés
+18403,care,2.69,inglés
+18421,corrupcion,2.69,sin tilde: corrupción
+18424,ctm,2.69,abreviatura malsonante
+18431,decision,2.69,sin tilde: decisión
+18439,discusion,2.69,sin tilde: discusión
+18444,dl,2.69,abreviatura
+18446,dpto,2.69,abreviatura
+18466,estomago,2.69,sin tilde: estómago
+18509,japan,2.69,inglés
+18515,justice,2.69,inglés
+18517,jóven,2.69,tilde errónea: joven
+18541,mountain,2.69,inglés
+18542,name,2.69,inglés
+18545,notes,2.69,inglés
+18563,pbi,2.69,sigla
+18600,rev,2.69,abreviatura
+18603,rip,2.69,sigla
+18611,shanghai,2.69,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+18618,suarez,2.69,sin tilde: Suárez
+18635,ts,2.69,abreviatura
+18636,tt,2.69,abreviatura
+18644,wea,2.69,jerga malsonante
+18680,band,2.63,inglés
+18683,breaking,2.63,inglés
+18685,bridge,2.63,inglés
+18688,cb,2.63,sigla
+18749,espn,2.63,sigla
+18764,fl,2.63,abreviatura
+18765,force,2.63,inglés
+18776,gt,2.63,abreviatura
+18777,gu,2.63,fragmento
+18782,hat,2.63,inglés
+18841,nom,2.63,abreviatura
+18885,ref,2.63,abreviatura
+18898,sad,2.63,inglés
+18913,spring,2.63,inglés
+18922,touch,2.63,inglés
+18936,voice,2.63,inglés
+18939,vpn,2.63,sigla
+18941,well,2.63,inglés
+18953,api,2.57,sigla
+18967,bb,2.57,abreviatura de chat
+18968,better,2.57,inglés
+18983,ciu,2.57,sigla
+18985,classic,2.57,inglés
+18986,cloud,2.57,inglés
+18987,cnte,2.57,sigla
+18998,conversacion,2.57,sin tilde: conversación
+19002,cyber,2.57,inglés
+19004,dans,2.57,francés
+19005,deberiamos,2.57,sin tilde: deberíamos
+19053,head,2.57,inglés
+19054,heart,2.57,inglés
+19056,hernandez,2.57,sin tilde: Hernández
+19069,index,2.57,inglés
+19078,intencion,2.57,sin tilde: intención
+19081,jj,2.57,abreviatura
+19090,lucky,2.57,inglés
+19112,nes,2.57,sigla
+19133,photo,2.57,inglés
+19149,psuv,2.57,sigla
+19153,quiza,2.57,sin tilde: quizá
+19165,rn,2.57,abreviatura
+19173,save,2.57,inglés
+19176,senti,2.57,sin tilde: sentí
+19178,soft,2.57,inglés
+19184,sugar,2.57,inglés
+19193,tecnico,2.57,sin tilde: técnico
+19194,their,2.57,inglés
+19196,tin,2.57,onomatopeya
+19199,tra,2.57,fragmento
+19208,veronica,2.57,sin tilde: Verónica
+19213,volvi,2.57,sin tilde: volví
+19214,walking,2.57,inglés
+19215,were,2.57,inglés
+19219,access,2.51,inglés
+19231,analisis,2.51,sin tilde: análisis
+19251,brazil,2.51,inglés
+19275,comision,2.51,sin tilde: comisión
+19288,creative,2.51,inglés
+19291,dd,2.51,abreviatura
+19333,fed,2.51,sigla
+19347,gm,2.51,sigla
+19353,hai,2.51,fragmento de chat
+19396,latam,2.51,abreviatura
+19399,liberty,2.51,inglés
+19410,marques,2.51,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+19414,med,2.51,abreviatura
+19428,nd,2.51,abreviatura
+19429,nfl,2.51,sigla
+19434,nro,2.51,abreviatura
+19450,petroleo,2.51,sin tilde: petróleo
+19475,revolution,2.51,inglés
+19485,security,2.51,inglés
+19505,tendras,2.51,sin tilde: tendrás
+19508,than,2.51,inglés
+19509,trafico,2.51,sin tilde: tráfico
+19527,zone,2.51,inglés
+19536,alt,2.45,abreviatura
+19539,alv,2.45,abreviatura malsonante
+19550,ars,2.45,abreviatura
+19559,bn,2.45,abreviatura
+19577,cas,2.45,fragmento
+19602,critico,2.45,sin tilde: crítico
+19637,enterprise,2.45,inglés
+19651,facilmente,2.45,sin tilde: fácilmente
+19652,falcon,2.45,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+19653,far,2.45,inglés
+19655,fit,2.45,inglés
+19657,freedom,2.45,inglés
+19670,gob,2.45,abreviatura
+19685,imágen,2.45,tilde errónea: imagen
+19696,jul,2.45,abreviatura
+19703,lex,2.45,latín
+19706,ls,2.45,abreviatura
+19708,main,2.45,inglés
+19728,mother,2.45,inglés
+19734,nsa,2.45,sigla
+19744,pacific,2.45,inglés
+19755,php,2.45,sigla
+19756,pio,2.45,sin tilde: pío
+19758,planet,2.45,inglés
+19761,pool,2.45,inglés
+19772,pue,2.45,fragmento
+19790,rich,2.45,inglés
+19795,secret,2.45,inglés
+19803,soc,2.45,abreviatura
+19807,teen,2.45,inglés
+19809,tendra,2.45,sin tilde: tendrá
+19815,ufff,2.45,onomatopeya de chat
+19820,where,2.45,inglés
+19836,areas,2.4,sin tilde: áreas
+19844,bateria,2.4,sin tilde: batería
+19845,bird,2.4,inglés
+19848,boss,2.4,inglés
+19851,brothers,2.4,inglés
+19853,burger,2.4,inglés
+19856,cai,2.4,sin tilde: caí
+19881,content,2.4,inglés
+19908,din,2.4,sigla
+19919,ec,2.4,abreviatura
+19922,eds,2.4,abreviatura
+19933,energy,2.4,inglés
+19951,eye,2.4,inglés
+19953,fair,2.4,inglés
+19961,fo,2.4,fragmento
+19969,future,2.4,inglés
+19972,german,2.4,sin tilde: Germán
+19983,herald,2.4,inglés
+19990,ibamos,2.4,sin tilde: íbamos
+20000,indian,2.4,inglés
+20019,jos,2.4,fragmento
+20049,mw,2.4,abreviatura
+20062,oc,2.4,abreviatura
+20072,pass,2.4,inglés
+20078,pes,2.4,fragmento
+20085,presion,2.4,sin tilde: presión
+20090,pts,2.4,abreviatura
+20107,running,2.4,inglés
+20112,seg,2.4,abreviatura
+20120,soccer,2.4,inglés
+20124,sres,2.4,abreviatura
+20125,stories,2.4,inglés
+20138,trio,2.4,sin tilde: trío
+20139,tsj,2.4,sigla
+20150,week,2.4,inglés
+20162,af,2.34,abreviatura
+20188,atlantic,2.34,inglés
+20201,bowl,2.34,inglés
+20244,db,2.34,abreviatura
+20261,entendi,2.34,sin tilde: entendí
+20264,erc,2.34,sigla
+20271,estacion,2.34,sin tilde: estación
+20278,exchange,2.34,inglés
+20290,football,2.34,inglés
+20292,fucking,2.34,inglés malsonante
+20296,gp,2.34,sigla
+20343,mision,2.34,sin tilde: misión
+20346,morning,2.34,inglés
+20353,nooo,2.34,expresiva de chat
+20360,oposicion,2.34,sin tilde: oposición
+20367,peace,2.34,inglés
+20376,pls,2.34,abreviatura inglesa
+20378,podras,2.34,sin tilde: podrás
+20396,proteccion,2.34,sin tilde: protección
+20424,rtve,2.34,sigla
+20427,sas,2.34,sigla
+20429,self,2.34,inglés
+20437,spider,2.34,inglés
+20441,tam,2.34,fragmento
+20450,tm,2.34,abreviatura
+20452,tp,2.34,abreviatura
+20454,tube,2.34,inglés
+20455,ugt,2.34,sigla
+20465,yoo,2.34,fragmento de chat
+20472,ae,2.29,fragmento
+20495,azucar,2.29,sin tilde: azúcar
+20499,because,2.29,inglés
+20500,been,2.29,inglés
+20503,bién,2.29,tilde errónea: bien
+20511,cao,2.29,fragmento
+20512,carbon,2.29,sin tilde: carbón
+20521,cis,2.29,sigla
+20545,creia,2.29,sin tilde: creía
+20550,cum,2.29,latín
+20560,dela,2.29,error: de la
+20574,dns,2.29,sigla
+20575,dolar,2.29,sin tilde: dólar
+20580,economic,2.29,inglés
+20581,education,2.29,inglés
+20601,fine,2.29,inglés
+20612,gta,2.29,sigla
+20619,hell,2.29,inglés
+20623,hood,2.29,inglés
+20640,kb,2.29,abreviatura
+20641,kiss,2.29,inglés
+20658,mex,2.29,abreviatura
+20665,nino,2.29,sin tilde: niño
+20666,nl,2.29,abreviatura
+20671,operacion,2.29,sin tilde: operación
+20698,psc,2.29,sigla
+20704,querian,2.29,sin tilde: querían
+20705,raiz,2.29,sin tilde: raíz
+20706,ramirez,2.29,sin tilde: Ramírez
+20707,raul,2.29,sin tilde: Raúl
+20708,read,2.29,inglés
+20724,rights,2.29,inglés
+20728,rr,2.29,abreviatura
+20730,rush,2.29,inglés
+20734,sans,2.29,francés
+20747,six,2.29,inglés
+20748,snow,2.29,inglés
+20751,speed,2.29,inglés
+20768,univ,2.29,abreviatura
+20770,utc,2.29,sigla
+20790,african,2.24,inglés
+20792,agustin,2.24,sin tilde: Agustín
+20802,apa,2.24,fragmento
+20813,bahia,2.24,sin tilde: bahía
+20816,baron,2.24,sin tilde: barón
+20823,blu,2.24,italiano/fragmento
+20826,buenisimo,2.24,sin tilde: buenísimo
+20846,cms,2.24,abreviatura
+20882,economica,2.24,sin tilde: económica
+20904,exp,2.24,abreviatura
+20909,feel,2.24,inglés
+20918,four,2.24,inglés
+20927,geo,2.24,prefijo suelto
+20933,hr,2.24,abreviatura
+20934,ies,2.24,sigla
+20950,investigacion,2.24,sin tilde: investigación
+20982,mer,2.24,francés
+20987,mirror,2.24,inglés
+20989,mode,2.24,inglés
+20992,monster,2.24,inglés
+20996,nc,2.24,abreviatura
+20997,nel,2.24,jerga
+21002,ocean,2.24,inglés
+21016,pedi,2.24,sin tilde: pedí
+21023,pié,2.24,tilde errónea: pie
+21026,political,2.24,inglés
+21028,pour,2.24,francés
+21033,prision,2.24,sin tilde: prisión
+21056,ridiculo,2.24,sin tilde: ridículo
+21057,rm,2.24,abreviatura
+21060,rue,2.24,francés
+21062,sabeis,2.24,sin tilde: sabéis
+21065,salia,2.24,sin tilde: salía
+21071,search,2.24,inglés
+21073,sensacion,2.24,sin tilde: sensación
+21080,small,2.24,inglés
+21092,teniamos,2.24,sin tilde: teníamos
+21097,travel,2.24,inglés
+21103,very,2.24,inglés
+21105,vie,2.24,abreviatura
+21113,without,2.24,inglés
+21132,also,2.19,inglés
+21138,arc,2.19,inglés
+21169,cojer,2.19,error ortográfico: coger
+21220,ela,2.19,gallego/fragmento
+21248,fantasy,2.19,inglés
+21249,fao,2.19,sigla
+21250,fest,2.19,inglés
+21259,gal,2.19,sigla
+21263,gi,2.19,fragmento
+21286,ire,2.19,sin tilde: iré
+21290,korea,2.19,inglés
+21303,luís,2.19,tilde errónea: Luis
+21305,machine,2.19,inglés
+21309,mana,2.19,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+21320,mister,2.19,inglés (míster)
+21330,nestor,2.19,sin tilde: Néstor
+21332,nop,2.19,jerga de chat
+21335,ol,2.19,fragmento
+21341,pario,2.19,sin tilde: parió
+21347,pet,2.19,inglés
+21352,podriamos,2.19,sin tilde: podríamos
+21359,practicamente,2.19,sin tilde: prácticamente
+21371,quereis,2.19,sin tilde: queréis
+21376,rc,2.19,abreviatura
+21384,rep,2.19,abreviatura
+21402,seccion,2.19,sin tilde: sección
+21405,segui,2.19,sin tilde: seguí
+21407,senor,2.19,error ortográfico: señor
+21408,services,2.19,inglés
+21409,shop,2.19,inglés
+21413,situ,2.19,latín (in situ)
+21428,ton,2.19,fragmento de chat
+21437,uba,2.19,sigla
+21439,udi,2.19,sigla
+21440,varia,2.19,sin tilde: varía
+21447,xl,2.19,abreviatura
+21448,xp,2.19,abreviatura
+21449,ypf,2.19,sigla
+21462,aka,2.14,abreviatura inglesa
+21466,ao,2.14,fragmento
+21472,article,2.14,inglés
+21492,blood,2.14,inglés
+21494,bogota,2.14,sin tilde: Bogotá
+21510,cdc,2.14,sigla
+21515,cnt,2.14,sigla
+21531,crazy,2.14,inglés
+21536,culture,2.14,inglés
+21538,cía,2.14,abreviatura
+21587,fish,2.14,inglés
+21589,formacion,2.14,sin tilde: formación
+21605,hero,2.14,inglés
+21617,incomodo,2.14,sin tilde: incómodo
+21628,into,2.14,inglés
+21631,ipc,2.14,sigla
+21640,learning,2.14,inglés
+21646,limited,2.14,inglés
+21647,liquido,2.14,sin tilde: líquido
+21648,lit,2.14,abreviatura
+21660,mart,2.14,fragmento
+21674,nuñez,2.14,sin tilde: Núñez
+21700,pic,2.14,abreviatura
+21706,presentacion,2.14,sin tilde: presentación
+21708,president,2.14,catalán
+21732,ria,2.14,sin tilde: ría
+21736,rss,2.14,sigla
+21737,ru,2.14,fragmento
+21744,sentia,2.14,sin tilde: sentía
+21762,traido,2.14,sin tilde: traído
+21800,aj,2.09,fragmento
+21827,campeon,2.09,sin tilde: campeón
+21831,capitulos,2.09,sin tilde: capítulos
+21841,child,2.09,inglés
+21863,cor,2.09,fragmento
+21865,cost,2.09,inglés
+21872,dai,2.09,fragmento
+21878,dem,2.09,abreviatura
+21901,ehh,2.09,onomatopeya de chat
+21902,electric,2.09,inglés
+21905,empece,2.09,sin tilde: empecé
+21908,entendes,2.09,sin tilde: entendés
+21917,european,2.09,inglés
+21923,expresion,2.09,sin tilde: expresión
+21938,gear,2.09,inglés
+21952,hoc,2.09,latín
+21959,idem,2.09,sin tilde: ídem
+21987,language,2.09,inglés
+22011,modus,2.09,latín
+22017,movie,2.09,inglés
+22018,msn,2.09,sigla
+22029,nice,2.09,inglés
+22037,ohh,2.09,onomatopeya de chat
+22038,ongs,2.09,sigla
+22044,pam,2.09,onomatopeya
+22056,pick,2.09,inglés
+22061,poster,2.09,sin tilde: póster
+22075,ready,2.09,inglés
+22076,referendum,2.09,sin tilde: referéndum
+22098,sig,2.09,abreviatura
+22103,stars,2.09,inglés
+22105,strike,2.09,inglés
+22115,tec,2.09,abreviatura
+22116,tell,2.09,inglés
+22118,teoria,2.09,sin tilde: teoría
+22122,them,2.09,inglés
+22127,trek,2.09,inglés
+22136,vido,2.09,forma arcaica/fragmento
+22143,years,2.09,inglés
+22147,abd,2.04,fragmento
+22160,alliance,2.04,inglés
+22180,atp,2.04,sigla
+22185,avion,2.04,sin tilde: avión
+22216,conte,2.04,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+22220,crei,2.04,sin tilde: creí
+22253,epic,2.04,inglés
+22258,examenes,2.04,sin tilde: exámenes
+22262,eyes,2.04,inglés
+22267,feed,2.04,inglés
+22272,financial,2.04,inglés
+22276,friend,2.04,inglés
+22278,funcion,2.04,sin tilde: función
+22284,gestion,2.04,sin tilde: gestión
+22286,ghost,2.04,inglés
+22294,hm,2.04,onomatopeya de chat
+22313,joaquin,2.04,sin tilde: Joaquín
+22315,laser,2.04,sin tilde: láser
+22318,list,2.04,inglés
+22325,meet,2.04,inglés
+22332,model,2.04,inglés
+22333,mons,2.04,abreviatura
+22335,mori,2.04,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+22338,nacio,2.04,sin tilde: nació
+22345,oidos,2.04,sin tilde: oídos
+22350,paradise,2.04,inglés
+22364,pidio,2.04,sin tilde: pidió
+22369,politics,2.04,inglés
+22380,pure,2.04,sin tilde: puré
+22384,raw,2.04,inglés
+22393,reg,2.04,abreviatura
+22409,ruben,2.04,sin tilde: rubén
+22426,still,2.04,inglés
+22437,tie,2.04,inglés
+22442,ul,2.04,fragmento
+22452,vivian,2.04,sin tilde: vivían
+22454,winter,2.04,inglés
+22457,éso,2.04,tilde errónea: eso
+22477,always,2.0,inglés
+22478,americas,2.0,sin tilde: américas
+22499,busqueda,2.0,sin tilde: búsqueda
+22513,class,2.0,inglés
+22521,commons,2.0,inglés
+22536,corp,2.0,abreviatura
+22548,dal,2.0,italiano
+22549,dandole,2.0,sin tilde: dándole
+22569,did,2.0,inglés
+22573,doo,2.0,onomatopeya
+22575,drag,2.0,inglés
+22580,electronic,2.0,inglés
+22609,fra,2.0,abreviatura
+22612,fs,2.0,sigla
+22621,grosso,2.0,"latín, solo en grosso modo"
+22623,gutierrez,2.0,sin tilde: gutiérrez
+22637,impresion,2.0,sin tilde: impresión
+22678,mier,2.0,abreviatura
+22706,ou,2.0,otra lengua
+22714,petit,2.0,francés
+22721,policy,2.0,inglés
+22737,put,2.0,inglés
+22775,soo,2.0,fragmento
+22778,subs,2.0,abreviatura
+22785,tecnica,2.0,sin tilde: técnica
+22794,tree,2.0,inglés
+22809,vols,2.0,abreviatura
+22811,vr,2.0,sigla
+22812,vu,2.0,fragmento
+22814,woo,2.0,onomatopeya
+22818,ñ,2.0,letra suelta
+22831,aleman,1.95,sin tilde: alemán
+22833,alone,1.95,inglés
+22851,attack,1.95,inglés
+22879,categoria,1.95,sin tilde: categoría
+22912,creditos,1.95,sin tilde: créditos
+22943,empire,1.95,inglés
+22952,esc,1.95,abreviatura
+22971,foreign,1.95,inglés
+22980,going,1.95,inglés
+22987,had,1.95,inglés
+23015,kill,1.95,inglés
+23017,kw,1.95,sigla
+23023,left,1.95,inglés
+23047,must,1.95,inglés
+23051,nn,1.95,fragmento
+23055,ns,1.95,abreviatura
+23066,paraiso,1.95,sin tilde: paraíso
+23070,pay,1.95,inglés
+23076,perfect,1.95,inglés
+23092,proposito,1.95,sin tilde: propósito
+23134,share,1.95,inglés
+23141,sound,1.95,inglés
+23142,studies,1.95,inglés
+23166,tvn,1.95,sigla
+23169,unicamente,1.95,sin tilde: únicamente
+23179,words,1.95,inglés
+23181,za,1.95,fragmento
+23184,abs,1.91,abreviatura
+23186,academy,1.91,inglés
+23195,alo,1.91,sin tilde: aló
+23199,amazonia,1.91,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+23205,aprendi,1.91,sin tilde: aprendí
+23242,catalogo,1.91,sin tilde: catálogo
+23250,comi,1.91,sin tilde: comí
+23269,dara,1.91,sin tilde: dará
+23271,debia,1.91,sin tilde: debía
+23275,dejate,1.91,sin tilde: déjate
+23278,deposito,1.91,sin tilde: depósito
+23294,encantaria,1.91,sin tilde: encantaría
+23305,estupida,1.91,sin tilde: estúpida
+23316,filosofia,1.91,sin tilde: filosofía
+23317,fisico,1.91,sin tilde: físico
+23332,glass,1.91,inglés
+23342,hate,1.91,inglés
+23345,him,1.91,inglés
+23369,latinoamerica,1.91,sin tilde: latinoamérica
+23371,lc,1.91,sigla
+23384,magnifico,1.91,sin tilde: magnífico
+23394,medical,1.91,inglés
+23399,met,1.91,inglés
+23406,modern,1.91,inglés
+23412,nation,1.91,inglés
+23413,nature,1.91,inglés
+23426,pacifico,1.91,sin tilde: pacífico
+23442,pit,1.91,inglés
+23446,player,1.91,inglés
+23449,pong,1.91,onomatopeya
+23454,pretty,1.91,inglés
+23457,problem,1.91,inglés
+23489,seguis,1.91,sin tilde: seguís
+23492,sem,1.91,abreviatura
+23496,seven,1.91,inglés
+23504,something,1.91,inglés
+23527,ugh,1.91,onomatopeya
+23533,year,1.91,inglés
+23548,aja,1.86,sin tilde: ajá
+23583,bce,1.86,sigla
+23595,calderon,1.86,sin tilde: calderón
+23610,ces,1.86,fragmento
+23632,cos,1.86,abreviatura
+23654,dis,1.86,fragmento
+23659,edicion,1.86,sin tilde: edición
+23679,field,1.86,inglés
+23703,hee,1.86,onomatopeya
+23726,iria,1.86,sin tilde: iría
+23728,isp,1.86,sigla
+23729,iñigo,1.86,sin tilde: íñigo
+23748,maiz,1.86,sin tilde: maíz
+23750,mani,1.86,sin tilde: maní
+23763,mexican,1.86,inglés
+23765,most,1.86,inglés
+23768,museum,1.86,inglés
+23772,nas,1.86,fragmento
+23774,ng,1.86,fragmento
+23805,preguntale,1.86,sin tilde: pregúntale
+23838,saul,1.86,sin tilde: saúl
+23844,shadow,1.86,inglés
+23854,srta,1.86,abreviatura
+23855,station,1.86,inglés
+23874,ucv,1.86,sigla
+23875,ui,1.86,fragmento
+23888,weekly,1.86,inglés
+23923,avda,1.82,abreviatura
+23926,bd,1.82,sigla
+23927,bear,1.82,inglés
+23953,clasico,1.82,sin tilde: clásico
+23956,common,1.82,inglés
+23962,condicion,1.82,sin tilde: condición
+23977,css,1.82,sigla
+23982,cut,1.82,inglés
+23988,dare,1.82,sin tilde: daré
+23991,dejare,1.82,sin tilde: dejaré
+24021,duo,1.82,sin tilde: dúo
+24024,economico,1.82,sin tilde: económico
+24042,ez,1.82,fragmento
+24044,fat,1.82,inglés
+24045,feat,1.82,abreviatura
+24058,generacion,1.82,sin tilde: generación
+24066,gun,1.82,inglés
+24069,hand,1.82,inglés
+24076,images,1.82,inglés
+24090,islands,1.82,inglés
+24092,jajajajaj,1.82,internet
+24093,japon,1.82,sin tilde: japón
+24094,jimenez,1.82,sin tilde: jiménez
+24103,level,1.82,inglés
+24111,lot,1.82,inglés
+24113,mandame,1.82,sin tilde: mándame
+24120,mdp,1.82,sigla
+24165,pg,1.82,sigla
+24166,podran,1.82,sin tilde: podrán
+24167,politicas,1.82,sin tilde: políticas
+24179,querias,1.82,sin tilde: querías
+24180,raices,1.82,sin tilde: raíces
+24181,ran,1.82,inglés
+24206,stadium,1.82,inglés
+24207,states,1.82,inglés
+24209,sui,1.82,"latín, solo en sui generis"
+24230,vamo,1.82,forma coloquial de vamos
+24257,aida,1.78,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+24283,avenue,1.78,inglés
+24294,bm,1.78,sigla
+24312,cidh,1.78,sigla
+24338,creacion,1.78,sin tilde: creación
+24349,debian,1.78,sin tilde: debían
+24366,direct,1.78,inglés
+24371,dot,1.78,inglés
+24391,estare,1.78,sin tilde: estaré
+24394,exámen,1.78,tilde errónea: examen
+24397,fp,1.78,sigla
+24399,french,1.78,inglés
+24400,friday,1.78,inglés
+24401,give,1.78,inglés
+24410,half,1.78,inglés
+24412,hiper,1.78,sin tilde: híper
+24434,jp,1.78,sigla
+24435,judios,1.78,sin tilde: judíos
+24436,ladron,1.78,sin tilde: ladrón
+24438,lgtb,1.78,sigla
+24444,major,1.78,inglés
+24446,map,1.78,inglés
+24449,mat,1.78,fragmento
+24454,medica,1.78,sin tilde: médica
+24455,medicos,1.78,sin tilde: médicos
+24458,mhz,1.78,abreviatura
+24466,nt,1.78,fragmento
+24473,oi,1.78,fragmento
+24482,pce,1.78,sigla
+24492,pixel,1.78,sin tilde: píxel
+24494,ponia,1.78,sin tilde: ponía
+24512,rec,1.78,abreviatura
+24536,sap,1.78,sigla
+24543,shield,1.78,inglés
+24544,shit,1.78,inglés
+24546,skin,1.78,inglés
+24555,sw,1.78,sigla
+24559,terminos,1.78,sin tilde: términos
+24562,three,1.78,inglés
+24563,tios,1.78,sin tilde: tíos
+24565,tnt,1.78,sigla
+24575,uci,1.78,sigla
+24578,upyd,1.78,sigla
+24588,which,1.78,inglés
+24592,í,1.78,letra suelta
+24618,arbitro,1.74,sin tilde: árbitro
+24619,arcoiris,1.74,sin tilde: arcoíris
+24635,away,1.74,inglés
+24641,basic,1.74,inglés
+24646,board,1.74,inglés
+24659,cast,1.74,inglés
+24683,confio,1.74,sin tilde: confío
+24685,conocia,1.74,sin tilde: conocía
+24697,cop,1.74,sigla
+24704,council,1.74,inglés
+24705,cream,1.74,inglés
+24707,ct,1.74,sigla
+24711,dec,1.74,abreviatura
+24730,eau,1.74,francés
+24734,edomex,1.74,abreviatura
+24746,espana,1.74,sin eñe: españa
+24757,falls,1.74,inglés
+24759,fam,1.74,abreviatura
+24762,five,1.74,inglés
+24769,gate,1.74,inglés
+24771,gg,1.74,internet
+24773,gnu,1.74,sigla
+24775,government,1.74,inglés
+24779,heroe,1.74,sin tilde: héroe
+24784,ib,1.74,fragmento
+24791,indec,1.74,sigla
+24796,inside,1.74,inglés
+24803,inutil,1.74,sin tilde: inútil
+24820,library,1.74,inglés
+24842,middle,1.74,inglés
+24864,om,1.74,fragmento
+24868,org,1.74,abreviatura
+24902,qepd,1.74,sigla
+24904,rapidamente,1.74,sin tilde: rápidamente
+24933,sept,1.74,abreviatura
+24937,sii,1.74,internet
+24944,support,1.74,inglés
+24948,target,1.74,inglés
+24951,tendre,1.74,sin tilde: tendré
+24953,then,1.74,inglés
+24959,transito,1.74,sin tilde: tránsito
+24966,unicos,1.74,sin tilde: únicos
+24967,upr,1.74,sigla
+24968,uss,1.74,sigla
+24976,views,1.74,inglés
+24981,vivi,1.74,sin tilde: viví
+24987,youth,1.74,inglés
+25015,andalucia,1.7,sin tilde: andalucía
+25037,bam,1.7,onomatopeya
+25039,bas,1.7,fragmento
+25041,bat,1.7,inglés
+25044,beyond,1.7,inglés
+25051,cadiz,1.7,sin tilde: cádiz
+25059,cbs,1.7,sigla
+25062,cfe,1.7,sigla
+25084,could,1.7,inglés
+25112,domino,1.7,sin tilde: dominó
+25134,entertainment,1.7,inglés
+25167,fpv,1.7,sigla
+25171,gang,1.7,inglés
+25205,ips,1.7,sigla
+25211,kgb,1.7,sigla
+25213,kilometros,1.7,sin tilde: kilómetros
+25215,kk,1.7,internet
+25222,lil,1.7,inglés
+25226,lt,1.7,abreviatura
+25229,malaga,1.7,sin tilde: málaga
+25236,mean,1.7,inglés
+25248,mos,1.7,fragmento
+25255,nbc,1.7,sigla
+25257,nic,1.7,fragmento
+25269,oxigeno,1.7,sin tilde: oxígeno
+25283,phone,1.7,inglés
+25304,reading,1.7,inglés
+25324,riot,1.7,inglés
+25325,rocket,1.7,inglés
+25341,squad,1.7,inglés
+25342,stereo,1.7,inglés
+25349,systems,1.7,inglés
+25354,titulos,1.7,sin tilde: títulos
+25362,tse,1.7,sigla
+25366,uv,1.7,sigla
+25368,valentin,1.7,sin tilde: valentín
+25377,welcome,1.7,inglés
+25393,against,1.66,inglés
+25413,bid,1.66,sigla
+25433,cee,1.66,sigla
+25434,century,1.66,inglés
+25442,coi,1.66,sigla
+25448,comp,1.66,abreviatura
+25452,conciente,1.66,error: consciente
+25465,cristobal,1.66,sin tilde: cristóbal
+25474,dash,1.66,inglés
+25493,duty,1.66,inglés
+25497,els,1.66,catalán
+25522,fall,1.66,inglés
+25531,fund,1.66,inglés
+25534,gaming,1.66,inglés
+25540,gmt,1.66,sigla
+25544,harbor,1.66,inglés
+25552,incluído,1.66,tilde errónea: incluido
+25567,inversion,1.66,sin tilde: inversión
+25568,irpf,1.66,sigla
+25574,juarez,1.66,sin tilde: juárez
+25582,lie,1.66,inglés
+25589,marin,1.66,sin tilde: marín
+25590,maxima,1.66,sin tilde: máxima
+25591,mba,1.66,sigla
+25603,moria,1.66,sin tilde: moría
+25614,nothing,1.66,inglés
+25616,ntra,1.66,abreviatura
+25623,omg,1.66,internet
+25631,pap,1.66,fragmento
+25645,pn,1.66,sigla
+25647,pot,1.66,inglés
+25661,qr,1.66,sigla
+25662,quimica,1.66,sin tilde: química
+25664,rb,1.66,sigla
+25684,rus,1.66,fragmento
+25691,sha,1.66,fragmento
+25692,shot,1.66,inglés
+25699,smash,1.66,inglés
+25700,sn,1.66,sigla
+25713,tank,1.66,inglés
+25715,tdt,1.66,sigla
+25721,through,1.66,inglés
+25733,update,1.66,inglés
+25749,weekend,1.66,inglés
+25762,afip,1.62,sigla
+25777,arabe,1.62,sin tilde: árabe
+25784,ass,1.62,inglés
+25787,autobus,1.62,sin tilde: autobús
+25801,brand,1.62,inglés
+25803,bureau,1.62,francés
+25830,concacaf,1.62,sigla
+25850,creek,1.62,inglés
+25851,csm,1.62,sigla
+25856,dario,1.62,sin tilde: darío
+25885,dogs,1.62,inglés
+25887,done,1.62,inglés
+25888,drop,1.62,inglés
+25891,early,1.62,inglés
+25894,eln,1.62,sigla
+25903,envia,1.62,sin tilde: envía
+25922,fia,1.62,sigla
+25928,forest,1.62,inglés
+25937,gaston,1.62,sin tilde: gastón
+25938,gc,1.62,sigla
+25947,guide,1.62,inglés
+25961,ilusion,1.62,sin tilde: ilusión
+25962,imp,1.62,fragmento
+25987,july,1.62,inglés
+26007,mag,1.62,abreviatura
+26037,noooo,1.62,internet
+26052,pensa,1.62,error: piensa
+26059,pnp,1.62,sigla
+26082,rcn,1.62,sigla
+26083,really,1.62,inglés
+26090,rene,1.62,sin tilde: rené
+26103,sabian,1.62,sin tilde: sabían
+26106,salis,1.62,sin tilde: salís
+26108,seras,1.62,sin tilde: serás
+26109,sesion,1.62,sin tilde: sesión
+26110,sh,1.62,fragmento
+26112,sil,1.62,fragmento
+26115,sing,1.62,inglés
+26124,sunday,1.62,inglés
+26140,trending,1.62,inglés
+26144,util,1.62,sin tilde: útil
+26149,venis,1.62,sin tilde: venís
+26154,wwe,1.62,sigla
+26167,admin,1.58,abreviatura
+26176,alguién,1.58,tilde errónea: alguien
+26197,aw,1.58,onomatopeya
+26198,award,1.58,inglés
+26204,battle,1.58,inglés
+26205,before,1.58,inglés
+26206,being,1.58,inglés
+26207,believe,1.58,inglés
+26214,border,1.58,inglés
+26216,buddy,1.58,inglés
+26230,ciber,1.58,fragmento
+26235,cod,1.58,sigla
+26237,coleccion,1.58,sin tilde: colección
+26242,comodo,1.58,sin tilde: cómodo
+26246,conicet,1.58,sigla
+26269,declaracion,1.58,sin tilde: declaración
+26283,dificiles,1.58,sin tilde: difíciles
+26311,espanol,1.58,sin eñe: español
+26312,espe,1.58,abreviatura
+26324,find,1.58,inglés
+26332,fín,1.58,tilde errónea: fin
+26349,holland,1.58,inglés
+26355,hum,1.58,onomatopeya
+26381,keep,1.58,inglés
+26396,many,1.58,inglés
+26402,memory,1.58,inglés
+26414,moi,1.58,francés
+26419,nan,1.58,fragmento
+26454,publicos,1.58,sin tilde: públicos
+26476,resolucion,1.58,sin tilde: resolución
+26484,runner,1.58,inglés
+26493,seguia,1.58,sin tilde: seguía
+26498,special,1.58,inglés
+26499,strong,1.58,inglés
+26500,studios,1.58,inglés
+26501,study,1.58,inglés
+26502,subio,1.58,sin tilde: subió
+26519,these,1.58,inglés
+26520,thing,1.58,inglés
+26531,ur,1.58,fragmento
+26535,ut,1.58,fragmento
+26536,uta,1.58,fragmento
+26547,would,1.58,inglés
+26564,alter,1.55,"latín, solo en alter ego"
+26570,ani,1.55,fragmento
+26572,anses,1.55,sigla
+26584,ask,1.55,inglés
+26607,boton,1.55,sin tilde: botón
+26621,caracteristicas,1.55,sin tilde: características
+26627,cba,1.55,sigla
+26633,ción,1.55,fragmento
+26634,clap,1.55,onomatopeya
+26636,comment,1.55,inglés
+26655,corner,1.55,sin tilde: córner
+26660,csic,1.55,sigla
+26662,dane,1.55,sigla
+26671,deluxe,1.55,inglés
+26696,eden,1.55,sin tilde: edén
+26706,esque,1.55,error: es que
+26715,experience,1.55,inglés
+26720,factory,1.55,inglés
+26739,gan,1.55,fragmento
+26742,garantia,1.55,sin tilde: garantía
+26752,holy,1.55,inglés
+26758,idol,1.55,inglés
+26772,jojo,1.55,internet
+26789,mamas,1.55,sin tilde: mamás
+26798,metio,1.55,sin tilde: metió
+26799,metodo,1.55,sin tilde: método
+26801,mid,1.55,inglés
+26808,mty,1.55,abreviatura
+26811,nisiquiera,1.55,error: ni siquiera
+26812,nor,1.55,inglés
+26813,number,1.55,inglés
+26821,ops,1.55,sigla
+26822,order,1.55,inglés
+26824,ostia,1.55,error: hostia
+26830,periodico,1.55,sin tilde: periódico
+26837,podre,1.55,sin tilde: podré
+26838,pole,1.55,inglés
+26841,ppd,1.55,sigla
+26861,republic,1.55,inglés
+26870,rp,1.55,sigla
+26871,rpg,1.55,sigla
+26872,rrhh,1.55,sigla
+26879,sama,1.55,otra lengua
+26880,sar,1.55,sigla
+26881,season,1.55,inglés
+26882,second,1.55,inglés
+26887,ses,1.55,fragmento
+26890,sis,1.55,inglés/jerga
+26896,split,1.55,inglés
+26903,tennis,1.55,inglés
+26909,tonterias,1.55,sin tilde: tonterías
+26924,twist,1.55,inglés
+26926,uhh,1.55,onomatopeya
+26931,vehiculo,1.55,sin tilde: vehículo
+26942,vv,1.55,abreviatura
+26943,wide,1.55,inglés
+26944,xdd,1.55,internet
+26958,ado,1.51,sigla
+26962,aid,1.51,inglés
+26966,amp,1.51,abreviatura
+26975,bai,1.51,fragmento
+26986,blah,1.51,onomatopeya
+27035,congress,1.51,inglés
+27047,damian,1.51,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+27057,dep,1.51,abreviatura
+27065,dev,1.51,abreviatura
+27100,fantasia,1.51,sin tilde: fantasía
+27101,fas,1.51,fragmento
+27104,ffaa,1.51,sigla
+27105,file,1.51,inglés
+27106,flag,1.51,inglés
+27111,fotografia,1.51,sin tilde: fotografía
+27144,indo,1.51,fragmento
+27146,infinity,1.51,inglés
+27162,lim,1.51,fragmento
+27163,lion,1.51,inglés
+27164,lla,1.51,fragmento
+27188,move,1.51,inglés
+27224,pia,1.51,sin tilde: pía
+27260,return,1.51,inglés
+27262,rie,1.51,sin tilde: ríe
+27267,rpm,1.51,sigla
+27275,sf,1.51,abreviatura
+27286,suicide,1.51,inglés
+27316,vazquez,1.51,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+27317,vias,1.51,sin tilde: vías
+27320,vitro,1.51,fragmento latino
+27324,worth,1.51,inglés
+27330,aba,1.48,sigla
+27332,acido,1.48,sin tilde: ácido
+27336,ads,1.48,inglés
+27338,afi,1.48,sigla
+27347,ally,1.48,inglés
+27350,amer,1.48,fragmento
+27355,aparecio,1.48,sin tilde: apareció
+27373,bom,1.48,fragmento
+27374,boo,1.48,onomatopeya
+27384,cape,1.48,inglés
+27393,choice,1.48,inglés
+27395,church,1.48,inglés
+27423,court,1.48,inglés
+27426,cry,1.48,inglés
+27435,def,1.48,abreviatura
+27451,due,1.48,inglés
+27459,encontro,1.48,sin tilde: encontró
+27469,escribi,1.48,sin tilde: escribí
+27476,eur,1.48,abreviatura
+27477,ev,1.48,abreviatura
+27479,explicacion,1.48,sin tilde: explicación
+27485,fig,1.48,abreviatura
+27493,gra,1.48,fragmento
+27499,ham,1.48,inglés
+27500,haran,1.48,sin tilde: harán
+27507,ic,1.48,sigla
+27528,invasion,1.48,sin tilde: invasión
+27546,lxs,1.48,grafía no normativa
+27557,medellin,1.48,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+27566,motion,1.48,inglés
+27580,num,1.48,abreviatura
+27583,ocasion,1.48,sin tilde: ocasión
+27634,resident,1.48,inglés
+27641,rompio,1.48,sin tilde: rompió
+27649,sense,1.48,inglés
+27653,sinó,1.48,catalán; en castellano sino sin tilde
+27659,stay,1.48,inglés
+27660,steel,1.48,inglés
+27662,sum,1.48,fragmento
+27669,tape,1.48,inglés
+27670,tar,1.48,fragmento
+27675,titan,1.48,sin tilde: titán
+27687,vehiculos,1.48,sin tilde: vehículos
+27689,velez,1.48,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+27699,aah,1.45,onomatopeya
+27711,aki,1.45,internet
+27726,another,1.45,inglés
+27743,auditoria,1.45,sin tilde: auditoría
+27746,avisame,1.45,sin tilde: avísame
+27767,camion,1.45,sin tilde: camión
+27771,cell,1.45,inglés
+27772,cepal,1.45,sigla
+27784,compañias,1.45,sin tilde: compañías
+27785,conclusion,1.45,sin tilde: conclusión
+27801,cta,1.45,abreviatura
+27843,engine,1.45,inglés
+27848,eps,1.45,sigla
+27861,farm,1.45,inglés
+27879,gn,1.45,abreviatura
+27890,hmmm,1.45,onomatopeya
+27892,horizon,1.45,inglés
+27909,independent,1.45,inglés
+27913,ins,1.45,sigla
+27921,jajajajajajaja,1.45,internet
+27939,mater,1.45,fragmento latino
+27941,meno,1.45,italiano
+27942,mercy,1.45,inglés
+27951,mor,1.45,fragmento
+27966,operandi,1.45,fragmento latino
+27979,piece,1.45,inglés
+27986,pope,1.45,inglés
+28015,reune,1.45,sin tilde: reúne
+28017,rl,1.45,abreviatura
+28030,shore,1.45,inglés
+28038,storm,1.45,inglés
+28042,sup,1.45,abreviatura
+28062,venian,1.45,sin tilde: venían
+28065,vere,1.45,sin tilde: veré
+28118,ayudame,1.41,sin tilde: ayúdame
+28121,bae,1.41,internet
+28125,basicamente,1.41,sin tilde: básicamente
+28128,beauty,1.41,inglés
+28133,bp,1.41,sigla
+28143,cases,1.41,inglés
+28147,cañon,1.41,sin tilde: cañón
+28178,crush,1.41,inglés
+28179,cuidate,1.41,sin tilde: cuídate
+28201,deus,1.41,latín
+28213,dlc,1.41,sigla
+28218,download,1.41,inglés
+28220,ehhh,1.41,onomatopeya
+28235,estaran,1.41,sin tilde: estarán
+28256,gap,1.41,inglés
+28259,gonna,1.41,inglés
+28271,honey,1.41,inglés
+28295,kan,1.41,otra lengua
+28296,lai,1.41,fragmento
+28300,lite,1.41,inglés
+28303,lmao,1.41,internet
+28305,ltda,1.41,abreviatura
+28312,matematica,1.41,sin tilde: matemática
+28320,mias,1.41,sin tilde: mías
+28329,mont,1.41,fragmento
+28358,pai,1.41,fragmento
+28373,person,1.41,inglés
+28395,pta,1.41,abreviatura malsonante
+28396,publicacion,1.41,sin tilde: publicación
+28399,punch,1.41,inglés
+28404,rapidos,1.41,sin tilde: rápidos
+28428,sapiens,1.41,fragmento latino
+28442,sql,1.41,sigla
+28443,strange,1.41,inglés
+28449,tab,1.41,inglés
+28451,tendran,1.41,sin tilde: tendrán
+28458,tre,1.41,italiano
+28462,ultimate,1.41,inglés
+28464,vamonos,1.41,sin tilde: vámonos
+28474,vtv,1.41,sigla
+28517,bitch,1.38,inglés malsonante
+28529,camaras,1.38,sin tilde: cámaras
+28547,cie,1.38,sigla
+28554,comparacion,1.38,sin tilde: comparación
+28560,conexion,1.38,sin tilde: conexión
+28568,cont,1.38,abreviatura
+28572,crew,1.38,inglés
+28584,descripcion,1.38,sin tilde: descripción
+28605,electrica,1.38,sin tilde: eléctrica
+28629,fmln,1.38,sigla
+28637,geographic,1.38,inglés
+28648,hz,1.38,abreviatura
+28657,inf,1.38,abreviatura
+28661,institucion,1.38,sin tilde: institución
+28668,item,1.38,sin tilde: ítem
+28674,jodete,1.38,sin tilde: jódete; malsonante
+28683,legend,1.38,inglés
+28696,mali,1.38,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+28708,miralo,1.38,sin tilde: míralo
+28711,mv,1.38,abreviatura
+28727,participacion,1.38,sin tilde: participación
+28729,patron,1.38,sin tilde: patrón
+28755,program,1.38,inglés
+28765,quier,1.38,fragmento
+28766,rainbow,1.38,inglés
+28767,reaccion,1.38,sin tilde: reacción
+28783,repost,1.38,inglés
+28796,rua,1.38,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+28799,safe,1.38,inglés
+28807,sere,1.38,sin tilde: seré
+28810,shhh,1.38,onomatopeya
+28816,soon,1.38,inglés
+28820,stick,1.38,inglés
+28822,stranger,1.38,inglés
+28833,tes,1.38,fragmento
+28835,til,1.38,fragmento
+28846,try,1.38,inglés
+28850,ty,1.38,inglés
+28855,vhs,1.38,sigla
+28858,vivia,1.38,sin tilde: vivía
+28862,wrong,1.38,inglés
+28872,actua,1.35,sin tilde: actúa
+28877,agora,1.35,sin tilde: ágora
+28879,aguila,1.35,sin tilde: águila
+28900,around,1.35,inglés
+28921,avi,1.35,abreviatura
+28928,beer,1.35,inglés
+28932,between,1.35,inglés
+28943,buy,1.35,inglés
+28945,cake,1.35,inglés
+28951,caps,1.35,abreviatura
+28959,chaos,1.35,inglés
+28962,circle,1.35,inglés
+28963,clash,1.35,inglés
+28964,cliff,1.35,inglés
+28965,clinica,1.35,sin tilde: clínica
+28970,coffee,1.35,inglés
+28972,cold,1.35,inglés
+29028,disculpame,1.35,sin tilde: discúlpame
+29041,electronica,1.35,sin tilde: electrónica
+29067,every,1.35,inglés
+29070,felíz,1.35,tilde incorrecta: feliz
+29086,galeria,1.35,sin tilde: galería
+29098,hack,1.35,inglés
+29107,holiday,1.35,inglés
+29116,increibles,1.35,sin tilde: increíbles
+29117,ind,1.35,abreviatura
+29126,jejejeje,1.35,internet
+29128,jn,1.35,abreviatura
+29134,kwh,1.35,abreviatura
+29137,lcd,1.35,sigla
+29142,log,1.35,inglés
+29146,manana,1.35,sin tilde: mañana
+29151,mascara,1.35,sin tilde: máscara
+29155,milk,1.35,inglés
+29170,naci,1.35,sin tilde: nací
+29173,navy,1.35,inglés
+29180,oit,1.35,sigla
+29185,ot,1.35,sigla
+29188,parecio,1.35,sin tilde: pareció
+29201,poesia,1.35,sin tilde: poesía
+29204,posteriori,1.35,fragmento latino
+29210,prestamo,1.35,sin tilde: préstamo
+29216,profesion,1.35,sin tilde: profesión
+29229,reirse,1.35,sin tilde: reírse
+29241,rj,1.35,abreviatura
+29246,russia,1.35,inglés
+29256,screen,1.35,inglés
+29264,solia,1.35,sin tilde: solía
+29271,swat,1.35,sigla
+29272,table,1.35,inglés
+29281,tod,1.35,fragmento
+29283,tower,1.35,inglés
+29284,traduccion,1.35,sin tilde: traducción
+29294,unasur,1.35,sigla
+29303,wait,1.35,inglés
+29306,wing,1.35,inglés
+29307,xml,1.35,sigla
+29308,xo,1.35,internet
+29309,yt,1.35,abreviatura
+29335,amb,1.32,catalán
+29353,asociacion,1.32,sin tilde: asociación
+29397,cj,1.32,sigla
+29419,conta,1.32,fragmento
+29428,creido,1.32,sin tilde: creído
+29432,csi,1.32,sigla
+29437,deal,1.32,inglés
+29461,ding,1.32,onomatopeya
+29466,dna,1.32,sigla
+29477,ef,1.32,abreviatura
+29493,erp,1.32,sigla
+29505,even,1.32,inglés
+29512,fda,1.32,sigla
+29518,form,1.32,inglés
+29524,fusion,1.32,sin tilde: fusión
+29541,hsbc,1.32,sigla
+29563,izq,1.32,abreviatura
+29564,jc,1.32,sigla
+29568,joo,1.32,fragmento
+29569,js,1.32,sigla
+29572,ku,1.32,fragmento
+29578,llendo,1.32,error ortográfico: yendo
+29584,male,1.32,inglés
+29593,merida,1.32,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+29599,mms,1.32,sigla
+29613,má,1.32,fragmento
+29619,nyc,1.32,sigla
+29620,obligacion,1.32,sin tilde: obligación
+29624,opep,1.32,sigla
+29643,perdoname,1.32,sin tilde: perdóname
+29645,phd,1.32,sigla
+29652,pra,1.32,fragmento
+29662,psp,1.32,sigla
+29669,reader,1.32,inglés
+29686,root,1.32,inglés
+29689,rv,1.32,abreviatura
+29691,sancti,1.32,fragmento latino
+29697,september,1.32,inglés
+29714,taiwan,1.32,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+29719,thought,1.32,inglés
+29726,tucuman,1.32,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+29749,wave,1.32,inglés
+29750,working,1.32,inglés
+29772,alos,1.29,error: a los
+29787,associated,1.29,inglés
+29789,atm,1.29,sigla
+29809,cad,1.29,sigla
+29819,caribbean,1.29,inglés
+29834,comenzo,1.29,sin tilde: comenzó
+29838,confia,1.29,sin tilde: confía
+29847,contact,1.29,inglés
+29852,coord,1.29,abreviatura
+29857,county,1.29,inglés
+29878,description,1.29,inglés
+29894,distribucion,1.29,sin tilde: distribución
+29897,double,1.29,inglés
+29898,dp,1.29,abreviatura
+29926,etica,1.29,sin tilde: ética
+29928,excepcion,1.29,sin tilde: excepción
+29945,fundacion,1.29,sin tilde: fundación
+29947,gallery,1.29,inglés
+29955,guzman,1.29,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+29962,ias,1.29,sigla
+29977,kick,1.29,inglés
+29978,kingdom,1.29,inglés
+29984,len,1.29,fragmento
+29987,lib,1.29,abreviatura
+29993,ln,1.29,abreviatura
+29995,lsd,1.29,sigla
+30009,mls,1.29,sigla
+30014,mvp,1.29,sigla
+30017,notre,1.29,francés
+30024,oracion,1.29,sin tilde: oración
+30033,pax,1.29,fragmento latino
+30034,pcs,1.29,sigla
+30049,pres,1.29,abreviatura
+30055,promocion,1.29,sin tilde: promoción
+30061,psa,1.29,sigla
+30062,pussy,1.29,inglés malsonante
+30065,quan,1.29,fragmento
+30066,quest,1.29,inglés
+30089,rien,1.29,sin tilde: ríen
+30106,slow,1.29,inglés
+30112,somo,1.29,error: somos
+30120,sunshine,1.29,inglés
+30129,tene,1.29,fragmento
+30131,th,1.29,abreviatura
+30152,vá,1.29,tilde incorrecta: va
+30153,wo,1.29,fragmento
+30176,alive,1.26,inglés
+30209,bone,1.26,inglés
+30210,bra,1.26,fragmento
+30231,chicken,1.26,inglés
+30232,chili,1.26,inglés
+30243,computer,1.26,inglés
+30247,conto,1.26,sin tilde: contó
+30262,culiao,1.26,"jerga malsonante, grafía coloquial"
+30284,dip,1.26,fragmento
+30318,ets,1.26,sigla
+30326,fail,1.26,inglés
+30332,flia,1.26,abreviatura
+30342,globe,1.26,inglés
+30358,hold,1.26,inglés
+30379,intervencion,1.26,sin tilde: intervención
+30395,leia,1.26,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+30417,maso,1.26,internet: más o menos
+30418,mbps,1.26,abreviatura
+30419,mendez,1.26,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+30420,menu,1.26,sin tilde: menú
+30423,milf,1.26,inglés malsonante
+30426,monkey,1.26,inglés
+30434,mundi,1.26,fragmento latino
+30436,muuuy,1.26,internet
+30444,noo,1.26,internet
+30446,november,1.26,inglés
+30450,ob,1.26,fragmento
+30459,partners,1.26,inglés
+30460,pasame,1.26,sin tilde: pásame
+30463,pension,1.26,sin tilde: pensión
+30464,pepper,1.26,inglés
+30469,pity,1.26,inglés
+30495,reparacion,1.26,sin tilde: reparación
+30503,rising,1.26,inglés
+30525,sonreir,1.26,sin tilde: sonreír
+30535,sultan,1.26,sin tilde: sultán
+30538,sv,1.26,abreviatura
+30552,trick,1.26,inglés
+30553,truth,1.26,inglés
+30555,type,1.26,inglés
+30565,wat,1.26,inglés
+30568,wine,1.26,inglés
+30571,abi,1.23,fragmento
+30584,agency,1.23,inglés
+30588,ahhhh,1.23,onomatopeya
+30594,analysis,1.23,inglés
+30606,arch,1.23,inglés
+30612,ase,1.23,fragmento
+30622,bal,1.23,fragmento
+30633,bt,1.23,sigla
+30640,calmate,1.23,sin tilde: cálmate
+30648,ccoo,1.23,sigla
+30656,clean,1.23,inglés
+30660,collection,1.23,inglés
+30669,conosco,1.23,error ortográfico: conozco
+30670,cons,1.23,fragmento
+30688,cua,1.23,fragmento
+30695,debil,1.23,sin tilde: débil
+30696,deci,1.23,fragmento
+30699,definicion,1.23,sin tilde: definición
+30711,destiny,1.23,inglés
+30747,everything,1.23,inglés
+30757,fact,1.23,inglés
+30762,fly,1.23,inglés
+30770,gras,1.23,francés
+30775,hammer,1.23,inglés
+30777,heat,1.23,inglés
+30781,hh,1.23,abreviatura
+30787,historico,1.23,sin tilde: histórico
+30788,hole,1.23,inglés
+30793,hye,1.23,fragmento
+30796,ide,1.23,fragmento
+30832,lv,1.23,abreviatura
+30838,maker,1.23,inglés
+30843,marquez,1.23,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+30849,mom,1.23,inglés
+30860,networks,1.23,inglés
+30864,nk,1.23,sigla
+30866,nó,1.23,tilde incorrecta: no
+30873,ocurrio,1.23,sin tilde: ocurrió
+30881,paint,1.23,inglés
+30889,pb,1.23,abreviatura
+30891,pedia,1.23,sin tilde: pedía
+30893,peer,1.23,inglés
+30897,penguin,1.23,inglés
+30907,ppp,1.23,sigla
+30918,ptas,1.23,abreviatura
+30945,rincon,1.23,sin tilde: rincón
+30950,ruíz,1.23,tilde incorrecta: Ruiz
+30956,sand,1.23,inglés
+30962,since,1.23,inglés
+30969,sunny,1.23,inglés
+30979,thank,1.23,inglés
+30987,ttip,1.23,sigla
+30989,uam,1.23,sigla
+31001,vp,1.23,sigla
+31032,almenos,1.2,error: al menos
+31036,angry,1.2,inglés
+31059,az,1.2,fragmento
+31064,bcn,1.2,abreviatura
+31072,bios,1.2,sigla
+31081,bunker,1.2,sin tilde: búnker
+31099,ching,1.2,onomatopeya
+31103,cndh,1.2,sigla
+31130,course,1.2,inglés
+31132,cri,1.2,onomatopeya
+31139,default,1.2,inglés
+31160,dominguez,1.2,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+31164,economy,1.2,inglés
+31192,follow,1.2,inglés
+31194,found,1.2,inglés
+31202,generation,1.2,inglés
+31213,harmony,1.2,inglés
+31216,heaven,1.2,inglés
+31221,hist,1.2,abreviatura
+31222,histoire,1.2,francés
+31225,hon,1.2,fragmento
+31232,ingenieria,1.2,sin tilde: ingeniería
+31245,jpg,1.2,sigla
+31252,lat,1.2,abreviatura
+31255,leccion,1.2,sin tilde: lección
+31260,lm,1.2,abreviatura
+31276,medium,1.2,sin tilde: médium
+31288,mount,1.2,inglés
+31290,mun,1.2,fragmento
+31301,np,1.2,abreviatura
+31302,october,1.2,inglés
+31303,official,1.2,inglés
+31304,ohhh,1.2,onomatopeya
+31328,pfff,1.2,onomatopeya
+31331,pk,1.2,internet
+31334,plastico,1.2,sin tilde: plástico
+31335,pld,1.2,sigla
+31364,reis,1.2,sin tilde: reís
+31374,reunen,1.2,sin tilde: reúnen
+31387,should,1.2,inglés
+31394,speak,1.2,inglés
+31396,subi,1.2,sin tilde: subí
+31413,title,1.2,inglés
+31416,training,1.2,inglés
+31420,umm,1.2,onomatopeya de chat
+31428,veni,1.2,sin tilde: vení (voseo) o latín
+31435,votacion,1.2,sin tilde: votación
+31436,walk,1.2,inglés
+31437,wish,1.2,inglés
+31438,works,1.2,inglés
+31455,ade,1.17,fragmento
+31457,adv,1.17,abreviatura
+31461,aga,1.17,fragmento
+31469,amore,1.17,italiano
+31480,apra,1.17,sigla
+31488,att,1.17,abreviatura
+31492,autentico,1.17,sin tilde: auténtico
+31504,beautiful,1.17,inglés
+31508,birds,1.17,inglés
+31514,broadcasting,1.17,inglés
+31516,building,1.17,inglés
+31530,ccaa,1.17,sigla
+31546,commerce,1.17,inglés
+31586,does,1.17,inglés
+31593,elije,1.17,error ortográfico: elige
+31600,enough,1.17,inglés
+31603,enter,1.17,inglés
+31611,escribio,1.17,sin tilde: escribió
+31615,eun,1.17,fragmento
+31628,flying,1.17,inglés
+31629,fn,1.17,abreviatura
+31645,gs,1.17,abreviatura
+31651,habias,1.17,sin tilde: habías
+31663,ife,1.17,sigla
+31703,limon,1.17,sin tilde: limón
+31718,merito,1.17,sin tilde: mérito
+31719,merlin,1.17,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+31722,minima,1.17,sin tilde: mínima
+31730,nad,1.17,fragmento
+31737,ná,1.17,forma coloquial de nada
+31740,oregon,1.17,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+31744,pah,1.17,onomatopeya
+31772,prov,1.17,abreviatura
+31777,qi,1.17,fragmento
+31784,rapida,1.17,sin tilde: rápida
+31798,rest,1.17,inglés
+31804,russian,1.17,inglés
+31811,sebin,1.17,sigla
+31819,shake,1.17,inglés
+31821,sk,1.17,abreviatura
+31828,statu,1.17,fragmento latino de statu quo
+31832,summit,1.17,inglés
+31839,tecnicas,1.17,sin tilde: técnicas
+31854,twin,1.17,inglés
+31858,unity,1.17,inglés
+31869,vous,1.17,francés
+31885,adventure,1.15,inglés
+31901,anibal,1.15,sin tilde: Aníbal
+31907,apesar,1.15,error ortográfico: a pesar
+31920,automatico,1.15,sin tilde: automático
+31924,babe,1.15,inglés
+31926,bajon,1.15,sin tilde: bajón
+31934,boludes,1.15,error ortográfico: boludez
+31960,cbc,1.15,sigla
+31961,cea,1.15,sigla o fragmento
+31962,cen,1.15,fragmento
+31964,chinese,1.15,inglés
+31965,chingon,1.15,sin tilde: chingón
+31966,coje,1.15,error ortográfico: coge
+31970,coming,1.15,inglés
+31980,copy,1.15,inglés
+31983,cotton,1.15,inglés
+32011,door,1.15,inglés
+32013,economics,1.15,inglés
+32036,excmo,1.15,abreviatura
+32063,goes,1.15,inglés
+32066,ground,1.15,inglés
+32074,highway,1.15,inglés
+32076,hung,1.15,inglés
+32079,imaginacion,1.15,sin tilde: imaginación
+32094,issste,1.15,sigla
+32097,judio,1.15,sin tilde: judío
+32107,lemon,1.15,inglés
+32113,mais,1.15,portugués o francés
+32114,making,1.15,inglés
+32122,matias,1.15,sin tilde: Matías
+32124,mein,1.15,alemán
+32146,ooo,1.15,fragmento de chat
+32151,own,1.15,inglés
+32152,pantalon,1.15,sin tilde: pantalón
+32157,pcr,1.15,sigla
+32158,pdi,1.15,sigla
+32164,pictures,1.15,inglés
+32172,pnud,1.15,sigla
+32188,psg,1.15,sigla
+32192,push,1.15,inglés
+32216,revision,1.15,sin tilde: revisión
+32219,rule,1.15,inglés
+32241,som,1.15,fragmento
+32261,tlcan,1.15,sigla
+32265,transplante,1.15,error ortográfico: trasplante
+32269,tx,1.15,abreviatura
+32274,used,1.15,inglés
+32285,www,1.15,abreviatura
+32290,aaah,1.12,onomatopeya
+32295,acb,1.12,sigla
+32319,amia,1.12,sigla
+32323,ang,1.12,fragmento
+32333,asian,1.12,inglés
+32338,automaticamente,1.12,sin tilde: automáticamente
+32339,aux,1.12,abreviatura
+32358,broken,1.12,inglés
+32359,bueh,1.12,interjección de chat
+32376,catch,1.12,inglés
+32388,close,1.12,inglés
+32474,espectaculo,1.12,sin tilde: espectáculo
+32476,esq,1.12,abreviatura
+32480,estaras,1.12,sin tilde: estarás
+32486,explicame,1.12,sin tilde: explícame
+32489,extension,1.12,sin tilde: extensión
+32490,fabian,1.12,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+32496,files,1.12,inglés
+32499,fps,1.12,sigla
+32503,fx,1.12,sigla
+32509,gift,1.12,inglés
+32515,gto,1.12,abreviatura
+32518,guys,1.12,inglés
+32530,impact,1.12,inglés
+32541,ino,1.12,fragmento
+32558,killer,1.12,inglés
+32566,leader,1.12,inglés
+32570,lia,1.12,sin tilde: lía
+32585,mineria,1.12,sin tilde: minería
+32588,mj,1.12,abreviatura
+32589,mn,1.12,abreviatura
+32598,noise,1.12,inglés
+32604,oa,1.12,fragmento
+32609,omc,1.12,sigla
+32613,orion,1.12,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+32636,police,1.12,inglés
+32640,porqueria,1.12,sin tilde: porquería
+32650,princess,1.12,inglés
+32658,psicologia,1.12,sin tilde: psicología
+32661,quality,1.12,inglés
+32663,quizo,1.12,error ortográfico: quiso
+32685,rf,1.12,abreviatura
+32694,sae,1.12,sigla
+32704,shh,1.12,onomatopeya
+32705,siii,1.12,chat
+32709,smile,1.12,inglés
+32724,tecnicos,1.12,sin tilde: técnicos
+32738,twiter,1.12,error ortográfico: Twitter
+32754,vw,1.12,sigla
+32757,xddd,1.12,internet
+32762,abri,1.1,sin tilde: abrí
+32765,acnur,1.1,sigla
+32770,adsl,1.1,sigla
+32774,agusto,1.1,error ortográfico: a gusto
+32802,avant,1.1,francés
+32819,bright,1.1,inglés
+32826,came,1.1,inglés
+32850,comoda,1.1,sin tilde: cómoda
+32875,cre,1.1,fragmento
+32882,december,1.1,inglés
+32885,delos,1.1,error ortográfico: de los
+32886,dels,1.1,catalán
+32887,desafio,1.1,sin tilde: desafío
+32893,desert,1.1,inglés
+32900,diagnostico,1.1,sin tilde: diagnóstico
+32904,dijieron,1.1,error ortográfico: dijeron
+32906,dira,1.1,sin tilde: dirá
+32917,effect,1.1,inglés
+32920,elo,1.1,fragmento
+32948,fight,1.1,inglés
+32953,flo,1.1,fragmento
+32960,frias,1.1,sin tilde: frías
+32976,habito,1.1,sin tilde: hábito
+32979,hae,1.1,fragmento
+32980,haiti,1.1,sin tilde: Haití
+33021,less,1.1,inglés
+33022,liber,1.1,fragmento
+33031,lr,1.1,abreviatura
+33032,lte,1.1,sigla
+33040,mam,1.1,fragmento
+33047,marti,1.1,sin tilde: Martí
+33049,matematicas,1.1,sin tilde: matemáticas
+33055,mic,1.1,abreviatura
+33060,moment,1.1,inglés
+33062,muller,1.1,sin tilde: nombre propio cuya forma con tilde está en la lista (regla común de la fusión)
+33077,ori,1.1,fragmento
+33080,ost,1.1,sigla
+33088,pea,1.1,fragmento
+33102,porciento,1.1,error ortográfico: por ciento
+33112,present,1.1,inglés
+33115,psico,1.1,fragmento
+33134,remember,1.1,inglés
+33143,rise,1.1,inglés
+33161,ste,1.1,fragmento
+33164,sunset,1.1,inglés
+33171,tendrian,1.1,sin tilde: tendrían
+33172,thanks,1.1,inglés
+33174,thinking,1.1,inglés
+33175,those,1.1,inglés
+33176,thrones,1.1,inglés
+33179,traicion,1.1,sin tilde: traición
+33189,veran,1.1,sin tilde: verán
+33196,wee,1.1,inglés
+33199,zo,1.1,fragmento
+33213,add,1.07,inglés
+33236,antiguedad,1.07,error ortográfico: antigüedad
+33240,arabes,1.07,sin tilde: árabes
+33255,aunq,1.07,abreviatura
+33263,basketball,1.07,inglés
+33283,cab,1.07,fragmento
+33302,cato,1.07,fragmento
+33308,christmas,1.07,inglés
+33313,communications,1.07,inglés
+33333,crime,1.07,inglés
+33334,crimenes,1.07,sin tilde: crímenes
+33343,dam,1.07,fragmento
+33344,dao,1.07,fragmento
+33362,destruccion,1.07,sin tilde: destrucción
+33371,docs,1.07,abreviatura
+33378,dre,1.07,fragmento
+33386,egoista,1.07,sin tilde: egoísta
+33412,estupidos,1.07,sin tilde: estúpidos
+33414,evolucion,1.07,sin tilde: evolución
+33417,exitos,1.07,sin tilde: éxitos
+33423,fal,1.07,fragmento
+33425,fei,1.07,fragmento
+33443,gdl,1.07,abreviatura
+33445,genesis,1.07,sin tilde: Génesis
+33449,gnb,1.07,sigla
+33457,hahahaha,1.07,internet
+33464,hb,1.07,sigla
+33471,icon,1.07,inglés
+33482,intelligence,1.07,inglés
+33490,iss,1.07,sigla
+33492,jb,1.07,abreviatura
+33495,jus,1.07,fragmento
+33499,kc,1.07,abreviatura
+33511,loc,1.07,abreviatura
+33518,mah,1.07,fragmento
+33526,meh,1.07,interjección de chat
+33547,nations,1.07,inglés
+33551,nec,1.07,sigla
+33555,nia,1.07,fragmento
+33560,nue,1.07,fragmento
+33592,points,1.07,inglés
+33616,qie,1.07,error ortográfico
+33619,quick,1.07,inglés
+33644,resources,1.07,inglés
+33651,sac,1.07,sigla
+33657,sb,1.07,abreviatura
+33660,sie,1.07,alemán o fragmento
+33661,silent,1.07,inglés
+33665,snake,1.07,inglés
+33667,solid,1.07,inglés
+33669,sono,1.07,italiano o fragmento
+33671,soundtrack,1.07,inglés
+33673,ssp,1.07,sigla
+33674,stage,1.07,inglés
+33677,subtitulos,1.07,sin tilde: subtítulos
+33678,sucedio,1.07,sin tilde: sucedió
+33683,sy,1.07,fragmento
+33684,tcp,1.07,sigla
+33691,tien,1.07,fragmento
+33701,tte,1.07,abreviatura
+33702,turn,1.07,inglés
+33724,account,1.05,inglés
+33740,almacen,1.05,sin tilde: almacén
+33766,aus,1.05,fragmento
+33790,buenisima,1.05,sin tilde: buenísima
+33792,build,1.05,inglés
+33795,cache,1.05,sin tilde: caché
+33801,captain,1.05,inglés
+33808,catalan,1.05,sin tilde: catalán
+33809,cedula,1.05,sin tilde: cédula
+33825,codigos,1.05,sin tilde: códigos
+33849,credit,1.05,inglés
+33868,depresion,1.05,sin tilde: depresión
+33884,diy,1.05,sigla
+33887,duck,1.05,inglés
+33894,effects,1.05,inglés
+33927,existia,1.05,sin tilde: existía
+33933,fac,1.05,abreviatura
+33936,false,1.05,inglés
+33943,forza,1.05,italiano
+33962,guru,1.05,sin tilde: gurú
+33965,hernan,1.05,sin tilde: Hernán
+33968,hiv,1.05,sigla
+33995,january,1.05,inglés
+34009,lives,1.05,inglés
+34016,lore,1.05,inglés
+34028,matter,1.05,inglés
+34062,organos,1.05,sin tilde: órganos
+34063,origin,1.05,inglés
+34076,pdc,1.05,sigla
+34100,prohiben,1.05,sin tilde: prohíben
+34102,purple,1.05,inglés
+34103,pués,1.05,error ortográfico: pues
+34104,pv,1.05,abreviatura
+34107,question,1.05,inglés
+34112,rca,1.05,sigla
+34137,reves,1.05,sin tilde: revés
+34139,ride,1.05,inglés
+34147,sabados,1.05,sin tilde: sábados
+34148,sabra,1.05,sin tilde: sabrá
+34161,size,1.05,inglés
+34165,souls,1.05,inglés
+34177,survival,1.05,inglés
+34178,survivor,1.05,inglés
+34184,technologies,1.05,inglés
+34185,telefonos,1.05,sin tilde: teléfonos
+34200,twit,1.05,error ortográfico: tuit
+34201,twitteros,1.05,error ortográfico: tuiteros
+34207,vayanse,1.05,sin tilde: váyanse
+34217,while,1.05,inglés
+34246,animos,1.02,sin tilde: ánimos
+34267,bara,1.02,fragmento
+34281,cadaver,1.02,sin tilde: cadáver
+34286,cancun,1.02,sin tilde: Cancún
+34299,chill,1.02,inglés
+34308,cit,1.02,abreviatura
+34310,cni,1.02,sigla
+34332,continue,1.02,inglés o sin tilde: continúe
+34351,dejenme,1.02,sin tilde: déjenme
+34368,dsp,1.02,abreviatura
+34388,estadistica,1.02,sin tilde: estadística
+34400,flip,1.02,inglés
+34405,geografia,1.02,sin tilde: geografía
+34424,hour,1.02,inglés
+34425,hours,1.02,inglés
+34426,hua,1.02,fragmento
+34453,ipn,1.02,sigla
+34454,jaen,1.02,sin tilde: Jaén
+34455,japones,1.02,sin tilde: japonés
+34456,jar,1.02,fragmento
+34460,knowledge,1.02,inglés
+34463,leaf,1.02,inglés
+34469,lock,1.02,inglés
+34471,lodge,1.02,inglés
+34489,meti,1.02,sin tilde: metí
+34492,mine,1.02,inglés
+34511,nouveau,1.02,francés
+34512,novi,1.02,fragmento
+34524,pel,1.02,catalán
+34531,pod,1.02,fragmento
+34539,preparate,1.02,sin tilde: prepárate
+34541,print,1.02,inglés
+34548,quedaria,1.02,sin tilde: quedaría
+34568,reviews,1.02,inglés
+34570,rh,1.02,sigla
+34572,rockstar,1.02,inglés
+34580,sabiduria,1.02,sin tilde: sabiduría
+34586,sel,1.02,fragmento
+34593,snte,1.02,sigla
+34599,spirit,1.02,inglés
+34600,stgo,1.02,abreviatura
+34614,td,1.02,abreviatura
+34623,tradicion,1.02,sin tilde: tradición
+34625,tramite,1.02,sin tilde: trámite
+34626,translation,1.02,inglés
+34631,tun,1.02,fragmento
+34635,uwu,1.02,internet
+34655,wal,1.02,fragmento
+34657,wwf,1.02,sigla
+34658,yard,1.02,inglés
+34673,adj,1.0,abreviatura
+34683,amazing,1.0,inglés
+34692,arn,1.0,sigla
+34702,australian,1.0,inglés
+34703,autentica,1.0,sin tilde: auténtica
+34707,aye,1.0,inglés
+34720,bk,1.0,abreviatura
+34721,bona,1.0,catalán o italiano
+34722,brain,1.0,inglés
+34739,cards,1.0,inglés
+34740,catolica,1.0,sin tilde: católica
+34752,cirugia,1.0,sin tilde: cirugía
+34762,combinacion,1.0,sin tilde: combinación
+34783,decidi,1.0,sin tilde: decidí
+34785,defense,1.0,inglés
+34786,democracy,1.0,inglés
+34801,disc,1.0,inglés
+34810,dreams,1.0,inglés
+34831,escandalo,1.0,sin tilde: escándalo
+34844,evolution,1.0,inglés
+34852,father,1.0,inglés
+34860,friendly,1.0,inglés
+34869,gh,1.0,abreviatura
+34877,guió,1.0,ortografía antigua: guio
+34878,habiamos,1.0,sin tilde: habíamos
+34891,inah,1.0,sigla
+34906,instalacion,1.0,sin tilde: instalación
+34922,jajajja,1.0,internet
+34926,jue,1.0,abreviatura
+34932,leave,1.0,inglés
+34961,muni,1.0,abreviatura
+34995,perfeccion,1.0,sin tilde: perfección
+35032,rem,1.0,fragmento
+35049,roi,1.0,francés o sigla
+35053,rx,1.0,abreviatura
+35058,score,1.0,inglés
+35061,seller,1.0,inglés
+35066,siguio,1.0,sin tilde: siguió
+35070,ssd,1.0,sigla
+35082,tax,1.0,inglés
+35090,todxs,1.0,forma no normativa
+35091,together,1.0,inglés
+35100,uanl,1.0,sigla
+35101,uned,1.0,sigla
+35105,value,1.0,inglés
+35107,vendria,1.0,sin tilde: vendría
+35110,vir,1.0,fragmento
+35112,vivis,1.0,sin tilde: vivís
+35116,wanna,1.0,inglés
+35117,weones,1.0,error ortográfico y malsonante: huevones
+35121,ño,1.0,forma coloquial de señor
+35150,aora,0.98,error ortográfico: ahora
+35159,arm,0.98,inglés
+35169,auf,0.98,alemán
+35174,ayy,0.98,interjección de chat
+35181,bei,0.98,fragmento
+35187,bloody,0.98,inglés
+35214,cent,0.98,inglés
+35245,crímen,0.98,error ortográfico: crimen
+35250,custom,0.98,inglés
+35254,department,0.98,inglés
+35264,det,0.98,abreviatura
+35268,diem,0.98,latín
+35275,diversion,0.98,sin tilde: diversión
+35280,dutch,0.98,inglés
+35290,emos,0.98,error ortográfico: hemos
+35302,envios,0.98,sin tilde: envíos
+35304,escusa,0.98,error ortográfico: excusa
+35312,faa,0.98,sigla
+35321,frame,0.98,inglés
+35324,frió,0.98,error ortográfico: frío
+35325,frontier,0.98,inglés
+35327,funny,0.98,inglés
+35336,gon,0.98,fragmento
+35344,habitat,0.98,sin tilde: hábitat
+35346,hechar,0.98,error ortográfico: echar
+35366,indices,0.98,sin tilde: índices
+35368,infonavit,0.98,sigla
+35379,jaj,0.98,internet
+35382,jm,0.98,abreviatura
+35385,kfc,0.98,sigla
+35386,kitchen,0.98,inglés
+35389,lay,0.98,inglés
+35393,legends,0.98,inglés
+35394,legion,0.98,sin tilde: legión
+35399,llamame,0.98,sin tilde: llámame
+35402,lounge,0.98,inglés
+35405,magister,0.98,sin tilde: magíster
+35425,midnight,0.98,inglés
+35426,mientra,0.98,error ortográfico: mientras
+35430,mirame,0.98,sin tilde: mírame
+35431,mma,0.98,sigla
+35441,mui,0.98,error ortográfico: muy
+35444,mvs,0.98,sigla
+35464,oy,0.98,fragmento
+35467,pak,0.98,fragmento
+35468,pakistan,0.98,sin tilde: Pakistán
+35473,pasaria,0.98,sin tilde: pasaría
+35475,peak,0.98,inglés
+35485,pers,0.98,abreviatura
+35503,private,0.98,inglés
+35505,prod,0.98,abreviatura
+35508,protection,0.98,inglés
+35513,puff,0.98,error ortográfico: puf
+35536,rogue,0.98,inglés
+35555,seu,0.98,catalán o portugués
+35557,shui,0.98,fragmento
+35558,siem,0.98,fragmento
+35564,ski,0.98,inglés
+35577,sueno,0.98,error ortográfico: sueño
+35590,third,0.98,inglés
+35592,tj,0.98,abreviatura
+35604,universe,0.98,inglés
+35606,vacia,0.98,sin tilde: vacía
+35630,workshop,0.98,inglés
+35631,writing,0.98,inglés
+35633,yellow,0.98,inglés
+35637,ze,0.98,fragmento
+35638,zi,0.98,fragmento
+35665,als,0.95,catalán
+35693,atte,0.95,abreviatura
+35702,based,0.95,inglés
+35705,beats,0.95,inglés
+35724,caf,0.95,sigla
+35727,called,0.95,inglés
+35734,cartoon,0.95,inglés
+35742,chas,0.95,onomatopeya
+35743,cheese,0.95,inglés
+35749,coa,0.95,fragmento
+35753,comio,0.95,sin tilde: comió
+35756,comprate,0.95,sin tilde: cómprate
+35761,conference,0.95,inglés
+35762,consegui,0.95,sin tilde: conseguí
+35773,cue,0.95,fragmento
+35795,dig,0.95,inglés
+35796,dim,0.95,fragmento

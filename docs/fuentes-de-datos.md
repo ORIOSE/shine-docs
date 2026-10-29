@@ -7,7 +7,7 @@ ejercicios, y para saber qué licencia obliga a qué.
 
 **Regla**: toda fuente nueva que se use para generar, filtrar o validar contenido se añade aquí
 **antes** de usarla en un lote, con su cita, versión, fecha de obtención, licencia, uso y ubicación.
-Los ficheros con licencia viven en `shine/private/lexico/fuentes/` (fuera de git); este registro sí
+Los ficheros con licencia viven en `dades-privades/lexico/fuentes/` (git de docs, privado; `shine/private/lexico` es un enlace a `dades-privades/lexico`, ver `dades-privades/README.md`), salvo el CORPES, que pasa de 100 MB y queda fuera de git; este registro sí
 está en git.
 
 Última actualización: 2026-10-28.
@@ -21,7 +21,7 @@ está en git.
 | Cita | REAL ACADEMIA ESPAÑOLA: Banco de datos (CORPES XXI) [en línea]. *Corpus del Español del Siglo XXI* (CORPES). https://www.rae.es. Listado de frecuencias de elementos, versión 1.5. |
 | Qué es | Corpus de referencia del español del siglo XXI, escrito y oral, de España y América (453 millones de formas sin signos ortográficos en el listado). Forma, lema, etiqueta morfológica y frecuencia. |
 | Obtenido | 2026-10-28, facilitado por el grupo de expertos (`frecuencia_elementos_corpes_1_5.txt`). |
-| Ubicación | `shine/private/lexico/fuentes/frecuencia_elementos_corpes_1_5.txt` (fuera de git) |
+| Ubicación | `dades-privades/lexico/fuentes/frecuencia_elementos_corpes_1_5.txt` (enlace `shine/private/lexico/fuentes/`), **fuera de git** por tamaño (130 MB): volver a descargarlo de la RAE si hace falta |
 | Licencia | Datos de la RAE. Uso interno del proyecto, sin redistribución. **Pendiente de confirmar con la RAE** las condiciones de uso en un producto comercial y cómo citarlo en la app. |
 | Uso | Fuente principal de `es-general.csv` (encargo E01): frecuencia, rango, lema y categoría de cada forma del castellano. Decide qué palabras admite cada nivel de Level3 a Level10. |
 | Tratamiento | Elementos de varias palabras repartidos entre sus palabras; formas de "vosotros" con el rango de su equivalente de tercera del plural (ajuste peninsular). Detalle en `plans/contenido/encarrecs/lliuraments/E01-revisio.md`. |

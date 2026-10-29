@@ -1,0 +1,73 @@
+{
+  "lote": "segmentacion-ca-level10-v1",
+  "descripcion": "Dos actividades catalanas de segmentación léxica (activity_word_split) de Level10, 6 frases de 12 a 14 palabras cada una, todas con una oración subordinada (condicional, temporal, concesiva, causal o de relativo), como pide la fila Level10 del prompt 07 y de la Guía de Parametrización. Agrupadas por un término de sonoridad no usado en Level9 (regla del 2026-10-29). SEG-CA-L10-LIN-001, h muda: cada frase junta una palabra con h que no suena y su homófona sin h, o la pone al lado de una vocal sola, que es donde la segmentación cuesta más (a / ha en la primera y la quinta, o / ho en la segunda, i / hi en la tercera y la sexta, em / hem en la cuarta, más l’hora en la quinta). Con la partición contraria ninguna frase tiene sentido; en la quinta el apóstrofo impide leer alhora. SEG-CA-L10-LIN-002, s sorda: el pronombre es, que se escribe se ante otro pronombre, combinado y apostrofado con el segundo: se’m, se’t, se’l, se’ls, se’ns y s’ho, uno en cada frase, con apóstrofo y sin guion (el importador todavía no lo admite). Son combinaciones nuevas: Level9 trabajó te’n, ens n’, us n’, li’n, me’n y se n’, y Level7 y Level8 n’hi y se’n va. Tiempos: presente, perfecto, futuro, imperfecto y presente de subjuntivo; nunca el pasado simple. Sin nombres propios, minúsculas sin puntuación y apóstrofo tipográfico. No repite ninguna frase de Level3 a Level9 ni los ejemplos de la guía y de la guía editorial E11.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano con el prompt plans/multiidioma/prompts-contenido/07-segmentacio.md (fila Level10), la tabla de nivel mínimo de plans/multiidioma/estructura-ca.md (apartado 5) y la guía editorial E11; sin semilla. Comprobado con etiquetar_lote.py y lexico.py --lang ca. Pendiente de la revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-CA-L10-LIN-001",
+      "idioma": "ca",
+      "titulo": "Separa les paraules",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "La frase està escrita sense espais. Toca una lletra per posar-hi un espai just al davant, fins a separar totes les paraules, i prem Comprovar.",
+      "explicacion": "Word split",
+      "sonoridad": [
+        "h muda"
+      ],
+      "contenido": {
+        "frases": [
+          "si la professora ha dit que no hi ha classe anirem a la platja",
+          "quan el meu cosí ho sàpiga o ho vegi estarà molt content",
+          "encara que faci calor i hi hagi molta gent anirem al concert del parc",
+          "els amics que hem conegut a l’estiu em truquen sovint per saber com estic",
+          "el tren que ha sortit a les vuit arribarà a l’hora si no plou",
+          "quan arriba la primavera les orenetes tornen al poble i hi fan el niu"
+        ]
+      },
+      "esfuerzo": [
+        "Apostrofació i contraccions",
+        "Complexes (CCVC, VCC, CVCC)",
+        "Homòfons i parònims"
+      ]
+    },
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-CA-L10-LIN-002",
+      "idioma": "ca",
+      "titulo": "Separa les paraules",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "La frase està escrita sense espais. Toca una lletra per posar-hi un espai just al davant, fins a separar totes les paraules, i prem Comprovar.",
+      "explicacion": "Word split",
+      "sonoridad": [
+        "s sorda"
+      ],
+      "contenido": {
+        "frases": [
+          "sempre que vaig a la biblioteca de l’institut se’m passa el temps volant",
+          "si no et poses els guants quan neva se’t glaçaran les mans",
+          "quan la meva germana troba un llibre que li agrada se’l llegeix d’una tirada",
+          "quan els tomàquets del seu hort són madurs l’àvia se’ls menja amb pa",
+          "si no ens afanyem a sortir de casa se’ns escaparà l’autobús de les nou",
+          "el meu avi diu que quan era jove s’ho passava molt bé al poble"
+        ]
+      },
+      "esfuerzo": [
+        "Apostrofació i contraccions",
+        "Complexes (CCVC, VCC, CVCC)",
+        "Pronoms febles"
+      ]
+    }
+  ]
+}

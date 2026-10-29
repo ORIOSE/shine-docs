@@ -1,0 +1,978 @@
+[
+  {
+    "numero": 1,
+    "slug": "canario",
+    "castellano": "canario",
+    "catalan": "canari",
+    "grupo": "amarillo, aves",
+    "pista": "a small bright yellow canary bird perched, side view (clearly different from a chick)"
+  },
+  {
+    "numero": 2,
+    "slug": "carpa",
+    "castellano": "carpa",
+    "catalan": "carpa",
+    "grupo": "rojo",
+    "pista": "a circus big top tent with red and white vertical stripes and a small flag on top"
+  },
+  {
+    "numero": 3,
+    "slug": "carretilla",
+    "castellano": "carretilla",
+    "catalan": "carretó",
+    "grupo": "rojo",
+    "pista": "an empty red one-wheel garden wheelbarrow, three-quarter view"
+  },
+  {
+    "numero": 4,
+    "slug": "cascabel",
+    "castellano": "cascabel",
+    "catalan": "picarol",
+    "grupo": "amarillo, redondo",
+    "pista": "a single round golden jingle bell with a slit and a small loop on top"
+  },
+  {
+    "numero": 5,
+    "slug": "casco",
+    "castellano": "casco",
+    "catalan": "casc",
+    "grupo": "amarillo, sombreros",
+    "pista": "a yellow construction hard hat, three-quarter view"
+  },
+  {
+    "numero": 6,
+    "slug": "coral",
+    "castellano": "coral",
+    "catalan": "corall",
+    "grupo": "rojo, mar",
+    "pista": "a branch of red coral, upright"
+  },
+  {
+    "numero": 7,
+    "slug": "manguera",
+    "castellano": "manguera",
+    "catalan": "mànega",
+    "grupo": "rojo",
+    "pista": "a red garden hose neatly coiled with a nozzle at one end"
+  },
+  {
+    "numero": 8,
+    "slug": "manopla",
+    "castellano": "manopla",
+    "catalan": "manyopla",
+    "grupo": "rojo, ropa",
+    "pista": "a single red knitted mitten (thumb separate, other fingers together)"
+  },
+  {
+    "numero": 9,
+    "slug": "paleta",
+    "castellano": "paleta",
+    "catalan": "paleta",
+    "grupo": "marrón",
+    "pista": "a wooden painter's palette with a thumb hole and a few round paint blobs"
+  },
+  {
+    "numero": 10,
+    "slug": "pasa",
+    "castellano": "pasa",
+    "catalan": "pansa",
+    "grupo": "marrón",
+    "pista": "a single large wrinkled dark brown raisin"
+  },
+  {
+    "numero": 11,
+    "slug": "percha",
+    "castellano": "percha",
+    "catalan": "penjador",
+    "grupo": "marrón",
+    "pista": "a wooden clothes hanger with a metal hook, empty"
+  },
+  {
+    "numero": 12,
+    "slug": "bacalao",
+    "castellano": "bacalao",
+    "catalan": "bacallà",
+    "grupo": "blanco",
+    "pista": "a flat piece of dried salted cod, off-white with grey skin edge"
+  },
+  {
+    "numero": 13,
+    "slug": "bailarina",
+    "castellano": "bailarina",
+    "catalan": "ballarina",
+    "grupo": "blanco, personas",
+    "pista": "a ballet dancer in a white tutu standing on tiptoe, friendly face"
+  },
+  {
+    "numero": 14,
+    "slug": "baraja",
+    "castellano": "baraja",
+    "catalan": "baralla",
+    "grupo": "blanco",
+    "pista": "a neat stack of playing cards seen from the back, plain white backs with a simple border, no numbers or symbols"
+  },
+  {
+    "numero": 15,
+    "slug": "bata",
+    "castellano": "bata",
+    "catalan": "bata",
+    "grupo": "blanco, ropa",
+    "pista": "a white lab coat with buttons, front view, no person"
+  },
+  {
+    "numero": 16,
+    "slug": "batidora",
+    "castellano": "batidora",
+    "catalan": "batedora",
+    "grupo": "blanco",
+    "pista": "a white stick hand blender, upright"
+  },
+  {
+    "numero": 17,
+    "slug": "cacatua",
+    "castellano": "cacatúa",
+    "catalan": "cacatua",
+    "grupo": "blanco, aves",
+    "pista": "a white cockatoo with a yellow crest, side view (clearly not a green parrot)"
+  },
+  {
+    "numero": 18,
+    "slug": "calamar",
+    "castellano": "calamar",
+    "catalan": "calamar",
+    "grupo": "blanco, mar",
+    "pista": "a whole pale squid with tentacles, friendly eyes"
+  },
+  {
+    "numero": 19,
+    "slug": "camarografo",
+    "castellano": "camarógrafo",
+    "catalan": "camarògraf",
+    "grupo": "personas",
+    "pista": "a camera operator holding a big video camera on the shoulder, full body"
+  },
+  {
+    "numero": 20,
+    "slug": "caminante",
+    "castellano": "caminante",
+    "catalan": "caminant",
+    "grupo": "personas",
+    "pista": "a hiker with a backpack and a walking stick, full body"
+  },
+  {
+    "numero": 21,
+    "slug": "camionero",
+    "castellano": "camionero",
+    "catalan": "camioner",
+    "grupo": "personas",
+    "pista": "a truck driver with a cap holding a steering wheel, full body, no truck"
+  },
+  {
+    "numero": 22,
+    "slug": "camisa",
+    "castellano": "camisa",
+    "catalan": "camisa",
+    "grupo": "blanco, ropa",
+    "pista": "a white button-up shirt, front view, no person"
+  },
+  {
+    "numero": 23,
+    "slug": "camison",
+    "castellano": "camisón",
+    "catalan": "camisó",
+    "grupo": "blanco, ropa",
+    "pista": "a long white nightgown, front view, no person"
+  },
+  {
+    "numero": 24,
+    "slug": "capilla",
+    "castellano": "capilla",
+    "catalan": "capella",
+    "grupo": "blanco, edificios",
+    "pista": "a small white chapel with a bell gable and a wooden door, no religious symbols"
+  },
+  {
+    "numero": 25,
+    "slug": "capitan",
+    "castellano": "capitán",
+    "catalan": "capità",
+    "grupo": "personas",
+    "pista": "a ship captain with a white peaked cap and a navy jacket, full body"
+  },
+  {
+    "numero": 26,
+    "slug": "caravana",
+    "castellano": "caravana",
+    "catalan": "caravana",
+    "grupo": "blanco, vehículos",
+    "pista": "a white camper caravan trailer, side view, no car"
+  },
+  {
+    "numero": 27,
+    "slug": "cavernicola",
+    "castellano": "cavernícola",
+    "catalan": "cavernícola",
+    "grupo": "personas",
+    "pista": "a friendly caveman in a fur tunic holding a wooden club pointed down, full body"
+  },
+  {
+    "numero": 28,
+    "slug": "ladrillo",
+    "castellano": "ladrillo",
+    "catalan": "maó",
+    "grupo": "rojo",
+    "pista": "a single red clay brick, three-quarter view, no holes"
+  },
+  {
+    "numero": 29,
+    "slug": "matamoscas",
+    "castellano": "matamoscas",
+    "catalan": "matamosques",
+    "grupo": "rojo, alargado",
+    "pista": "a red plastic fly swatter, upright"
+  },
+  {
+    "numero": 30,
+    "slug": "matrioska",
+    "castellano": "matrioska",
+    "catalan": "matrioixca",
+    "grupo": "rojo",
+    "pista": "a single red Russian nesting doll with a painted face and flowers"
+  },
+  {
+    "numero": 31,
+    "slug": "paleontologo",
+    "castellano": "paleontólogo",
+    "catalan": "paleontòleg",
+    "grupo": "personas",
+    "pista": "a paleontologist with a hat and a brush holding a fossil bone, full body"
+  },
+  {
+    "numero": 32,
+    "slug": "albanil",
+    "castellano": "albañil",
+    "catalan": "paleta",
+    "grupo": "personas",
+    "pista": "a bricklayer with a trowel and a yellow helmet, full body"
+  },
+  {
+    "numero": 33,
+    "slug": "paracaidista",
+    "castellano": "paracaidista",
+    "catalan": "paracaigudista",
+    "grupo": "personas",
+    "pista": "a skydiver hanging from an open parachute, full figure"
+  },
+  {
+    "numero": 34,
+    "slug": "parapentista",
+    "castellano": "parapentista",
+    "catalan": "parapentista",
+    "grupo": "personas",
+    "pista": "a paraglider pilot under a curved colorful paraglider wing"
+  },
+  {
+    "numero": 35,
+    "slug": "patinador",
+    "castellano": "patinador",
+    "catalan": "patinador",
+    "grupo": "personas",
+    "pista": "a roller skater with helmet and knee pads, full body"
+  },
+  {
+    "numero": 36,
+    "slug": "pianista",
+    "castellano": "pianista",
+    "catalan": "pianista",
+    "grupo": "personas",
+    "pista": "a pianist sitting at a small piano, side view"
+  },
+  {
+    "numero": 37,
+    "slug": "picapedrero",
+    "castellano": "picapedrero",
+    "catalan": "picapedrer",
+    "grupo": "personas",
+    "pista": "a stonemason with a hammer and chisel next to a block of stone"
+  },
+  {
+    "numero": 38,
+    "slug": "piloto",
+    "castellano": "piloto",
+    "catalan": "pilot",
+    "grupo": "personas",
+    "pista": "an airline pilot with a cap and uniform, full body, no plane"
+  },
+  {
+    "numero": 39,
+    "slug": "piraguista",
+    "castellano": "piragüista",
+    "catalan": "piragüista",
+    "grupo": "personas",
+    "pista": "a kayaker sitting in a kayak holding a double paddle, side view"
+  },
+  {
+    "numero": 40,
+    "slug": "pitonisa",
+    "castellano": "pitonisa",
+    "catalan": "pitonissa",
+    "grupo": "personas",
+    "pista": "a friendly fortune teller with a headscarf and a crystal ball, upper body"
+  },
+  {
+    "numero": 41,
+    "slug": "ajo",
+    "castellano": "ajo",
+    "catalan": "all",
+    "grupo": "blanco",
+    "pista": "a whole white garlic bulb"
+  },
+  {
+    "numero": 42,
+    "slug": "bol",
+    "castellano": "bol",
+    "catalan": "bol",
+    "grupo": "redondo",
+    "pista": "an empty plain round bowl seen slightly from above"
+  },
+  {
+    "numero": 43,
+    "slug": "bollo",
+    "castellano": "bollo",
+    "catalan": "brioix",
+    "grupo": "redondo, marrón",
+    "pista": "a round golden sweet bun"
+  },
+  {
+    "numero": 44,
+    "slug": "bombon",
+    "castellano": "bombón",
+    "catalan": "bombó",
+    "grupo": "redondo, marrón",
+    "pista": "a single round chocolate bonbon"
+  },
+  {
+    "numero": 45,
+    "slug": "boya",
+    "castellano": "boya",
+    "catalan": "boia",
+    "grupo": "redondo, rojo, mar",
+    "pista": "a round red floating buoy, no text"
+  },
+  {
+    "numero": 46,
+    "slug": "cacahuete",
+    "castellano": "cacahuete",
+    "catalan": "cacauet",
+    "grupo": "marrón",
+    "pista": "a single whole peanut in its shell"
+  },
+  {
+    "numero": 47,
+    "slug": "candelabro",
+    "castellano": "candelabro",
+    "catalan": "canelobre",
+    "grupo": "amarillo",
+    "pista": "a golden three-armed candelabrum with unlit candles"
+  },
+  {
+    "numero": 48,
+    "slug": "capibara",
+    "castellano": "capibara",
+    "catalan": "capibara",
+    "grupo": "marrón",
+    "pista": "a brown capybara sitting, side view"
+  },
+  {
+    "numero": 49,
+    "slug": "caqui",
+    "castellano": "caqui",
+    "catalan": "caqui",
+    "grupo": "redondo, naranja",
+    "pista": "a whole orange persimmon with its green calyx"
+  },
+  {
+    "numero": 50,
+    "slug": "castana",
+    "castellano": "castaña",
+    "catalan": "castanya",
+    "grupo": "marrón",
+    "pista": "a single shiny brown chestnut with a pale base"
+  },
+  {
+    "numero": 51,
+    "slug": "castor",
+    "castellano": "castor",
+    "catalan": "castor",
+    "grupo": "marrón",
+    "pista": "a beaver standing, side view, flat tail visible"
+  },
+  {
+    "numero": 52,
+    "slug": "cazo",
+    "castellano": "cazo",
+    "catalan": "cassó",
+    "grupo": "rojo",
+    "pista": "a red kitchen saucepan with a long handle, empty"
+  },
+  {
+    "numero": 53,
+    "slug": "cazuela",
+    "castellano": "cazuela",
+    "catalan": "cassola",
+    "grupo": "marrón, redondo",
+    "pista": "a round clay casserole dish with two handles, empty"
+  },
+  {
+    "numero": 54,
+    "slug": "cana",
+    "castellano": "caña",
+    "catalan": "canya",
+    "grupo": "alargado",
+    "pista": "a fishing rod with reel and a short line, diagonal"
+  },
+  {
+    "numero": 55,
+    "slug": "colchon",
+    "castellano": "colchón",
+    "catalan": "matalàs",
+    "grupo": "blanco",
+    "pista": "a single white mattress, three-quarter view, no bed frame"
+  },
+  {
+    "numero": 56,
+    "slug": "coliflor",
+    "castellano": "coliflor",
+    "catalan": "coliflor",
+    "grupo": "blanco",
+    "pista": "a white cauliflower head with green leaves"
+  },
+  {
+    "numero": 57,
+    "slug": "cono",
+    "castellano": "cono",
+    "catalan": "con",
+    "grupo": "rojo",
+    "pista": "a red traffic cone with white bands"
+  },
+  {
+    "numero": 58,
+    "slug": "copo",
+    "castellano": "copo",
+    "catalan": "floc",
+    "grupo": "blanco",
+    "pista": "a single six-pointed snowflake, light blue outline on white"
+  },
+  {
+    "numero": 59,
+    "slug": "mango",
+    "castellano": "mango",
+    "catalan": "mango",
+    "grupo": "rojo",
+    "pista": "a whole ripe mango fruit, red with a yellow area"
+  },
+  {
+    "numero": 60,
+    "slug": "mantel",
+    "castellano": "mantel",
+    "catalan": "estovalles",
+    "grupo": "rojo, rayas",
+    "pista": "a folded red and white checked tablecloth"
+  },
+  {
+    "numero": 61,
+    "slug": "pantufla",
+    "castellano": "pantufla",
+    "catalan": "plantofa",
+    "grupo": "marrón, calzado",
+    "pista": "a single brown house slipper"
+  },
+  {
+    "numero": 62,
+    "slug": "paracaidas",
+    "castellano": "paracaídas",
+    "catalan": "paracaigudes",
+    "grupo": "blanco, cielo",
+    "pista": "an open white parachute with lines, no person"
+  },
+  {
+    "numero": 63,
+    "slug": "pastilla",
+    "castellano": "pastilla",
+    "catalan": "pastilla",
+    "grupo": "blanco, redondo",
+    "pista": "one large round white tablet with a score line"
+  },
+  {
+    "numero": 64,
+    "slug": "panal",
+    "castellano": "pañal",
+    "catalan": "bolquer",
+    "grupo": "blanco",
+    "pista": "a white baby's diaper, front view"
+  },
+  {
+    "numero": 65,
+    "slug": "panuelo",
+    "castellano": "pañuelo",
+    "catalan": "mocador",
+    "grupo": "blanco",
+    "pista": "a folded white cloth handkerchief"
+  },
+  {
+    "numero": 66,
+    "slug": "perdiz",
+    "castellano": "perdiz",
+    "catalan": "perdiu",
+    "grupo": "marrón, aves",
+    "pista": "a brown partridge, side view"
+  },
+  {
+    "numero": 67,
+    "slug": "peon",
+    "castellano": "peón",
+    "catalan": "peó",
+    "grupo": "marrón",
+    "pista": "a single wooden chess pawn"
+  },
+  {
+    "numero": 68,
+    "slug": "pintalabios",
+    "castellano": "pintalabios",
+    "catalan": "pintallavis",
+    "grupo": "rojo, alargado",
+    "pista": "an open red lipstick tube, upright, no brand"
+  },
+  {
+    "numero": 69,
+    "slug": "pinza",
+    "castellano": "pinza",
+    "catalan": "pinça",
+    "grupo": "rojo",
+    "pista": "a single red plastic clothes peg"
+  },
+  {
+    "numero": 70,
+    "slug": "piruleta",
+    "castellano": "piruleta",
+    "catalan": "piruleta",
+    "grupo": "rojo, redondo",
+    "pista": "a round red spiral lollipop on a white stick"
+  },
+  {
+    "numero": 71,
+    "slug": "acordeonista",
+    "castellano": "acordeonista",
+    "catalan": "acordionista",
+    "grupo": "personas",
+    "pista": "an accordion player playing an accordion, full body"
+  },
+  {
+    "numero": 72,
+    "slug": "acrobata",
+    "castellano": "acróbata",
+    "catalan": "acròbata",
+    "grupo": "personas",
+    "pista": "a circus acrobat doing a handstand, friendly"
+  },
+  {
+    "numero": 73,
+    "slug": "animadora",
+    "castellano": "animadora",
+    "catalan": "animadora",
+    "grupo": "personas",
+    "pista": "a cheerleader with two pom-poms, full body"
+  },
+  {
+    "numero": 74,
+    "slug": "apicultor",
+    "castellano": "apicultor",
+    "catalan": "apicultor",
+    "grupo": "personas",
+    "pista": "a beekeeper in a white suit and veiled hat holding a honeycomb frame"
+  },
+  {
+    "numero": 75,
+    "slug": "aventurero",
+    "castellano": "aventurero",
+    "catalan": "aventurer",
+    "grupo": "personas",
+    "pista": "an explorer with a safari hat, backpack and binoculars, full body"
+  },
+  {
+    "numero": 76,
+    "slug": "abuelo",
+    "castellano": "abuelo",
+    "catalan": "avi",
+    "grupo": "personas",
+    "pista": "a friendly grandfather with white hair and a cardigan, full body"
+  },
+  {
+    "numero": 77,
+    "slug": "cacao",
+    "castellano": "cacao",
+    "catalan": "cacau",
+    "grupo": "marrón",
+    "pista": "a whole brown cocoa pod"
+  },
+  {
+    "numero": 78,
+    "slug": "cajon",
+    "castellano": "cajón",
+    "catalan": "calaix",
+    "grupo": "marrón",
+    "pista": "a single wooden drawer pulled out on its own, with a knob"
+  },
+  {
+    "numero": 79,
+    "slug": "comoda",
+    "castellano": "cómoda",
+    "catalan": "calaixera",
+    "grupo": "marrón",
+    "pista": "a wooden chest of drawers with three drawers"
+  },
+  {
+    "numero": 80,
+    "slug": "calendario",
+    "castellano": "calendario",
+    "catalan": "calendari",
+    "grupo": "blanco",
+    "pista": "a white wall calendar with a spiral top and an empty grid, absolutely no numbers or letters"
+  },
+  {
+    "numero": 81,
+    "slug": "camilla",
+    "castellano": "camilla",
+    "catalan": "camilla",
+    "grupo": "blanco",
+    "pista": "a white hospital stretcher on wheels, empty"
+  },
+  {
+    "numero": 82,
+    "slug": "canela",
+    "castellano": "canela",
+    "catalan": "canyella",
+    "grupo": "marrón, alargado",
+    "pista": "two rolled cinnamon sticks tied together"
+  },
+  {
+    "numero": 83,
+    "slug": "carabela",
+    "castellano": "carabela",
+    "catalan": "caravel·la",
+    "grupo": "marrón, vehículos, mar",
+    "pista": "an old wooden caravel ship with three masts and white sails (different from the small boat of the bank)"
+  },
+  {
+    "numero": 84,
+    "slug": "cartel",
+    "castellano": "cartel",
+    "catalan": "cartell",
+    "grupo": "blanco",
+    "pista": "a blank white signboard on a post, no text"
+  },
+  {
+    "numero": 85,
+    "slug": "coca",
+    "castellano": "coca",
+    "catalan": "coca",
+    "grupo": "marrón, alargado",
+    "pista": "a long flat Catalan sweet flatbread pastry with sugar and pine nuts"
+  },
+  {
+    "numero": 86,
+    "slug": "col",
+    "castellano": "col",
+    "catalan": "col",
+    "grupo": "verde, redondo",
+    "pista": "a whole round green cabbage (clearly different from a lettuce)"
+  },
+  {
+    "numero": 87,
+    "slug": "escafandra",
+    "castellano": "escafandra",
+    "catalan": "escafandre",
+    "grupo": "gris",
+    "pista": "an old brass and grey diving helmet with round windows"
+  },
+  {
+    "numero": 88,
+    "slug": "escalador",
+    "castellano": "escalador",
+    "catalan": "escalador",
+    "grupo": "personas",
+    "pista": "a rock climber with helmet, harness and rope, full body"
+  },
+  {
+    "numero": 89,
+    "slug": "explorador",
+    "castellano": "explorador",
+    "catalan": "escolta",
+    "grupo": "personas",
+    "pista": "a scout with a neckerchief and a wide-brimmed hat, full body"
+  },
+  {
+    "numero": 90,
+    "slug": "barrendero",
+    "castellano": "barrendero",
+    "catalan": "escombriaire",
+    "grupo": "personas",
+    "pista": "a street sweeper with a broom and an orange vest, full body"
+  },
+  {
+    "numero": 91,
+    "slug": "escultor",
+    "castellano": "escultor",
+    "catalan": "escultor",
+    "grupo": "personas",
+    "pista": "a sculptor with a chisel next to a small stone sculpture"
+  },
+  {
+    "numero": 92,
+    "slug": "mondadientes",
+    "castellano": "mondadientes",
+    "catalan": "escuradents",
+    "grupo": "alargado",
+    "pista": "a single wooden toothpick, diagonal, enlarged"
+  },
+  {
+    "numero": 93,
+    "slug": "escudo",
+    "castellano": "escudo",
+    "catalan": "escut",
+    "grupo": "gris",
+    "pista": "a plain grey medieval shield, no emblem"
+  },
+  {
+    "numero": 94,
+    "slug": "espaguetis",
+    "castellano": "espaguetis",
+    "catalan": "espaguetis",
+    "grupo": "alargado, amarillo",
+    "pista": "a bundle of uncooked spaghetti tied together"
+  },
+  {
+    "numero": 95,
+    "slug": "espantapajaros",
+    "castellano": "espantapájaros",
+    "catalan": "espantaocells",
+    "grupo": "personas",
+    "pista": "a friendly scarecrow with a straw hat on a wooden pole"
+  },
+  {
+    "numero": 96,
+    "slug": "esparrago",
+    "castellano": "espárrago",
+    "catalan": "espàrrec",
+    "grupo": "verde, alargado",
+    "pista": "a single green asparagus spear"
+  },
+  {
+    "numero": 97,
+    "slug": "espatula",
+    "castellano": "espátula",
+    "catalan": "espàtula",
+    "grupo": "gris, alargado",
+    "pista": "a grey kitchen spatula with a long handle"
+  },
+  {
+    "numero": 98,
+    "slug": "espia",
+    "castellano": "espía",
+    "catalan": "espia",
+    "grupo": "personas",
+    "pista": "a friendly detective-style spy with a trench coat, hat and magnifying glass"
+  },
+  {
+    "numero": 99,
+    "slug": "espiga",
+    "castellano": "espiga",
+    "catalan": "espiga",
+    "grupo": "amarillo, alargado",
+    "pista": "a single golden ear of wheat"
+  },
+  {
+    "numero": 100,
+    "slug": "cencerro",
+    "castellano": "cencerro",
+    "catalan": "esquella",
+    "grupo": "gris",
+    "pista": "a grey metal cowbell with a leather strap"
+  },
+  {
+    "numero": 101,
+    "slug": "esqui",
+    "castellano": "esquí",
+    "catalan": "esquí",
+    "grupo": "alargado",
+    "pista": "a pair of skis side by side, diagonal"
+  },
+  {
+    "numero": 102,
+    "slug": "esquiador",
+    "castellano": "esquiador",
+    "catalan": "esquiador",
+    "grupo": "personas",
+    "pista": "a skier with goggles, poles and skis, full body"
+  },
+  {
+    "numero": 103,
+    "slug": "estalactita",
+    "castellano": "estalactita",
+    "catalan": "estalactita",
+    "grupo": "alargado, gris",
+    "pista": "a single hanging stalactite, pointed down"
+  },
+  {
+    "numero": 104,
+    "slug": "estatua",
+    "castellano": "estatua",
+    "catalan": "estàtua",
+    "grupo": "gris",
+    "pista": "a grey stone statue of a person standing on a small pedestal"
+  },
+  {
+    "numero": 105,
+    "slug": "estudiante",
+    "castellano": "estudiante",
+    "catalan": "estudiant",
+    "grupo": "personas",
+    "pista": "a teenage student with a backpack holding books, full body"
+  },
+  {
+    "numero": 106,
+    "slug": "estufa",
+    "castellano": "estufa",
+    "catalan": "estufa",
+    "grupo": "gris",
+    "pista": "a grey electric radiator heater on feet"
+  },
+  {
+    "numero": 107,
+    "slug": "gota",
+    "castellano": "gota",
+    "catalan": "gota",
+    "grupo": "azul",
+    "pista": "a single blue water drop"
+  },
+  {
+    "numero": 108,
+    "slug": "llama",
+    "castellano": "llama",
+    "catalan": "llama",
+    "grupo": "blanco",
+    "pista": "a white and beige llama, side view, friendly (the animal, not a flame)"
+  },
+  {
+    "numero": 109,
+    "slug": "malabarista",
+    "castellano": "malabarista",
+    "catalan": "malabarista",
+    "grupo": "personas",
+    "pista": "a juggler juggling three balls, full body"
+  },
+  {
+    "numero": 110,
+    "slug": "maniqui",
+    "castellano": "maniquí",
+    "catalan": "maniquí",
+    "grupo": "personas",
+    "pista": "a plain dressmaker mannequin on a stand, no face"
+  },
+  {
+    "numero": 111,
+    "slug": "maquinista",
+    "castellano": "maquinista",
+    "catalan": "maquinista",
+    "grupo": "personas",
+    "pista": "a train driver with a striped cap and overalls, full body"
+  },
+  {
+    "numero": 112,
+    "slug": "corredor",
+    "castellano": "corredor",
+    "catalan": "maratonià",
+    "grupo": "personas",
+    "pista": "a marathon runner running, with a race bib without any number"
+  },
+  {
+    "numero": 113,
+    "slug": "marinero",
+    "castellano": "marinero",
+    "catalan": "mariner",
+    "grupo": "personas",
+    "pista": "a sailor with a white sailor cap and striped shirt, full body"
+  },
+  {
+    "numero": 114,
+    "slug": "marioneta",
+    "castellano": "marioneta",
+    "catalan": "marioneta",
+    "grupo": "personas",
+    "pista": "a wooden string puppet hanging from its control bar"
+  },
+  {
+    "numero": 115,
+    "slug": "nabo",
+    "castellano": "nabo",
+    "catalan": "nap",
+    "grupo": "blanco",
+    "pista": "a white turnip with a purple top and green leaves"
+  },
+  {
+    "numero": 116,
+    "slug": "nota",
+    "castellano": "nota",
+    "catalan": "nota",
+    "grupo": "instrumentos",
+    "pista": "a single black musical note (eighth note), large"
+  },
+  {
+    "numero": 117,
+    "slug": "paciente",
+    "castellano": "paciente",
+    "catalan": "pacient",
+    "grupo": "personas",
+    "pista": "a patient in a hospital gown with an arm in a sling, friendly"
+  },
+  {
+    "numero": 118,
+    "slug": "fregadero",
+    "castellano": "fregadero",
+    "catalan": "pica",
+    "grupo": "gris",
+    "pista": "a grey kitchen sink with a tap, no cabinet"
+  },
+  {
+    "numero": 119,
+    "slug": "puerro",
+    "castellano": "puerro",
+    "catalan": "porro",
+    "grupo": "verde, alargado",
+    "pista": "a single leek, white and green"
+  },
+  {
+    "numero": 120,
+    "slug": "tarro",
+    "castellano": "tarro",
+    "catalan": "pot",
+    "grupo": "gris",
+    "pista": "an empty glass jar with a lid, no label"
+  },
+  {
+    "numero": 121,
+    "slug": "pozo",
+    "castellano": "pozo",
+    "catalan": "pou",
+    "grupo": "gris",
+    "pista": "an old round stone well with a small roof and a bucket"
+  },
+  {
+    "numero": 122,
+    "slug": "saco",
+    "castellano": "saco",
+    "catalan": "sac",
+    "grupo": "marrón",
+    "pista": "a full brown burlap sack tied at the top, no print"
+  }
+]

@@ -1,0 +1,216 @@
+{
+  "lote": "matriz-ca-level10-v1",
+  "descripcion": "Matrices solo catalanas de Level10 (palabras reales, prompt 01: \"Las de palabras reales (Level9 y Level10) son siempre de un idioma\"). Parámetros de Level10 de docs/exercise-catalog.md 6.1: palabras reales parecidas con doble objetivo, 3 columnas × 8 filas, 1 ronda, 8 objetivos (4 de cada palabra objetivo), 45 s. El objetivo va como \"a, b\", que el importador separa por la coma y cuenta como la suma de los dos (LetterMatrixActivityHandler::targets). Seis matrices, una por confusión, con el término de esfuerzo de esa confusión: Mirall b-d (dona y beu entre bona y deu, más doma y bec), Mirall b-p (pou y bota entre bou y pota, más pot y bata), Rotació n-u (neu y son entre nen y sou, más veu y som), Grafies diacrítiques i especials con ç (plaça y llaç entre placa y llac, más plata y llar), Grafies diacrítiques i especials con acentos (més y serè entre mes y seré, más mas y serà) y Homòfons i parònims con b/v (vaca y bell entre baca y vell, homófonas en catalán central, más taca y pell; esta lleva también Mirall b-p por bell y pell). Cada distractor es una palabra catalana real a una letra o a un acento de uno de los dos objetivos y nunca igual a ellos; cada uno aparece 4 veces. Cada objetivo sale al menos una vez en las cuatro filas de arriba y otra en las cuatro de abajo, como mucho 2 objetivos por fila y nunca la misma palabra en dos celdas seguidas de una fila. Rotació m-w, Mirall p-q y Mirall d-q se dejan para otro lote: no hay pares de palabras catalanas reales que solo se distingan por esas letras. Evitados por tema o por uso: caça, el ejemplo de la guía, porque la caza está en la lista cerrada de la guía E11 (violencia); bala, forca, vara, bena y vena; casa, gat, gos, taula, sol y lluna, objetivos de las matrices con regla de Level9 y Level10; y los objetivos de Level9 (dubte, porquet, pebre, quadern, menut, feliç). Descartada veina como distractor de veïna: no está en el diccionario de Softcatalà ni en las listas.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Material escrito a mano con el prompt plans/multiidioma/prompts-contenido/01-matriu.md (fila Level10); la colocación de las celdas, con un script de trabajo y la semilla 1010 (no versionado). Distractores comprobados contra las formas de los dos idiomas (listas, diccionario de Softcatalà, CORPES XXI). Pendiente de la revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-CA-L10-PER-001",
+      "idioma": "ca",
+      "titulo": "Troba totes les paraules dona i beu",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca totes les paraules iguals a les dues que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Mirall b-d"
+      ],
+      "contenido": {
+        "objetivo": "dona, beu",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "deu bec bona dona bec bona bec doma bec beu doma dona beu doma dona bona doma deu bona deu beu beu dona deu"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "bona",
+          "deu",
+          "doma",
+          "bec"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-CA-L10-PER-002",
+      "idioma": "ca",
+      "titulo": "Troba totes les paraules pou i bota",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca totes les paraules iguals a les dues que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Mirall b-p"
+      ],
+      "contenido": {
+        "objetivo": "pou, bota",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "bota pota bou bota bata pot bou bata bota pou pot bou pou pota pou bata pou bou pota pot pota bata bota pot"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "bou",
+          "pota",
+          "pot",
+          "bata"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-CA-L10-PER-003",
+      "idioma": "ca",
+      "titulo": "Troba totes les paraules neu i son",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca totes les paraules iguals a les dues que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Rotació n-u"
+      ],
+      "contenido": {
+        "objetivo": "neu, son",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "sou som sou neu son veu neu som nen veu sou nen son som veu som son nen neu veu son neu nen sou"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "nen",
+          "sou",
+          "veu",
+          "som"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-CA-L10-PER-004",
+      "idioma": "ca",
+      "titulo": "Troba totes les paraules plaça i llaç",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca totes les paraules iguals a les dues que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Grafies diacrítiques i especials"
+      ],
+      "contenido": {
+        "objetivo": "plaça, llaç",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "llaç plaça placa plaça plata llar llar llaç llac llac placa plata placa plata llaç llaç plata llar llac plaça placa llar plaça llac"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "placa",
+          "llac",
+          "plata",
+          "llar"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-CA-L10-PER-005",
+      "idioma": "ca",
+      "titulo": "Troba totes les paraules més i serè",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca totes les paraules iguals a les dues que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Grafies diacrítiques i especials"
+      ],
+      "contenido": {
+        "objetivo": "més, serè",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "mes mas més seré serà serè mes seré serè seré serà més mes serè mes serà més serè mas serà mas mas seré més"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "mes",
+          "seré",
+          "mas",
+          "serà"
+        ]
+      }
+    },
+    {
+      "tipo": "activity_letter_matrix",
+      "codigo": "MAT-CA-L10-PER-006",
+      "idioma": "ca",
+      "titulo": "Troba totes les paraules vaca i bell",
+      "area_principal": "Procesos Perceptivos (Discriminación Visual y Auditiva)",
+      "area_secundaria": "Funciones Ejecutivas y Atención",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Toca totes les paraules iguals a les dues que et demanem. Si en marques una per error, torna-la a tocar. Quan les tinguis totes, prem Comprovar.",
+      "explicacion": "Letter matrix",
+      "esfuerzo": [
+        "Homòfons i parònims",
+        "Mirall b-p"
+      ],
+      "contenido": {
+        "objetivo": "vaca, bell",
+        "columnas": 3,
+        "filas": 8,
+        "rondas": [
+          "vaca vell vaca taca bell pell bell pell baca vell vaca taca vell pell bell taca baca pell taca baca vaca baca bell vell"
+        ],
+        "objetivos_por_ronda": 8,
+        "segundos": 45
+      },
+      "origen": {
+        "distractores": [
+          "baca",
+          "vell",
+          "taca",
+          "pell"
+        ]
+      }
+    }
+  ]
+}

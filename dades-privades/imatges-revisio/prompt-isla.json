@@ -1,0 +1,17 @@
+{
+  "subject": "small island with one palm tree",
+  "prompt": "Use case: stylized-concept. Generate a NEW single-word educational flashcard. All attached images are approved STYLE REFERENCES ONLY, never edit targets. First three are required anchors; remaining at most two are accepted images of the SAME CATEGORY. Match the anchors and accepted category images: uniform medium dark charcoal contours, rounded simplified shapes, natural recognizable colors, few large flat color shapes. Animal fur must be simple like cat and dog, fewer interior fur strokes than wolf. No texture, no gradients, no speckles, no cast shadow, no scene. Whole subject in central 72% square of a 1024x1024 transparent canvas, fully visible, centered. No added decorations, hands holding an object, letters, digits, logos or brands. Naturally plural objects, essential integral parts, or explicitly requested compound subjects are allowed. Obey the exact word meaning below. Human characters full body when requested; vary natural skin tones between professions. Front/back empty areas stay truly transparent. Animal anatomy and limb counts are NOT acceptance criteria; prioritize unmistakable recognition. Simplified stylized limbs are fine.\nFlat vector illustration of a single small island with one palm tree, children's educational flashcard style.\nClean continuous dark charcoal (#1E1E2E) outline of uniform medium weight, simple rounded shapes,\nflat colors with at most one flat shade per color, no gradients, no textures.\nThe object keeps its natural, most recognizable colors. Whole object visible, centered,\nfront or three-quarter view, occupying about 70% of the canvas with clear margins on all sides.\nTransparent background. No scene, no ground, no cast shadow, no frame, no border.\nNo text, no letters, no numbers, no logos, no watermark, no hands, no extra objects.\nFriendly, calm, modern picture-book look; consistent with the reference images.\nGroup consistency: \nSpecific constraints: \n",
+  "refs": [
+    "/Users/josellamas/var/www/shine-project/shine/content/images/gato.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/manzana.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/coche.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/sol.png",
+    "/Users/josellamas/var/www/shine-project/shine/content/images/luna.png"
+  ],
+  "attempt": 1,
+  "categoria": "naturaleza",
+  "original": "small island with one palm tree",
+  "prioridad": 3,
+  "excepcion": false,
+  "motivo_pista": "Uniformar pose y punto de vista del grupo, según lo solicitado."
+}

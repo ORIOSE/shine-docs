@@ -1,0 +1,31 @@
+{
+  "lote": "lectura-es-level10-v1",
+  "descripcion": "1 texto castellano de lectura en voz alta (activity, formato audio_reading) de Level10: divulgativo general, como pide el prompt 09 para Level10, sobre la isla de calor urbana, un tema de medio ambiente con soluciones de la franja de 13 a 15 años de la guía E11. Un solo párrafo de 80 palabras en 4 frases (media 20, la más larga 23), con léxico denso (fenómeno, radiación solar, hormigón, cubiertas vegetales, superficies) y sintaxis compleja: aposición explicativa (un fenómeno conocido como), relativas (que las rodea, que reflejan mejor la luz), consecutiva (de modo que), final (para reducir este efecto) y tres pasivas reflejas seguidas (se plantan, se instalan, se pintan). Todos son hechos comprobables y generales: las ciudades suelen estar más calientes que el campo cercano, el asfalto, el hormigón y los tejados oscuros absorben la radiación de día y la liberan de noche, y los árboles, las cubiertas vegetales y los colores claros reducen el efecto; sin cifras, fechas ni lugares concretos, y sin tono catastrofista (guía E11: medio ambiente con soluciones). Sin nombres propios y sin diálogo: no habla nadie. Distinto del ejemplo de Level10 de la guía (los murciélagos y la ecolocalización). 80 palabras a 160 ppm: 30 segundos.",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level10), siguiendo la guía editorial E11. Prompt: plans/contenido/prompts-es/09-lectura-en-voz-alta.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity",
+      "codigo": "LEC-ES-L10-VEL-001",
+      "idioma": "es",
+      "titulo": "La isla de calor urbana",
+      "area_principal": "Rendimiento y Velocidad de Procesamiento",
+      "area_secundaria": "Competencia Lingüística y Fonológica",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "Pulsa Empezar a leer, lee el texto en voz alta y, cuando acabes, pulsa He terminado.",
+      "explicacion": "Activity vertical text",
+      "contenido": {
+        "formato": "audio_reading",
+        "parrafos": [
+          "Muchas ciudades registran temperaturas más altas que el campo que las rodea, un fenómeno conocido como isla de calor urbana. Durante el día, el asfalto, el hormigón y los tejados oscuros absorben gran parte de la radiación solar. Al caer la noche, esos materiales liberan el calor acumulado, de modo que las calles tardan más en refrescarse. Para reducir este efecto, se plantan árboles, se instalan cubiertas vegetales y se pintan superficies con colores claros, que reflejan mejor la luz."
+        ],
+        "segundos": 30
+      }
+    }
+  ]
+}

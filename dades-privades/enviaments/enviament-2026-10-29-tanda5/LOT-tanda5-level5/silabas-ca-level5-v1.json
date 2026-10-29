@@ -1,0 +1,111 @@
+{
+  "lote": "silabas-ca-level5-v1",
+  "descripcion": "2 actividades catalanas de reordenamiento de sílabas (activity_syllable_order) de Level5, 6 palabras de 4 sílabas cada una con 1 sílaba sobrante por palabra (novedad de Level5), todas con imagen del banco como pista (clave imagen = slug) y la silabación del IEC del bloque ca de content/images/manifest.json. Entran todas las estructuras: trabadas (ter-mò-me-tre, con sobrante pra), codas (pas-ta-na-ga, har-mò-ni-ca, sa-mar-re-ta), diptongo decreciente (di-no-sau-re), hiato (a-cor-di-ó), dígrafos ny, ll y rr (cas-ta-nyo-les, sa-ba-ti-lla, to-va-llo-la, sa-mar-re-ta). Frecuencia dentro de las 7.000 o en la lista infantil. Ninguna otra permutación de las cuatro sílabas, ni de cuatro o cinco fichas con la sobrante, forma una palabra catalana ni castellana (comprobado contra las listas generales e infantiles de los dos idiomas). Sobrantes elegidas de modo que no formen palabra con las demás (descartadas ro en di-no-sau-re por dinosauro, ta en pi-rà-mi-de por pitaderà, nu en a-cor-di-ó por dicornua). No repite ninguna palabra de Level3 ni de Level4; descartadas xocolata, hamburguesa, magdalena y piruleta (menjar poc saludable, guía E11), sargantana (nota del manifiesto), libèl·lula y caravel·la (ela geminada en la ficha), calaixera (silabación ca-la-ixe-ra del manifiesto, dudosa) y las que superan el rango 7.000 (patinador, acròbata, aventurer, picapedrer, camioner).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano con el prompt plans/multiidioma/prompts-contenido/05-ordena-sillabes.md desde el bloque ca del manifiesto del banco (solo entradas aceptadas y usable); sin semilla. Comprobado con etiquetar_lote.py y lexico.py --lang ca. Pendiente de la revisión del experto."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-CA-L05-LIN-001",
+      "idioma": "ca",
+      "titulo": "Ordena les síl·labes amb dibuix",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Mira el dibuix i toca les síl·labes en ordre per formar el seu nom. Hi ha una síl·laba que sobra.",
+      "explicacion": "Syllable order",
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "pas-ta-na-ga",
+            "sobrantes": "mo",
+            "imagen": "zanahoria"
+          },
+          {
+            "silabas": "di-no-sau-re",
+            "sobrantes": "pe",
+            "imagen": "dinosaurio"
+          },
+          {
+            "silabas": "ter-mò-me-tre",
+            "sobrantes": "pra",
+            "imagen": "termometro"
+          },
+          {
+            "silabas": "pi-rà-mi-de",
+            "sobrantes": "lo",
+            "imagen": "piramide"
+          },
+          {
+            "silabas": "ca-ra-va-na",
+            "sobrantes": "be",
+            "imagen": "caravana"
+          },
+          {
+            "silabas": "sa-ba-ti-lla",
+            "sobrantes": "lle",
+            "imagen": "zapatilla"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Travades amb r (CCV)"
+      ]
+    },
+    {
+      "tipo": "activity_syllable_order",
+      "codigo": "SIL-CA-L05-LIN-002",
+      "idioma": "ca",
+      "titulo": "Ordena les síl·labes amb dibuix",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Memoria de Trabajo (Auditiva y Visual)",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": "Mira el dibuix i toca les síl·labes en ordre per formar el seu nom. Hi ha una síl·laba que sobra.",
+      "explicacion": "Syllable order",
+      "contenido": {
+        "palabras": [
+          {
+            "silabas": "sa-mar-re-ta",
+            "sobrantes": "pu",
+            "imagen": "camiseta"
+          },
+          {
+            "silabas": "to-va-llo-la",
+            "sobrantes": "mi",
+            "imagen": "toalla"
+          },
+          {
+            "silabas": "a-cor-di-ó",
+            "sobrantes": "pe",
+            "imagen": "acordeon"
+          },
+          {
+            "silabas": "har-mò-ni-ca",
+            "sobrantes": "bu",
+            "imagen": "armonica"
+          },
+          {
+            "silabas": "cas-ta-nyo-les",
+            "sobrantes": "pi",
+            "imagen": "castanuelas"
+          },
+          {
+            "silabas": "re-ga-do-ra",
+            "sobrantes": "bi",
+            "imagen": "regadera"
+          }
+        ]
+      },
+      "esfuerzo": [
+        "Hiats"
+      ]
+    }
+  ]
+}

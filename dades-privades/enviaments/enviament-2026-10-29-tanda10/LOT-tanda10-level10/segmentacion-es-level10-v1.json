@@ -1,0 +1,70 @@
+{
+  "lote": "segmentacion-es-level10-v1",
+  "descripcion": "2 actividades castellanas de segmentación léxica (activity_word_split) de Level10: 6 frases de 12 a 14 palabras cada una, todas con una oración subordinada (causal con porque, concesiva con aunque, temporal con cuando y hasta que, relativa con que y por donde, final con en vez de más infinitivo), lo que pide el prompt 07 para Level10, y con un par que se confunde en cada frase, como en Level7 a Level9. Los pares son nuevos respecto a Level7 (a ver y haber, si no y sino, tan bien y también, por qué y porque, de más y demás, tan poco y tampoco), Level8 (a sí mismo y asimismo, entorno y en torno, sinfín y sin fin, porvenir y por venir, mediodía y medio día, quehaceres y que hacer) y Level9 (aparte y a parte, debajo y de bajo, sinnúmero y sin número, conque y con que, quienquiera y quien quiera, afín y a fin). Cada par sale dos veces, una con cada forma, y la frase solo tiene sentido con la partición declarada. SEG-ES-L10-LIN-001: sobre todo y sobretodo (le gustan todas las ciencias, sobre todo la química; el abuelo se puso el sobretodo, el abrigo), malentendido y mal entendido (todo fue un malentendido; un enunciado mal entendido), en vez y envés (en vez de coger el coche; los estomas están en el envés de la hoja, un término de biología). SEG-ES-L10-LIN-002: pasatiempo y pasa tiempo (su pasatiempo favorito; el chico pasa tiempo en el taller), porqué y por qué (el porqué de la corriente, sustantivo; explicó por qué cambian de color), sinsabores y sin sabor (el viaje tuvo algunos sinsabores; la crema estaba sin sabor). La otra lectura de cada frase no tiene sentido o es la falta de ortografía que se trabaja: disfruta sobretodo con la química, se puso el sobre todo gris, fue un mal entendido, un enunciado malentendido, envés de coger el coche, en el en vez, su pasa tiempo favorito, el chico pasatiempo, el por qué de la corriente, explicó porqué, algunos sin sabores, estaba sinsabor. El par porqué y por qué amplía el de Level7 (por qué y porque) con el sustantivo; como la segmentación conserva las tildes, porque sin tilde no es una partición posible. Presente, pasados, futuro y presente de subjuntivo (sea); sin signos, cifras ni nombres propios (guía E11). Roles sin estereotipo (la abuela carpintera, el cocinero). Sin sonoridad: la segmentación trabaja los límites de palabra, no un grupo fonético (igual que en Level7 a Level9). Descartados: medianoche y media noche (demasiado parecido a mediodía de Level8), contrarreloj y contra reloj, entretanto y entre tanto, bocabajo y boca abajo (la norma admite las dos formas en los mismos contextos), maleducado y mal educado (insulto), traspasar y tras pasar (las dos lecturas tienen sentido).",
+  "origen": {
+    "generador": "manual",
+    "version": "2026-10-29",
+    "nota": "Escrito a mano (contenido castellano de Level10), siguiendo la guía editorial E11. Prompt: plans/contenido/prompts-es/07-segmentacion.md."
+  },
+  "actividades": [
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-ES-L10-LIN-001",
+      "idioma": "es",
+      "titulo": "Separa las palabras",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "La frase está escrita sin espacios. Toca una letra para poner un espacio justo delante, hasta separar todas las palabras, y pulsa Comprobar.",
+      "explicacion": "Word split",
+      "contenido": {
+        "frases": [
+          "aunque le gustan todas las ciencias sobre todo disfruta con la química del laboratorio",
+          "el abuelo se puso el sobretodo gris porque hacía mucho frío en la calle",
+          "todo fue un malentendido porque el mensaje que enviaron llegó sin la última frase",
+          "un enunciado mal entendido hace perder mucho tiempo aunque el ejercicio sea sencillo",
+          "en vez de coger el coche muchos vecinos van al trabajo en bicicleta",
+          "en muchas plantas los estomas por donde respira la hoja están en el envés"
+        ]
+      },
+      "esfuerzo": [
+        "Complejas (CCVC, VCC, CVCC)",
+        "Trabadas con l (CCV)",
+        "Trabadas con r (CCV)",
+        "Homófonos y parónimos"
+      ]
+    },
+    {
+      "tipo": "activity_word_split",
+      "codigo": "SEG-ES-L10-LIN-002",
+      "idioma": "es",
+      "titulo": "Separa las palabras",
+      "area_principal": "Competencia Lingüística y Fonológica",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": "La frase está escrita sin espacios. Toca una letra para poner un espacio justo delante, hasta separar todas las palabras, y pulsa Comprobar.",
+      "explicacion": "Word split",
+      "contenido": {
+        "frases": [
+          "su pasatiempo favorito es observar las estrellas cuando el cielo está despejado en verano",
+          "el chico pasa tiempo en el taller de su abuela porque quiere aprender carpintería",
+          "nadie sabía el porqué de la corriente hasta que vieron la ventana abierta",
+          "la guía explicó por qué muchas hojas cambian de color en otoño",
+          "aunque el viaje tuvo algunos sinsabores el grupo llegó a tiempo al albergue",
+          "el cocinero añadió unas hierbas porque la crema de verduras estaba sin sabor"
+        ]
+      },
+      "esfuerzo": [
+        "Complejas (CCVC, VCC, CVCC)",
+        "Directas resto (CV)",
+        "Trabadas con l (CCV)",
+        "Trabadas con r (CCV)",
+        "Homófonos y parónimos"
+      ]
+    }
+  ]
+}
