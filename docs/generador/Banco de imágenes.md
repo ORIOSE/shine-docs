@@ -9,9 +9,19 @@ de "Ordena las sílabas" (node activity_syllable_order). Estado a 2026-10-21.
 > 432 imágenes aceptadas de 437 palabras; 5 descartadas tras la revisión visual (mota, suma, tela,
 > dama y codo, marcadas DESCARTADA en la tabla; las cuatro primeras eran palabras de apoyo y codo era
 > indistinguible de brazo). Ficheros en shine/content/images/ con su manifest.json; hojas de contacto,
-> resúmenes y prompts en shine/content/images/_revision/. Siguiente paso: el handler de importación
-> de activity_image_position en shine_content (sección 2, "Importador"). Cautelas para montar
-> grupos en 5.7.
+> resúmenes y prompts en shine/content/images/_revision/. Importado en Drupal con
+> `drush shine-content:import-images` (FASE 18, 02: un media por imagen con name = slug) y, desde el
+> 2026-10-26 (FASE 18, 05), el manifiesto lleva en cada entrada el **bloque ca** con la ficha
+> catalana validada por el experto (sección 4 y 5.4). Primeros lotes bilingües de posición de
+> imágenes: shine/content/imagenes-es-ca-level0-2-v1.json, generado con
+> shine/content/generadores/imagenes.py (prompt para lotes nuevos en
+> plans/multiidioma/prompts-contenido/02-posicio-imatges.md). Cautelas para montar grupos en 5.7.
+
+> **Lote 2 (2026-10-29, encargo E09)**: 122 imágenes nuevas para los grupos de Level9 y Level10
+> (40 imprescindibles en cualquier opción y 82 que solo usa la opción A). Prompt listo para pegar:
+> [Banco de imágenes - lote 2 (E09).md](Banco%20de%20imágenes%20-%20lote%202%20(E09).md); fichas en
+> shine/content/images/manifest-lote2.json, generadas con shine/content/generadores/imagenes_lote2.py.
+> Al recibirlas: posproceso, revisión, fusión en manifest.json y `drush shine-content:import-images`.
 
 Tiene dos partes:
 
@@ -137,10 +147,24 @@ nombre de fichero del manifiesto.
   lentes, las dos maracas).
 - **El manifiesto lleva el silabeo** (pan-ta-lón) y el nivel lector orientativo de cada palabra,
   para poder montar lotes de "Ordena las sílabas" directamente desde él (la clave imagen del lote
-  es el slug) y para elegir nombres legibles en Level0 y Level1 de posición de imágenes (solo
-  palabras con lectura L0 o L1). La ficha catalana de cada imagen (nombre, artículo, sílabas,
-  nivel lector y grupos) está en plans/multiidioma/banco-imagenes-equivalencia-ca.csv, validada
-  por el experto; el subplan 05 la incorpora al manifiesto como bloque ca.
+  es el slug) y para elegir nombres legibles en Level0 y Level1 de posición de imágenes (en
+  Level1, solo palabras con lectura L0 o L1; en Level0, solo monosílabos o bisílabos de sílabas
+  abiertas simples en los dos idiomas, sin dígrafos ni grupos consonánticos: regla `nombre_simple`
+  de generadores/imagenes.py, pedida por el experto el 2026-10-27, que cumplen 48 imágenes).
+- **Bloque ca del manifiesto** (FASE 18, 05): cada entrada lleva la ficha catalana en la clave
+  `ca`: `nombre` (singular, minúsculas, el más natural para un niño de 5 a 7 años), `articulo`
+  (el, la, l'), `silabas` con el silabeo del IEC (los dígrafos tx, ix, ig, tg, tj, ss, rr y l·l se
+  separan: cot-xe, cai-xa, col-le-gi; ny, ll, qu, gu van unidos: pi-nya, llu-na), `lectura` (nivel
+  lector catalán según la tabla 2.3 catalana del catálogo, con la excepción del experto: monosílabos
+  muy frecuentes con coda simple en L2, como dent, pont, porc), `etiquetas` (fon: sílaba inicial,
+  espejo: letras b d p q, graf: dígrafos y grafías propias, sib: sibilante sorda o sonora),
+  `usable` y, si hace falta, `nota`. **usable: false** marca las 9 imágenes que no se usan en
+  catalán (el nombre coincide con el de otra imagen, tiene varias palabras o lleva guion); la
+  imagen no se borra y sigue sirviendo en castellano. **A partir de ahora la fuente del nombre
+  catalán es el manifiesto**; plans/multiidioma/banco-imagenes-equivalencia-ca.csv queda como
+  registro de la validación del experto (2026-10-26) y no se edita: un cambio de ficha se hace en
+  el manifiesto. Las claves comunes (fichero, categoria, subcategoria, etiquetas vis:) son neutras
+  entre idiomas; las castellanas siguen en la raíz de la entrada.
 - **Categoría, subcategoría y etiquetas** son lo que necesita la tabla de niveles de 5.4 del
   catálogo: categorías distintas (Level0 a Level2), misma categoría amplia (Level3 a Level5),
   misma categoría estrecha (Level6 y Level7), parecidas en forma o color (Level8), con nombres
@@ -285,7 +309,15 @@ y nivel lector.
       "pista_visual": "a single ripe yellow banana, slightly curved",
       "prioridad": 1,
       "estado": "aceptada",
-      "fondo": "transparente"
+      "fondo": "transparente",
+      "ca": {
+        "nombre": "plàtan",
+        "articulo": "el",
+        "silabas": "plà-tan",
+        "lectura": "L2",
+        "etiquetas": ["fon:pla-", "graf:tr"],
+        "usable": true
+      }
     }
   ]
 }
@@ -304,6 +336,13 @@ Campos:
   legibles en los niveles bajos y para filtrar palabras en "Ordena las sílabas". El léxico de
   referencia del proyecto, cuando exista, prevalece sobre esta columna.
 - **estado**: pendiente, candidatas, aceptada o descartada (con **motivo** si se descarta).
+- **ca** (FASE 18, 05): la ficha catalana de la imagen, descrita en la sección 4 (nombre, artículo,
+  silabeo del IEC, lectura catalana, etiquetas, usable y nota). Sale del CSV validado por el
+  experto; la raíz del manifiesto lo registra en la clave `idiomas.ca` (fuente, fecha, entradas y
+  usables). El importador de media no la lee (name y alt siguen siendo el slug); la leen los
+  generadores de lotes: con `idiomas` [es, ca], `nombre` de cada imagen es {es: nombre, ca:
+  ca.nombre}, y en Level0 y Level1 el nombre tiene que ser legible en los dos idiomas (lectura L0
+  o L1 en `lectura` y en `ca.lectura`).
 
 ### 5.5 Criterios de aceptación (resumen)
 
@@ -899,6 +938,24 @@ imágenes compartan silueta y tamaño pero se distingan a primera vista.
   sobre; gusano y oruga; pierna y rodilla; rana y sapo; leopardo y guepardo; lobo y coyote.
 - **Letras espejo en el nombre** (b, d, p, q, para la discriminación visual): bebé, dado, dedo,
   bota, pato, búho, burro, pulpo, puma, queso, bombilla, bandera, pelota, pipa, dama, polo.
+
+**En catalán** (FASE 18, 05; nombres del bloque ca del manifiesto):
+
+- **Parejas que dejan de serlo**: pilota es balón y pelota (se deja usable balón); clau es llave
+  y clavo (usable llave); cargol es caracol y tornillo (usable caracol); bossa es bolsa y bolso
+  (usable bolsa). No usables en catalán, además, pavo (gall dindi), yoyo (io-io), arcoíris (arc de
+  Sant Martí), girasol (gira-sol) y maíz (blat de moro): varias palabras o guion.
+- **Pares mínimos nuevos** (no van juntos en un grupo por debajo de Level8; en Level10 son el
+  material): gat, got y gos (gato, vaso, perro); llit y llet (cama, leche); gerro y gerra (jarrón,
+  jarra); tapa y tap (tapa, tapón); ós y os (oso, hueso: solo cambia el acento); sal y sol; cap,
+  capa y copa (cabeza, capa, copa).
+- **Misma sílaba inicial en catalán**: pa- (pala, pa, patí, paper, pastís, pallasso, pantalons,
+  papallona); ca- (casa, cap, capa, cara, caixa, cabra, cavall, camió, cargol, càmera); po- (poma,
+  polo, pop, porc, pont, porta); ma- (mà, mapa, maleta, maduixa, martell, magrana). Los grupos
+  castellanos de sílaba inicial no valen en catalán (pato es ànec, perro es gos): se eligen con
+  las etiquetas fon: del bloque ca.
+- Las parejas casi iguales de arriba (naranja y mandarina, rana y sapo...) y las de letras espejo
+  valen igual en los dos idiomas: son la misma imagen.
 
 ### 5.8 Qué devolver
 

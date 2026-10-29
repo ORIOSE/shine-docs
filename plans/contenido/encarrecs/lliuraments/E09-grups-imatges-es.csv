@@ -1,0 +1,721 @@
+opcio,nivell,idioma,grup,nom,existent,slug,criteri
+A,9,es,es-9-01,castaña,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-01,caja,sí,caja,marrón + ca-
+A,9,es,es-9-01,castor,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-01,caracol,sí,caracol,marrón + ca-
+A,9,es,es-9-01,camello,sí,camello,marrón + ca-
+A,9,es,es-9-01,canguro,sí,canguro,marrón + ca-
+A,9,es,es-9-02,caqui,no,,"redondo + ca-; nueva, etiqueta visual: redondo"
+A,9,es,es-9-02,cara,sí,cara,redondo + ca-
+A,9,es,es-9-02,canicas,sí,canicas,redondo + ca-
+A,9,es,es-9-02,cascabel,no,,"redondo + ca-; nueva, etiqueta visual: redondo"
+A,9,es,es-9-02,caramelo,sí,caramelo,redondo + ca-
+A,9,es,es-9-02,calabaza,sí,calabaza,redondo + ca-
+A,9,es,es-9-03,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-03,maracas,sí,maracas,rojo + ma-
+A,9,es,es-9-03,mantel,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-03,mango,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-03,manguera,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-03,manzana,sí,manzana,rojo + ma-
+A,9,es,es-9-04,paracaídas,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-04,pañuelo,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-04,pañal,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-04,palomitas,sí,palomitas,blanco + pa-
+A,9,es,es-9-04,paloma,sí,paloma,blanco + pa-
+A,9,es,es-9-04,pato,sí,pato,blanco + pa-
+A,9,es,es-9-05,campana,sí,campana,amarillo + ca-
+A,9,es,es-9-05,canario,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-05,candelabro,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-05,casco,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-05,carta,sí,carta,amarillo + ca-
+A,9,es,es-9-05,caballito,sí,caballito,amarillo + ca-
+A,9,es,es-9-06,cangrejo,sí,cangrejo,rojo + ca-
+A,9,es,es-9-06,capa,sí,capa,rojo + ca-
+A,9,es,es-9-06,camión,sí,camion,rojo + ca-
+A,9,es,es-9-06,carpa,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-06,cazo,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-06,carretilla,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-07,caracol,sí,caracol,marrón + ca-
+A,9,es,es-9-07,caja,sí,caja,marrón + ca-
+A,9,es,es-9-07,camello,sí,camello,marrón + ca-
+A,9,es,es-9-07,cacahuete,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-07,canguro,sí,canguro,marrón + ca-
+A,9,es,es-9-07,cabaña,sí,cabana,marrón + ca-
+A,9,es,es-9-08,maracas,sí,maracas,rojo + ma-
+A,9,es,es-9-08,martillo,sí,martillo,rojo + ma-
+A,9,es,es-9-08,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-08,macarrones,sí,macarrones,rojo + ma-
+A,9,es,es-9-08,mariquita,sí,mariquita,rojo + ma-
+A,9,es,es-9-08,manguera,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-09,casco,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-09,candelabro,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-09,candado,sí,candado,amarillo + ca-
+A,9,es,es-9-09,caballito,sí,caballito,amarillo + ca-
+A,9,es,es-9-09,campana,sí,campana,amarillo + ca-
+A,9,es,es-9-09,cascabel,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-10,canoa,sí,canoa,rojo + ca-
+A,9,es,es-9-10,carpa,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-10,cazo,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-10,carretilla,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-10,cangrejo,sí,cangrejo,rojo + ca-
+A,9,es,es-9-10,caramelo,sí,caramelo,rojo + ca-
+A,9,es,es-9-11,paloma,sí,paloma,blanco + pa-
+A,9,es,es-9-11,pañuelo,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-11,papel,sí,papel,blanco + pa-
+A,9,es,es-9-11,pastilla,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-11,palomitas,sí,palomitas,blanco + pa-
+A,9,es,es-9-11,pato,sí,pato,blanco + pa-
+A,9,es,es-9-12,paleta,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-12,patata,sí,patata,marrón + pa-
+A,9,es,es-9-12,pan,sí,pan,marrón + pa-
+A,9,es,es-9-12,pasa,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-12,pantufla,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-12,pandereta,sí,pandereta,marrón + pa-
+A,9,es,es-9-13,capibara,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-13,castaña,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-13,caballo,sí,caballo,marrón + ca-
+A,9,es,es-9-13,castañuelas,sí,castanuelas,marrón + ca-
+A,9,es,es-9-13,cazuela,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-13,cabaña,sí,cabana,marrón + ca-
+A,9,es,es-9-14,macarrones,sí,macarrones,rojo + ma-
+A,9,es,es-9-14,mango,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-14,martillo,sí,martillo,rojo + ma-
+A,9,es,es-9-14,mantel,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-14,manzana,sí,manzana,rojo + ma-
+A,9,es,es-9-14,mariquita,sí,mariquita,rojo + ma-
+A,9,es,es-9-15,cascabel,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-15,campana,sí,campana,amarillo + ca-
+A,9,es,es-9-15,candado,sí,candado,amarillo + ca-
+A,9,es,es-9-15,caballito,sí,caballito,amarillo + ca-
+A,9,es,es-9-15,carta,sí,carta,amarillo + ca-
+A,9,es,es-9-15,canario,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-16,camión,sí,camion,rojo + ca-
+A,9,es,es-9-16,caramelo,sí,caramelo,rojo + ca-
+A,9,es,es-9-16,capa,sí,capa,rojo + ca-
+A,9,es,es-9-16,carpa,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-16,canoa,sí,canoa,rojo + ca-
+A,9,es,es-9-16,cangrejo,sí,cangrejo,rojo + ca-
+A,9,es,es-9-17,pañal,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-17,pastilla,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-17,papel,sí,papel,blanco + pa-
+A,9,es,es-9-17,paracaídas,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-17,pañuelo,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-17,paloma,sí,paloma,blanco + pa-
+A,9,es,es-9-18,pan,sí,pan,marrón + pa-
+A,9,es,es-9-18,pandereta,sí,pandereta,marrón + pa-
+A,9,es,es-9-18,palo,sí,palo,marrón + pa-
+A,9,es,es-9-18,pavo,sí,pavo,marrón + pa-
+A,9,es,es-9-18,pantufla,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-18,patata,sí,patata,marrón + pa-
+A,9,es,es-9-19,cazuela,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-19,cacahuete,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-19,castor,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-19,caballo,sí,caballo,marrón + ca-
+A,9,es,es-9-19,castañuelas,sí,castanuelas,marrón + ca-
+A,9,es,es-9-19,capibara,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-20,mango,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-20,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-20,manguera,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-20,mantel,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-20,mariquita,sí,mariquita,rojo + ma-
+A,9,es,es-9-20,martillo,sí,martillo,rojo + ma-
+A,9,es,es-9-21,carta,sí,carta,amarillo + ca-
+A,9,es,es-9-21,cascabel,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-21,candado,sí,candado,amarillo + ca-
+A,9,es,es-9-21,canario,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-21,candelabro,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-21,casco,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+A,9,es,es-9-22,capa,sí,capa,rojo + ca-
+A,9,es,es-9-22,caramelo,sí,caramelo,rojo + ca-
+A,9,es,es-9-22,cazo,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-22,camión,sí,camion,rojo + ca-
+A,9,es,es-9-22,carretilla,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-22,canoa,sí,canoa,rojo + ca-
+A,9,es,es-9-23,pastilla,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-23,palomitas,sí,palomitas,blanco + pa-
+A,9,es,es-9-23,pato,sí,pato,blanco + pa-
+A,9,es,es-9-23,pañal,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-23,paracaídas,no,,"blanco + pa-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-23,papel,sí,papel,blanco + pa-
+A,9,es,es-9-24,palo,sí,palo,marrón + pa-
+A,9,es,es-9-24,pandereta,sí,pandereta,marrón + pa-
+A,9,es,es-9-24,paleta,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-24,patata,sí,patata,marrón + pa-
+A,9,es,es-9-24,pavo,sí,pavo,marrón + pa-
+A,9,es,es-9-24,pasa,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-25,castaña,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-25,cabaña,sí,cabana,marrón + ca-
+A,9,es,es-9-25,caballo,sí,caballo,marrón + ca-
+A,9,es,es-9-25,caja,sí,caja,marrón + ca-
+A,9,es,es-9-25,castor,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-25,camello,sí,camello,marrón + ca-
+A,9,es,es-9-26,cacahuete,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-26,cazuela,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-26,canguro,sí,canguro,marrón + ca-
+A,9,es,es-9-26,caracol,sí,caracol,marrón + ca-
+A,9,es,es-9-26,capibara,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-26,castañuelas,sí,castanuelas,marrón + ca-
+A,9,es,es-9-27,maracas,sí,maracas,rojo + ma-
+A,9,es,es-9-27,mantel,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-27,manzana,sí,manzana,rojo + ma-
+A,9,es,es-9-27,macarrones,sí,macarrones,rojo + ma-
+A,9,es,es-9-27,mariquita,sí,mariquita,rojo + ma-
+A,9,es,es-9-27,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-28,pan,sí,pan,marrón + pa-
+A,9,es,es-9-28,pantufla,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-28,pasa,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-28,paleta,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-28,pavo,sí,pavo,marrón + pa-
+A,9,es,es-9-28,palo,sí,palo,marrón + pa-
+A,9,es,es-9-29,conejo,sí,conejo,blanco + co-
+A,9,es,es-9-29,cohete,sí,cohete,blanco + co-
+A,9,es,es-9-29,coliflor,no,,"blanco + co-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-29,cocinero,sí,cocinero,blanco + co-
+A,9,es,es-9-29,copo,no,,"blanco + co-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-29,colchón,no,,"blanco + co-; nueva, etiqueta visual: blanco"
+A,9,es,es-9-30,pintalabios,no,,"rojo + pi-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-30,pirata,sí,pirata,rojo + pi-
+A,9,es,es-9-30,pimiento,sí,pimiento,rojo + pi-
+A,9,es,es-9-30,pizza,sí,pizza,rojo + pi-
+A,9,es,es-9-30,pinza,no,,"rojo + pi-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-30,piruleta,no,,"rojo + pi-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-31,cabaña,sí,cabana,marrón + ca-
+A,9,es,es-9-31,camello,sí,camello,marrón + ca-
+A,9,es,es-9-31,caja,sí,caja,marrón + ca-
+A,9,es,es-9-31,cazuela,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-31,castañuelas,sí,castanuelas,marrón + ca-
+A,9,es,es-9-31,castaña,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-32,caracol,sí,caracol,marrón + ca-
+A,9,es,es-9-32,cacahuete,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-32,canguro,sí,canguro,marrón + ca-
+A,9,es,es-9-32,castor,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-32,caballo,sí,caballo,marrón + ca-
+A,9,es,es-9-32,capibara,no,,"marrón + ca-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-33,manguera,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-33,maracas,sí,maracas,rojo + ma-
+A,9,es,es-9-33,manzana,sí,manzana,rojo + ma-
+A,9,es,es-9-33,martillo,sí,martillo,rojo + ma-
+A,9,es,es-9-33,mango,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-33,macarrones,sí,macarrones,rojo + ma-
+A,9,es,es-9-34,cortina,sí,cortina,rojo + co-
+A,9,es,es-9-34,corbata,sí,corbata,rojo + co-
+A,9,es,es-9-34,corazón,sí,corazon,rojo + co-
+A,9,es,es-9-34,coral,no,,"rojo + co-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-34,cohete,sí,cohete,rojo + co-
+A,9,es,es-9-34,cono,no,,"rojo + co-; nueva, etiqueta visual: rojo"
+A,9,es,es-9-35,bombón,no,,"redondo + bo-; nueva, etiqueta visual: redondo"
+A,9,es,es-9-35,botón,sí,boton,redondo + bo-
+A,9,es,es-9-35,bombilla,sí,bombilla,redondo + bo-
+A,9,es,es-9-35,bollo,no,,"redondo + bo-; nueva, etiqueta visual: redondo"
+A,9,es,es-9-35,boya,no,,"redondo + bo-; nueva, etiqueta visual: redondo"
+A,9,es,es-9-35,bol,no,,"redondo + bo-; nueva, etiqueta visual: redondo"
+A,9,es,es-9-36,peluche,sí,peluche,marrón + pe-
+A,9,es,es-9-36,peón,no,,"marrón + pe-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-36,perdiz,no,,"marrón + pe-; nueva, etiqueta visual: marrón"
+A,9,es,es-9-36,pelo,sí,pelo,marrón + pe-
+A,9,es,es-9-36,perro,sí,perro,marrón + pe-
+A,9,es,es-9-36,percha,no,,"marrón + pe-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-01,patata,sí,patata,marrón + pa-
+B,9,es,es-9-01,pandereta,sí,pandereta,marrón + pa-
+B,9,es,es-9-01,paleta,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-01,pavo,sí,pavo,marrón + pa-
+B,9,es,es-9-02,campana,sí,campana,amarillo + ca-
+B,9,es,es-9-02,candado,sí,candado,amarillo + ca-
+B,9,es,es-9-02,casco,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-02,cascabel,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-03,camello,sí,camello,marrón + ca-
+B,9,es,es-9-03,canguro,sí,canguro,marrón + ca-
+B,9,es,es-9-03,caballo,sí,caballo,marrón + ca-
+B,9,es,es-9-03,castañuelas,sí,castanuelas,marrón + ca-
+B,9,es,es-9-04,macarrones,sí,macarrones,rojo + ma-
+B,9,es,es-9-04,mariquita,sí,mariquita,rojo + ma-
+B,9,es,es-9-04,manzana,sí,manzana,rojo + ma-
+B,9,es,es-9-04,martillo,sí,martillo,rojo + ma-
+B,9,es,es-9-05,caramelo,sí,caramelo,rojo + ca-
+B,9,es,es-9-05,canoa,sí,canoa,rojo + ca-
+B,9,es,es-9-05,capa,sí,capa,rojo + ca-
+B,9,es,es-9-05,carretilla,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-06,papel,sí,papel,blanco + pa-
+B,9,es,es-9-06,pato,sí,pato,blanco + pa-
+B,9,es,es-9-06,paloma,sí,paloma,blanco + pa-
+B,9,es,es-9-06,palomitas,sí,palomitas,blanco + pa-
+B,9,es,es-9-07,pavo,sí,pavo,marrón + pa-
+B,9,es,es-9-07,palo,sí,palo,marrón + pa-
+B,9,es,es-9-07,pandereta,sí,pandereta,marrón + pa-
+B,9,es,es-9-07,pasa,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-08,cascabel,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-08,canario,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-08,casco,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-08,caballito,sí,caballito,amarillo + ca-
+B,9,es,es-9-09,castañuelas,sí,castanuelas,marrón + ca-
+B,9,es,es-9-09,caballo,sí,caballo,marrón + ca-
+B,9,es,es-9-09,caja,sí,caja,marrón + ca-
+B,9,es,es-9-09,cabaña,sí,cabana,marrón + ca-
+B,9,es,es-9-10,manguera,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-10,macarrones,sí,macarrones,rojo + ma-
+B,9,es,es-9-10,manzana,sí,manzana,rojo + ma-
+B,9,es,es-9-10,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-11,camión,sí,camion,rojo + ca-
+B,9,es,es-9-11,canoa,sí,canoa,rojo + ca-
+B,9,es,es-9-11,carpa,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-11,capa,sí,capa,rojo + ca-
+B,9,es,es-9-12,corbata,sí,corbata,rojo + co-
+B,9,es,es-9-12,coral,no,,"rojo + co-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-12,cortina,sí,cortina,rojo + co-
+B,9,es,es-9-12,corazón,sí,corazon,rojo + co-
+B,9,es,es-9-13,pan,sí,pan,marrón + pa-
+B,9,es,es-9-13,palo,sí,palo,marrón + pa-
+B,9,es,es-9-13,pavo,sí,pavo,marrón + pa-
+B,9,es,es-9-13,patata,sí,patata,marrón + pa-
+B,9,es,es-9-14,carta,sí,carta,amarillo + ca-
+B,9,es,es-9-14,cascabel,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-14,caballito,sí,caballito,amarillo + ca-
+B,9,es,es-9-14,campana,sí,campana,amarillo + ca-
+B,9,es,es-9-15,caracol,sí,caracol,marrón + ca-
+B,9,es,es-9-15,castañuelas,sí,castanuelas,marrón + ca-
+B,9,es,es-9-15,cabaña,sí,cabana,marrón + ca-
+B,9,es,es-9-15,camello,sí,camello,marrón + ca-
+B,9,es,es-9-16,manzana,sí,manzana,rojo + ma-
+B,9,es,es-9-16,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-16,martillo,sí,martillo,rojo + ma-
+B,9,es,es-9-16,maracas,sí,maracas,rojo + ma-
+B,9,es,es-9-17,carpa,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-17,caramelo,sí,caramelo,rojo + ca-
+B,9,es,es-9-17,capa,sí,capa,rojo + ca-
+B,9,es,es-9-17,cangrejo,sí,cangrejo,rojo + ca-
+B,9,es,es-9-18,sartén,sí,sarten,rojo + sa-
+B,9,es,es-9-18,salchicha,sí,salchicha,rojo + sa-
+B,9,es,es-9-18,sacapuntas,sí,sacapuntas,rojo + sa-
+B,9,es,es-9-18,sandía,sí,sandia,rojo + sa-
+B,9,es,es-9-19,caballo,sí,caballo,marrón + ca-
+B,9,es,es-9-19,caja,sí,caja,marrón + ca-
+B,9,es,es-9-19,camello,sí,camello,marrón + ca-
+B,9,es,es-9-19,caracol,sí,caracol,marrón + ca-
+B,9,es,es-9-20,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-20,martillo,sí,martillo,rojo + ma-
+B,9,es,es-9-20,manguera,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-20,mariquita,sí,mariquita,rojo + ma-
+B,9,es,es-9-21,pan,sí,pan,marrón + pa-
+B,9,es,es-9-21,palo,sí,palo,marrón + pa-
+B,9,es,es-9-21,pandereta,sí,pandereta,marrón + pa-
+B,9,es,es-9-21,paleta,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-22,capa,sí,capa,rojo + ca-
+B,9,es,es-9-22,camión,sí,camion,rojo + ca-
+B,9,es,es-9-22,carretilla,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-22,cangrejo,sí,cangrejo,rojo + ca-
+B,9,es,es-9-23,candado,sí,candado,amarillo + ca-
+B,9,es,es-9-23,caballito,sí,caballito,amarillo + ca-
+B,9,es,es-9-23,carta,sí,carta,amarillo + ca-
+B,9,es,es-9-23,casco,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-24,paloma,sí,paloma,aves + pa-
+B,9,es,es-9-24,pato,sí,pato,aves + pa-
+B,9,es,es-9-24,pavo,sí,pavo,aves + pa-
+B,9,es,es-9-24,pájaro,sí,pajaro,aves + pa-
+B,9,es,es-9-25,canguro,sí,canguro,marrón + ca-
+B,9,es,es-9-25,castañuelas,sí,castanuelas,marrón + ca-
+B,9,es,es-9-25,caracol,sí,caracol,marrón + ca-
+B,9,es,es-9-25,caja,sí,caja,marrón + ca-
+B,9,es,es-9-26,manopla,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-26,macarrones,sí,macarrones,rojo + ma-
+B,9,es,es-9-26,maracas,sí,maracas,rojo + ma-
+B,9,es,es-9-26,mariquita,sí,mariquita,rojo + ma-
+B,9,es,es-9-27,pasa,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-27,pandereta,sí,pandereta,marrón + pa-
+B,9,es,es-9-27,pan,sí,pan,marrón + pa-
+B,9,es,es-9-27,patata,sí,patata,marrón + pa-
+B,9,es,es-9-28,caramelo,sí,caramelo,rojo + ca-
+B,9,es,es-9-28,cangrejo,sí,cangrejo,rojo + ca-
+B,9,es,es-9-28,camión,sí,camion,rojo + ca-
+B,9,es,es-9-28,canoa,sí,canoa,rojo + ca-
+B,9,es,es-9-29,canario,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-29,caballito,sí,caballito,amarillo + ca-
+B,9,es,es-9-29,campana,sí,campana,amarillo + ca-
+B,9,es,es-9-29,candado,sí,candado,amarillo + ca-
+B,9,es,es-9-30,cascabel,no,,"redondo + ca-; nueva, etiqueta visual: redondo"
+B,9,es,es-9-30,cara,sí,cara,redondo + ca-
+B,9,es,es-9-30,calabaza,sí,calabaza,redondo + ca-
+B,9,es,es-9-30,canicas,sí,canicas,redondo + ca-
+B,9,es,es-9-31,camello,sí,camello,marrón + ca-
+B,9,es,es-9-31,caja,sí,caja,marrón + ca-
+B,9,es,es-9-31,canguro,sí,canguro,marrón + ca-
+B,9,es,es-9-31,cabaña,sí,cabana,marrón + ca-
+B,9,es,es-9-32,macarrones,sí,macarrones,rojo + ma-
+B,9,es,es-9-32,martillo,sí,martillo,rojo + ma-
+B,9,es,es-9-32,maracas,sí,maracas,rojo + ma-
+B,9,es,es-9-32,manguera,no,,"rojo + ma-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-33,palo,sí,palo,marrón + pa-
+B,9,es,es-9-33,patata,sí,patata,marrón + pa-
+B,9,es,es-9-33,paleta,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-33,pasa,no,,"marrón + pa-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-34,caramelo,sí,caramelo,rojo + ca-
+B,9,es,es-9-34,carpa,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-34,carretilla,no,,"rojo + ca-; nueva, etiqueta visual: rojo"
+B,9,es,es-9-34,camión,sí,camion,rojo + ca-
+B,9,es,es-9-35,carta,sí,carta,amarillo + ca-
+B,9,es,es-9-35,campana,sí,campana,amarillo + ca-
+B,9,es,es-9-35,casco,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-35,canario,no,,"amarillo + ca-; nueva, etiqueta visual: amarillo"
+B,9,es,es-9-36,percha,no,,"marrón + pe-; nueva, etiqueta visual: marrón"
+B,9,es,es-9-36,perro,sí,perro,marrón + pe-
+B,9,es,es-9-36,pelo,sí,pelo,marrón + pe-
+B,9,es,es-9-36,peluche,sí,peluche,marrón + pe-
+A,10,es,es-10-01,capa,sí,capa,trío p_lo + trío en cadena capa-tapa-taza
+A,10,es,es-10-01,polo,sí,polo,trío p_lo + trío en cadena capa-tapa-taza
+A,10,es,es-10-01,tapa,sí,tapa,trío p_lo + trío en cadena capa-tapa-taza
+A,10,es,es-10-01,taza,sí,taza,trío p_lo + trío en cadena capa-tapa-taza
+A,10,es,es-10-01,pelo,sí,pelo,trío p_lo + trío en cadena capa-tapa-taza
+A,10,es,es-10-01,palo,sí,palo,trío p_lo + trío en cadena capa-tapa-taza
+A,10,es,es-10-02,cono,no,,trío en cadena lana-lata-nata + trío en cadena coco-cono-mono
+A,10,es,es-10-02,nata,sí,nata,trío en cadena lana-lata-nata + trío en cadena coco-cono-mono
+A,10,es,es-10-02,coco,sí,coco,trío en cadena lana-lata-nata + trío en cadena coco-cono-mono
+A,10,es,es-10-02,lata,sí,lata,trío en cadena lana-lata-nata + trío en cadena coco-cono-mono
+A,10,es,es-10-02,mono,sí,mono,trío en cadena lana-lata-nata + trío en cadena coco-cono-mono
+A,10,es,es-10-02,lana,sí,lana,trío en cadena lana-lata-nata + trío en cadena coco-cono-mono
+A,10,es,es-10-03,caja,sí,caja,cadena pasa-casa-caja-cama-cara-caña
+A,10,es,es-10-03,cama,sí,cama,cadena pasa-casa-caja-cama-cara-caña
+A,10,es,es-10-03,caña,no,,cadena pasa-casa-caja-cama-cara-caña
+A,10,es,es-10-03,casa,sí,casa,cadena pasa-casa-caja-cama-cara-caña
+A,10,es,es-10-03,cara,sí,cara,cadena pasa-casa-caja-cama-cara-caña
+A,10,es,es-10-03,pasa,no,,cadena pasa-casa-caja-cama-cara-caña
+A,10,es,es-10-04,pavo,sí,pavo,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-pila-piña
+A,10,es,es-10-04,gato,sí,gato,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-pila-piña
+A,10,es,es-10-04,pato,sí,pato,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-pila-piña
+A,10,es,es-10-04,piña,sí,pina,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-pila-piña
+A,10,es,es-10-04,pala,sí,pala,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-pila-piña
+A,10,es,es-10-04,pila,sí,pila,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-pila-piña
+A,10,es,es-10-05,sol,sí,sol,trío en cadena bol-sol-sal + trío en cadena copa-copo-topo
+A,10,es,es-10-05,copo,no,,trío en cadena bol-sol-sal + trío en cadena copa-copo-topo
+A,10,es,es-10-05,topo,sí,topo,trío en cadena bol-sol-sal + trío en cadena copa-copo-topo
+A,10,es,es-10-05,bol,no,,trío en cadena bol-sol-sal + trío en cadena copa-copo-topo
+A,10,es,es-10-05,copa,sí,copa,trío en cadena bol-sol-sal + trío en cadena copa-copo-topo
+A,10,es,es-10-05,sal,sí,sal,trío en cadena bol-sol-sal + trío en cadena copa-copo-topo
+A,10,es,es-10-06,zorro,sí,zorro,trío en cadena bolso-bollo-pollo + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-06,pollo,sí,pollo,trío en cadena bolso-bollo-pollo + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-06,gorra,sí,gorra,trío en cadena bolso-bollo-pollo + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-06,bollo,no,,trío en cadena bolso-bollo-pollo + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-06,gorro,sí,gorro,trío en cadena bolso-bollo-pollo + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-06,bolso,sí,bolso,trío en cadena bolso-bollo-pollo + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-07,bota,sí,bota,trío en cadena palo-pala-pila (parecido: alargado) + trío bo_a
+A,10,es,es-10-07,pila,sí,pila,trío en cadena palo-pala-pila (parecido: alargado) + trío bo_a
+A,10,es,es-10-07,boca,sí,boca,trío en cadena palo-pala-pila (parecido: alargado) + trío bo_a
+A,10,es,es-10-07,pala,sí,pala,trío en cadena palo-pala-pila (parecido: alargado) + trío bo_a
+A,10,es,es-10-07,palo,sí,palo,trío en cadena palo-pala-pila (parecido: alargado) + trío bo_a
+A,10,es,es-10-07,boya,no,,trío en cadena palo-pala-pila (parecido: alargado) + trío bo_a
+A,10,es,es-10-08,caña,no,,cadena mapa-capa-caja-cama-cara-caña
+A,10,es,es-10-08,cara,sí,cara,cadena mapa-capa-caja-cama-cara-caña
+A,10,es,es-10-08,caja,sí,caja,cadena mapa-capa-caja-cama-cara-caña
+A,10,es,es-10-08,capa,sí,capa,cadena mapa-capa-caja-cama-cara-caña
+A,10,es,es-10-08,mapa,sí,mapa,cadena mapa-capa-caja-cama-cara-caña
+A,10,es,es-10-08,cama,sí,cama,cadena mapa-capa-caja-cama-cara-caña
+A,10,es,es-10-09,copo,no,,trío co_o + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-09,cono,no,,trío co_o + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-09,zorro,sí,zorro,trío co_o + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-09,coco,sí,coco,trío co_o + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-09,gorra,sí,gorra,trío co_o + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-09,gorro,sí,gorro,trío co_o + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-10,hueso,sí,hueso,trío en cadena lana-luna-lupa + trío en cadena huevo-hueso-queso
+A,10,es,es-10-10,luna,sí,luna,trío en cadena lana-luna-lupa + trío en cadena huevo-hueso-queso
+A,10,es,es-10-10,queso,sí,queso,trío en cadena lana-luna-lupa + trío en cadena huevo-hueso-queso
+A,10,es,es-10-10,huevo,sí,huevo,trío en cadena lana-luna-lupa + trío en cadena huevo-hueso-queso
+A,10,es,es-10-10,lupa,sí,lupa,trío en cadena lana-luna-lupa + trío en cadena huevo-hueso-queso
+A,10,es,es-10-10,lana,sí,lana,trío en cadena lana-luna-lupa + trío en cadena huevo-hueso-queso
+A,10,es,es-10-11,bollo,no,,trío en cadena bolso-bollo-pollo + trío en cadena bol-sol-sal
+A,10,es,es-10-11,bol,no,,trío en cadena bolso-bollo-pollo + trío en cadena bol-sol-sal
+A,10,es,es-10-11,bolso,sí,bolso,trío en cadena bolso-bollo-pollo + trío en cadena bol-sol-sal
+A,10,es,es-10-11,sol,sí,sol,trío en cadena bolso-bollo-pollo + trío en cadena bol-sol-sal
+A,10,es,es-10-11,sal,sí,sal,trío en cadena bolso-bollo-pollo + trío en cadena bol-sol-sal
+A,10,es,es-10-11,pollo,sí,pollo,trío en cadena bolso-bollo-pollo + trío en cadena bol-sol-sal
+A,10,es,es-10-12,loro,sí,loro,trío en cadena lobo-loro-toro (todos animales) + trío en cadena pasa-pesa-pera
+A,10,es,es-10-12,lobo,sí,lobo,trío en cadena lobo-loro-toro (todos animales) + trío en cadena pasa-pesa-pera
+A,10,es,es-10-12,pera,sí,pera,trío en cadena lobo-loro-toro (todos animales) + trío en cadena pasa-pesa-pera
+A,10,es,es-10-12,pasa,no,,trío en cadena lobo-loro-toro (todos animales) + trío en cadena pasa-pesa-pera
+A,10,es,es-10-12,pesa,sí,pesa,trío en cadena lobo-loro-toro (todos animales) + trío en cadena pasa-pesa-pera
+A,10,es,es-10-12,toro,sí,toro,trío en cadena lobo-loro-toro (todos animales) + trío en cadena pasa-pesa-pera
+A,10,es,es-10-13,casa,sí,casa,trío en cadena pala-palo-polo (parecido: alargado) + trío ca_a
+A,10,es,es-10-13,palo,sí,palo,trío en cadena pala-palo-polo (parecido: alargado) + trío ca_a
+A,10,es,es-10-13,cama,sí,cama,trío en cadena pala-palo-polo (parecido: alargado) + trío ca_a
+A,10,es,es-10-13,polo,sí,polo,trío en cadena pala-palo-polo (parecido: alargado) + trío ca_a
+A,10,es,es-10-13,cara,sí,cara,trío en cadena pala-palo-polo (parecido: alargado) + trío ca_a
+A,10,es,es-10-13,pala,sí,pala,trío en cadena pala-palo-polo (parecido: alargado) + trío ca_a
+A,10,es,es-10-14,mesa,sí,mesa,trío en cadena cono-mono-moto + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-14,pesa,sí,pesa,trío en cadena cono-mono-moto + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-14,pasa,no,,trío en cadena cono-mono-moto + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-14,cono,no,,trío en cadena cono-mono-moto + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-14,mono,sí,mono,trío en cadena cono-mono-moto + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-14,moto,sí,moto,trío en cadena cono-mono-moto + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-15,tapa,sí,tapa,trío en cadena bolso-bollo-pollo + trío en cadena mapa-tapa-taza
+A,10,es,es-10-15,taza,sí,taza,trío en cadena bolso-bollo-pollo + trío en cadena mapa-tapa-taza
+A,10,es,es-10-15,mapa,sí,mapa,trío en cadena bolso-bollo-pollo + trío en cadena mapa-tapa-taza
+A,10,es,es-10-15,bolso,sí,bolso,trío en cadena bolso-bollo-pollo + trío en cadena mapa-tapa-taza
+A,10,es,es-10-15,bollo,no,,trío en cadena bolso-bollo-pollo + trío en cadena mapa-tapa-taza
+A,10,es,es-10-15,pollo,sí,pollo,trío en cadena bolso-bollo-pollo + trío en cadena mapa-tapa-taza
+A,10,es,es-10-16,huevo,sí,huevo,trío en cadena huevo-hueso-queso + trío en cadena coco-copo-topo
+A,10,es,es-10-16,queso,sí,queso,trío en cadena huevo-hueso-queso + trío en cadena coco-copo-topo
+A,10,es,es-10-16,topo,sí,topo,trío en cadena huevo-hueso-queso + trío en cadena coco-copo-topo
+A,10,es,es-10-16,hueso,sí,hueso,trío en cadena huevo-hueso-queso + trío en cadena coco-copo-topo
+A,10,es,es-10-16,copo,no,,trío en cadena huevo-hueso-queso + trío en cadena coco-copo-topo
+A,10,es,es-10-16,coco,sí,coco,trío en cadena huevo-hueso-queso + trío en cadena coco-copo-topo
+A,10,es,es-10-17,pato,sí,pato,trío en cadena gato-pato-pavo (todos animales) + trío bo_a
+A,10,es,es-10-17,boca,sí,boca,trío en cadena gato-pato-pavo (todos animales) + trío bo_a
+A,10,es,es-10-17,boya,no,,trío en cadena gato-pato-pavo (todos animales) + trío bo_a
+A,10,es,es-10-17,pavo,sí,pavo,trío en cadena gato-pato-pavo (todos animales) + trío bo_a
+A,10,es,es-10-17,gato,sí,gato,trío en cadena gato-pato-pavo (todos animales) + trío bo_a
+A,10,es,es-10-17,bota,sí,bota,trío en cadena gato-pato-pavo (todos animales) + trío bo_a
+A,10,es,es-10-18,tuba,sí,tuba,trío en cadena carpa-carta-tarta + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-18,carpa,no,,trío en cadena carpa-carta-tarta + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-18,cubo,sí,cubo,trío en cadena carpa-carta-tarta + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-18,carta,sí,carta,trío en cadena carpa-carta-tarta + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-18,tubo,sí,tubo,trío en cadena carpa-carta-tarta + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-18,tarta,sí,tarta,trío en cadena carpa-carta-tarta + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-19,cono,no,,trío en cadena huevo-hueso-queso + trío en cadena cono-mono-moto
+A,10,es,es-10-19,huevo,sí,huevo,trío en cadena huevo-hueso-queso + trío en cadena cono-mono-moto
+A,10,es,es-10-19,queso,sí,queso,trío en cadena huevo-hueso-queso + trío en cadena cono-mono-moto
+A,10,es,es-10-19,moto,sí,moto,trío en cadena huevo-hueso-queso + trío en cadena cono-mono-moto
+A,10,es,es-10-19,mono,sí,mono,trío en cadena huevo-hueso-queso + trío en cadena cono-mono-moto
+A,10,es,es-10-19,hueso,sí,hueso,trío en cadena huevo-hueso-queso + trío en cadena cono-mono-moto
+A,10,es,es-10-20,topo,sí,topo,trío en cadena copo-topo-toro + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-20,zorro,sí,zorro,trío en cadena copo-topo-toro + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-20,copo,no,,trío en cadena copo-topo-toro + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-20,toro,sí,toro,trío en cadena copo-topo-toro + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-20,gorro,sí,gorro,trío en cadena copo-topo-toro + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-20,gorra,sí,gorra,trío en cadena copo-topo-toro + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-21,tapa,sí,tapa,trío en cadena mesa-pesa-pera + trío en cadena mapa-tapa-taza
+A,10,es,es-10-21,taza,sí,taza,trío en cadena mesa-pesa-pera + trío en cadena mapa-tapa-taza
+A,10,es,es-10-21,mesa,sí,mesa,trío en cadena mesa-pesa-pera + trío en cadena mapa-tapa-taza
+A,10,es,es-10-21,pesa,sí,pesa,trío en cadena mesa-pesa-pera + trío en cadena mapa-tapa-taza
+A,10,es,es-10-21,pera,sí,pera,trío en cadena mesa-pesa-pera + trío en cadena mapa-tapa-taza
+A,10,es,es-10-21,mapa,sí,mapa,trío en cadena mesa-pesa-pera + trío en cadena mapa-tapa-taza
+A,10,es,es-10-22,pala,sí,pala,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-palo-pelo
+A,10,es,es-10-22,gato,sí,gato,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-palo-pelo
+A,10,es,es-10-22,pelo,sí,pelo,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-palo-pelo
+A,10,es,es-10-22,pavo,sí,pavo,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-palo-pelo
+A,10,es,es-10-22,palo,sí,palo,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-palo-pelo
+A,10,es,es-10-22,pato,sí,pato,trío en cadena gato-pato-pavo (todos animales) + trío en cadena pala-palo-pelo
+A,10,es,es-10-23,cara,sí,cara,cadena copa-capa-caja-cara-casa-caña
+A,10,es,es-10-23,caña,no,,cadena copa-capa-caja-cara-casa-caña
+A,10,es,es-10-23,casa,sí,casa,cadena copa-capa-caja-cara-casa-caña
+A,10,es,es-10-23,copa,sí,copa,cadena copa-capa-caja-cara-casa-caña
+A,10,es,es-10-23,capa,sí,capa,cadena copa-capa-caja-cara-casa-caña
+A,10,es,es-10-23,caja,sí,caja,cadena copa-capa-caja-cara-casa-caña
+A,10,es,es-10-24,nata,sí,nata,trío en cadena lana-lata-nata + trío bo_a
+A,10,es,es-10-24,lata,sí,lata,trío en cadena lana-lata-nata + trío bo_a
+A,10,es,es-10-24,lana,sí,lana,trío en cadena lana-lata-nata + trío bo_a
+A,10,es,es-10-24,bota,sí,bota,trío en cadena lana-lata-nata + trío bo_a
+A,10,es,es-10-24,boca,sí,boca,trío en cadena lana-lata-nata + trío bo_a
+A,10,es,es-10-24,boya,no,,trío en cadena lana-lata-nata + trío bo_a
+A,10,es,es-10-25,pavo,sí,pavo,trío en cadena gato-pato-pavo (todos animales) + trío en cadena huevo-hueso-queso
+A,10,es,es-10-25,hueso,sí,hueso,trío en cadena gato-pato-pavo (todos animales) + trío en cadena huevo-hueso-queso
+A,10,es,es-10-25,gato,sí,gato,trío en cadena gato-pato-pavo (todos animales) + trío en cadena huevo-hueso-queso
+A,10,es,es-10-25,queso,sí,queso,trío en cadena gato-pato-pavo (todos animales) + trío en cadena huevo-hueso-queso
+A,10,es,es-10-25,huevo,sí,huevo,trío en cadena gato-pato-pavo (todos animales) + trío en cadena huevo-hueso-queso
+A,10,es,es-10-25,pato,sí,pato,trío en cadena gato-pato-pavo (todos animales) + trío en cadena huevo-hueso-queso
+A,10,es,es-10-26,lata,sí,lata,trío en cadena lana-lata-nata + trío en cadena bollo-bolso-bolsa
+A,10,es,es-10-26,lana,sí,lana,trío en cadena lana-lata-nata + trío en cadena bollo-bolso-bolsa
+A,10,es,es-10-26,bolsa,sí,bolsa,trío en cadena lana-lata-nata + trío en cadena bollo-bolso-bolsa
+A,10,es,es-10-26,bollo,no,,trío en cadena lana-lata-nata + trío en cadena bollo-bolso-bolsa
+A,10,es,es-10-26,bolso,sí,bolso,trío en cadena lana-lata-nata + trío en cadena bollo-bolso-bolsa
+A,10,es,es-10-26,nata,sí,nata,trío en cadena lana-lata-nata + trío en cadena bollo-bolso-bolsa
+A,10,es,es-10-27,bota,sí,bota,trío en cadena bol-sol-sal + trío bo_a
+A,10,es,es-10-27,sal,sí,sal,trío en cadena bol-sol-sal + trío bo_a
+A,10,es,es-10-27,boca,sí,boca,trío en cadena bol-sol-sal + trío bo_a
+A,10,es,es-10-27,boya,no,,trío en cadena bol-sol-sal + trío bo_a
+A,10,es,es-10-27,bol,no,,trío en cadena bol-sol-sal + trío bo_a
+A,10,es,es-10-27,sol,sí,sol,trío en cadena bol-sol-sal + trío bo_a
+A,10,es,es-10-28,mesa,sí,mesa,trío en cadena ajo-ojo-oso + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-28,oso,sí,oso,trío en cadena ajo-ojo-oso + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-28,pasa,no,,trío en cadena ajo-ojo-oso + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-28,ojo,sí,ojo,trío en cadena ajo-ojo-oso + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-28,pesa,sí,pesa,trío en cadena ajo-ojo-oso + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-28,ajo,no,,trío en cadena ajo-ojo-oso + trío en cadena mesa-pesa-pasa
+A,10,es,es-10-29,piña,sí,pina,trío pi_a + trío en cadena carpa-carta-tarta
+A,10,es,es-10-29,pipa,sí,pipa,trío pi_a + trío en cadena carpa-carta-tarta
+A,10,es,es-10-29,carta,sí,carta,trío pi_a + trío en cadena carpa-carta-tarta
+A,10,es,es-10-29,tarta,sí,tarta,trío pi_a + trío en cadena carpa-carta-tarta
+A,10,es,es-10-29,pila,sí,pila,trío pi_a + trío en cadena carpa-carta-tarta
+A,10,es,es-10-29,carpa,no,,trío pi_a + trío en cadena carpa-carta-tarta
+A,10,es,es-10-30,tubo,sí,tubo,trío en cadena mago-mano-mono + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-30,cubo,sí,cubo,trío en cadena mago-mano-mono + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-30,mago,sí,mago,trío en cadena mago-mano-mono + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-30,mono,sí,mono,trío en cadena mago-mano-mono + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-30,tuba,sí,tuba,trío en cadena mago-mano-mono + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-30,mano,sí,mano,trío en cadena mago-mano-mono + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-31,pipa,sí,pipa,trío pi_a + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-31,pila,sí,pila,trío pi_a + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-31,zorro,sí,zorro,trío pi_a + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-31,gorro,sí,gorro,trío pi_a + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-31,piña,sí,pina,trío pi_a + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-31,gorra,sí,gorra,trío pi_a + trío en cadena gorra-gorro-zorro
+A,10,es,es-10-32,rama,sí,rama,cadena rama-cama-caja-capa-casa-caña
+A,10,es,es-10-32,casa,sí,casa,cadena rama-cama-caja-capa-casa-caña
+A,10,es,es-10-32,caña,no,,cadena rama-cama-caja-capa-casa-caña
+A,10,es,es-10-32,cama,sí,cama,cadena rama-cama-caja-capa-casa-caña
+A,10,es,es-10-32,caja,sí,caja,cadena rama-cama-caja-capa-casa-caña
+A,10,es,es-10-32,capa,sí,capa,cadena rama-cama-caja-capa-casa-caña
+A,10,es,es-10-33,bol,no,,trío en cadena bol-sol-sal + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-33,tuba,sí,tuba,trío en cadena bol-sol-sal + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-33,sol,sí,sol,trío en cadena bol-sol-sal + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-33,cubo,sí,cubo,trío en cadena bol-sol-sal + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-33,sal,sí,sal,trío en cadena bol-sol-sal + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-33,tubo,sí,tubo,trío en cadena bol-sol-sal + trío en cadena cubo-tubo-tuba
+A,10,es,es-10-34,paleta,no,,trío en cadena maceta-maleta-paleta + trío en cadena mapa-tapa-taza
+A,10,es,es-10-34,maceta,sí,maceta,trío en cadena maceta-maleta-paleta + trío en cadena mapa-tapa-taza
+A,10,es,es-10-34,taza,sí,taza,trío en cadena maceta-maleta-paleta + trío en cadena mapa-tapa-taza
+A,10,es,es-10-34,mapa,sí,mapa,trío en cadena maceta-maleta-paleta + trío en cadena mapa-tapa-taza
+A,10,es,es-10-34,maleta,sí,maleta,trío en cadena maceta-maleta-paleta + trío en cadena mapa-tapa-taza
+A,10,es,es-10-34,tapa,sí,tapa,trío en cadena maceta-maleta-paleta + trío en cadena mapa-tapa-taza
+A,10,es,es-10-35,carta,sí,carta,trío en cadena carpa-carta-tarta + trío en cadena cuna-luna-lupa
+A,10,es,es-10-35,tarta,sí,tarta,trío en cadena carpa-carta-tarta + trío en cadena cuna-luna-lupa
+A,10,es,es-10-35,luna,sí,luna,trío en cadena carpa-carta-tarta + trío en cadena cuna-luna-lupa
+A,10,es,es-10-35,lupa,sí,lupa,trío en cadena carpa-carta-tarta + trío en cadena cuna-luna-lupa
+A,10,es,es-10-35,carpa,no,,trío en cadena carpa-carta-tarta + trío en cadena cuna-luna-lupa
+A,10,es,es-10-35,cuna,sí,cuna,trío en cadena carpa-carta-tarta + trío en cadena cuna-luna-lupa
+A,10,es,es-10-36,loro,sí,loro,trío en cadena ajo-ojo-oso + trío en cadena lobo-loro-toro (todos animales)
+A,10,es,es-10-36,ajo,no,,trío en cadena ajo-ojo-oso + trío en cadena lobo-loro-toro (todos animales)
+A,10,es,es-10-36,toro,sí,toro,trío en cadena ajo-ojo-oso + trío en cadena lobo-loro-toro (todos animales)
+A,10,es,es-10-36,lobo,sí,lobo,trío en cadena ajo-ojo-oso + trío en cadena lobo-loro-toro (todos animales)
+A,10,es,es-10-36,ojo,sí,ojo,trío en cadena ajo-ojo-oso + trío en cadena lobo-loro-toro (todos animales)
+A,10,es,es-10-36,oso,sí,oso,trío en cadena ajo-ojo-oso + trío en cadena lobo-loro-toro (todos animales)
+B,10,es,es-10-01,caja,sí,caja,cadena caja-casa-pasa-pesa
+B,10,es,es-10-01,casa,sí,casa,cadena caja-casa-pasa-pesa
+B,10,es,es-10-01,pasa,no,,cadena caja-casa-pasa-pesa
+B,10,es,es-10-01,pesa,sí,pesa,cadena caja-casa-pasa-pesa
+B,10,es,es-10-02,lata,sí,lata,par mínimo _ata + par mínimo pa_o (parecido: aves)
+B,10,es,es-10-02,nata,sí,nata,par mínimo _ata + par mínimo pa_o (parecido: aves)
+B,10,es,es-10-02,pato,sí,pato,par mínimo _ata + par mínimo pa_o (parecido: aves)
+B,10,es,es-10-02,pavo,sí,pavo,par mínimo _ata + par mínimo pa_o (parecido: aves)
+B,10,es,es-10-03,puente,sí,puente,par mínimo _uente + par mínimo _ama
+B,10,es,es-10-03,rama,sí,rama,par mínimo _uente + par mínimo _ama
+B,10,es,es-10-03,cama,sí,cama,par mínimo _uente + par mínimo _ama
+B,10,es,es-10-03,fuente,sí,fuente,par mínimo _uente + par mínimo _ama
+B,10,es,es-10-04,moto,sí,moto,par mínimo gorr_ (parecido: sombreros) + par mínimo mo_o
+B,10,es,es-10-04,gorra,sí,gorra,par mínimo gorr_ (parecido: sombreros) + par mínimo mo_o
+B,10,es,es-10-04,mono,sí,mono,par mínimo gorr_ (parecido: sombreros) + par mínimo mo_o
+B,10,es,es-10-04,gorro,sí,gorro,par mínimo gorr_ (parecido: sombreros) + par mínimo mo_o
+B,10,es,es-10-05,pila,sí,pila,cadena pila-pala-palo-polo (parecido: alargado)
+B,10,es,es-10-05,pala,sí,pala,cadena pila-pala-palo-polo (parecido: alargado)
+B,10,es,es-10-05,palo,sí,palo,cadena pila-pala-palo-polo (parecido: alargado)
+B,10,es,es-10-05,polo,sí,polo,cadena pila-pala-palo-polo (parecido: alargado)
+B,10,es,es-10-06,taza,sí,taza,cadena taza-tapa-capa-mapa
+B,10,es,es-10-06,tapa,sí,tapa,cadena taza-tapa-capa-mapa
+B,10,es,es-10-06,capa,sí,capa,cadena taza-tapa-capa-mapa
+B,10,es,es-10-06,mapa,sí,mapa,cadena taza-tapa-capa-mapa
+B,10,es,es-10-07,pavo,sí,pavo,cadena pasa-pala-palo-pavo
+B,10,es,es-10-07,pala,sí,pala,cadena pasa-pala-palo-pavo
+B,10,es,es-10-07,palo,sí,palo,cadena pasa-pala-palo-pavo
+B,10,es,es-10-07,pasa,no,,cadena pasa-pala-palo-pavo
+B,10,es,es-10-08,capa,sí,capa,familia ca_a
+B,10,es,es-10-08,cama,sí,cama,familia ca_a
+B,10,es,es-10-08,casa,sí,casa,familia ca_a
+B,10,es,es-10-08,caja,sí,caja,familia ca_a
+B,10,es,es-10-09,luna,sí,luna,cadena luna-lana-rana-rama
+B,10,es,es-10-09,lana,sí,lana,cadena luna-lana-rana-rama
+B,10,es,es-10-09,rana,sí,rana,cadena luna-lana-rana-rama
+B,10,es,es-10-09,rama,sí,rama,cadena luna-lana-rana-rama
+B,10,es,es-10-10,taza,sí,taza,par mínimo ta_a (todos cocina) + par mínimo _ato (todos animales)
+B,10,es,es-10-10,pato,sí,pato,par mínimo ta_a (todos cocina) + par mínimo _ato (todos animales)
+B,10,es,es-10-10,gato,sí,gato,par mínimo ta_a (todos cocina) + par mínimo _ato (todos animales)
+B,10,es,es-10-10,tapa,sí,tapa,par mínimo ta_a (todos cocina) + par mínimo _ato (todos animales)
+B,10,es,es-10-11,lata,sí,lata,par mínimo gorr_ (parecido: sombreros) + par mínimo _ata
+B,10,es,es-10-11,nata,sí,nata,par mínimo gorr_ (parecido: sombreros) + par mínimo _ata
+B,10,es,es-10-11,gorra,sí,gorra,par mínimo gorr_ (parecido: sombreros) + par mínimo _ata
+B,10,es,es-10-11,gorro,sí,gorro,par mínimo gorr_ (parecido: sombreros) + par mínimo _ata
+B,10,es,es-10-12,pipa,sí,pipa,par mínimo mo_o + par mínimo pi_a
+B,10,es,es-10-12,moto,sí,moto,par mínimo mo_o + par mínimo pi_a
+B,10,es,es-10-12,mono,sí,mono,par mínimo mo_o + par mínimo pi_a
+B,10,es,es-10-12,piña,sí,pina,par mínimo mo_o + par mínimo pi_a
+B,10,es,es-10-13,cama,sí,cama,cadena rama-cama-cara-casa
+B,10,es,es-10-13,rama,sí,rama,cadena rama-cama-cara-casa
+B,10,es,es-10-13,cara,sí,cara,cadena rama-cama-cara-casa
+B,10,es,es-10-13,casa,sí,casa,cadena rama-cama-cara-casa
+B,10,es,es-10-14,luna,sí,luna,cadena luna-lana-lata-nata
+B,10,es,es-10-14,nata,sí,nata,cadena luna-lana-lata-nata
+B,10,es,es-10-14,lana,sí,lana,cadena luna-lana-lata-nata
+B,10,es,es-10-14,lata,sí,lata,cadena luna-lana-lata-nata
+B,10,es,es-10-15,tapa,sí,tapa,par mínimo ta_a (todos cocina) + par mínimo _uente
+B,10,es,es-10-15,fuente,sí,fuente,par mínimo ta_a (todos cocina) + par mínimo _uente
+B,10,es,es-10-15,taza,sí,taza,par mínimo ta_a (todos cocina) + par mínimo _uente
+B,10,es,es-10-15,puente,sí,puente,par mínimo ta_a (todos cocina) + par mínimo _uente
+B,10,es,es-10-16,pelo,sí,pelo,cadena pelo-palo-pato-pavo
+B,10,es,es-10-16,pavo,sí,pavo,cadena pelo-palo-pato-pavo
+B,10,es,es-10-16,pato,sí,pato,cadena pelo-palo-pato-pavo
+B,10,es,es-10-16,palo,sí,palo,cadena pelo-palo-pato-pavo
+B,10,es,es-10-17,pila,sí,pila,cadena pesa-pasa-pala-pila
+B,10,es,es-10-17,pesa,sí,pesa,cadena pesa-pasa-pala-pila
+B,10,es,es-10-17,pasa,no,,cadena pesa-pasa-pala-pila
+B,10,es,es-10-17,pala,sí,pala,cadena pesa-pasa-pala-pila
+B,10,es,es-10-18,piña,sí,pina,par mínimo gorr_ (parecido: sombreros) + par mínimo pi_a
+B,10,es,es-10-18,pipa,sí,pipa,par mínimo gorr_ (parecido: sombreros) + par mínimo pi_a
+B,10,es,es-10-18,gorra,sí,gorra,par mínimo gorr_ (parecido: sombreros) + par mínimo pi_a
+B,10,es,es-10-18,gorro,sí,gorro,par mínimo gorr_ (parecido: sombreros) + par mínimo pi_a
+B,10,es,es-10-19,casa,sí,casa,cadena tapa-capa-cara-casa
+B,10,es,es-10-19,tapa,sí,tapa,cadena tapa-capa-cara-casa
+B,10,es,es-10-19,cara,sí,cara,cadena tapa-capa-cara-casa
+B,10,es,es-10-19,capa,sí,capa,cadena tapa-capa-cara-casa
+B,10,es,es-10-20,rama,sí,rama,cadena caja-cama-rama-rana
+B,10,es,es-10-20,caja,sí,caja,cadena caja-cama-rama-rana
+B,10,es,es-10-20,rana,sí,rana,cadena caja-cama-rama-rana
+B,10,es,es-10-20,cama,sí,cama,cadena caja-cama-rama-rana
+B,10,es,es-10-21,gorro,sí,gorro,par mínimo gorr_ (parecido: sombreros) + par mínimo _uente
+B,10,es,es-10-21,gorra,sí,gorra,par mínimo gorr_ (parecido: sombreros) + par mínimo _uente
+B,10,es,es-10-21,fuente,sí,fuente,par mínimo gorr_ (parecido: sombreros) + par mínimo _uente
+B,10,es,es-10-21,puente,sí,puente,par mínimo gorr_ (parecido: sombreros) + par mínimo _uente
+B,10,es,es-10-22,palo,sí,palo,cadena gato-pato-palo-polo
+B,10,es,es-10-22,gato,sí,gato,cadena gato-pato-palo-polo
+B,10,es,es-10-22,polo,sí,polo,cadena gato-pato-palo-polo
+B,10,es,es-10-22,pato,sí,pato,cadena gato-pato-palo-polo
+B,10,es,es-10-23,pila,sí,pila,cadena pala-pila-pipa-piña
+B,10,es,es-10-23,piña,sí,pina,cadena pala-pila-pipa-piña
+B,10,es,es-10-23,pipa,sí,pipa,cadena pala-pila-pipa-piña
+B,10,es,es-10-23,pala,sí,pala,cadena pala-pila-pipa-piña
+B,10,es,es-10-24,hueso,sí,hueso,par mínimo _oro (todos animales) + par mínimo hue_o
+B,10,es,es-10-24,loro,sí,loro,par mínimo _oro (todos animales) + par mínimo hue_o
+B,10,es,es-10-24,huevo,sí,huevo,par mínimo _oro (todos animales) + par mínimo hue_o
+B,10,es,es-10-24,toro,sí,toro,par mínimo _oro (todos animales) + par mínimo hue_o
+B,10,es,es-10-25,cara,sí,cara,cadena copa-capa-caja-cara
+B,10,es,es-10-25,caja,sí,caja,cadena copa-capa-caja-cara
+B,10,es,es-10-25,copa,sí,copa,cadena copa-capa-caja-cara
+B,10,es,es-10-25,capa,sí,capa,cadena copa-capa-caja-cara
+B,10,es,es-10-26,nata,sí,nata,par mínimo _ata + par mínimo ma_o
+B,10,es,es-10-26,mago,sí,mago,par mínimo _ata + par mínimo ma_o
+B,10,es,es-10-26,mano,sí,mano,par mínimo _ata + par mínimo ma_o
+B,10,es,es-10-26,lata,sí,lata,par mínimo _ata + par mínimo ma_o
+B,10,es,es-10-27,rana,sí,rana,par mínimo _ana + par mínimo _la
+B,10,es,es-10-27,ala,sí,ala,par mínimo _ana + par mínimo _la
+B,10,es,es-10-27,ola,sí,ola,par mínimo _ana + par mínimo _la
+B,10,es,es-10-27,lana,sí,lana,par mínimo _ana + par mínimo _la
+B,10,es,es-10-28,pesa,sí,pesa,cadena mesa-pesa-pasa-pera
+B,10,es,es-10-28,pera,sí,pera,cadena mesa-pesa-pasa-pera
+B,10,es,es-10-28,mesa,sí,mesa,cadena mesa-pesa-pasa-pera
+B,10,es,es-10-28,pasa,no,,cadena mesa-pesa-pasa-pera
+B,10,es,es-10-29,tuba,sí,tuba,par mínimo tub_ + par mínimo mo_o
+B,10,es,es-10-29,moto,sí,moto,par mínimo tub_ + par mínimo mo_o
+B,10,es,es-10-29,tubo,sí,tubo,par mínimo tub_ + par mínimo mo_o
+B,10,es,es-10-29,mono,sí,mono,par mínimo tub_ + par mínimo mo_o
+B,10,es,es-10-30,toro,sí,toro,cadena lobo-loro-toro-topo (todos animales)
+B,10,es,es-10-30,topo,sí,topo,cadena lobo-loro-toro-topo (todos animales)
+B,10,es,es-10-30,loro,sí,loro,cadena lobo-loro-toro-topo (todos animales)
+B,10,es,es-10-30,lobo,sí,lobo,cadena lobo-loro-toro-topo (todos animales)
+B,10,es,es-10-31,mano,sí,mano,cadena mago-mano-mono-moto
+B,10,es,es-10-31,moto,sí,moto,cadena mago-mano-mono-moto
+B,10,es,es-10-31,mono,sí,mono,cadena mago-mano-mono-moto
+B,10,es,es-10-31,mago,sí,mago,cadena mago-mano-mono-moto
+B,10,es,es-10-32,cuna,sí,cuna,cadena cuna-luna-lana-lupa
+B,10,es,es-10-32,luna,sí,luna,cadena cuna-luna-lana-lupa
+B,10,es,es-10-32,lupa,sí,lupa,cadena cuna-luna-lana-lupa
+B,10,es,es-10-32,lana,sí,lana,cadena cuna-luna-lana-lupa
+B,10,es,es-10-33,maleta,sí,maleta,par mínimo _uente + par mínimo ma_eta
+B,10,es,es-10-33,puente,sí,puente,par mínimo _uente + par mínimo ma_eta
+B,10,es,es-10-33,maceta,sí,maceta,par mínimo _uente + par mínimo ma_eta
+B,10,es,es-10-33,fuente,sí,fuente,par mínimo _uente + par mínimo ma_eta
+B,10,es,es-10-34,loro,sí,loro,par mínimo re_ + par mínimo lo_o (todos animales)
+B,10,es,es-10-34,rey,sí,rey,par mínimo re_ + par mínimo lo_o (todos animales)
+B,10,es,es-10-34,red,sí,red,par mínimo re_ + par mínimo lo_o (todos animales)
+B,10,es,es-10-34,lobo,sí,lobo,par mínimo re_ + par mínimo lo_o (todos animales)
+B,10,es,es-10-35,hueso,sí,hueso,par mínimo bande_a + par mínimo hue_o
+B,10,es,es-10-35,bandeja,sí,bandeja,par mínimo bande_a + par mínimo hue_o
+B,10,es,es-10-35,bandera,sí,bandera,par mínimo bande_a + par mínimo hue_o
+B,10,es,es-10-35,huevo,sí,huevo,par mínimo bande_a + par mínimo hue_o
+B,10,es,es-10-36,bota,sí,bota,par mínimo car_a + par mínimo bo_a
+B,10,es,es-10-36,carta,sí,carta,par mínimo car_a + par mínimo bo_a
+B,10,es,es-10-36,boca,sí,boca,par mínimo car_a + par mínimo bo_a
+B,10,es,es-10-36,carpa,no,,par mínimo car_a + par mínimo bo_a

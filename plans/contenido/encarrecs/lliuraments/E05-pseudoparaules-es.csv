@@ -1,0 +1,673 @@
+pseudoparaula,nivell,sillabes,estructura,grup,nota
+binsu,1,bin-su,CVC-CV,b/v,estructura CVC-CV
+mobun,1,mo-bun,CV-CVC,b/v,estructura CV-CVC
+querbu,1,quer-bu,CVC-CV,b/v,estructura CVC-CV
+vimbu,1,vim-bu,CVC-CV,b/v,estructura CVC-CV
+vulzu,1,vul-zu,CVC-CV,b/v,estructura CVC-CV
+vusmu,1,vus-mu,CVC-CV,b/v,estructura CVC-CV
+cusvu,1,cus-vu,CVC-CV,c/qu,estructura CVC-CV
+quempi,1,quem-pi,CVC-CV,c/qu,estructura CVC-CV
+querlu,1,quer-lu,CVC-CV,c/qu,estructura CVC-CV
+quesal,1,que-sal,CV-CVC,c/qu,estructura CV-CVC
+quetur,1,que-tur,CV-CVC,c/qu,estructura CV-CVC
+quirtu,1,quir-tu,CVC-CV,c/qu,estructura CVC-CV
+chefun,1,che-fun,CV-CVC,ch,estructura CV-CVC
+chibe,1,chi-be,CV-CV,ch,estructura CV-CV
+chizu,1,chi-zu,CV-CV,ch,estructura CV-CV
+chodu,1,cho-du,CV-CV,ch,estructura CV-CV
+chosmu,1,chos-mu,CVC-CV,ch,estructura CVC-CV
+chunvi,1,chun-vi,CVC-CV,ch,estructura CVC-CV
+faslu,1,fas-lu,CVC-CV,f,estructura CVC-CV
+fejul,1,fe-jul,CV-CVC,f,estructura CV-CVC
+funvu,1,fun-vu,CVC-CV,f,estructura CVC-CV
+sirfu,1,sir-fu,CVC-CV,f,estructura CVC-CV
+gavu,1,ga-vu,CV-CV,g/gu,estructura CV-CV
+elpiz,1,el-piz,VC-CVC,inversa,estructura VC-CVC
+esfu,1,es-fu,VC-CV,inversa,estructura VC-CV
+ilvun,1,il-vun,VC-CVC,inversa,estructura VC-CVC
+ulzu,1,ul-zu,VC-CV,inversa,estructura VC-CV
+urcha,1,ur-cha,VC-CV,inversa,estructura VC-CV
+jenfu,1,jen-fu,CVC-CV,j,estructura CVC-CV
+jifo,1,ji-fo,CV-CV,j,estructura CV-CV
+jilto,1,jil-to,CVC-CV,j,estructura CVC-CV
+llidu,1,lli-du,CV-CV,ll,estructura CV-CV
+llifur,1,lli-fur,CV-CVC,ll,estructura CV-CVC
+llispu,1,llis-pu,CVC-CV,ll,estructura CVC-CV
+llodi,1,llo-di,CV-CV,ll,estructura CV-CV
+bisfo,1,bis-fo,CVC-CV,mixta,estructura CVC-CV
+bolju,1,bol-ju,CVC-CV,mixta,estructura CVC-CV
+fenzu,1,fen-zu,CVC-CV,mixta,estructura CVC-CV
+nufel,1,nu-fel,CV-CVC,mixta,estructura CV-CVC
+zodur,1,zo-dur,CV-CVC,mixta,estructura CV-CVC
+jerru,1,je-rru,CV-CV,r/rr,estructura CV-CV
+lerrul,1,le-rrul,CV-CVC,r/rr,estructura CV-CVC
+querrol,1,que-rrol,CV-CVC,r/rr,estructura CV-CVC
+sirrun,1,si-rrun,CV-CVC,r/rr,estructura CV-CVC
+vurrol,1,vu-rrol,CV-CVC,r/rr,estructura CV-CVC
+cibu,1,ci-bu,CV-CV,z/c,estructura CV-CV
+cilbu,1,cil-bu,CVC-CV,z/c,estructura CVC-CV
+zarvu,1,zar-vu,CVC-CV,z/c,estructura CVC-CV
+zofe,1,zo-fe,CV-CV,z/c,estructura CV-CV
+zosfe,1,zos-fe,CVC-CV,z/c,estructura CVC-CV
+zufun,1,zu-fun,CV-CVC,z/c,estructura CV-CVC
+ñenvi,1,ñen-vi,CVC-CV,ñ,estructura CVC-CV
+ñepu,1,ñe-pu,CV-CV,ñ,estructura CV-CV
+ñeslu,1,ñes-lu,CVC-CV,ñ,estructura CVC-CV
+ñocur,1,ño-cur,CV-CVC,ñ,estructura CV-CVC
+ñuldu,1,ñul-du,CVC-CV,ñ,estructura CVC-CV
+ñuspo,1,ñus-po,CVC-CV,ñ,estructura CVC-CV
+bleju,2,ble-ju,CCV-CV,bl,estructura CCV-CV
+blizo,2,bli-zo,CCV-CV,bl,estructura CCV-CV
+blonfu,2,blon-fu,CCVC-CV,bl,estructura CCVC-CV
+ceblu,2,ce-blu,CV-CCV,bl,estructura CV-CCV
+ñeblu,2,ñe-blu,CV-CCV,bl,estructura CV-CCV
+brasfu,2,bras-fu,CCVC-CV,br,estructura CCVC-CV
+gabru,2,ga-bru,CV-CCV,br,estructura CV-CCV
+guebru,2,gue-bru,CV-CCV,br,estructura CV-CCV
+clebu,2,cle-bu,CCV-CV,cl,estructura CCV-CV
+clisfo,2,clis-fo,CCVC-CV,cl,estructura CCVC-CV
+clizu,2,cli-zu,CCV-CV,cl,estructura CCV-CV
+clutil,2,clu-til,CCV-CVC,cl,estructura CCV-CVC
+tuclu,2,tu-clu,CV-CCV,cl,estructura CV-CCV
+cralu,2,cra-lu,CCV-CV,cr,estructura CCV-CV
+crasfo,2,cras-fo,CCVC-CV,cr,estructura CCVC-CV
+crenvi,2,cren-vi,CCVC-CV,cr,estructura CCVC-CV
+croji,2,cro-ji,CCV-CV,cr,estructura CCV-CV
+crusul,2,cru-sul,CCV-CVC,cr,estructura CCV-CVC
+jucru,2,ju-cru,CV-CCV,cr,estructura CV-CCV
+drezo,2,dre-zo,CCV-CV,dr,estructura CCV-CV
+drichu,2,dri-chu,CCV-CV,dr,estructura CCV-CV
+drosfi,2,dros-fi,CCVC-CV,dr,estructura CCVC-CV
+drotu,2,dro-tu,CCV-CV,dr,estructura CCV-CV
+gadru,2,ga-dru,CV-CCV,dr,estructura CV-CCV
+faflu,2,fa-flu,CV-CCV,fl,estructura CV-CCV
+flanzu,2,flan-zu,CCVC-CV,fl,estructura CCVC-CV
+flibe,2,fli-be,CCV-CV,fl,estructura CCV-CV
+flucho,2,flu-cho,CCV-CV,fl,estructura CCV-CV
+flunso,2,flun-so,CCVC-CV,fl,estructura CCVC-CV
+goflu,2,go-flu,CV-CCV,fl,estructura CV-CCV
+frasbu,2,fras-bu,CCVC-CV,fr,estructura CCVC-CV
+frochun,2,fro-chun,CCV-CVC,fr,estructura CCV-CVC
+frodi,2,fro-di,CCV-CV,fr,estructura CCV-CV
+fruche,2,fru-che,CCV-CV,fr,estructura CCV-CV
+lufrel,2,lu-frel,CV-CCVC,fr,estructura CV-CCVC
+glaspu,2,glas-pu,CCVC-CV,gl,estructura CCVC-CV
+glidu,2,gli-du,CCV-CV,gl,estructura CCV-CV
+glosti,2,glos-ti,CCVC-CV,gl,estructura CCVC-CV
+gloñu,2,glo-ñu,CCV-CV,gl,estructura CCV-CV
+gluche,2,glu-che,CCV-CV,gl,estructura CCV-CV
+grasfe,2,gras-fe,CCVC-CV,gr,estructura CCVC-CV
+grizu,2,gri-zu,CCV-CV,gr,estructura CCV-CV
+groñi,2,gro-ñi,CCV-CV,gr,estructura CCV-CV
+gruchi,2,gru-chi,CCV-CV,gr,estructura CCV-CV
+pogru,2,po-gru,CV-CCV,gr,estructura CV-CCV
+paplu,2,pa-plu,CV-CCV,pl,estructura CV-CCV
+plasfu,2,plas-fu,CCVC-CV,pl,estructura CCVC-CV
+plesbe,2,ples-be,CCVC-CV,pl,estructura CCVC-CV
+plezu,2,ple-zu,CCV-CV,pl,estructura CCV-CV
+plicho,2,pli-cho,CCV-CV,pl,estructura CCV-CV
+plongue,2,plon-gue,CCVC-CV,pl,estructura CCVC-CV
+lupri,2,lu-pri,CV-CCV,pr,estructura CV-CCV
+pranfe,2,pran-fe,CCVC-CV,pr,estructura CCVC-CV
+prapul,2,pra-pul,CCV-CVC,pr,estructura CCV-CVC
+prechu,2,pre-chu,CCV-CV,pr,estructura CCV-CV
+presbil,2,pres-bil,CCVC-CVC,pr,estructura CCVC-CVC
+pruñu,2,pru-ñu,CCV-CV,pr,estructura CCV-CV
+chutre,2,chu-tre,CV-CCV,tr,estructura CV-CCV
+tranfu,2,tran-fu,CCVC-CV,tr,estructura CCVC-CV
+treliz,2,tre-liz,CCV-CVC,tr,estructura CCV-CVC
+trichan,2,tri-chan,CCV-CVC,tr,estructura CCV-CVC
+trusun,2,tru-sun,CCV-CVC,tr,estructura CCV-CVC
+dubsfa,3,dubs-fa,CVCC-CV,coda bs,estructura CVCC-CV
+febsto,3,febs-to,CVCC-CV,coda bs,estructura CVCC-CV
+mubsta,3,mubs-ta,CVCC-CV,coda bs,estructura CVCC-CV
+nobsti,3,nobs-ti,CVCC-CV,coda bs,estructura CVCC-CV
+tebslo,3,tebs-lo,CVCC-CV,coda bs,estructura CVCC-CV
+tibsvo,3,tibs-vo,CVCC-CV,coda bs,estructura CVCC-CV
+tobsfe,3,tobs-fe,CVCC-CV,coda bs,estructura CVCC-CV
+zabste,3,zabs-te,CVCC-CV,coda bs,estructura CVCC-CV
+benstu,3,bens-tu,CVCC-CV,coda ns,estructura CVCC-CV
+chinspe,3,chins-pe,CVCC-CV,coda ns,estructura CVCC-CV
+donsga,3,dons-ga,CVCC-CV,coda ns,estructura CVCC-CV
+janspe,3,jans-pe,CVCC-CV,coda ns,estructura CVCC-CV
+linspo,3,lins-po,CVCC-CV,coda ns,estructura CVCC-CV
+llonsqui,3,llons-qui,CVCC-CV,coda ns,estructura CVCC-CV
+monsfe,3,mons-fe,CVCC-CV,coda ns,estructura CVCC-CV
+tinsfo,3,tins-fo,CVCC-CV,coda ns,estructura CVCC-CV
+vensfo,3,vens-fo,CVCC-CV,coda ns,estructura CVCC-CV
+lerspu,3,lers-pu,CVCC-CV,coda rs,estructura CVCC-CV
+mirsdu,3,mirs-du,CVCC-CV,coda rs,estructura CVCC-CV
+persfo,3,pers-fo,CVCC-CV,coda rs,estructura CVCC-CV
+tersdo,3,ters-do,CVCC-CV,coda rs,estructura CVCC-CV
+torsgra,3,tors-gra,CVCC-CCV,coda rs,estructura CVCC-CCV
+verspu,3,vers-pu,CVCC-CV,coda rs,estructura CVCC-CV
+blaen,3,bla-en,CCV-VC,hiato ae,estructura CCV-VC
+draez,3,dra-ez,CCV-VC,hiato ae,estructura CCV-VC
+flael,3,fla-el,CCV-VC,hiato ae,estructura CCV-VC
+llael,3,lla-el,CV-VC,hiato ae,estructura CV-VC
+blaoz,3,bla-oz,CCV-VC,hiato ao,estructura CCV-VC
+chaol,3,cha-ol,CV-VC,hiato ao,estructura CV-VC
+flaol,3,fla-ol,CCV-VC,hiato ao,estructura CCV-VC
+plaol,3,pla-ol,CCV-VC,hiato ao,estructura CCV-VC
+cleaz,3,cle-az,CCV-VC,hiato ea,estructura CCV-VC
+gleaz,3,gle-az,CCV-VC,hiato ea,estructura CCV-VC
+fleon,3,fle-on,CCV-VC,hiato eo,estructura CCV-VC
+jeol,3,je-ol,CV-VC,hiato eo,estructura CV-VC
+lleoz,3,lle-oz,CV-VC,hiato eo,estructura CV-VC
+queol,3,que-ol,CV-VC,hiato eo,estructura CV-VC
+gloaz,3,glo-az,CCV-VC,hiato oa,estructura CCV-VC
+joad,3,jo-ad,CV-VC,hiato oa,estructura CV-VC
+troaz,3,tro-az,CCV-VC,hiato oa,estructura CCV-VC
+zoad,3,zo-ad,CV-VC,hiato oa,estructura CV-VC
+bloel,3,blo-el,CCV-VC,hiato oe,estructura CCV-VC
+boez,3,bo-ez,CV-VC,hiato oe,estructura CV-VC
+floel,3,flo-el,CCV-VC,hiato oe,estructura CCV-VC
+ñoer,3,ño-er,CV-VC,hiato oe,estructura CV-VC
+absfo,3,abs-fo,VCC-CV,inversa bs,estructura VCC-CV
+ebstu,3,ebs-tu,VCC-CV,inversa bs,estructura VCC-CV
+ibsfu,3,ibs-fu,VCC-CV,inversa bs,estructura VCC-CV
+ibste,3,ibs-te,VCC-CV,inversa bs,estructura VCC-CV
+obsfu,3,obs-fu,VCC-CV,inversa bs,estructura VCC-CV
+obsga,3,obs-ga,VCC-CV,inversa bs,estructura VCC-CV
+ubsta,3,ubs-ta,VCC-CV,inversa bs,estructura VCC-CV
+ansfi,3,ans-fi,VCC-CV,inversa ns,estructura VCC-CV
+ensbo,3,ens-bo,VCC-CV,inversa ns,estructura VCC-CV
+ensfi,3,ens-fi,VCC-CV,inversa ns,estructura VCC-CV
+insgu,3,ins-gu,VCC-CV,inversa ns,estructura VCC-CV
+inspu,3,ins-pu,VCC-CV,inversa ns,estructura VCC-CV
+onspe,3,ons-pe,VCC-CV,inversa ns,estructura VCC-CV
+onsti,3,ons-ti,VCC-CV,inversa ns,estructura VCC-CV
+arspe,3,ars-pe,VCC-CV,inversa rs,estructura VCC-CV
+arsvu,3,ars-vu,VCC-CV,inversa rs,estructura VCC-CV
+ersti,3,ers-ti,VCC-CV,inversa rs,estructura VCC-CV
+irsbi,3,irs-bi,VCC-CV,inversa rs,estructura VCC-CV
+urspi,3,urs-pi,VCC-CV,inversa rs,estructura VCC-CV
+ursta,3,urs-ta,VCC-CV,inversa rs,estructura VCC-CV
+blanzur,4,blan-zur,CCVC-CVC,bl,estructura CCVC-CVC
+blescho,4,bles-cho,CCVC-CV,bl,estructura CCVC-CV
+blijol,4,bli-jol,CCV-CVC,bl,estructura CCV-CVC
+blofid,4,blo-fid,CCV-CVC,bl,estructura CCV-CVC
+brenfiz,4,bren-fiz,CCVC-CVC,br,estructura CCVC-CVC
+brijur,4,bri-jur,CCV-CVC,br,estructura CCV-CVC
+brofal,4,bro-fal,CCV-CVC,br,estructura CCV-CVC
+bruspe,4,brus-pe,CCVC-CV,br,estructura CCVC-CV
+molbru,4,mol-bru,CVC-CCV,br,estructura CVC-CCV
+clanfis,4,clan-fis,CCVC-CVC,cl,estructura CCVC-CVC
+cleñul,4,cle-ñul,CCV-CVC,cl,estructura CCV-CVC
+closfe,4,clos-fe,CCVC-CV,cl,estructura CCVC-CV
+clumaz,4,clu-maz,CCV-CVC,cl,estructura CCV-CVC
+merclu,4,mer-clu,CVC-CCV,cl,estructura CVC-CCV
+blansti,4,blans-ti,CCVCC-CV,coda ns,estructura CCVCC-CV
+crenspu,4,crens-pu,CCVCC-CV,coda ns,estructura CCVCC-CV
+glonste,4,glons-te,CCVCC-CV,coda ns,estructura CCVCC-CV
+prensfo,4,prens-fo,CCVCC-CV,coda ns,estructura CCVCC-CV
+tronspe,4,trons-pe,CCVCC-CV,coda ns,estructura CCVCC-CV
+belcra,4,bel-cra,CVC-CCV,cr,estructura CVC-CCV
+cranzol,4,cran-zol,CCVC-CVC,cr,estructura CCVC-CVC
+criñer,4,cri-ñer,CCV-CVC,cr,estructura CCV-CVC
+crozul,4,cro-zul,CCV-CVC,cr,estructura CCV-CVC
+cruspe,4,crus-pe,CCVC-CV,cr,estructura CCVC-CV
+blestri,4,bles-tri,CCVC-CCV,doble trabada,estructura CCVC-CCV
+drufla,4,dru-fla,CCV-CCV,doble trabada,estructura CCV-CCV
+flocre,4,flo-cre,CCV-CCV,doble trabada,estructura CCV-CCV
+graplu,4,gra-plu,CCV-CCV,doble trabada,estructura CCV-CCV
+plibro,4,pli-bro,CCV-CCV,doble trabada,estructura CCV-CCV
+draguer,4,dra-guer,CCV-CVC,dr,estructura CCV-CVC
+drespu,4,dres-pu,CCVC-CV,dr,estructura CCVC-CV
+drinfol,4,drin-fol,CCVC-CVC,dr,estructura CCVC-CVC
+droñal,4,dro-ñal,CCV-CVC,dr,estructura CCV-CVC
+faldru,4,fal-dru,CVC-CCV,dr,estructura CVC-CCV
+durflo,4,dur-flo,CVC-CCV,fl,estructura CVC-CCV
+flendor,4,flen-dor,CCVC-CVC,fl,estructura CCVC-CVC
+flimez,4,fli-mez,CCV-CVC,fl,estructura CCV-CVC
+flispo,4,flis-po,CCVC-CV,fl,estructura CCVC-CV
+flochal,4,flo-chal,CCV-CVC,fl,estructura CCV-CVC
+chofrol,4,cho-frol,CV-CCVC,fr,estructura CV-CCVC
+frachul,4,fra-chul,CCV-CVC,fr,estructura CCV-CVC
+frenzal,4,fren-zal,CCVC-CVC,fr,estructura CCVC-CVC
+frujel,4,fru-jel,CCV-CVC,fr,estructura CCV-CVC
+murfre,4,mur-fre,CVC-CCV,fr,estructura CVC-CCV
+glanfer,4,glan-fer,CCVC-CVC,gl,estructura CCVC-CVC
+gleñor,4,gle-ñor,CCV-CVC,gl,estructura CCV-CVC
+gliste,4,glis-te,CCVC-CV,gl,estructura CCVC-CV
+glufan,4,glu-fan,CCV-CVC,gl,estructura CCV-CVC
+sulglo,4,sul-glo,CVC-CCV,gl,estructura CVC-CCV
+balgru,4,bal-gru,CVC-CCV,gr,estructura CVC-CCV
+granfez,4,gran-fez,CCVC-CVC,gr,estructura CCVC-CVC
+greñul,4,gre-ñul,CCV-CVC,gr,estructura CCV-CVC
+grofil,4,gro-fil,CCV-CVC,gr,estructura CCV-CVC
+bolpli,4,bol-pli,CVC-CCV,pl,estructura CVC-CCV
+plañez,4,pla-ñez,CCV-CVC,pl,estructura CCV-CVC
+plisfur,4,plis-fur,CCVC-CVC,pl,estructura CCVC-CVC
+plofel,4,plo-fel,CCV-CVC,pl,estructura CCV-CVC
+plunchi,4,plun-chi,CCVC-CV,pl,estructura CCVC-CV
+dorpri,4,dor-pri,CVC-CCV,pr,estructura CVC-CCV
+pranzul,4,pran-zul,CCVC-CVC,pr,estructura CCVC-CVC
+presfu,4,pres-fu,CCVC-CV,pr,estructura CCVC-CV
+prichor,4,pri-chor,CCV-CVC,pr,estructura CCV-CVC
+prumel,4,pru-mel,CCV-CVC,pr,estructura CCV-CVC
+llirtra,4,llir-tra,CVC-CCV,tr,estructura CVC-CCV
+naltru,4,nal-tru,CVC-CCV,tr,estructura CVC-CCV
+trechun,4,tre-chun,CCV-CVC,tr,estructura CCV-CVC
+trofiz,4,tro-fiz,CCV-CVC,tr,estructura CCV-CVC
+trugur,4,tru-gur,CCV-CVC,tr,estructura CCV-CVC
+blazuri,5,bla-zu-ri,CCV-CV-CV,bl,estructura CCV-CV-CV
+blechomi,5,ble-cho-mi,CCV-CV-CV,bl,estructura CCV-CV-CV
+bluceña,5,blu-ce-ña,CCV-CV-CV,bl,estructura CCV-CV-CV
+jibleta,5,ji-ble-ta,CV-CCV-CV,bl,estructura CV-CCV-CV
+moblife,5,mo-bli-fe,CV-CCV-CV,bl,estructura CV-CCV-CV
+bratelu,5,bra-te-lu,CCV-CV-CV,br,estructura CCV-CV-CV
+brechuma,5,bre-chu-ma,CCV-CV-CV,br,estructura CCV-CV-CV
+bruceta,5,bru-ce-ta,CCV-CV-CV,br,estructura CCV-CV-CV
+fibroñe,5,fi-bro-ñe,CV-CCV-CV,br,estructura CV-CCV-CV
+nabrizo,5,na-bri-zo,CV-CCV-CV,br,estructura CV-CCV-CV
+cladofe,5,cla-do-fe,CCV-CV-CV,cl,estructura CCV-CV-CV
+clifuta,5,cli-fu-ta,CCV-CV-CV,cl,estructura CCV-CV-CV
+clomizu,5,clo-mi-zu,CCV-CV-CV,cl,estructura CCV-CV-CV
+racleño,5,ra-cle-ño,CV-CCV-CV,cl,estructura CV-CCV-CV
+ñeclubo,5,ñe-clu-bo,CV-CCV-CV,cl,estructura CV-CCV-CV
+crechidu,5,cre-chi-du,CCV-CV-CV,cr,estructura CCV-CV-CV
+croñati,5,cro-ña-ti,CCV-CV-CV,cr,estructura CCV-CV-CV
+crufemo,5,cru-fe-mo,CCV-CV-CV,cr,estructura CCV-CV-CV
+jacramo,5,ja-cra-mo,CV-CCV-CV,cr,estructura CV-CCV-CV
+vecrizu,5,ve-cri-zu,CV-CCV-CV,cr,estructura CV-CCV-CV
+drafezu,5,dra-fe-zu,CCV-CV-CV,dr,estructura CCV-CV-CV
+drojima,5,dro-ji-ma,CCV-CV-CV,dr,estructura CCV-CV-CV
+druchega,5,dru-che-ga,CCV-CV-CV,dr,estructura CCV-CV-CV
+fudrico,5,fu-dri-co,CV-CCV-CV,dr,estructura CV-CCV-CV
+ñudrela,5,ñu-dre-la,CV-CCV-CV,dr,estructura CV-CCV-CV
+choflibe,5,cho-fli-be,CV-CCV-CV,fl,estructura CV-CCV-CV
+flecuma,5,fle-cu-ma,CCV-CV-CV,fl,estructura CCV-CV-CV
+flogañi,5,flo-ga-ñi,CCV-CV-CV,fl,estructura CCV-CV-CV
+fluneco,5,flu-ne-co,CCV-CV-CV,fl,estructura CCV-CV-CV
+miflazo,5,mi-fla-zo,CV-CCV-CV,fl,estructura CV-CCV-CV
+frazumi,5,fra-zu-mi,CCV-CV-CV,fr,estructura CCV-CV-CV
+fremigu,5,fre-mi-gu,CCV-CV-CV,fr,estructura CCV-CV-CV
+frozalu,5,fro-za-lu,CCV-CV-CV,fr,estructura CCV-CV-CV
+lofricha,5,lo-fri-cha,CV-CCV-CV,fr,estructura CV-CCV-CV
+nifrecho,5,ni-fre-cho,CV-CCV-CV,fr,estructura CV-CCV-CV
+fugliña,5,fu-gli-ña,CV-CCV-CV,gl,estructura CV-CCV-CV
+glatechu,5,gla-te-chu,CCV-CV-CV,gl,estructura CCV-CV-CV
+glebozu,5,gle-bo-zu,CCV-CV-CV,gl,estructura CCV-CV-CV
+gloñedu,5,glo-ñe-du,CCV-CV-CV,gl,estructura CCV-CV-CV
+tiglufa,5,ti-glu-fa,CV-CCV-CV,gl,estructura CV-CCV-CV
+fegrulo,5,fe-gru-lo,CV-CCV-CV,gr,estructura CV-CCV-CV
+gradiñu,5,gra-di-ñu,CCV-CV-CV,gr,estructura CCV-CV-CV
+grichoba,5,gri-cho-ba,CCV-CV-CV,gr,estructura CCV-CV-CV
+grofezu,5,gro-fe-zu,CCV-CV-CV,gr,estructura CCV-CV-CV
+jagremo,5,ja-gre-mo,CV-CCV-CV,gr,estructura CV-CCV-CV
+ancibo,5,an-ci-bo,VC-CV-CV,inversa,estructura VC-CV-CV
+erdifu,5,er-di-fu,VC-CV-CV,inversa,estructura VC-CV-CV
+irmochu,5,ir-mo-chu,VC-CV-CV,inversa,estructura VC-CV-CV
+ulpezo,5,ul-pe-zo,VC-CV-CV,inversa,estructura VC-CV-CV
+ustañe,5,us-ta-ñe,VC-CV-CV,inversa,estructura VC-CV-CV
+berñota,5,ber-ño-ta,CVC-CV-CV,mixta,estructura CVC-CV-CV
+cejudal,5,ce-ju-dal,CV-CV-CVC,mixta,estructura CV-CV-CVC
+falcumi,5,fal-cu-mi,CVC-CV-CV,mixta,estructura CVC-CV-CV
+nisfoga,5,nis-fo-ga,CVC-CV-CV,mixta,estructura CVC-CV-CV
+tuchomer,5,tu-cho-mer,CV-CV-CVC,mixta,estructura CV-CV-CVC
+cheplomu,5,che-plo-mu,CV-CCV-CV,pl,estructura CV-CCV-CV
+fuplida,5,fu-pli-da,CV-CCV-CV,pl,estructura CV-CCV-CV
+gaplezu,5,ga-ple-zu,CV-CCV-CV,pl,estructura CV-CCV-CV
+plañuco,5,pla-ñu-co,CCV-CV-CV,pl,estructura CCV-CV-CV
+plochine,5,plo-chi-ne,CCV-CV-CV,pl,estructura CCV-CV-CV
+jiprome,5,ji-pro-me,CV-CCV-CV,pr,estructura CV-CCV-CV
+loprichu,5,lo-pri-chu,CV-CCV-CV,pr,estructura CV-CCV-CV
+pradiñe,5,pra-di-ñe,CCV-CV-CV,pr,estructura CCV-CV-CV
+prezuta,5,pre-zu-ta,CCV-CV-CV,pr,estructura CCV-CV-CV
+pruneja,5,pru-ne-ja,CCV-CV-CV,pr,estructura CCV-CV-CV
+cetrifo,5,ce-tri-fo,CV-CCV-CV,tr,estructura CV-CCV-CV
+mutreja,5,mu-tre-ja,CV-CCV-CV,tr,estructura CV-CCV-CV
+trazune,5,tra-zu-ne,CCV-CV-CV,tr,estructura CCV-CV-CV
+trochima,5,tro-chi-ma,CCV-CV-CV,tr,estructura CCV-CV-CV
+truñabe,5,tru-ña-be,CCV-CV-CV,tr,estructura CCV-CV-CV
+blechundi,6,ble-chun-di,CCV-CVC-CV,bl,estructura CCV-CVC-CV
+blismora,6,blis-mo-ra,CCVC-CV-CV,bl,estructura CCVC-CV-CV
+blontefa,6,blon-te-fa,CCVC-CV-CV,bl,estructura CCVC-CV-CV
+blugañor,6,blu-ga-ñor,CCV-CV-CVC,bl,estructura CCV-CV-CVC
+darblune,6,dar-blu-ne,CVC-CCV-CV,bl,estructura CVC-CCV-CV
+bragunfe,6,bra-gun-fe,CCV-CVC-CV,br,estructura CCV-CVC-CV
+brenchimo,6,bren-chi-mo,CCVC-CV-CV,br,estructura CCVC-CV-CV
+briscuñe,6,bris-cu-ñe,CCVC-CV-CV,br,estructura CCVC-CV-CV
+bronfeda,6,bron-fe-da,CCVC-CV-CV,br,estructura CCVC-CV-CV
+talbrezu,6,tal-bre-zu,CVC-CCV-CV,br,estructura CVC-CCV-CV
+clañuste,6,cla-ñus-te,CCV-CVC-CV,cl,estructura CCV-CVC-CV
+clispoñer,6,clis-po-ñer,CCVC-CV-CVC,cl,estructura CCVC-CV-CVC
+clofermu,6,clo-fer-mu,CCV-CVC-CV,cl,estructura CCV-CVC-CV
+clundefa,6,clun-de-fa,CCVC-CV-CV,cl,estructura CCVC-CV-CV
+norclezu,6,nor-cle-zu,CVC-CCV-CV,cl,estructura CVC-CCV-CV
+dobsteña,6,dobs-te-ña,CVCC-CV-CV,coda bs,estructura CVCC-CV-CV
+benscuma,6,bens-cu-ma,CVCC-CV-CV,coda ns,estructura CVCC-CV-CV
+ganstife,6,gans-ti-fe,CVCC-CV-CV,coda ns,estructura CVCC-CV-CV
+tinsfola,6,tins-fo-la,CVCC-CV-CV,coda ns,estructura CVCC-CV-CV
+lersfiño,6,lers-fi-ño,CVCC-CV-CV,coda rs,estructura CVCC-CV-CV
+crendufa,6,cren-du-fa,CCVC-CV-CV,cr,estructura CCVC-CV-CV
+cronfeli,6,cron-fe-li,CCVC-CV-CV,cr,estructura CCVC-CV-CV
+crospiña,6,cros-pi-ña,CCVC-CV-CV,cr,estructura CCVC-CV-CV
+crugalte,6,cru-gal-te,CCV-CVC-CV,cr,estructura CCV-CVC-CV
+muncrezo,6,mun-cre-zo,CVC-CCV-CV,cr,estructura CVC-CCV-CV
+beldruma,6,bel-dru-ma,CVC-CCV-CV,dr,estructura CVC-CCV-CV
+draponfe,6,dra-pon-fe,CCV-CVC-CV,dr,estructura CCV-CVC-CV
+drenchuga,6,dren-chu-ga,CCVC-CV-CV,dr,estructura CCVC-CV-CV
+drimaste,6,dri-mas-te,CCV-CVC-CV,dr,estructura CCV-CVC-CV
+droscañi,6,dros-ca-ñi,CCVC-CV-CV,dr,estructura CCVC-CV-CV
+flagosti,6,fla-gos-ti,CCV-CVC-CV,fl,estructura CCV-CVC-CV
+flenduchi,6,flen-du-chi,CCVC-CV-CV,fl,estructura CCVC-CV-CV
+flisteño,6,flis-te-ño,CCVC-CV-CV,fl,estructura CCVC-CV-CV
+fluncadi,6,flun-ca-di,CCVC-CV-CV,fl,estructura CCVC-CV-CV
+morflecu,6,mor-fle-cu,CVC-CCV-CV,fl,estructura CVC-CCV-CV
+dolfrechu,6,dol-fre-chu,CVC-CCV-CV,fr,estructura CVC-CCV-CV
+fraponchi,6,fra-pon-chi,CCV-CVC-CV,fr,estructura CCV-CVC-CV
+frenguma,6,fren-gu-ma,CCVC-CV-CV,fr,estructura CCVC-CV-CV
+fristaño,6,fris-ta-ño,CCVC-CV-CV,fr,estructura CCVC-CV-CV
+froncidu,6,fron-ci-du,CCVC-CV-CV,fr,estructura CCVC-CV-CV
+glacurte,6,gla-cur-te,CCV-CVC-CV,gl,estructura CCV-CVC-CV
+glembura,6,glem-bu-ra,CCVC-CV-CV,gl,estructura CCVC-CV-CV
+glonfida,6,glon-fi-da,CCVC-CV-CV,gl,estructura CCVC-CV-CV
+glustañe,6,glus-ta-ñe,CCVC-CV-CV,gl,estructura CCVC-CV-CV
+torglemu,6,tor-gle-mu,CVC-CCV-CV,gl,estructura CVC-CCV-CV
+grencifo,6,gren-ci-fo,CCVC-CV-CV,gr,estructura CCVC-CV-CV
+grispaño,6,gris-pa-ño,CCVC-CV-CV,gr,estructura CCVC-CV-CV
+gronfeta,6,gron-fe-ta,CCVC-CV-CV,gr,estructura CCVC-CV-CV
+grudalce,6,gru-dal-ce,CCV-CVC-CV,gr,estructura CCV-CVC-CV
+turgremu,6,tur-gre-mu,CVC-CCV-CV,gr,estructura CVC-CCV-CV
+flaezu,6,fla-e-zu,CCV-V-CV,hiato ae,estructura CCV-V-CV
+taelu,6,ta-e-lu,CV-V-CV,hiato ae,estructura CV-V-CV
+preochu,6,pre-o-chu,CCV-V-CV,hiato eo,estructura CCV-V-CV
+boañer,6,bo-a-ñer,CV-V-CVC,hiato oa,estructura CV-V-CVC
+choadir,6,cho-a-dir,CV-V-CVC,hiato oa,estructura CV-V-CVC
+berploña,6,ber-plo-ña,CVC-CCV-CV,pl,estructura CVC-CCV-CV
+fesplamo,6,fes-pla-mo,CVC-CCV-CV,pl,estructura CVC-CCV-CV
+pliscudar,6,plis-cu-dar,CCVC-CV-CVC,pl,estructura CCVC-CV-CVC
+plonferi,6,plon-fe-ri,CCVC-CV-CV,pl,estructura CCVC-CV-CV
+pludanco,6,plu-dan-co,CCV-CVC-CV,pl,estructura CCV-CVC-CV
+nalprechu,6,nal-pre-chu,CVC-CCV-CV,pr,estructura CVC-CCV-CV
+prendufa,6,pren-du-fa,CCVC-CV-CV,pr,estructura CCVC-CV-CV
+pristaño,6,pris-ta-ño,CCVC-CV-CV,pr,estructura CCVC-CV-CV
+pronfizu,6,pron-fi-zu,CCVC-CV-CV,pr,estructura CCVC-CV-CV
+prucosti,6,pru-cos-ti,CCV-CVC-CV,pr,estructura CCV-CVC-CV
+faltrezu,6,fal-tre-zu,CVC-CCV-CV,tr,estructura CVC-CCV-CV
+tragulfe,6,tra-gul-fe,CCV-CVC-CV,tr,estructura CCV-CVC-CV
+trendochi,6,tren-do-chi,CCVC-CV-CV,tr,estructura CCVC-CV-CV
+trispoñu,6,tris-po-ñu,CCVC-CV-CV,tr,estructura CCVC-CV-CV
+tronfiga,6,tron-fi-ga,CCVC-CV-CV,tr,estructura CCVC-CV-CV
+domimbluri,7,do-mim-blu-ri,CV-CVC-CCV-CV,bl,estructura CV-CVC-CCV-CV
+gapusblopo,7,ga-pus-blo-po,CV-CVC-CCV-CV,bl,estructura CV-CVC-CCV-CV
+gublesditen,7,gu-bles-di-ten,CV-CCVC-CV-CVC,bl,estructura CV-CCVC-CV-CVC
+mobovirblul,7,mo-bo-vir-blul,CV-CV-CVC-CCVC,bl,estructura CV-CV-CVC-CCVC
+brusbicruto,7,brus-bi-cru-to,CCVC-CV-CCV-CV,br,estructura CCVC-CV-CCV-CV
+disfanibraz,7,dis-fa-ni-braz,CVC-CV-CV-CCVC,br,estructura CVC-CV-CV-CCVC
+nemabusbri,7,ne-ma-bus-bri,CV-CV-CVC-CCV,br,estructura CV-CV-CVC-CCV
+plopanobru,7,plo-pa-no-bru,CCV-CV-CV-CCV,br,estructura CCV-CV-CV-CCV
+clamboploti,7,clam-bo-plo-ti,CCVC-CV-CCV-CV,cl,estructura CCVC-CV-CCV-CV
+gasponucla,7,gas-po-nu-cla,CVC-CV-CV-CCV,cl,estructura CVC-CV-CV-CCV
+guermigaclor,7,guer-mi-ga-clor,CVC-CV-CV-CCVC,cl,estructura CVC-CV-CV-CCVC
+quifosjicle,7,qui-fos-ji-cle,CV-CVC-CV-CCV,cl,estructura CV-CVC-CV-CCV
+salocubsgro,7,sa-lo-cubs-gro,CV-CV-CVCC-CCV,coda bs,estructura CV-CV-CVCC-CCV
+lanirguensti,7,la-nir-guens-ti,CV-CVC-CVCC-CV,coda ns,estructura CV-CVC-CVCC-CV
+ludanspansi,7,lu-dans-pan-si,CV-CVCC-CVC-CV,coda ns,estructura CV-CVCC-CVC-CV
+lutosunsbiz,7,lu-to-suns-biz,CV-CV-CVCC-CVC,coda ns,estructura CV-CV-CVCC-CVC
+silorbirsfe,7,si-lor-birs-fe,CV-CVC-CVCC-CV,coda rs,estructura CV-CVC-CVCC-CV
+brucaticra,7,bru-ca-ti-cra,CCV-CV-CV-CCV,cr,estructura CCV-CV-CV-CCV
+fococrurlil,7,fo-co-crur-lil,CV-CV-CCVC-CVC,cr,estructura CV-CV-CCVC-CVC
+panquicralmu,7,pan-qui-cral-mu,CVC-CV-CCVC-CV,cr,estructura CVC-CV-CCVC-CV
+replesacru,7,re-ple-sa-cru,CV-CCV-CV-CCV,cr,estructura CV-CCV-CV-CCV
+drenutuvin,7,dre-nu-tu-vin,CCV-CV-CV-CVC,dr,estructura CCV-CV-CV-CVC
+drormopaplur,7,dror-mo-pa-plur,CCVC-CV-CV-CCVC,dr,estructura CCVC-CV-CV-CCVC
+midrulguezul,7,mi-drul-gue-zul,CV-CCVC-CV-CVC,dr,estructura CV-CCVC-CV-CVC
+ñechodrosquin,7,ñe-cho-dros-quin,CV-CV-CCVC-CVC,dr,estructura CV-CV-CCVC-CVC
+dreñunafli,7,dre-ñu-na-fli,CCV-CV-CV-CCV,fl,estructura CCV-CV-CV-CCV
+fluchosvazu,7,flu-chos-va-zu,CCV-CVC-CV-CV,fl,estructura CCV-CVC-CV-CV
+quipaflosol,7,qui-pa-flo-sol,CV-CV-CCV-CVC,fl,estructura CV-CV-CCV-CVC
+taflanungo,7,ta-fla-nun-go,CV-CCV-CVC-CV,fl,estructura CV-CCV-CVC-CV
+frivuntopi,7,fri-vun-to-pi,CCV-CVC-CV-CV,fr,estructura CCV-CVC-CV-CV
+frovetrilu,7,fro-ve-tri-lu,CCV-CV-CCV-CV,fr,estructura CCV-CV-CCV-CV
+radisfrulpu,7,ra-dis-frul-pu,CV-CVC-CCVC-CV,fr,estructura CV-CVC-CCVC-CV
+tencelifri,7,ten-ce-li-fri,CVC-CV-CV-CCV,fr,estructura CVC-CV-CV-CCV
+cadinchegli,7,ca-din-che-gli,CV-CVC-CV-CCV,gl,estructura CV-CVC-CV-CCV
+feglontospu,7,fe-glon-tos-pu,CV-CCVC-CVC-CV,gl,estructura CV-CCVC-CVC-CV
+glensosmuve,7,glen-sos-mu-ve,CCVC-CVC-CV-CV,gl,estructura CCVC-CVC-CV-CV
+lomonglufa,7,lo-mon-glu-fa,CV-CVC-CCV-CV,gl,estructura CV-CVC-CCV-CV
+graselduco,7,gra-sel-du-co,CCV-CVC-CV-CV,gr,estructura CCV-CVC-CV-CV
+grosmitodan,7,gros-mi-to-dan,CCVC-CV-CV-CVC,gr,estructura CCVC-CV-CV-CVC
+lunquisugre,7,lun-qui-su-gre,CVC-CV-CV-CCV,gr,estructura CVC-CV-CV-CCV
+mirgredure,7,mir-gre-du-re,CVC-CCV-CV-CV,gr,estructura CVC-CCV-CV-CV
+taonodur,7,ta-o-no-dur,CV-V-CV-CVC,hiato ao,estructura CV-V-CV-CVC
+veaguetuz,7,ve-a-gue-tuz,CV-V-CV-CVC,hiato ea,estructura CV-V-CV-CVC
+bloguenoa,7,blo-gue-no-a,CCV-CV-CV-V,hiato oa,estructura CCV-CV-CV-V
+ñenoasple,7,ñe-no-as-ple,CV-CV-VC-CCV,hiato oa,estructura CV-CV-VC-CCV
+goeplullo,7,go-e-plu-llo,CV-V-CCV-CV,hiato oe,estructura CV-V-CCV-CV
+toeratuz,7,to-e-ra-tuz,CV-V-CV-CVC,hiato oe,estructura CV-V-CV-CVC
+elchimanul,7,el-chi-ma-nul,VC-CV-CV-CVC,inversa,estructura VC-CV-CV-CVC
+inflibujo,7,in-fli-bu-jo,VC-CCV-CV-CV,inversa,estructura VC-CCV-CV-CV
+oslojufez,7,os-lo-ju-fez,VC-CV-CV-CVC,inversa,estructura VC-CV-CV-CVC
+ostemiclen,7,os-te-mi-clen,VC-CV-CV-CCVC,inversa,estructura VC-CV-CV-CCVC
+urzobefun,7,ur-zo-be-fun,VC-CV-CV-CVC,inversa,estructura VC-CV-CV-CVC
+basmorleda,7,bas-mor-le-da,CVC-CVC-CV-CV,mixta,estructura CVC-CVC-CV-CV
+chancaclupe,7,chan-ca-clu-pe,CVC-CV-CCV-CV,mixta,estructura CVC-CV-CCV-CV
+collequincrus,7,co-lle-quin-crus,CV-CV-CVC-CCVC,mixta,estructura CV-CV-CVC-CCVC
+laminfluslu,7,la-min-flus-lu,CV-CVC-CCVC-CV,mixta,estructura CV-CVC-CCVC-CV
+vidospunsu,7,vi-dos-pun-su,CV-CVC-CVC-CV,mixta,estructura CV-CVC-CVC-CV
+ñosesdafis,7,ño-ses-da-fis,CV-CVC-CV-CVC,mixta,estructura CV-CVC-CV-CVC
+blequetaplu,7,ble-que-ta-plu,CCV-CV-CV-CCV,pl,estructura CCV-CV-CV-CCV
+chimbinopla,7,chim-bi-no-pla,CVC-CV-CV-CCV,pl,estructura CVC-CV-CV-CCV
+crogoplasdo,7,cro-go-plas-do,CCV-CV-CCVC-CV,pl,estructura CCV-CV-CCVC-CV
+jencopliche,7,jen-co-pli-che,CVC-CV-CCV-CV,pl,estructura CVC-CV-CCV-CV
+chopratapiz,7,cho-pra-ta-piz,CV-CCV-CV-CVC,pr,estructura CV-CCV-CV-CVC
+frelaprifu,7,fre-la-pri-fu,CCV-CV-CCV-CV,pr,estructura CCV-CV-CCV-CV
+pratifroltu,7,pra-ti-frol-tu,CCV-CV-CCVC-CV,pr,estructura CCV-CV-CCVC-CV
+pruribribe,7,pru-ri-bri-be,CCV-CV-CCV-CV,pr,estructura CCV-CV-CCV-CV
+bralotrume,7,bra-lo-tru-me,CCV-CV-CCV-CV,tr,estructura CCV-CV-CCV-CV
+jabrunsitre,7,ja-brun-si-tre,CV-CCVC-CV-CCV,tr,estructura CV-CCVC-CV-CCV
+trenasobul,7,tre-na-so-bul,CCV-CV-CV-CVC,tr,estructura CCV-CV-CV-CVC
+trirolablu,7,tri-ro-la-blu,CCV-CV-CV-CCV,tr,estructura CCV-CV-CV-CCV
+casglumabubli,8,cas-glu-ma-bu-bli,CVC-CCV-CV-CV-CCV,bl,estructura CVC-CCV-CV-CV-CCV
+flenutiblaruz,8,fle-nu-ti-bla-ruz,CCV-CV-CV-CCV-CVC,bl,estructura CCV-CV-CV-CCV-CVC
+misblasfonvo,8,mis-blas-fon-vo,CVC-CCVC-CVC-CV,bl,estructura CVC-CCVC-CVC-CV
+vonublumil,8,vo-nu-blu-mil,CV-CV-CCV-CVC,bl,estructura CV-CV-CCV-CVC
+besbremuza,8,bes-bre-mu-za,CVC-CCV-CV-CV,br,estructura CVC-CCV-CV-CV
+meclamibralgu,8,me-cla-mi-bral-gu,CV-CCV-CV-CCVC-CV,br,estructura CV-CCV-CV-CCVC-CV
+ribropembura,8,ri-bro-pem-bu-ra,CV-CCV-CVC-CV-CV,br,estructura CV-CCV-CVC-CV-CV
+savitambruri,8,sa-vi-tam-bru-ri,CV-CV-CVC-CCV-CV,br,estructura CV-CV-CVC-CCV-CV
+clodisodel,8,clo-di-so-del,CCV-CV-CV-CVC,cl,estructura CCV-CV-CV-CVC
+clumofitri,8,clu-mo-fi-tri,CCV-CV-CV-CCV,cl,estructura CCV-CV-CV-CCV
+soñicusosclol,8,so-ñi-cu-sos-clol,CV-CV-CV-CVC-CCVC,cl,estructura CV-CV-CV-CVC-CCVC
+tisclestajure,8,tis-cles-ta-ju-re,CVC-CCVC-CV-CV-CV,cl,estructura CVC-CCVC-CV-CV-CV
+blilmipofobsde,8,blil-mi-po-fobs-de,CCVC-CV-CV-CVCC-CV,coda bs,estructura CCVC-CV-CV-CVCC-CV
+fivansblerlu,8,fi-vans-bler-lu,CV-CVCC-CCVC-CV,coda ns,estructura CV-CVCC-CCVC-CV
+gansglomibre,8,gans-glo-mi-bre,CVCC-CCV-CV-CCV,coda ns,estructura CVCC-CCV-CV-CCV
+pinsbestrapa,8,pins-bes-tra-pa,CVCC-CVC-CCV-CV,coda ns,estructura CVCC-CVC-CCV-CV
+sirsmecurralgrin,8,sirs-me-cu-rral-grin,CVCC-CV-CV-CVC-CCVC,coda rs,estructura CVCC-CV-CV-CVC-CCVC
+becrenirqui,8,be-cre-nir-qui,CV-CCV-CVC-CV,cr,estructura CV-CCV-CVC-CV
+dasboguicre,8,das-bo-gui-cre,CVC-CV-CV-CCV,cr,estructura CVC-CV-CV-CCV
+mircraltefru,8,mir-cral-te-fru,CVC-CCVC-CV-CCV,cr,estructura CVC-CCVC-CV-CCV
+toscrasjumu,8,tos-cras-ju-mu,CVC-CCVC-CV-CV,cr,estructura CVC-CCVC-CV-CV
+baderuldre,8,ba-de-rul-dre,CV-CV-CVC-CCV,dr,estructura CV-CV-CVC-CCV
+bamubufendrur,8,ba-mu-bu-fen-drur,CV-CV-CV-CVC-CCVC,dr,estructura CV-CV-CV-CVC-CCVC
+fuzapurmudraz,8,fu-za-pur-mu-draz,CV-CV-CVC-CV-CCVC,dr,estructura CV-CV-CVC-CV-CCVC
+tadrilonuz,8,ta-dri-lo-nuz,CV-CCV-CV-CVC,dr,estructura CV-CCV-CV-CVC
+fladesdrulne,8,fla-des-drul-ne,CCV-CVC-CCVC-CV,fl,estructura CCV-CVC-CCVC-CV
+flositagra,8,flo-si-ta-gra,CCV-CV-CV-CCV,fl,estructura CCV-CV-CV-CCV
+frichaflamoban,8,fri-cha-fla-mo-ban,CCV-CV-CCV-CV-CVC,fl,estructura CCV-CV-CCV-CV-CVC
+saflemagraz,8,sa-fle-ma-graz,CV-CCV-CV-CCVC,fl,estructura CV-CCV-CV-CCVC
+muclijanfril,8,mu-cli-jan-fril,CV-CCV-CVC-CCVC,fr,estructura CV-CCV-CVC-CCVC
+nebanfremufo,8,ne-ban-fre-mu-fo,CV-CVC-CCV-CV-CV,fr,estructura CV-CVC-CCV-CV-CV
+sifribeblelno,8,si-fri-be-blel-no,CV-CCV-CV-CCVC-CV,fr,estructura CV-CCV-CV-CCVC-CV
+tusfracuda,8,tus-fra-cu-da,CVC-CCV-CV-CV,fr,estructura CVC-CCV-CV-CV
+glefunepoman,8,gle-fu-ne-po-man,CCV-CV-CV-CV-CVC,gl,estructura CCV-CV-CV-CV-CVC
+glulasbesoto,8,glu-las-be-so-to,CCV-CVC-CV-CV-CV,gl,estructura CCV-CVC-CV-CV-CV
+glulquilsuntu,8,glul-quil-sun-tu,CCVC-CVC-CVC-CV,gl,estructura CCVC-CVC-CVC-CV
+telmitiglebo,8,tel-mi-ti-gle-bo,CVC-CV-CV-CCV-CV,gl,estructura CVC-CV-CV-CCV-CV
+chifachirgro,8,chi-fa-chir-gro,CV-CV-CVC-CCV,gr,estructura CV-CV-CVC-CCV
+dricugradu,8,dri-cu-gra-du,CCV-CV-CCV-CV,gr,estructura CCV-CV-CCV-CV
+salugruldervi,8,sa-lu-grul-der-vi,CV-CV-CCVC-CVC-CV,gr,estructura CV-CV-CCVC-CVC-CV
+zutegrostoglu,8,zu-te-gros-to-glu,CV-CV-CCVC-CV-CCV,gr,estructura CV-CV-CCVC-CV-CCV
+coproraencel,8,co-pro-ra-en-cel,CV-CCV-CV-VC-CVC,hiato ae,estructura CV-CCV-CV-VC-CVC
+baompastun,8,ba-om-pas-tun,CV-VC-CVC-CVC,hiato ao,estructura CV-VC-CVC-CVC
+bofaordraja,8,bo-fa-or-dra-ja,CV-CV-VC-CCV-CV,hiato ao,estructura CV-CV-VC-CCV-CV
+cezusnaostre,8,ce-zus-na-os-tre,CV-CVC-CV-VC-CCV,hiato ao,estructura CV-CVC-CV-VC-CCV
+zaseasplaqui,8,za-se-as-pla-qui,CV-CV-VC-CCV-CV,hiato ea,estructura CV-CV-VC-CCV-CV
+moasbirnu,8,mo-as-bir-nu,CV-VC-CVC-CV,hiato oa,estructura CV-VC-CVC-CV
+arglersudoz,8,ar-gler-su-doz,VC-CCVC-CV-CVC,inversa,estructura VC-CCVC-CV-CVC
+arninsavu,8,ar-nin-sa-vu,VC-CVC-CV-CV,inversa,estructura VC-CVC-CV-CV
+ontisjosuma,8,on-tis-jo-su-ma,VC-CVC-CV-CV-CV,inversa,estructura VC-CVC-CV-CV-CV
+osnutrusoli,8,os-nu-tru-so-li,VC-CV-CCV-CV-CV,inversa,estructura VC-CV-CCV-CV-CV
+unlintiro,8,un-lin-ti-ro,VC-CVC-CV-CV,inversa,estructura VC-CVC-CV-CV
+clidufragaren,8,cli-du-fra-ga-ren,CCV-CV-CCV-CV-CVC,mixta,estructura CCV-CV-CCV-CV-CVC
+durbisquigra,8,dur-bis-qui-gra,CVC-CVC-CV-CCV,mixta,estructura CVC-CVC-CV-CCV
+jocadrarbur,8,jo-ca-drar-bur,CV-CV-CCVC-CVC,mixta,estructura CV-CV-CCVC-CVC
+moslisfubrerdi,8,mos-lis-fu-brer-di,CVC-CVC-CV-CCVC-CV,mixta,estructura CVC-CVC-CV-CCVC-CV
+nirblilmevalfu,8,nir-blil-me-val-fu,CVC-CCVC-CV-CVC-CV,mixta,estructura CVC-CCVC-CV-CVC-CV
+vantajerve,8,van-ta-jer-ve,CVC-CV-CVC-CV,mixta,estructura CVC-CV-CVC-CV
+bespluguenza,8,bes-plu-guen-za,CVC-CCV-CVC-CV,pl,estructura CVC-CCV-CVC-CV
+lerilnirpleme,8,le-ril-nir-ple-me,CV-CVC-CVC-CCV-CV,pl,estructura CV-CVC-CVC-CCV-CV
+paplellisflen,8,pa-ple-llis-flen,CV-CCV-CVC-CCVC,pl,estructura CV-CCV-CVC-CCVC
+plebazajonlo,8,ple-ba-za-jon-lo,CCV-CV-CV-CVC-CV,pl,estructura CCV-CV-CV-CVC-CV
+cuprubampezu,8,cu-pru-bam-pe-zu,CV-CCV-CVC-CV-CV,pr,estructura CV-CCV-CVC-CV-CV
+deramprello,8,de-ram-pre-llo,CV-CVC-CCV-CV,pr,estructura CV-CVC-CCV-CV
+posulbarpran,8,po-sul-bar-pran,CV-CVC-CVC-CCVC,pr,estructura CV-CVC-CVC-CCVC
+venlesvobupril,8,ven-les-vo-bu-pril,CVC-CVC-CV-CV-CCVC,pr,estructura CVC-CVC-CV-CV-CCVC
+bitisfolutri,8,bi-tis-fo-lu-tri,CV-CVC-CV-CV-CCV,tr,estructura CV-CVC-CV-CV-CCV
+bunlotradane,8,bun-lo-tra-da-ne,CVC-CV-CCV-CV-CV,tr,estructura CVC-CV-CCV-CV-CV
+citroperba,8,ci-tro-per-ba,CV-CCV-CVC-CV,tr,estructura CV-CCV-CVC-CV
+trindujopus,8,trin-du-jo-pus,CCVC-CV-CV-CVC,tr,estructura CCVC-CV-CV-CVC
+blallupinduflulda,9,bla-llu-pin-du-flul-da,CCV-CV-CVC-CV-CCVC-CV,bl,estructura CCV-CV-CVC-CV-CCVC-CV
+blispejefasflo,9,blis-pe-je-fas-flo,CCVC-CV-CV-CVC-CCV,bl,estructura CCVC-CV-CV-CVC-CCV
+moncrefiblilma,9,mon-cre-fi-blil-ma,CVC-CCV-CV-CCVC-CV,bl,estructura CVC-CCV-CV-CCVC-CV
+triroblaliscu,9,tri-ro-bla-lis-cu,CCV-CV-CCV-CVC-CV,bl,estructura CCV-CV-CCV-CVC-CV
+blacobobrisenel,9,bla-co-bo-bri-se-nel,CCV-CV-CV-CCV-CV-CVC,br,estructura CCV-CV-CV-CCV-CV-CVC
+brisjimesisgril,9,bris-ji-me-sis-gril,CCVC-CV-CV-CVC-CCVC,br,estructura CCVC-CV-CV-CVC-CCVC
+clichusquesabro,9,cli-chus-que-sa-bro,CCV-CVC-CV-CV-CCV,br,estructura CCV-CVC-CV-CV-CCV
+posiltresibre,9,po-sil-tre-si-bre,CV-CVC-CCV-CV-CCV,br,estructura CV-CVC-CCV-CV-CCV
+cluñirezontofus,9,clu-ñi-re-zon-to-fus,CCV-CV-CV-CVC-CV-CVC,cl,estructura CCV-CV-CV-CVC-CV-CVC
+dronfeclandurli,9,dron-fe-clan-dur-li,CCVC-CV-CCVC-CVC-CV,cl,estructura CCVC-CV-CCVC-CVC-CV
+foclencillolpuraz,9,fo-clen-ci-llol-pu-raz,CV-CCVC-CV-CVC-CV-CVC,cl,estructura CV-CCVC-CV-CVC-CV-CVC
+neclemonisben,9,ne-cle-mo-nis-ben,CV-CCV-CV-CVC-CVC,cl,estructura CV-CCV-CV-CVC-CVC
+guejedabibsgrolor,9,gue-je-da-bibs-gro-lor,CV-CV-CV-CVCC-CCV-CVC,coda bs,estructura CV-CV-CV-CVCC-CCV-CVC
+cunspridatramboqui,9,cuns-pri-da-tram-bo-qui,CVCC-CCV-CV-CCVC-CV-CV,coda ns,estructura CVCC-CCV-CV-CCVC-CV-CV
+nulquenspradilirru,9,nul-quens-pra-di-li-rru,CVC-CVCC-CCV-CV-CV-CV,coda ns,estructura CVC-CVCC-CCV-CV-CV-CV
+zunslomilusnobro,9,zuns-lo-mi-lus-no-bro,CVCC-CV-CV-CVC-CV-CCV,coda ns,estructura CVCC-CV-CV-CVC-CV-CCV
+punfimejuntirsmu,9,pun-fi-me-jun-tirs-mu,CVC-CV-CV-CVC-CVCC-CV,coda rs,estructura CVC-CV-CV-CVC-CVCC-CV
+catribecronez,9,ca-tri-be-cro-nez,CV-CCV-CV-CCV-CVC,cr,estructura CV-CCV-CV-CCV-CVC
+crofoceclepin,9,cro-fo-ce-cle-pin,CCV-CV-CV-CCV-CVC,cr,estructura CCV-CV-CV-CCV-CVC
+machecrebasgrol,9,ma-che-cre-bas-grol,CV-CV-CCV-CVC-CCVC,cr,estructura CV-CV-CCV-CVC-CCVC
+pidelcrerrobin,9,pi-del-cre-rro-bin,CV-CVC-CCV-CV-CVC,cr,estructura CV-CVC-CCV-CV-CVC
+bosguifesdisodru,9,bos-gui-fes-di-so-dru,CVC-CV-CVC-CV-CV-CCV,dr,estructura CVC-CV-CVC-CV-CV-CCV
+filirtrenipudra,9,fi-lir-tre-ni-pu-dra,CV-CVC-CCV-CV-CV-CCV,dr,estructura CV-CVC-CCV-CV-CV-CCV
+pistusboquidrasvo,9,pis-tus-bo-qui-dras-vo,CVC-CVC-CV-CV-CCVC-CV,dr,estructura CVC-CVC-CV-CV-CCVC-CV
+tasnugosdrifagui,9,tas-nu-gos-dri-fa-gui,CVC-CV-CVC-CCV-CV-CV,dr,estructura CVC-CV-CVC-CCV-CV-CV
+flunaclechaspu,9,flu-na-cle-chas-pu,CCV-CV-CCV-CVC-CV,fl,estructura CCV-CV-CCV-CVC-CV
+ladurfligusfe,9,la-dur-fli-gus-fe,CV-CVC-CCV-CVC-CV,fl,estructura CV-CVC-CCV-CVC-CV
+morlorbemaflefi,9,mor-lor-be-ma-fle-fi,CVC-CVC-CV-CV-CCV-CV,fl,estructura CVC-CVC-CV-CV-CCV-CV
+quifliscunilmasfa,9,qui-flis-cu-nil-mas-fa,CV-CCVC-CV-CVC-CVC-CV,fl,estructura CV-CCVC-CV-CVC-CVC-CV
+drotafrigubasma,9,dro-ta-fri-gu-bas-ma,CCV-CV-CCV-CV-CVC-CV,fr,estructura CCV-CV-CCV-CV-CVC-CV
+frislaplisosmo,9,fris-la-pli-sos-mo,CCVC-CV-CCV-CVC-CV,fr,estructura CCVC-CV-CCV-CVC-CV
+gavoncufretol,9,ga-von-cu-fre-tol,CV-CVC-CV-CCV-CVC,fr,estructura CV-CVC-CV-CCV-CVC
+vulfrucosdetidi,9,vul-fru-cos-de-ti-di,CVC-CCV-CVC-CV-CV-CV,fr,estructura CVC-CCV-CVC-CV-CV-CV
+bleguquinchediglo,9,ble-gu-quin-che-di-glo,CCV-CV-CVC-CV-CV-CCV,gl,estructura CCV-CV-CVC-CV-CV-CCV
+glisabombrapu,9,gli-sa-bom-bra-pu,CCV-CV-CVC-CCV-CV,gl,estructura CCV-CV-CVC-CCV-CV
+paglasbirsoclo,9,pa-glas-bir-so-clo,CV-CCVC-CVC-CV-CCV,gl,estructura CV-CCVC-CVC-CV-CCV
+voglasechustosna,9,vo-gla-se-chus-tos-na,CV-CCV-CV-CVC-CVC-CV,gl,estructura CV-CCV-CV-CVC-CVC-CV
+fesgrisnodonfe,9,fes-gris-no-don-fe,CVC-CCVC-CV-CVC-CV,gr,estructura CVC-CCVC-CV-CVC-CV
+fugrelordapil,9,fu-gre-lor-da-pil,CV-CCV-CVC-CV-CVC,gr,estructura CV-CCV-CVC-CV-CVC
+grucifamiscli,9,gru-ci-fa-mis-cli,CCV-CV-CV-CVC-CCV,gr,estructura CCV-CV-CV-CVC-CCV
+lablopulgrore,9,la-blo-pul-gro-re,CV-CCV-CVC-CCV-CV,gr,estructura CV-CCV-CVC-CCV-CV
+dutregaedirfu,9,du-tre-ga-e-dir-fu,CV-CCV-CV-V-CVC-CV,hiato ae,estructura CV-CCV-CV-V-CVC-CV
+vellenclartaeso,9,ve-llen-clar-ta-e-so,CV-CVC-CCVC-CV-V-CV,hiato ae,estructura CV-CVC-CCVC-CV-V-CV
+guiglovaocrilu,9,gui-glo-va-o-cri-lu,CV-CCV-CV-V-CCV-CV,hiato ao,estructura CV-CCV-CV-V-CCV-CV
+caspansileo,9,cas-pan-si-le-o,CVC-CVC-CV-CV-V,hiato eo,estructura CVC-CVC-CV-CV-V
+coarfefrorsoz,9,co-ar-fe-fror-soz,CV-VC-CV-CCVC-CVC,hiato oa,estructura CV-VC-CV-CCVC-CVC
+treloantimpu,9,tre-lo-an-tim-pu,CCV-CV-VC-CVC-CV,hiato oa,estructura CCV-CV-VC-CVC-CV
+angrufolgujemi,9,an-gru-fol-gu-je-mi,VC-CCV-CVC-CV-CV-CV,inversa,estructura VC-CCV-CVC-CV-CV-CV
+ascoslesosqui,9,as-cos-le-sos-qui,VC-CVC-CV-CVC-CV,inversa,estructura VC-CVC-CV-CVC-CV
+asquispujegueglus,9,as-quis-pu-je-gue-glus,VC-CVC-CV-CV-CV-CCVC,inversa,estructura VC-CVC-CV-CV-CV-CCVC
+ustrabadochanvo,9,us-tra-ba-do-chan-vo,VC-CCV-CV-CV-CVC-CV,inversa,estructura VC-CCV-CV-CV-CVC-CV
+usvibriselnedu,9,us-vi-bri-sel-ne-du,VC-CV-CCV-CVC-CV-CV,inversa,estructura VC-CV-CCV-CVC-CV-CV
+gomompantogladu,9,go-mom-pan-to-gla-du,CV-CVC-CVC-CV-CCV-CV,mixta,estructura CV-CVC-CVC-CV-CCV-CV
+guidomancundra,9,gui-do-man-cun-dra,CV-CV-CVC-CVC-CCV,mixta,estructura CV-CV-CVC-CVC-CCV
+linquendemisbe,9,lin-quen-de-mis-be,CVC-CVC-CV-CVC-CV,mixta,estructura CVC-CVC-CV-CVC-CV
+nifletecundan,9,ni-fle-te-cun-dan,CV-CCV-CV-CVC-CVC,mixta,estructura CV-CCV-CV-CVC-CVC
+quitisdrucavicil,9,qui-tis-dru-ca-vi-cil,CV-CVC-CCV-CV-CV-CVC,mixta,estructura CV-CVC-CCV-CV-CV-CVC
+ñisonorgrimus,9,ñi-so-nor-gri-mus,CV-CV-CVC-CCV-CVC,mixta,estructura CV-CV-CVC-CCV-CVC
+liclugaplindin,9,li-clu-ga-plin-din,CV-CCV-CV-CCVC-CVC,pl,estructura CV-CCV-CV-CCVC-CVC
+perplunturatis,9,per-plun-tu-ra-tis,CVC-CCVC-CV-CV-CVC,pl,estructura CVC-CCVC-CV-CV-CVC
+riblisquecuspli,9,ri-blis-que-cus-pli,CV-CCVC-CV-CVC-CCV,pl,estructura CV-CCVC-CV-CVC-CCV
+ñarbuspladeva,9,ñar-bus-pla-de-va,CVC-CVC-CCV-CV-CV,pl,estructura CVC-CVC-CCV-CV-CV
+clodusprechonu,9,clo-dus-pre-cho-nu,CCV-CVC-CCV-CV-CV,pr,estructura CCV-CVC-CCV-CV-CV
+quefulbroguipru,9,que-ful-bro-gui-pru,CV-CVC-CCV-CV-CCV,pr,estructura CV-CVC-CCV-CV-CCV
+trolipipresdin,9,tro-li-pi-pres-din,CCV-CV-CV-CCVC-CVC,pr,estructura CCV-CV-CV-CCVC-CVC
+vampatolprufi,9,vam-pa-tol-pru-fi,CVC-CV-CVC-CCV-CV,pr,estructura CVC-CV-CVC-CCV-CV
+fibesgrunitro,9,fi-bes-gru-ni-tro,CV-CVC-CCV-CV-CCV,tr,estructura CV-CVC-CCV-CV-CCV
+gatrenasbosufoz,9,ga-tre-nas-bo-su-foz,CV-CCV-CVC-CV-CV-CVC,tr,estructura CV-CCV-CVC-CV-CV-CVC
+pelerpatrajis,9,pe-ler-pa-tra-jis,CV-CVC-CV-CCV-CVC,tr,estructura CV-CVC-CV-CCV-CVC
+peñaguerpanvutri,9,pe-ña-guer-pan-vu-tri,CV-CV-CVC-CVC-CV-CCV,tr,estructura CV-CV-CVC-CVC-CV-CCV
+blefidrencundor,10,ble-fi-dren-cun-dor,CCV-CV-CCVC-CVC-CVC,bl,estructura CCV-CV-CCVC-CVC-CVC
+blinlolsidipun,10,blin-lol-si-di-pun,CCVC-CVC-CV-CV-CVC,bl,estructura CCVC-CVC-CV-CV-CVC
+blodameplosel,10,blo-da-me-plo-sel,CCV-CV-CV-CCV-CVC,bl,estructura CCV-CV-CV-CCV-CVC
+blusmorsclinasdija,10,blus-mors-cli-nas-di-ja,CCVC-CVCC-CCV-CVC-CV-CV,bl,estructura CCVC-CVCC-CCV-CVC-CV-CV
+brafesminlical,10,bra-fes-min-li-cal,CCV-CVC-CVC-CV-CVC,br,estructura CCV-CVC-CVC-CV-CVC
+brigatabsgunin,10,bri-ga-tabs-gu-nin,CCV-CV-CVCC-CV-CVC,br,estructura CCV-CV-CVCC-CV-CVC
+chubisbralnarsuz,10,chu-bis-bral-nar-suz,CV-CVC-CCVC-CVC-CVC,br,estructura CV-CVC-CCVC-CVC-CVC
+sebramesfaflote,10,se-bra-mes-fa-flo-te,CV-CCV-CVC-CV-CCV-CV,br,estructura CV-CCV-CVC-CV-CCV-CV
+cobansclemabscol,10,co-bans-cle-mabs-col,CV-CVCC-CCV-CVCC-CVC,cl,estructura CV-CVCC-CCV-CVCC-CVC
+firnefoclenfaplu,10,fir-ne-fo-clen-fa-plu,CVC-CV-CV-CCVC-CV-CCV,cl,estructura CVC-CV-CV-CCVC-CV-CCV
+liblafurpiclefo,10,li-bla-fur-pi-cle-fo,CV-CCV-CVC-CV-CCV-CV,cl,estructura CV-CCV-CVC-CV-CCV-CV
+simebraneclajun,10,si-me-bra-ne-cla-jun,CV-CV-CCV-CV-CCV-CVC,cl,estructura CV-CV-CCV-CV-CCV-CVC
+cibsdoflunirvi,10,cibs-do-flu-nir-vi,CVCC-CV-CCV-CVC-CV,coda bs,estructura CVCC-CV-CCV-CVC-CV
+frabelnugrijensme,10,fra-bel-nu-gri-jens-me,CCV-CVC-CV-CCV-CVCC-CV,coda ns,estructura CCV-CVC-CV-CCV-CVCC-CV
+lorclucensquefante,10,lor-clu-cens-que-fan-te,CVC-CCV-CVCC-CV-CVC-CV,coda ns,estructura CVC-CCV-CVCC-CV-CVC-CV
+penlensforstusu,10,pen-lens-fors-tu-su,CVC-CVCC-CVCC-CV-CV,coda ns,estructura CVC-CVCC-CVCC-CV-CV
+tibribursdemurflu,10,ti-bri-burs-de-mur-flu,CV-CCV-CVCC-CV-CVC-CCV,coda rs,estructura CV-CCV-CVCC-CV-CVC-CCV
+blececrijaltal,10,ble-ce-cri-jal-tal,CCV-CV-CCV-CVC-CVC,cr,estructura CCV-CV-CCV-CVC-CVC
+dunjurcrofucho,10,dun-jur-cro-fu-cho,CVC-CVC-CCV-CV-CV,cr,estructura CVC-CVC-CCV-CV-CV
+madoquincrozus,10,ma-do-quin-cro-zus,CV-CV-CVC-CCV-CVC,cr,estructura CV-CV-CVC-CCV-CVC
+plinlusquencrumi,10,plin-lus-quen-cru-mi,CCVC-CVC-CVC-CCV-CV,cr,estructura CCVC-CVC-CVC-CCV-CV
+busdrirsaterin,10,bus-drir-sa-te-rin,CVC-CCVC-CV-CV-CVC,dr,estructura CVC-CCVC-CV-CV-CVC
+drichozaclistuz,10,dri-cho-za-clis-tuz,CCV-CV-CV-CCVC-CVC,dr,estructura CCV-CV-CV-CCVC-CVC
+dulcubisesdri,10,dul-cu-bi-ses-dri,CVC-CV-CV-CVC-CCV,dr,estructura CVC-CV-CV-CVC-CCV
+nucusterglacadrul,10,nu-cus-ter-gla-ca-drul,CV-CVC-CVC-CCV-CV-CCVC,dr,estructura CV-CVC-CVC-CCV-CV-CCVC
+baltulasflastoz,10,bal-tu-las-flas-toz,CVC-CV-CVC-CCVC-CVC,fl,estructura CVC-CV-CVC-CCVC-CVC
+fonflesmasambluno,10,fon-fles-ma-sam-blu-no,CVC-CCVC-CV-CVC-CCV-CV,fl,estructura CVC-CCVC-CV-CVC-CCV-CV
+lenflumitolmen,10,len-flu-mi-tol-men,CVC-CCV-CV-CVC-CVC,fl,estructura CVC-CCV-CV-CVC-CVC
+mursbarputirgueflil,10,murs-bar-pu-tir-gue-flil,CVCC-CVC-CV-CVC-CV-CCVC,fl,estructura CVCC-CVC-CV-CVC-CV-CCVC
+culfremopibin,10,cul-fre-mo-pi-bin,CVC-CCV-CV-CV-CVC,fr,estructura CVC-CCV-CV-CV-CVC
+flomifribespi,10,flo-mi-fri-bes-pi,CCV-CV-CCV-CVC-CV,fr,estructura CCV-CV-CCV-CVC-CV
+janfrintursiglis,10,jan-frin-tur-si-glis,CVC-CCVC-CVC-CV-CCVC,fr,estructura CVC-CCVC-CVC-CV-CCVC
+jochutesfruldicul,10,jo-chu-tes-frul-di-cul,CV-CV-CVC-CCVC-CV-CVC,fr,estructura CV-CV-CVC-CCVC-CV-CVC
+blusicaglenvurdi,10,blu-si-ca-glen-vur-di,CCV-CV-CV-CCVC-CVC-CV,gl,estructura CCV-CV-CV-CCVC-CVC-CV
+bonusglasmosve,10,bo-nus-glas-mos-ve,CV-CVC-CCVC-CVC-CV,gl,estructura CV-CVC-CCVC-CVC-CV
+glalilpovusoz,10,gla-lil-po-vu-soz,CCV-CVC-CV-CV-CVC,gl,estructura CCV-CVC-CV-CV-CVC
+glocafustosfra,10,glo-ca-fus-tos-fra,CCV-CV-CVC-CVC-CCV,gl,estructura CCV-CV-CVC-CVC-CCV
+fusisprefegro,10,fu-sis-pre-fe-gro,CV-CVC-CCV-CV-CCV,gr,estructura CV-CVC-CCV-CV-CCV
+juchurronfusirgra,10,ju-chu-rron-fu-sir-gra,CV-CV-CVC-CV-CVC-CCV,gr,estructura CV-CV-CVC-CV-CVC-CCV
+mudumolgracul,10,mu-du-mol-gra-cul,CV-CV-CVC-CCV-CVC,gr,estructura CV-CV-CVC-CCV-CVC
+ñibirgrutemintol,10,ñi-bir-gru-te-min-tol,CV-CVC-CCV-CV-CVC-CVC,gr,estructura CV-CVC-CCV-CV-CVC-CVC
+saoquircisbro,10,sa-o-quir-cis-bro,CV-V-CVC-CVC-CCV,hiato ao,estructura CV-V-CVC-CVC-CCV
+vursbrisbaqueol,10,vurs-bris-ba-que-ol,CVCC-CCVC-CV-CV-VC,hiato eo,estructura CVCC-CCVC-CV-CV-VC
+loaminsgremu,10,lo-a-mins-gre-mu,CV-V-CVCC-CCV-CV,hiato oa,estructura CV-V-CVCC-CCV-CV
+tidoafrenibal,10,ti-do-a-fre-ni-bal,CV-CV-V-CCV-CV-CVC,hiato oa,estructura CV-CV-V-CCV-CV-CVC
+bortufoesus,10,bor-tu-fo-e-sus,CVC-CV-CV-V-CVC,hiato oe,estructura CVC-CV-CV-V-CVC
+lloertaspisdo,10,llo-er-tas-pis-do,CV-VC-CVC-CVC-CV,hiato oe,estructura CV-VC-CVC-CVC-CV
+albonscobimus,10,al-bons-co-bi-mus,VC-CVCC-CV-CV-CVC,inversa,estructura VC-CVCC-CV-CV-CVC
+escansguprebarsle,10,es-cans-gu-pre-bars-le,VC-CVCC-CV-CCV-CVCC-CV,inversa,estructura VC-CVCC-CV-CCV-CVCC-CV
+istunspledilenti,10,is-tuns-ple-di-len-ti,VC-CVCC-CCV-CV-CVC-CV,inversa,estructura VC-CVCC-CCV-CV-CVC-CV
+osbrepontramu,10,os-bre-pon-tra-mu,VC-CCV-CVC-CCV-CV,inversa,estructura VC-CCV-CVC-CCV-CV
+undimecospenqui,10,un-di-me-cos-pen-qui,VC-CV-CV-CVC-CVC-CV,inversa,estructura VC-CV-CV-CVC-CVC-CV
+cabsprocuntagova,10,cabs-pro-cun-ta-go-va,CVCC-CCV-CVC-CV-CV-CV,mixta,estructura CVCC-CCV-CVC-CV-CV-CV
+gatinquesdrofi,10,ga-tin-ques-dro-fi,CV-CVC-CVC-CCV-CV,mixta,estructura CV-CVC-CVC-CCV-CV
+misenjestrugu,10,mi-sen-jes-tru-gu,CV-CVC-CVC-CCV-CV,mixta,estructura CV-CVC-CVC-CCV-CV
+posjurtemposuz,10,pos-jur-tem-po-suz,CVC-CVC-CVC-CV-CVC,mixta,estructura CVC-CVC-CVC-CV-CVC
+sunorsebompunca,10,su-nor-se-bom-pun-ca,CV-CVC-CV-CVC-CVC-CV,mixta,estructura CV-CVC-CV-CVC-CVC-CV
+vaclenquisunfuz,10,va-clen-qui-sun-fuz,CV-CCVC-CV-CVC-CVC,mixta,estructura CV-CCVC-CV-CVC-CVC
+gribursplisodovi,10,gri-burs-pli-so-do-vi,CCV-CVCC-CCV-CV-CV-CV,pl,estructura CCV-CVCC-CCV-CV-CV-CV
+niclalemplernunstu,10,ni-cla-lem-pler-nuns-tu,CV-CCV-CVC-CCVC-CVCC-CV,pl,estructura CV-CCV-CVC-CCVC-CVCC-CV
+pliduntagrasedul,10,pli-dun-ta-gra-se-dul,CCV-CVC-CV-CCV-CV-CVC,pl,estructura CCV-CVC-CV-CCV-CV-CVC
+plusirguirrabro,10,plu-sir-gui-rra-bro,CCV-CVC-CV-CV-CCV,pl,estructura CCV-CVC-CV-CV-CCV
+defanquefrosnarpra,10,de-fan-que-fros-nar-pra,CV-CVC-CV-CCVC-CVC-CCV,pr,estructura CV-CVC-CV-CCVC-CVC-CCV
+purmuprascafigli,10,pur-mu-pras-ca-fi-gli,CVC-CV-CCVC-CV-CV-CCV,pr,estructura CVC-CV-CCVC-CV-CV-CCV
+quemprastaclechul,10,quem-pras-ta-cle-chul,CVC-CCVC-CV-CCV-CVC,pr,estructura CVC-CCVC-CV-CCV-CVC
+vedanfalprenañi,10,ve-dan-fal-pre-na-ñi,CV-CVC-CVC-CCV-CV-CV,pr,estructura CV-CVC-CVC-CCV-CV-CV
+flibuguintraciba,10,fli-bu-guin-tra-ci-ba,CCV-CV-CVC-CCV-CV-CV,tr,estructura CCV-CV-CVC-CCV-CV-CV
+quindetecriritre,10,quin-de-te-cri-ri-tre,CVC-CV-CV-CCV-CV-CCV,tr,estructura CVC-CV-CV-CCV-CV-CCV
+trefalusfeflu,10,tre-fa-lus-fe-flu,CCV-CV-CVC-CV-CCV,tr,estructura CCV-CV-CVC-CV-CCV
+verditrafobrupa,10,ver-di-tra-fo-bru-pa,CVC-CV-CCV-CV-CCV-CV,tr,estructura CVC-CV-CCV-CV-CCV-CV

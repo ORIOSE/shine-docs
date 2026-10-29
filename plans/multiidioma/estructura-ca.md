@@ -159,7 +159,7 @@ desglosa en tres (la ela geminada va en 4.3).
 | Travades amb l (CCV), Travades amb r (CCV), Dígrafs complexos | Level2 | pla, bra, tren, cotxe, metge |
 | Complexes: CCVC | Level2 | plat, tren, drac |
 | Complexes: VCC i CVCC | Level3 | temps, forts, trans, ins |
-| Complexes: monosílabos muy frecuentes con coda final simple (nt, rt, st, mp, rc, rp, rn, lp, nc) | Level2 | dent, pont, font, porc, serp, forn, guant, talp, llamp, cranc, tronc |
+| Complexes: monosílabos muy frecuentes con coda final simple (nt, rt, rm, st, mp, rc, rp, rn, lp, nc) | Level2 | dent, pont, font, porc, serp, forn, guant, talp, llamp, cranc, tronc; verbs surt, dorm |
 | Ela geminada (l·l), Apostrofació i contraccions | Level3 | col·legi, l'avi, d'un |
 | Mirall, rotacions i grafies diacrítiques | Cualquiera | transversal |
 

@@ -7,6 +7,7 @@ A continuación se presenta la guía completa de parametrización con **ejemplos
 * **Regla de diseño:** Secuencia fonética agrupada (sílaba \\\\(\\rightarrow\\\\) pseudopalabra \\\\(\\rightarrow\\\\) palabra real del grupo) alternada con un **25-30% de ítems de alivio cognitivo (L0/L1)** 3, 6, 7\.  
 * **Level0 (5 años \- 6 ítems):** \["ma", "pa", "sopa", "pato", "mesa", "lo"\]  
 * **Level1 (6 años \- 8 ítems):** \["pro", "pso" (pseudo), "cro", "sol" (alivio), "cra", "proba" (pseudo), "profe", "casa" (alivio)\]  
+  *Nota (decisión E10, 2026-10-28): error de ejemplo. Las trabadas (pro, cro, cra) son de Level2 según la tabla de nivel mínimo por estructura del catálogo (2.3 y 3.5), que manda; los lotes de Level1 no las usan.*  
 * **Level2 (7 años \- 8 ítems):** \["Fa", "fau" (pseudo), "Fauna", "pelo" (alivio), "fra", "frou" (pseudo), "Franja", "mano" (alivio)\]  
 * **Level3 (8 años \- 10 ítems):** \["tra", "trau" (pseudo), "transporte", "no" (alivio), "bla", "blau" (pseudo), "blanco", "si" (alivio), "tras", "trasgo"\]  
 * **Level4 (9 años \- 10 ítems):** \["mecanismo", "mecandina" (pseudo), "pan" (alivio), "geografía", "geoplasma" (pseudo), "luna" (alivio), "carretera", "bicicleta", "sol" (alivio), "pantalla"\]  
@@ -51,6 +52,7 @@ A continuación se presenta la guía completa de parametrización con **ejemplos
 * **Regla de diseño:** Mismo patrón de andamiaje y alivio que vertical\_list con tiempos descendentes (field\_seconds) 11\.  
 * **Level0 (5 años \- 6 ítems, 3.0 s/elem):** \["ma", "pe", "li", "so", "tu", "na"\] 11  
 * **Level1 (6 años \- 8 ítems, 2.5 s/elem):** \["pso", "pro", "ma" (alivio), "cro", "cra", "sol" (alivio), "qui", "rra"\] 11  
+  *Nota (decisión E10, 2026-10-28): error de ejemplo. Las trabadas (pro, cro, cra) son de Level2 según la tabla de nivel mínimo por estructura del catálogo (2.3 y 3.5), que manda; los lotes de Level1 no las usan.*  
 * **Level2 (7 años \- 8 ítems, 2.0 s/elem):** \["pla", "plau" (pseudo), "plato", "pelo" (alivio), "fra", "frou" (pseudo), "franja", "mano" (alivio)\] 11  
 * **Level3 (8 años \- 10 ítems, 2.0 s/elem):** \["tra", "trau" (pseudo), "trapo", "no" (alivio), "bla", "blau" (pseudo), "blanco", "si" (alivio), "trans", "trasgo"\] 11  
 * **Level4 (9 años \- 10 ítems, 1.8 s/elem):** \["plito", "brasu", "sol" (alivio), "traco", "frelu", "luna" (alivio), "clopi", "drate", "pan" (alivio), "groli"\] 11  

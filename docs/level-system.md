@@ -186,6 +186,15 @@ Fin del bloque: cuando todas las áreas están cerradas, o al completar `initial
 no cerrada se fija en su `level` actual, `field_onboarding_state = regular`, se registra un
 `userarealevel_log` por área con `reason = initial`.
 
+**Áreas que no se pueden probar (FASE 18, 06).** Un área abierta sin actividades en su
+`probe_level` ni en ningún nivel inferior, en el idioma del alumno, cuenta como cerrada al decidir
+el fin del bloque. El generador la omite en cada sesión y nunca recibiría una valoración, así que
+sin esta regla el bloque no terminaba hasta `initial_max_sessions` y, con el resto de áreas
+cerradas, la siguiente sesión salía vacía (`422 no_content`) para siempre. Hoy pasa con Funciones
+Ejecutivas, sin contenido en los dos idiomas. Implementado en `SessionEvaluator::probeable()`.
+Para un usuario que ya estuviera en ese estado, `planInitial()` genera una sesión de confirmación
+con todas las áreas al nivel vigente y, al completarla, el bloque se cierra.
+
 ### 5.2 Evaluación periódica y disparada
 
 Fuera del bloque inicial, una evaluación consta de **2 sesiones de ajuste** consecutivas (una
@@ -333,14 +342,18 @@ generarSesion(usuario):
 ```
 sesionRegular(niveles):
   huecos = []
-  areasOrdenadas = rotacion(areas)        # ver nota
+  # solo rotan las areas con actividades en su nivel o por debajo, en el idioma del alumno
+  # (2026-10-29: un area vacia, como Funciones Ejecutivas, ya no se queda un hueco que se pierde)
+  areasOrdenadas = rotacion(areas con contenido)        # ver nota
   para i en 1..regular_slots:
-      area = areasOrdenadas[i mod n]
-      candidatas = actividades con field_main_area == area
-                   y field_activity_level contiene niveles[area].level
-                   y no hechas por el usuario en las ultimas recent_window sesiones
-      si vacio: repetir con level - 1 hasta Level0; si sigue vacio, saltar hueco
-      huecos += aleatoria(candidatas)
+      para area en areasOrdenadas[i mod n], la siguiente, ... (todas como mucho):
+          candidatas = actividades con field_main_area == area
+                       y field_activity_level contiene niveles[area].level
+                       y no hechas por el usuario en las ultimas recent_window sesiones
+                       y no elegidas ya en esta sesion
+          si vacio: repetir con level - 1 hasta Level0
+          si hay candidatas: huecos += aleatoria(candidatas); siguiente hueco
+      si ninguna area tiene candidatas: saltar hueco
   huecos += siguienteDelCiclo(usuario)     # §7, uno por ciclo activo
   return crear node session(kind=regular, field_activities=huecos)
 ```

@@ -1,0 +1,71 @@
+nivell,objectiu,distractors,tipus,nota
+2,ç,c|s|z,grafia,
+2,ny,n|y|in,grafia,
+2,ix,x|is|xi,grafia,
+2,ça,ca|sa|za,grafia,
+2,nya,na|ya|nia,grafia,
+2,xa,ix|sa|ixa,grafia,
+3,l·l,ll|l|il,grafia,
+3,l·la,lla|la|ila,grafia,
+3,ella,el·la|ela|eia,grafia,
+3,çó,có|só|ço,grafia,
+3,nyo,no|yo|nio,grafia,
+3,eix,ix|ex|eis,grafia,
+4,è,é|e|ë,grafia,
+4,ò,ó|o|ö,grafia,
+4,à,a|á|â,grafia,
+4,té,tè|te|tê,grafia,
+4,pòt,pót|pot|bòt,grafia,
+4,mès,més|mes|nès,grafia,
+5,ï,i|í|ì,grafia,
+5,ü,u|ú|ù,grafia,
+5,güe,gue|qüe|gué,grafia,
+5,qüi,qui|güi|quí,grafia,
+5,veïna,veina|veína|vaïna,grafia,
+5,pingüí,pinguí|pingüi|piugüí,grafia,
+6,més,mes|mès|nés,grafia,
+6,són,son|sòn|sóm,grafia,
+6,té,te|tè|fé,grafia,
+6,pèl,pel|pél|bèl,grafia,
+6,sòl,sol|sól|sòi,grafia,
+6,què,que|qué|quë,grafia,
+7,plo,pol|blo|pro|ple,inversio,
+7,dre,der|bre|dru,travada,
+7,fra,far|fla|fro,inversio,
+7,fre,fer|fle|fri,travada,
+7,dri,dir|bri|dra,inversio,
+7,cra,car|cla|cro,travada,
+7,gro,gor|glo|gre,inversio,
+7,cru,cur|clu|cra,travada,
+7,bre,ber|dre|pre|ble|bro,inversio,
+7,clu,cul|cru|clo,travada,
+8,pro|bro,por|plo|pru|bor,travada,
+8,fro|flo,for|fra|fol,travada,
+8,gru|glu,gur|gra|gul,travada,
+8,plu|blu,pul|pru|pli|bul,travada,
+8,fle|fre,fel|flu|fer,travada,
+8,gri|gli,gir|gre|gil,travada,
+8,fli|fri,fil|flo|fir,travada,
+8,gro|glo,gor|gru|gol,travada,
+8,dro|bro,dor|dri|bor,travada,
+8,cla|cra,cal|clu|car,travada,
+9,escala,cscala|escaia|escela|esoala,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,pàgina,bàgina|pàglna|pàqina|qàgina,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,pizza,bizza|pisza|pizze|plzza,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,pedal,pcdal|pedai|pedol|qedal,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,cotxet,cctxet|cofxet|eotxet|ootxet,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,ferro,fcrro|fenro|ferno|ferrc,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,diner,dincr|diuer|dlner|qiner,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,perill,berill|parill|penill|periil,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,pintor,bintor|pintcr|pinton|piutor,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+9,gegant,gagant|gcgant|geganf|gegent,pseudo_1_lletra,distractors comprovats: no existeixen ni en castellà ni en català
+10,nota|mota,mofa|moto|nata|noto,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,pau|pou,bou|peu|pon,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,por|par,bar|per|pon,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,fam|tam,fan|fem|tan|tem,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,moto|noto,mato|mota|nota,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,fira|tira,fina|tina|tiro,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,bala|pala,bela|bola|pela,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,taller|faller,fallar|fallen|tallar|tallen,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,mama|mana,mena|mona|nana,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada
+10,bar|par,ban|per|por,parell_real,doble objectiu; distractors: paraules reals amb una lletra de forma semblant canviada

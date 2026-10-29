@@ -785,6 +785,14 @@ sigue instalado solo porque las entidades de configuración llevan `langcode: en
 - **Scripts por entorno**: `scripts/migrate-langcode-en-to-es.php` (migración única del contenido
   anterior a la FASE 18), `scripts/translate-interface-terms.php` (traducción `ca` de áreas,
   ciclo y mensajes; idempotente) y, desde el subplan 02, los términos fonológicos por idioma.
+- **Nombres de área en las respuestas** (`area_name` de `level_changes` y `areas` en
+  `session/{uuid}/complete`): son la etiqueta original del término (castellano), no la
+  traducción. Son informativos; la app no los muestra (usa sus nombres cortos por idioma y pide
+  las áreas a `/{lang}/jsonapi/taxonomy_term/areas`).
+- **Verificación (subplan 06, 2026-10-27)**: recorrido completo por la API con un alumno `es` y
+  otro `ca` (bloque inicial, regular, auto-evaluación, estadísticas), cambio de idioma de un
+  tercer alumno y lotes de prueba; detalle en docs/progress.md. Detectado y corregido el bloqueo
+  del bloque inicial con un área sin contenido (docs/level-system.md §5.1).
 
 ### Token de alumno (grant OAuth `shine_learner`)
 

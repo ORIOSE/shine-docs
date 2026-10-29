@@ -1,0 +1,721 @@
+opcio,nivell,idioma,grup,nom,existent,slug,criteri
+A,9,ca,ca-9-01,escombriaire,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-01,escultor,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-01,espantaocells,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-01,espia,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-01,escolta,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-01,estudiant,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-02,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-02,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-02,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-02,camilla,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-02,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-02,calendari,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-03,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-03,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-03,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-03,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-03,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-03,pacient,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-04,espiga,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-04,espàtula,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-04,escuradents,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-04,esquí,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-04,estalactita,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-04,espaguetis,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-05,mariner,no,,"personas + ma- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-05,maquinista,no,,"personas + ma- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-05,malabarista,no,,"personas + ma- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-05,maniquí,no,,"personas + ma- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-05,marioneta,no,,"personas + ma- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-05,maratonià,no,,"personas + ma- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-06,pirata,sí,pirata,personas + pi-
+A,9,ca,ca-9-06,pilot,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-06,pitonissa,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-06,picapedrer,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-06,pianista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-06,piragüista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-07,esquiador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-07,escalador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-07,espantaocells,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-07,espia,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-07,escolta,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-07,estudiant,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-08,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-08,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-08,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-08,camilla,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-08,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-08,calendari,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-09,pallasso,sí,payaso,personas + pa-
+A,9,ca,ca-9-09,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-09,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-09,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-09,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-09,pacient,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-10,espàrrec,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-10,espàtula,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-10,escuradents,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-10,esquí,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-10,estalactita,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-10,espaguetis,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-11,cavaller,sí,caballero,personas + ca-
+A,9,ca,ca-9-11,capità,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-11,cavernícola,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-11,camioner,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-11,caminant,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-11,camarògraf,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-12,marieta,sí,mariquita,rojo + ma-
+A,9,ca,ca-9-12,maduixa,sí,fresa,rojo + ma-
+A,9,ca,ca-9-12,magrana,sí,granada,rojo + ma-
+A,9,ca,ca-9-12,maó,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+A,9,ca,ca-9-12,matrioixca,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+A,9,ca,ca-9-12,matamosques,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+A,9,ca,ca-9-13,esquiador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-13,escalador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-13,escombriaire,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-13,escultor,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-13,escolta,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-13,estudiant,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-14,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-14,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-14,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-14,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-14,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-14,calendari,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-15,pallasso,sí,payaso,personas + pa-
+A,9,ca,ca-9-15,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-15,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-15,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-15,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-15,pacient,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-16,espàrrec,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-16,espiga,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-16,escuradents,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-16,esquí,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-16,estalactita,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-16,espaguetis,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-17,banyera,sí,banera,blanco + ba-
+A,9,ca,ca-9-17,bata,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-17,batedora,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-17,baralla,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-17,ballarina,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-17,bacallà,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-18,esquiador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-18,escalador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-18,escombriaire,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-18,espantaocells,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-18,espia,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-18,escolta,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-19,esquiador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-19,escalador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-19,escombriaire,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-19,escultor,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-19,espantaocells,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-19,espia,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-20,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-20,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-20,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-20,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-20,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-20,camilla,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-21,pallasso,sí,payaso,personas + pa-
+A,9,ca,ca-9-21,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-21,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-21,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-21,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-21,pacient,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-22,espàrrec,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-22,espiga,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-22,espàtula,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-22,esquí,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-22,estalactita,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-22,espaguetis,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-23,espàtula,no,,"gris + es- (imatge nova, etiqueta: gris)"
+A,9,ca,ca-9-23,escut,no,,"gris + es- (imatge nova, etiqueta: gris)"
+A,9,ca,ca-9-23,estàtua,no,,"gris + es- (imatge nova, etiqueta: gris)"
+A,9,ca,ca-9-23,estufa,no,,"gris + es- (imatge nova, etiqueta: gris)"
+A,9,ca,ca-9-23,esquella,no,,"gris + es- (imatge nova, etiqueta: gris)"
+A,9,ca,ca-9-23,escafandre,no,,"gris + es- (imatge nova, etiqueta: gris)"
+A,9,ca,ca-9-24,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-24,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-24,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-24,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-24,camilla,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-24,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-25,escalador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-25,escombriaire,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-25,escultor,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-25,espia,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-25,escolta,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-25,estudiant,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-26,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-26,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-26,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-26,camilla,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-26,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-26,calendari,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-27,pallasso,sí,payaso,personas + pa-
+A,9,ca,ca-9-27,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-27,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-27,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-27,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-27,pacient,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-28,espàrrec,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-28,espiga,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-28,espàtula,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-28,escuradents,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-28,estalactita,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-28,espaguetis,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-29,avi,no,,"personas + a- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-29,apicultor,no,,"personas + a- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-29,acròbata,no,,"personas + a- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-29,animadora,no,,"personas + a- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-29,aventurer,no,,"personas + a- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-29,acordionista,no,,"personas + a- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-30,pallasso,sí,payaso,personas + pa-
+A,9,ca,ca-9-30,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-30,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-30,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-30,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-30,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-31,esquiador,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-31,escombriaire,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-31,escultor,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-31,espantaocells,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-31,espia,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-31,estudiant,no,,"personas + es- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-32,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-32,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-32,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-32,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-32,camilla,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-32,calendari,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+A,9,ca,ca-9-33,pallasso,sí,payaso,personas + pa-
+A,9,ca,ca-9-33,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-33,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-33,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-33,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-33,pacient,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+A,9,ca,ca-9-34,espàrrec,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-34,espiga,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-34,espàtula,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-34,escuradents,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-34,esquí,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-34,espaguetis,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-35,cacauet,no,,"marrón + ca- (imatge nova, etiqueta: marrón)"
+A,9,ca,ca-9-35,cacau,no,,"marrón + ca- (imatge nova, etiqueta: marrón)"
+A,9,ca,ca-9-35,canyella,no,,"marrón + ca- (imatge nova, etiqueta: marrón)"
+A,9,ca,ca-9-35,calaix,no,,"marrón + ca- (imatge nova, etiqueta: marrón)"
+A,9,ca,ca-9-35,calaixera,no,,"marrón + ca- (imatge nova, etiqueta: marrón)"
+A,9,ca,ca-9-35,caravel·la,no,,"marrón + ca- (imatge nova, etiqueta: marrón)"
+A,9,ca,ca-9-36,espàrrec,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-36,espiga,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-36,espàtula,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-36,escuradents,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-36,esquí,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,9,ca,ca-9-36,estalactita,no,,"alargado + es- (imatge nova, etiqueta: alargado)"
+A,10,ca,ca-10-01,casa,sí,casa,família ca_a i _apa
+A,10,ca,ca-10-01,cama,sí,pierna,família ca_a i _apa
+A,10,ca,ca-10-01,capa,sí,capa,família ca_a i _apa
+A,10,ca,ca-10-01,cara,sí,cara,família ca_a i _apa
+A,10,ca,ca-10-01,mapa,sí,mapa,família ca_a i _apa
+A,10,ca,ca-10-01,tapa,sí,tapa,família ca_a i _apa
+A,10,ca,ca-10-02,copa,sí,copa,família co_a i _opa
+A,10,ca,ca-10-02,cola,sí,pegamento,família co_a i _opa
+A,10,ca,ca-10-02,cova,sí,cueva,família co_a i _opa
+A,10,ca,ca-10-02,coca,no,,família co_a i _opa
+A,10,ca,ca-10-02,sopa,sí,sopa,família co_a i _opa
+A,10,ca,ca-10-02,capa,sí,capa,família co_a i _opa
+A,10,ca,ca-10-03,casa,sí,casa,família ca_a i co_a
+A,10,ca,ca-10-03,cama,sí,pierna,família ca_a i co_a
+A,10,ca,ca-10-03,cara,sí,cara,família ca_a i co_a
+A,10,ca,ca-10-03,capa,sí,capa,família ca_a i co_a
+A,10,ca,ca-10-03,copa,sí,copa,família ca_a i co_a
+A,10,ca,ca-10-03,cola,sí,pegamento,família ca_a i co_a
+A,10,ca,ca-10-04,mapa,sí,mapa,família _apa i _opa
+A,10,ca,ca-10-04,tapa,sí,tapa,família _apa i _opa
+A,10,ca,ca-10-04,capa,sí,capa,família _apa i _opa
+A,10,ca,ca-10-04,copa,sí,copa,família _apa i _opa
+A,10,ca,ca-10-04,sopa,sí,sopa,família _apa i _opa
+A,10,ca,ca-10-04,cova,sí,cueva,família _apa i _opa
+A,10,ca,ca-10-05,bota,sí,bota,"cadena bo_a, _oca i co_a"
+A,10,ca,ca-10-05,boca,sí,boca,"cadena bo_a, _oca i co_a"
+A,10,ca,ca-10-05,foca,sí,foca,"cadena bo_a, _oca i co_a"
+A,10,ca,ca-10-05,coca,no,,"cadena bo_a, _oca i co_a"
+A,10,ca,ca-10-05,copa,sí,copa,"cadena bo_a, _oca i co_a"
+A,10,ca,ca-10-05,cola,sí,pegamento,"cadena bo_a, _oca i co_a"
+A,10,ca,ca-10-06,bota,sí,bota,cadena _ota i _oma
+A,10,ca,ca-10-06,gota,no,,cadena _ota i _oma
+A,10,ca,ca-10-06,nota,no,,cadena _ota i _oma
+A,10,ca,ca-10-06,goma,sí,goma,cadena _ota i _oma
+A,10,ca,ca-10-06,poma,sí,manzana,cadena _ota i _oma
+A,10,ca,ca-10-06,puma,sí,puma,cadena _ota i _oma
+A,10,ca,ca-10-07,bota,sí,bota,família bo_a i _ota
+A,10,ca,ca-10-07,boca,sí,boca,família bo_a i _ota
+A,10,ca,ca-10-07,foca,sí,foca,família bo_a i _ota
+A,10,ca,ca-10-07,botó,sí,boton,família bo_a i _ota
+A,10,ca,ca-10-07,bata,no,,família bo_a i _ota
+A,10,ca,ca-10-07,gota,no,,família bo_a i _ota
+A,10,ca,ca-10-08,gota,no,,"família _ota, bo_a i _oca"
+A,10,ca,ca-10-08,nota,no,,"família _ota, bo_a i _oca"
+A,10,ca,ca-10-08,bota,sí,bota,"família _ota, bo_a i _oca"
+A,10,ca,ca-10-08,bata,no,,"família _ota, bo_a i _oca"
+A,10,ca,ca-10-08,boca,sí,boca,"família _ota, bo_a i _oca"
+A,10,ca,ca-10-08,coca,no,,"família _ota, bo_a i _oca"
+A,10,ca,ca-10-09,poma,sí,manzana,"cadena _oma, _ota i bot_"
+A,10,ca,ca-10-09,goma,sí,goma,"cadena _oma, _ota i bot_"
+A,10,ca,ca-10-09,gota,no,,"cadena _oma, _ota i bot_"
+A,10,ca,ca-10-09,nota,no,,"cadena _oma, _ota i bot_"
+A,10,ca,ca-10-09,bota,sí,bota,"cadena _oma, _ota i bot_"
+A,10,ca,ca-10-09,botó,sí,boton,"cadena _oma, _ota i bot_"
+A,10,ca,ca-10-10,cara,sí,cara,"família ca_a, cap_ i co_a"
+A,10,ca,ca-10-10,casa,sí,casa,"família ca_a, cap_ i co_a"
+A,10,ca,ca-10-10,cama,sí,pierna,"família ca_a, cap_ i co_a"
+A,10,ca,ca-10-10,capa,sí,capa,"família ca_a, cap_ i co_a"
+A,10,ca,ca-10-10,copa,sí,copa,"família ca_a, cap_ i co_a"
+A,10,ca,ca-10-10,cova,sí,cueva,"família ca_a, cap_ i co_a"
+A,10,ca,ca-10-11,gat,sí,gato,"família g_t, _ot i po_"
+A,10,ca,ca-10-11,got,sí,vaso,"família g_t, _ot i po_"
+A,10,ca,ca-10-11,gos,sí,perro,"família g_t, _ot i po_"
+A,10,ca,ca-10-11,pot,no,,"família g_t, _ot i po_"
+A,10,ca,ca-10-11,pou,no,,"família g_t, _ot i po_"
+A,10,ca,ca-10-11,pop,sí,pulpo,"família g_t, _ot i po_"
+A,10,ca,ca-10-12,pal,sí,palo,"família _al, _ol i co_"
+A,10,ca,ca-10-12,sal,sí,sal,"família _al, _ol i co_"
+A,10,ca,ca-10-12,sol,sí,sol,"família _al, _ol i co_"
+A,10,ca,ca-10-12,col,no,,"família _al, _ol i co_"
+A,10,ca,ca-10-12,cor,sí,corazon,"família _al, _ol i co_"
+A,10,ca,ca-10-12,sac,no,,"família _al, _ol i co_"
+A,10,ca,ca-10-13,sal,sí,sal,"família sa_, _uc i s_l"
+A,10,ca,ca-10-13,sac,no,,"família sa_, _uc i s_l"
+A,10,ca,ca-10-13,suc,sí,zumo,"família sa_, _uc i s_l"
+A,10,ca,ca-10-13,cuc,sí,gusano,"família sa_, _uc i s_l"
+A,10,ca,ca-10-13,ruc,sí,burro,"família sa_, _uc i s_l"
+A,10,ca,ca-10-13,sol,sí,sol,"família sa_, _uc i s_l"
+A,10,ca,ca-10-14,sol,sí,sol,"família s_l, co_ i sa_"
+A,10,ca,ca-10-14,col,no,,"família s_l, co_ i sa_"
+A,10,ca,ca-10-14,cor,sí,corazon,"família s_l, co_ i sa_"
+A,10,ca,ca-10-14,sal,sí,sal,"família s_l, co_ i sa_"
+A,10,ca,ca-10-14,sac,no,,"família s_l, co_ i sa_"
+A,10,ca,ca-10-14,suc,sí,zumo,"família s_l, co_ i sa_"
+A,10,ca,ca-10-15,cuc,sí,gusano,"família _uc, sa_ i _al"
+A,10,ca,ca-10-15,ruc,sí,burro,"família _uc, sa_ i _al"
+A,10,ca,ca-10-15,suc,sí,zumo,"família _uc, sa_ i _al"
+A,10,ca,ca-10-15,sac,no,,"família _uc, sa_ i _al"
+A,10,ca,ca-10-15,sal,sí,sal,"família _uc, sa_ i _al"
+A,10,ca,ca-10-15,pal,sí,palo,"família _uc, sa_ i _al"
+A,10,ca,ca-10-16,gorro,sí,gorro,família g_rr_ i _orro
+A,10,ca,ca-10-16,gorra,sí,gorra,família g_rr_ i _orro
+A,10,ca,ca-10-16,gerro,sí,jarron,família g_rr_ i _orro
+A,10,ca,ca-10-16,gerra,sí,jarra,família g_rr_ i _orro
+A,10,ca,ca-10-16,serra,sí,sierra,família g_rr_ i _orro
+A,10,ca,ca-10-16,porro,no,,família g_rr_ i _orro
+A,10,ca,ca-10-17,pila,sí,pila,família pi_a + parell _ap
+A,10,ca,ca-10-17,pala,sí,pala,família pi_a + parell _ap
+A,10,ca,ca-10-17,pipa,sí,pipa,família pi_a + parell _ap
+A,10,ca,ca-10-17,pica,no,,família pi_a + parell _ap
+A,10,ca,ca-10-17,cap,sí,cabeza,família pi_a + parell _ap
+A,10,ca,ca-10-17,tap,sí,tapon,família pi_a + parell _ap
+A,10,ca,ca-10-18,cap,sí,cabeza,família _ap i na_ + parell p_
+A,10,ca,ca-10-18,tap,sí,tapon,família _ap i na_ + parell p_
+A,10,ca,ca-10-18,nap,no,,família _ap i na_ + parell p_
+A,10,ca,ca-10-18,nas,sí,nariz,família _ap i na_ + parell p_
+A,10,ca,ca-10-18,pa,sí,pan,família _ap i na_ + parell p_
+A,10,ca,ca-10-18,pi,sí,pino,família _ap i na_ + parell p_
+A,10,ca,ca-10-19,castell,sí,castillo,família _artell i c_stell + parell ll_t
+A,10,ca,ca-10-19,cistell,sí,cesta,família _artell i c_stell + parell ll_t
+A,10,ca,ca-10-19,cartell,no,,família _artell i c_stell + parell ll_t
+A,10,ca,ca-10-19,martell,sí,martillo,família _artell i c_stell + parell ll_t
+A,10,ca,ca-10-19,llet,sí,leche,família _artell i c_stell + parell ll_t
+A,10,ca,ca-10-19,llit,sí,cama,família _artell i c_stell + parell ll_t
+A,10,ca,ca-10-20,lluna,sí,luna,família ll_na i ll_ma + parell o_
+A,10,ca,ca-10-20,llana,sí,lana,família ll_na i ll_ma + parell o_
+A,10,ca,ca-10-20,llama,no,,família ll_na i ll_ma + parell o_
+A,10,ca,ca-10-20,llima,sí,lima,família ll_na i ll_ma + parell o_
+A,10,ca,ca-10-20,ou,sí,huevo,família ll_na i ll_ma + parell o_
+A,10,ca,ca-10-20,os,sí,hueso,família ll_na i ll_ma + parell o_
+A,10,ca,ca-10-21,pinya,sí,pina,dos trios: pin_a i _aleta
+A,10,ca,ca-10-21,pinta,sí,peine,dos trios: pin_a i _aleta
+A,10,ca,ca-10-21,pinça,no,,dos trios: pin_a i _aleta
+A,10,ca,ca-10-21,galeta,sí,galleta,dos trios: pin_a i _aleta
+A,10,ca,ca-10-21,maleta,sí,maleta,dos trios: pin_a i _aleta
+A,10,ca,ca-10-21,paleta,no,,dos trios: pin_a i _aleta
+A,10,ca,ca-10-22,gat,sí,gato,dos trios: g_t i pi_a
+A,10,ca,ca-10-22,got,sí,vaso,dos trios: g_t i pi_a
+A,10,ca,ca-10-22,gos,sí,perro,dos trios: g_t i pi_a
+A,10,ca,ca-10-22,pila,sí,pila,dos trios: g_t i pi_a
+A,10,ca,ca-10-22,pala,sí,pala,dos trios: g_t i pi_a
+A,10,ca,ca-10-22,pipa,sí,pipa,dos trios: g_t i pi_a
+A,10,ca,ca-10-23,pal,sí,palo,dos trios: _al/_ol i _oma
+A,10,ca,ca-10-23,sal,sí,sal,dos trios: _al/_ol i _oma
+A,10,ca,ca-10-23,sol,sí,sol,dos trios: _al/_ol i _oma
+A,10,ca,ca-10-23,poma,sí,manzana,dos trios: _al/_ol i _oma
+A,10,ca,ca-10-23,goma,sí,goma,dos trios: _al/_ol i _oma
+A,10,ca,ca-10-23,puma,sí,puma,dos trios: _al/_ol i _oma
+A,10,ca,ca-10-24,ruc,sí,burro,dos trios: _uc i pin_a
+A,10,ca,ca-10-24,cuc,sí,gusano,dos trios: _uc i pin_a
+A,10,ca,ca-10-24,suc,sí,zumo,dos trios: _uc i pin_a
+A,10,ca,ca-10-24,pinya,sí,pina,dos trios: _uc i pin_a
+A,10,ca,ca-10-24,pinta,sí,peine,dos trios: _uc i pin_a
+A,10,ca,ca-10-24,pinça,no,,dos trios: _uc i pin_a
+A,10,ca,ca-10-25,galeta,sí,galleta,dos trios: _aleta i _ap
+A,10,ca,ca-10-25,maleta,sí,maleta,dos trios: _aleta i _ap
+A,10,ca,ca-10-25,paleta,no,,dos trios: _aleta i _ap
+A,10,ca,ca-10-25,cap,sí,cabeza,dos trios: _aleta i _ap
+A,10,ca,ca-10-25,tap,sí,tapon,dos trios: _aleta i _ap
+A,10,ca,ca-10-25,nap,no,,dos trios: _aleta i _ap
+A,10,ca,ca-10-26,gorro,sí,gorro,família g_rr_ + parell _iu
+A,10,ca,ca-10-26,gorra,sí,gorra,família g_rr_ + parell _iu
+A,10,ca,ca-10-26,gerro,sí,jarron,família g_rr_ + parell _iu
+A,10,ca,ca-10-26,gerra,sí,jarra,família g_rr_ + parell _iu
+A,10,ca,ca-10-26,riu,sí,rio,família g_rr_ + parell _iu
+A,10,ca,ca-10-26,niu,sí,nido,família g_rr_ + parell _iu
+A,10,ca,ca-10-27,castell,sí,castillo,dos trios: c_stell i ll_na
+A,10,ca,ca-10-27,cistell,sí,cesta,dos trios: c_stell i ll_na
+A,10,ca,ca-10-27,cartell,no,,dos trios: c_stell i ll_na
+A,10,ca,ca-10-27,lluna,sí,luna,dos trios: c_stell i ll_na
+A,10,ca,ca-10-27,llana,sí,lana,dos trios: c_stell i ll_na
+A,10,ca,ca-10-27,llama,no,,dos trios: c_stell i ll_na
+A,10,ca,ca-10-28,pot,no,,dos trios: po_ i ll_ma
+A,10,ca,ca-10-28,pou,no,,dos trios: po_ i ll_ma
+A,10,ca,ca-10-28,pop,sí,pulpo,dos trios: po_ i ll_ma
+A,10,ca,ca-10-28,llima,sí,lima,dos trios: po_ i ll_ma
+A,10,ca,ca-10-28,llama,no,,dos trios: po_ i ll_ma
+A,10,ca,ca-10-28,llana,sí,lana,dos trios: po_ i ll_ma
+A,10,ca,ca-10-29,pica,no,,dos trios: pi_a i _ota
+A,10,ca,ca-10-29,pipa,sí,pipa,dos trios: pi_a i _ota
+A,10,ca,ca-10-29,pila,sí,pila,dos trios: pi_a i _ota
+A,10,ca,ca-10-29,gota,no,,dos trios: pi_a i _ota
+A,10,ca,ca-10-29,nota,no,,dos trios: pi_a i _ota
+A,10,ca,ca-10-29,bota,sí,bota,dos trios: pi_a i _ota
+A,10,ca,ca-10-30,nap,no,,dos trios: na_ i co_
+A,10,ca,ca-10-30,nas,sí,nariz,dos trios: na_ i co_
+A,10,ca,ca-10-30,tap,sí,tapon,dos trios: na_ i co_
+A,10,ca,ca-10-30,col,no,,dos trios: na_ i co_
+A,10,ca,ca-10-30,cor,sí,corazon,dos trios: na_ i co_
+A,10,ca,ca-10-30,sol,sí,sol,dos trios: na_ i co_
+A,10,ca,ca-10-31,cavallet,sí,caballito,"tres parells: cavalle_, ca_ell, esc_la"
+A,10,ca,ca-10-31,cavaller,sí,caballero,"tres parells: cavalle_, ca_ell, esc_la"
+A,10,ca,ca-10-31,camell,sí,camello,"tres parells: cavalle_, ca_ell, esc_la"
+A,10,ca,ca-10-31,cabell,sí,pelo,"tres parells: cavalle_, ca_ell, esc_la"
+A,10,ca,ca-10-31,escala,sí,escalera,"tres parells: cavalle_, ca_ell, esc_la"
+A,10,ca,ca-10-31,escola,sí,escuela,"tres parells: cavalle_, ca_ell, esc_la"
+A,10,ca,ca-10-32,sabata,sí,zapato,"tres parells: sa_ata, ban_era, o_ella"
+A,10,ca,ca-10-32,safata,sí,bandeja,"tres parells: sa_ata, ban_era, o_ella"
+A,10,ca,ca-10-32,banyera,sí,banera,"tres parells: sa_ata, ban_era, o_ella"
+A,10,ca,ca-10-32,bandera,sí,bandera,"tres parells: sa_ata, ban_era, o_ella"
+A,10,ca,ca-10-32,ovella,sí,oveja,"tres parells: sa_ata, ban_era, o_ella"
+A,10,ca,ca-10-32,orella,sí,oreja,"tres parells: sa_ata, ban_era, o_ella"
+A,10,ca,ca-10-33,pollet,sí,pollito,"tres parells: _ollet, _iu, ro_a"
+A,10,ca,ca-10-33,follet,sí,duende,"tres parells: _ollet, _iu, ro_a"
+A,10,ca,ca-10-33,riu,sí,rio,"tres parells: _ollet, _iu, ro_a"
+A,10,ca,ca-10-33,niu,sí,nido,"tres parells: _ollet, _iu, ro_a"
+A,10,ca,ca-10-33,rosa,sí,rosa,"tres parells: _ollet, _iu, ro_a"
+A,10,ca,ca-10-33,roda,sí,rueda,"tres parells: _ollet, _iu, ro_a"
+A,10,ca,ca-10-34,peu,sí,pie,"tres parells: pe_, _ont, _lla"
+A,10,ca,ca-10-34,pes,sí,pesa,"tres parells: pe_, _ont, _lla"
+A,10,ca,ca-10-34,pont,sí,puente,"tres parells: pe_, _ont, _lla"
+A,10,ca,ca-10-34,font,sí,fuente,"tres parells: pe_, _ont, _lla"
+A,10,ca,ca-10-34,olla,sí,olla,"tres parells: pe_, _ont, _lla"
+A,10,ca,ca-10-34,illa,sí,isla,"tres parells: pe_, _ont, _lla"
+A,10,ca,ca-10-35,panda,sí,panda,"tres parells: pan_a, _la, ll_t"
+A,10,ca,ca-10-35,panxa,sí,barriga,"tres parells: pan_a, _la, ll_t"
+A,10,ca,ca-10-35,gla,sí,bellota,"tres parells: pan_a, _la, ll_t"
+A,10,ca,ca-10-35,ala,sí,ala,"tres parells: pan_a, _la, ll_t"
+A,10,ca,ca-10-35,llet,sí,leche,"tres parells: pan_a, _la, ll_t"
+A,10,ca,ca-10-35,llit,sí,cama,"tres parells: pan_a, _la, ll_t"
+A,10,ca,ca-10-36,pa,sí,pan,"tres parells: p_, o_, sa_ata"
+A,10,ca,ca-10-36,pi,sí,pino,"tres parells: p_, o_, sa_ata"
+A,10,ca,ca-10-36,ou,sí,huevo,"tres parells: p_, o_, sa_ata"
+A,10,ca,ca-10-36,os,sí,hueso,"tres parells: p_, o_, sa_ata"
+A,10,ca,ca-10-36,sabata,sí,zapato,"tres parells: p_, o_, sa_ata"
+A,10,ca,ca-10-36,safata,sí,bandeja,"tres parells: p_, o_, sa_ata"
+B,9,ca,ca-9-01,magrana,sí,granada,rojo + ma-
+B,9,ca,ca-9-01,maó,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-01,matrioixca,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-01,matamosques,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-02,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-02,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-02,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-02,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-03,pitonissa,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-03,picapedrer,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-03,pianista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-03,piragüista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-04,cavernícola,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-04,camioner,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-04,caminant,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-04,camarògraf,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-05,batedora,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-05,baralla,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-05,ballarina,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-05,bacallà,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-06,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-06,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-06,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-06,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-07,marieta,sí,mariquita,rojo + ma-
+B,9,ca,ca-9-07,maduixa,sí,fresa,rojo + ma-
+B,9,ca,ca-9-07,matrioixca,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-07,matamosques,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-08,pallasso,sí,payaso,personas + pa-
+B,9,ca,ca-9-08,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-08,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-08,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-09,pirata,sí,pirata,personas + pi-
+B,9,ca,ca-9-09,pilot,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-09,pianista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-09,piragüista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-10,cavaller,sí,caballero,personas + ca-
+B,9,ca,ca-9-10,capità,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-10,caminant,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-10,camarògraf,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-11,banyera,sí,banera,blanco + ba-
+B,9,ca,ca-9-11,bata,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-11,ballarina,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-11,bacallà,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-12,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-12,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-12,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-12,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-13,marieta,sí,mariquita,rojo + ma-
+B,9,ca,ca-9-13,maduixa,sí,fresa,rojo + ma-
+B,9,ca,ca-9-13,magrana,sí,granada,rojo + ma-
+B,9,ca,ca-9-13,maó,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-14,pallasso,sí,payaso,personas + pa-
+B,9,ca,ca-9-14,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-14,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-14,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-15,pirata,sí,pirata,personas + pi-
+B,9,ca,ca-9-15,pilot,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-15,pitonissa,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-15,picapedrer,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-16,cavaller,sí,caballero,personas + ca-
+B,9,ca,ca-9-16,capità,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-16,cavernícola,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-16,camioner,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-17,banyera,sí,banera,blanco + ba-
+B,9,ca,ca-9-17,bata,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-17,batedora,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-17,baralla,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-18,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-18,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-18,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-18,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-19,maduixa,sí,fresa,rojo + ma-
+B,9,ca,ca-9-19,maó,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-19,matrioixca,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-19,matamosques,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-20,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-20,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-20,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-20,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-21,pilot,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-21,picapedrer,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-21,pianista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-21,piragüista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-22,capità,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-22,camioner,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-22,caminant,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-22,camarògraf,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-23,bata,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-23,baralla,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-23,ballarina,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-23,bacallà,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-24,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-24,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-24,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-24,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-25,marieta,sí,mariquita,rojo + ma-
+B,9,ca,ca-9-25,magrana,sí,granada,rojo + ma-
+B,9,ca,ca-9-25,maó,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-25,matamosques,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-26,pallasso,sí,payaso,personas + pa-
+B,9,ca,ca-9-26,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-26,paracaigudista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-26,paleontòleg,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-27,pirata,sí,pirata,personas + pi-
+B,9,ca,ca-9-27,pitonissa,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-27,picapedrer,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-27,piragüista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-28,cavaller,sí,caballero,personas + ca-
+B,9,ca,ca-9-28,cavernícola,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-28,camioner,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-28,camarògraf,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-29,banyera,sí,banera,blanco + ba-
+B,9,ca,ca-9-29,batedora,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-29,baralla,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-29,bacallà,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-30,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-30,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-30,camisa,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-30,capella,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-31,marieta,sí,mariquita,rojo + ma-
+B,9,ca,ca-9-31,maduixa,sí,fresa,rojo + ma-
+B,9,ca,ca-9-31,magrana,sí,granada,rojo + ma-
+B,9,ca,ca-9-31,matrioixca,no,,"rojo + ma- (imatge nova, etiqueta: rojo)"
+B,9,ca,ca-9-32,pallasso,sí,payaso,personas + pa-
+B,9,ca,ca-9-32,paleta,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-32,patinador,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-32,parapentista,no,,"personas + pa- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-33,pirata,sí,pirata,personas + pi-
+B,9,ca,ca-9-33,pilot,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-33,pitonissa,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-33,pianista,no,,"personas + pi- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-34,cavaller,sí,caballero,personas + ca-
+B,9,ca,ca-9-34,capità,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-34,cavernícola,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-34,caminant,no,,"personas + ca- (imatge nova, etiqueta: personas)"
+B,9,ca,ca-9-35,banyera,sí,banera,blanco + ba-
+B,9,ca,ca-9-35,bata,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-35,batedora,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-35,ballarina,no,,"blanco + ba- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-36,cacatua,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-36,calamar,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-36,caravana,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,9,ca,ca-9-36,camisó,no,,"blanco + ca- (imatge nova, etiqueta: blanco)"
+B,10,ca,ca-10-01,casa,sí,casa,família ca_a
+B,10,ca,ca-10-01,cama,sí,pierna,família ca_a
+B,10,ca,ca-10-01,capa,sí,capa,família ca_a
+B,10,ca,ca-10-01,cara,sí,cara,família ca_a
+B,10,ca,ca-10-02,copa,sí,copa,família co_a i _opa
+B,10,ca,ca-10-02,cola,sí,pegamento,família co_a i _opa
+B,10,ca,ca-10-02,cova,sí,cueva,família co_a i _opa
+B,10,ca,ca-10-02,sopa,sí,sopa,família co_a i _opa
+B,10,ca,ca-10-03,capa,sí,capa,família _apa i ca_a
+B,10,ca,ca-10-03,mapa,sí,mapa,família _apa i ca_a
+B,10,ca,ca-10-03,tapa,sí,tapa,família _apa i ca_a
+B,10,ca,ca-10-03,casa,sí,casa,família _apa i ca_a
+B,10,ca,ca-10-04,cara,sí,cara,família ca_a i c_pa
+B,10,ca,ca-10-04,capa,sí,capa,família ca_a i c_pa
+B,10,ca,ca-10-04,copa,sí,copa,família ca_a i c_pa
+B,10,ca,ca-10-04,cova,sí,cueva,família ca_a i c_pa
+B,10,ca,ca-10-05,mapa,sí,mapa,família _apa i ca_a
+B,10,ca,ca-10-05,tapa,sí,tapa,família _apa i ca_a
+B,10,ca,ca-10-05,capa,sí,capa,família _apa i ca_a
+B,10,ca,ca-10-05,cama,sí,pierna,família _apa i ca_a
+B,10,ca,ca-10-06,bota,sí,bota,família bo_a i bot_
+B,10,ca,ca-10-06,boca,sí,boca,família bo_a i bot_
+B,10,ca,ca-10-06,foca,sí,foca,família bo_a i bot_
+B,10,ca,ca-10-06,botó,sí,boton,família bo_a i bot_
+B,10,ca,ca-10-07,bata,no,,família b_ta i _oca
+B,10,ca,ca-10-07,bota,sí,bota,família b_ta i _oca
+B,10,ca,ca-10-07,boca,sí,boca,família b_ta i _oca
+B,10,ca,ca-10-07,foca,sí,foca,família b_ta i _oca
+B,10,ca,ca-10-08,gorro,sí,gorro,família g_rr_
+B,10,ca,ca-10-08,gorra,sí,gorra,família g_rr_
+B,10,ca,ca-10-08,gerro,sí,jarron,família g_rr_
+B,10,ca,ca-10-08,gerra,sí,jarra,família g_rr_
+B,10,ca,ca-10-09,gorra,sí,gorra,família g_rr_ i _erra
+B,10,ca,ca-10-09,gerra,sí,jarra,família g_rr_ i _erra
+B,10,ca,ca-10-09,serra,sí,sierra,família g_rr_ i _erra
+B,10,ca,ca-10-09,gerro,sí,jarron,família g_rr_ i _erra
+B,10,ca,ca-10-10,galeta,sí,galleta,dos parells: _aleta i _ap
+B,10,ca,ca-10-10,maleta,sí,maleta,dos parells: _aleta i _ap
+B,10,ca,ca-10-10,cap,sí,cabeza,dos parells: _aleta i _ap
+B,10,ca,ca-10-10,tap,sí,tapon,dos parells: _aleta i _ap
+B,10,ca,ca-10-11,gat,sí,gato,dos parells: g_t i ll_t
+B,10,ca,ca-10-11,got,sí,vaso,dos parells: g_t i ll_t
+B,10,ca,ca-10-11,llet,sí,leche,dos parells: g_t i ll_t
+B,10,ca,ca-10-11,llit,sí,cama,dos parells: g_t i ll_t
+B,10,ca,ca-10-12,gos,sí,perro,dos parells: go_ i p_
+B,10,ca,ca-10-12,got,sí,vaso,dos parells: go_ i p_
+B,10,ca,ca-10-12,pa,sí,pan,dos parells: go_ i p_
+B,10,ca,ca-10-12,pi,sí,pino,dos parells: go_ i p_
+B,10,ca,ca-10-13,poma,sí,manzana,dos parells: _oma i p_la
+B,10,ca,ca-10-13,goma,sí,goma,dos parells: _oma i p_la
+B,10,ca,ca-10-13,pila,sí,pila,dos parells: _oma i p_la
+B,10,ca,ca-10-13,pala,sí,pala,dos parells: _oma i p_la
+B,10,ca,ca-10-14,puma,sí,puma,dos parells: p_ma i _iu
+B,10,ca,ca-10-14,poma,sí,manzana,dos parells: p_ma i _iu
+B,10,ca,ca-10-14,riu,sí,rio,dos parells: p_ma i _iu
+B,10,ca,ca-10-14,niu,sí,nido,dos parells: p_ma i _iu
+B,10,ca,ca-10-15,sal,sí,sal,dos parells: s_l i _uc
+B,10,ca,ca-10-15,sol,sí,sol,dos parells: s_l i _uc
+B,10,ca,ca-10-15,cuc,sí,gusano,dos parells: s_l i _uc
+B,10,ca,ca-10-15,suc,sí,zumo,dos parells: s_l i _uc
+B,10,ca,ca-10-16,pal,sí,palo,dos parells: _al i _uc
+B,10,ca,ca-10-16,sal,sí,sal,dos parells: _al i _uc
+B,10,ca,ca-10-16,ruc,sí,burro,dos parells: _al i _uc
+B,10,ca,ca-10-16,cuc,sí,gusano,dos parells: _al i _uc
+B,10,ca,ca-10-17,maleta,sí,maleta,dos parells: _aleta i o_
+B,10,ca,ca-10-17,paleta,no,,dos parells: _aleta i o_
+B,10,ca,ca-10-17,ou,sí,huevo,dos parells: _aleta i o_
+B,10,ca,ca-10-17,os,sí,hueso,dos parells: _aleta i o_
+B,10,ca,ca-10-18,pila,sí,pila,dos parells: pi_a i _lla
+B,10,ca,ca-10-18,pipa,sí,pipa,dos parells: pi_a i _lla
+B,10,ca,ca-10-18,olla,sí,olla,dos parells: pi_a i _lla
+B,10,ca,ca-10-18,illa,sí,isla,dos parells: pi_a i _lla
+B,10,ca,ca-10-19,castell,sí,castillo,dos parells: c_stell i esc_la
+B,10,ca,ca-10-19,cistell,sí,cesta,dos parells: c_stell i esc_la
+B,10,ca,ca-10-19,escala,sí,escalera,dos parells: c_stell i esc_la
+B,10,ca,ca-10-19,escola,sí,escuela,dos parells: c_stell i esc_la
+B,10,ca,ca-10-20,sabata,sí,zapato,dos parells: sa_ata i pin_a
+B,10,ca,ca-10-20,safata,sí,bandeja,dos parells: sa_ata i pin_a
+B,10,ca,ca-10-20,pinya,sí,pina,dos parells: sa_ata i pin_a
+B,10,ca,ca-10-20,pinta,sí,peine,dos parells: sa_ata i pin_a
+B,10,ca,ca-10-21,banyera,sí,banera,dos parells: ban_era i o_ella
+B,10,ca,ca-10-21,bandera,sí,bandera,dos parells: ban_era i o_ella
+B,10,ca,ca-10-21,ovella,sí,oveja,dos parells: ban_era i o_ella
+B,10,ca,ca-10-21,orella,sí,oreja,dos parells: ban_era i o_ella
+B,10,ca,ca-10-22,pollet,sí,pollito,dos parells: _ollet i ll_na
+B,10,ca,ca-10-22,follet,sí,duende,dos parells: _ollet i ll_na
+B,10,ca,ca-10-22,lluna,sí,luna,dos parells: _ollet i ll_na
+B,10,ca,ca-10-22,llana,sí,lana,dos parells: _ollet i ll_na
+B,10,ca,ca-10-23,rosa,sí,rosa,dos parells: ro_a i ca_ell
+B,10,ca,ca-10-23,roda,sí,rueda,dos parells: ro_a i ca_ell
+B,10,ca,ca-10-23,camell,sí,camello,dos parells: ro_a i ca_ell
+B,10,ca,ca-10-23,cabell,sí,pelo,dos parells: ro_a i ca_ell
+B,10,ca,ca-10-24,cavallet,sí,caballito,dos parells: cavalle_ i pe_
+B,10,ca,ca-10-24,cavaller,sí,caballero,dos parells: cavalle_ i pe_
+B,10,ca,ca-10-24,peu,sí,pie,dos parells: cavalle_ i pe_
+B,10,ca,ca-10-24,pes,sí,pesa,dos parells: cavalle_ i pe_
+B,10,ca,ca-10-25,panda,sí,panda,dos parells: pan_a i _la
+B,10,ca,ca-10-25,panxa,sí,barriga,dos parells: pan_a i _la
+B,10,ca,ca-10-25,gla,sí,bellota,dos parells: pan_a i _la
+B,10,ca,ca-10-25,ala,sí,ala,dos parells: pan_a i _la
+B,10,ca,ca-10-26,pont,sí,puente,dos parells: _ont i g_t
+B,10,ca,ca-10-26,font,sí,fuente,dos parells: _ont i g_t
+B,10,ca,ca-10-26,gat,sí,gato,dos parells: _ont i g_t
+B,10,ca,ca-10-26,got,sí,vaso,dos parells: _ont i g_t
+B,10,ca,ca-10-27,galeta,sí,galleta,dos parells: _aleta i _uc
+B,10,ca,ca-10-27,paleta,no,,dos parells: _aleta i _uc
+B,10,ca,ca-10-27,suc,sí,zumo,dos parells: _aleta i _uc
+B,10,ca,ca-10-27,ruc,sí,burro,dos parells: _aleta i _uc
+B,10,ca,ca-10-28,sopa,sí,sopa,dos parells: _opa i pin_a
+B,10,ca,ca-10-28,copa,sí,copa,dos parells: _opa i pin_a
+B,10,ca,ca-10-28,pinya,sí,pina,dos parells: _opa i pin_a
+B,10,ca,ca-10-28,pinta,sí,peine,dos parells: _opa i pin_a
+B,10,ca,ca-10-29,cola,sí,pegamento,dos parells: co_a i ll_t
+B,10,ca,ca-10-29,cova,sí,cueva,dos parells: co_a i ll_t
+B,10,ca,ca-10-29,llet,sí,leche,dos parells: co_a i ll_t
+B,10,ca,ca-10-29,llit,sí,cama,dos parells: co_a i ll_t
+B,10,ca,ca-10-30,boca,sí,boca,dos parells: _oca i _ap
+B,10,ca,ca-10-30,foca,sí,foca,dos parells: _oca i _ap
+B,10,ca,ca-10-30,cap,sí,cabeza,dos parells: _oca i _ap
+B,10,ca,ca-10-30,tap,sí,tapon,dos parells: _oca i _ap
+B,10,ca,ca-10-31,bota,sí,bota,dos parells: bot_ i _iu
+B,10,ca,ca-10-31,botó,sí,boton,dos parells: bot_ i _iu
+B,10,ca,ca-10-31,riu,sí,rio,dos parells: bot_ i _iu
+B,10,ca,ca-10-31,niu,sí,nido,dos parells: bot_ i _iu
+B,10,ca,ca-10-32,gerro,sí,jarron,dos parells: g_rro i o_
+B,10,ca,ca-10-32,gorro,sí,gorro,dos parells: g_rro i o_
+B,10,ca,ca-10-32,ou,sí,huevo,dos parells: g_rro i o_
+B,10,ca,ca-10-32,os,sí,hueso,dos parells: g_rro i o_
+B,10,ca,ca-10-33,sol,sí,sol,dos parells: s_l i _ont
+B,10,ca,ca-10-33,sal,sí,sal,dos parells: s_l i _ont
+B,10,ca,ca-10-33,pont,sí,puente,dos parells: s_l i _ont
+B,10,ca,ca-10-33,font,sí,fuente,dos parells: s_l i _ont
+B,10,ca,ca-10-34,pila,sí,pila,dos parells: pi_a i esc_la
+B,10,ca,ca-10-34,pipa,sí,pipa,dos parells: pi_a i esc_la
+B,10,ca,ca-10-34,escala,sí,escalera,dos parells: pi_a i esc_la
+B,10,ca,ca-10-34,escola,sí,escuela,dos parells: pi_a i esc_la
+B,10,ca,ca-10-35,cuc,sí,gusano,dos parells: _uc i ban_era
+B,10,ca,ca-10-35,ruc,sí,burro,dos parells: _uc i ban_era
+B,10,ca,ca-10-35,banyera,sí,banera,dos parells: _uc i ban_era
+B,10,ca,ca-10-35,bandera,sí,bandera,dos parells: _uc i ban_era
+B,10,ca,ca-10-36,gos,sí,perro,dos parells: go_ i _lla
+B,10,ca,ca-10-36,got,sí,vaso,dos parells: go_ i _lla
+B,10,ca,ca-10-36,olla,sí,olla,dos parells: go_ i _lla
+B,10,ca,ca-10-36,illa,sí,isla,dos parells: go_ i _lla

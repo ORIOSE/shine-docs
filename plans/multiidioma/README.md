@@ -85,10 +85,10 @@ El propio plan de planes, el análisis y estructura.md se han escrito con Fable.
 | 0 | estructura.md, Shine en Catalán.md, estructura-ca.md y banco-imagenes-equivalencia-ca.csv | Documento para el experto y su respuesta: áreas, niveles, tipos, ciclo, sonoridad, esfuerzo y fichas del banco | Experto (con Fable de apoyo) | nada | [x] 2026-10-26: estructura entregada y normalizada, preguntas respondidas y CSV validado |
 | 1 | 01-backend-idioma-modelo.md | Idiomas es y ca, migración en a es, langcode en actividades y sesiones, alumno con idioma y reinicio, generador y techo por idioma, traducción de áreas, ciclo y mensajes, vistas | Fable | FASE 17 (shine_account, 01b y 02) | [x] 2026-10-26 (en se mantiene instalado sin negociar; mensajes ca provisionales) |
 | 2 | 02-backend-importador-bilingue.md | Clave idioma e idiomas en el lote, códigos con idioma, huella, duplicados y cobertura por idioma, términos fonológicos por idioma desde JSON, clave del media por slug, handler de posición de imágenes, lotes reescritos y reimportados | Fable | 01 | [x] 2026-10-26 (hito de control superado: el alumno ca recibe solo actividades ca) |
-| 3 | 03-app-i18n.md | i18n-js, catálogos es y ca, extracción de las 881 líneas en ui y player, fechas y números por idioma, fuentes, locales de tienda | Opus | nada (en paralelo con 01 y 02) | [ ] |
-| 4 | 04-app-alumno-idioma.md | Selector de idioma en el alta, ficha con cambio de idioma y confirmación, idioma de la app ligado al alumno activo, prefijo en áreas y mensajes | Opus | 01, 03 | [ ] |
-| 5 | 05-contenido-catalan.md | De estructura-ca.md y Shine en Catalán.md a catálogo y taxonomía catalanas, bloque ca del manifiesto desde el CSV revisado, y lotes catalanes por tipo con cobertura mínima | Fable (documentos y términos); Cowork y Codex (lotes) | 0, 02 | [ ] |
-| 6 | 06-verificacion-bilingue-y-docs.md | Recorrido completo con un alumno es y otro ca, cambio de idioma, cobertura, inventario; CLAUDE.md y docs | Fable | 01 a 05 | [ ] |
+| 3 | 03-app-i18n.md | i18n-js, catálogos es y ca, extracción de las 881 líneas en ui y player, fechas y números por idioma, fuentes, locales de tienda | Opus | nada (en paralelo con 01 y 02) | [x] 2026-10-26 |
+| 4 | 04-app-alumno-idioma.md | Selector de idioma en el alta, ficha con cambio de idioma y confirmación, idioma de la app ligado al alumno activo, prefijo en áreas y mensajes | Opus | 01, 03 | [x] 2026-10-26 |
+| 5 | 05-contenido-catalan.md | De estructura-ca.md y Shine en Catalán.md a catálogo y taxonomía catalanas, bloque ca del manifiesto desde el CSV revisado, y lotes catalanes por tipo con cobertura mínima | Fable (documentos y términos); Cowork y Codex (lotes) | 0, 02 | [x] 2026-10-26 (primeros lotes Level0 a Level2 en local); revisión del experto de los lotes y respuesta a sus dudas aplicadas el 2026-10-27 (revisio-lots-ca.md) |
+| 6 | 06-verificacion-bilingue-y-docs.md | Recorrido completo con un alumno es y otro ca, cambio de idioma, cobertura, inventario; CLAUDE.md y docs | Fable | 01 a 05 | [x] 2026-10-27 (recorrido por API y Expo web; bug del bloque inicial corregido; Expo Go en dispositivo pendiente) |
 
 Camino crítico: 0 → 05 (contenido) es el más largo y no depende del código hasta importar; 01 →
 02 → 04 es el del software. 03 puede empezar el primer día. Con la estructura ya entregada, lo
@@ -107,3 +107,20 @@ media), docs/api-design.md, docs/level-system.md, docs/exercise-catalog.md (3.4,
 sección 2.3 por idioma), docs/conventions.md (claves ui y player), docs/generador/Banco de
 imágenes.md (clave del media y bloque ca), docs/monetization.md (dos perfiles por idioma) y
 docs/progress.md (sección "FASE 18: multiidioma").
+
+## Lo que quedó fuera (cierre del 2026-10-27)
+
+- Expo Go en dispositivo real (punto 6 del 06): no probado; en Expo web los glifos catalanes (l·l,
+  ny, ç, ï) se ven bien en el player.
+- Contenido: Funciones Ejecutivas sin actividades en los dos idiomas; Lingüística castellana con 2
+  actividades en Level2 (sesiones regulares cortas); sin lote del ciclo castellano; Level3 a Level10
+  (faltan los términos de nivel); handler de lista de texto y lectura en voz alta; guion de los
+  enclíticos en la segmentación (Level6).
+- App: botones de "¿Con cuál te has sentido mejor?" sin nombre accesible; ticks absurdos de las
+  gráficas con un solo intento; los mensajes de explicación de Drupal no se muestran (la app enseña
+  la instrucción de la actividad).
+- Backend: `area_name` de `session/{uuid}/complete` en castellano (informativo); los mensajes de
+  explicación castellanos "Activity vertical text" (lorem ipsum), "Image Position" (en catalán) y
+  "Word split" (dice que el espacio va detrás) siguen sin corregir.
+- Experto: textos de los mensajes validados; los lotes de Level0 a Level2 publicados solo en local
+  hasta que se publiquen en producción con su revisión ya aplicada (revisio-lots-ca.md).

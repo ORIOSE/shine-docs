@@ -90,6 +90,11 @@ Se mantiene "un usuario Drupal = un alumno" para **no tocar** `shine_level`, ses
   sin permisos propios; Drupal no tiene permiso de "login").
 - Un alumno puede, en el futuro, recibir credenciales propias (adolescente) cambiando el email y
   la contraseña; no hay migración de datos.
+- **Idioma (FASE 18)**: `preferred_langcode` del alumno (`es` o `ca`), elegido en el alta. Todo lo
+  que recibe (sesiones, actividades, textos de la app) va en ese idioma. Cambiarlo reinicia su
+  progreso (niveles a Level0, resúmenes y valoraciones borrados, sesiones despublicadas, token
+  revocado): dos idiomas son dos perfiles del mismo niño, y el cupo del plan los cuenta como dos
+  alumnos.
 
 ### 3.3 Acceso al alumno: entidad `learner_access`
 
@@ -297,6 +302,10 @@ comprueba la plaza del centro. En `POST` aplica el cupo que corresponda
 (`422 {"error":"learner_limit","max":3}` si se excede, salvo que el plan permita crear en pausa).
 `GET /shine/learners` devuelve, por alumno, `role` del titular, `covered_by`
 (`organization` con el nombre del centro, `holder`, `trial` o `none`) y `completed_regular`.
+
+FASE 18: `POST /shine/learners` acepta `langcode` (ausente = `es`) y `PATCH` con `langcode` cambia
+el idioma con reinicio (`reset: true`), solo para el `owner`. Verificado de extremo a extremo en
+el subplan 06 (docs/progress.md).
 
 ### 5.3 Trabajar "en nombre de" un alumno (token de alumno)
 

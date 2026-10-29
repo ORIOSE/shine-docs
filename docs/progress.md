@@ -2,7 +2,7 @@
 
 > Actualizado en tiempo real. Si el desarrollo se interrumpe, retomar desde el primer ítem sin marcar de la fase en curso.
 
-**Última actualización**: 2026-10-26 (FASE 18, 02: importador bilingüe, banco de imágenes como media y handler de posición de imágenes; antes el mismo día FASE 18 01, FASE 17 07 y Generador de contenido 04)
+**Última actualización**: 2026-10-27 (Generador de contenido 05: lista de texto y lectura en voz alta importables, niveles Level3 a Level10; FASE 18, 06: verificación bilingüe y cierre de la fase; antes 05: revisión del experto de los lotes catalanes aplicada); 2026-10-26 (FASE 18, 05: contenido catalán, primeros lotes Level0 a Level2; antes el mismo día FASE 18 00 a 04, FASE 17 07 y Generador de contenido 04)
 
 ---
 
@@ -1599,6 +1599,149 @@ grupos de parecido (`vis:`) y fonológicos (`fon:`).
 
 ---
 
+### 05. Lista de texto y lectura en voz alta importables; escala de 11 niveles (2026-10-27)
+
+Preparación para generar todo el catálogo (Level0 a Level10, dos idiomas, ocho tipos; decisiones
+del 2026-10-27: 6 actividades por área y nivel, los dos tipos que faltaban se hacen ahora, el
+experto revisa todo, no hay otro entorno de producción).
+
+- [x] **Escala de 11 niveles**: los términos Level3 a Level10 los creó el usuario en el admin;
+  `scripts/create-level-terms.php` (idempotente) deja los 11 con peso 0 a 10 y descripción con la
+  edad y el curso de referencia (catálogo 2.2) y corrigió las descripciones viejas de Level0 a
+  Level2 ("5 - 8 anys", "9 - 12", "13-16"). La escalera los ordena Level0 > ... > Level10.
+  Catálogo 2.5 actualizado (pasos 1 a 3 hechos; queda el ritmo del bloque inicial).
+- [x] **Handler `TextActivityHandler`** (shine_content) para el node `activity`: `contenido.formato`
+  decide el ejercicio, `vertical_list` (lista de texto, código LIS: `elementos` sin repetidos,
+  límite de caracteres por nivel, `segundos_por_elemento` opcional, `desglose_tipos` y
+  `grupo_fonetico_objetivo` solo de revisión) o `audio_reading` (lectura en voz alta, código LEC:
+  `parrafos`, palabras dentro del rango del nivel de la tabla 5.2 con un 10 % de margen, Level0
+  rechazado, `segundos` de 10 a 600). Huella por formato y textos; unidades: elementos o frases.
+  `ContentPrefixInterface` nueva: el importador pide el prefijo con el contenido. Kernel test
+  `TextActivityHandlerTest` (5 tests); shine_content 42 tests OK. Dry-run real con LIS es, LEC es y
+  LEC ca: 3 creadas.
+- [x] `audio_reading` añadido a los valores permitidos de `field_activity_format` (config/sync,
+  importado; `config:status` limpio).
+- [x] App: el texto de `AudioReadingPlayer` va en un `ScrollView` (los textos de Level3 en adelante
+  no cabían) con etiqueta accesible `player.audioReading.textLabel` en es y ca. tsc, lint y 288
+  tests OK.
+- [x] Petición de listas de frecuencia para el experto en
+  plans/multiidioma/peticio-llistes-frequencia.md (una lista general por idioma de 20.000 formas
+  con lema, categoría y frecuencia; una de vocabulario infantil de 5 a 8 años; fuente y licencia).
+  Respuesta en resposta-peticio-llistes-frequencia.md: aprueba los umbrales, exige lema y
+  categoría, recomienda fuentes (EsPal, CORPES/CREA y LEXESP; CTILC, Softcatalà o CQPweb y
+  BDLOC/BDEC) y fija tres reglas (infantil en Level0 a Level2, quitar apóstrofo y clítico en
+  catalán antes de buscar, nombres propios solo en lectura desde Level4). **No llegó ningún
+  fichero**: las listas siguen pendientes. Formato y reglas en el catálogo 3.6; comprobador
+  `shine/content/generadores/lexico.py` (selftest OK) listo para `shine/private/lexico/{es,ca}-{general,infantil}.csv`.
+- [x] **Prompts y plan del catálogo completo (2026-10-28)**: plans/contenido/README.md (volumen,
+  reparto de tipos por área, orden de trabajo, proceso por tanda, preguntas abiertas) y
+  plans/contenido/prompts-es/03 a 09 (parpadeo, ciclo castellano de 38 familias, sílabas,
+  repetición, segmentación, lista de texto y lectura en voz alta, con las reglas del castellano:
+  silabeo RAE, ambigüedades como sopa/paso, enclíticos sin guion, pares a ver/haber); en catalán,
+  08-llista-de-text.md y 09-lectura-en-veu-alta.md junto a los siete existentes. Los de matriz y
+  posición de imágenes (01 y 02) ya eran bilingües. `generadores/matriz.py` cubre Level0 a Level6
+  (`--levels` para generar solo algunos; Level0 a Level2 siguen saliendo idénticos al lote cargado).
+  Pregunta abierta al experto: longitud de la lectura en voz alta (su guía, un párrafo de 35 a 75
+  palabras; el catálogo 5.2, hasta 340 en 4 o 5 párrafos; manda el catálogo mientras no decida).
+- [x] **Encargos para el grupo de expertos (2026-10-28)**: plans/contenido/encarrecs/E01 a E12
+  (listas de frecuencia general e infantil por idioma, bancos de pseudopalabras, material de
+  matriz de Level7 a Level10, grupos de imágenes de Level9 y Level10, cuatro decisiones
+  pedagógicas, guía editorial y protocolo de revisión), con índice en su README y los adjuntos en
+  lliuraments/ (pseudopalabras ya usadas, lista del banco de imágenes). El grupo es numeroso y
+  revisa rápido: los lotes se generan en cuanto lleguen E10 y los bancos de los niveles bajos.
+- [x] **Decisiones E10.1 a E10.3 del grupo (2026-10-28)** (plans/multiidioma/respostes-dubtes-expert.md
+  y una segunda respuesta en el chat): lectura en voz alta de **un solo párrafo de 35 a 80 palabras
+  en todos los niveles** (`TextActivityHandler::READING_WORDS` = [35, 80] y
+  `MAX_READING_PARAGRAPHS` = 1; 32 a 88 con el margen; catálogo 2.3 y 5.2, prompts 09 de los dos
+  idiomas; la primera respuesta decía 30 a 80, manda la segunda); nombres propios en la lectura
+  desde Level1, cortos y de sílabas directas en Level1 y Level2 (`lexico.py`, `short_proper()`);
+  manda la tabla de nivel mínimo por estructura (ejemplos de Level1 con trabadas anotados como
+  error en la guía). Orden de lotes aprobado tal cual. shine_content: 42 tests OK. Sigue abierta
+  E10.4 (Funciones Ejecutivas).
+- [x] **Cambio de modelo con los expertos (2026-10-28)**: los entregables de los encargos los
+  redactamos nosotros con Opus y el grupo los revisa. **E01 hecho (versión 2, CORPES XXI)**:
+  `shine/private/lexico/es-general.csv` (87.611 formas, 102.001 filas, una por categoría con al
+  menos el 10 % de la forma). Fuente: el listado de frecuencias del CORPES XXI 1.5 que pasó el grupo
+  (en `shine/private/lexico/fuentes/`, fuera de git; lo dejaron en plans/ y se movió). Los
+  elementos de varias palabras (tiempos compuestos, locuciones, nombres propios compuestos, 10,5
+  millones de apariciones) se reparten entre sus palabras ("han" del rango 1.250 al 61). Ajuste
+  peninsular: las formas de vosotros toman el rango de su equivalente de tercera del plural
+  (tenéis = tienen) y vosotros/os/vuestro el de ustedes (82 formas; rango original en
+  `rango_corpes`). La versión 1 (wordfreq + UD AnCora y GSD + revisión Opus completa en 8 tandas)
+  queda como columna de contraste y aporta descartes y marcas; Opus revisó además las 1.772 formas
+  del CORPES de las 25.000 primeras que la v1 no tenía. 1.198 descartes, 776 formas marcadas.
+  Tubería en `shine/private/lexico/build/es-general/corpes.py`. Hoja para el grupo (muestra de 300,
+  marcas, descartes, discrepancias y nueve criterios, entre ellos el ajuste de vosotros y el
+  vocabulario infantil que el CORPES deja muy abajo): plans/contenido/encarrecs/lliuraments/E01-revisio.md.
+  SUBTLEX-ESP (OSF oficial, CC BY-NC-SA 4.0, no comercial) añadido como columna de consulta, fuera
+  del rango. **Registro de fuentes**: `docs/fuentes-de-datos.md` (cita, versión, fecha, licencia y
+  uso de cada fuente; regla en CLAUDE.md). `lexico.py` lee la
+  columna `marca` y la lista en el informe (no bloquea).
+- [x] **E02 hecho (2026-10-28)**: `shine/private/lexico/ca-general.csv` (51.547 formas). Frecuencia de
+  wordfreq (catalán; se prefirió a la lista de Softcatalà porque documenta sus corpus, y la de
+  Softcatalà queda como contraste); lema y categoría de UD_Catalan-AnCora o del diccionario de
+  Softcatalà (LanguageTool); normalización a la norma del IEC de 2017 con la clasificación de
+  diacríticos de Softcatalà (144 formas con grafías antiguas sumadas; "sóc" pasa a "soc" y los
+  compuestos van sin acento, aunque la lista del encargo decía otra cosa); enclíticos con apóstrofo
+  sumados al verbo y elisiones como entradas ("l'", "d'"). Revisión Opus de las 36.000 primeras en 8
+  tandas: 599 completadas, 1.850 correcciones, 2.610 descartes, 574 marcas (dialectal, malsonante,
+  extranjera). Fuentes copiadas en `shine/private/lexico/fuentes/softcatala/` y registradas en
+  `docs/fuentes-de-datos.md` §1.5; tubería en `shine/private/lexico/build/ca-general/`. Hoja para el
+  grupo con nueve criterios: plans/contenido/encarrecs/lliuraments/E02-revisio.md.
+- [x] **E03 y E04 hechos (2026-10-28)**: `shine/private/lexico/es-infantil.csv` (2.408 lemas, 26.878
+  formas) y `ca-infantil.csv` (2.554 lemas, 12.511 formas), con columna `nivel`/`nivell` (0, 1, 2).
+  Proceso híbrido aprobado por el grupo: lemas candidatos de la lista general, el banco de imágenes
+  y los lotes revisados, más vocabulario añadido por temas; nivel por lema asignado por Opus (6
+  tandas de clasificación y 2 de temas); formas del CORPES (es) y del diccionario de Softcatalà
+  (ca), con futuro, condicional y presente de subjuntivo a nivel 1 como mínimo y sin imperfecto de
+  subjuntivo (ni pretérito simple en catalán). Nuevo `shine/content/generadores/estructura.py`:
+  silabeo y nivel mínimo por estructura de la tabla del catálogo, en los dos idiomas (columna
+  `estructura_min`, informativa). `lexico.py`: lee la columna nivel de las listas infantiles (una
+  palabra vale en LevelN si su nivel es N o menor) y extrae bien las palabras de ordena las
+  sílabas. 75 conflictos catalanes entre la lista y los lotes ya revisados ("lupa", "puma" en
+  Level0) para que decida el grupo. Hojas: plans/contenido/encarrecs/lliuraments/E03-revisio.md y
+  E04-revisio.md.
+- [x] **E05 a E11 hechos (2026-10-28)**: bancos de pseudopalabras (672 es, 670 ca; candidatas de Opus
+  filtradas con el nuevo `shine/content/generadores/pseudo_filtre.py` contra 1,67 millones de formas
+  reales de los dos idiomas, con la regla de una letra cambiada que conserva la primera letra);
+  matriz de Level7 a Level10 y grafías catalanas de Level2 a Level6 (40 es, 70 ca) con el nuevo
+  `generadores/matriz_conjuntos.py` (semilla fija); grupos de imágenes de Level9 y Level10 con dos
+  opciones (A, grupos de 6: 41 imágenes nuevas es y 83 ca; B, grupos de 4: 11 y 29), validados por
+  programa; propuesta para Funciones Ejecutivas (recomienda la matriz con regla, coste pequeño a
+  medio); guías editoriales es y ca con sus decisiones a confirmar. Índice de envío a los revisores
+  con ficheros y rutas: plans/contenido/encarrecs/PER-REVISAR.md; paquetes zip por encargo en
+  `shine/private/enviament-2026-10-28/` (fuera de git). Hallazgo de la propuesta E10.4: el hueco de
+  un área sin contenido se pierde en vez de pasar a otra área, y 4 de cada 5 sesiones regulares
+  salen con 3 actividades de área (pendiente de corregir en `SessionGenerator`).
+- [x] **E10.4 respondida (2026-10-29)**: el grupo elige, a corto plazo, que la matriz y la repetición
+  rápida computen como secundaria de Funciones Ejecutivas (la matriz ya lo hacía; la repetición pasa
+  de Lingüística a Ejecutivas en los lotes, los nodos, el catálogo 6.4 y los prompts 06) y, como
+  desarrollo, la matriz con regla (propuesta 3.1). Corregido `SessionGenerator::planRegular()`: solo
+  rotan las áreas con contenido en su nivel o por debajo (`hasContentUpTo()`) y un hueco sin
+  candidatas pasa a la siguiente área; Marta y Pau vuelven a tener 4 actividades de área por
+  sesión. shine_level: 61 tests OK (nuevo `testRegularSkipsAreasWithoutContentAndRefillsSlots`).
+- [x] **Lote del ciclo castellano (2026-10-29)**: `shine/content/ciclo-silabas-es-v1.json`, 38 actividades
+  de parpadeo en 6 bloques (pesos 10 a 380), generado con `shine/content/generadores/ciclo_silabas_es.py`
+  (tabla de familias a mano, vuelta desordenada con `random.Random(peso)`); importado **sin
+  publicar** (dry-run limpio). Revisión del grupo en plans/contenido/revision/ciclo-silabas-es-v1.md
+  (paquete `LOT-ciclo-silabas-es-v1.zip`). Tras la revisión: correcciones, `--publish` y
+  `shine-level:generate 42 --dry-run` con el hueco de ciclo.
+- [x] **Etiquetas fonológicas (2026-10-29)**: `estructura.py` calcula los términos de `decoding_effort` de
+  una palabra y de una actividad (`structure_terms`, `activity_effort`: las estructuras de nivel más
+  alto del material) y `generadores/etiquetar_lote.py` comprueba o rellena `esfuerzo` en ordena las
+  sílabas, segmentación, lista de texto y repetición rápida, y avisa de las palabras con estructura por
+  encima del nivel. Rellenadas las 12 de ordena las sílabas y las 8 de segmentación ya importadas
+  (reimportadas sin `--publish`: conservan su estado). Prompts 05, 07 y 08 de los dos idiomas con la
+  regla (`esfuerzo` obligatorio; `sonoridad` solo si se trabaja un grupo fonético) y paso añadido al
+  proceso por tanda. Hallazgos: en los lotes de ejemplo de la FASE 13 hay "za" y "gato" en Level0 y
+  "brilla" en Level1 (se sustituyen en la tanda 2); en segmentación catalana de Level2, "verd", "els"
+  y "nens" (Level3 por la tabla), pregunta al grupo en PER-REVISAR.md. La matriz lleva esfuerzo solo
+  con letras espejo (las 9 de Level0 sin pareja espejo quedan sin él) y la posición de imágenes no
+  tiene estos campos.
+- Pendiente (siguiente): lotes por tanda según plans/contenido/README.md (ciclo castellano, Level0
+  a Level2 hasta 6 por celda, Level3 en adelante), cada uno con dry-run, importación, revisión del
+  experto y publicación; revisión de E01 a E11 por el grupo; Funciones Ejecutivas (decisión E10.4).
+
 ## FASE 17 — Monetización y modelo de cuentas
 
 Implementa `docs/monetization.md` siguiendo los subplanes de `plans/entitlement/` (orden y
@@ -2518,8 +2661,16 @@ cambios.
 
 ---
 
+## FASE 19 — Matriz con regla (Funciones Ejecutivas y Atención)
+
+- [x] **Plan (2026-10-29)**: plans/funcions-executives/README.md, aprobado por el grupo como fase propia
+  con los valores por defecto de la propuesta E10.4 (cuatro familias de regla, cebos que restan del
+  acierto, tiempos por ronda, regla oculta en Level9 y Level10). Seis subplanes: modelo en Drupal,
+  importador, evaluador, app, generador y lotes, mensajes y verificación.
+- Pendiente: subplanes 01 a 06.
+
 ## FASE 18 — Multiidioma (castellano y catalán)
-**Estado**: 🔄 En curso. Plan de planes en `plans/multiidioma/README.md`; análisis en `plans/multiidioma/analisis.md`.
+**Estado**: ✅ Completada el 2026-10-27 (06), con los pendientes listados en 06 y en `plans/multiidioma/README.md` ("Lo que quedó fuera"). Plan de planes en `plans/multiidioma/README.md`; análisis en `plans/multiidioma/analisis.md`.
 
 Decisiones de producto (cerradas el 2026-10-26): cada alumno elige idioma al darse de alta; cambiar
 de idioma reinicia su progreso; dos idiomas = dos perfiles del mismo niño; de momento la interfaz
@@ -2631,4 +2782,290 @@ comparte el idioma del alumno activo; el contenido y las estadísticas anteriore
 - Pendiente: 03 y 04 (app), 05 (contenido catalán: lotes por tipo con los nombres del CSV; los
   tres lotes castellanos y el de ejemplo son material de prueba), 06 (verificación). El bloque
   ca del manifiesto (05) sale del CSV validado.
+
+### 03. App: infraestructura de idiomas y extracción de textos (2026-10-26)
+
+- [x] i18n-js 4.5 y expo-localization 17 (instalados con npx expo install y Node 21 desde la sesión).
+  src/lib/i18n.ts: t() con claves tipadas a partir de es.json (una clave inexistente no compila),
+  plurales con count, es por defecto y de reserva, setLocale, getLocale, deviceLocale (es o ca,
+  si no es), useLocale, dateLocale (es-ES o ca-ES), formatDecimal y formatDayMonth (el mes va con
+  su preposición en el catálogo por el apóstrofo catalán: 1 d’octubre). El layout raíz usa el
+  idioma como key de la pila: al cambiar, se repintan todas las pantallas.
+- [x] Catálogos src/locales/es.json y ca.json con 464 textos cada uno, en ui.* (tutor) y player.*
+  (niño): ui.common, ui.date, ui.auth, ui.account, ui.settings, ui.learners, ui.operator, ui.api,
+  ui.dashboard, ui.session, ui.nav, ui.components, ui.activities, ui.statistics, player.common,
+  player.rating, player.feedback y un espacio por tipo de actividad. Convención en
+  docs/conventions.md §3 "Textos e idiomas".
+- [x] Extracción completa de app/, src/components y src/lib: desaparecen todos los objetos *_COPY
+  (learnerScreens, sessionCards, accountScreens, learnerCopy, RATING_COPY y los demás); las
+  funciones de src/lib conservan nombre y firma y devuelven el texto traducido. Ningún texto
+  calculado al cargar un módulo. El escáner de literales (cadenas y texto JSX sin comentarios)
+  deja cero textos visibles en castellano; quedan solo mensajes internos de errores que nunca se
+  pintan y el label interno de los logs que se envían a Drupal (los fijan los golden payloads).
+- [x] Formatos: fechas con dateLocale(); coma decimal en el ritmo (formatPerSecond con "por
+  segundo" del catálogo), en los segundos de la pantalla de resultado, de las tablas y de los
+  ejes de los gráficos. En castellano el único cambio visible es ese: "16,9 s" donde antes salía
+  "16.9 s".
+- [x] Fuentes: Nunito (400 a 800) y OpenDyslexic (Regular y Bold) tienen ç, l·l (U+00B7), ï, ü, à,
+  è, ò, ’ y «» (comprobado en la tabla de caracteres de cada fichero) y se ven bien en web.
+  Pendiente la misma comprobación en Expo Go: la línea de glifos de Ajustes (abajo) la muestra en
+  las cuatro combinaciones.
+- [x] Tienda: app.json con el plugin expo-localization (supportedLocales es y ca:
+  CFBundleLocalizations en iOS y localeConfig en Android) y locales con los textos nativos por
+  idioma en shine-app/native-locales (nombre visible y avisos de micrófono y voz). Nota sobre la
+  ficha en dos idiomas en plans/prompts/14b.
+- [x] Conmutador temporal "Idioma de la app (pruebas)" en Ajustes, guardado en el dispositivo
+  (store de settings), con la línea de glifos en Nunito y OpenDyslexic, regular y bold. Lo
+  sustituye el subplan 04 (idioma del alumno activo).
+- [x] Backend: el título del nodo de sesión va en el idioma del alumno (SessionGenerator::TITLES:
+  "Sessió 1", "Sessió per conèixer-te 1", "Sessió d’ajust"), porque la app muestra tal cual el
+  título de las regulares y el historial de estadísticas. Test en LanguageTest; shine_level 58 OK.
+- [x] Verificación: tsc limpio, lint sin errores (4 avisos anteriores), jest 32 suites y 268 tests
+  (nuevo i18n.test.ts: mismas claves en es y ca, mismos marcadores, plurales completos, toda clave
+  literal del código existe, fechas y coma decimal; casos en catalán en los tests de textos).
+  Recorrido en web: entrar, crear cuenta, selector, inicio, Ajustes, "Mi progreso" y su detalle en
+  los dos idiomas; sesión completa en catalán con Pau (posición de imágenes, matriz de letras y
+  parpadeo, con las valoraciones y el fin de sesión) y ordenar sílabas con Marta. Dos fallos
+  encontrados y corregidos en el recorrido: las opciones de "¿Cómo ha ido?" se calculaban al
+  cargar el módulo y salían en castellano, y el punto decimal de los segundos.
+- Traducción catalana **provisional**, pendiente de revisión por hablante nativo (05 o el experto).
+  Puntos marcados por los agentes: "sobrenom" por apodo, "Configuració" por Ajustes, "Tancar la
+  sessió", "Esborrar el compte", "Lletres arrodonides / molt separades", la frase de muestra de la
+  letra, "Que es creï un compte a Shine, premi «Tinc un codi»..." (registro), "No passa res: a
+  tothom li costa alguna cosa", "t’ha sortit més rodona", "En tens una altra a punt", "Canviar
+  d’alumne", "Bon dia, tu", "Sessió per conèixer-te", "El teu punt fort: X" (evita el género de
+  fort/forta), "Continua brillant!", "Compara’t sempre amb tu", "Intent" en los ejes, "Totes les
+  N!", "N’has trobat X de Y!", "Troba totes les", "Espai" por hueco, "Treure’n una", "Comptar
+  error", "Error i següent", "Bona feina! Has acabat aquesta activitat." y "En quina posició
+  estava?". Las frases con "de" delante de un nombre se reformularon para no depender del
+  apóstrofo ("%{name}: nom i avatar"); "Soc" y "Vens" ya sin diacrítico (IEC 2017).
+- Pendiente:
+  - Expo Go en dispositivo: glifos y recorrido (solo se ha probado en web).
+  - Recorrido en navegador de partir palabras, repetición rápida y lectura en voz alta (sus textos
+    pasan los tests y tsc, pero no se han jugado).
+  - Fallo anterior, no de idioma: en el parpadeo, tocar varias veces durante la animación de 150 ms
+    suma avances y el índice se salta el final ("8 / 7", la actividad no termina). Un niño que
+    toca rápido puede provocarlo.
+  - Fallo anterior: con un solo intento, los ejes de los gráficos de detalle muestran marcas
+    fraccionarias ("#0.9999999999").
+  - Contenido (05): la instrucción del lote de ejemplo usa apóstrofo recto (d'ells); conviene fijar
+    el tipográfico en los lotes catalanes como en el catálogo.
+  - Hecho en 04 (abajo): el conmutador ya no existe; idioma del alumno y /ca/jsonapi.
+
+### 04. App: idioma del alumno (2026-10-26)
+
+- [x] API: createLearner y updateLearner con langcode; updateLearner devuelve { learner, reset };
+  Learner.langcode (opcional: un alumno sin idioma, anterior a la FASE 18, se trata como es con
+  learnerLocale()); langcode de la sesión en SessionAttributes.
+- [x] Alta "¿Con quién vas a trabajar?": selector obligatorio con dos tarjetas grandes
+  (Castellano, Català, sin banderas), preseleccionado el idioma de la app, con la nota "Para
+  trabajar en los dos idiomas, crea un perfil por idioma" (componente LanguagePicker).
+  learnerForm valida el idioma del alta (es o ca) y no lo exige en la edición de nombre y avatar.
+- [x] Ficha del alumno: "Idioma: Castellano"; "Cambiar idioma" (solo owner, nueva acción
+  language de learnerActions) con ConfirmPanel que avisa del reinicio y ofrece "Crear otro
+  perfil" (ConfirmPanel admite ahora una alternativa). Tras el PATCH: refreshMe(), token de
+  alumno nuevo (selectLearner con freshToken, el anterior queda revocado) y el inicio, vacío. En
+  las frases el idioma va en minúscula y en el idioma de la app ("¿Pasar a catalán?", "Vols
+  passar a castellà?").
+- [x] Etiqueta discreta ES o CA (LanguageTag) en el selector y en la lista de Ajustes, solo si el
+  titular tiene alumnos activos en los dos idiomas.
+- [x] Idioma de la app ligado al alumno activo: una suscripción al store de auth aplica el del
+  alumno al elegirlo, restaurarlo o refrescarlo, y el del dispositivo al soltarlo o cerrar la
+  sesión. startRoute no cambia. Fuera el conmutador temporal de 03 (Ajustes y store de settings)
+  y sus textos.
+- [x] Juego: los mensajes de motivación se piden en el idioma del juego. La sesión cargada se
+  compara con el alumno (sessionPlayerLocale): si no coincide, aviso en consola y player.* en el
+  idioma de la sesión (setPlayerLocale, que solo afecta a player.*; es la pieza para separar
+  interfaz y juego en una v2).
+- [x] Recursos traducidos: apiFetch con opción lang (jsonapiBase: API_BASE/jsonapi para es,
+  API_BASE/ca/jsonapi para ca); la usan areas.ts y messages.ts, con caché por idioma. El ciclo
+  no se muestra en la app. El resto de llamadas no cambia.
+- [x] Textos: 17 claves nuevas en ui.learners.language (es y ca).
+- [x] Tests: 34 suites y 288 tests (nuevos: store de auth con el idioma al elegir, sin idioma,
+  al soltar y al cerrar sesión, y freshToken; jsonapiBase; learnerForm con idioma;
+  learnerScreens con etiquetas, nombres y acción language; sessionPlayerLocale; i18n con
+  learnerLocale y el idioma del juego). startRoute y tokenFlow sin cambios. tsc limpio, lint sin
+  errores.
+- [x] Recorrido en web con jose@test.com: selector con ES y CA; Pau pone la app en catalán (y la
+  conserva al recargar), Marta en castellano; áreas y mensajes pedidos a /ca/jsonapi con Pau;
+  Pau juega en catalán con el mensaje de motivación catalán; "Cambiar idioma" de Marta a catalán
+  pide confirmación, reinicia, deja inicio y estadísticas vacíos y la sesión nueva es de
+  contenido catalán; y vuelta a castellano desde la ficha en catalán (Marta queda en es, como
+  estaba). El alta enseña el selector con el idioma de la app preseleccionado.
+- Nota del recorrido: en esa pestaña del navegador automatizado los clics de ratón no llegaban a
+  la app (ni en el selector ni en la barra inferior); con clics por JavaScript todo funciona. Es
+  del entorno de pruebas, pero conviene repetir el recorrido a mano en web y en Expo Go.
+- Pendiente: 05 (contenido catalán) y 06 (verificación bilingüe completa, incluido Expo Go).
+
+### 05. Contenido catalán: escala, taxonomía, términos, manifiesto y lotes (2026-10-26)
+
+- [x] Catálogo (docs/exercise-catalog.md): perfil lector catalán (2.2), referencias lingüísticas
+  catalanas con la fuente CTILC o BDLOC (2.3), nivel mínimo por estructura catalán (3.5), ciclo
+  Síl·labes con sus 8 bloques y pesos (5.3), un párrafo "En catalán" en cada tipo (5.1 a 6.4),
+  letras admitidas (4.3), cobertura por idioma (7), filas de estado y de la decisión del ciclo (8) y
+  la lista de decisiones que contradicen la versión castellana.
+- [x] docs/generador/Taxonomía fonológica (català).md (grupos, términos definitivos, letras,
+  ejemplos, motivo clínico, nivel mínimo, lo propio del catalán, JSON de resumen) con la
+  verificación en Drupal: create-phonology-terms.php -- ca sin cambios (60), términos ca iguales al
+  JSON y castellanos intactos, filtros JSON:API por grupo dentro del idioma como usuario normal
+  (gotcha 14): sonority ca 37 (33 términos más 4 grupos), parent "Oposició sorda/sonora" 7, blink ca
+  con sonoridad m solo la catalana.
+- [x] docs/generador/Guía de Parametrización (català).md: 8 tipos (la castellana no tenía la
+  repetición rápida), 86 ejemplos originales en catalán de Level0 a Level10, reglas comunes
+  (silabeo del IEC, apóstrofos desde Level3, alivio, vocal neutra). Provisional, pendiente del experto.
+- [x] Traducciones de interfaz: áreas y ciclo son ya las del experto; los textos de los mensajes
+  los revisó el equipo técnico (apóstrofo tipográfico, mismo tono que la app) y quedan pendientes
+  del experto, que no entregó textos de mensajes. Término del ciclo "Sílabas": nuevo
+  scripts/create-cycle-term.php (idempotente, antes de translate-interface-terms.php; añadido a
+  CLAUDE.md), traducción "Síl·labes" creada.
+- [x] Banco de imágenes: bloque ca en las 432 entradas del manifiesto (nombre, artículo, silabeo
+  del IEC, nivel lector catalán, etiquetas, usable, nota), desde el CSV validado; 423 usables y 9
+  no usables marcadas (no borradas); clave idiomas en la raíz. El manifiesto pasa a ser la fuente
+  única del nombre catalán; el CSV queda como registro. docs/generador/Banco de imágenes.md
+  actualizado (4, 5.4, 5.7: parejas que dejan de serlo, pares mínimos nuevos, grupos de sílaba
+  inicial catalanes). No hizo falta ninguna imagen nueva.
+- [x] Importador: los handlers de segmentación y repetición rápida admiten las letras del catalán
+  (ç, à, è, ò, ï, ü, l·l con U+00B7 y apóstrofo recto o tipográfico); dos tests nuevos; shine_content
+  36 tests OK. Era un bloqueo real para los lotes catalanes (el plan decía "sin código nuevo").
+- [x] Lotes (shine/content/, convenciones en plans/multiidioma/prompts-contenido/README.md; todos
+  con dry-run sin errores, importados y publicados en local como contenido de prueba):
+  matriz-es-ca-level0-2-v1 (9 bilingües + 1 catalana con l·l; generadores/matriz.py, semilla 4411),
+  imagenes-es-ca-level0-2-v1 (9 bilingües, 96 imágenes sin repetir; generadores/imagenes.py,
+  semilla 1805), blink-ca-level0-2-v1 (24: 6, 10 y 8), ciclo-sillabes-ca-v1 (44, pesos 10 a 440),
+  silabas-ca-level0-2-v1 (9, con imagen y silabeo del manifiesto), repeticion-ca-level0-2-v1 (9) y
+  segmentacion-ca-level1-2-v1 (6). 111 registres, 129 nodos nuevos (los bilingües son dos). Prompts
+  para Cowork o Codex por tipo (01 a 07) con la misma estructura que Banco de imágenes.md.
+- [x] Cobertura publicada (sin ciclo, Level0 / Level1 / Level2): catalán Lingüística 3 / 6 / 6,
+  Memoria 4 / 3 / 3, Perceptivos 4 / 3 / 4, Velocidad 10 / 13 / 11; castellano Lingüística 2 / 1 / 2,
+  Memoria 4 / 3 / 3, Perceptivos 5 / 4 / 4, Velocidad 8 / 8 / 7. El catalán cumple el mínimo de
+  apertura (3 por celda) en las cuatro áreas con tipo; Funciones Ejecutivas sigue en 0 en los dos
+  idiomas (ningún tipo la tiene como principal). Ninguna celda llega al mínimo de régimen (6).
+- [x] Verificación: shine-level:generate 43 --dry-run con Pau en estado regular (puesto y restaurado
+  a mano) da "Sessió 1" con tres huecos de área (Lingüística, Memoria, Perceptivos) más el ciclo
+  (BLK-CA-CIC-SILABAS-010) y salta Funciones Ejecutivas, como en castellano; Marta no recibe ciclo
+  (el castellano no tiene lote de ciclo). Watchdog sin avisos de techo nuevos. Inventario ca: 114
+  actividades; es: 51.
+- [x] Revisión del experto: plans/multiidioma/revisio-lots-ca.md (tabla por lote con código,
+  nivel, título y material, columnas para el veredicto; como los lotes tienen 3 por nivel, la
+  muestra es el lote entero y del ciclo al menos una por bloque) más la lista de dudas de cada
+  generador (pseudopalabras, grupos de lectura del ciclo, ambigüedad en sílabas y segmentación,
+  frecuencia de palabras).
+- Hallazgos:
+  - El importador no admite elementos repetidos y el diseño del ciclo pide "las mismas
+    desordenadas": el ciclo catalán va en parejas (mu ma, mi me). Decisión pendiente (catálogo 8).
+  - Ela geminada en "Ordena las sílabas": col-le-gi daría "collegi" al unir fichas; propuesta col·,
+    le, gi (solo Level3). Enclíticos con guion (dona-m’ho) no pasan el patrón de segmentación.
+  - Los mensajes de explicación castellanos "Activity vertical text" (lorem ipsum) y "Rapid
+    repetition" (vacío) siguen sin texto en castellano.
+- [x] **Revisión del experto de los lotes (2026-10-27)**: respuesta en
+  plans/multiidioma/resposta-revisio-lots-ca.md, aplicada y registrada en revisio-lots-ca.md
+  (apartado "Resultat de la revisió"). Cambios:
+  - Ciclo: una sílaba o vocal por pantalla. BlinkActivityHandler admite repetidos que no vayan
+    seguidos (rechaza el mismo elemento dos veces seguidas); test nuevo, shine_content 37 tests OK.
+    Las 44 actividades del ciclo reimportadas con la vuelta desordenada en sílabas sueltas.
+  - Segmentación: recuperadas casa, pare, mare, pilota, vola y a la (la app ya corregía contra la
+    frase declarada); 4 de las 6 actividades corregidas. La regla de ambigüedad del catálogo 6.3
+    pasa a "descartar solo si otra partición tiene sentido", también en castellano.
+  - Matriz de l·l: MAT-CA-L02-PER-001 despublicada; el registro es MAT-CA-L03-PER-001 en
+    content/matriz-ca-level3-v1.json (generador con --catalan), sin importar hasta que exista Level3.
+  - Level0: posición de imágenes solo con monosílabos o bisílabos simples en los dos idiomas
+    (`nombre_simple` en generadores/imagenes.py, 48 imágenes) y Level0 regenerado; IMG-L00-MEM-003
+    tenía un summary de Marta, así que sus dos nodos están despublicados y el material nuevo es
+    IMG-L00-MEM-005. Repetición rápida: sala y dona por pota y pila.
+  - Validados sin cambios: col·, le, gi en sílabas (Level3), descarte por permutación, ala y ona en
+    Level0, etiquetas CVC, enclíticos solo con apóstrofo como solución temporal.
+  - Cobertura ca publicada (Level0 / Level1 / Level2): Lingüística 3 / 6 / 6, Memoria 4 / 3 / 3,
+    Perceptivos 4 / 3 / 3, Velocidad 10 / 13 / 11; sigue el mínimo de apertura en las cuatro áreas.
+  - Sin respuesta del experto: pseudopalabras, grupos de lectura del ciclo, frecuencias, codas de
+    surt y dorm, documentos de taxonomía y parametrización y textos de los mensajes.
+- [x] **Respuesta del experto a las dudas restantes (2026-10-27)**:
+  plans/multiidioma/resposta-dubtes-revisio-lots-ca.md, registrada en revisio-lots-ca.md. Cambios:
+  - Pseudopalabras, frecuencias, blau, flor, plat y tren en Level2, y los dos documentos catalanes
+    validados sin cambios en los lotes.
+  - surt y dorm pasan a Level2: la excepción de monosílabos frecuentes con coda simple incluye
+    ahora rm (estructura-ca.md, catálogo 3.5, taxonomía catalana); corregido el ejemplo de Level1
+    de segmentación en la guía catalana.
+  - Ciclo: los grupos que no son sílabas del IEC (rra, assa, tge, aix, al·la) se mantienen como
+    patrones de lectura fluida, con la nota para el tutor en el catálogo 5.3, el lote y el prompt.
+    La app no tiene un sitio para el tutor donde mostrarla.
+  - Mensajes: textos catalanes del experto en scripts/translate-interface-terms.php (dos ajustes a
+    la mecánica real) y tres mensajes de motivación nuevos con original castellano. Script
+    ejecutado y comprobado por HTTP como jose en es y ca.
+  - **Bug de la app corregido**: ActivityBase leía `field_motivation_text`, un campo que
+    activity_message no tiene, así que siempre salía el texto de reserva y nunca un mensaje de
+    Drupal. Ahora lee `description` (src/lib/api/messages.ts). tsc, lint y 288 tests OK.
+  - Hallazgos sin tocar: los mensajes de explicación de Drupal no los muestra la app (enseña la
+    instrucción de la actividad o la del catálogo `ui.activities.instructions`); el original
+    castellano de "Image Position" está escrito en catalán, el de "Word split" dice que el espacio va
+    "justo después" de la letra (la app lo pone delante) y "Activity vertical text" sigue en lorem
+    ipsum.
+- Pendiente: guion de los
+  enclíticos en WordSplitActivityHandler antes de los lotes de Level6; lote del
+  ciclo castellano (con la regla nueva de repetidos); Level3 a Level10 (faltan los términos, catálogo 2.5) y el handler de activity
+  (lista y lectura) en los dos idiomas; cobertura castellana de Lingüística (2 / 1 / 2) por debajo
+  del mínimo; 06 (verificación bilingüe completa, incluido Expo Go).
+
+### 06. Verificación bilingüe de extremo a extremo y documentación (2026-10-27)
+
+- [x] Recorrido por la API como usuario normal (gotcha 14), con el grant `password` del titular y
+  el grant `shine_learner` de cada alumno (script local `shine/private/scripts/drive_api.py`):
+  Marta (`es`) y Pau (`ca`) con los niveles reiniciados, bloque inicial completo (3 sesiones de
+  escalera con `easy`, `ok` y `hard` mezclados más la de confirmación), primera sesión regular con
+  `sessionfeedback` y estadísticas por JSON:API. Toda actividad servida es del idioma del alumno
+  (`langcode` comprobado una a una); el ciclo solo entra en las regulares; las reglas de nivel dan
+  el mismo resultado en los dos idiomas (Lingüística, Memoria y Velocidad en Level2, Perceptivos en
+  Level1 tras un `hard`).
+- [x] **Bug corregido: bloque inicial bloqueado por un área sin contenido.** Con las cuatro áreas
+  con contenido cerradas y Funciones Ejecutivas abierta (sin actividades en ningún idioma),
+  `initialCompleted()` no cerraba el bloque y `planInitial()` producía una sesión vacía: `422
+  no_content` en cada llamada, sin salida, en los dos idiomas, a cualquier alumno nuevo a la
+  tercera o cuarta sesión (en 05 no se vio porque los alumnos se pusieron en `regular` a mano).
+  Corrección: un área abierta que no se puede probar (sin actividades en su `probe_level` ni por
+  debajo, en el idioma del alumno) cuenta como cerrada al decidir el fin del bloque
+  (`SessionEvaluator::probeable()`), y `planInitial()` genera una sesión de confirmación con todas
+  las áreas al nivel vigente si ninguna abierta tiene contenido (para usuarios ya atrapados). Dos
+  kernel tests nuevos y uno ajustado (`testInitialEasyClimbsUntilCeiling` daba por bueno el
+  estado bloqueado); shine_level 60 tests OK. docs/level-system.md §5.1.
+- [x] Cambio de idioma `es` → `ca` con un tercer alumno (Prova06, dentro del cupo 3 de la
+  cortesía): `PATCH` devuelve `reset: true`, el token de alumno anterior da 401, niveles a Level0
+  con 5 logs `language_change`, resúmenes, valoraciones y sesiones a cero por JSON:API, `/shine/me`
+  con `langcode: ca`, siguiente sesión "Sessió per conèixer-te 1" con 4 actividades `ca`.
+  Archivado después (token 401).
+- [x] Importación (`--dry-run`): lote bilingüe (matriz, 2 nodos `creada`), solo `ca` (`creada`),
+  errores de idioma (`fr` no admitido; código `ES` con `idioma ca`; `idioma` e `idiomas` a la
+  vez), duplicado dentro del idioma (`contenido: idéntico al de BLK-CA-L00-VEL-002`) y el mismo
+  material en castellano (permitido, aviso de solapamiento del 71 %). Inventario y cobertura por
+  idioma ya verificados en 05.
+- [x] Técnica: `config:status` sin diferencias; kernel tests shine_account 27, shine_level 60,
+  shine_content 37 y **shine_entitlement 31** (sus 4 fallos no eran de hoy: desde la FASE 18
+  `LearnerManager::create()` da de alta al alumno en `es` y el harness no instalaba idiomas, así
+  que las actividades de prueba nacían en `en` y ninguna sesión tenía contenido; `installLanguages()`
+  en `EntitlementAccessKernelTestBase`); app `tsc`, lint (4 avisos previos) y 288 tests OK;
+  términos fonológicos 24 + 14 `es` y 33 + 19 `ca` con nombres únicos; segunda ejecución de los
+  cinco scripts sin cambios (`migrate-langcode-en-to-es.php` chocaba con la clave primaria de
+  `search_dataset` por las 86 filas `en` de `help_search`: ya no toca `search_*`); ninguna fila de
+  contenido en `en`; watchdog solo con los dos `no_content` del bug (ya corregido) y errores
+  antiguos de sesiones de desarrollo.
+- [x] Expo web en Chrome: selector de alumno con etiquetas ES/CA, dashboard de Pau en catalán
+  (fecha "Dimarts, 27 d’octubre", chips, racha), "El meu progrés" y su detalle (comas decimales
+  "5,4s", "27/10/2026", "Amb tu"), Ajustes (alumnos, archivado, plan) y una sesión regular entera
+  jugada en catalán: parpadeo con dígrafos (cotxe, caixa, boig), ciclo con una síl·laba por
+  pantalla, matriz y posición de imágenes, mensajes de motivación de Drupal en catalán al acabar
+  cada actividad (los nuevos del experto), "Com ha anat?" con las tres preguntas y cierre
+  (`sessionfeedback` guardado). Dashboard de Marta en castellano.
+- Hallazgos sin corregir (pendientes):
+  - Expo Go en dispositivo real (punto 6 del plan): no probado; en web los glifos catalanes (l·l,
+    ny, ç, ï) se ven bien en la fuente del player.
+  - Sesiones regulares castellanas cortas: Lingüística `es` tiene 2 actividades en Level2 y, con
+    la ventana de no repetición (5 sesiones), el hueco se queda vacío o baja a Level0; Funciones
+    Ejecutivas sigue sin contenido en los dos idiomas y la rotación de 4 huecos sobre 5 áreas deja
+    sesiones de 2 o 3 actividades. Falta también el lote del ciclo castellano.
+  - Gráficas del detalle con un solo intento: Victory inventa ticks (`#0.9999999999`,
+    `7,4999999999`) que salen en el texto accesible; cosmético, no es de idioma.
+  - Accesibilidad: los botones de "¿Con cuál te has sentido mejor?" y "¿Cuál te ha costado un poco
+    más?" no tienen nombre accesible (salen como `button` sin etiqueta).
+  - `area_name` en la respuesta de `complete` va en castellano (etiqueta original del término); la
+    app no lo muestra.
+  - Los de 05 que siguen: mensajes de explicación no mostrados por la app y originales castellanos
+    a revisar; guion de los enclíticos; Level3 a Level10; handler de lista y lectura.
 

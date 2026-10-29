@@ -1,0 +1,671 @@
+pseudoparaula,nivell,sillabes,estructura,grup,nota
+nirun,1,ni-run,CV-CVC,CVC,
+pejom,1,pe-jom,CV-CVC,CVC,
+ripom,1,ri-pom,CV-CVC,CVC,
+luvil,1,lu-vil,CV-CVC,b/v,
+sovun,1,so-vun,CV-CVC,b/v,
+vepil,1,ve-pil,CV-CVC,b/v,
+vicun,1,vi-cun,CV-CVC,b/v,
+febun,1,fe-bun,CV-CVC,f,
+nofil,1,no-fil,CV-CVC,f,
+nufir,1,nu-fir,CV-CVC,f,
+gaful,1,ga-ful,CV-CVC,g,
+gobun,1,go-bun,CV-CVC,g,
+togun,1,to-gun,CV-CVC,g,
+elpu,1,el-pu,VC-CV,inversa l,
+ilbu,1,il-bu,VC-CV,inversa l,
+ulvo,1,ul-vo,VC-CV,inversa l,
+enli,1,en-li,VC-CV,inversa n,
+inque,1,in-que,VC-CV,inversa n,
+onqui,1,on-qui,VC-CV,inversa n,
+erfi,1,er-fi,VC-CV,inversa r,
+irfu,1,ir-fu,VC-CV,inversa r,
+orju,1,or-ju,VC-CV,inversa r,
+urque,1,ur-que,VC-CV,inversa r,
+asju,1,as-ju,VC-CV,inversa s,
+isvu,1,is-vu,VC-CV,inversa s,
+ospu,1,os-pu,VC-CV,inversa s,
+usvi,1,us-vi,VC-CV,inversa s,
+jutol,1,ju-tol,CV-CVC,j/g,
+mejun,1,me-jun,CV-CVC,j/g,
+nujal,1,nu-jal,CV-CVC,j/g,
+sajul,1,sa-jul,CV-CVC,j/g,
+llaqui,1,lla-qui,CV-CV,ll,
+llebon,1,lle-bon,CV-CVC,ll,
+llomun,1,llo-mun,CV-CVC,ll,
+lluse,1,llu-se,CV-CV,ll,
+nonyi,1,no-nyi,CV-CV,ny,
+nyale,1,nya-le,CV-CV,ny,
+nyefo,1,nye-fo,CV-CV,ny,
+nyine,1,nyi-ne,CV-CV,ny,
+goquel,1,go-quel,CV-CVC,qu,
+moquir,1,mo-quir,CV-CVC,qu,
+nequir,1,ne-quir,CV-CVC,qu,
+quesir,1,que-sir,CV-CVC,qu,
+rabur,1,ra-bur,CV-CVC,r inicial,
+ridul,1,ri-dul,CV-CVC,r inicial,
+ropul,1,ro-pul,CV-CVC,r inicial,
+ruvan,1,ru-van,CV-CVC,r inicial,
+dorru,1,dor-ru,CVC-CV,rr,
+lerru,1,ler-ru,CVC-CV,rr,
+virru,1,vir-ru,CVC-CV,rr,
+dossu,1,dos-su,CVC-CV,ss,
+gisse,1,gis-se,CVC-CV,ss,
+quesse,1,ques-se,CVC-CV,ss,
+xegu,1,xe-gu,CV-CV,x,
+xijol,1,xi-jol,CV-CVC,x,
+xorun,1,xo-run,CV-CVC,x,
+xunor,1,xu-nor,CV-CVC,x,
+guboç,1,gu-boç,CV-CVC,ç,
+maboç,1,ma-boç,CV-CVC,ç,
+neduç,1,ne-duç,CV-CVC,ç,
+queçon,1,que-çon,CV-CVC,ç,
+blifa,2,bli-fa,CCV-CV,bl,
+blupo,2,blu-po,CCV-CV,bl,
+quibli,2,qui-bli,CV-CCV,bl,
+bragui,2,bra-gui,CCV-CV,br,
+brebi,2,bre-bi,CCV-CV,br,
+brogue,2,bro-gue,CCV-CV,br,
+mebri,2,me-bri,CV-CCV,br,
+clufo,2,clu-fo,CCV-CV,cl,
+quecla,2,que-cla,CV-CCV,cl,
+sacli,2,sa-cli,CV-CCV,cl,
+croqui,2,cro-qui,CCV-CV,cr,
+docri,2,do-cri,CV-CCV,cr,
+guecri,2,gue-cri,CV-CCV,cr,
+drori,2,dro-ri,CCV-CV,dr,
+drulo,2,dru-lo,CCV-CV,dr,
+guedro,2,gue-dro,CV-CCV,dr,
+judri,2,ju-dri,CV-CCV,dr,
+gueflo,2,gue-flo,CV-CCV,fl,
+lefli,2,le-fli,CV-CCV,fl,
+rofli,2,ro-fli,CV-CCV,fl,
+frapi,2,fra-pi,CCV-CV,fr,
+frubi,2,fru-bi,CCV-CV,fr,
+quefri,2,que-fri,CV-CCV,fr,
+vafri,2,va-fri,CV-CCV,fr,
+glesi,2,gle-si,CCV-CV,gl,
+glime,2,gli-me,CCV-CV,gl,
+guegla,2,gue-gla,CV-CCV,gl,
+nogli,2,no-gli,CV-CCV,gl,
+grequi,2,gre-qui,CCV-CV,gr,
+grique,2,gri-que,CCV-CV,gr,
+groli,2,gro-li,CCV-CV,gr,
+biguil,2,bi-guil,CV-CVC,gue/gui,
+guebi,2,gue-bi,CV-CV,gue/gui,
+noguil,2,no-guil,CV-CVC,gue/gui,
+quebaig,2,que-baig,CV-CVC,ig,ig final sona tx
+vumig,2,vu-mig,CV-CVC,ig,ig final sona tx
+goixe,2,goi-xe,CV-CV,ix,ix sona x
+nuixan,2,nui-xan,CV-CVC,ix,ix sona x
+vuixi,2,vui-xi,CV-CV,ix,ix sona x
+gueple,2,gue-ple,CV-CCV,pl,
+japlo,2,ja-plo,CV-CCV,pl,
+mopli,2,mo-pli,CV-CCV,pl,
+quepli,2,que-pli,CV-CCV,pl,
+guipro,2,gui-pro,CV-CCV,pr,
+popri,2,po-pri,CV-CCV,pr,
+vupri,2,vu-pri,CV-CCV,pr,
+guetge,2,guet-ge,CVC-CV,tg,
+latgi,2,lat-gi,CVC-CV,tg,
+votge,2,vot-ge,CVC-CV,tg,
+butri,2,bu-tri,CV-CCV,tr,
+guitri,2,gui-tri,CV-CCV,tr,
+guetxi,2,guet-xi,CVC-CV,tx,
+guitxe,2,guit-xe,CVC-CV,tx,
+mutxe,2,mut-xe,CVC-CV,tx,
+setxi,2,set-xi,CVC-CV,tx,
+anspe,3,ans-pe,VCC-CV,VCC,
+ensfa,3,ens-fa,VCC-CV,VCC,
+insqui,3,ins-qui,VCC-CV,VCC,
+obsfi,3,obs-fi,VCC-CV,VCC,
+onsque,3,ons-que,VCC-CV,VCC,
+unspi,3,uns-pi,VCC-CV,VCC,
+dilelp,3,di-lelp,CV-CVCC,coda lt/lp/lc,
+fepult,3,fe-pult,CV-CVCC,coda lt/lp/lc,
+pafolp,3,pa-folp,CV-CVCC,coda lt/lp/lc,
+quelolp,3,que-lolp,CV-CVCC,coda lt/lp/lc,
+selalt,3,se-lalt,CV-CVCC,coda lt/lp/lc,
+merunc,3,me-runc,CV-CVCC,coda mp/nc,
+mivenc,3,mi-venc,CV-CVCC,coda mp/nc,
+quebomp,3,que-bomp,CV-CVCC,coda mp/nc,
+suvamp,3,su-vamp,CV-CVCC,coda mp/nc,
+tabenc,3,ta-benc,CV-CVCC,coda mp/nc,
+bijunt,3,bi-junt,CV-CVCC,coda nt,
+lunint,3,lu-nint,CV-CVCC,coda nt,
+niguint,3,ni-guint,CV-CVCC,coda nt,
+pacunt,3,pa-cunt,CV-CVCC,coda nt,
+ropint,3,ro-pint,CV-CVCC,coda nt,
+tobunt,3,to-bunt,CV-CVCC,coda nt,
+faporp,3,fa-porp,CV-CVCC,coda rc/rp/rn/rm,
+gumarm,3,gu-marm,CV-CVCC,coda rc/rp/rn/rm,
+jasern,3,ja-sern,CV-CVCC,coda rc/rp/rn/rm,
+mitarn,3,mi-tarn,CV-CVCC,coda rc/rp/rn/rm,
+quecorm,3,que-corm,CV-CVCC,coda rc/rp/rn/rm,
+cunors,3,cu-nors,CV-CVCC,coda rs/ns,
+fipans,3,fi-pans,CV-CVCC,coda rs/ns,
+jubirs,3,ju-birs,CV-CVCC,coda rs/ns,
+nelans,3,ne-lans,CV-CVCC,coda rs/ns,
+quenons,3,que-nons,CV-CVCC,coda rs/ns,
+bimurt,3,bi-murt,CV-CVCC,coda rt,
+fupart,3,fu-part,CV-CVCC,coda rt,
+quebart,3,que-bart,CV-CVCC,coda rt,
+sepurt,3,se-purt,CV-CVCC,coda rt,
+tecort,3,te-cort,CV-CVCC,coda rt,
+fidasc,3,fi-dasc,CV-CVCC,coda sc,
+guemesc,3,gue-mesc,CV-CVCC,coda sc,
+labosc,3,la-bosc,CV-CVCC,coda sc,
+sinesc,3,si-nesc,CV-CVCC,coda sc,
+vasesc,3,va-sesc,CV-CVCC,coda sc,
+ferasp,3,fe-rasp,CV-CVCC,coda sp,
+guelasp,3,gue-lasp,CV-CVCC,coda sp,
+nasosp,3,na-sosp,CV-CVCC,coda sp,
+quicasp,3,qui-casp,CV-CVCC,coda sp,
+senusp,3,se-nusp,CV-CVCC,coda sp,
+tumasp,3,tu-masp,CV-CVCC,coda sp,
+cusist,3,cu-sist,CV-CVCC,coda st,
+didast,3,di-dast,CV-CVCC,coda st,
+nequest,3,ne-quest,CV-CVCC,coda st,
+nosist,3,no-sist,CV-CVCC,coda st,
+telist,3,te-list,CV-CVCC,coda st,
+tibost,3,ti-bost,CV-CVCC,coda st,
+gueor,3,gue-or,CV-VC,hiat,dues vocals en síl·labes diferents
+jaol,3,ja-ol,CV-VC,hiat,dues vocals en síl·labes diferents
+quiol,3,qui-ol,CV-VC,hiat,dues vocals en síl·labes diferents
+geüc,3,ge-üc,CV-VC,hiat amb dièresi,dièresi: hiat
+gueïm,3,gue-ïm,CV-VC,hiat amb dièresi,dièresi: hiat
+vaüp,3,va-üp,CV-VC,hiat amb dièresi,dièresi: hiat
+voüc,3,vo-üc,CV-VC,hiat amb dièresi,dièresi: hiat
+lol·lu,3,lol-lu,CVC-CV,l·l,punt volat; es parteix l-l
+nal·lu,3,nal-lu,CVC-CV,l·l,punt volat; es parteix l-l
+quel·lu,3,quel-lu,CVC-CV,l·l,punt volat; es parteix l-l
+ril·lu,3,ril-lu,CVC-CV,l·l,punt volat; es parteix l-l
+val·lun,3,val-lun,CVC-CVC,l·l,punt volat; es parteix l-l
+blemit,4,ble-mit,CCV-CVC,bl,
+blidop,4,bli-dop,CCV-CVC,bl,
+blopuc,4,blo-puc,CCV-CVC,bl,
+toblim,4,to-blim,CV-CCVC,bl,
+veblic,4,ve-blic,CV-CCVC,bl,
+brijat,4,bri-jat,CCV-CVC,br,
+fubrin,4,fu-brin,CV-CCVC,br,
+jabrol,4,ja-brol,CV-CCVC,br,
+nibrap,4,ni-brap,CV-CCVC,br,
+subrom,4,su-brom,CV-CCVC,br,
+clamup,4,cla-mup,CCV-CVC,cl,
+clinap,4,cli-nap,CCV-CVC,cl,
+joclur,4,jo-clur,CV-CCVC,cl,
+meclil,4,me-clil,CV-CCVC,cl,
+quecloc,4,que-cloc,CV-CCVC,cl,
+bodrast,4,bo-drast,CV-CCVCC,coda complexa,
+frabost,4,fra-bost,CCV-CVCC,coda complexa,
+gleguinc,4,gle-guinc,CCV-CVCC,coda complexa,
+netrimp,4,ne-trimp,CV-CCVCC,coda complexa,
+peglurm,4,pe-glurm,CV-CCVCC,coda complexa,
+cralec,4,cra-lec,CCV-CVC,cr,
+crusil,4,cru-sil,CCV-CVC,cr,
+gocruc,4,go-cruc,CV-CCVC,cr,
+jacrot,4,ja-crot,CV-CCVC,cr,
+nocrec,4,no-crec,CV-CCVC,cr,
+dridep,4,dri-dep,CCV-CVC,dr,
+drunap,4,dru-nap,CCV-CVC,dr,
+guedrit,4,gue-drit,CV-CCVC,dr,
+ladric,4,la-dric,CV-CCVC,dr,
+mudrit,4,mu-drit,CV-CCVC,dr,
+flijom,4,fli-jom,CCV-CVC,fl,
+fluler,4,flu-ler,CCV-CVC,fl,
+niflet,4,ni-flet,CV-CCVC,fl,
+poflap,4,po-flap,CV-CCVC,fl,
+soflin,4,so-flin,CV-CCVC,fl,
+nofrin,4,no-frin,CV-CCVC,fr,
+pifrun,4,pi-frun,CV-CCVC,fr,
+pofrar,4,po-frar,CV-CCVC,fr,
+refrul,4,re-frul,CV-CCVC,fr,
+beglal,4,be-glal,CV-CCVC,gl,
+coglap,4,co-glap,CV-CCVC,gl,
+glejac,4,gle-jac,CCV-CVC,gl,
+gliquil,4,gli-quil,CCV-CVC,gl,
+teglor,4,te-glor,CV-CCVC,gl,
+graguip,4,gra-guip,CCV-CVC,gr,
+gremam,4,gre-mam,CCV-CVC,gr,
+grudor,4,gru-dor,CCV-CVC,gr,
+lugrop,4,lu-grop,CV-CCVC,gr,
+segrul,4,se-grul,CV-CCVC,gr,
+crul·lim,4,crul-lim,CCVC-CVC,l·l,punt volat; es parteix l-l
+dral·lot,4,dral-lot,CCVC-CVC,l·l,punt volat; es parteix l-l
+fral·lum,4,fral-lum,CCVC-CVC,l·l,punt volat; es parteix l-l
+frel·lac,4,frel-lac,CCVC-CVC,l·l,punt volat; es parteix l-l
+prel·lin,4,prel-lin,CCVC-CVC,l·l,punt volat; es parteix l-l
+buplos,4,bu-plos,CV-CCVC,pl,
+guiplep,4,gui-plep,CV-CCVC,pl,
+moplup,4,mo-plup,CV-CCVC,pl,
+plasup,4,pla-sup,CCV-CVC,pl,
+poprel,4,po-prel,CV-CCVC,pr,
+prabut,4,pra-but,CCV-CVC,pr,
+prebim,4,pre-bim,CCV-CVC,pr,
+pripec,4,pri-pec,CCV-CVC,pr,
+reprac,4,re-prac,CV-CCVC,pr,
+letrul,4,le-trul,CV-CCVC,tr,
+notrut,4,no-trut,CV-CCVC,tr,
+trimac,4,tri-mac,CCV-CVC,tr,
+trolum,4,tro-lum,CCV-CVC,tr,
+trutac,4,tru-tac,CCV-CVC,tr,
+dagueban,5,da-gue-ban,CV-CV-CVC,gue/gui,
+doguitra,5,do-gui-tra,CV-CV-CCV,gue/gui,
+guedobo,5,gue-do-bo,CV-CV-CV,gue/gui,
+logueme,5,lo-gue-me,CV-CV-CV,gue/gui,
+plosogue,5,plo-so-gue,CCV-CV-CV,gue/gui,
+ilmarfar,5,il-mar-far,VC-CVC-CVC,inversa,
+isgludo,5,is-glu-do,VC-CCV-CV,inversa,
+ossiplet,5,os-si-plet,VC-CV-CCVC,inversa,
+unjarma,5,un-jar-ma,VC-CVC-CV,inversa,
+usdonir,5,us-do-nir,VC-CV-CVC,inversa,
+didoixin,5,di-doi-xin,CV-CV-CVC,ix,ix sona x
+faixomot,5,fai-xo-mot,CV-CV-CVC,ix,ix sona x
+lofoixe,5,lo-foi-xe,CV-CV-CV,ix,ix sona x
+puixafam,5,pui-xa-fam,CV-CV-CVC,ix,ix sona x
+tigrigoix,5,ti-gri-goix,CV-CCV-CVC,ix,ix sona x
+cafagi,5,ca-fa-gi,CV-CV-CV,j/g,
+firgaja,5,fir-ga-ja,CVC-CV-CV,j/g,
+jonofras,5,jo-no-fras,CV-CV-CCVC,j/g,
+lergepram,5,ler-ge-pram,CVC-CV-CCVC,j/g,
+sugilgo,5,su-gil-go,CV-CVC-CV,j/g,
+lletequin,5,lle-te-quin,CV-CV-CVC,ll,
+llubomo,5,llu-bo-mo,CV-CV-CV,ll,
+nellari,5,ne-lla-ri,CV-CV-CV,ll,
+sallorgui,5,sa-llor-gui,CV-CVC-CV,ll,
+tillade,5,ti-lla-de,CV-CV-CV,ll,
+calanyus,5,ca-la-nyus,CV-CV-CVC,ny,
+nyimifor,5,nyi-mi-for,CV-CV-CVC,ny,
+nyolevas,5,nyo-le-vas,CV-CV-CVC,ny,
+sopunyo,5,so-pu-nyo,CV-CV-CV,ny,
+vanyobe,5,va-nyo-be,CV-CV-CV,ny,
+glaqueni,5,gla-que-ni,CCV-CV-CV,qu,
+mamequi,5,ma-me-qui,CV-CV-CV,qu,
+miquiren,5,mi-qui-ren,CV-CV-CVC,qu,
+quegani,5,que-ga-ni,CV-CV-CV,qu,
+quilasma,5,qui-las-ma,CV-CVC-CV,qu,
+deborro,5,de-bor-ro,CV-CVC-CV,rr,
+dusirri,5,du-sir-ri,CV-CVC-CV,rr,
+fisarren,5,fi-sar-ren,CV-CVC-CVC,rr,
+lurrove,5,lur-ro-ve,CVC-CV-CV,rr,
+samirro,5,sa-mir-ro,CV-CVC-CV,rr,
+dessimi,5,des-si-mi,CVC-CV-CV,ss,
+dussapa,5,dus-sa-pa,CVC-CV-CV,ss,
+jablusse,5,ja-blus-se,CV-CCVC-CV,ss,
+tessebo,5,tes-se-bo,CVC-CV-CV,ss,
+tossove,5,tos-so-ve,CVC-CV-CV,ss,
+fugatgin,5,fu-gat-gin,CV-CVC-CVC,tg/tj,
+jatjoli,5,jat-jo-li,CVC-CV-CV,tg/tj,
+letjolun,5,let-jo-lun,CVC-CV-CVC,tg/tj,
+ratgebup,5,rat-ge-bup,CVC-CV-CVC,tg/tj,
+sucotgel,5,su-cot-gel,CV-CVC-CVC,tg/tj,
+catobler,5,ca-to-bler,CV-CV-CCVC,travada amb l,
+gladoper,5,gla-do-per,CCV-CV-CVC,travada amb l,
+lublamip,5,lu-bla-mip,CV-CCV-CVC,travada amb l,
+nabiflol,5,na-bi-flol,CV-CV-CCVC,travada amb l,
+vaslegle,5,vas-le-gle,CVC-CV-CCV,travada amb l,
+brolajat,5,bro-la-jat,CCV-CV-CVC,travada amb r,
+cabefram,5,ca-be-fram,CV-CV-CCVC,travada amb r,
+lupafre,5,lu-pa-fre,CV-CV-CCV,travada amb r,
+paframom,5,pa-fra-mom,CV-CCV-CVC,travada amb r,
+trefleda,5,tre-fle-da,CCV-CCV-CV,travada amb r,
+drobuvotx,5,dro-bu-votx,CCV-CV-CVCC,tx,
+goquitxel,5,go-quit-xel,CV-CVC-CVC,tx,
+landatxos,5,lan-dat-xos,CVC-CVC-CVC,tx,
+netxebo,5,net-xe-bo,CVC-CV-CV,tx,
+tosatxo,5,to-sat-xo,CV-CVC-CV,tx,
+dipiçal,5,di-pi-çal,CV-CV-CVC,ç,
+ladofruç,5,la-do-fruç,CV-CV-CCVC,ç,
+mapejoç,5,ma-pe-joç,CV-CV-CVC,ç,
+pemilmiç,5,pe-mil-miç,CV-CVC-CVC,ç,
+tesbeçun,5,tes-be-çun,CVC-CV-CVC,ç,
+cajodomp,6,ca-jo-domp,CV-CV-CVCC,coda complexa,
+daberent,6,da-be-rent,CV-CV-CVCC,coda complexa,
+golnejons,6,gol-ne-jons,CVC-CV-CVCC,coda complexa,
+lijadolc,6,li-ja-dolc,CV-CV-CVCC,coda complexa,
+sanuvesc,6,sa-nu-vesc,CV-CV-CVCC,coda complexa,
+compelgal,6,com-pel-gal,CVC-CVC-CVC,codes medials,
+dabirpe,6,da-bir-pe,CV-CVC-CV,codes medials,
+pepalbi,6,pe-pal-bi,CV-CVC-CV,codes medials,
+sosmilgui,6,sos-mil-gui,CVC-CVC-CV,codes medials,
+susombe,6,su-som-be,CV-CVC-CV,codes medials,
+brocudro,6,bro-cu-dro,CCV-CV-CCV,doble travada,
+glagrome,6,gla-gro-me,CCV-CCV-CV,doble travada,
+praflunop,6,pra-flu-nop,CCV-CCV-CVC,doble travada,
+prisglotur,6,pris-glo-tur,CCVC-CCV-CVC,doble travada,
+tudrafrac,6,tu-dra-frac,CV-CCV-CCVC,doble travada,
+basgüeda,6,bas-güe-da,CVC-CV-CV,güe/güi,dièresi: la u sona
+cogüeses,6,co-güe-ses,CV-CV-CVC,güe/güi,dièresi: la u sona
+degüive,6,de-güi-ve,CV-CV-CV,güe/güi,dièresi: la u sona
+gegüibor,6,ge-güi-bor,CV-CV-CVC,güe/güi,dièresi: la u sona
+güemofar,6,güe-mo-far,CV-CV-CVC,güe/güi,dièresi: la u sona
+cravuo,6,cra-vu-o,CCV-CV-V,hiat,dues vocals en síl·labes diferents
+greamit,6,gre-a-mit,CCV-V-CVC,hiat,dues vocals en síl·labes diferents
+jantaom,6,jan-ta-om,CVC-CV-VC,hiat,dues vocals en síl·labes diferents
+miluom,6,mi-lu-om,CV-CV-VC,hiat,dues vocals en síl·labes diferents
+senluop,6,sen-lu-op,CVC-CV-VC,hiat,dues vocals en síl·labes diferents
+baïpic,6,ba-ï-pic,CV-V-CVC,hiat amb dièresi,dièresi: hiat
+comeüm,6,co-me-üm,CV-CV-VC,hiat amb dièresi,dièresi: hiat
+gepaït,6,ge-pa-ït,CV-CV-VC,hiat amb dièresi,dièresi: hiat
+guenaïc,6,gue-na-ïc,CV-CV-VC,hiat amb dièresi,dièresi: hiat
+jamaüt,6,ja-ma-üt,CV-CV-VC,hiat amb dièresi,dièresi: hiat
+crul·lija,6,crul-li-ja,CCVC-CV-CV,l·l,punt volat; es parteix l-l
+jabul·lep,6,ja-bul-lep,CV-CVC-CVC,l·l,punt volat; es parteix l-l
+mal·lune,6,mal-lu-ne,CVC-CV-CV,l·l,punt volat; es parteix l-l
+rol·live,6,rol-li-ve,CVC-CV-CV,l·l,punt volat; es parteix l-l
+tidol·la,6,ti-dol-la,CV-CVC-CV,l·l,punt volat; es parteix l-l
+lanyibi,6,la-nyi-bi,CV-CV-CV,ny/ll,
+lliretep,6,lli-re-tep,CV-CV-CVC,ny/ll,
+natonyem,6,na-to-nyem,CV-CV-CVC,ny/ll,
+noquinyer,6,no-qui-nyer,CV-CV-CVC,ny/ll,
+rotillum,6,ro-ti-llum,CV-CV-CVC,ny/ll,
+crenegue,6,cre-ne-gue,CCV-CV-CV,qu/gu,
+desenquem,6,de-sen-quem,CV-CVC-CVC,qu/gu,
+naguital,6,na-gui-tal,CV-CV-CVC,qu/gu,
+noguilin,6,no-gui-lin,CV-CV-CVC,qu/gu,
+viglagui,6,vi-gla-gui,CV-CCV-CV,qu/gu,
+lossezo,6,los-se-zo,CVC-CV-CV,s sorda/s sonora,ss sorda i s/z sonora
+messuzo,6,mes-su-zo,CVC-CV-CV,s sorda/s sonora,ss sorda i s/z sonora
+missezip,6,mis-se-zip,CVC-CV-CVC,s sorda/s sonora,ss sorda i s/z sonora
+nessezot,6,nes-se-zot,CVC-CV-CVC,s sorda/s sonora,ss sorda i s/z sonora
+trissezec,6,tris-se-zec,CCVC-CV-CVC,s sorda/s sonora,ss sorda i s/z sonora
+fecotjas,6,fe-cot-jas,CV-CVC-CVC,tg/tj,
+molatja,6,mo-lat-ja,CV-CVC-CV,tg/tj,
+neratgec,6,ne-rat-gec,CV-CVC-CVC,tg/tj,
+patgilne,6,pat-gil-ne,CVC-CVC-CV,tg/tj,
+sequetjac,6,se-quet-jac,CV-CVC-CVC,tg/tj,
+fodraspos,6,fo-dras-pos,CV-CCVC-CVC,travada i coda,
+pefringrom,6,pe-frin-grom,CV-CCVC-CCVC,travada i coda,
+pranvusot,6,pran-vu-sot,CCVC-CV-CVC,travada i coda,
+prisninoc,6,pris-ni-noc,CCVC-CV-CVC,travada i coda,
+tifrolse,6,ti-frol-se,CV-CCVC-CV,travada i coda,
+blacuvoig,6,bla-cu-voig,CCV-CV-CVC,tx/ig,ig final sona tx
+bretxejo,6,bret-xe-jo,CCVC-CV-CV,tx/ig,
+droletxi,6,dro-let-xi,CCV-CVC-CV,tx/ig,
+gibatxan,6,gi-bat-xan,CV-CVC-CVC,tx/ig,
+lamefaig,6,la-me-faig,CV-CV-CVC,tx/ig,ig final sona tx
+jaixupo,6,jai-xu-po,CV-CV-CV,x/ix,ix sona x
+laboixa,6,la-boi-xa,CV-CV-CV,x/ix,ix sona x
+misloqueix,6,mis-lo-queix,CVC-CV-CVC,x/ix,ix sona x
+xeclasit,6,xe-cla-sit,CV-CCV-CVC,x/ix,
+xugritil,6,xu-gri-til,CV-CCV-CVC,x/ix,
+geslalpebinc,7,ges-lal-pe-binc,CVC-CVC-CV-CVCC,coda complexa,
+metomaclirs,7,me-to-ma-clirs,CV-CV-CV-CCVCC,coda complexa,
+nemilobans,7,ne-mi-lo-bans,CV-CV-CV-CVCC,coda complexa,
+rotomitelc,7,ro-to-mi-telc,CV-CV-CV-CVCC,coda complexa,
+sarimifern,7,sa-ri-mi-fern,CV-CV-CV-CVCC,coda complexa,
+goraguenas,7,go-ra-gue-nas,CV-CV-CV-CVC,gue/gui,
+guilpodebe,7,guil-po-de-be,CVC-CV-CV-CV,gue/gui,
+naguibasac,7,na-gui-ba-sac,CV-CV-CV-CVC,gue/gui,
+rilolague,7,ri-lo-la-gue,CV-CV-CV-CV,gue/gui,
+tiguebosa,7,ti-gue-bo-sa,CV-CV-CV-CV,gue/gui,
+biepovo,7,bi-e-po-vo,CV-V-CV-CV,hiat,dues vocals en síl·labes diferents
+cablubae,7,ca-blu-ba-e,CV-CCV-CV-V,hiat,dues vocals en síl·labes diferents
+difivua,7,di-fi-vu-a,CV-CV-CV-V,hiat,dues vocals en síl·labes diferents
+menequie,7,me-ne-qui-e,CV-CV-CV-V,hiat,dues vocals en síl·labes diferents
+quearitor,7,que-a-ri-tor,CV-V-CV-CVC,hiat,dues vocals en síl·labes diferents
+cromengomuix,7,cro-men-go-muix,CCV-CVC-CV-CVC,ix,ix sona x
+dagalemeix,7,da-ga-le-meix,CV-CV-CV-CVC,ix,ix sona x
+doixomedul,7,doi-xo-me-dul,CV-CV-CV-CVC,ix,ix sona x
+menetevoix,7,me-ne-te-voix,CV-CV-CV-CVC,ix,ix sona x
+saprudeveix,7,sa-pru-de-veix,CV-CCV-CV-CVC,ix,ix sona x
+bacrijolle,7,ba-cri-jo-lle,CV-CCV-CV-CV,ll,
+cabullanit,7,ca-bu-lla-nit,CV-CV-CV-CVC,ll,
+notollodis,7,no-to-llo-dis,CV-CV-CV-CVC,ll,
+sotellado,7,so-te-lla-do,CV-CV-CV-CV,ll,
+tabellecar,7,ta-be-lle-car,CV-CV-CV-CVC,ll,
+bal·lesadep,7,bal-le-sa-dep,CVC-CV-CV-CVC,l·l,punt volat; es parteix l-l
+disamol·lut,7,di-sa-mol-lut,CV-CV-CVC-CVC,l·l,punt volat; es parteix l-l
+jaguembal·lo,7,ja-guem-bal-lo,CV-CVC-CVC-CV,l·l,punt volat; es parteix l-l
+mabel·lequi,7,ma-bel-le-qui,CV-CVC-CV-CV,l·l,punt volat; es parteix l-l
+quipel·lema,7,qui-pel-le-ma,CV-CVC-CV-CV,l·l,punt volat; es parteix l-l
+doponyufa,7,do-po-nyu-fa,CV-CV-CV-CV,ny,
+gemaglenyas,7,ge-ma-gle-nyas,CV-CV-CCV-CVC,ny,
+nyeritiquis,7,nye-ri-ti-quis,CV-CV-CV-CVC,ny,
+nyuvorabon,7,nyu-vo-ra-bon,CV-CV-CV-CVC,ny,
+tonyesana,7,to-nye-sa-na,CV-CV-CV-CV,ny,
+nevaquifac,7,ne-va-qui-fac,CV-CV-CV-CVC,qu,
+padaquener,7,pa-da-que-ner,CV-CV-CV-CVC,qu,
+quecopatol,7,que-co-pa-tol,CV-CV-CV-CVC,qu,
+quesloteda,7,ques-lo-te-da,CVC-CV-CV-CV,qu,
+quipidaprat,7,qui-pi-da-prat,CV-CV-CV-CCVC,qu,
+casirrena,7,ca-sir-re-na,CV-CVC-CV-CV,rr,
+farramabe,7,far-ra-ma-be,CVC-CV-CV-CV,rr,
+lacorrumo,7,la-cor-ru-mo,CV-CVC-CV-CV,rr,
+nequemerrap,7,ne-que-mer-rap,CV-CV-CVC-CVC,rr,
+sadilperrut,7,sa-dil-per-rut,CV-CVC-CVC-CVC,rr,
+catgeburco,7,cat-ge-bur-co,CVC-CV-CVC-CV,tg/tj,
+memafetjac,7,me-ma-fet-jac,CV-CV-CVC-CVC,tg/tj,
+plivafatgi,7,pli-va-fat-gi,CCV-CV-CVC-CV,tg/tj,
+pracodutge,7,pra-co-dut-ge,CCV-CV-CVC-CV,tg/tj,
+sijatjubra,7,si-jat-ju-bra,CV-CVC-CV-CCV,tg/tj,
+blemefobut,7,ble-me-fo-but,CCV-CV-CV-CVC,travada amb l,
+dasafledet,7,da-sa-fle-det,CV-CV-CCV-CVC,travada amb l,
+laclirono,7,la-cli-ro-no,CV-CCV-CV-CV,travada amb l,
+peblirdajos,7,pe-blir-da-jos,CV-CCVC-CV-CVC,travada amb l,
+voglomula,7,vo-glo-mu-la,CV-CCV-CV-CV,travada amb l,
+nedugobros,7,ne-du-go-bros,CV-CV-CV-CCVC,travada amb r,
+nesfromaque,7,nes-fro-ma-que,CVC-CCV-CV-CV,travada amb r,
+rasulicri,7,ra-su-li-cri,CV-CV-CV-CCV,travada amb r,
+simigreto,7,si-mi-gre-to,CV-CV-CCV-CV,travada amb r,
+tidigrotes,7,ti-di-gro-tes,CV-CV-CCV-CVC,travada amb r,
+beclatonatx,7,be-cla-to-natx,CV-CCV-CV-CVCC,tx,
+cronutxema,7,cro-nut-xe-ma,CCV-CVC-CV-CV,tx,
+flosacaditx,7,flo-sa-ca-ditx,CCV-CV-CV-CVCC,tx,
+natxatome,7,nat-xa-to-me,CVC-CV-CV-CV,tx,
+nebepatxa,7,ne-be-pat-xa,CV-CV-CVC-CV,tx,
+bofledaveç,7,bo-fle-da-veç,CV-CCV-CV-CVC,ç,
+copadoneç,7,co-pa-do-neç,CV-CV-CV-CVC,ç,
+frebitersuç,7,fre-bi-ter-suç,CCV-CV-CVC-CVC,ç,
+manabeço,7,ma-na-be-ço,CV-CV-CV-CV,ç,
+vumiçavo,7,vu-mi-ça-vo,CV-CV-CV-CV,ç,
+danaterulc,8,da-na-te-rulc,CV-CV-CV-CVCC,coda complexa,
+fapogolorp,8,fa-po-go-lorp,CV-CV-CV-CVCC,coda complexa,
+pobedilusp,8,po-be-di-lusp,CV-CV-CV-CVCC,coda complexa,
+samofagemp,8,sa-mo-fa-gemp,CV-CV-CV-CVCC,coda complexa,
+sedepopalc,8,se-de-po-palc,CV-CV-CV-CVCC,coda complexa,
+cledrovorse,8,cle-dro-vor-se,CCV-CCV-CVC-CV,doble travada,
+cufibrogrepot,8,cu-fi-bro-gre-pot,CV-CV-CCV-CCV-CVC,doble travada,
+difrolnopograt,8,di-frol-no-po-grat,CV-CCVC-CV-CV-CCVC,doble travada,
+moplastribedi,8,mo-plas-tri-be-di,CV-CCVC-CCV-CV-CV,doble travada,
+plipavufradin,8,pli-pa-vu-fra-din,CCV-CV-CV-CCV-CVC,doble travada,
+benogüejon,8,be-no-güe-jon,CV-CV-CV-CVC,güe/güi,dièresi: la u sona
+gosagüelcon,8,go-sa-güel-con,CV-CV-CVC-CVC,güe/güi,dièresi: la u sona
+mafrovirgüe,8,ma-fro-vir-güe,CV-CCV-CVC-CV,güe/güi,dièresi: la u sona
+pefigüemon,8,pe-fi-güe-mon,CV-CV-CV-CVC,güe/güi,dièresi: la u sona
+vesgüefimep,8,ves-güe-fi-mep,CVC-CV-CV-CVC,güe/güi,dièresi: la u sona
+fletrosuoma,8,fle-tro-su-o-ma,CCV-CCV-CV-V-CV,hiat,dues vocals en síl·labes diferents
+nondusae,8,non-du-sa-e,CVC-CV-CV-V,hiat,dues vocals en síl·labes diferents
+poejatir,8,po-e-ja-tir,CV-V-CV-CVC,hiat,dues vocals en síl·labes diferents
+tespledoa,8,tes-ple-do-a,CVC-CCV-CV-V,hiat,dues vocals en síl·labes diferents
+vifiotel,8,vi-fi-o-tel,CV-CV-V-CVC,hiat,dues vocals en síl·labes diferents
+arpacupo,8,ar-pa-cu-po,VC-CV-CV-CV,inversa,
+ilquisine,8,il-qui-si-ne,VC-CV-CV-CV,inversa,
+infedudra,8,in-fe-du-dra,VC-CV-CV-CCV,inversa,
+olfoseni,8,ol-fo-se-ni,VC-CV-CV-CV,inversa,
+ussolabi,8,us-so-la-bi,VC-CV-CV-CV,inversa,
+bopuixifangam,8,bo-pui-xi-fan-gam,CV-CV-CV-CVC-CVC,ix,ix sona x
+coleixenve,8,co-lei-xen-ve,CV-CV-CVC-CV,ix,ix sona x
+digraixesa,8,di-grai-xe-sa,CV-CCV-CV-CV,ix,ix sona x
+neseleixolom,8,ne-se-lei-xo-lom,CV-CV-CV-CV-CVC,ix,ix sona x
+tiduflosasoix,8,ti-du-flo-sa-soix,CV-CV-CCV-CV-CVC,ix,ix sona x
+degollopo,8,de-go-llo-po,CV-CV-CV-CV,ll,
+mavapoquillo,8,ma-va-po-qui-llo,CV-CV-CV-CV-CV,ll,
+quilledivobet,8,qui-lle-di-vo-bet,CV-CV-CV-CV-CVC,ll,
+sullabadir,8,su-lla-ba-dir,CV-CV-CV-CVC,ll,
+vomedellur,8,vo-me-de-llur,CV-CV-CV-CVC,ll,
+cabul·lodesa,8,ca-bul-lo-de-sa,CV-CVC-CV-CV-CV,l·l,punt volat; es parteix l-l
+desol·lofor,8,de-sol-lo-for,CV-CVC-CV-CVC,l·l,punt volat; es parteix l-l
+mepal·lodure,8,me-pal-lo-du-re,CV-CVC-CV-CV-CV,l·l,punt volat; es parteix l-l
+nomusil·lo,8,no-mu-sil-lo,CV-CV-CVC-CV,l·l,punt volat; es parteix l-l
+pagrul·lobo,8,pa-grul-lo-bo,CV-CCVC-CV-CV,l·l,punt volat; es parteix l-l
+losanyabe,8,lo-sa-nya-be,CV-CV-CV-CV,ny,
+minyafosen,8,mi-nya-fo-sen,CV-CV-CV-CVC,ny,
+nyasedomet,8,nya-se-do-met,CV-CV-CV-CVC,ny,
+nyiquecrombis,8,nyi-que-crom-bis,CV-CV-CCVC-CVC,ny,
+sajonyule,8,sa-jo-nyu-le,CV-CV-CV-CV,ny,
+bacuvossodo,8,ba-cu-vos-so-do,CV-CV-CVC-CV-CV,ss,
+dalissaton,8,da-lis-sa-ton,CV-CVC-CV-CVC,ss,
+dossotabar,8,dos-so-ta-bar,CVC-CV-CV-CVC,ss,
+lercobussep,8,ler-co-bus-sep,CVC-CV-CVC-CVC,ss,
+lofossitum,8,lo-fos-si-tum,CV-CVC-CV-CVC,ss,
+fancatjudom,8,fan-cat-ju-dom,CVC-CVC-CV-CVC,tg/tj,
+potgecanin,8,pot-ge-ca-nin,CVC-CV-CV-CVC,tg/tj,
+sacroromitgel,8,sa-cro-ro-mit-gel,CV-CCV-CV-CVC-CVC,tg/tj,
+tapevatge,8,ta-pe-vat-ge,CV-CV-CVC-CV,tg/tj,
+vipuberatgi,8,vi-pu-be-rat-gi,CV-CV-CV-CVC-CV,tg/tj,
+baglupabejom,8,ba-glu-pa-be-jom,CV-CCV-CV-CV-CVC,travada amb l,
+bistunofle,8,bis-tu-no-fle,CVC-CV-CV-CCV,travada amb l,
+cligovelsarfa,8,cli-go-vel-sar-fa,CCV-CV-CVC-CVC-CV,travada amb l,
+glafanimedri,8,gla-fa-ni-me-dri,CCV-CV-CV-CV-CCV,travada amb l,
+tidablaqui,8,ti-da-bla-qui,CV-CV-CCV-CV,travada amb l,
+cajogrundotel,8,ca-jo-grun-do-tel,CV-CV-CCVC-CV-CVC,travada amb r,
+fabilafrapa,8,fa-bi-la-fra-pa,CV-CV-CV-CCV-CV,travada amb r,
+gejaredrat,8,ge-ja-re-drat,CV-CV-CV-CCVC,travada amb r,
+guebocriter,8,gue-bo-cri-ter,CV-CV-CCV-CVC,travada amb r,
+simobrepabo,8,si-mo-bre-pa-bo,CV-CV-CCV-CV-CV,travada amb r,
+danefenobig,8,da-ne-fe-no-big,CV-CV-CV-CV-CVC,tx/ig,ig final sona tx
+dotxivusdan,8,dot-xi-vus-dan,CVC-CV-CVC-CVC,tx/ig,
+linaletxur,8,li-na-let-xur,CV-CV-CVC-CVC,tx/ig,
+penotxuja,8,pe-not-xu-ja,CV-CVC-CV-CV,tx/ig,
+tutxilocrap,8,tut-xi-lo-crap,CVC-CV-CV-CCVC,tx/ig,
+donigaragelp,9,do-ni-ga-ra-gelp,CV-CV-CV-CV-CVCC,coda complexa,
+flaclotudenomp,9,fla-clo-tu-de-nomp,CCV-CCV-CV-CV-CVCC,coda complexa,
+gedenabiposc,9,ge-de-na-bi-posc,CV-CV-CV-CV-CVCC,coda complexa,
+supenamilavonc,9,su-pe-na-mi-la-vonc,CV-CV-CV-CV-CV-CVCC,coda complexa,
+tefligepagurs,9,te-fli-ge-pa-gurs,CV-CCV-CV-CV-CVCC,coda complexa,
+guibafepovesos,9,gui-ba-fe-po-ve-sos,CV-CV-CV-CV-CV-CVC,gue/gui,
+janaguipamami,9,ja-na-gui-pa-ma-mi,CV-CV-CV-CV-CV-CV,gue/gui,
+sebajoguetom,9,se-ba-jo-gue-tom,CV-CV-CV-CV-CVC,gue/gui,
+soguifodata,9,so-gui-fo-da-ta,CV-CV-CV-CV-CV,gue/gui,
+teguedaronoba,9,te-gue-da-ro-no-ba,CV-CV-CV-CV-CV-CV,gue/gui,
+friganadijaix,9,fri-ga-na-di-jaix,CCV-CV-CV-CV-CVC,ix,ix sona x
+guidibisvesaixi,9,gui-di-bis-ve-sai-xi,CV-CV-CVC-CV-CV-CV,ix,ix sona x
+maseromubanaix,9,ma-se-ro-mu-ba-naix,CV-CV-CV-CV-CV-CVC,ix,ix sona x
+suleixolopaba,9,su-lei-xo-lo-pa-ba,CV-CV-CV-CV-CV-CV,ix,ix sona x
+temoixasonadem,9,te-moi-xa-so-na-dem,CV-CV-CV-CV-CV-CVC,ix,ix sona x
+bomogofullot,9,bo-mo-go-fu-llot,CV-CV-CV-CV-CVC,ll,
+llerdusepabe,9,ller-du-se-pa-be,CVC-CV-CV-CV-CV,ll,
+lluvanagedesa,9,llu-va-na-ge-de-sa,CV-CV-CV-CV-CV-CV,ll,
+nellecatemoser,9,ne-lle-ca-te-mo-ser,CV-CV-CV-CV-CV-CVC,ll,
+tallecafriva,9,ta-lle-ca-fri-va,CV-CV-CV-CCV-CV,ll,
+cavonatol·le,9,ca-vo-na-tol-le,CV-CV-CV-CVC-CV,l·l,punt volat; es parteix l-l
+del·lepigimo,9,del-le-pi-gi-mo,CVC-CV-CV-CV-CV,l·l,punt volat; es parteix l-l
+jovel·lepebi,9,jo-vel-le-pe-bi,CV-CVC-CV-CV-CV,l·l,punt volat; es parteix l-l
+notapobol·lo,9,no-ta-po-bol-lo,CV-CV-CV-CVC-CV,l·l,punt volat; es parteix l-l
+vol·lijufiron,9,vol-li-ju-fi-ron,CVC-CV-CV-CV-CVC,l·l,punt volat; es parteix l-l
+fartonyepuve,9,far-to-nye-pu-ve,CVC-CV-CV-CV-CV,ny,
+nonyopodever,9,no-nyo-po-de-ver,CV-CV-CV-CV-CVC,ny,
+nyocorcumiges,9,nyo-cor-cu-mi-ges,CV-CVC-CV-CV-CVC,ny,
+rinyolasilep,9,ri-nyo-la-si-lep,CV-CV-CV-CV-CVC,ny,
+sidequifinyicot,9,si-de-qui-fi-nyi-cot,CV-CV-CV-CV-CV-CVC,ny,
+joquidrepape,9,jo-qui-dre-pa-pe,CV-CV-CCV-CV-CV,qu,
+plarvofogendaque,9,plar-vo-fo-gen-da-que,CCVC-CV-CV-CVC-CV-CV,qu,
+quimimavodalir,9,qui-mi-ma-vo-da-lir,CV-CV-CV-CV-CV-CVC,qu,
+safagejoqui,9,sa-fa-ge-jo-qui,CV-CV-CV-CV-CV,qu,
+sipecaqueto,9,si-pe-ca-que-to,CV-CV-CV-CV-CV,qu,
+carralanefus,9,car-ra-la-ne-fus,CVC-CV-CV-CV-CVC,rr,
+mefarrilobas,9,me-far-ri-lo-bas,CV-CVC-CV-CV-CVC,rr,
+merrejobiti,9,mer-re-jo-bi-ti,CVC-CV-CV-CV-CV,rr,
+tecajablerros,9,te-ca-ja-bler-ros,CV-CV-CV-CCVC-CVC,rr,
+vorrapugata,9,vor-ra-pu-ga-ta,CVC-CV-CV-CV-CV,rr,
+barequessidon,9,ba-re-ques-si-don,CV-CV-CVC-CV-CVC,ss,
+ladequessefo,9,la-de-ques-se-fo,CV-CV-CVC-CV-CV,ss,
+nissoquebredap,9,nis-so-que-bre-dap,CVC-CV-CV-CCV-CVC,ss,
+tofonircussa,9,to-fo-nir-cus-sa,CV-CV-CVC-CVC-CV,ss,
+vissemacato,9,vis-se-ma-ca-to,CVC-CV-CV-CV-CV,ss,
+casimbatjucalvar,9,ca-sim-bat-ju-cal-var,CV-CVC-CVC-CV-CVC-CVC,tg/tj,
+lascosupitgi,9,las-co-su-pit-gi,CVC-CV-CV-CVC-CV,tg/tj,
+mesolodetgepo,9,me-so-lo-det-ge-po,CV-CV-CV-CVC-CV-CV,tg/tj,
+mifaplitjogopo,9,mi-fa-plit-jo-go-po,CV-CV-CCVC-CV-CV-CV,tg/tj,
+solitgevegue,9,so-lit-ge-ve-gue,CV-CVC-CV-CV-CV,tg/tj,
+dosdafoblomo,9,dos-da-fo-blo-mo,CVC-CV-CV-CCV-CV,travada amb l,
+lamiflensaco,9,la-mi-flen-sa-co,CV-CV-CCVC-CV-CV,travada amb l,
+perafronaglo,9,pe-ra-fro-na-glo,CV-CV-CCV-CV-CCV,travada amb l,
+rasfoquepletil,9,ras-fo-que-ple-til,CVC-CV-CV-CCV-CVC,travada amb l,
+veclamiflabit,9,ve-cla-mi-fla-bit,CV-CCV-CV-CCV-CVC,travada amb l,
+bonamepapris,9,bo-na-me-pa-pris,CV-CV-CV-CV-CCVC,travada amb r,
+drapucrotone,9,dra-pu-cro-to-ne,CCV-CV-CCV-CV-CV,travada amb r,
+fenabrolafis,9,fe-na-bro-la-fis,CV-CV-CCV-CV-CVC,travada amb r,
+maloridrigui,9,ma-lo-ri-dri-gui,CV-CV-CV-CCV-CV,travada amb r,
+trafrevojudom,9,tra-fre-vo-ju-dom,CCV-CCV-CV-CV-CVC,travada amb r,
+becatxitovo,9,be-cat-xi-to-vo,CV-CVC-CV-CV-CV,tx,
+faclevotxidi,9,fa-cle-vot-xi-di,CV-CCV-CVC-CV-CV,tx,
+fosatxagurva,9,fo-sat-xa-gur-va,CV-CVC-CV-CVC-CV,tx,
+magutxacodite,9,ma-gut-xa-co-di-te,CV-CVC-CV-CV-CV-CV,tx,
+saclivepafagotx,9,sa-cli-ve-pa-fa-gotx,CV-CCV-CV-CV-CV-CVCC,tx,
+divatolsivaç,9,di-va-tol-si-vaç,CV-CV-CVC-CV-CVC,ç,
+magopabiçun,9,ma-go-pa-bi-çun,CV-CV-CV-CV-CVC,ç,
+reçalsanaguimen,9,re-çal-sa-na-gui-men,CV-CVC-CV-CV-CV-CVC,ç,
+tedribaçoti,9,te-dri-ba-ço-ti,CV-CCV-CV-CV-CV,ç,
+vudanasiraç,9,vu-da-na-si-raç,CV-CV-CV-CV-CVC,ç,
+brolastindumamp,10,bro-las-tin-du-mamp,CCV-CVC-CVC-CV-CVCC,coda complexa,
+capocotamuns,10,ca-po-co-ta-muns,CV-CV-CV-CV-CVCC,coda complexa,
+lecavuneglort,10,le-ca-vu-ne-glort,CV-CV-CV-CV-CCVCC,coda complexa,
+nomefegimisc,10,no-me-fe-gi-misc,CV-CV-CV-CV-CVCC,coda complexa,
+patemegresorn,10,pa-te-me-gre-sorn,CV-CV-CV-CCV-CVCC,coda complexa,
+borelarjosqui,10,bo-re-lar-jos-qui,CV-CV-CVC-CVC-CV,codes medials,
+cormebesama,10,cor-me-be-sa-ma,CVC-CV-CV-CV-CV,codes medials,
+fitalbinvana,10,fi-tal-bin-va-na,CV-CVC-CVC-CV-CV,codes medials,
+gesfenesmalat,10,ges-fe-nes-ma-lat,CVC-CV-CVC-CV-CVC,codes medials,
+sopobalquenda,10,so-po-bal-quen-da,CV-CV-CVC-CVC-CV,codes medials,
+biflatugeljacron,10,bi-fla-tu-gel-ja-cron,CV-CCV-CV-CVC-CV-CCVC,doble travada,
+crapabraglonus,10,cra-pa-bra-glo-nus,CCV-CV-CCV-CCV-CVC,doble travada,
+grabladomengue,10,gra-bla-do-men-gue,CCV-CCV-CV-CVC-CV,doble travada,
+modefiglatre,10,mo-de-fi-gla-tre,CV-CV-CV-CCV-CCV,doble travada,
+ratodafliplecas,10,ra-to-da-fli-ple-cas,CV-CV-CV-CCV-CCV-CVC,doble travada,
+güedenavote,10,güe-de-na-vo-te,CV-CV-CV-CV-CV,güe/güi,dièresi: la u sona
+posogüemaneba,10,po-so-güe-ma-ne-ba,CV-CV-CV-CV-CV-CV,güe/güi,dièresi: la u sona
+sedosampratigüe,10,se-do-sam-pra-ti-güe,CV-CV-CVC-CCV-CV-CV,güe/güi,dièresi: la u sona
+tigüepranabac,10,ti-güe-pra-na-bac,CV-CV-CCV-CV-CVC,güe/güi,dièresi: la u sona
+vatagüilpole,10,va-ta-güil-po-le,CV-CV-CVC-CV-CV,güe/güi,dièresi: la u sona
+gabesjoïsimur,10,ga-bes-jo-ï-si-mur,CV-CVC-CV-V-CV-CVC,hiat amb dièresi,dièresi: hiat
+josjadaïqui,10,jos-ja-da-ï-qui,CVC-CV-CV-V-CV,hiat amb dièresi,dièresi: hiat
+sataïtedofe,10,sa-ta-ï-te-do-fe,CV-CV-V-CV-CV-CV,hiat amb dièresi,dièresi: hiat
+telnamebeüdes,10,tel-na-me-be-ü-des,CVC-CV-CV-CV-V-CVC,hiat amb dièresi,dièresi: hiat
+tribecrodaüna,10,tri-be-cro-da-ü-na,CCV-CV-CCV-CV-V-CV,hiat amb dièresi,dièresi: hiat
+croletimeor,10,cro-le-ti-me-or,CCV-CV-CV-CV-VC,hiat i travada,dues vocals en síl·labes diferents
+mapoalafres,10,ma-po-a-la-fres,CV-CV-V-CV-CCVC,hiat i travada,dues vocals en síl·labes diferents
+niedrotaglop,10,ni-e-dro-ta-glop,CV-V-CCV-CV-CCVC,hiat i travada,dues vocals en síl·labes diferents
+tiolegrelo,10,ti-o-le-gre-lo,CV-V-CV-CCV-CV,hiat i travada,dues vocals en síl·labes diferents
+trosiosede,10,tro-si-o-se-de,CCV-CV-V-CV-CV,hiat i travada,dues vocals en síl·labes diferents
+divetidomig,10,di-ve-ti-do-mig,CV-CV-CV-CV-CVC,ix/ig,ig final sona tx
+dovunabalaix,10,do-vu-na-ba-laix,CV-CV-CV-CV-CVC,ix/ig,ix sona x
+jomonodaneig,10,jo-mo-no-da-neig,CV-CV-CV-CV-CVC,ix/ig,ig final sona tx
+nibopodobitoix,10,ni-bo-po-do-bi-toix,CV-CV-CV-CV-CV-CVC,ix/ig,ix sona x
+panebeixaboc,10,pa-ne-bei-xa-boc,CV-CV-CV-CV-CVC,ix/ig,ix sona x
+fraquepal·leto,10,fra-que-pal-le-to,CCV-CV-CVC-CV-CV,l·l i travada,punt volat; es parteix l-l
+gafrisal·lujo,10,ga-fri-sal-lu-jo,CV-CCV-CVC-CV-CV,l·l i travada,punt volat; es parteix l-l
+jal·limovocron,10,jal-li-mo-vo-cron,CVC-CV-CV-CV-CCVC,l·l i travada,punt volat; es parteix l-l
+pitil·lacraja,10,pi-til-la-cra-ja,CV-CVC-CV-CCV-CV,l·l i travada,punt volat; es parteix l-l
+vetril·lambudo,10,ve-tril-lam-bu-do,CV-CCVC-CVC-CV-CV,l·l i travada,punt volat; es parteix l-l
+biganyefina,10,bi-ga-nye-fi-na,CV-CV-CV-CV-CV,ny/ll,
+leminyiblogo,10,le-mi-nyi-blo-go,CV-CV-CV-CCV-CV,ny/ll,
+llisdibamaquec,10,llis-di-ba-ma-quec,CVC-CV-CV-CV-CVC,ny/ll,
+nodepalloste,10,no-de-pa-llos-te,CV-CV-CV-CVC-CV,ny/ll,
+sonyavucale,10,so-nya-vu-ca-le,CV-CV-CV-CV-CV,ny/ll,
+bilipessazuc,10,bi-li-pes-sa-zuc,CV-CV-CVC-CV-CVC,s sorda/s sonora,ss sorda i s/z sonora
+gebissezalpam,10,ge-bis-se-zal-pam,CV-CVC-CV-CVC-CVC,s sorda/s sonora,ss sorda i s/z sonora
+letidissazar,10,le-ti-dis-sa-zar,CV-CV-CVC-CV-CVC,s sorda/s sonora,ss sorda i s/z sonora
+tissuzijolcon,10,tis-su-zi-jol-con,CVC-CV-CV-CVC-CVC,s sorda/s sonora,ss sorda i s/z sonora
+vitessizeni,10,vi-tes-si-ze-ni,CV-CVC-CV-CV-CV,s sorda/s sonora,ss sorda i s/z sonora
+fitudomabli,10,fi-tu-do-ma-bli,CV-CV-CV-CV-CCV,travada amb l,
+fraguitoneglem,10,fra-gui-to-ne-glem,CCV-CV-CV-CV-CCVC,travada amb l,
+necoburgoflan,10,ne-co-bur-go-flan,CV-CV-CVC-CV-CCVC,travada amb l,
+praviclegrisdut,10,pra-vi-cle-gris-dut,CCV-CV-CCV-CCVC-CVC,travada amb l,
+tudosogliferbit,10,tu-do-so-gli-fer-bit,CV-CV-CV-CCV-CVC-CVC,travada amb l,
+boquipraticra,10,bo-qui-pra-ti-cra,CV-CV-CCV-CV-CCV,travada amb r,
+fatafrilsapec,10,fa-ta-fril-sa-pec,CV-CV-CCVC-CV-CVC,travada amb r,
+tevavaslapre,10,te-va-vas-la-pre,CV-CV-CVC-CV-CCV,travada amb r,
+tiprusininama,10,ti-pru-si-ni-na-ma,CV-CCV-CV-CV-CV-CV,travada amb r,
+vanfrolquibrimo,10,van-frol-qui-bri-mo,CVC-CCVC-CV-CCV-CV,travada amb r,
+dregepadoflucost,10,dre-ge-pa-do-flu-cost,CCV-CV-CV-CV-CCV-CVCC,travada i coda complexa,
+godoclomunasc,10,go-do-clo-mu-nasc,CV-CV-CCV-CV-CVCC,travada i coda complexa,
+lacadroquimolp,10,la-ca-dro-qui-molp,CV-CV-CCV-CV-CVCC,travada i coda complexa,
+mapatidifrans,10,ma-pa-ti-di-frans,CV-CV-CV-CV-CCVCC,travada i coda complexa,
+temegepragidelc,10,te-me-ge-pra-gi-delc,CV-CV-CV-CCV-CV-CVCC,travada i coda complexa,
+batxesogocreron,10,bat-xe-so-go-cre-ron,CVC-CV-CV-CV-CCV-CVC,tx/tg,
+cunagalmetxol,10,cu-na-gal-met-xol,CV-CV-CVC-CVC-CVC,tx/tg,
+patgicubobri,10,pat-gi-cu-bo-bri,CVC-CV-CV-CV-CCV,tx/tg,
+pretxismaquildebo,10,pret-xis-ma-quil-de-bo,CCVC-CVC-CV-CVC-CV-CV,tx/tg,
+vegrodecodetja,10,ve-gro-de-co-det-ja,CV-CCV-CV-CV-CVC-CV,tx/tg,
