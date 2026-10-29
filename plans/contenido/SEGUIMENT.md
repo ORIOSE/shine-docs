@@ -8,12 +8,12 @@ Estats: **pendent** (no començat), **en curs**, **enviat** (a revisió del grup
 
 | | Castellà | Català |
 |---|---|---|
-| Activitats publicades | 336 | 354 |
+| Activitats publicades | 369 | 387 |
 | Importades, en revisió | 0 | 0 |
 | Retirades (sense publicar) | 4 | 2 |
 | De les quals, del cicle Sílabas (publicades + en revisió) | 38 + 0 | 44 + 0 |
 
-Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0.
+Encàrrecs: 12 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0.
 
 ## Fases i tasques
 
@@ -34,6 +34,7 @@ Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0
 | GEN | Generador de sessions: no reservar forat a àrees sense contingut | aplicat | SessionGenerator::planRegular(), 2026-10-29. |
 | TAG | Etiquetes fonològiques (esforç) calculades per estructura | aplicat | estructura.py, etiquetar_lote.py; 20 activitats etiquetades, prompts 05, 07, 08. |
 | SRC | Registre de fonts de dades | aplicat | docs/fuentes-de-datos.md; regla a CLAUDE.md. |
+| F20 | FASE 20: seqüència amb regla (CPT), segon tipus de Funcions Executives | en curs | E13 aprovada el 2026-10-29 (secundària Velocitat). Lot R-SEQ1 aprovat pel grup sense canvis i publicat: 3 per nivell i idioma, que amb la matriu amb regla donen 6 per cel·la a Funcions Executives. Fet: model a Drupal, importador, avaluador (Pr), app, generador, missatges d'explicació, verificació per l'API. Pendent: jugar-ho a Expo web i en un mòbil real. |
 
 ## Encàrrecs al grup d'experts
 
@@ -51,6 +52,7 @@ Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0
 | E10 | Decisions pedagògiques (4 preguntes) | aplicat | plans/multiidioma/respostes-dubtes-expert.md, lliuraments/E10-4-funcions-executives-proposta-respostes.md | plans/contenido/encarrecs/E10-decisions.md | E10-4-funcions-executives.zip |
 | E11 | Guia editorial dels textos | aplicat | plans/contenido/encarrecs/lliuraments/E11-guia-editorial-es.md, E11-guia-editorial-ca.md | (les guies acaben amb les decisions per confirmar) | E11-guia-editorial.zip |
 | E12 | Protocol de revisió de lots | tancat | (sense lliurament: és el procediment) | plans/contenido/encarrecs/E12-protocol-revisio.md |  |
+| E13 | Seqüència amb regla: segon tipus de Funcions Executives | aplicat | plans/contenido/encarrecs/lliuraments/E13-resposta.md | plans/contenido/encarrecs/E13-sequencia-amb-regla.md | E13-sequencia-amb-regla.zip |
 
 ## Revisions de lots
 
@@ -68,6 +70,7 @@ Encàrrecs: 11 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0
 | R-T8 | Tanda 8, Level8 | aplicat | 36 | 48 (48) | plans/contenido/revision/tanda8-level8.md | LOT-tanda8-level8.zip |
 | R-T9 | Tanda 9, Level9 (i posició d'imatges de Level10) | aplicat | 60 | 36 (36) | plans/contenido/revision/tanda9-level9.md | LOT-tanda9-level9.zip |
 | R-T10 | Tanda 10, Level10 | aplicat | 36 | 36 (36) | plans/contenido/revision/tanda10-level10.md | LOT-tanda10-level10.zip |
+| R-SEQ1 | Seqüència amb regla, Level0 a Level10 (3 per nivell) | aplicat | 33 | 66 (66) | plans/contenido/revision/fe-secuencia-regla-v1.md | LOT-fe-secuencia-regla-v1.zip |
 
 ## Dubtes
 
@@ -125,8 +128,9 @@ Cada cel·la: activitats **publicades** + **en revisió** (sense comptar el cicl
 | &nbsp;&nbsp;LEC | · | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | &nbsp;&nbsp;LIS | · | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | &nbsp;&nbsp;REP | 2 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| **Funcions Executives** | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 |
+| **Funcions Executives** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |
 | &nbsp;&nbsp;MAT | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 |
+| &nbsp;&nbsp;SEQ | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 |
 
 ### Català
 
@@ -145,8 +149,9 @@ Cada cel·la: activitats **publicades** + **en revisió** (sense comptar el cicl
 | &nbsp;&nbsp;LEC | · | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | &nbsp;&nbsp;LIS | · | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | &nbsp;&nbsp;REP | 3 | 3 | 3 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| **Funcions Executives** | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 | falten 3 |
+| **Funcions Executives** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |
 | &nbsp;&nbsp;MAT | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 |
+| &nbsp;&nbsp;SEQ | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 |
 
 ## Activitats retirades
 

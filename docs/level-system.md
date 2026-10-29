@@ -297,7 +297,11 @@ radar (±3) pero no la evidencia ni los niveles, para que cada señal tenga un �
   despublicadas. Modelo en `plans/multiidioma/analisis.md`.
 - **Freno por aciertos**: donde el summary tenga `field_items_count > 0`, un `easy` con
   `field_correct_count / field_items_count < accuracy_floor` (por defecto 0,6) se trata como
-  `ok` a efectos de nivel. La valoración cruda se guarda intacta.
+  `ok` a efectos de nivel. La valoración cruda se guarda intacta. En la matriz con regla
+  (FASE 19) los cebos tocados (`field_lure_marks`) restan de los aciertos. En la secuencia con
+  regla (FASE 20), cuyo summary lleva `field_lures_count`, el acierto es la tasa de aciertos menos
+  la de falsas alarmas: `correct / items − lure_marks / lures_count` (índice Pr; con pocos cebos
+  frente a muchos objetivos, restar cebos de aciertos apenas frenaría).
 - **Histéresis**: tras un cambio de nivel en un área, esa área no vuelve a cambiar hasta
   haber recibido al menos `min_ratings_after_change` (por defecto 2) valoraciones nuevas en
   evaluación. En la práctica lo garantiza el propio formato de 2 sesiones, pero se deja

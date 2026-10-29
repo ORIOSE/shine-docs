@@ -1296,9 +1296,31 @@ errores (10 avisos, todos de los que ya había).
 guardados antes de jugar con el código nuevo. Ojo: el comando del plan usa
 `->condition("type", $b)`, pero la clave de bundle de `activitysummary` es `bundle`.
 
-**Pendiente de recorrido manual** (`npm run web`, usuario normal): los tres tipos en sesión
-regular y de ajuste, contador de errores con `count_errors` y `skip_on_error` en imágenes,
-salir y reiniciar a mitad, y red cortada al terminar (aviso, "Siguiente" bloqueado, reintento).
+**Recorrido manual (2026-10-29, Expo web, titular jose con la alumna Marta y su token de alumno)**:
+- Sesión regular con lista vertical, lectura en voz alta, parpadeo e imágenes: intro, juego,
+  pantalla final y siguiente en los cuatro; contador de errores en los de texto; "Error y
+  siguiente" en el parpadeo (`skip_on_error`); reiniciar a mitad vuelve a la intro con el contador
+  a 0 y no guarda nada; salir a mitad deja la actividad pendiente y "Continuar" la retoma.
+  Auto-evaluación de fin de sesión y `field_completed_at` puesto (sin `409 incomplete`),
+  `field_operated_by` = jose.
+- Sesión de ajuste (creada a mano, `periodic`, lista, parpadeo e imágenes): "¿Cómo ha ido?" en los
+  tres, también en imágenes; los tres `activityfeedback` guardados; cierre correcto. Imágenes con
+  `count_errors` y `skip_on_error` (activados de forma temporal en el **tipo** de contenido: son
+  third-party settings del `NodeType`, expuestos como campos calculados, no un campo del nodo):
+  contador, "Error y siguiente" en memorizar (pasa a la pregunta) y en preguntar (respuesta 0, sin
+  acierto), tres métricas apiladas (tiempo, aciertos 3/4, errores 2).
+- Red cortada al terminar (fallo simulado de las peticiones de tracking): aviso "No hemos podido
+  guardar esta actividad", "Siguiente actividad" deshabilitado, y al recuperar la red "Reintentar"
+  guarda un solo summary y desbloquea.
+- Payloads: imágenes coincide campo por campo con el último summary anterior de Marta. El
+  parpadeo nuevo lleva `field_errors` y la referencia no, pero la referencia la escribió el script
+  de verificación por API de la FASE 18, no la app; la regla es la de los tests de oro.
+- **Fallo encontrado y corregido**: con el aviso de guardado fallido (y en pantallas bajas), el
+  cuerpo de la pantalla final, centrado y sin scroll, se desbordaba: el icono salía cortado por
+  arriba y la tarjeta de motivación se metía debajo de "Siguiente actividad". Ahora el cuerpo va en
+  un `ScrollView` (como la intro); comprobado en el navegador a 585 px de alto. `tsc` limpio, lint
+  con los avisos de siempre, 293 tests en verde.
+- Ojo al probar: `CI=1 npx expo start` desactiva la recarga al cambiar ficheros.
 
 ### 07. App: dashboard con sesiones propias y generación bajo demanda (2026-10-15)
 
@@ -2741,6 +2763,50 @@ avatar de Marta"); el ejemplo del campo era "ABC 123", con un 1 que los códigos
 - En Expo Go el QR codifica `exp://…/--/learners/join?code=…`; en un development build,
   `shine://learners/join?code=…`. Abrirlo sin sesión lleva al login y se pierde el código.
 
+### 06b. App: "Tu plan" y borrado de cuenta en Ajustes (2026-10-29)
+
+El código ya estaba en el árbol (entró con los commits del multiidioma, con los textos en el
+catálogo de la FASE 18, no en objetos `*_COPY` como pedía el plan); esta entrada cierra el
+subplan con la verificación.
+
+- **Lógica pura** en `src/lib/accountScreens.ts`: `planLabel` (free "Prueba gratuita", family
+  "Familia", courtesy "Invitación", professional, school; desconocido, tal cual), `statusLabel`
+  (active/trial "Activo"; grace/billing_retry "Pendiente de renovación"; paused; expired/revoked
+  "Caducado"; nada en el gratuito), `expiryLabel` ("Válido hasta el..." / "Sin fecha de fin"),
+  `quotaUsage`/`quotaText` (activos de los que es `owner` y que no ocupan plaza de un centro,
+  §3.3), `trialLines` (sesiones de prueba que le quedan a cada alumno), `organizationLines`
+  ("Acceso de X activado por Y"), `deletionImpact` (la regla de `AccountDeleter`: en un centro o
+  con otro adulto, solo pierdes el acceso; si no, se anonimiza; incluye los archivados),
+  `validateDeletePassword` y `describeDeleteError` (`invalid_password` al campo; flood, sesión
+  caducada, red y fallo genérico a un aviso sin "error"). Tests en `accountScreens.test.ts` (10).
+- **Ajustes** (`app/(auth)/settings.tsx`): tarjeta "Tu plan" con plan, estado, caducidad, cupo
+  "N de M", líneas de prueba y de centro, y "Gestionar suscripción" / "Restaurar compras"
+  desactivados con la nota "Muy pronto..." (sin precios ni enlaces a las tiendas hasta 08); se
+  refresca con `refreshMe()` en `useFocusEffect`. Sección "Cuenta": email, "Cerrar sesión" y
+  "Borrar cuenta". La ayuda de la fuente dice "Se guarda para {nombre}".
+- **Borrar cuenta** (`app/(auth)/account/delete.tsx`, `src/lib/api/account.ts`): a dos toques
+  desde Ajustes (Apple 5.1.1 v). Explica qué pasa con cada alumno, pide la contraseña y llama a
+  `POST /shine/account/delete`; con éxito, `logout()` con despedida y `/login` la muestra.
+
+**Verificación**: `tsc` limpio, lint sin errores (4 avisos anteriores, ninguno en estos
+ficheros), 307 tests en 36 suites. En Expo web con un titular nuevo (`borrar06b@test.com`,
+registrado por la API con consentimiento): con un alumno, "Prueba gratuita", "1 de 1" y "Lía:
+quedan 8 sesiones de prueba"; tras darle una cortesía familiar y dos alumnos más (Teo, solo
+suyo; Nora, compartida con jose por código), al volver a Ajustes sin recargar: "Invitación ·
+Activo · Sin fecha de fin", "3 de 3". "Borrar cuenta": Lía y Teo "solo trabaja contigo: se
+borran su nombre y su avatar..."; Nora "sigue con otra persona" (jose no tiene
+`field_display_name` y sale el respaldo). Contraseña incorrecta → "Esa contraseña no es la de tu
+cuenta." en el campo; correcta → login con "Tu cuenta se ha borrado". En el servidor: titular,
+Lía y Teo anonimizados (`deleted-*`, bloqueados), login con la contraseña antigua → 400
+`invalid_grant`, y jose sigue viendo a Nora, promovido de `guardian` a `owner` (regla de §5.6).
+Nora archivada después para no pasar el cupo de jose.
+
+**Hito H1** (producto cerrado con muro): alcanzado con 06 y 06b.
+
+**Para subplanes siguientes**:
+- **08**: activar "Gestionar suscripción" y "Restaurar compras" en la tarjeta de `settings.tsx`
+  (hoy `disabled` con `ui.settings.plan.soon`).
+
 ### 07. Backend: webhook de RevenueCat (2026-10-26)
 
 Todo en `shine_entitlement`. En `config/sync`: `shine_entitlement.settings` (nuevo, solo el flag
@@ -2833,7 +2899,64 @@ cambios.
 - Refresco bajo demanda: implementar `SubscriberRefreshInterface` cuando haya clave de API y
   engancharlo en `GET /shine/me` (04) detrás de `revenuecat_refresh`.
 
+### 09. Stores y RevenueCat: identificadores y checklist (2026-10-29, en curso)
+
+Las altas de Apple y Google están en trámite; RevenueCat ya existe sin configurar. Titular legal:
+persona física (autónomo). Nombre definitivo, bundle id y package por decidir (14b). Precios
+pendientes.
+
+- **`docs/stores.md`** (nuevo): titular y estado de cada cuenta con fecha, efectos de ser persona
+  física (vendedor con nombre propio, dirección pública en las dos fichas por DSA y por Google,
+  prueba cerrada de 12 testers durante 14 días en cuentas personales de Play), tabla de
+  identificadores (los decididos y los **EJEMPLO** a sustituir), dónde vive cada secreto,
+  checklist de Apple, Google y RevenueCat, guion de sandbox para 08 y decisiones.
+- **Planes base de Play decididos**: `monthly` y `annual`. Con ellos RevenueCat manda en el webhook
+  `shine_family_monthly:monthly` y `shine_family_annual:annual`, así que se añadieron al catálogo
+  `shine_entitlement.plan.family` (`config/sync`, importado y comprobado con `resolveExternal`).
+  Siguen los ids sin plan base que usan los fixtures de 07.
+- `docs/monetization.md` §2 y §11: precios pendientes, sin prueba de store, categoría Educación
+  (no Kids), nombre y bundle id como bloqueo.
+
+**Pendiente para cerrar 09**: completar las altas siguiendo el checklist de `docs/stores.md`,
+sustituir los valores **EJEMPLO**, fijar precios y comprobar en RevenueCat los cuatro productos
+sin avisos.
+
 ---
+
+## FASE 20 — Secuencia con regla (segundo tipo de Funciones Ejecutivas y Atención)
+**Estado**: 🔄 En curso (2026-10-29). Plan en `plans/funcions-executives/sequencia/README.md`;
+propuesta E13 (`plans/contenido/encarrecs/E13-sequencia-amb-regla.md`) aprobada por el grupo el
+mismo día sin cambios de parámetros, con secundaria Velocidad (`lliuraments/E13-resposta.md`).
+
+- [x] **01. Modelo**: node type `activity_rule_sequence`, bundles `logrulesequence` y
+  `summary_rule_sequence` (campos en `docs/activity-system.md`), `node.session.field_activities`,
+  `ACTIVITY_BUNDLES` de sessionfeedback y activityfeedback (`sessionfeedback_update_11004`,
+  `activityfeedback_update_11003`), motivación y `explanation_message` "Rule sequence". Script
+  `private/scripts/fase20-01-backend.php` (copia en `dades-privades/scripts-copia/`) y `drush cex`.
+- [x] **02. Importador**: `SequenceRule` y `RuleSequenceActivityHandler` (prefijo SEQ); tests
+  `SequenceRuleTest` y `Fase20HandlerTest` (61 tests de shine_content en verde).
+- [x] **03. Evaluador**: con `field_lures_count`, acierto = tasa de aciertos − tasa de falsas
+  alarmas (`docs/level-system.md` §5.5); dos tests nuevos (25 en `SessionEvaluatorTest`).
+- [x] **04. App**: `src/lib/ruleSequence.ts`, `ruleSequenceKind` (con el nuevo `elapsed` opcional
+  del contrato de tipos: duración de la serie, porque `time` de cada entrada es el tiempo de
+  reacción), `RuleSequencePlayer`, tipos, carga, router, estadísticas e iconos `target` y `pause`.
+  `tsc` limpio, lint sin errores nuevos, jest 36 suites y 307 tests.
+- [x] **05. Generador y lote**: `content/generadores/secuencia_regla.py` y
+  `content/secuencia-regla-es-ca-level0-10-v1.json` (33 registros, 66 nodos), importado **sin
+  publicar**.
+- [x] **06 (parte)**: cuatro mensajes de explicación por familia (`scripts/create-sequence-explanations.php`,
+  es y ca). Verificado como usuario normal (alumno 42): GET del nodo, POST 201 de log y summary,
+  filtros por `uid` con datos (`private/scripts/fase20-verify.php`, deja todo como estaba).
+- [x] **Respuesta E13 aplicada**: secundaria Velocidad en el lote; el generador evita tiradas del
+  mismo elemento y tres objetivos encadenados (en Level9 salían "ma sol ma sol ma sol..."), lote
+  regenerado y reimportado sin publicar. Revisión del lote R-SEQ1:
+  `plans/contenido/revision/fe-secuencia-regla-v1.md`, paquete
+  `shine/private/enviament-2026-10-29-E13/LOT-fe-secuencia-regla-v1.zip`.
+- [x] **R-SEQ1 aprobada y publicada (2026-10-29)**: el grupo aprueba los 33 registros sin cambios
+  (`lliuraments/respostes-2026-10-30/LOT-fe-secuencia-regla-v1-resposta.md`; cita los códigos, los
+  pares y los recuentos reales del lote). `--publish`: 66 nodos publicados; Funciones Ejecutivas
+  queda con 6 por celda de Level0 a Level10 en los dos idiomas (3 de la matriz y 3 de la secuencia).
+- [ ] Pendiente: recorrido en Expo web y en un móvil real (precisión del reloj).
 
 ## FASE 19 — Matriz con regla (Funciones Ejecutivas y Atención)
 

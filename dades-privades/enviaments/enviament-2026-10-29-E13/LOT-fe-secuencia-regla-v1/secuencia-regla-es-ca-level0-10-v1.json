@@ -1,0 +1,1659 @@
+{
+  "lote": "secuencia-regla-es-ca-level0-10-v1",
+  "descripcion": "Secuencias con regla de Funciones Ejecutivas y Atención (FASE 20, subplan 05): 3 por nivel, régimen de apertura del área, Level0 a Level10 con idiomas [es, ca] (símbolos, letras y sílabas universales). Parámetros de la propuesta E13, aprobados por el grupo el 2026-10-29 (lliuraments/E13-resposta.md); objetivos y cebos comprobados con la misma clasificación que el importador. Se importa sin publicar hasta la revisión del lote (protocolo E12).",
+  "origen": {
+    "generador": "generadores/secuencia_regla.py",
+    "version": "1.0",
+    "semilla": 20261029,
+    "nota": "python3 generadores/secuencia_regla.py --seed 20261029 --per-level 3 --out secuencia-regla-es-ca-level0-10-v1.json (desde shine/content/)"
+  },
+  "actividades": [
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L00-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Toca cuando salga ★",
+        "ca": "Toca quan surti ★"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level0"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cada vez que salga ★. Con las demás, no toques.",
+        "ca": "Toca el botó cada vegada que surti ★. Amb les altres, no toquis."
+      },
+      "explicacion": "Sequence detect",
+      "contenido": {
+        "regla": {
+          "tipo": "s1",
+          "objetivo": "★"
+        },
+        "elementos": "■ ▲ ● ▲ ★ ● ★ ● ■ ◆ ★ ● ◆ ★ ■ ▲ ★ ■ ◆ ▲ ★ ● ◆ ●",
+        "objetivos": 6,
+        "cebos": 18,
+        "ms_visible": 1500,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "▲",
+            "★",
+            "◆",
+            "■",
+            "★",
+            "◆"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 48
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L00-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Toca cuando salga ●",
+        "ca": "Toca quan surti ●"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level0"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cada vez que salga ●. Con las demás, no toques.",
+        "ca": "Toca el botó cada vegada que surti ●. Amb les altres, no toquis."
+      },
+      "explicacion": "Sequence detect",
+      "contenido": {
+        "regla": {
+          "tipo": "s1",
+          "objetivo": "●"
+        },
+        "elementos": "▲ ◆ ★ ◆ ● ■ ★ ▲ ● ◆ ● ★ ▲ ● ■ ★ ◆ ▲ ★ ◆ ● ■ ★ ●",
+        "objetivos": 6,
+        "cebos": 18,
+        "ms_visible": 1500,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "▲",
+            "●",
+            "■",
+            "◆",
+            "●",
+            "◆"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 48
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L00-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Toca cuando salga ▲",
+        "ca": "Toca quan surti ▲"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level0"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cada vez que salga ▲. Con las demás, no toques.",
+        "ca": "Toca el botó cada vegada que surti ▲. Amb les altres, no toquis."
+      },
+      "explicacion": "Sequence detect",
+      "contenido": {
+        "regla": {
+          "tipo": "s1",
+          "objetivo": "▲"
+        },
+        "elementos": "◆ ■ ● ▲ ★ ● ▲ ◆ ■ ★ ▲ ● ◆ ▲ ■ ◆ ■ ▲ ◆ ▲ ◆ ● ★ ■",
+        "objetivos": 6,
+        "cebos": 18,
+        "ms_visible": 1500,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "★",
+            "▲",
+            "◆",
+            "◆",
+            "▲",
+            "★"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 48
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L01-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Toca cuando salga la a",
+        "ca": "Toca quan surti la lletra a"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level1"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cada vez que salga la a. Con las demás, no toques.",
+        "ca": "Toca el botó cada vegada que surti la lletra a. Amb les altres, no toquis."
+      },
+      "explicacion": "Sequence detect",
+      "contenido": {
+        "regla": {
+          "tipo": "s1",
+          "objetivo": "a"
+        },
+        "elementos": "x t r a l m x l a n u v a m s a s i a v z a u a i f a f v l",
+        "objetivos": 8,
+        "cebos": 22,
+        "ms_visible": 1500,
+        "ms_pausa": 500
+      },
+      "origen": {
+        "segundos": 60
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L01-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Toca cuando salga la s",
+        "ca": "Toca quan surti la lletra s"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level1"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cada vez que salga la s. Con las demás, no toques.",
+        "ca": "Toca el botó cada vegada que surti la lletra s. Amb les altres, no toquis."
+      },
+      "explicacion": "Sequence detect",
+      "contenido": {
+        "regla": {
+          "tipo": "s1",
+          "objetivo": "s"
+        },
+        "elementos": "i u r v t i s o s i x u s a s f s v r s l x a s f t m s x n",
+        "objetivos": 8,
+        "cebos": 22,
+        "ms_visible": 1500,
+        "ms_pausa": 500
+      },
+      "origen": {
+        "segundos": 60
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L01-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Toca cuando salga la m",
+        "ca": "Toca quan surti la lletra m"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level1"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cada vez que salga la m. Con las demás, no toques.",
+        "ca": "Toca el botó cada vegada que surti la lletra m. Amb les altres, no toquis."
+      },
+      "explicacion": "Sequence detect",
+      "contenido": {
+        "regla": {
+          "tipo": "s1",
+          "objetivo": "m"
+        },
+        "elementos": "i l i m v m l v m r f v o m v a m x s r z m l e m z s a e m",
+        "objetivos": 8,
+        "cebos": 22,
+        "ms_visible": 1500,
+        "ms_pausa": 500
+      },
+      "origen": {
+        "segundos": 60
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L02-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos ★",
+        "ca": "Totes menys ★"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level2"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga ★: con ★, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti ★: amb ★, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "★"
+        },
+        "elementos": "● ▲ ■ ★ ■ ★ ▲ ◆ ★ ■ ★ ● ■ ▲ ◆ ■ ★ ■ ◆ ■ ◆ ★ ◆ ▲ ★ ◆ ▲ ● ■ ★",
+        "objetivos": 22,
+        "cebos": 8,
+        "ms_visible": 1500,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "◆",
+            "●",
+            "★",
+            "▲",
+            "★",
+            "■"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 60
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L02-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos ●",
+        "ca": "Totes menys ●"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level2"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga ●: con ●, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti ●: amb ●, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "●"
+        },
+        "elementos": "◆ ▲ ★ ◆ ▲ ■ ★ ▲ ◆ ● ■ ◆ ● ★ ■ ▲ ● ★ ● ▲ ● ■ ● ■ ● ▲ ★ ◆ ■ ●",
+        "objetivos": 22,
+        "cebos": 8,
+        "ms_visible": 1500,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "■",
+            "■",
+            "●",
+            "▲",
+            "●",
+            "▲"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 60
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L02-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos ■",
+        "ca": "Totes menys ■"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level2"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga ■: con ■, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti ■: amb ■, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "■"
+        },
+        "elementos": "◆ ★ ▲ ◆ ■ ◆ ■ ★ ■ ★ ● ★ ▲ ■ ▲ ■ ★ ◆ ■ ● ★ ● ★ ▲ ★ ■ ● ■ ★ ▲",
+        "objetivos": 22,
+        "cebos": 8,
+        "ms_visible": 1500,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "★",
+            "◆",
+            "■",
+            "◆",
+            "■",
+            "◆"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 60
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L03-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos la s",
+        "ca": "Totes menys la lletra s"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level3"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga la s: con la s, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti la lletra s: amb la lletra s, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "s"
+        },
+        "elementos": "n x l s f s r l x m s a s x a l u t s o i s x s i s u o v i s t e t m r",
+        "objetivos": 27,
+        "cebos": 9,
+        "ms_visible": 1300,
+        "ms_pausa": 500
+      },
+      "origen": {
+        "segundos": 65
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L03-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos la m",
+        "ca": "Totes menys la lletra m"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level3"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga la m: con la m, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti la lletra m: amb la lletra m, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "m"
+        },
+        "elementos": "o f e l m v x o m s f i m z e r x m i l m x t o s r a m x l m r o m x m",
+        "objetivos": 27,
+        "cebos": 9,
+        "ms_visible": 1300,
+        "ms_pausa": 500
+      },
+      "origen": {
+        "segundos": 65
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L03-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos la t",
+        "ca": "Totes menys la lletra t"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level3"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga la t: con la t, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti la lletra t: amb la lletra t, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "t"
+        },
+        "elementos": "e u v e a t o t v t a t a r o r n s n t u m t r t s n a m v t x e t v m",
+        "objetivos": 27,
+        "cebos": 9,
+        "ms_visible": 1300,
+        "ms_pausa": 500
+      },
+      "origen": {
+        "segundos": 65
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L04-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos la a",
+        "ca": "Totes menys la lletra a"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level4"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga la a: con la a, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti la lletra a: amb la lletra a, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "a"
+        },
+        "elementos": "i x i u a i a t s i z n t u l a u n i m n z x a z x s a s a i a a z v a s v a t",
+        "objetivos": 30,
+        "cebos": 10,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 64
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L04-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos la o",
+        "ca": "Totes menys la lletra o"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level4"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga la o: con la o, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti la lletra o: amb la lletra o, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "o"
+        },
+        "elementos": "l m n o o m x z u r s u o x l v i o i n l o v z u v x z s t f l i o o i o z o o",
+        "objetivos": 30,
+        "cebos": 10,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 64
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L04-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Todas menos la l",
+        "ca": "Totes menys la lletra l"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level4"
+      ],
+      "instruccion": {
+        "es": "Toca el botón con todas, menos cuando salga la l: con la l, no toques.",
+        "ca": "Toca el botó amb totes, menys quan surti la lletra l: amb la lletra l, no toquis."
+      },
+      "explicacion": "Sequence all but",
+      "contenido": {
+        "regla": {
+          "tipo": "s2",
+          "excepto": "l"
+        },
+        "elementos": "v a z s l x f u a l o l e a z m l f l v o l f r o z u l n v l l u l s o n z x e",
+        "objetivos": 30,
+        "cebos": 10,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 64
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L05-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "La s después de la a",
+        "ca": "La lletra s després de la lletra a"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga la s justo después de la a. Si la s sale sin la a antes, no toques.",
+        "ca": "Toca el botó quan surti la lletra s just després de la lletra a. Si la lletra s surt sense la lletra a abans, no toquis."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "s",
+          "contexto": "a"
+        },
+        "elementos": "s x a s l a l s a s a s i a s a f s a s a s t r x a s a s a m a s f a s a x s u",
+        "objetivos": 10,
+        "cebos": 8,
+        "ms_visible": 1300,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "l",
+            "a",
+            "s",
+            "s",
+            "a",
+            "i"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 72
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L05-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "La m después de la e",
+        "ca": "La lletra m després de la lletra e"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga la m justo después de la e. Si la m sale sin la e antes, no toques.",
+        "ca": "Toca el botó quan surti la lletra m just després de la lletra e. Si la lletra m surt sense la lletra e abans, no toquis."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "m",
+          "contexto": "e"
+        },
+        "elementos": "m m v e m e m e f e m e f e m e m i e i v e m m i x e m e m i e z v e m m t e m",
+        "objetivos": 10,
+        "cebos": 8,
+        "ms_visible": 1300,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "i",
+            "e",
+            "m",
+            "m",
+            "e",
+            "t"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 72
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L05-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "La t después de la o",
+        "ca": "La lletra t després de la lletra o"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level5"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga la t justo después de la o. Si la t sale sin la o antes, no toques.",
+        "ca": "Toca el botó quan surti la lletra t just després de la lletra o. Si la lletra t surt sense la lletra o abans, no toquis."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "t",
+          "contexto": "o"
+        },
+        "elementos": "t t u o t o x o t o r o t z x o t n t o t n o t o x o t o t u o t z o t t v o s",
+        "objetivos": 10,
+        "cebos": 8,
+        "ms_visible": 1300,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "z",
+            "o",
+            "t",
+            "t",
+            "o",
+            "s"
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 72
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L06-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro la s, fondo oscuro la m",
+        "ca": "Fons clar la lletra s, fons fosc la lletra m"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level6"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga la s; con fondo oscuro, cuando salga la m.",
+        "ca": "Amb fons clar, toca el botó quan surti la lletra s; amb fons fosc, quan surti la lletra m."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "s"
+            },
+            "oscuro": {
+              "objetivo": "m"
+            }
+          }
+        },
+        "elementos": "f r t l m m o s s l t r s v x m s o m s v m m o a m v a r t o l s m s m m s v o",
+        "oscuros": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          12,
+          16,
+          17,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          31,
+          32,
+          33,
+          36,
+          37,
+          38,
+          39
+        ],
+        "objetivos": 10,
+        "cebos": 8,
+        "ms_visible": 1300,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "s",
+            "v",
+            "m",
+            "m",
+            "s",
+            "e"
+          ],
+          "oscuros": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 72
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L06-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro la a, fondo oscuro la t",
+        "ca": "Fons clar la lletra a, fons fosc la lletra t"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level6"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga la a; con fondo oscuro, cuando salga la t.",
+        "ca": "Amb fons clar, toca el botó quan surti la lletra a; amb fons fosc, quan surti la lletra t."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "a"
+            },
+            "oscuro": {
+              "objetivo": "t"
+            }
+          }
+        },
+        "elementos": "u x r v a r a s x a v r t r x r t a a m t z a t v t m z a v n a a r a s t a r a",
+        "oscuros": [
+          2,
+          3,
+          8,
+          10,
+          12,
+          13,
+          18,
+          19,
+          22,
+          23,
+          24,
+          29,
+          30,
+          32,
+          33,
+          38,
+          39
+        ],
+        "objetivos": 10,
+        "cebos": 8,
+        "ms_visible": 1300,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "a",
+            "v",
+            "t",
+            "t",
+            "a",
+            "v"
+          ],
+          "oscuros": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 72
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L06-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro la l, fondo oscuro la o",
+        "ca": "Fons clar la lletra l, fons fosc la lletra o"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level6"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga la l; con fondo oscuro, cuando salga la o.",
+        "ca": "Amb fons clar, toca el botó quan surti la lletra l; amb fons fosc, quan surti la lletra o."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "l"
+            },
+            "oscuro": {
+              "objetivo": "o"
+            }
+          }
+        },
+        "elementos": "u v x o f x z f l x o m z o v o z o l o o n l o l o x o v m o v u v l s m s o o",
+        "oscuros": [
+          3,
+          6,
+          11,
+          16,
+          17,
+          18,
+          19,
+          23,
+          24,
+          29,
+          30,
+          31,
+          36,
+          37,
+          38,
+          39
+        ],
+        "objetivos": 10,
+        "cebos": 8,
+        "ms_visible": 1300,
+        "ms_pausa": 500,
+        "practica": {
+          "elementos": [
+            "l",
+            "u",
+            "o",
+            "o",
+            "l",
+            "f"
+          ],
+          "oscuros": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "origen": {
+        "segundos": 72
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L07-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "«sa» después de «ma»",
+        "ca": "«sa» després de «ma»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level7"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga «sa» justo después de «ma». Si «sa» sale sin «ma» antes, no toques.",
+        "ca": "Toca el botó quan surti «sa» just després de «ma». Si «sa» surt sense «ma» abans, no toquis."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "sa",
+          "contexto": "ma"
+        },
+        "elementos": "fe no ma sa no ro sa ma ta ma sa nu ma sa fe ma sa ma sa sa fi ma nu sa ma sa ma nu te sa nu ma sa nu ma sa ma te nu ma sa ma sa ro ma sa ma sa",
+        "objetivos": 12,
+        "cebos": 8,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 77
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L07-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "«lo» después de «te»",
+        "ca": "«lo» després de «te»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level7"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga «lo» justo después de «te». Si «lo» sale sin «te» antes, no toques.",
+        "ca": "Toca el botó quan surti «lo» just després de «te». Si «lo» surt sense «te» abans, no toquis."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "lo",
+          "contexto": "te"
+        },
+        "elementos": "te mu lo te lo te lo ma te me te lo te lo nu te lo ro lo no so te lo ro nu ma te lo lo te lo me te re te lo re lo mu te lo te lo no te lo te ma",
+        "objetivos": 12,
+        "cebos": 8,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 77
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L07-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "«nu» después de «fi»",
+        "ca": "«nu» després de «fi»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level7"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga «nu» justo después de «fi». Si «nu» sale sin «fi» antes, no toques.",
+        "ca": "Toca el botó quan surti «nu» just després de «fi». Si «nu» surt sense «fi» abans, no toquis."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "nu",
+          "contexto": "fi"
+        },
+        "elementos": "me ro fi nu fi nu fi te fi ta sa fi nu ta fi nu fi nu mu fi nu fi te fi sa fi nu li so nu fi nu ma nu sa nu fi nu fi nu so fi nu nu fi nu ro sa",
+        "objetivos": 12,
+        "cebos": 8,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 77
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L08-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro «sa», fondo oscuro «lo»",
+        "ca": "Fons clar «sa», fons fosc «lo»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level8"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga «sa»; con fondo oscuro, cuando salga «lo».",
+        "ca": "Amb fons clar, toca el botó quan surti «sa»; amb fons fosc, quan surti «lo»."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "sa"
+            },
+            "oscuro": {
+              "objetivo": "lo"
+            }
+          }
+        },
+        "elementos": "ro ma no sa lo sa sa nu te sa no me sa ro lo fe ro re ta ma fe sa me sa fe sa nu lo ma ta lo lo sa sa lo lo sa no te fi ma lo lo nu te lo fi sa",
+        "oscuros": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          10,
+          11,
+          16,
+          17,
+          19,
+          20,
+          25,
+          26,
+          29,
+          30,
+          35,
+          36,
+          37,
+          38,
+          42,
+          43,
+          45,
+          46,
+          47
+        ],
+        "objetivos": 12,
+        "cebos": 10,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 77
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L08-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro «ma», fondo oscuro «nu»",
+        "ca": "Fons clar «ma», fons fosc «nu»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level8"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga «ma»; con fondo oscuro, cuando salga «nu».",
+        "ca": "Amb fons clar, toca el botó quan surti «ma»; amb fons fosc, quan surti «nu»."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "ma"
+            },
+            "oscuro": {
+              "objetivo": "nu"
+            }
+          }
+        },
+        "elementos": "lo sa fi ma lo so re lo fe ma nu fi nu ma te ma sa ma te la ma lo nu ro lo nu ma nu ma fi re sa li nu nu ma ma re lo fe fi nu ma ro nu sa ma ma",
+        "oscuros": [
+          0,
+          1,
+          5,
+          6,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29,
+          30,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41,
+          44,
+          45
+        ],
+        "objetivos": 12,
+        "cebos": 10,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 77
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L08-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro «te», fondo oscuro «li»",
+        "ca": "Fons clar «te», fons fosc «li»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level8"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga «te»; con fondo oscuro, cuando salga «li».",
+        "ca": "Amb fons clar, toca el botó quan surti «te»; amb fons fosc, quan surti «li»."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "te"
+            },
+            "oscuro": {
+              "objetivo": "li"
+            }
+          }
+        },
+        "elementos": "re ma nu ro me te no li li fi te li so li te te nu li te fi re te nu li te fe te ro ma re te sa li li no li fi sa so li so fe sa te te nu li fi",
+        "oscuros": [
+          0,
+          4,
+          5,
+          8,
+          9,
+          13,
+          14,
+          15,
+          19,
+          20,
+          22,
+          23,
+          24,
+          25,
+          28,
+          29,
+          30,
+          35,
+          37,
+          39,
+          40,
+          42,
+          45,
+          46,
+          47
+        ],
+        "objetivos": 12,
+        "cebos": 10,
+        "ms_visible": 1200,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 77
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L09-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "«sol» después de «ma»",
+        "ca": "«sol» després de «ma»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level9"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga «sol» justo después de «ma». Si «sol» sale sin «ma» antes, no toques. Mira bien la regla: se esconde cuando empieza la serie.",
+        "ca": "Toca el botó quan surti «sol» just després de «ma». Si «sol» surt sense «ma» abans, no toquis. Mira bé la regla: s’amaga quan comença la sèrie."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "sol",
+          "contexto": "ma",
+          "oculta": true
+        },
+        "elementos": "sol sol ma fin ma sol sol ma sol ma ron ma sol fan ma sol fan ma sol ma ron ma sol lo fin tal ma fin sol ma sol fe ma sol tal te ma sol sol te ma sol ma sol no ma lo ma sol ma sol tos ma sol",
+        "objetivos": 14,
+        "cebos": 10,
+        "ms_visible": 1000,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 76
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L09-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "«mes» después de «li»",
+        "ca": "«mes» després de «li»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level9"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga «mes» justo después de «li». Si «mes» sale sin «li» antes, no toques. Mira bien la regla: se esconde cuando empieza la serie.",
+        "ca": "Toca el botó quan surti «mes» just després de «li». Si «mes» surt sense «li» abans, no toquis. Mira bé la regla: s’amaga quan comença la sèrie."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "mes",
+          "contexto": "li",
+          "oculta": true
+        },
+        "elementos": "no li fin ras li mes li mes tos li so li mes mes li ta mes li mes li mes li ron mes ras li te li mes li mes mes so li mes mes ras re li mes tos li mes li mes sal nu li mes li mes ta li mes",
+        "objetivos": 14,
+        "cebos": 10,
+        "ms_visible": 1000,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 76
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L09-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "«fin» después de «ro»",
+        "ca": "«fin» després de «ro»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level9"
+      ],
+      "instruccion": {
+        "es": "Toca el botón cuando salga «fin» justo después de «ro». Si «fin» sale sin «ro» antes, no toques. Mira bien la regla: se esconde cuando empieza la serie.",
+        "ca": "Toca el botó quan surti «fin» just després de «ro». Si «fin» surt sense «ro» abans, no toquis. Mira bé la regla: s’amaga quan comença la sèrie."
+      },
+      "explicacion": "Sequence after",
+      "contenido": {
+        "regla": {
+          "tipo": "s3",
+          "objetivo": "fin",
+          "contexto": "ro",
+          "oculta": true
+        },
+        "elementos": "tos fin ro nu sol nu li ro fin ro fin ro mil ta ro fin fin ro fin ro fin tal ro fin tos ro ma ro fin ro fin fin ro fin nu ro sa fin me ro fin ro fin fin ro fin ro fin ro mu sal ro fin nu",
+        "objetivos": 14,
+        "cebos": 10,
+        "ms_visible": 1000,
+        "ms_pausa": 400
+      },
+      "origen": {
+        "segundos": 76
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L10-ATE-001",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro «sol», fondo oscuro «mar»",
+        "ca": "Fons clar «sol», fons fosc «mar»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga «sol»; con fondo oscuro, cuando salga «mar». Mira bien la regla: se esconde cuando empieza la serie.",
+        "ca": "Amb fons clar, toca el botó quan surti «sol»; amb fons fosc, quan surti «mar». Mira bé la regla: s’amaga quan comença la sèrie."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "sol"
+            },
+            "oscuro": {
+              "objetivo": "mar"
+            }
+          },
+          "oculta": true
+        },
+        "elementos": "li tal fan mar nu sol nu mar te sol ron fi mar tal sol sol no mar mar sol te sol sol tal len sol fan sol mar fin mar no fi mar ron re sol fi mar no len lo sol ro sol sol la ras sol ron nu mar sol la len sol ron mar la len",
+        "oscuros": [
+          2,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12,
+          13,
+          18,
+          22,
+          24,
+          27,
+          28,
+          29,
+          30,
+          33,
+          34,
+          35,
+          36,
+          41,
+          42,
+          43,
+          44,
+          48,
+          49,
+          50,
+          51,
+          54,
+          55,
+          56,
+          58,
+          59
+        ],
+        "objetivos": 15,
+        "cebos": 12,
+        "ms_visible": 1000,
+        "ms_pausa": 300
+      },
+      "origen": {
+        "segundos": 78
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L10-ATE-002",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro «tal», fondo oscuro «mes»",
+        "ca": "Fons clar «tal», fons fosc «mes»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga «tal»; con fondo oscuro, cuando salga «mes». Mira bien la regla: se esconde cuando empieza la serie.",
+        "ca": "Amb fons clar, toca el botó quan surti «tal»; amb fons fosc, quan surti «mes». Mira bé la regla: s’amaga quan comença la sèrie."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "tal"
+            },
+            "oscuro": {
+              "objetivo": "mes"
+            }
+          },
+          "oculta": true
+        },
+        "elementos": "fin sol la tal mes len sal ro mes fin sol re len mes no mes tal ron sa nu sa tal tal fi ras re mes ro tal mes tal mes tal fin fan fin tal re mes mes lo nu mes mes ron tal ro re fi tal tal ras la lo mes mes tal tal sa mes",
+        "oscuros": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          15,
+          16,
+          17,
+          20,
+          24,
+          25,
+          26,
+          28,
+          29,
+          30,
+          35,
+          36,
+          37,
+          40,
+          41,
+          42,
+          47,
+          48,
+          52,
+          54,
+          55,
+          56,
+          57
+        ],
+        "objetivos": 15,
+        "cebos": 12,
+        "ms_visible": 1000,
+        "ms_pausa": 300
+      },
+      "origen": {
+        "segundos": 78
+      }
+    },
+    {
+      "tipo": "activity_rule_sequence",
+      "codigo": "SEQ-L10-ATE-003",
+      "idiomas": [
+        "es",
+        "ca"
+      ],
+      "titulo": {
+        "es": "Fondo claro «fin», fondo oscuro «ras»",
+        "ca": "Fons clar «fin», fons fosc «ras»"
+      },
+      "area_principal": "Funciones Ejecutivas y Atención",
+      "area_secundaria": "Rendimiento y Velocidad de Procesamiento",
+      "niveles": [
+        "Level10"
+      ],
+      "instruccion": {
+        "es": "Con fondo claro, toca el botón cuando salga «fin»; con fondo oscuro, cuando salga «ras». Mira bien la regla: se esconde cuando empieza la serie.",
+        "ca": "Amb fons clar, toca el botó quan surti «fin»; amb fons fosc, quan surti «ras». Mira bé la regla: s’amaga quan comença la sèrie."
+      },
+      "explicacion": "Sequence alternate",
+      "contenido": {
+        "regla": {
+          "tipo": "s4",
+          "fondos": {
+            "claro": {
+              "objetivo": "fin"
+            },
+            "oscuro": {
+              "objetivo": "ras"
+            }
+          },
+          "oculta": true
+        },
+        "elementos": "tal no te fin mes sol ta no ras fin nu fin sa tal sol ras me mil fin fin mu so sol fin fin la me ras fin sa fin tos ras mar sa fin ras fin fin ras ta mes len ras fin sol ras no mar tal fin ras fin fin mil li lo fin sal fin",
+        "oscuros": [
+          0,
+          1,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          15,
+          16,
+          17,
+          21,
+          24,
+          25,
+          26,
+          29,
+          30,
+          31,
+          32,
+          37,
+          38,
+          39,
+          44,
+          45,
+          46,
+          49,
+          51,
+          52,
+          54,
+          55,
+          56,
+          57,
+          59
+        ],
+        "objetivos": 15,
+        "cebos": 12,
+        "ms_visible": 1000,
+        "ms_pausa": 300
+      },
+      "origen": {
+        "segundos": 78
+      }
+    }
+  ]
+}

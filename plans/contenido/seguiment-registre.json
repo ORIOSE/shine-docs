@@ -91,6 +91,12 @@
    "titol": "Registre de fonts de dades",
    "estat": "aplicat",
    "detall": "docs/fuentes-de-datos.md; regla a CLAUDE.md."
+  },
+  {
+   "id": "F20",
+   "titol": "FASE 20: seqüència amb regla (CPT), segon tipus de Funcions Executives",
+   "estat": "en curs",
+   "detall": "E13 aprovada el 2026-10-29 (secundària Velocitat). Lot R-SEQ1 aprovat pel grup sense canvis i publicat: 3 per nivell i idioma, que amb la matriu amb regla donen 6 per cel·la a Funcions Executives. Fet: model a Drupal, importador, avaluador (Pr), app, generador, missatges d'explicació, verificació per l'API. Pendent: jugar-ho a Expo web i en un mòbil real."
   }
  ],
  "encarrecs": [
@@ -189,6 +195,14 @@
    "lliurament": "(sense lliurament: és el procediment)",
    "fitxa": "plans/contenido/encarrecs/E12-protocol-revisio.md",
    "paquet": ""
+  },
+  {
+   "id": "E13",
+   "titol": "Seqüència amb regla: segon tipus de Funcions Executives",
+   "estat": "aplicat",
+   "lliurament": "plans/contenido/encarrecs/lliuraments/E13-resposta.md",
+   "fitxa": "plans/contenido/encarrecs/E13-sequencia-amb-regla.md",
+   "paquet": "E13-sequencia-amb-regla.zip"
   }
  ],
  "revisions": [
@@ -433,6 +447,16 @@
     "repeticion-ca-level10-v1.json",
     "lectura-ca-level10-v1.json",
     "matriz-ca-level10-v1.json"
+   ]
+  },
+  {
+   "id": "R-SEQ1",
+   "titol": "Seqüència amb regla, Level0 a Level10 (3 per nivell)",
+   "fitxa": "plans/contenido/revision/fe-secuencia-regla-v1.md",
+   "paquet": "LOT-fe-secuencia-regla-v1.zip",
+   "estat": "aplicat",
+   "lots": [
+    "secuencia-regla-es-ca-level0-10-v1.json"
    ]
   }
  ],

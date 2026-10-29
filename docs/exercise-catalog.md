@@ -1558,6 +1558,33 @@ palabras, 10 s):
 
 ---
 
+### 6.5 Secuencia con regla (FASE 20, node activity_rule_sequence)
+
+**Qué es.** El segundo tipo de Funciones Ejecutivas y Atención (opción d de la propuesta E10.4):
+elementos de uno en uno a ritmo fijo y un botón grande que el niño toca solo cuando el elemento
+cumple la regla. Complementa la matriz con regla (6.1): allí el niño marca el ritmo; aquí lo marca
+la app. Mecánica y campos en `docs/activity-system.md`.
+
+**Familias de regla.** s1 detección ("toca cuando salga ★"), s2 todos menos (Go/No-Go), s3 después
+de (AX-CPT) y s4 alternancia por fondo. Objetivos y cebos los calcula el importador
+(`SequenceRule`) y rechaza el lote si no coinciden con `objetivos` y `cebos`.
+
+**Contrato del lote** (`contenido`): `regla` ({tipo, objetivo | excepto | contexto | fondos,
+oculta}), `elementos` (lista o texto separado por espacios, de 8 a 120), `oscuros` (solo s4),
+`objetivos`, `cebos`, `ms_visible` (300 a 5000), `ms_pausa` (0 a 3000) y, opcional, `practica`
+({elementos, oscuros}, de 3 a 12, con al menos un objetivo y un cebo). Composición validada: al
+menos 5 objetivos, ninguno en los 3 primeros elementos (con s2, ningún cebo) y como mucho una letra
+especular (b, d, p, q). Código `SEQ-XX-Lnn-ATE-nnn`; huella con la regla, los elementos en orden y
+los fondos (el ritmo y la práctica no la cambian); toda la secuencia es una unidad.
+
+**Parámetros por nivel.** Los de la propuesta E13 (apartado 5), aprobados por el grupo el
+2026-10-29 sin cambios (`lliuraments/E13-resposta.md`): de 24 elementos a 2 s por elemento (Level0)
+a 60 elementos a 1,3 s (Level10). Área secundaria Rendimiento y Velocidad de Procesamiento. El
+generador (`content/generadores/secuencia_regla.py`) evita además que el ritmo sustituya a la
+regla: nunca el mismo elemento más de dos veces seguidas ni tres objetivos encadenados. Primer lote
+`secuencia-regla-es-ca-level0-10-v1.json` (3 por nivel, idiomas [es, ca]), importado sin publicar
+hasta su revisión (R-SEQ1, `plans/contenido/revision/fe-secuencia-regla-v1.md`).
+
 ## 7. Cobertura de áreas
 
 | Área | Tipos que la tienen como principal | Niveles cubiertos | Actividades publicadas hoy |

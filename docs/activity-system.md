@@ -206,6 +206,23 @@ Summary: `field_correct_count` = palabras a la primera, `field_items_count` = pa
 
 ---
 
+### `activity_rule_sequence` — Secuencia con regla (FASE 20)
+**Node type**: `node.activity_rule_sequence`
+**Activitylog bundle**: `logrulesequence`
+**Activitysummary bundle**: `summary_rule_sequence`
+**Área por defecto**: Funciones Ejecutivas y Atención; secundaria Rendimiento y Velocidad de Procesamiento (decisión del grupo, E13; la pone el lote). Plan en `plans/funcions-executives/sequencia/README.md`; propuesta al grupo en `plans/contenido/encarrecs/E13-sequencia-amb-regla.md`; modelo en `docs/exercise-catalog.md` §6.5.
+
+**Mecánica** (tipo CPT, Go/No-Go y AX-CPT). Los elementos (símbolos, letras o sílabas) aparecen de uno en uno en una tarjeta central, `field_stimulus_ms` a la vista y `field_gap_ms` en blanco. El niño toca un botón grande ("¡Ahora!") solo cuando el elemento cumple la regla: s1 detección, s2 todos menos, s3 después de, s4 alternancia por fondo claro u oscuro. Un toque durante el elemento o el hueco que lo sigue cuenta para ese elemento (varios toques, uno); el tiempo de reacción se mide con `Date.now()` en `onPressIn`. En la serie el botón solo hace un pulso neutro (sin acierto, sin sonido). Con `field_practice` hay una práctica previa más lenta (×1,5) con "¡Esa sí!", "Esa no" y "Esa tocaba", que no puntúa. El adulto puede pausar; el elemento interrumpido no cuenta y el tiempo en pausa no suma. Con `oculta` (Level9 y Level10) la regla se ve antes de empezar y se esconde durante la serie.
+
+**Campos específicos**:
+- `field_elements` (string, múltiple), `field_dark_items` (índices con fondo oscuro, s4), `field_sequence_rule` (list_string s1 a s4), `field_rule_params` (JSON de la regla canónica, storage de la FASE 19), `field_target_cells` y `field_lure_cells` (un valor: índices calculados por el importador con `SequenceRule`), `field_stimulus_ms`, `field_gap_ms`, `field_practice` (JSON `{elementos, oscuros}`)
+
+**Métricas capturadas** (`logrulesequence`): un log por objetivo, por cebo y por toque sobre un neutro, con `field_response` (`hit`, `miss`, `lure_tap`, `lure_ok`, `false_tap`), `field_time` = tiempo de reacción en ms (0 sin toque), `field_weight` = posición y `field_correct`. Summary: `field_correct_count` (objetivos tocados), `field_items_count` (objetivos), `field_lure_marks` (cebos tocados), `field_lures_count` (cebos presentados), `field_false_marks`, `field_reaction_ms` y `field_reaction_sd_ms`; `field_time` es la duración de la serie, no la suma de los logs (`elapsed` del kind). Con `field_lures_count` el evaluador usa la tasa de aciertos menos la de falsas alarmas (`docs/level-system.md` §5.5).
+
+**Implementación en la app**: `src/lib/ruleSequence.ts` (regla, clasificación igual que el PHP para la práctica, respuestas, recuentos, tiempo de reacción, acierto efectivo), `ruleSequenceKind` (con `elapsed`, el único tipo que lo define), `RuleSequencePlayer`, iconos `target` y `pause`. En estadísticas va con los de aciertos (`ACCURACY_SUMMARY_TYPES`), con el acierto efectivo en `computeAccuracy`.
+
+---
+
 ## Sesiones y grupos
 
 Las actividades se organizan en sesiones:

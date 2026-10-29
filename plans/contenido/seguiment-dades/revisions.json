@@ -118,5 +118,15 @@
   "publicades": 36,
   "fitxa": "plans/contenido/revision/tanda10-level10.md",
   "paquet": "LOT-tanda10-level10.zip"
+ },
+ {
+  "id": "R-SEQ1",
+  "titol": "Seqüència amb regla, Level0 a Level10 (3 per nivell)",
+  "estat": "aplicat",
+  "registres": 33,
+  "activitats": 66,
+  "publicades": 66,
+  "fitxa": "plans/contenido/revision/fe-secuencia-regla-v1.md",
+  "paquet": "LOT-fe-secuencia-regla-v1.zip"
  }
 ]

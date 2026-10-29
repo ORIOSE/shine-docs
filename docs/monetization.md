@@ -51,6 +51,9 @@ Notas:
 - Comisiones vigentes (octubre 2026): Apple en la UE 15 % con el Small Business Program (26 %
   estándar); Google Play 10 % + 5 % de billing en suscripciones. Contar con un 15 % efectivo.
 - Referentes de precio a contrastar: Glifing, Dytective, Nessy, Lexercise.
+- 2026-10-29 (subplan 09): precios de Familia **pendientes**; se fijan antes de enviar las
+  suscripciones a revisión. Sin prueba de store. Ids, planes base de Play (`monthly`, `annual`) y
+  estado de las altas en `docs/stores.md`.
 
 ---
 
@@ -597,3 +600,7 @@ Orden recomendado: 17a → 17c → 17b → 17d → 17e. 17a y 17c antes de cualq
 - Cupo exacto de Profesional y precio de ampliación.
 - Derivación centro → familia: vínculo o transferencia de alumno.
 - Facturación profesional: Drupal Commerce vs Stripe Checkout + facturación externa.
+- Precios de partida de Familia (mensual y anual): pendientes desde el subplan 09 (2026-10-29).
+- Nombre definitivo de la app, bundle id y package: bloquean el registro en las dos stores
+  (14b). Titular legal de las cuentas: persona física (autónomo); efectos en `docs/stores.md` §1.
+- Ficha: categoría Educación, no Kids; clasificación por edades según el cuestionario.

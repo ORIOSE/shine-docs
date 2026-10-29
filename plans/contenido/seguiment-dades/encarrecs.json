@@ -82,5 +82,12 @@
   "estat": "tancat",
   "fitxa": "plans/contenido/encarrecs/E12-protocol-revisio.md",
   "paquet": ""
+ },
+ {
+  "id": "E13",
+  "titol": "Seqüència amb regla: segon tipus de Funcions Executives",
+  "estat": "aplicat",
+  "fitxa": "plans/contenido/encarrecs/E13-sequencia-amb-regla.md",
+  "paquet": "E13-sequencia-amb-regla.zip"
  }
 ]
