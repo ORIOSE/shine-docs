@@ -3238,7 +3238,7 @@ Stripe.
 ---
 
 ## FASE 21: Panel web de titulares (backoffice)
-**Estado**: 📋 Planificada (2026-10-30). Plan de planes en `plans/backoffice/README.md` (11 subplanes
+**Estado**: 🚧 En curso (01 hecho el 2026-10-30). Plan de planes en `plans/backoffice/README.md` (11 subplanes
 con el agente indicado en cada uno, orden, dependencias e hitos H1 a H3); especificación funcional en
 `docs/dashboards.md`; prototipo visual de Lovable ("Shine Panel de Progreso" y "Shine Sign In")
 descargado en `docs/lovable/` con índice en `docs/lovable/INDEX.md`.
@@ -3258,6 +3258,77 @@ descargado en `docs/lovable/` con índice en `docs/lovable/INDEX.md`.
   en `/panel/plan/contratar`; módulos nuevos `shine_panel`, `shine_audit`, `shine_stats`,
   `shine_notify`, `shine_notes` y `shine_support`.
 - Pendiente: ejecutar los subplanes en el orden del README (camino crítico 01 → 02 → 03 → 04).
+
+### 01. Tema `shine_theme` desde cero, componentes y páginas de acceso (2026-10-30)
+
+- **Nombre**: el plan decía tema `shine_panel`, pero core no permite un tema y un módulo con el
+  mismo nombre (`ExtensionNameReservedException`); el tema es `shine_theme` (el nombre que ya
+  proponía `docs/dashboards.md` §10.1) y el módulo, `shine_panel`. Plan corregido.
+- **Tema** (`public_html/themes/custom/shine_theme/`, `base theme: false`, tema por defecto): tokens
+  en `css/tokens.css`; Nunito variable 5.2.6 y OpenDyslexic 5.2.5 alojadas (OFL); sprite de 46 iconos
+  de Lucide 0.460.0 (ISC) insertado en línea en `html.html.twig`; Chart.js 4.4.9 (MIT) en la librería
+  `shine_theme/charts` con `js/charts.js` (`data-chart` con JSON, colores `token:--c-*`, sin
+  animación con movimiento reducido, etiquetas a 14 px); `js/shell.js` (menú de cuenta con Escape y
+  clic fuera, cierre de avisos flotantes, confirmaciones `data-confirm` con `<dialog>` que envían el
+  formulario con el mismo botón, buscador de tablas, tablas de datos de las gráficas abiertas al
+  imprimir); 19 componentes SDC; plantillas de página (`page--panel`, `page--user`, `page`), mensajes
+  (confirmaciones como aviso flotante que se oculta solo con CSS; avisos y errores en la página),
+  tablas con `data-label` que pasan a tarjetas por debajo de 40rem (sin `drupal.tableresponsive`),
+  pestañas locales y región y bloques principales sin envoltorio.
+- **Contraste**: los tonos de texto del prototipo que no pasaban AA se oscurecen dentro de su
+  familia (teal `#1D6B58`, ámbar `#8A5300`, gris `#5E6572`, verde `#276B47`, rojo `#B23A3A`) y el botón
+  primario lleva texto tinta sobre teal (el blanco daba 2,3:1). Tabla en el README del tema y en
+  `docs/design.md` §12.
+- **Módulo `shine_panel` (esqueleto)**: `hook_theme` (`shine_panel_nav`, `shine_panel_page`,
+  `shine_panel_muestrario`), `PanelNav` con secciones de ejemplo, `hook_preprocess_page` para las
+  rutas con `_shine_panel`, `Avatars::EMOJI` (copia del set de la app) con `AvatarsTest`,
+  `form_alter` de login ("Email", "Entrar", enlaces), contraseña ("Enviar enlace") y registro web
+  (sin nombre de usuario: se copia del email; "Tu nombre", consentimiento de adulto sin la
+  descripción del admin, "Contraseña" y "Repite la contraseña", "Crear cuenta"), y el muestrario
+  `/panel/_muestrario` (todos los componentes, tabla, formulario con confirmación, tres gráficas,
+  estado vacío).
+- **Config**: `system.theme.default = shine_theme`; bloques `shine_theme_messages`,
+  `shine_theme_page_title`, `shine_theme_local_tasks` (fuera de `/panel*` y de las de acceso) y
+  `shine_theme_content`, todos en `content`; Olivero desinstalado (sus 15 bloques,
+  `olivero.settings` y `core.date_format.olivero_medium` fuera de `config/sync`); módulo `preprocess`
+  desinstalado y borrado.
+
+**Verificación**:
+- Navegador a 1280 px y a 390 px (en un `iframe`: Chrome no estrecha la ventana tanto):
+  `/user/login`, `/user/register` y `/panel/_muestrario` con el diseño del prototipo; cero
+  peticiones a dominios externos; ningún texto por debajo de 14 px dentro de `main` y la cabecera
+  (el único que había, el botón de `drupal.tableresponsive`, se quitó); sin desbordamiento
+  horizontal; la tabla pasa a tarjetas; el menú de cuenta abre con teclado y Escape lo cierra
+  devolviendo el foco; la sección activa lleva el punto ámbar (barra y chips); el diálogo con
+  palabra escrita ("LIBERAR") solo activa el botón al escribirla; "Archivar" pasa por el diálogo y
+  el servidor recibe ese botón (mensaje del manejador `::archive`); el enlace de cerrar sesión lleva
+  su token CSRF y funciona.
+- `jose@test.com` (entrando con `drush uli`, sin escribir contraseñas) recibe el 403 del muestrario
+  con el marco sencillo del tema; anónimo, 403; admin, 200. `/pro` (302 al login para anónimos) se
+  ve con el marco sencillo. `/admin/shine` sigue en Gin.
+- `config:status` limpio tras `cex`; `cim` sin cambios; `core.extension` sin `olivero` ni
+  `preprocess`; requisitos sin errores nuevos (solo el aviso de actualizaciones de seguridad, que ya
+  estaba); watchdog sin errores nuevos. `shine_panel`: 2 tests, 28 aserciones, en verde.
+
+**Pendiente o anotado**:
+- Los textos de core ("Access denied", "Password strength", mensajes de `uli`) siguen en inglés
+  hasta que 11 instale `locale` y las traducciones.
+- `screenshot.png` del tema no se ha generado (solo se ve en `/admin/appearance`).
+- Con la barra de Gin en móvil (solo administradores) queda un hueco entre la barra y la cabecera
+  del panel al desplazar; los titulares no tienen esa barra.
+- La página de error y `/pro` usan el marco sencillo; 05 mueve la contratación al panel.
+
+**Para subplanes siguientes**:
+- **02**: `PanelNav::build()` devuelve hoy secciones fijas de ejemplo; sustituirlo por las del
+  titular (`PanelContext`) y el contador de avisos real. El banner de impersonación de 10 entra por
+  la variable `banner` de `shine_panel_nav`.
+- **Todas las páginas**: pintar el cuerpo con `#theme => 'shine_panel_page'` (título, subtítulo,
+  vuelta, `media`, `actions`, `content`); componentes con `'#type' => 'component'` y
+  `'#component' => 'shine_theme:...'` o con `include()` en Twig; pestañas con `?tab=`; botones de
+  envío secundarios con `#button_type` `secondary` o `danger`; confirmación con
+  `'#attributes' => ['data-confirm' => 'id']` y un `shine_theme:confirm-dialog` con ese id.
+- **04 y 09**: gráficas con `#attached` de `shine_theme/charts` y el marcado de `.chart` del
+  muestrario (canvas con `data-chart` y su tabla en `.chart__data`).
 
 ---
 

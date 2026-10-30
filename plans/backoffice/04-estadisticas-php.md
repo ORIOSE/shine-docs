@@ -68,7 +68,7 @@ Tareas:
    dejar de calcular en cliente más adelante (fuera de alcance aquí). 404 para un alumno ajeno o
    inexistente, nunca 403. Documentado en `docs/api-design.md` ("Estadísticas").
 6. **Sección "Rendimiento" de la ficha** (`/panel/alumnos/{uuid}`, `shine_panel`): con la librería
-   `shine_panel/charts` de 01 y el inicializador `data-chart`: evolución por actividad (línea
+   `shine_theme/charts` de 01 y el inicializador `data-chart`: evolución por actividad (línea
    suavizada protagonista, puntos crudos en gris claro, mejor marca marcada), radar de áreas, barras
    de la semana, dedicación por área (la menos trabajada primero, como la app), "actividades que
    más han costado" en el periodo (`sessionfeedback` y `activityfeedback`). **Cada gráfica lleva

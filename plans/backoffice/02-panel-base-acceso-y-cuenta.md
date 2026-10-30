@@ -99,7 +99,7 @@ Tareas:
      avisos "Quedan pocas plazas" (menos del 10 % libres) e "Invitaciones pendientes" (códigos de
      centro vigentes con usos libres), cuatro `stat-tile` (alumnos activos, miembros activos,
      sesiones esta semana, sin actividad en 14 días) y la gráfica "Sesiones por semana" (8 semanas,
-     barras con la librería `shine_panel/charts`, tabla accesible debajo). Botón "Gestionar
+     barras con la librería `shine_theme/charts`, tabla accesible debajo). Botón "Gestionar
      gabinete/centro" a `/panel/organizacion/{uuid}` (06).
    - **Docente**: "Tus alumnos de {centro}": tarjetas de los alumnos a los que tiene acceso en el
      centro (owner o staff) con última sesión y badge de estado, y el aviso "¿Algo no cuadra?" con

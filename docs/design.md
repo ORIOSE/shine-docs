@@ -336,3 +336,34 @@ Empty states should always include an illustration (simple, friendly, dyslexia-t
 - Completed checkmark: scale from 0 to 1.1 then settle to 1.0, 300ms spring
 - Progress bar fill: animated from previous value on load, 500ms ease-out
 - Confetti: canvas-based, 3 seconds, fades out gracefully
+
+---
+
+## 12. Panel web (tema `shine_theme`, FASE 21)
+
+El panel web de titulares (`/panel`, `docs/dashboards.md`) usa el tema de Drupal `shine_theme`,
+hecho desde cero en `plans/backoffice/01-tema-desde-cero.md`. Misma marca que la app; detalle
+completo, licencias y cálculos de contraste en `shine/public_html/themes/custom/shine_theme/README.md`.
+
+**Tokens que difieren de la app** (los tonos usados como texto se oscurecen para pasar WCAG AA;
+los colores de marca se siguen usando como relleno):
+
+| Uso | App y prototipo | Panel web |
+|---|---|---|
+| Texto y enlaces teal | `#2A8C74` | `#1D6B58` |
+| Texto ámbar sobre su tinte | `#C77F0E` | `#8A5300` |
+| Texto secundario | `#6B7280` | `#5E6572` |
+| Texto de error | `#E05A5A` | `#B23A3A` |
+| Botón primario | blanco sobre teal | tinta `#1E1E2E` sobre teal |
+
+**Decisiones del panel**: una sola familia (Nunito variable, OpenDyslexic con `data-font`), cuerpo
+a 18 px y nada por debajo de 14 px; hoja blanca con borde fino y sin sombra para agrupar contenido
+y sombra solo en lo que flota (menú, diálogo, aviso flotante); el punto ámbar de la marca marca la
+sección activa; cabecera superior (sin barra lateral) con chips desplazables en móvil; pestañas
+como URLs (`?tab=`); confirmaciones con `<dialog>`; tablas que pasan a tarjetas por debajo de 40rem;
+gráficas con Chart.js y su tabla de datos debajo.
+
+**Componentes SDC** (`shine_theme:*`): `icon`, `button`, `card`, `stat-tile`, `badge`, `avatar`,
+`level-chip`, `progress-bar`, `empty-state`, `page-header`, `notice`, `motivation-card`, `trend`,
+`tabs`, `toast`, `confirm-dialog`, `data-table`, `user-menu`, `panel-header`. Muestrario en
+`/panel/_muestrario` (admin).

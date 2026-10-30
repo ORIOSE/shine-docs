@@ -87,7 +87,7 @@ Tareas:
      deshabilitado). Cada acción escribe en `audit_log` y deja mensaje.
    - **Niveles**: una tarjeta por área con icono, nombre, chip "Level N · Banda", nivel de sondeo si
      lo hay, fecha de la última evaluación y evidencia acumulada (de `userarealevel`); "Evolución"
-     (línea por área a partir de `userarealevel_log`, 12 semanas, con la librería `shine_panel/charts`
+     (línea por área a partir de `userarealevel_log`, 12 semanas, con la librería `shine_theme/charts`
      y tabla accesible debajo; sin `shine_stats`: esto es solo el log); "Historial de cambios" (fecha,
      área, "De Level2 a Level3" o "Empieza en Level0", razón con las palabras de la app).
    - **Sesiones**: acordeón de sesiones publicadas del alumno, de la más reciente a la más antigua

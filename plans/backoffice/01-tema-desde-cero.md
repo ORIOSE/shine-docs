@@ -1,4 +1,4 @@
-# 01. Tema `shine_panel` desde cero, componentes y páginas de acceso
+# 01. Tema `shine_theme` desde cero, componentes y páginas de acceso
 
 - **Agente recomendado: Opus 5.5 con la skill `frontend-design`.** Es trabajo visual con
   especificación cerrada (tokens, componentes, dos layouts) y sin lógica de acceso. La skill obliga a
@@ -28,11 +28,11 @@ tablas. Nunca aspecto de admin de Drupal ni de plantilla Bootstrap.
 
 Tareas:
 
-1. **Tema `shine_panel`** en `public_html/themes/custom/shine_panel/`: `shine_panel.info.yml`
+1. **Tema `shine_theme`** en `public_html/themes/custom/shine_theme/`: `shine_theme.info.yml`
    (`base theme: false`, `core_version_requirement: ^11`, regiones mínimas: `header`, `content`,
    `footer`; el panel no usa barras laterales de bloques, la navegación la pinta el módulo),
-   `shine_panel.libraries.yml` (`global`: tokens, base, layout, formularios; `charts`: Chart.js,
-   solo se adjunta donde hay gráficas), `shine_panel.theme` (preprocess de `html` para
+   `shine_theme.libraries.yml` (`global`: tokens, base, layout, formularios; `charts`: Chart.js,
+   solo se adjunta donde hay gráficas), `shine_theme.theme` (preprocess de `html` para
    `data-font="dyslexic"` cuando el titular tiene `field_dyslexic_font`, y clase de layout según la
    ruta), `screenshot.png`, `logo.svg` (la marca "Shine" con el punto ámbar del prototipo),
    `README.md` del tema con la lista de fuentes y licencias.
@@ -98,9 +98,9 @@ Tareas:
    `docs/dashboards.md`), una tabla de ejemplo, un formulario de ejemplo y un `empty-state`. Es la
    "lámina de componentes" de `plans/design/00-sistema-diseno.md` y queda como herramienta de
    desarrollo. Nada más del módulo (rutas reales, acceso) va en este subplan: eso es 02.
-7. **Tema por defecto y limpieza**: `shine_panel` pasa a ser el tema por defecto
-   (`system.theme.default`); bloques del tema en `config/sync` (`shine_panel_messages`,
-   `shine_panel_page_title`, `shine_panel_content`, `shine_panel_local_tasks` solo en rutas de
+7. **Tema por defecto y limpieza**: `shine_theme` pasa a ser el tema por defecto
+   (`system.theme.default`); bloques del tema en `config/sync` (`shine_theme_messages`,
+   `shine_theme_page_title`, `shine_theme_content`, `shine_theme_local_tasks` solo en rutas de
    usuario; sin branding ni menú de bloque, lo pinta la concha); Olivero desinstalado y sus bloques
    fuera de `config/sync`; módulo `preprocess` desinstalado y borrado (`drush pm:uninstall
    preprocess`, `rm -rf`, `cex`); `system.site.page.front` sigue como está (02 lo apunta a
@@ -113,7 +113,7 @@ Tareas:
    la app. `/user/{uid}` (perfil de core) redirige a `/panel` para titulares (02 lo hace; aquí solo
    se estiliza).
 9. **Chart.js**: `js/vendor/chart.umd.js` (versión 4.x fijada, con su LICENSE), librería
-   `shine_panel/charts` con `dependencies` a `core/once` para el inicializador
+   `shine_theme/charts` con `dependencies` a `core/once` para el inicializador
    `js/charts.js` (lee `data-chart` con un JSON y pinta; paleta desde los tokens; sin animación si
    `prefers-reduced-motion`). En este subplan solo se usa en el muestrario con datos de ejemplo
    (una línea con media móvil, un radar de cinco áreas, unas barras semanales).

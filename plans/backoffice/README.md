@@ -68,14 +68,14 @@ de Lovable y el código de `shine_account`, `shine_entitlement`, `shine_org` y `
 
 ## Decisiones de arquitectura (cerradas aquí)
 
-1. **Tema `shine_panel` sin tema base** (`base theme: false`), creado desde cero en
-   `public_html/themes/custom/shine_panel/`: tokens como propiedades CSS (`css/tokens.css`) tomados
+1. **Tema `shine_theme` sin tema base** (`base theme: false`; no puede llamarse como el módulo `shine_panel`: core lanza `ExtensionNameReservedException`), creado desde cero en
+   `public_html/themes/custom/shine_theme/`: tokens como propiedades CSS (`css/tokens.css`) tomados
    de `docs/lovable/panel/src/styles.css` y de la paleta de `docs/design.md`, fuentes **alojadas en
    el tema** (Nunito y OpenDyslexic en `fonts/`, sin Google Fonts: RGPD), componentes como **SDC**
    (`components/*`), CSS plano sin paso de build (sin Tailwind, sin Sass), JavaScript mínimo y sin
    framework (`js/shell.js`), una sola librería de gráficas (**Chart.js**, versión fijada, vendida en
    `js/vendor/`, cargada solo en las páginas con gráficas). Olivero se desinstala cuando
-   `shine_panel` pasa a ser el default (01). Modo claro solo, como la app.
+   `shine_theme` pasa a ser el default (01). Modo claro solo, como la app.
 2. **Seis módulos nuevos, pequeños y con una responsabilidad cada uno**: `shine_panel` (rutas
    `/panel/*`, acceso, controladores finos, formularios, una página de muestrario de componentes
    para desarrollo; 01 y 02), `shine_audit` (entidad `audit_log` y servicio `shine_audit.logger`:
@@ -120,7 +120,7 @@ de Lovable y el código de `shine_account`, `shine_entitlement`, `shine_org` y `
 
 | Orden | Fichero | Spec (`dashboards.md`) | Agente | Depende de | Hecho |
 |---|---|---|---|---|---|
-| 1 | `01-tema-desde-cero.md` | §1, §10.1 (tema) | Opus 5.5 + `frontend-design` | nada | [ ] |
+| 1 | `01-tema-desde-cero.md` | §1, §10.1 (tema) | Opus 5.5 + `frontend-design` | nada | [x] 2026-10-30 |
 | 2 | `02-panel-base-acceso-y-cuenta.md` | §2, §3.1, §3.2, §4.1, §10.1 (módulo) | Fable 5.1 (+ `frontend-design` para las pantallas) | 01 | [ ] |
 | 3 | `03-alumnos-y-ficha.md` | §4.2, §7.1 a 7.3, §7.6 (CSV), §8 | Opus 5.5 + `frontend-design` | 02 | [ ] |
 | 4 | `04-estadisticas-php.md` | §7.4, §10.1 (`shine_stats`), §11 | Fable 5.1 | 02 (en paralelo con 03) | [ ] |
