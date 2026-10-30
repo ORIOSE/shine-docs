@@ -2,7 +2,7 @@
 
 > Actualizado en tiempo real. Si el desarrollo se interrumpe, retomar desde el primer ítem sin marcar de la fase en curso.
 
-**Última actualización**: 2026-10-30 (FASE 21 planificada: panel web de titulares, `plans/backoffice/`; temas heredados borrados); 2026-10-27 (Generador de contenido 05: lista de texto y lectura en voz alta importables, niveles Level3 a Level10; FASE 18, 06: verificación bilingüe y cierre de la fase; antes 05: revisión del experto de los lotes catalanes aplicada); 2026-10-26 (FASE 18, 05: contenido catalán, primeros lotes Level0 a Level2; antes el mismo día FASE 18 00 a 04, FASE 17 07 y Generador de contenido 04)
+**Última actualización**: 2026-10-30 (FASE 21: plan del panel web, temas heredados borrados, 01 tema `shine_theme` y 02 panel base, acceso y Mi cuenta); 2026-10-27 (Generador de contenido 05: lista de texto y lectura en voz alta importables, niveles Level3 a Level10; FASE 18, 06: verificación bilingüe y cierre de la fase; antes 05: revisión del experto de los lotes catalanes aplicada); 2026-10-26 (FASE 18, 05: contenido catalán, primeros lotes Level0 a Level2; antes el mismo día FASE 18 00 a 04, FASE 17 07 y Generador de contenido 04)
 
 ---
 
@@ -3238,7 +3238,7 @@ Stripe.
 ---
 
 ## FASE 21: Panel web de titulares (backoffice)
-**Estado**: 🚧 En curso (01 hecho el 2026-10-30). Plan de planes en `plans/backoffice/README.md` (11 subplanes
+**Estado**: 🚧 En curso (01 y 02 hechos el 2026-10-30). Plan de planes en `plans/backoffice/README.md` (11 subplanes
 con el agente indicado en cada uno, orden, dependencias e hitos H1 a H3); especificación funcional en
 `docs/dashboards.md`; prototipo visual de Lovable ("Shine Panel de Progreso" y "Shine Sign In")
 descargado en `docs/lovable/` con índice en `docs/lovable/INDEX.md`.
@@ -3329,6 +3329,85 @@ descargado en `docs/lovable/` con índice en `docs/lovable/INDEX.md`.
   `'#attributes' => ['data-confirm' => 'id']` y un `shine_theme:confirm-dialog` con ese id.
 - **04 y 09**: gráficas con `#attached` de `shine_theme/charts` y el marcado de `.chart` del
   muestrario (canvas con `data-chart` y su tabla en `.chart__data`).
+
+### 02. Panel base: acceso, concha por rol, portadas y Mi cuenta; módulo `shine_audit` (2026-10-30)
+
+- **`shine_audit`**: entidad `audit_log` (actor, acción, objetivo, organización, `data` como `map`,
+  fecha; índices por organización, actor y acción), inmutable y cerrada en JSON:API; servicio
+  `shine_audit.logger` con `log()`, `setActor()` (para la impersonación de 10) y `ofOrganization()`
+  (para el registro de accesos de 06). 4 tests.
+- **Bloqueos del borrado de cuenta** (`shine_account` + `shine_org`): hook nuevo
+  `hook_shine_account_delete_blockers()` (documentado en `shine_account.api.php`),
+  `AccountDeleter::blockers()`, `AccountDeleteBlockedException`, `409 blocked` en
+  `POST /shine/account/delete`. `shine_org` bloquea al único coordinador de una organización con
+  otros miembros activos o licencia vigente. Tests de `shine_account` y `shine_org` siguen en verde.
+- **`shine_panel`**: `PanelContext` + `PanelData` (roles, secciones, alumnos, organizaciones, plan,
+  caché con etiquetas), `PanelAccess`, param converters de `{learner}` y `{organization}` (404 sin
+  acceso), redirección de anónimos al login con destino, `/user/{uid}` → `/panel/cuenta`,
+  `LearnerActivity` (dos consultas a `node_field_data` + tablas de campo y `userarealevel_log` para
+  toda la lista; `days_since` nunca negativo), `PanelNav` con la sección activa por camino interno,
+  portadas de familia, profesional, coordinación (con gráfica de 8 semanas) y docente, con enlaces
+  `?vista=` entre ellas; "Mi cuenta" con `AccountDetailsForm` (nombre, email y contraseña con la
+  actual, idioma del panel con nombres nativos de `LanguageManager::getStandardLanguageList()`),
+  `ReadingFontForm` (`field_dyslexic_font` del titular), consentimientos, organizaciones +
+  `OrganizationJoinForm` (mismo `flood` y errores que la API, `audit_log` `organization.join`),
+  privacidad; `AccountDeleteForm` (caso real calculado, contraseña con `flood`, bloqueos, logout y
+  vuelta al login); ayuda y avisos como marcadores; rutas marcador de 03, 05, 06, 09 y `/legal/*`.
+  Portada del sitio `/panel`; vista `frontpage` desactivada. 9 tests por HTTP con el tema instalado.
+
+**Decisiones**:
+- La **fuente de lectura del panel es del titular** (`field_dyslexic_font` del titular); en la app
+  es del alumno. Dos ajustes, uno por quien lee. Anotado en `docs/dashboards.md` §3.2.
+- El borrado desde el panel es **inmediato**, como en la app; sin "30 días para arrepentirte" del
+  prototipo.
+- Los `#markup` pasan por el filtro XSS de Drupal, que quita los `style` en línea: las muestras de
+  fuente del formulario usan clases.
+- Los nombres de idioma vienen de `LanguageManager::getStandardLanguageList()` ("Español",
+  "Català"): las entidades de idioma tienen etiquetas en inglés y sin `locale` no hay traducción.
+- Las fechas del panel van en numérico (`d/m`, `d/m/Y`) hasta que 11 instale `locale`: con
+  `j M` los meses salen en inglés.
+- `SessionGenerator::plan()` sirve para el "siguiente paso" de la portada de familia (no escribe);
+  si lanza (sin contenido en el idioma del alumno) la línea se omite. En las portadas con muchos
+  alumnos no se llama.
+
+**Verificación** (gotcha 14, con `private/scripts/panel-check.php` por `http_kernel` y en el
+navegador a 1280 px y 390 px, entrando con `drush uli`, sin escribir contraseñas): anónimo en `/`,
+`/panel` y `/panel/cuenta` → 302 al login con `destination`; `jose@test.com` ve a Marta y Pau con
+su cobertura (cortesía), última sesión y siguiente paso ("Toca una sesión regular", "Tienes una
+sesión empezada el 29/10"), la ficha de Marta 200 y la de una alumna del centro 404, `/panel/informes`
+403, `/user/2` → `/panel/cuenta`; un centro de prueba (`private/scripts/panel-demo-org.php`:
+coordinador, dos docentes, licencia `school_individual` de 10, tres alumnos en plaza): la
+coordinación ve la portada de organización (3 de 10 plazas, al día, gráfica), las fichas de los tres
+alumnos y `/panel/organizacion/{uuid}` (200), una docente ve su portada y a su alumna, la de la
+otra docente es 404, la organización 403 e informes 403; una familia sin alumnos ve el estado vacío
+y la alumna del centro como 404. "Mi cuenta": un código inválido da el error y no deja rastro;
+OpenDyslexic se aplica al momento (`data-font`) y la cabecera envuelve en vez de desbordar; la
+página de borrado explica "4 alumnos de los que eres el único adulto" y lleva su cabecera.
+`config:status` limpio (`core.extension`, `system.site`, `views.view.frontpage`); watchdog sin
+errores nuevos; tests: `shine_audit` 4, `shine_panel` 9, `shine_account` 27, `shine_org` 10, todos
+en verde.
+
+**Pendiente o anotado**:
+- Al anonimizar un titular, sus **membresías de organización** quedan activas apuntando a la cuenta
+  anonimizada (`AccountDeleter` no conoce `shine_org`). Para 06 (baja de miembro) o 10: desactivarlas
+  en el borrado con un hook de `shine_account` o en `shine_org`.
+- La app trata el `409 blocked` del borrado como error genérico: subplan de la app.
+- Los textos de core siguen en inglés hasta 11 (`locale`).
+- Datos de prueba creados: `coord@test.com`, `docente@test.com`, `docente2@test.com`,
+  `familia2@test.com` (contraseña `patata`), organización "Escola Vallparadís" con licencia manual
+  y tres alumnos. `jose@test.com` tiene ahora nombre para mostrar "Jose".
+
+**Para subplanes siguientes**:
+- **03**: `PanelData::learners` trae cada alumno con su forma JSON (`covered_by`, `paused`,
+  `completed_regular`, `organization`, `released_by`); `LearnerActivity::forLearners()` da última
+  sesión, pendiente, totales y semanas para la cartera; la ficha reemplaza
+  `PlaceholderController::learner` (ruta `shine_panel.learner`, param `{learner}` ya resuelto).
+- **05**: `shine_panel.plan` sustituye el marcador; `PanelData::holderStatus` y
+  `organizations[].data` (`toArray` de `shine_org`) ya están en el contexto.
+- **06**: `shine_panel.organization` (param `{organization}`, acceso `shine_panel.access:coordinator`)
+  sustituye el marcador; `AuditLogger::ofOrganization()` para el registro de accesos.
+- **08**: sustituir la clase de `shine_panel.notice_counter` y rellenar `/panel/avisos`.
+- **10**: `AuditLogger::setActor()` y la variable `banner` de `shine_panel_nav` (hoy NULL en `PanelNav`).
 
 ---
 

@@ -121,7 +121,7 @@ de Lovable y el código de `shine_account`, `shine_entitlement`, `shine_org` y `
 | Orden | Fichero | Spec (`dashboards.md`) | Agente | Depende de | Hecho |
 |---|---|---|---|---|---|
 | 1 | `01-tema-desde-cero.md` | §1, §10.1 (tema) | Opus 5.5 + `frontend-design` | nada | [x] 2026-10-30 |
-| 2 | `02-panel-base-acceso-y-cuenta.md` | §2, §3.1, §3.2, §4.1, §10.1 (módulo) | Fable 5.1 (+ `frontend-design` para las pantallas) | 01 | [ ] |
+| 2 | `02-panel-base-acceso-y-cuenta.md` | §2, §3.1, §3.2, §4.1, §10.1 (módulo) | Fable 5.1 (+ `frontend-design` para las pantallas) | 01 | [x] 2026-10-30 |
 | 3 | `03-alumnos-y-ficha.md` | §4.2, §7.1 a 7.3, §7.6 (CSV), §8 | Opus 5.5 + `frontend-design` | 02 | [ ] |
 | 4 | `04-estadisticas-php.md` | §7.4, §10.1 (`shine_stats`), §11 | Fable 5.1 | 02 (en paralelo con 03) | [ ] |
 | 5 | `05-mi-plan-y-contratacion.md` | §4.3, §5.4, §6.6 (gabinete) | Opus 5.5 + `frontend-design` | 02 | [ ] |

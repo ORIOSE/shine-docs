@@ -30,6 +30,17 @@ desarrollador puedan construirlos en Drupal sin volver a discutir el alcance.
 
 ## 2. Tipos de titular y roles
 
+> **Estado (02, 2026-10-30)**: los roles del panel los calcula `PanelContext` (`shine_panel`):
+> `family` siempre; `professional` con membresía `professional` en un gabinete o plan personal
+> `professional`; `coordinator` por cada organización coordinada; `teacher` con membresía `teacher`
+> en un centro. Un titular con varios ve la unión de secciones y la portada del rol principal
+> (coordinación > profesional > docente > familia) con enlaces a las demás (`?vista=`). Las
+> secciones siguen el prototipo: Inicio, Mi centro / Mi gabinete (una por organización coordinada),
+> Alumnos (o "Mis alumnos" para un docente sin otro rol), Informes (profesional y coordinación),
+> Plan (o "Licencia"), Ayuda. El acceso se resuelve con `LearnerAccessPolicy::canSee()`,
+> `OrganizationManager` y `EntitlementAccess`; un alumno ajeno es 404 y una organización que no
+> se coordina, 403.
+
 | Tipo de titular | Rol Drupal | Cómo lo obtiene | Secciones del panel |
 |---|---|---|---|
 | Familia | `authenticated` (holder) | Registro en la app o en la web | Mi cuenta, Mis alumnos, Mi plan |
@@ -48,12 +59,26 @@ cada sección se resuelve con un `AccessCheck` propio que consulta `learner_acce
 ## 3. Funcionalidades transversales (todos los titulares)
 
 ### 3.1 Acceso
+
+> **Estado (02)**: login y recuperación con el formulario de core reestilizado (01); el enlace de
+> un solo uso desde la app y el cierre de sesión en todos los dispositivos llegan en 07.
 - Login con email y contraseña (mismas credenciales que la app). Recuperación de contraseña.
 - Login desde la app sin volver a escribir credenciales: enlace "Abrir panel web" que lleva un
   token de un solo uso (`/panel/auth/{token}`), caduca en 5 minutos.
 - Cierre de sesión en todos los dispositivos (revoca tokens OAuth del titular).
 
 ### 3.2 Mi cuenta
+
+> **Estado (02)**: nombre, email (pide la contraseña actual), contraseña e idioma del panel
+> (`preferred_langcode` del titular; al guardar redirige al prefijo) en un formulario propio;
+> fuente de lectura sincronizada con `field_dyslexic_font` **del titular** (en la app es del alumno:
+> dos ajustes distintos, uno por quien lee); consentimientos: solo existe el de adulto responsable
+> con su fecha, más enlaces a los textos legales (marcadores); "Tengo un código de centro" canjea con
+> `OrganizationInviteManager::redeem` y deja rastro en `audit_log`; exportar datos queda como
+> "escríbenos desde Ayuda"; borrar cuenta (`/panel/cuenta/borrar`) explica el caso real (alumnos
+> que se anonimizan frente a accesos que se retiran), pide la contraseña y es inmediato, sin 30
+> días; si el titular es el único coordinador de una organización con miembros o licencia, está
+> bloqueado (`hook_shine_account_delete_blockers`).
 - Nombre para mostrar, email, contraseña, idioma del panel (es, ca; en más adelante).
 - Preferencia de fuente (Nunito / OpenDyslexic), sincronizada con `field_dyslexic_font`.
 - Consentimientos aceptados, con fecha (adulto responsable, términos, privacidad).
@@ -64,11 +89,16 @@ cada sección se resuelve con un `AccessCheck` propio que consulta `learner_acce
   store). Confirmación por email.
 
 ### 3.3 Notificaciones
+
+> **Estado (02)**: `/panel/avisos` vacío ("Todo al día") y campana sin contador hasta 08.
 - Preferencias por email: resumen semanal de progreso, aviso de prueba a punto de agotarse,
   aviso de liberación por el centro, aviso de pago fallido (Stripe), novedades.
 - Centro de avisos dentro del panel (lista con leídos/no leídos). Mismos avisos que la app.
 
 ### 3.4 Ayuda
+
+> **Estado (02)**: acordeón "Cómo funciona" con textos provisionales; contacto y textos
+> definitivos en 11.
 - Guía de la dinámica (bloque inicial, sesiones regulares, ajustes, áreas y niveles), en lenguaje
   de familia, con la misma explicación que la app.
 - Contacto con soporte (formulario que adjunta automáticamente titular y, opcionalmente, alumno).
@@ -78,6 +108,13 @@ cada sección se resuelve con un `AccessCheck` propio que consulta `learner_acce
 ## 4. Panel de Familia
 
 ### 4.1 Inicio
+
+> **Estado (02)**: implementado. Cobertura como badge con texto (cortesía o plan del adulto que
+> cubre, centro, prueba con sesiones restantes, en pausa, sin acceso); última sesión completada
+> (hoy, ayer, hace N días, con el tipo); siguiente paso: la sesión pendiente si la hay y, si no, lo
+> que dice `SessionGenerator::plan()` (no escribe nada); "Abrir en la app" (`shine://learners/{uuid}`)
+> solo con user-agent móvil. Avisos: prueba con 3 sesiones o menos y alumno liberado por un centro.
+> La tarjeta de racha llega con 04.
 - Tarjeta por alumno: nombre, avatar, cobertura (`covered_by`: plan Familia, centro X, prueba
   con N sesiones restantes, sin acceso), última sesión (fecha, tipo), siguiente paso sugerido
   ("tienes una sesión pendiente", "toca sesión de ajuste").
@@ -110,6 +147,11 @@ cada sección se resuelve con un `AccessCheck` propio que consulta `learner_acce
 Todo lo de Familia (§4), más:
 
 ### 5.1 Inicio
+
+> **Estado (02)**: implementado con `LearnerActivity` (sesiones por alumno en dos consultas):
+> alumnos activos, sesiones esta semana, sin actividad en 14 días (o nunca), cambios de nivel en 7
+> días, en pausa por cupo; plazas del gabinete o, sin gabinete, del plan personal; "Necesitan
+> atención" con enlace a la ficha.
 - Resumen de la cartera: alumnos activos, sesiones esta semana, alumnos sin actividad en 14 días,
   alumnos con cambio de nivel reciente, alumnos en pausa por cupo.
 - Plazas usadas / disponibles de la licencia.
@@ -141,6 +183,11 @@ Todo lo de Familia (§4), más:
 Solo para `coordinator`. Se accede como pestaña "Mi gabinete" o "Mi centro".
 
 ### 6.1 Inicio de la organización
+
+> **Estado (02)**: implementado, un bloque por organización coordinada: licencia (plazas, plan,
+> vigencia, pago como badge: al día, pago pendiente, caducada, sin licencia), avisos de plazas
+> escasas (10 % o menos libres) y de códigos de invitación vigentes, cifras y "Sesiones por semana"
+> (8 semanas, Chart.js con su tabla). "Gestionar el centro" lleva a 06.
 - Licencia: plan, plazas usadas / contratadas, grupos (centro), fin de vigencia, estado del pago.
 - Actividad: sesiones por semana en la organización, alumnos activos, docentes o profesionales
   activos, alumnos sin actividad en 14 días.

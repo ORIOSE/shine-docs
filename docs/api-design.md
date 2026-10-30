@@ -754,6 +754,13 @@ POST   /shine/account/delete            {password}                → 200 {delet
   alumno se anonimiza igual. Summaries, logs, sesiones y niveles se conservan sin identidad; la
   etiqueta de los `learner_access` se regenera sin nombres. Todo en una transacción. El token con el
   que se llamó deja de valer (`401` en la siguiente petición) y el login da `invalid_grant`.
+  **Bloqueos (FASE 21, 02)**: antes de borrar, `AccountDeleter::blockers()` pregunta a los módulos
+  con `hook_shine_account_delete_blockers()` (`shine_account.api.php`); si alguno devuelve algo,
+  responde `409 {"error":"blocked","reasons":[{"code":"organization_coordinator","organization":
+  {"uuid","label"}}]}` y no toca nada. `shine_org` bloquea al único coordinador de una organización
+  que sigue teniendo otros miembros activos o una licencia vigente: antes tiene que nombrar a otro
+  coordinador. La app todavía trata este 409 como un error genérico (pendiente en un subplan de
+  la app). El panel web (`/panel/cuenta/borrar`) enseña el motivo y no ofrece el botón.
 
 ### Errores
 
@@ -765,6 +772,7 @@ POST   /shine/account/delete            {password}                → 200 {delet
 | 403 | `not_member` | `POST /shine/learners` con `organization` de la que el titular no es miembro activo (o que no existe o está inactiva: un solo error) |
 | 403 | `invalid_password` | Borrado de cuenta con contraseña incorrecta |
 | 403 | `too_many_attempts` | Cinco contraseñas incorrectas en una hora (servicio `flood`); tampoco se acepta la correcta hasta que pase |
+| 409 | `blocked` | Borrado de cuenta impedido por un módulo (`reasons[]`, hoy solo `organization_coordinator`: único coordinador de una organización con miembros o licencia) |
 | 404 | `not_found` | El UUID no es de un alumno al que este titular tenga acceso activo. También si existe y es de otro titular: **nunca 403**, para no revelar que existe |
 | 409 | `archived` | Editar un alumno archivado o generarle un código de vínculo |
 | 409 | `last_owner` | Retirar el acceso del único `owner` |
@@ -1374,3 +1382,31 @@ En producción, reemplazar `allowedOrigins: ['*']` por el dominio específico de
 | 403 | Sin permisos para el recurso | Verificar permisos JSON:API en Drupal |
 | 422 | Payload malformado | Verificar tipos y UUIDs en relationships |
 | 404 | UUID no existe | Verificar que el recurso existe y está publicado |
+
+---
+
+## Panel web (FASE 21, `shine_panel`)
+
+El panel de titulares (`docs/dashboards.md`) no es parte de la API: se sirve con la **sesión de
+Drupal por cookie** (login en `/user/login` con el email y la contraseña de la app) y escribe solo
+con formularios de Drupal (token CSRF de serie). Lo que decide quién ve qué es lo mismo que en la
+API: `LearnerAccessPolicy` (`canSee`), `OrganizationManager` (membresías) y `EntitlementAccess`
+(plan). Rutas (todas con `_shine_holder`; un anónimo va a `/user/login?destination=`; un alumno o
+una cuenta bloqueada recibe 403):
+
+| Ruta | Qué | Subplan |
+|---|---|---|
+| `/panel` (también `/`) | Portada según el rol: coordinación > profesional > docente > familia; `?vista=` cambia entre las que tenga | 02 |
+| `/panel/cuenta`, `/panel/cuenta/borrar` | Datos, fuente, consentimientos, código de centro, borrado | 02 |
+| `/panel/alumnos`, `/panel/alumnos/{uuid}` | Alumnos y ficha. `{uuid}` se resuelve con `LearnerManager::learnerFor()`: un alumno ajeno es **404**, nunca 403 | 02 (marcador), 03 |
+| `/panel/plan`, `/panel/plan/contratar` | Plan y contratación | 05 |
+| `/panel/organizacion/{uuid}` | Gestión de la organización: `{uuid}` resuelve solo si el titular es miembro (si no, 404); si no la coordina, 403 | 02 (marcador), 06 |
+| `/panel/informes` | Informes; 403 si el titular no es profesional ni coordinación | 09 |
+| `/panel/avisos`, `/panel/ayuda` | Avisos y ayuda | 08, 11 |
+| `/legal/terminos`, `/legal/privacidad` | Textos legales (marcadores) | fuera del plan |
+| `/user/{uid}` | Redirige a `/panel/cuenta` al titular (los administradores siguen viendo el perfil de core) | 02 |
+
+Registro de auditoría (`shine_audit`, entidad `audit_log`): lo escriben el panel y el soporte
+(`organization.join`, `account.delete`, y en 03, 06, 09 y 10 las invitaciones, liberaciones,
+reasignaciones, exportaciones y suplantaciones); se lee desde el admin (`administer shine
+accounts`) y desde la organización (06). Cerrado en JSON:API (`hook_jsonapi_audit_log_filter_access`).
