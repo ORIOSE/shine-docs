@@ -49,7 +49,7 @@ El propio plan de planes se ha escrito con Fable.
 | 11 | `07-backend-webhook-revenuecat.md` | 17d | Fable | 03, 04 | [x] 2026-10-26 |
 | 12 | `08-app-paywall-y-compras.md` | 17d | Opus | 05, 06b, 07, 09 | [ ] |
 | 13 | `10-backend-organizaciones.md` | 17e y §5.6 | Fable | 01c, 04 | [x] 2026-10-29 |
-| 14 | `11-backend-stripe.md` | 17e | Fable | 03, 10 | [ ] |
+| 14 | `11-backend-stripe.md` | 17e | Fable | 03, 10 | [x] 2026-10-30 (pendiente la prueba en modo test con cuenta de Stripe) |
 | 15 | `12-app-centros-y-profesionales.md` | 17e y §5.6 | Opus | 06, 10 | [ ] |
 | 16 | `13-backend-instrumentacion-embudo.md` | §9 (opcional) | Opus | 04, 08 | [ ] |
 | 17 | `14-verificacion-e2e-y-docs.md` | todas | Fable | todo lo anterior | [ ] |

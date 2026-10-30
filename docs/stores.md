@@ -85,10 +85,25 @@ Ningún valor secreto va a git, a este documento ni a la app.
 | Valor de `Authorization` del webhook | Generado al azar (`openssl rand -hex 32`), **sin** el prefijo `Bearer ` (gotcha 22) | RevenueCat (Integraciones → Webhooks) y `settings.php` de producción: `$settings['shine_entitlement.revenuecat_webhook_secret']` | Drupal (07) |
 | Clave secreta de la API REST v2 (`sk_...`), si se activa el refresco | RevenueCat → Project settings → API keys | `settings.php` de producción: `$settings['shine_entitlement.revenuecat_api_key']` | Drupal (refresco de 07, hoy sin implementar) |
 | Claves públicas del SDK (`appl_...`, `goog_...`) | RevenueCat → API keys | No son secretas: variables `EXPO_PUBLIC_*` de EAS (las define 08) | App |
+| Clave secreta de Stripe (`sk_test_...` / `sk_live_...`) | Stripe → Developers → API keys | `settings.php`: `$settings['shine_entitlement.stripe_secret_key']` | Drupal: `/pro`, `/shine/billing/*`, precios (11) |
+| Secreto de firma del webhook de Stripe (`whsec_...`) | Stripe → Developers → Webhooks → endpoint `https://{dominio}/shine/webhooks/stripe` (o `stripe listen` en local) | `settings.php`: `$settings['shine_entitlement.stripe_webhook_secret']` | Drupal (11) |
 
 En local el secreto del webhook es `local-dev-secret` (CLAUDE.md, ficheros fuera de git).
 
 ---
+
+### 2.1 Stripe (profesionales y centros, subplan 11)
+
+| Qué | Valor | Estado |
+|---|---|---|
+| Cuenta de Stripe | Pendiente de alta | Modo test primero; live con la misma cuenta activada |
+| Productos y precios | `Profesional` mensual y anual; `Centro, perfiles individuales` anual; `Centro, modo aula` anual | Crear en el panel; los ids (`price_...`) van al catálogo `/admin/config/shine/plans` como `stripe:price_...`. Hoy marcadores `price_REEMPLAZAR_*` |
+| Webhook | `https://{dominio}/shine/webhooks/stripe`, eventos `checkout.session.completed`, `customer.subscription.created`, `customer.subscription.updated`, `customer.subscription.deleted`, `invoice.paid`, `invoice.payment_failed` | Un endpoint por entorno; cada uno con su `whsec_` |
+| Customer Portal | Activar en Stripe → Settings → Billing → Customer portal: cambiar cantidad, método de pago y cancelar | Pendiente |
+| Stripe Tax | Opcional; la recogida del NIF ya va en Checkout | Decidir con el gestor |
+
+Los ids de precio de test y de live son distintos: el catálogo del entorno de producción lleva los
+live y el de pruebas los test.
 
 ## 4. Checklist de altas
 

@@ -3042,7 +3042,7 @@ también la cortesía huérfana de la titular borrada en 06b.
 - **11 (Stripe)**: el checkout crea `organization` (+ coordinador automático) y su entitlement con
   `field_organization`, plan `professional` o `school`, catálogo `professional` /
   `school_individual` / `school_classroom`, `quantity` = asientos. Nada más: la cobertura y las
-  plazas ya salen de ahí.
+  plazas ya salen de ahí. (Hecho en 11, 2026-10-30.)
 - **12 (app)**: `organizations[]` de `/shine/me`, `GET /shine/organizations/{uuid}` (+ `members`,
   `.../learners` para el coordinador), "Tengo un código de centro" → `POST /shine/organizations/join`,
   alta de alumno con `organization`, `role: coordinator`, `organization` y `released_by` en la forma
@@ -3051,6 +3051,94 @@ también la cortesía huérfana de la titular borrada en 06b.
 - El coordinador no puede generar códigos de centro desde la API (solo el admin); si la app lo
   necesita, `POST /shine/organizations/{uuid}/invites {role, max_uses?}` sobre
   `OrganizationInviteManager::create()`.
+
+### 11. Backend: Stripe Checkout, Customer Portal y webhook para profesionales y centros (2026-10-30)
+
+Decisión del README confirmada: Stripe Checkout + Customer Portal, sin Drupal Commerce; la factura
+la emite Stripe. Dependencia `stripe/stripe-php ^22.1`. Detalle de la API en `docs/api-design.md`
+("Billing" y "Webhooks → Stripe"); secretos en `docs/stores.md` §2.1 y §3 y en CLAUDE.md.
+
+- **Webhook** (`shine_entitlement`): `POST /shine/webhooks/stripe` (`StripeWebhookController`,
+  firma `Stripe-Signature` con `Webhook::constructEvent`; 401 sin secreto, 400 firma o cuerpo
+  inválidos) y `shine_entitlement.stripe_processor` (`Stripe\StripeProcessor`), calcado del de
+  RevenueCat: titular y organización por **`metadata.holder` / `metadata.organization` de la
+  suscripción** (Checkout los pone en `subscription_data.metadata`: así cualquier evento se basta
+  solo, llegue en el orden que llegue), entitlement por (`stripe`, `sub_...`), plan por el único
+  precio (`items.data[0].price.id` → catálogo; más de un ítem, `422 unsupported_subscription`),
+  cupo = alumnos por asiento × `quantity`, `field_organization` si hay organización (si no, plan
+  personal). Estados: `active`/`trialing` → `active`/`trial` con caducidad = fin de periodo más 1
+  día de margen (sin margen y con `field_cancelled_at` si `cancel_at_period_end`), `past_due` →
+  `billing_retry` con 7 días de gracia, `paused` → `paused`, `canceled`/`unpaid` → `expired` al
+  momento, `incomplete` ignorado; `customer.subscription.deleted` → `expired`; `invoice.paid`
+  reactiva y alarga; `invoice.payment_failed` → `billing_retry`; `checkout.session.completed` solo
+  anota el `customer` en la organización. Idempotencia por entitlement (`field_last_event_id`,
+  `field_event_timestamp` = `created` en ms) y por `event.id` en el key-value con caducidad
+  `shine_entitlement.stripe_events` (7 días; los 4xx no se anotan para que el reintento entre).
+  Fin de periodo en el ítem (API 2025-03-31+) o en la suscripción. `StripeClientFactory`
+  (`shine_entitlement.stripe_client`): claves de `settings.php`, sin fijar versión de API.
+- **Contratación** (`shine_org`): `field_stripe_customer` en la organización
+  (`shine_org_update_11002`), `shine_org.billing` (`Billing\BillingManager`: ofertas = planes del
+  catálogo `professional`/`school` con precios de Stripe leídos al vuelo y cacheados 1 h;
+  `checkout()` solo para coordinadores, cantidad 1 a 100 ajustable en Checkout, cliente reutilizado
+  o `customer_email`, `locale es`, promociones, dirección y NIF; `portal()`; `createOrganization()`),
+  página `/pro` (`ProController` + `ProCheckoutForm`: anónimo → login con vuelta; organizaciones
+  del titular con licencia y "Gestionar suscripción" si ya tienen cliente; planes, asientos,
+  organización existente o nueva; sin clave de Stripe se ve pero no se contrata) y `/pro/gracias`;
+  endpoints JSON `POST /shine/billing/checkout {price, quantity?, organization}` y
+  `POST /shine/billing/portal {organization}` → `{url}` para Android y web (`BillingController`;
+  `503 not_configured`, `409 no_customer`, `502 stripe_error`, `404` si no es su organización, `403`
+  si no la coordina).
+- **Config y secretos**: `$settings['shine_entitlement.stripe_secret_key']` y
+  `$settings['shine_entitlement.stripe_webhook_secret']` (en local solo el segundo,
+  `whsec_local_dev_secret`). Ningún cambio en `config/sync`.
+
+**Decisiones**:
+- Los metadatos van en la suscripción, no solo en la sesión de Checkout: el evento de checkout
+  puede llegar después (o perderse) y la suscripción tiene que bastar.
+- Margen de 1 día tras el fin de periodo (un webhook de renovación que tarde no corta el acceso) y
+  gracia fija de 7 días en `past_due` desde el fin del periodo impagado (no desde cada reintento,
+  para que no se alargue indefinidamente). Si Stripe reintenta más de una semana, el acceso se
+  corta hasta el `invoice.paid`.
+- Catálogo: `professional` (15 por asiento, mensual y anual), `school_individual` (1 por asiento)
+  y `school_classroom` (0 alumnos, 1 grupo); los ids `price_REEMPLAZAR_*` se sustituyen al crear
+  los precios en Stripe (`docs/stores.md` §2.1). La página de contratación enseña las ofertas con
+  "precio no disponible (id)" mientras tanto.
+
+**Tests kernel** (`StripeWebhookTest`, en `shine_entitlement` sobre el harness de `shine_org`, 3
+tests y 191 aserciones; fixtures en `tests/fixtures/stripe/` con la forma de la API de 2025):
+firma ausente, inválida y cuerpo no JSON (400), sin secreto (401); checkout anota el cliente;
+suscripción crea la licencia de la organización (15 × 2 = 30, `field_organization`, titular,
+fechas, rastro) y cubre a una alumna en plaza sin ser plan personal del titular; repetido
+`duplicate` y antiguo `stale`; menos asientos recalcula a 15 sin `drush cr`; cancelación a fin de
+periodo sin margen; `invoice.payment_failed` → `billing_retry` con gracia (sigue cubriendo);
+`invoice.paid` reactiva y alarga; `customer.subscription.deleted` → `expired` y la alumna cae a la
+prueba; pausa; precio desconocido 422 sin escribir y reintento que entra tras añadirlo al catálogo;
+dos ítems 422; titular ausente, inexistente o alumno → `ignored`; sin organización → plan personal
+del titular (30 alumnos); `incomplete`, tipo ajeno, factura huérfana y checkout de pago único →
+`ignored`.
+
+**Verificación en el sitio** (sin cuenta de Stripe: la clave secreta no está; el webhook se firma a
+mano con `whsec_local_dev_secret`): firma mala 400; precio de prueba fuera del catálogo 422
+`unknown_price`; `/pro` anónimo → 302 al login con `destination=/pro`; `/pro` como titular
+(admin) muestra el aviso de "no disponible", las cuatro ofertas con "precio no disponible (id)",
+asientos, organización nueva con sus datos y el botón deshabilitado; `POST /shine/billing/checkout`
+con organización ajena 404, con una propia y sin clave 503 `not_configured`, portal 503;
+`checkout.session.completed` anota `cus_test_0001` en la organización y `customer.subscription.created`
+(precio marcador del catálogo) crea la licencia: `/shine/me` de jose muestra la organización
+`covered`, plan `professional`, 30 plazas, con su `holder_status` personal intacto (`courtesy`);
+repetido `skipped duplicate`; `customer.subscription.deleted` → `expired`. Datos de prueba borrados
+y el key-value de eventos vaciado; watchdog sin errores nuevos; `cim -y` sin cambios.
+
+**Pendiente (no se puede sin cuenta)**: la verificación en modo test del plan (contratar
+`professional` × 2 desde `/pro` con la tarjeta `4242…`, bajar a 1 desde el Customer Portal,
+cancelar) necesita una cuenta de Stripe con los precios creados, su `sk_test_` en `settings.php`
+y `stripe listen` hacia el webhook. El código está listo para ello; la fila del README lo anota.
+
+**Para subplanes siguientes**:
+- **12 (app)**: en Android y web, el texto neutro del profesional sin cobertura puede abrir
+  `POST /shine/billing/checkout` (o enlazar a `/pro`); en iOS, ni enlace ni precios. Tras volver de
+  Checkout, `refreshMe()` con reintento de unos segundos.
+- **14**: los textos legales de `/pro` (condiciones, privacidad) y el DPA para centros.
 
 ---
 

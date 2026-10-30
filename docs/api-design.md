@@ -1002,6 +1002,74 @@ Todo con el permiso `administer shine organizations`. Config: `shine_org.setting
 
 ---
 
+## Billing: contratación de profesionales y centros con Stripe (FASE 17e)
+
+Subplan `plans/entitlement/11` (2026-10-30; `docs/monetization.md` §6.2). Decisión: **Stripe Checkout
++ Customer Portal**, sin Drupal Commerce; la factura la emite Stripe. Una licencia es una
+suscripción de Stripe con **un** precio del catálogo (plan `professional` o `school`) y una
+cantidad de asientos; el webhook la traduce al `entitlement` de la organización (`field_organization`,
+cupo = alumnos por asiento × asientos). Nada de esto se enlaza desde la app en iOS (§8); en
+Android y web el texto neutro de 12 puede llevar a `/pro`.
+
+### Página web `/pro` (módulo `shine_org`)
+
+Con la sesión de Drupal: el profesional o coordinador entra en `/user/login` con el mismo email y
+contraseña de la app (el nombre de usuario es el email); un anónimo que pida `/pro` va al login con
+vuelta. La página lista sus organizaciones con la licencia vigente y, si ya contrataron, "Gestionar
+suscripción" (Customer Portal: asientos, tarjeta, cancelar); debajo, los planes contratables con sus
+precios leídos de Stripe (caché de una hora), los asientos y la organización (una que coordine o una
+nueva con nombre, tipo, NIF y email de facturación; nace con él como coordinador). "Contratar"
+redirige a Checkout y la vuelta es `/pro/gracias`, que muestra el estado de sus organizaciones
+(el webhook tarda unos segundos: la página lo dice). Sin clave de Stripe la página se ve pero no se
+puede contratar.
+
+### Endpoints JSON (titular, para la app)
+
+```
+POST /shine/billing/checkout   {price, quantity?, organization}   → 200 {url}
+POST /shine/billing/portal     {organization}                     → 200 {url}
+```
+
+`price` es el id de precio de Stripe (`price_...`) de un plan `professional` o `school` del catálogo;
+`quantity` 1 a 100 (1 por defecto); `organization`, el UUID de una organización que el titular
+**coordina** (miembro sin coordinar: `403 role_not_allowed`; no miembro o desconocida: `404`).
+Respuestas: `url` a la que abrir el navegador. Errores: `422 validation` (precio que no es
+contratable, asientos fuera de rango), `409 no_customer` (portal de una organización que aún no ha
+comprado), `503 not_configured` (sin clave de Stripe), `502 stripe_error` (Stripe ha fallado; el
+detalle está en watchdog).
+
+Qué manda Checkout (`BillingManager::checkout()`): `mode: subscription`, un `line_item` con el
+precio y la cantidad (ajustable de 1 a 100 en la propia página de Stripe), `client_reference_id` =
+UUID del titular, `metadata` **y `subscription_data.metadata`** = `{holder, organization}` (UUIDs:
+es lo que lee el webhook en cualquier evento de la suscripción), `customer` reutilizado si la
+organización ya tiene `field_stripe_customer` (si no, `customer_email` = email de facturación o del
+titular), `locale: es`, códigos promocionales, dirección de facturación y NIF (`tax_id_collection`).
+
+### Secretos y configuración
+
+| Setting (`settings.php`) | Qué |
+|---|---|
+| `shine_entitlement.stripe_secret_key` | Clave secreta (`sk_test_...` / `sk_live_...`). Habilita `/pro`, los endpoints de billing y la lectura de precios |
+| `shine_entitlement.stripe_webhook_secret` | Secreto de firma del endpoint del webhook (`whsec_...`) |
+
+Nunca en config ni en git. Los ids de precio van al catálogo (`/admin/config/shine/plans`, entradas
+`professional`, `school_individual`, `school_classroom`) como `stripe:price_...`; en modo test y en
+modo live son distintos (`docs/stores.md`). Dependencia Composer: `stripe/stripe-php ^22`.
+
+### Pruebas en local
+
+Sin clave: la firma se calcula a mano (`t=...,v1=HMAC-SHA256("t.cuerpo", secreto)`) sobre los
+fixtures de `shine_entitlement/tests/fixtures/stripe/`. Con cuenta de Stripe en modo test: la CLI
+(`stripe listen --forward-to https://shine.ddev.site/shine/webhooks/stripe` imprime el `whsec_`
+que va a `settings.php`; `stripe trigger customer.subscription.created` manda eventos de ejemplo,
+aunque sin nuestros metadatos: para el flujo real, contratar desde `/pro` con la tarjeta de prueba
+`4242 4242 4242 4242`, cualquier fecha futura y CVC). Fallo de cobro: `4000 0000 0000 0341`
+(se acepta al contratar y falla al renovar) o, desde el panel, "Reintentar cobro" sobre una factura
+abierta. Las renovaciones se simulan con el reloj de prueba de Stripe (test clocks) o cambiando la
+fecha de la suscripción desde el panel.
+
+---
+
 ## Entitlements (FASE 17)
 
 Módulo `shine_entitlement` (`docs/monetization.md` §4; subplanes `plans/entitlement/03` y `04`).
@@ -1181,6 +1249,49 @@ curl -s -X POST https://shine.ddev.site/shine/webhooks/revenuecat \
 ```
 
 ---
+
+### Stripe
+
+`POST /shine/webhooks/stripe` (subplan 11; `StripeWebhookController` + servicio
+`shine_entitlement.stripe_processor`). Ruta anónima autenticada por la firma de la cabecera
+`Stripe-Signature` (`Webhook::constructEvent`, tolerancia de 5 minutos) contra
+`$settings['shine_entitlement.stripe_webhook_secret']`. Sin secreto configurado, `401
+webhook_not_configured`; firma ausente o inválida, `400 invalid_signature`; cuerpo que no es un
+evento, `400 invalid_payload`. La cabecera no es `Authorization`, así que simple_oauth no interviene
+(a diferencia de RevenueCat). Eventos a suscribir en el panel de Stripe: los seis de la tabla.
+
+Identidades: titular y organización en **`metadata.holder` y `metadata.organization`** de la
+suscripción (los pone Checkout en `subscription_data.metadata`); el entitlement es (`stripe`, id
+de la suscripción `sub_...`); el plan sale del único precio de la suscripción (`items.data[0].price.id`
+→ catálogo) y el cupo de `learners_per_seat × quantity`. Sin organización en los metadatos, el
+entitlement es un plan personal del titular (sin plaza).
+
+| Evento | Acción |
+|---|---|
+| `checkout.session.completed` (modo `subscription`) | Anota `customer` en `field_stripe_customer` de la organización de `metadata.organization`. No crea el entitlement: lo hace la suscripción |
+| `customer.subscription.created` / `.updated` | Upsert: titular, organización, plan y cupo (precio × cantidad), estado y caducidad según `status`: `active` → `active`, `trialing` → `trial` (caducidad = fin del periodo del ítem más 1 día de margen; con `cancel_at_period_end`, sin margen y `field_cancelled_at`), `past_due` → `billing_retry` (fin del periodo más 7 días de gracia), `paused` → `paused`, `canceled` / `unpaid` / `incomplete_expired` → `expired` al momento; `incomplete` se ignora (sin primer cobro) |
+| `customer.subscription.deleted` | `expired`, caducidad = `ended_at` (o ahora) |
+| `invoice.paid` | `active` si se cobró algo (o venía de `billing_retry`); caducidad = fin del periodo de la línea más 1 día |
+| `invoice.payment_failed` | `billing_retry`; caducidad = inicio del periodo impagado más 7 días |
+| Otros tipos | `200 ignored` (`unsupported_type`) |
+
+Respuestas como las de RevenueCat (`applied` | `ignored` | `skipped` | `invalid`, con `outcome`,
+`reason`, `entitlement`, `status`): 200 siempre que el evento sea nuestro; `422 unknown_price`
+(`price_id`) si el precio no está en el catálogo y `422 unsupported_subscription` (más de un ítem o
+ninguno) para que Stripe reintente; `ignored` con 200 para titular desconocido en los metadatos,
+factura de una suscripción que aún no tiene entitlement, checkout que no es de suscripción o
+suscripción `incomplete`. Idempotencia: `field_last_event_id` / `field_event_timestamp` (`created`
+en ms) por entitlement (`skipped` `duplicate` / `stale`) y además todo `event.id` visto se recuerda
+siete días en el key-value con caducidad `shine_entitlement.stripe_events` (también los ignorados;
+no los que han fallado con 4xx, para que el reintento entre). Fin de periodo: en el ítem
+(`items.data[].current_period_end`, API 2025-03-31 y posteriores) o en la suscripción (anteriores).
+Guardar el entitlement invalida la caché del acceso (`entitlement_list`, `user:{uid}` y la
+organización): la plaza se recalcula sin `drush cr`. Fixtures reales en
+`shine_entitlement/tests/fixtures/stripe/`.
+
+Decisiones (11): con `past_due`, si Stripe sigue reintentando más de siete días el acceso se corta
+hasta que un `invoice.paid` lo reactive (mejor un corte tardío que un acceso indefinido sin cobro);
+el margen de un día en las renovaciones evita un corte por un webhook que tarde.
 
 ## Endpoint legacy (actual, acoplado)
 

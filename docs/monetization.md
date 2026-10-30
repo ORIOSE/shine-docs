@@ -513,6 +513,16 @@ hablaba de `REFUND`/`REVOKED`, que no existen en RevenueCat, y ponía `paused` e
 - En la app el profesional **nunca ve un paywall de store**: si no está cubierto se le indica
   que active o renueve desde la web (sin enlace de compra en iOS; texto neutro).
 
+Implementado en 11 (2026-10-30): página `/pro` (Checkout) y Customer Portal en `shine_org`
+(`BillingManager`, endpoints `POST /shine/billing/checkout` y `/portal` para Android y web), webhook
+`POST /shine/webhooks/stripe` en `shine_entitlement` (`StripeProcessor`), `field_stripe_customer`
+en la organización. Decisiones: titular y organización viajan en los metadatos de la suscripción
+(no hace falta el evento de checkout para crear el entitlement); un solo ítem por suscripción;
+caducidad = fin de periodo + 1 día de margen, + 7 días de gracia en `past_due`; sin organización
+en los metadatos el entitlement es un plan personal. Forma final en `api-design.md` ("Billing" y
+"Webhooks → Stripe"). La facturación con IVA la hace Stripe (NIF recogido en Checkout; Stripe Tax
+si se activa en la cuenta).
+
 ### 6.3 Principio de aislamiento
 
 Ni la app ni los players conocen RevenueCat ni Stripe más allá del SDK de compra. El backend
@@ -611,7 +621,8 @@ Orden recomendado: 17a → 17c → 17b → 17d → 17e. 17a y 17c antes de cualq
 - Cupo exacto de Profesional y precio de ampliación.
 - Derivación centro → familia: **cerrada** (§5.6, implementada en 01c y 10): vínculo por código,
   nunca transferencia ni copia; el `release` promueve al `guardian` a `owner`.
-- Facturación profesional: Drupal Commerce vs Stripe Checkout + facturación externa.
+- Facturación profesional: **cerrada** (11, 2026-10-30): Stripe Checkout + Customer Portal, la
+  factura la emite Stripe; sin Drupal Commerce.
 - Precios de partida de Familia (mensual y anual): pendientes desde el subplan 09 (2026-10-29).
 - Nombre definitivo de la app, bundle id y package: bloquean el registro en las dos stores
   (14b). Titular legal de las cuentas: persona física (autónomo); efectos en `docs/stores.md` §1.
