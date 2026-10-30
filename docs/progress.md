@@ -2,7 +2,7 @@
 
 > Actualizado en tiempo real. Si el desarrollo se interrumpe, retomar desde el primer ítem sin marcar de la fase en curso.
 
-**Última actualización**: 2026-10-27 (Generador de contenido 05: lista de texto y lectura en voz alta importables, niveles Level3 a Level10; FASE 18, 06: verificación bilingüe y cierre de la fase; antes 05: revisión del experto de los lotes catalanes aplicada); 2026-10-26 (FASE 18, 05: contenido catalán, primeros lotes Level0 a Level2; antes el mismo día FASE 18 00 a 04, FASE 17 07 y Generador de contenido 04)
+**Última actualización**: 2026-10-30 (FASE 21 planificada: panel web de titulares, `plans/backoffice/`; temas heredados borrados); 2026-10-27 (Generador de contenido 05: lista de texto y lectura en voz alta importables, niveles Level3 a Level10; FASE 18, 06: verificación bilingüe y cierre de la fase; antes 05: revisión del experto de los lotes catalanes aplicada); 2026-10-26 (FASE 18, 05: contenido catalán, primeros lotes Level0 a Level2; antes el mismo día FASE 18 00 a 04, FASE 17 07 y Generador de contenido 04)
 
 ---
 
@@ -1938,6 +1938,32 @@ experto revisa todo, no hay otro entorno de producción).
 - Pendiente (siguiente): tirada de imágenes del 2026-10-30 (fusión, import-images, posición de
   imágenes de Level9 y Level10, ya aprobada); Funcions Executives de 3 a 6 por celda.
 
+### 06. Tablero de seguimiento ampliado: tipos por nivel, material y potencial, lotes, prompts, fuentes (2026-10-30)
+
+El tablero de claude.ai (https://claude.ai/artifact/7JkStNDLcYkg8H74rvokZv) pasa de una página a seis
+pestañas, todas leídas de los JSON que exporta `seguiment.py --export plans/contenido/seguiment-dades`:
+
+- [x] **Catálogo**: cifras, mapa por área y nivel (el de antes) y una rejilla nueva de **actividades
+  por tipo y nivel** por idioma (LIS sale dos veces, decodificación y velocidad), con el total del tipo.
+- [x] **Material y potencial** (`generadores/potencial.py`, nuevo): formas y lemas del rango de cada
+  nivel (lista infantil hasta Level2 con la estructura mínima, general desde Level3 sin malsonantes),
+  pseudopalabras del banco, imágenes del banco con el nivel lector, conjuntos E07 y E08 y grupos E09; y
+  por tipo y nivel las **actividades posibles sin repetir material** (unidades entre lo que consume una
+  actividad según el catálogo 5 y 6). Matriz de letras, matriz con regla y secuencia son "generador";
+  frases y textos, "redacción". Cuellos de botella que enseña: posición de imágenes en Level0 (4 en
+  castellano y 2 en catalán, con 6 publicadas que ya repiten imágenes), Level6 a Level8 (13 a 17) y
+  Level9 y Level10 (6, justo el mínimo); ordena las sílabas con imagen en Level4 y Level5 (13 y 10);
+  conjuntos de matriz de Level7 a Level10 (10 por nivel, el objetivo exacto).
+- [x] **Lotes y prompts**: los 139 lotes de `shine/content/` con tipo, idiomas, niveles, registros,
+  nodos, publicados, revisión, método (prompt o generador), herramienta, semilla y fecha (filtros por
+  idioma, tipo y método); y los 27 prompts y generadores con los lotes y nodos que han salido de cada uno.
+- [x] **Fuentes y documentos**: las 18 fuentes de `docs/fuentes-de-datos.md` (cita, licencia, uso,
+  estado) y 19 documentos del grupo y de criterio, nuevos en el registro (`fonts`, `documents`).
+- [x] **Grupo de expertos** (encargos, revisiones, dudas) y **Fases**, como antes.
+
+`seguiment.py` gana `lots_export`, `prompts_export` (fecha de git y título de cada fichero) y la llamada
+a `potencial.compute`; CLAUDE.md documenta el procedimiento de actualización.
+
 ## FASE 17 — Monetización y modelo de cuentas
 
 Implementa `docs/monetization.md` siguiendo los subplanes de `plans/entitlement/` (orden y
@@ -3137,8 +3163,101 @@ y `stripe listen` hacia el webhook. El código está listo para ello; la fila de
 **Para subplanes siguientes**:
 - **12 (app)**: en Android y web, el texto neutro del profesional sin cobertura puede abrir
   `POST /shine/billing/checkout` (o enlazar a `/pro`); en iOS, ni enlace ni precios. Tras volver de
-  Checkout, `refreshMe()` con reintento de unos segundos.
+  Checkout, `refreshMe()` con reintento de unos segundos. (Hecho en 12: enlace a `/pro`.)
 - **14**: los textos legales de `/pro` (condiciones, privacidad) y el DPA para centros.
+
+### 12. App: código de centro, alumnos en plaza, liberación y textos para profesionales (2026-10-30)
+
+Solo `shine-app/`. Textos en los catálogos (`ui.organizations.*`, más `ui.learners.copy.coverage.releasedBy`,
+`ui.learners.new.organizationPrompt`, `ui.settings.plan.professionalNote` y dos títulos de
+navegación), lógica pura en `src/lib/organizationScreens.ts`.
+
+- **Tipos y API**: `Organization`, `OrganizationMember`, `LearnerRole` con `coordinator` (y `null`
+  justo tras liberar), `organization` y `released_by` en `Learner`, `organizations[]` en `Me`;
+  `src/lib/api/organizations.ts` (`joinOrganization`, `getOrganization`, `listOrganizationLearners`),
+  `createLearner` con `organization`, `releaseLearner`, `grantStaff`, `revokeStaff`; códigos
+  `not_member`, `organization_limit`, `not_in_organization`, `not_staff` en `LearnerError`.
+- **"Tengo un código de centro"** (`app/(auth)/organizations/join.tsx`): 8 caracteres del alfabeto
+  de los códigos, validación antes de enviar, éxito con la organización y el rol, y salidas a "Añadir
+  a otra persona" o Ajustes. Entradas: Ajustes → "Tu centro" y la pantalla del primer alumno (si el
+  titular aún no pertenece a ningún centro).
+- **Ajustes → "Tu centro"**: cada organización con tipo, rol y licencia ("Licencia activa · N
+  plazas, M en uso" o "Sin licencia activa", y la renovación); toca para abrir su ficha
+  (`organizations/[uuid]`: equipo y, para la coordinación, los alumnos en plaza, que **no** están en
+  su lista personal). "Gestionar en la web" (a `/pro`) solo para coordinadores y fuera de iOS. En
+  "Tu plan", un profesional ve una nota en vez de los botones de compra de store.
+- **Alta en plaza**: `PlacementPicker` ("¿Para quién es este perfil?": "Mi familia" o cada
+  organización con sus plazas libres; sin plazas se ve pero no se elige) cuando el titular tiene
+  organizaciones. `organization_limit` → "El centro no tiene plazas libres"; `not_member` → "Ya no
+  formas parte de este centro".
+- **Acciones del personal**: `learnerActions` con `coordinator` (edita, idioma, invita, **da acceso
+  al equipo**, **libera**, archiva) y `owner` de un alumno en plaza (además libera). "Liberar del
+  centro" con `ConfirmPanel` cuyo texto depende de si hay familia vinculada (el historial sigue con
+  ella) o no (el perfil se archiva). `learners/[uuid]/staff`: el equipo del centro con "Dar acceso"
+  / "Retirar acceso" (el que creó el perfil no se toca). `useLearnerDetail`: la ficha y la pantalla
+  de staff cargan `GET /shine/learners/{uuid}` si el alumno no está en `me.learners` (coordinación).
+  El guard de arranque deja pasar sin alumno a `organizations/*` y a cualquier `learners/*` salvo el
+  selector (antes solo `new` y `join`).
+- **Textos del profesional** (§6.2, §8): `isProfessional(me)` (organizaciones o `source: stripe`);
+  en el 402 `generateErrorCopy` recibe el texto neutro (`professionalBlockCopy`: "{centro} debe
+  activar el acceso de {nombre}" o "Tu centro o profesional debe activar tu acceso"), salvo
+  `released_by_organization`, que conserva el suyo; en Android y web, botón "Activar desde la web"
+  (`/pro`); en iOS, nada.
+- **Alumno liberado**: tarjeta en el inicio (`releasedNotice`, mientras ningún plan lo cubra:
+  también con prueba) con "Ver mi plan" (a Ajustes hasta que exista el paywall de 08); la línea de
+  cobertura del selector y de Ajustes dice "{centro} ya no cubre su acceso".
+
+**Tests** (`organizationScreens.test.ts`, 18 tests; 37 suites y 325 tests en total): decisión
+store/organización por organizaciones, `source` y familia vinculada; texto del profesional sin
+precios ni "pago"; el 402 con y sin texto del profesional y el caso liberado; enlace web solo fuera
+de iOS; acciones de coordinador, docente owner en plaza, owner propio, staff, guardian y sin rol;
+candidatos de staff; textos de liberar con y sin familia; tarjeta y línea del liberado; código de 8;
+errores del canje; licencia y roles; opciones de plaza; plaza llena y no miembro; catalán. `tsc` y
+lint limpios (los 4 avisos anteriores).
+
+**Verificación en Expo web** (tres titulares nuevos; organización, licencia de 2 plazas y código
+creados en el servidor): Dani entra y, sin alumnos, ve el enlace al código de centro; canjea
+`cz2r-y64t` (minúsculas y guion) → "Ya formas parte de Centro Luna · Docente"; el alta muestra el
+selector de plaza ("Centro Luna · Quedan 2 plazas libres") y crea a Lía en plaza; Ajustes muestra
+"Tu centro" (Centro · Licencia activa · 2 plazas, 1 en uso), "Acceso activado por Centro Luna", cupo
+0 de 1 y la nota del profesional en vez de los botones de store; la ficha de Lía lleva "En plaza de
+Centro Luna" y "Liberar del centro" sin el botón de staff (docente). Fina canjea el código de Lía
+(`guardian`, cubierta por el centro). Dani libera: la confirmación dice que el historial sigue con
+Fina; después vuelve al selector sin Lía. Fina ve la tarjeta "Centro Luna ha dejado de cubrir el
+acceso de Lía" con "Ver mi plan" y, con la prueba a 0, el 402 "Centro Luna ha dejado de acompañar a
+Lía" sin enlace web. Con la licencia revocada, Dani (profesional) ve "Centro Luna debe activar el
+acceso de Noa" y "Activar desde la web". Carla (coordinación, sin alumnos propios): "Tu centro" →
+ficha del centro con el equipo y Noa en plaza → ficha de Noa con "Dar acceso a otro docente" y
+"Liberar del centro" → se da acceso a sí misma ("Tiene acceso" / "Retirar acceso"). Dos ajustes del
+guard de arranque salieron de este recorrido. Datos de prueba borrados; `free_regular_sessions` a 8.
+Pendiente: Expo Go en dispositivo (el enlace a `/pro` no debe aparecer en iOS).
+
+**Hito H3** (centros y profesionales, con 10 y 11): alcanzado en lo que no depende de una cuenta de
+Stripe.
+
+---
+
+## FASE 21: Panel web de titulares (backoffice)
+**Estado**: 📋 Planificada (2026-10-30). Plan de planes en `plans/backoffice/README.md` (11 subplanes
+con el agente indicado en cada uno, orden, dependencias e hitos H1 a H3); especificación funcional en
+`docs/dashboards.md`; prototipo visual de Lovable ("Shine Panel de Progreso" y "Shine Sign In")
+descargado en `docs/lovable/` con índice en `docs/lovable/INDEX.md`.
+
+### 00. Preparación: temas heredados borrados y decisiones (2026-10-30)
+
+- Desinstalados y borrados los tres temas heredados (`stablechild`, tema por defecto, base `stable9`;
+  `shine` y `b5theme`, subtemas de `bootstrap5`) con sus bloques en `config/sync`, `shine.settings`,
+  `bootstrap5.settings` y la dependencia `drupal/bootstrap5`. Tema por defecto provisional: Olivero;
+  admin: Gin. Verificado: `config:status` limpio, `/user/login` 200, `/pro` 302 al login. El módulo
+  `preprocess` (plantillas de nodo del tema borrado) queda muerto y se quita en el subplan 01.
+- Decisiones cerradas en el README del plan: tema `shine_panel` desde cero sin tema base (tokens del
+  prototipo y de `docs/design.md`, SDC, CSS plano, fuentes alojadas, Chart.js); sesión de Drupal por
+  cookie con acceso resuelto por `LearnerAccessPolicy`, `OrganizationManager` y `EntitlementAccess`;
+  una ruta raíz `/panel` con secciones por rol siguiendo la cabecera del prototipo; estadísticas
+  portadas a PHP (`shine_stats`) con fixtures de paridad; `es` y `ca` con `locale`; `/pro` se integra
+  en `/panel/plan/contratar`; módulos nuevos `shine_panel`, `shine_audit`, `shine_stats`,
+  `shine_notify`, `shine_notes` y `shine_support`.
+- Pendiente: ejecutar los subplanes en el orden del README (camino crítico 01 → 02 → 03 → 04).
 
 ---
 
