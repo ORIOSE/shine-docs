@@ -1,0 +1,272 @@
+[
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/01-matriu.md",
+  "tipus": "MAT",
+  "idioma": "es+ca",
+  "metode": "prompt",
+  "titol": "Matriz de discriminación visual: notas y prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 4,
+  "activitats": 24
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/02-posicio-imatges.md",
+  "tipus": "IMG",
+  "idioma": "es+ca",
+  "metode": "prompt",
+  "titol": "02. Posición de imágenes (activity_image_position): lotes bilingües",
+  "actualitzat": "2026-10-29",
+  "lots": 0,
+  "activitats": 0
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/03-parpelleig.md",
+  "tipus": "BLK",
+  "idioma": "ca",
+  "metode": "prompt",
+  "titol": "Parpadeo en catalán (activity_blink): prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 48
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/04-cicle-sillabes.md",
+  "tipus": "BLK (cicle)",
+  "idioma": "ca",
+  "metode": "prompt",
+  "titol": "Ciclo obligatorio Síl·labes (catalán): prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 1,
+  "activitats": 44
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/05-ordena-sillabes.md",
+  "tipus": "SIL",
+  "idioma": "ca",
+  "metode": "prompt",
+  "titol": "05. Reordenamiento de sílabas en catalán (activity_syllable_order)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 25
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/06-repeticio-rapida.md",
+  "tipus": "REP",
+  "idioma": "ca",
+  "metode": "prompt",
+  "titol": "06. Repetición rápida de palabra en catalán (activity_rapid_repetition)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 17
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/07-segmentacio.md",
+  "tipus": "SEG",
+  "idioma": "ca",
+  "metode": "prompt",
+  "titol": "07. Segmentación léxica en catalán (activity_word_split)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 22
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/08-llista-de-text.md",
+  "tipus": "LIS",
+  "idioma": "ca",
+  "metode": "prompt",
+  "titol": "08. Llista de text en catalán (activity, formato vertical_list)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 33
+ },
+ {
+  "fitxer": "plans/multiidioma/prompts-contenido/09-lectura-en-veu-alta.md",
+  "tipus": "LEC",
+  "idioma": "ca",
+  "metode": "prompt",
+  "titol": "09. Lectura en veu alta en catalán (activity, formato audio_reading)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 10
+ },
+ {
+  "fitxer": "plans/contenido/prompts-es/03-parpadeo.md",
+  "tipus": "BLK",
+  "idioma": "es",
+  "metode": "prompt",
+  "titol": "03. Parpadeo en castellano (activity_blink): prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 8,
+  "activitats": 24
+ },
+ {
+  "fitxer": "plans/contenido/prompts-es/04-ciclo-silabas.md",
+  "tipus": "BLK (cicle)",
+  "idioma": "es",
+  "metode": "prompt",
+  "titol": "04. Ciclo obligatorio Sílabas (castellano): prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 0,
+  "activitats": 0
+ },
+ {
+  "fitxer": "plans/contenido/prompts-es/05-ordena-silabas.md",
+  "tipus": "SIL",
+  "idioma": "es",
+  "metode": "prompt",
+  "titol": "05. Reordenamiento de sílabas en castellano (activity_syllable_order)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 22
+ },
+ {
+  "fitxer": "plans/contenido/prompts-es/06-repeticion-rapida.md",
+  "tipus": "REP",
+  "idioma": "es",
+  "metode": "prompt",
+  "titol": "06. Repetición rápida de palabra en castellano (activity_rapid_repetition)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 9
+ },
+ {
+  "fitxer": "plans/contenido/prompts-es/07-segmentacion.md",
+  "tipus": "SEG",
+  "idioma": "es",
+  "metode": "prompt",
+  "titol": "07. Segmentación léxica en castellano (activity_word_split)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 19
+ },
+ {
+  "fitxer": "plans/contenido/prompts-es/08-lista-de-texto.md",
+  "tipus": "LIS",
+  "idioma": "es",
+  "metode": "prompt",
+  "titol": "08. Lista de texto en castellano (activity, formato vertical_list)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 33
+ },
+ {
+  "fitxer": "plans/contenido/prompts-es/09-lectura-en-voz-alta.md",
+  "tipus": "LEC",
+  "idioma": "es",
+  "metode": "prompt",
+  "titol": "09. Lectura en voz alta en castellano (activity, formato audio_reading)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 10
+ },
+ {
+  "fitxer": "shine/content/generadores/matriz.py",
+  "tipus": "MAT",
+  "idioma": "es+ca",
+  "metode": "generador",
+  "titol": "Generador de matrices de discriminación visual (activity_letter_matrix)",
+  "actualitzat": "2026-10-29",
+  "lots": 9,
+  "activitats": 107
+ },
+ {
+  "fitxer": "shine/content/generadores/imagenes.py",
+  "tipus": "IMG",
+  "idioma": "es+ca",
+  "metode": "generador",
+  "titol": "Generador de lotes de \"Posición de imágenes\" (activity_image_position)",
+  "actualitzat": "2026-10-29",
+  "lots": 8,
+  "activitats": 106
+ },
+ {
+  "fitxer": "shine/content/generadores/e09_lots.py",
+  "tipus": "IMG (Level9 i Level10)",
+  "idioma": "es+ca",
+  "metode": "generador",
+  "titol": "Lots de posició d'imatges de Level9 i Level10 a partir dels grups definitius de E09",
+  "actualitzat": "2026-10-29",
+  "lots": 2,
+  "activitats": 0
+ },
+ {
+  "fitxer": "shine/content/generadores/ciclo_silabas_es.py",
+  "tipus": "BLK (cicle)",
+  "idioma": "es",
+  "metode": "generador",
+  "titol": "Ciclo obligatorio \"Sílabas\" en castellano (prompt plans/contenido/prompts-es/04-ciclo-silabas.md)",
+  "actualitzat": "2026-10-29",
+  "lots": 1,
+  "activitats": 38
+ },
+ {
+  "fitxer": "shine/content/generadores/matriz_regla.py",
+  "tipus": "MAT (regla)",
+  "idioma": "es+ca",
+  "metode": "generador",
+  "titol": "Generador de matrices con regla (FASE 19, Funciones Ejecutivas y Atención)",
+  "actualitzat": "2026-10-29",
+  "lots": 2,
+  "activitats": 66
+ },
+ {
+  "fitxer": "shine/content/generadores/secuencia_regla.py",
+  "tipus": "SEQ",
+  "idioma": "es+ca",
+  "metode": "generador",
+  "titol": "Generador de secuencias con regla (FASE 20, Funciones Ejecutivas y Atención)",
+  "actualitzat": "2026-10-29",
+  "lots": 1,
+  "activitats": 66
+ },
+ {
+  "fitxer": "shine/content/generadores/matriz_conjuntos.py",
+  "tipus": "MAT (conjunts E07 i E08)",
+  "idioma": "es+ca",
+  "metode": "generador de material",
+  "titol": "Conjuntos de la matriz de discriminación visual de Level7 a Level10 (encargos E07 y E08) y de",
+  "actualitzat": "2026-10-29",
+  "lots": 0,
+  "activitats": 0
+ },
+ {
+  "fitxer": "shine/content/generadores/pseudo_filtre.py",
+  "tipus": "pseudoparaules (E05 i E06)",
+  "idioma": "es+ca",
+  "metode": "generador de material",
+  "titol": "Filtro del banco de pseudopalabras (encargos E05 y E06)",
+  "actualitzat": "2026-10-29",
+  "lots": 0,
+  "activitats": 0
+ },
+ {
+  "fitxer": "shine/content/generadores/imagenes_lote2.py",
+  "tipus": "banc d'imatges, lot 2 (E09)",
+  "idioma": "es+ca",
+  "metode": "generador de material",
+  "titol": "Lote 2 del banco de imágenes (encargo E09): fichas de las imágenes nuevas y prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 0,
+  "activitats": 0
+ },
+ {
+  "fitxer": "docs/generador/Banco de imágenes.md",
+  "tipus": "banc d'imatges",
+  "idioma": "es+ca",
+  "metode": "prompt d'imatges",
+  "titol": "Banco de imágenes de Shine: especificación y prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 0,
+  "activitats": 0
+ },
+ {
+  "fitxer": "docs/generador/Banco de imágenes - lote 2 (E09).md",
+  "tipus": "banc d'imatges, lot 2 (E09)",
+  "idioma": "es+ca",
+  "metode": "prompt d'imatges",
+  "titol": "Banco de imágenes de Shine, lote 2 (ampliación para Level9 y Level10): prompt de generación",
+  "actualitzat": "2026-10-29",
+  "lots": 0,
+  "activitats": 0
+ }
+]

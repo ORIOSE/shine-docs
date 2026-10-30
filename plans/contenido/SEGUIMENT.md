@@ -1,6 +1,6 @@
 # Seguiment del contingut
 
-Generat el 2026-10-29 amb `shine/content/generadores/seguiment.py` a partir de Drupal (activitats reals) i de `plans/contenido/seguiment-registre.json` (estat de fases, encàrrecs, revisions i dubtes, actualitzat el 2026-10-29). No s'edita a mà: es canvia el registre i es torna a generar.
+Generat el 2026-10-30 amb `shine/content/generadores/seguiment.py` a partir de Drupal (activitats reals) i de `plans/contenido/seguiment-registre.json` (estat de fases, encàrrecs, revisions i dubtes, actualitzat el 2026-10-30). No s'edita a mà: es canvia el registre i es torna a generar.
 
 Estats: **pendent** (no començat), **en curs**, **enviat** (a revisió del grup), **respost** (resposta rebuda, per aplicar), **aplicat**, **tancat**.
 
@@ -168,6 +168,6 @@ IMG-CA-L00-MEM-003, IMG-ES-L00-MEM-003, MAT-CA-L02-PER-001, SEG-ES-L01-LIN-001, 
 | Bancs de pseudoparaules (es, ca) | aplicat | 672 i 670. |
 | Banc d'imatges | aplicat | 432 imatges importades; lot 2 de 122 en generació. |
 | Porta lèxica i d'estructura | aplicat | lexico.py (llistes), estructura.py (taula de nivell mínim), etiquetar_lote.py, revision_lote.py. |
-| Tauler visual de seguiment | aplicat | https://claude.ai/artifact/7JkStNDLcYkg8H74rvokZv (privat); llegeix els JSON de plans/contenido/seguiment-dades. |
+| Tauler visual de seguiment | aplicat | https://claude.ai/artifact/7JkStNDLcYkg8H74rvokZv (privat). Sis pestanyes: catàleg (per àrea i per tipus i nivell), material i potencial, lots i prompts, fonts i documents, grup d'experts, fases. Llegeix els JSON de plans/contenido/seguiment-dades (seguiment.py --export; material.json i potencial.json surten de potencial.py). |
 
 Tipus: SIL ordena les síl·labes, SEG segmentació, LIS llista de text, LEC lectura en veu alta, BLK parpelleig, REP repetició ràpida, MAT matriu, IMG posició d'imatges.

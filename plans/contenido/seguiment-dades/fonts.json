@@ -1,0 +1,200 @@
+[
+ {
+  "id": "F01",
+  "grup": "Freqüència lèxica",
+  "nom": "CORPES XXI (Real Academia Española), llistat de freqüències 1.5",
+  "que_es": "Corpus de referència del castellà del segle XXI, escrit i oral, d'Espanya i Amèrica: forma, lema, etiqueta morfològica i freqüència.",
+  "cita": "REAL ACADEMIA ESPAÑOLA: Banco de datos (CORPES XXI). Corpus del Español del Siglo XXI. Listado de frecuencias de elementos, versión 1.5. https://www.rae.es",
+  "llicencia": "Dades de la RAE, ús intern sense redistribució. Condicions d'ús comercial i citació pendents de confirmar amb la RAE.",
+  "us": "Font principal de es-general.csv (E01): freqüència, rang, lema i categoria de cada forma. Decideix el vocabulari de Level3 a Level10.",
+  "estat": "aplicat, llicència pendent",
+  "ubicacio": "dades-privades/lexico/fuentes/frecuencia_elementos_corpes_1_5.txt (130 MB, fora de git)"
+ },
+ {
+  "id": "F02",
+  "grup": "Freqüència lèxica",
+  "nom": "SUBTLEX-ESP",
+  "que_es": "Freqüències del castellà en subtítols de pel·lícules i sèries (40 milions de paraules, 94.261 formes). Referència psicolingüística.",
+  "cita": "Cuetos, F., Glez-Nosti, M., Barbón, A. i Brysbaert, M. (2011). SUBTLEX-ESP. Psicológica, 32, 133-143. https://osf.io/xp6sz/",
+  "llicencia": "CC BY-NC-SA 4.0 (no comercial).",
+  "us": "Només columnes de consulta a es-general.csv (frecuencia_subtlex, rango_subtlex) per a la revisió. No entra a la porta lèxica per la clàusula no comercial.",
+  "estat": "només consulta",
+  "ubicacio": "dades-privades/lexico/fuentes/subtlex-esp/"
+ },
+ {
+  "id": "F03",
+  "grup": "Freqüència lèxica",
+  "nom": "wordfreq 3.1.1 (castellà)",
+  "que_es": "Freqüències combinades de subtítols, Viquipèdia, notícies, llibres, xarxes i web.",
+  "cita": "Speer, R. (2022). rspeer/wordfreq v3.0. Zenodo. https://doi.org/10.5281/zenodo.7199437",
+  "llicencia": "Dades CC BY-SA 4.0; codi Apache 2.0.",
+  "us": "Versió 1 de es-general.csv; avui columna de contrast (frecuencia_wordfreq, rango_wordfreq).",
+  "estat": "contrast",
+  "ubicacio": "paquet de PyPI"
+ },
+ {
+  "id": "F04",
+  "grup": "Anotació lingüística",
+  "nom": "Universal Dependencies: UD_Spanish-AnCora i UD_Spanish-GSD (v2.18)",
+  "que_es": "Corpus del castellà amb lema i categoria anotats a mà.",
+  "cita": "Taulé, Martí i Recasens (2008), AnCora, LREC 2008; McDonald et al. (2013), ACL 2013. https://universaldependencies.org",
+  "llicencia": "AnCora CC BY 4.0; GSD CC BY-SA 4.0.",
+  "us": "Lema i categoria de la versió 1 de es-general.csv; d'aquella revisió surten els descarts i les marques de la versió 2.",
+  "estat": "aplicat",
+  "ubicacio": "repositoris de GitHub d'UniversalDependencies"
+ },
+ {
+  "id": "F05",
+  "grup": "Freqüència lèxica",
+  "nom": "wordfreq 3.1.1 (català)",
+  "que_es": "Llista \"large\" del català (Viquipèdia, subtítols, notícies, web, xarxes; tot el domini lingüístic).",
+  "cita": "Speer, R. (2022). rspeer/wordfreq v3.0. Zenodo. https://doi.org/10.5281/zenodo.7199437",
+  "llicencia": "Dades CC BY-SA 4.0.",
+  "us": "Freqüència i rang principals de ca-general.csv (E02). Triada davant de la llista de Softcatalà perquè documenta els corpus.",
+  "estat": "aplicat",
+  "ubicacio": "paquet de PyPI"
+ },
+ {
+  "id": "F06",
+  "grup": "Anotació lingüística",
+  "nom": "UD_Catalan-AnCora (Universal Dependencies 2.18)",
+  "que_es": "Corpus del català amb lema i categoria anotats a mà.",
+  "cita": "Taulé, Martí i Recasens (2008), AnCora, LREC 2008. https://universaldependencies.org",
+  "llicencia": "CC BY 4.0.",
+  "us": "Lema i categoria de ca-general.csv (primera opció).",
+  "estat": "aplicat",
+  "ubicacio": "repositori de GitHub d'UniversalDependencies"
+ },
+ {
+  "id": "F07",
+  "grup": "Anotació lingüística",
+  "nom": "Diccionari i freqüències de Softcatalà (catalan-dict-tools)",
+  "que_es": "Diccionari morfològic de LanguageTool (1,29 milions de formes amb lema i etiqueta EAGLES), classificació de diacrítics (norma IEC 2017) i freqüències de formes i lemes.",
+  "cita": "Softcatalà, catalan-dict-tools, commit 32d7abc (2026-10-28). https://github.com/Softcatala/catalan-dict-tools",
+  "llicencia": "LGPL 2.1 o GPL 2.0.",
+  "us": "Lema i categoria quan UD no té la forma; columna en_diccionari; conversió dels diacrítics antics; columna de contrast frecuencia_softcatala.",
+  "estat": "aplicat",
+  "ubicacio": "dades-privades/lexico/fuentes/softcatala/"
+ },
+ {
+  "id": "F08",
+  "grup": "Vocabulari infantil",
+  "nom": "Llistes infantils pròpies es-infantil.csv i ca-infantil.csv (E03 i E04)",
+  "que_es": "Vocabulari de 5 a 7 anys per nivell (0, 1, 2) amb les formes flexionades. Manen a la porta lèxica de Level0 a Level2.",
+  "cita": "Procés híbrid aprovat pel grup el 2026-10-28: lemes candidats de les llistes generals, del banc d'imatges i dels lots revisats; nivell per lema assignat per Claude (Opus); formes del CORPES i del diccionari de Softcatalà.",
+  "llicencia": "Material propi derivat de F01, F05 i F07.",
+  "us": "Porta lèxica de Level0 a Level2; estructura_min calculada amb estructura.py. Validades pel grup el 2026-10-29 (mostres de 300 files).",
+  "estat": "aplicat",
+  "ubicacio": "dades-privades/lexico/{es,ca}-infantil.csv"
+ },
+ {
+  "id": "F09",
+  "grup": "Material derivat",
+  "nom": "Bancs de pseudoparaules (E05, E06) i conjunts de matriu (E07, E08)",
+  "que_es": "672 pseudoparaules castellanes i 670 catalanes per nivell (1 a 10) i 40 i 70 conjunts objectiu més distractors per a la matriu de Level7 a Level10 (i grafies catalanes de Level2 a Level6).",
+  "cita": "Candidates proposades per Claude (Opus) i filtrades amb pseudo_filtre.py contra F01, F05 i F08; conjunts generats amb matriz_conjuntos.py (llavor fixa).",
+  "llicencia": "Material propi.",
+  "us": "Parpelleig, llistes i repetició ràpida des de Level2 a Level4; matrius de nivells alts. Aprovats pel grup el 2026-10-29.",
+  "estat": "aplicat",
+  "ubicacio": "plans/contenido/encarrecs/lliuraments/E05-*.csv, E06-*.csv, E07-*.csv, E08-*.csv"
+ },
+ {
+  "id": "F10",
+  "grup": "Revisió",
+  "nom": "Revisió per model de llenguatge (Claude, Anthropic, model Opus)",
+  "que_es": "Revisió forma a forma de les llistes: lema, categoria, descarts i marques (malsonant, sensible, americà, estrangera).",
+  "cita": "2026-10-28: 35.804 formes castellanes (v1) i 1.772 del CORPES (v2); 36.000 catalanes; 3.314 i 3.340 lemes infantils classificats per edat.",
+  "llicencia": "Treball propi.",
+  "us": "Versions 1 i 2 de les llistes generals i les infantils; el grup en revisa mostres.",
+  "estat": "aplicat",
+  "ubicacio": "dades-privades/lexico/build/"
+ },
+ {
+  "id": "F11",
+  "grup": "Criteris pedagògics",
+  "nom": "Documents del grup d'experts",
+  "que_es": "Especificació tècnica del generador (v2.0), taxonomies fonològiques i guies de parametrització en castellà i català, estructura catalana i respostes a dubtes.",
+  "cita": "Vegeu la pestanya de documents: docs/generador/*.md i plans/multiidioma/*.md.",
+  "llicencia": "Documents del projecte.",
+  "us": "Autoritat de l'escala de nivells, la taxonomia fonològica i els paràmetres de cada tipus. La bibliografia que citen encara no està recollida.",
+  "estat": "aplicat, bibliografia pendent",
+  "ubicacio": "docs/generador/, plans/multiidioma/"
+ },
+ {
+  "id": "F12",
+  "grup": "Imatges",
+  "nom": "Banc d'imatges de Shine",
+  "que_es": "Il·lustracions vectorials planes d'objectes quotidians: 432 del banc inicial més el lot 2 de 122 per a Level9 i Level10 (81 acceptades, 25 pendents de la tirada del 2026-10-30).",
+  "cita": "Generades amb el model d'imatges integrat de Cowork (image_gen) a partir dels prompts de docs/generador/Banco de imágenes.md i del lot 2 (E09); revisades una a una; noms catalans validats per l'expert.",
+  "llicencia": "Contingut propi generat per al projecte. Condicions d'ús comercial de l'eina pendents de confirmar.",
+  "us": "Posició d'imatges i pista d'ordena les síl·labes. El manifest porta nom, sil·labeig, nivell lector i etiquetes per idioma.",
+  "estat": "aplicat, llicència pendent",
+  "ubicacio": "shine/content/images/ i manifest.json"
+ },
+ {
+  "id": "F13",
+  "grup": "Textos i lots",
+  "nom": "Redacció dels lots (Claude al repositori) i generadors amb llavor",
+  "que_es": "Les llistes, lectures, segmentacions, parpellejos i repeticions s'escriuen seguint els prompts; matriu, posició d'imatges, matriu amb regla i seqüència amb regla surten de generadors deterministes.",
+  "cita": "plans/contenido/prompts-es/, plans/multiidioma/prompts-contenido/, shine/content/generadores/.",
+  "llicencia": "Contingut propi.",
+  "us": "Tot passa per la porta lèxica, l'importador i la revisió del grup abans de publicar-se.",
+  "estat": "aplicat",
+  "ubicacio": "shine/content/*.json"
+ },
+ {
+  "id": "F14",
+  "grup": "Pendent",
+  "nom": "CTILC (Institut d'Estudis Catalans)",
+  "que_es": "Corpus textual informatitzat de la llengua catalana, font normativa recomanada pel grup.",
+  "cita": "",
+  "llicencia": "Sense exportació oberta.",
+  "us": "Llista general del català (E02); avui wordfreq amb revisió.",
+  "estat": "per aconseguir",
+  "ubicacio": ""
+ },
+ {
+  "id": "F15",
+  "grup": "Pendent",
+  "nom": "LEXESP o una altra llista infantil castellana",
+  "que_es": "Vocabulari infantil de referència.",
+  "cita": "",
+  "llicencia": "",
+  "us": "Contrastar es-infantil.csv (E03), feta amb el procés híbrid.",
+  "estat": "per aconseguir",
+  "ubicacio": ""
+ },
+ {
+  "id": "F16",
+  "grup": "Pendent",
+  "nom": "BDLOC, PRODISCAT o equivalent",
+  "que_es": "Vocabulari infantil català de referència.",
+  "cita": "",
+  "llicencia": "",
+  "us": "Contrastar ca-infantil.csv (E04).",
+  "estat": "per aconseguir",
+  "ubicacio": ""
+ },
+ {
+  "id": "F17",
+  "grup": "Pendent",
+  "nom": "Estimacions de familiaritat del castellà (Brysbaert i col.)",
+  "que_es": "Valoracions de familiaritat de paraules castellanes.",
+  "cita": "https://osf.io/frc6a/",
+  "llicencia": "",
+  "us": "Possible suport per al vocabulari infantil de Level3 en amunt (decisió 2 de l'E01).",
+  "estat": "localitzada, no descarregada",
+  "ubicacio": ""
+ },
+ {
+  "id": "F18",
+  "grup": "Pendent",
+  "nom": "Bibliografia dels documents del grup",
+  "que_es": "Les referències numerades que citen l'especificació, la taxonomia i la guia.",
+  "cita": "",
+  "llicencia": "",
+  "us": "Poder citar-les a la web i a la pantalla \"Sobre els exercicis\".",
+  "estat": "per demanar al grup",
+  "ubicacio": ""
+ }
+]
