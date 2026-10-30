@@ -124,7 +124,7 @@
   "id": "F12",
   "grup": "Imatges",
   "nom": "Banc d'imatges de Shine",
-  "que_es": "Il·lustracions vectorials planes d'objectes quotidians: 432 del banc inicial més el lot 2 de 122 per a Level9 i Level10 (81 acceptades, 25 pendents de la tirada del 2026-10-30).",
+  "que_es": "Il·lustracions vectorials planes d'objectes quotidians: 432 del banc inicial més el lot 2 de 122 per a Level9 i Level10 (106 acceptades i 16 descartades). En total, 538 acceptades.",
   "cita": "Generades amb el model d'imatges integrat de Cowork (image_gen) a partir dels prompts de docs/generador/Banco de imágenes.md i del lot 2 (E09); revisades una a una; noms catalans validats per l'expert.",
   "llicencia": "Contingut propi generat per al projecte. Condicions d'ús comercial de l'eina pendents de confirmar.",
   "us": "Posició d'imatges i pista d'ordena les síl·labes. El manifest porta nom, sil·labeig, nivell lector i etiquetes per idioma.",

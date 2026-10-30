@@ -51,19 +51,19 @@
   "id": "C9",
   "titol": "Tanda 9: Level9 sencer, tots dos idiomes",
   "estat": "aplicat",
-  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda9-level9-resposta.md) i publicades les 36 de text i matriu. La posició d'imatges de Level9 i Level10 també està aprovada: s'importa i es publica quan arribin les 25 imatges de la tirada del 2026-10-30."
+  "detall": "Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda9-level9-resposta.md) i publicada sencera: les 36 de text i matriu el 2026-10-29 i les 12 de posició d'imatges de Level9 (6 per idioma) el 2026-10-30, quan va arribar la tirada d'imatges."
  },
  {
   "id": "C10",
   "titol": "Tanda 10: Level10 sencer, tots dos idiomes",
   "estat": "aplicat",
-  "detall": "Aprovada sense canvis el 2026-10-29 i publicada: 36 activitats. La primera resposta citava material que no era el nostre (l'eina del revisor no va llegir el lot); la revisió complementària (respostes-2026-10-30/LOT-tanda10-level10-resposta-complementaria.md) sí que revisa el material real. Falta la posició d'imatges de Level10 (aprovada; espera la tirada)."
+  "detall": "Aprovada sense canvis el 2026-10-29 i publicada: 36 activitats. La primera resposta citava material que no era el nostre (l'eina del revisor no va llegir el lot); la revisió complementària (respostes-2026-10-30/LOT-tanda10-level10-resposta-complementaria.md) sí que revisa el material real. La posició d'imatges de Level10 (6 per idioma) es va publicar el 2026-10-30."
  },
  {
   "id": "IMG2",
   "titol": "Banc d'imatges, lot 2 (122 imatges per a Level9 i Level10)",
-  "estat": "en curs",
-  "detall": "81 candidates acceptades (revisió de Claude als fulls de contactes) i importades al banc el 2026-10-29 amb generadores/fusionar_ampliacion122.py; 16 descartades (cap grup E09 les fa servir). Per a la tirada del 2026-10-30: 20 pendents que calen i 5 per repetir (mango, pasa, bol, caqui, bacalao), llista a _revision/ampliacion122/repetir-2026-10-29.md. Després, tornar a executar la fusió, import-images i els lots de posició d'imatges de Level9 i Level10. Lots de Level9 i Level10 ja escrits (imagenes-{es,ca}-level9-10-v1.json, generadores/e09_lots.py, 12 activitats per idioma, cap imatge repetida dins d'una activitat): la prova d'importació només falla per les 25 imatges de la tirada; demà es verifica i s'importen."
+  "estat": "aplicat",
+  "detall": "Tancat el 2026-10-30. 106 imatges acceptades (81 el 2026-10-29 i 25 a la tirada del 2026-10-30: 20 noves i 5 repetides, mango, pasa, bol, caqui i bacalao) i 16 descartades perquè cap grup E09 les fa servir. Fusió amb generadores/fusionar_ampliacion122.py i import-images: 25 media nous, 513 sense canvis. Banc: 538 acceptades i 21 descartades (528 utilitzables en català). Publicats els lots imagenes-{es,ca}-level9-10-v1.json (generadores/e09_lots.py): 24 activitats, 6 per idioma i nivell; el Level9 català va amb grups de 4 (decisió E09). Memòria de Level9 i Level10 queda amb 6 per cel·la en tots dos idiomes."
  },
  {
   "id": "F19",

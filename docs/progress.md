@@ -1935,8 +1935,15 @@ experto revisa todo, no hay otro entorno de producción).
   lugar de dent, pont; summary de prueba borrado) e IMG-L02-MEM-004 (pantera y libro en lugar de topo
   y concha). Catálogo, taxonomía y guía catalanas, banco de imágenes, estructura-ca y prompt 06
   actualizados.
-- Pendiente (siguiente): tirada de imágenes del 2026-10-30 (fusión, import-images, posición de
-  imágenes de Level9 y Level10, ya aprobada); Funcions Executives de 3 a 6 por celda.
+- [x] **Tirada de imágenes del 2026-10-30 y posición de imágenes de Level9 y Level10**: 25 imágenes
+  (20 nuevas y 5 repetidas: mango, pasa, bol, caqui, bacalao) fusionadas con
+  `fusionar_ampliacion122.py` e importadas con `import-images` (25 media nuevos, 513 sin cambios).
+  Banco: 538 aceptadas y 21 descartadas, 528 utilizables en catalán. Publicados
+  `imagenes-{es,ca}-level9-10-v1.json` (aprobados en la revisión de la tanda 9): 24 actividades, 6 por
+  idioma y nivel, todas con sus imágenes enlazadas; el Level9 catalán lleva grupos de 4 (decisión
+  E09). Memoria de Trabajo queda con 6 por celda en Level9 y Level10 en los dos idiomas. Catálogo:
+  786 actividades. Registro, SEGUIMENT y tablero actualizados.
+- Pendiente (siguiente): Funcions Executives de 3 a 6 por celda.
 
 ### 06. Tablero de seguimiento ampliado: tipos por nivel, material y potencial, lotes, prompts, fuentes (2026-10-30)
 

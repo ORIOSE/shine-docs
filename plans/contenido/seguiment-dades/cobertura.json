@@ -459,6 +459,14 @@
   "idioma": "ca",
   "area": "Memòria",
   "tipus": "IMG",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "ca",
+  "area": "Memòria",
+  "tipus": "IMG",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 6
@@ -508,6 +516,14 @@
   "area": "Memòria",
   "tipus": "IMG",
   "nivell": "Level8",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "ca",
+  "area": "Memòria",
+  "tipus": "IMG",
+  "nivell": "Level9",
   "estat": "publicada",
   "n": 6
  },
@@ -1419,6 +1435,14 @@
   "idioma": "es",
   "area": "Memòria",
   "tipus": "IMG",
+  "nivell": "Level10",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "es",
+  "area": "Memòria",
+  "tipus": "IMG",
   "nivell": "Level2",
   "estat": "publicada",
   "n": 6
@@ -1468,6 +1492,14 @@
   "area": "Memòria",
   "tipus": "IMG",
   "nivell": "Level8",
+  "estat": "publicada",
+  "n": 6
+ },
+ {
+  "idioma": "es",
+  "area": "Memòria",
+  "tipus": "IMG",
+  "nivell": "Level9",
   "estat": "publicada",
   "n": 6
  },

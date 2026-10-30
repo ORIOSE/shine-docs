@@ -5,7 +5,7 @@
   "formes": 298,
   "lemes": 88,
   "pseudoparaules": 0,
-  "imatges": 34,
+  "imatges": 36,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "infantil"
@@ -16,7 +16,7 @@
   "formes": 14262,
   "lemes": 1369,
   "pseudoparaules": 57,
-  "imatges": 353,
+  "imatges": 372,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "infantil"
@@ -27,7 +27,7 @@
   "formes": 24474,
   "lemes": 2220,
   "pseudoparaules": 62,
-  "imatges": 405,
+  "imatges": 424,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "infantil"
@@ -38,7 +38,7 @@
   "formes": 3047,
   "lemes": 2037,
   "pseudoparaules": 65,
-  "imatges": 497,
+  "imatges": 522,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "general, rang fins a 3.000"
@@ -49,7 +49,7 @@
   "formes": 5054,
   "lemes": 3203,
   "pseudoparaules": 68,
-  "imatges": 497,
+  "imatges": 522,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "general, rang fins a 5.000"
@@ -60,7 +60,7 @@
   "formes": 7057,
   "lemes": 4259,
   "pseudoparaules": 70,
-  "imatges": 513,
+  "imatges": 538,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "general, rang fins a 7.000"
@@ -71,7 +71,7 @@
   "formes": 10058,
   "lemes": 5795,
   "pseudoparaules": 70,
-  "imatges": 513,
+  "imatges": 538,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "general, rang fins a 10.000"
@@ -82,7 +82,7 @@
   "formes": 15048,
   "lemes": 8323,
   "pseudoparaules": 70,
-  "imatges": 513,
+  "imatges": 538,
   "conjunts_matriu": 10,
   "grups_imatges": 0,
   "llista": "general, rang fins a 15.000"
@@ -93,7 +93,7 @@
   "formes": 20040,
   "lemes": 10863,
   "pseudoparaules": 70,
-  "imatges": 513,
+  "imatges": 538,
   "conjunts_matriu": 10,
   "grups_imatges": 0,
   "llista": "general, rang fins a 20.000"
@@ -104,7 +104,7 @@
   "formes": 87493,
   "lemes": 43799,
   "pseudoparaules": 70,
-  "imatges": 513,
+  "imatges": 538,
   "conjunts_matriu": 10,
   "grups_imatges": 36,
   "llista": "general, sense límit de rang"
@@ -115,7 +115,7 @@
   "formes": 87493,
   "lemes": 43799,
   "pseudoparaules": 70,
-  "imatges": 513,
+  "imatges": 538,
   "conjunts_matriu": 10,
   "grups_imatges": 36,
   "llista": "general, sense límit de rang"
@@ -126,7 +126,7 @@
   "formes": 80,
   "lemes": 62,
   "pseudoparaules": 0,
-  "imatges": 22,
+  "imatges": 23,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "infantil"
@@ -137,7 +137,7 @@
   "formes": 4600,
   "lemes": 1064,
   "pseudoparaules": 61,
-  "imatges": 306,
+  "imatges": 326,
   "conjunts_matriu": 0,
   "grups_imatges": 0,
   "llista": "infantil"
@@ -148,7 +148,7 @@
   "formes": 9817,
   "lemes": 2084,
   "pseudoparaules": 55,
-  "imatges": 387,
+  "imatges": 407,
   "conjunts_matriu": 6,
   "grups_imatges": 0,
   "llista": "infantil"
@@ -159,7 +159,7 @@
   "formes": 2997,
   "lemes": 2014,
   "pseudoparaules": 66,
-  "imatges": 491,
+  "imatges": 516,
   "conjunts_matriu": 6,
   "grups_imatges": 0,
   "llista": "general, rang fins a 3.000"
@@ -170,7 +170,7 @@
   "formes": 4994,
   "lemes": 3210,
   "pseudoparaules": 68,
-  "imatges": 491,
+  "imatges": 516,
   "conjunts_matriu": 6,
   "grups_imatges": 0,
   "llista": "general, rang fins a 5.000"
@@ -181,7 +181,7 @@
   "formes": 6989,
   "lemes": 4366,
   "pseudoparaules": 70,
-  "imatges": 503,
+  "imatges": 528,
   "conjunts_matriu": 6,
   "grups_imatges": 0,
   "llista": "general, rang fins a 7.000"
@@ -192,7 +192,7 @@
   "formes": 9980,
   "lemes": 6042,
   "pseudoparaules": 70,
-  "imatges": 503,
+  "imatges": 528,
   "conjunts_matriu": 6,
   "grups_imatges": 0,
   "llista": "general, rang fins a 10.000"
@@ -203,7 +203,7 @@
   "formes": 14962,
   "lemes": 8838,
   "pseudoparaules": 70,
-  "imatges": 503,
+  "imatges": 528,
   "conjunts_matriu": 10,
   "grups_imatges": 0,
   "llista": "general, rang fins a 15.000"
@@ -214,7 +214,7 @@
   "formes": 19945,
   "lemes": 11627,
   "pseudoparaules": 70,
-  "imatges": 503,
+  "imatges": 528,
   "conjunts_matriu": 10,
   "grups_imatges": 0,
   "llista": "general, rang fins a 20.000"
@@ -225,7 +225,7 @@
   "formes": 51449,
   "lemes": 28463,
   "pseudoparaules": 70,
-  "imatges": 503,
+  "imatges": 528,
   "conjunts_matriu": 10,
   "grups_imatges": 36,
   "llista": "general, sense límit de rang"
@@ -236,7 +236,7 @@
   "formes": 51449,
   "lemes": 28463,
   "pseudoparaules": 70,
-  "imatges": 503,
+  "imatges": 528,
   "conjunts_matriu": 10,
   "grups_imatges": 36,
   "llista": "general, sense límit de rang"

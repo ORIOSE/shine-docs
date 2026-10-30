@@ -8,7 +8,7 @@ Estats: **pendent** (no començat), **en curs**, **enviat** (a revisió del grup
 
 | | Castellà | Català |
 |---|---|---|
-| Activitats publicades | 369 | 387 |
+| Activitats publicades | 381 | 399 |
 | Importades, en revisió | 0 | 0 |
 | Retirades (sense publicar) | 4 | 2 |
 | De les quals, del cicle Sílabas (publicades + en revisió) | 38 + 0 | 44 + 0 |
@@ -27,9 +27,9 @@ Encàrrecs: 12 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0
 | C6 | Tanda 6: Level6 sencer, tots dos idiomes | aplicat | Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda6-level6-resposta.md) i publicada: 48 activitats. Validats: ordena les síl·labes sense dibuix a Level6, lectures expositives, enclítics (en català només amb apòstrof), subjuntiu imperfet. |
 | C7 | Tanda 7: Level7 sencer, tots dos idiomes | aplicat | Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda7-level7-resposta.md) i publicada: 48 activitats. Validats els termes nous de sonoritat i el grup d'esforç morfològic i lèxic, les síl·labes sobrants ortogràfiques, els homòfons a la segmentació i els pronoms combinats en català. |
 | C8 | Tanda 8: Level8 sencer, tots dos idiomes | aplicat | Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda8-level8-resposta.md) i publicada: 48 activitats. Validats la posició d'imatges per etiqueta visual, les matrius de doble objectiu, les llistes de 15 i les síl·labes sobrants d'equivalència fonètica. |
-| C9 | Tanda 9: Level9 sencer, tots dos idiomes | aplicat | Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda9-level9-resposta.md) i publicades les 36 de text i matriu. La posició d'imatges de Level9 i Level10 també està aprovada: s'importa i es publica quan arribin les 25 imatges de la tirada del 2026-10-30. |
-| C10 | Tanda 10: Level10 sencer, tots dos idiomes | aplicat | Aprovada sense canvis el 2026-10-29 i publicada: 36 activitats. La primera resposta citava material que no era el nostre (l'eina del revisor no va llegir el lot); la revisió complementària (respostes-2026-10-30/LOT-tanda10-level10-resposta-complementaria.md) sí que revisa el material real. Falta la posició d'imatges de Level10 (aprovada; espera la tirada). |
-| IMG2 | Banc d'imatges, lot 2 (122 imatges per a Level9 i Level10) | en curs | 81 candidates acceptades (revisió de Claude als fulls de contactes) i importades al banc el 2026-10-29 amb generadores/fusionar_ampliacion122.py; 16 descartades (cap grup E09 les fa servir). Per a la tirada del 2026-10-30: 20 pendents que calen i 5 per repetir (mango, pasa, bol, caqui, bacalao), llista a _revision/ampliacion122/repetir-2026-10-29.md. Després, tornar a executar la fusió, import-images i els lots de posició d'imatges de Level9 i Level10. Lots de Level9 i Level10 ja escrits (imagenes-{es,ca}-level9-10-v1.json, generadores/e09_lots.py, 12 activitats per idioma, cap imatge repetida dins d'una activitat): la prova d'importació només falla per les 25 imatges de la tirada; demà es verifica i s'importen. |
+| C9 | Tanda 9: Level9 sencer, tots dos idiomes | aplicat | Aprovada sense canvis el 2026-10-29 (respostes-2026-10-30/LOT-tanda9-level9-resposta.md) i publicada sencera: les 36 de text i matriu el 2026-10-29 i les 12 de posició d'imatges de Level9 (6 per idioma) el 2026-10-30, quan va arribar la tirada d'imatges. |
+| C10 | Tanda 10: Level10 sencer, tots dos idiomes | aplicat | Aprovada sense canvis el 2026-10-29 i publicada: 36 activitats. La primera resposta citava material que no era el nostre (l'eina del revisor no va llegir el lot); la revisió complementària (respostes-2026-10-30/LOT-tanda10-level10-resposta-complementaria.md) sí que revisa el material real. La posició d'imatges de Level10 (6 per idioma) es va publicar el 2026-10-30. |
+| IMG2 | Banc d'imatges, lot 2 (122 imatges per a Level9 i Level10) | aplicat | Tancat el 2026-10-30. 106 imatges acceptades (81 el 2026-10-29 i 25 a la tirada del 2026-10-30: 20 noves i 5 repetides, mango, pasa, bol, caqui i bacalao) i 16 descartades perquè cap grup E09 les fa servir. Fusió amb generadores/fusionar_ampliacion122.py i import-images: 25 media nous, 513 sense canvis. Banc: 538 acceptades i 21 descartades (528 utilitzables en català). Publicats els lots imagenes-{es,ca}-level9-10-v1.json (generadores/e09_lots.py): 24 activitats, 6 per idioma i nivell; el Level9 català va amb grups de 4 (decisió E09). Memòria de Level9 i Level10 queda amb 6 per cel·la en tots dos idiomes. |
 | F19 | FASE 19: matriu amb regla (Funcions Executives) | en curs | Subplans 01 a 06 fets el 2026-10-29. Lots aprovats pel grup sense canvis i publicats: 3 per nivell i idioma, l'àrea entra a la rotació. Missatge d'explicació per família amb imatge d'exemple a la intro de l'activitat. Verificat a Expo web amb la Marta (es) i el Pau (ca) en R1. Falta jugar R2, R3, R4 i la regla oculta a l'app i arribar a 6 per cel·la. |
 | GEN | Generador de sessions: no reservar forat a àrees sense contingut | aplicat | SessionGenerator::planRegular(), 2026-10-29. |
 | TAG | Etiquetes fonològiques (esforç) calculades per estructura | aplicat | estructura.py, etiquetar_lote.py; 20 activitats etiquetades, prompts 05, 07, 08. |
@@ -68,7 +68,7 @@ Encàrrecs: 12 aplicat, 1 tancat. Revisions de lots obertes: 0. Dubtes oberts: 0
 | R-T6 | Tanda 6, Level6 | aplicat | 36 | 48 (48) | plans/contenido/revision/tanda6-level6.md | LOT-tanda6-level6.zip |
 | R-T7 | Tanda 7, Level7 | aplicat | 36 | 48 (48) | plans/contenido/revision/tanda7-level7.md | LOT-tanda7-level7.zip |
 | R-T8 | Tanda 8, Level8 | aplicat | 36 | 48 (48) | plans/contenido/revision/tanda8-level8.md | LOT-tanda8-level8.zip |
-| R-T9 | Tanda 9, Level9 (i posició d'imatges de Level10) | aplicat | 60 | 36 (36) | plans/contenido/revision/tanda9-level9.md | LOT-tanda9-level9.zip |
+| R-T9 | Tanda 9, Level9 (i posició d'imatges de Level10) | aplicat | 60 | 60 (60) | plans/contenido/revision/tanda9-level9.md | LOT-tanda9-level9.zip |
 | R-T10 | Tanda 10, Level10 | aplicat | 36 | 36 (36) | plans/contenido/revision/tanda10-level10.md | LOT-tanda10-level10.zip |
 | R-SEQ1 | Seqüència amb regla, Level0 a Level10 (3 per nivell) | aplicat | 33 | 66 (66) | plans/contenido/revision/fe-secuencia-regla-v1.md | LOT-fe-secuencia-regla-v1.zip |
 
@@ -119,8 +119,8 @@ Cada cel·la: activitats **publicades** + **en revisió** (sense comptar el cicl
 | &nbsp;&nbsp;LIS | 3 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
 | &nbsp;&nbsp;SEG | · | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
 | &nbsp;&nbsp;SIL | 3 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
-| **Memòria** | ok | ok | ok | ok | ok | ok | ok | ok | ok | · | · |
-| &nbsp;&nbsp;IMG | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | · | · |
+| **Memòria** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |
+| &nbsp;&nbsp;IMG | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
 | **Perceptius** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |
 | &nbsp;&nbsp;MAT | 7 | 7 | 7 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
 | **Velocitat** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |
@@ -140,8 +140,8 @@ Cada cel·la: activitats **publicades** + **en revisió** (sense comptar el cicl
 | &nbsp;&nbsp;LIS | 3 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
 | &nbsp;&nbsp;SEG | · | 3 | 3 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
 | &nbsp;&nbsp;SIL | 3 | 3 | 3 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
-| **Memòria** | ok | ok | ok | ok | ok | ok | ok | ok | ok | · | · |
-| &nbsp;&nbsp;IMG | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | · | · |
+| **Memòria** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |
+| &nbsp;&nbsp;IMG | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
 | **Perceptius** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |
 | &nbsp;&nbsp;MAT | 6 | 6 | 6 | 7 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
 | **Velocitat** | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok | ok |

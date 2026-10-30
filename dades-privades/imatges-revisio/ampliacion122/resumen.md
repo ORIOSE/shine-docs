@@ -1,72 +1,42 @@
-# Ampliación Shine: 122 palabras
+# Ampliación Shine — cierre 30/10/2026
 
-Actualizado: 2026-10-29T13:57:28+01:00
+Aceptadas: 106. Candidatas: 0. Descartadas: 16. Pendientes: 0.
 
-Seleccionadas: 86. Descartadas: 0. Pendientes: 36.
-Primeras 40 imprescindibles seleccionadas: 40/40.
+Las 513 imágenes aceptadas antes de esta tirada se conservan idénticas, comprobadas por SHA256. Las cinco versiones sustituidas se conservan en anteriores-2026-10-30/. Generación integrada, dos candidatas por palabra y ronda. PNG RGBA8 de 512×512, menos de120KB, contenido máximo368px y márgenes de72px, alfa normalizado.
 
-Las seleccionadas quedan candidatas para revisión humana. Banco anterior: 432 PNG intactos, comprobados por SHA256. Generación con image_gen integrado, dos candidatas por palabra y ronda, referencias de gato, manzana y coche en cada llamada. PNG RGBA 512x512, contenido máximo 368 px, margen mínimo 14%, alfa <=16 a 0 y >=240 a 255, menos de 120 KB. No se utilizó API de pago.
+## Pistas y correcciones
+
+Repetidas pasa (tres pasas en tallo), bacalao (entero abierto con cola), bol (cenital vacío), caqui (achatado con cáliz de cuatro lóbulos) y mango (arriñonado sin hoja). Paciente sentado con cabestrillo y sin instrumental. Escudo gris frontal de borde superior redondeado; segunda ronda para corregir forma. Gota: segunda ronda para eliminar brillos.
+
+## Descartadas de esta ampliación
+
+- escafandra.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- escalador.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- explorador.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- barrendero.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- escultor.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- espantapajaros.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- espia.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- esquiador.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- estalactita.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- estudiante.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- malabarista.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- maniqui.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- maquinista.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- corredor.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- marinero.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
+- marioneta.png: No la fa servir cap grup E09 (lliuraments/E09-revisio-resposta.md, 2026-10-29)
 
 ## Hojas de contacto
 
 - [hoja-contacto-001-030.png](hoja-contacto-001-030.png)
 - [hoja-contacto-031-060.png](hoja-contacto-031-060.png)
 - [hoja-contacto-061-090.png](hoja-contacto-061-090.png)
+- [hoja-contacto-091-120.png](hoja-contacto-091-120.png)
+- [hoja-contacto-121-122.png](hoja-contacto-121-122.png)
 
-## Descartadas con motivo
+## Importación final
 
-Ninguna hasta ahora.
+Fusión aplicada: 25 aceptadas nuevas, sin repeticiones pendientes. Importación Shine correcta: 25 creadas, 0 actualizadas, 513 sin cambios. Total del banco: 538 aceptadas y 21 descartadas (5 previas y 16 de esta ampliación). Automatización pausada tras completar el trabajo.
 
-## Pistas ajustadas
-
-- Cavernícola: se omitió la maza para respetar la prohibición general de armas del prompt.
-- prompt-calendario-2.json: Fix previous candidates: Make a WALL calendar, a single white vertical hanging sheet with spiral binding at top and a blank month grid. No tabletop tent, no rear support, no stand. Empty cells with no numbers or letters. White must dominate.
-- prompt-caminante-2.json: Fix previous candidates: Use a FEMALE hiker with natural dark-brown skin, friendly face, backpack and walking stick, full body, to alternate character gender and skin tone from the previous male camera operator. Hiking boots and practical clothes, no scene. Same clear simple style.
-- prompt-capitan-2.json: Fix previous candidates: Show a FEMALE ship captain with natural medium-brown skin, white peaked cap and navy double-breasted jacket, full body. Clearly a naval captain, not airline pilot. Simple gold cuff stripes, no text, no letters, no logos. Alternate from the male truck driver.
-- prompt-cavernicola-2.json: Fix previous candidates: REMOVE the wooden club entirely to obey the prompt prohibition of weapons. Friendly caveman in a simple fur tunic, full body, BOTH HANDS EMPTY and visibly open at sides. No club, no stick, no tool, no weapon or extra object. Recognize by shaggy hair, beard and fur tunic.
-- prompt-paracaidas-2.json: Fix previous candidates: The entire parachute canopy must be WHITE with only charcoal outlines and at most one pale grey flat shade. No blue or other colored panels. White cords and simple grey harness. Pure flat solid colors, absolutely no gradients.
-- prompt-pasa-2.json: Fix previous candidates: Both look like elongated dates. Make an unmistakable RAISIN (dried grape): squat nearly round irregular tiny wrinkled grape shape, dark brown-purple, NOT elongated, NO central date groove, NO pointed ends, just a few broad simplified wrinkles. Single raisin enlarged, natural irregular outline, no highlights or texture.
-- prompt-patinador-2.json: Fix previous candidates: Use a MALE roller skater with natural dark-brown skin, short hair, helmet and knee pads, full body, to alternate from the female paraglider. Simple blue and orange sports clothes, roller skates clearly visible, no writing or logos.
-
-## Pendientes
-
-escafandra.png
-escalador.png
-explorador.png
-barrendero.png
-escultor.png
-mondadientes.png
-escudo.png
-espaguetis.png
-espantapajaros.png
-esparrago.png
-espatula.png
-espia.png
-espiga.png
-cencerro.png
-esqui.png
-esquiador.png
-estalactita.png
-estatua.png
-estudiante.png
-estufa.png
-gota.png
-llama.png
-malabarista.png
-maniqui.png
-maquinista.png
-corredor.png
-marinero.png
-marioneta.png
-nabo.png
-nota.png
-paciente.png
-fregadero.png
-puerro.png
-tarro.png
-pozo.png
-saco.png
-
-## Bloqueo del generador
-
-Límite de uso alcanzado. Restablecimiento: 2026-10-30T10:16:32+01:00. Reanudar en escafandra, candidata 2 de la primera ronda; candidata 1 ya preparada y conservada. No se descarta ninguna pendiente.
+Tarro también se corrigió en segunda ronda para eliminar brillos y reforzar el gris. Prompts y dos candidatas por ronda conservados con prefijo oct30- en esta carpeta; versiones sustituidas en anteriores-2026-10-30/.
